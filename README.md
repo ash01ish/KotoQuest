@@ -30,3 +30,12 @@ This repository is built as a clean, self-contained single-page static web appli
 - **Kana Canvas**: Drawing pad to trace and memorize character stroke orders.
 - **SRS Flashcards & Sentence Builders**: Interactive widgets to build active vocabulary and master Subject-Object-Verb (SOV) phrasing.
 - **Stats Persistence**: Level, HP, XP, Gold, and merchant inventory automatically persist in your browser's `localStorage`.
+
+---
+
+## 📄 License
+This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**. 
+
+- **Attribution**: You must give credit to the author, **Ashish Thirunagari**, and link back to this repository.
+- **Non-Commercial**: You may not sell this project, its code, or its contents.
+- **ShareAlike**: Any modifications or derivatives must be open-sourced under the same license.
