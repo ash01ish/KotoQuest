@@ -1359,3 +1359,49 @@ canvas {
 .formula-arrow {
     color: var(--accent-pink);
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .container { padding: 10px; }
+    .hero-banner { min-height: 180px; }
+    .hero-text { flex-direction: column; align-items: flex-start; gap: 12px; padding: 15px; }
+    .hero-title h1 { font-size: 1.6rem; }
+    .hero-title p { font-size: 0.8rem; }
+    #main-nav { flex-wrap: wrap; gap: 4px; padding: 8px; }
+    .nav-tab { font-size: 0.7rem; padding: 8px 10px; }
+    .nav-tab i { display: none; }
+    .glass-card { padding: 15px; }
+    .card-title { font-size: 1rem; }
+    .combat-grid { grid-template-columns: 1fr !important; }
+    .rpg-hud-bar { flex-direction: column; gap: 10px; }
+    .enemy-sprite-box { width: 100px; height: 100px; }
+    .enemy-sprite-box .sprite-character { font-size: 3rem; }
+    .quest-tier-btn { padding: 6px 10px; font-size: 0.75rem; }
+    .shop-grid { grid-template-columns: 1fr !important; }
+    .curriculum-grid { grid-template-columns: 1fr !important; }
+    .kana-grid { grid-template-columns: repeat(5, 1fr) !important; gap: 4px !important; }
+    .kana-cell { padding: 8px; }
+    .kana-char { font-size: 1.2rem; }
+    .canvas-container { flex-direction: column; }
+    .canvas-wrapper canvas { width: 100% !important; height: 280px !important; }
+    .flashcard-container { width: 280px; height: 200px; }
+    .flashcard-main-txt { font-size: 3rem; }
+    .sentence-workspace, .word-bank { min-height: 60px; }
+    .word-chip { padding: 6px 10px; font-size: 0.8rem; }
+    .telugu-table { font-size: 0.75rem; }
+    .telugu-table th, .telugu-table td { padding: 6px 8px; }
+    .formula-card { padding: 12px; }
+    .stats-badge { font-size: 0.75rem; gap: 10px; }
+    .inventory-slots { gap: 8px; }
+    .inv-slot { width: 50px; height: 50px; }
+    #calc-grid-layout { grid-template-columns: 1fr !important; }
+    .progress-tracker { flex-direction: column; gap: 8px; }
+}
+
+@media (max-width: 480px) {
+    .hero-title h1 { font-size: 1.3rem; }
+    .nav-tab { font-size: 0.65rem; padding: 6px 8px; }
+    .flashcard-container { width: 240px; height: 180px; }
+    .flashcard-main-txt { font-size: 2.5rem; }
+    .enemy-sprite-box { width: 80px; height: 80px; }
+}

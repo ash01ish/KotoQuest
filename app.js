@@ -5,13 +5,25 @@ let player = {
     maxHp: 100,
     xp: 0,
     maxXp: 100,
-    gold: 50, // Start with some gold to get moving!
+    gold: 50,
     inventory: {
         potion: 1,
         shield: 1,
         hint: 1
     },
-    streak: 1
+    streak: 1,
+    stats: {
+        totalAnswered: 0,
+        totalCorrect: 0,
+        byLevel: {
+            N5: { answered: 0, correct: 0 },
+            N4: { answered: 0, correct: 0 },
+            N3: { answered: 0, correct: 0 },
+            N2: { answered: 0, correct: 0 },
+            N1: { answered: 0, correct: 0 }
+        },
+        byType: {}
+    }
 };
 
 let activeEnemy = {
