@@ -155,43 +155,152 @@ const QUEST_DATABASE = {
     N5: [
         { q: 'What is the vowel character representing the "ah" sound?', answer: 'あ', options: ['あ', 'い', 'う', 'え'], style: 'mc', type: 'Hiragana' },
         { q: 'What is the vowel character representing the "ee" sound?', answer: 'い', options: ['あ', 'い', 'う', 'お'], style: 'mc', type: 'Hiragana' },
-        { q: 'Which particle marks the main Topic of the sentence (Telugu Equivalent: aithe / Hindi: toh)?', answer: 'は', options: ['は', 'を', 'に', 'で'], style: 'mc', type: 'Particle' },
-        { q: 'Which particle marks the Direct Object receiving action (Telugu: nu/ni - Hindi: ko)?', answer: 'を', options: ['は', 'を', 'に', 'の'], style: 'mc', type: 'Particle' },
-        { q: 'Translate the number "One" (一) to Romaji spelling:', answer: 'ichi', style: 'text', type: 'Spelling' },
-        { q: 'Translate the number "Ten" (十) to Romaji spelling:', answer: 'juu', style: 'text', type: 'Spelling' },
-        { q: 'What is the meaning of the noun "みず" (mizu)?', answer: 'Water', options: ['Water', 'Bathroom', 'Sushi', 'Cat'], style: 'mc', type: 'Vocabulary' },
-        { q: 'Translate the greeting "Hello / Good Afternoon":', answer: 'Konnichiwa', options: ['Konnichiwa', 'Arigatou', 'Sumimasen', 'Sayonara'], style: 'mc', type: 'Phrase' }
+        { q: 'What is the vowel character representing the "oo" sound?', answer: 'う', options: ['あ', 'え', 'う', 'お'], style: 'mc', type: 'Hiragana' },
+        { q: 'Which hiragana represents "ka"?', answer: 'か', options: ['か', 'き', 'く', 'け'], style: 'mc', type: 'Hiragana' },
+        { q: 'Which hiragana represents "shi"?', answer: 'し', options: ['さ', 'し', 'す', 'せ'], style: 'mc', type: 'Hiragana' },
+        { q: 'Type the romaji for: ん', answer: 'n', style: 'text', type: 'Hiragana' },
+        { q: 'Which katakana represents "a"?', answer: 'ア', options: ['ア', 'イ', 'ウ', 'エ'], style: 'mc', type: 'Katakana' },
+        { q: 'Which katakana represents "ko"?', answer: 'コ', options: ['カ', 'キ', 'ク', 'コ'], style: 'mc', type: 'Katakana' },
+        { q: 'Which particle marks the Topic of the sentence?', answer: 'は', options: ['は', 'を', 'に', 'で'], style: 'mc', type: 'Particle' },
+        { q: 'Which particle marks the Direct Object?', answer: 'を', options: ['は', 'を', 'に', 'の'], style: 'mc', type: 'Particle' },
+        { q: 'Which particle marks a Destination?', answer: 'に', options: ['は', 'で', 'に', 'を'], style: 'mc', type: 'Particle' },
+        { q: 'Which particle shows Possession (Telugu: yokka)?', answer: 'の', options: ['の', 'は', 'を', 'に'], style: 'mc', type: 'Particle' },
+        { q: 'Translate "One" (一) to romaji:', answer: 'ichi', style: 'text', type: 'Spelling' },
+        { q: 'Translate "Ten" (十) to romaji:', answer: 'juu', style: 'text', type: 'Spelling' },
+        { q: 'Translate "Three" (三) to romaji:', answer: 'san', style: 'text', type: 'Spelling' },
+        { q: 'What number is 七 (shichi/nana)?', answer: 'Seven', options: ['Five', 'Six', 'Seven', 'Eight'], style: 'mc', type: 'Numbers' },
+        { q: 'What number is 百 (hyaku)?', answer: 'Hundred', options: ['Ten', 'Hundred', 'Thousand', 'Million'], style: 'mc', type: 'Numbers' },
+        { q: 'Translate "Hello / Good Afternoon":', answer: 'Konnichiwa', options: ['Konnichiwa', 'Arigatou', 'Sumimasen', 'Sayonara'], style: 'mc', type: 'Phrase' },
+        { q: 'Translate "Good Morning" (polite):', answer: 'Ohayou gozaimasu', options: ['Ohayou gozaimasu', 'Konbanwa', 'Oyasumi', 'Itadakimasu'], style: 'mc', type: 'Phrase' },
+        { q: 'Translate "Good Evening":', answer: 'Konbanwa', options: ['Konnichiwa', 'Konbanwa', 'Sayonara', 'Arigatou'], style: 'mc', type: 'Phrase' },
+        { q: 'What do you say before eating?', answer: 'Itadakimasu', options: ['Itadakimasu', 'Gochisousama', 'Sumimasen', 'Onegaishimasu'], style: 'mc', type: 'Phrase' },
+        { q: 'What do you say after eating?', answer: 'Gochisousama deshita', options: ['Itadakimasu', 'Gochisousama deshita', 'Arigatou', 'Oyasumi'], style: 'mc', type: 'Phrase' },
+        { q: 'What is the meaning of "みず" (mizu)?', answer: 'Water', options: ['Water', 'Fire', 'Earth', 'Wind'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What is the meaning of "ねこ" (neko)?', answer: 'Cat', options: ['Dog', 'Cat', 'Bird', 'Fish'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What is the meaning of "いぬ" (inu)?', answer: 'Dog', options: ['Cat', 'Dog', 'Horse', 'Cow'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What is the meaning of "ほん" (hon)?', answer: 'Book', options: ['Pen', 'Book', 'Paper', 'Desk'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "なに" (nani) mean?', answer: 'What', options: ['What', 'Who', 'Where', 'When'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "だれ" (dare) mean?', answer: 'Who', options: ['What', 'Who', 'Where', 'How'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "どこ" (doko) mean?', answer: 'Where', options: ['What', 'When', 'Where', 'Why'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "いくら" (ikura) mean?', answer: 'How much', options: ['How many', 'How much', 'How old', 'How long'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What is "Monday" in Japanese?', answer: 'げつようび', options: ['げつようび', 'かようび', 'すいようび', 'にちようび'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What is "Sunday" in Japanese?', answer: 'にちようび', options: ['どようび', 'にちようび', 'きんようび', 'もくようび'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "たべる" (taberu) mean?', answer: 'To eat', options: ['To eat', 'To drink', 'To sleep', 'To go'], style: 'mc', type: 'Verb' },
+        { q: 'What does "のむ" (nomu) mean?', answer: 'To drink', options: ['To eat', 'To drink', 'To read', 'To write'], style: 'mc', type: 'Verb' },
+        { q: 'What does "いく" (iku) mean?', answer: 'To go', options: ['To come', 'To go', 'To return', 'To run'], style: 'mc', type: 'Verb' }
     ],
     N4: [
-        { q: 'Which particle marks the Destination or Direction (Telugu: ki/ku - Hindi: ko)?', answer: 'に', options: ['に', 'を', 'で', 'の'], style: 'mc', type: 'Particle' },
-        { q: 'Translate the polite present verb "たべます" (tabemasu):', answer: 'Eat', options: ['Eat', 'Drink', 'Go', 'Do'], style: 'mc', type: 'Verb' },
-        { q: 'What is the past positive form of "たべます" (ate politely)?', answer: 'たべました', options: ['たべました', 'たべません', 'たべます', 'たべませんでした'], style: 'mc', type: 'Verb Conjugation' },
-        { q: 'What is the negative present form of "のむ" (do not drink politely)?', answer: 'のみません', options: ['のみません', 'のみます', 'のみました', 'のみませんでした'], style: 'mc', type: 'Verb Conjugation' },
-        { q: 'What is the class group of the verb "たべる" (taberu: to eat)?', answer: 'Ru-verb (Group 1)', options: ['Ru-verb (Group 1)', 'U-verb (Group 2)', 'Irregular verb', 'Adjective'], style: 'mc', type: 'Grammar' },
-        { q: 'Translate "Excuse me / Sorry":', answer: 'Sumimasen', options: ['Sumimasen', 'Arigatou', 'Kore', 'Doko'], style: 'mc', type: 'Vocabulary' },
-        { q: 'What kind of adjective is "おいしい" (oishii: delicious)?', answer: 'I-adjective', options: ['I-adjective', 'Na-adjective', 'Irregular', 'Verb'], style: 'mc', type: 'Grammar' }
+        { q: 'What is the polite past form of "たべる" (ate)?', answer: 'たべました', options: ['たべました', 'たべません', 'たべます', 'たべませんでした'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the negative polite form of "のむ" (do not drink)?', answer: 'のみません', options: ['のみません', 'のみます', 'のみました', 'のみませんでした'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the Te-form of "たべる"?', answer: 'たべて', options: ['たべて', 'たべた', 'たべない', 'たべよう'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the Te-form of "のむ"?', answer: 'のんで', options: ['のんで', 'のみて', 'のんだ', 'のまない'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the Te-form of "いく"?', answer: 'いって', options: ['いいて', 'いって', 'いきて', 'いった'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the Te-form of "かく" (to write)?', answer: 'かいて', options: ['かいて', 'かって', 'かきて', 'かいた'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'How do you say "I want to eat" (tai-form)?', answer: 'たべたい', options: ['たべたい', 'たべたく', 'たべよう', 'たべられる'], style: 'mc', type: 'Grammar' },
+        { q: 'How do you say "I want to go to Japan"?', answer: 'にほんにいきたいです', options: ['にほんにいきたいです', 'にほんにいきます', 'にほんにいった', 'にほんにいける'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the plain negative of "たべる"?', answer: 'たべない', options: ['たべない', 'たべません', 'たべなかった', 'たべず'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the plain negative of "する" (to do)?', answer: 'しない', options: ['しない', 'しません', 'さない', 'すない'], style: 'mc', type: 'Verb Conjugation' },
+        { q: 'What is the potential form of "たべる" (can eat)?', answer: 'たべられる', options: ['たべられる', 'たべれる', 'たべさせる', 'たべたい'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the potential form of "よむ" (can read)?', answer: 'よめる', options: ['よめる', 'よまれる', 'よませる', 'よみたい'], style: 'mc', type: 'Grammar' },
+        { q: '"てもいいですか" expresses:', answer: 'Asking permission', options: ['Asking permission', 'Giving an order', 'Making a request', 'Expressing regret'], style: 'mc', type: 'Grammar' },
+        { q: '"てはいけません" expresses:', answer: 'Prohibition', options: ['Permission', 'Prohibition', 'Obligation', 'Suggestion'], style: 'mc', type: 'Grammar' },
+        { q: 'Which verb means "to give (to someone)"?', answer: 'あげる', options: ['あげる', 'もらう', 'くれる', 'やる'], style: 'mc', type: 'Verb' },
+        { q: 'Which verb means "to receive"?', answer: 'もらう', options: ['あげる', 'もらう', 'くれる', 'おくる'], style: 'mc', type: 'Verb' },
+        { q: '"AはBより大きい" means:', answer: 'A is bigger than B', options: ['A is bigger than B', 'B is bigger than A', 'A and B are equal', 'A is the biggest'], style: 'mc', type: 'Grammar' },
+        { q: 'Which counter is used for flat objects (paper, tickets)?', answer: '枚 (まい)', options: ['枚 (まい)', '本 (ほん)', '個 (こ)', '人 (にん)'], style: 'mc', type: 'Vocabulary' },
+        { q: 'Which counter is used for people?', answer: '人 (にん)', options: ['個 (こ)', '枚 (まい)', '本 (ほん)', '人 (にん)'], style: 'mc', type: 'Vocabulary' },
+        { q: '"にほんにいったことがある" means:', answer: 'I have been to Japan', options: ['I have been to Japan', 'I will go to Japan', 'I want to go to Japan', 'I am going to Japan'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the class of "おいしい" (delicious)?', answer: 'I-adjective', options: ['I-adjective', 'Na-adjective', 'Irregular', 'Verb'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the class of "しずか" (quiet)?', answer: 'Na-adjective', options: ['I-adjective', 'Na-adjective', 'Irregular', 'Verb'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the negative form of "たかい" (expensive)?', answer: 'たかくない', options: ['たかくない', 'たかいない', 'たかじゃない', 'たかではない'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the past form of "しずかな" (was quiet)?', answer: 'しずかだった', options: ['しずかだった', 'しずかかった', 'しずくなかった', 'しずかでした'], style: 'mc', type: 'Grammar' },
+        { q: 'Translate "Excuse me / Sorry":', answer: 'Sumimasen', options: ['Sumimasen', 'Arigatou', 'Gomen', 'Doko'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "びょういん" (byouin) mean?', answer: 'Hospital', options: ['Hospital', 'School', 'Library', 'Station'], style: 'mc', type: 'Vocabulary' },
+        { q: 'What does "でんしゃ" (densha) mean?', answer: 'Train', options: ['Bus', 'Taxi', 'Train', 'Car'], style: 'mc', type: 'Vocabulary' },
+        { q: '"あめだから、いきません" means:', answer: 'Because it is raining, I will not go', options: ['Because it is raining, I will not go', 'If it rains, I will not go', 'It rained, so I did not go', 'Even though it rained, I went'], style: 'mc', type: 'Grammar' },
+        { q: 'Which particle marks the Destination (Telugu: ki/ku)?', answer: 'に', options: ['に', 'を', 'で', 'の'], style: 'mc', type: 'Particle' },
+        { q: 'Which particle marks the Location of action (Telugu: lo)?', answer: 'で', options: ['に', 'で', 'を', 'は'], style: 'mc', type: 'Particle' }
     ],
     N3: [
-        { q: 'What is the meaning of the Kanji symbol: "日"?', answer: 'Sun / Day', options: ['Sun / Day', 'Moon / Month', 'Water', 'Fire'], style: 'mc', type: 'Kanji' },
-        { q: 'What is the meaning of the Kanji symbol: "月"?', answer: 'Moon / Month', options: ['Sun / Day', 'Moon / Month', 'Water', 'Tree'], style: 'mc', type: 'Kanji' },
-        { q: 'Translate: "Where is the bathroom?"', answer: 'トイレはどこですか。', options: ['トイレはどこですか。', 'お水をください。', 'これはいくらですか。', 'ありがとうございます。'], style: 'mc', type: 'Phrase' },
-        { q: 'Which particle indicates Location of an Action (Telugu: lo - Hindi: mein)?', answer: 'で', options: ['で', 'に', 'を', 'の'], style: 'mc', type: 'Particle' },
-        { q: 'Translate the past negative polite verb "did not drink":', answer: 'のみませんでした', options: ['のみませんでした', 'のみません', 'のみました', 'のみます'], style: 'mc', type: 'Verb Conjugation' },
-        { q: 'What is the meaning of the Kanji pictogram: "人"?', answer: 'Person', options: ['Person', 'Mountain', 'River', 'Gold'], style: 'mc', type: 'Kanji' }
+        { q: 'Meaning of the Kanji: 日?', answer: 'Sun / Day', options: ['Sun / Day', 'Moon / Month', 'Water', 'Fire'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 月?', answer: 'Moon / Month', options: ['Sun / Day', 'Moon / Month', 'Water', 'Tree'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 人?', answer: 'Person', options: ['Person', 'Mountain', 'River', 'Gold'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 山?', answer: 'Mountain', options: ['River', 'Mountain', 'Forest', 'Field'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 学校?', answer: 'School', options: ['School', 'Company', 'Hospital', 'Library'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 会社?', answer: 'Company', options: ['School', 'Company', 'Hospital', 'Station'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 電車?', answer: 'Train', options: ['Bus', 'Bicycle', 'Train', 'Airplane'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 図書館?', answer: 'Library', options: ['Museum', 'Hospital', 'Library', 'Station'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 天気?', answer: 'Weather', options: ['Weather', 'Temperature', 'Season', 'Wind'], style: 'mc', type: 'Kanji' },
+        { q: 'Meaning of the Kanji: 料理?', answer: 'Cooking', options: ['Cleaning', 'Cooking', 'Shopping', 'Studying'], style: 'mc', type: 'Kanji' },
+        { q: 'What is the passive form of "たべる"?', answer: 'たべられる', options: ['たべられる', 'たべさせる', 'たべさせられる', 'たべれる'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the passive form of "よむ" (to read)?', answer: 'よまれる', options: ['よまれる', 'よませる', 'よめる', 'よまされる'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the causative form of "たべる" (make eat)?', answer: 'たべさせる', options: ['たべさせる', 'たべられる', 'たべさせられる', 'たべれる'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the causative form of "いく" (make go)?', answer: 'いかせる', options: ['いかせる', 'いかれる', 'いかされる', 'いけせる'], style: 'mc', type: 'Grammar' },
+        { q: '"ようになる" expresses:', answer: 'Becoming able to / Change of state', options: ['Becoming able to / Change of state', 'Trying to do', 'Deciding to do', 'Planning to do'], style: 'mc', type: 'Grammar' },
+        { q: '"ようにする" expresses:', answer: 'Making an effort to do', options: ['Becoming able to', 'Making an effort to do', 'Deciding to do', 'Wanting to do'], style: 'mc', type: 'Grammar' },
+        { q: '"あめがふりそうだ" means:', answer: 'It looks like it will rain', options: ['It is raining', 'It looks like it will rain', 'It stopped raining', 'I heard it rained'], style: 'mc', type: 'Grammar' },
+        { q: '"あの人は先生らしい" means:', answer: 'That person seems to be a teacher', options: ['That person is a teacher', 'That person seems to be a teacher', 'That person was a teacher', 'That person wants to be a teacher'], style: 'mc', type: 'Grammar' },
+        { q: '"あの人は先生みたいだ" means:', answer: 'That person is like a teacher', options: ['That person is a teacher', 'That person is like a teacher', 'That person became a teacher', 'That person was a teacher'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the honorific form of "いる" (to be)?', answer: 'いらっしゃる', options: ['いらっしゃる', 'おる', 'ある', 'いられる'], style: 'mc', type: 'Keigo' },
+        { q: 'What is the humble form of "いく" (to go)?', answer: 'まいる', options: ['いらっしゃる', 'まいる', 'おいでになる', 'いかれる'], style: 'mc', type: 'Keigo' },
+        { q: 'Translate: "Where is the bathroom?"', answer: 'トイレはどこですか', options: ['トイレはどこですか', 'お水をください', 'これはいくらですか', 'ありがとうございます'], style: 'mc', type: 'Phrase' },
+        { q: 'Translate the past negative: "did not drink"', answer: 'のみませんでした', options: ['のみませんでした', 'のみません', 'のみました', 'のみます'], style: 'mc', type: 'Verb Conjugation' },
+        { q: '"ドアがあく" vs "ドアをあける" — which is transitive?', answer: 'あける', options: ['あく', 'あける', 'Both', 'Neither'], style: 'mc', type: 'Grammar' },
+        { q: '"でんきがつく" vs "でんきをつける" — which is intransitive?', answer: 'つく', options: ['つく', 'つける', 'Both', 'Neither'], style: 'mc', type: 'Grammar' },
+        { q: 'Type the reading of 旅行:', answer: 'ryokou', style: 'text', type: 'Kanji' }
     ],
     N2: [
-        { q: 'Translate the vocabulary word: "昨日" (Kinoo):', answer: 'Yesterday', options: ['Yesterday', 'Today', 'Tomorrow', 'Last week'], style: 'mc', type: 'Vocab' },
-        { q: 'What is the reading of "先生" (Teacher)?', answer: 'sensei', style: 'text', type: 'Spelling' },
-        { q: 'Translate "これはいくらですか" to English:', answer: 'How much is this?', options: ['How much is this?', 'Where is the station?', 'Please give me water.', 'Excuse me.'], style: 'mc', type: 'Phrase' },
-        { q: 'Which particle is used to show accompaniment (Telugu: tho - Hindi: ke sath)?', answer: 'と', options: ['と', 'で', 'に', 'を'], style: 'mc', type: 'Particle' },
-        { q: 'Identify the Na-adjective representation for "Quiet":', answer: 'しずかな', options: ['しずかな', 'おいしい', 'おおきい', 'かわいい'], style: 'mc', type: 'Grammar' }
+        { q: '"Aについて" means:', answer: 'About A / Regarding A', options: ['About A / Regarding A', 'Because of A', 'Instead of A', 'Despite A'], style: 'mc', type: 'Grammar' },
+        { q: '"Aにとって" means:', answer: "For A / From A's perspective", options: ["For A / From A's perspective", 'About A', 'Because of A', 'Against A'], style: 'mc', type: 'Grammar' },
+        { q: '"Aによって" means:', answer: 'Depending on A / By means of A', options: ['Depending on A / By means of A', 'About A', 'For A', 'Despite A'], style: 'mc', type: 'Grammar' },
+        { q: '"Aにもかかわらず" means:', answer: 'Despite A / In spite of A', options: ['Despite A', 'Because of A', 'According to A', 'Instead of A'], style: 'mc', type: 'Grammar' },
+        { q: '"Aだけでなく、Bも" means:', answer: 'Not only A, but also B', options: ['Not only A, but also B', 'Either A or B', 'Neither A nor B', 'A instead of B'], style: 'mc', type: 'Grammar' },
+        { q: '"ばいいのに" expresses:', answer: 'Regret / Wish it were different', options: ['Regret / Wish it were different', 'Certainty', 'Permission', 'Obligation'], style: 'mc', type: 'Grammar' },
+        { q: '"としても" means:', answer: 'Even if / Even assuming', options: ['Even if / Even assuming', 'Because', 'Therefore', 'However'], style: 'mc', type: 'Grammar' },
+        { q: '"わけにはいかない" means:', answer: 'Cannot afford to / Must not', options: ['Cannot afford to / Must not', 'Can easily do', 'Should do', 'Want to do'], style: 'mc', type: 'Grammar' },
+        { q: 'What is the honorific form of "たべる"?', answer: 'めしあがる', options: ['めしあがる', 'いただく', 'たべられる', 'おたべになる'], style: 'mc', type: 'Keigo' },
+        { q: 'What is the humble form of "たべる"?', answer: 'いただく', options: ['めしあがる', 'いただく', 'たべさせる', 'おたべする'], style: 'mc', type: 'Keigo' },
+        { q: 'What is the honorific form of "言う" (to say)?', answer: 'おっしゃる', options: ['おっしゃる', 'もうす', 'いわれる', 'おいいになる'], style: 'mc', type: 'Keigo' },
+        { q: 'What is the humble form of "言う" (to say)?', answer: 'もうす', options: ['おっしゃる', 'もうす', 'いわれる', 'もうしあげる'], style: 'mc', type: 'Keigo' },
+        { q: 'Translate: 昨日 (Kinoo)', answer: 'Yesterday', options: ['Yesterday', 'Today', 'Tomorrow', 'Last week'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 政治', answer: 'Politics', options: ['Politics', 'Economy', 'Science', 'Culture'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 環境', answer: 'Environment', options: ['Environment', 'Economy', 'Society', 'Technology'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 文化', answer: 'Culture', options: ['Culture', 'Education', 'Politics', 'History'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 技術', answer: 'Technology / Skill', options: ['Technology / Skill', 'Science', 'Research', 'Industry'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 研究', answer: 'Research', options: ['Research', 'Study', 'Experiment', 'Survey'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 影響', answer: 'Influence / Effect', options: ['Influence / Effect', 'Reason', 'Result', 'Cause'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 関係', answer: 'Relationship / Connection', options: ['Relationship / Connection', 'Situation', 'Condition', 'Circumstance'], style: 'mc', type: 'Vocab' },
+        { q: 'Type the reading of 先生 (Teacher):', answer: 'sensei', style: 'text', type: 'Spelling' },
+        { q: 'Type the reading of 大学:', answer: 'daigaku', style: 'text', type: 'Spelling' },
+        { q: 'Identify the Na-adjective for "Quiet":', answer: 'しずかな', options: ['しずかな', 'おいしい', 'おおきい', 'かわいい'], style: 'mc', type: 'Grammar' },
+        { q: 'Translate "これはいくらですか":', answer: 'How much is this?', options: ['How much is this?', 'Where is the station?', 'Please give me water.', 'Excuse me.'], style: 'mc', type: 'Phrase' },
+        { q: 'Which particle shows accompaniment (Telugu: tho)?', answer: 'と', options: ['と', 'で', 'に', 'を'], style: 'mc', type: 'Particle' }
     ],
     N1: [
-        { q: 'Identify the meaning of the formal compound word: "社会" (Shakai):', answer: 'Society', options: ['Society', 'Education', 'Economy', 'Government'], style: 'mc', type: 'Vocab' },
-        { q: 'Identify the meaning of the academic N1 word: "教育" (Kyoiku):', answer: 'Education', options: ['Education', 'Society', 'Economy', 'Science'], style: 'mc', type: 'Vocab' },
-        { q: 'Translate the structural term "経済" (Keizai):', answer: 'Economy', options: ['Economy', 'Politics', 'Law', 'Industry'], style: 'mc', type: 'Vocab' },
-        { q: 'Identify the reading of "日本" (Japan):', answer: 'nihon', style: 'text', type: 'Spelling' },
-        { q: 'Which particle acts as a possession marker (Telugu: yokka - Hindi: ka/ki/ke)?', answer: 'の', options: ['の', 'は', 'を', 'に'], style: 'mc', type: 'Particle' }
+        { q: 'Translate: 社会 (Shakai)', answer: 'Society', options: ['Society', 'Education', 'Economy', 'Government'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 教育 (Kyoiku)', answer: 'Education', options: ['Education', 'Society', 'Economy', 'Science'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 経済 (Keizai)', answer: 'Economy', options: ['Economy', 'Politics', 'Law', 'Industry'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 政府 (Seifu)', answer: 'Government', options: ['Government', 'Politics', 'Law', 'Parliament'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 科学 (Kagaku)', answer: 'Science', options: ['Science', 'Chemistry', 'Physics', 'Mathematics'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 哲学 (Tetsugaku)', answer: 'Philosophy', options: ['Philosophy', 'Psychology', 'Sociology', 'Literature'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 環境問題', answer: 'Environmental problem', options: ['Environmental problem', 'Social issue', 'Economic crisis', 'Political scandal'], style: 'mc', type: 'Vocab' },
+        { q: 'Translate: 国際 (Kokusai)', answer: 'International', options: ['International', 'National', 'Regional', 'Global'], style: 'mc', type: 'Vocab' },
+        { q: '"にすぎない" means:', answer: 'Nothing more than / Merely', options: ['Nothing more than / Merely', 'Not only', 'At least', 'Especially'], style: 'mc', type: 'Grammar' },
+        { q: '"というものだ" means:', answer: 'That is what it means to / Such is', options: ['That is what it means to / Such is', 'It is said that', 'I heard that', 'It seems like'], style: 'mc', type: 'Grammar' },
+        { q: '"ざるをえない" means:', answer: 'Cannot help but / Have no choice but to', options: ['Cannot help but / Have no choice but to', 'Must not', 'Should not', 'Need not'], style: 'mc', type: 'Grammar' },
+        { q: '"にほかならない" means:', answer: 'Nothing but / None other than', options: ['Nothing but / None other than', 'Not only', 'Not at all', 'Not necessarily'], style: 'mc', type: 'Grammar' },
+        { q: '"とはかぎらない" means:', answer: 'Not necessarily / Not always true', options: ['Not necessarily / Not always true', 'Always', 'Definitely', 'Never'], style: 'mc', type: 'Grammar' },
+        { q: '"なくはない" means:', answer: 'It is not impossible (double negative)', options: ['It is not impossible (double negative)', 'Absolutely not', 'Definitely yes', 'I am not sure'], style: 'mc', type: 'Grammar' },
+        { q: '"べき" expresses:', answer: 'Should / Ought to (moral obligation)', options: ['Should / Ought to (moral obligation)', 'Want to', 'Can do', 'Must not'], style: 'mc', type: 'Grammar' },
+        { q: '"まじ" (archaic) expresses:', answer: 'Should not / Must not', options: ['Should not / Must not', 'Should do', 'Want to', 'Can do'], style: 'mc', type: 'Grammar' },
+        { q: '"ごとし" (literary) expresses:', answer: 'Like / As if (poetic comparison)', options: ['Like / As if (poetic comparison)', 'Because of', 'Despite', 'Therefore'], style: 'mc', type: 'Grammar' },
+        { q: '"おそれがある" means:', answer: 'There is a risk that', options: ['There is a risk that', 'There is hope that', 'It is certain that', 'It is impossible that'], style: 'mc', type: 'Grammar' },
+        { q: '"かねない" means:', answer: 'Might / Could possibly (negative connotation)', options: ['Might / Could possibly (negative connotation)', 'Cannot do', 'Should not', 'Will definitely'], style: 'mc', type: 'Grammar' },
+        { q: '"をもって" means:', answer: 'By means of / With (formal)', options: ['By means of / With (formal)', 'Despite', 'Because of', 'Instead of'], style: 'mc', type: 'Grammar' },
+        { q: 'Type the reading of 日本:', answer: 'nihon', style: 'text', type: 'Spelling' },
+        { q: 'Type the reading of 経済:', answer: 'keizai', style: 'text', type: 'Spelling' },
+        { q: 'Type the reading of 哲学:', answer: 'tetsugaku', style: 'text', type: 'Spelling' },
+        { q: 'Which particle acts as a possession marker?', answer: 'の', options: ['の', 'は', 'を', 'に'], style: 'mc', type: 'Particle' }
     ]
 };
 
@@ -228,14 +337,68 @@ const VOCAB_DATA = {
     kana: [
         { ja: 'あ', ro: 'a', meaning: 'Letter: A', type: 'Hiragana', pronounce: '"ah"' },
         { ja: 'い', ro: 'i', meaning: 'Letter: I', type: 'Hiragana', pronounce: '"ee"' },
-        { ja: 'う', ro: 'u', meaning: 'Letter: U', type: 'Hiragana', pronounce: '"oo"' }
+        { ja: 'う', ro: 'u', meaning: 'Letter: U', type: 'Hiragana', pronounce: '"oo"' },
+        { ja: 'え', ro: 'e', meaning: 'Letter: E', type: 'Hiragana', pronounce: '"eh"' },
+        { ja: 'お', ro: 'o', meaning: 'Letter: O', type: 'Hiragana', pronounce: '"oh"' },
+        { ja: 'か', ro: 'ka', meaning: 'Letter: Ka', type: 'Hiragana', pronounce: '"kah"' },
+        { ja: 'き', ro: 'ki', meaning: 'Letter: Ki', type: 'Hiragana', pronounce: '"kee"' },
+        { ja: 'く', ro: 'ku', meaning: 'Letter: Ku', type: 'Hiragana', pronounce: '"koo"' },
+        { ja: 'け', ro: 'ke', meaning: 'Letter: Ke', type: 'Hiragana', pronounce: '"keh"' },
+        { ja: 'こ', ro: 'ko', meaning: 'Letter: Ko', type: 'Hiragana', pronounce: '"koh"' },
+        { ja: 'さ', ro: 'sa', meaning: 'Letter: Sa', type: 'Hiragana', pronounce: '"sah"' },
+        { ja: 'し', ro: 'shi', meaning: 'Letter: Shi', type: 'Hiragana', pronounce: '"shee"' },
+        { ja: 'す', ro: 'su', meaning: 'Letter: Su', type: 'Hiragana', pronounce: '"soo"' },
+        { ja: 'せ', ro: 'se', meaning: 'Letter: Se', type: 'Hiragana', pronounce: '"seh"' },
+        { ja: 'そ', ro: 'so', meaning: 'Letter: So', type: 'Hiragana', pronounce: '"soh"' }
     ],
     numbers: [
         { ja: '一', ro: 'ichi', meaning: 'One (1)', type: 'Number', pronounce: 'ee-chee' },
-        { ja: '二', ro: 'ni', meaning: 'Two (2)', type: 'Number', pronounce: 'nee' }
+        { ja: '二', ro: 'ni', meaning: 'Two (2)', type: 'Number', pronounce: 'nee' },
+        { ja: '三', ro: 'san', meaning: 'Three (3)', type: 'Number', pronounce: 'sahn' },
+        { ja: '四', ro: 'yon/shi', meaning: 'Four (4)', type: 'Number', pronounce: 'yohn' },
+        { ja: '五', ro: 'go', meaning: 'Five (5)', type: 'Number', pronounce: 'goh' },
+        { ja: '六', ro: 'roku', meaning: 'Six (6)', type: 'Number', pronounce: 'roh-koo' },
+        { ja: '七', ro: 'nana/shichi', meaning: 'Seven (7)', type: 'Number', pronounce: 'nah-nah' },
+        { ja: '八', ro: 'hachi', meaning: 'Eight (8)', type: 'Number', pronounce: 'hah-chee' },
+        { ja: '九', ro: 'kyuu', meaning: 'Nine (9)', type: 'Number', pronounce: 'kyoo' },
+        { ja: '十', ro: 'juu', meaning: 'Ten (10)', type: 'Number', pronounce: 'joo' },
+        { ja: '百', ro: 'hyaku', meaning: 'Hundred (100)', type: 'Number', pronounce: 'hyah-koo' },
+        { ja: '千', ro: 'sen', meaning: 'Thousand (1,000)', type: 'Number', pronounce: 'sen' },
+        { ja: '万', ro: 'man', meaning: 'Ten Thousand (10,000)', type: 'Number', pronounce: 'mahn' }
     ],
     phrases: [
-        { ja: 'こんにちは', ro: 'konnichiwa', meaning: 'Hello / Good Afternoon', type: 'Greeting', pronounce: 'kohn-nee-chee-wah' }
+        { ja: 'こんにちは', ro: 'konnichiwa', meaning: 'Hello / Good Afternoon', type: 'Greeting', pronounce: 'kohn-nee-chee-wah' },
+        { ja: 'すみません', ro: 'sumimasen', meaning: 'Excuse me / Sorry', type: 'Survival Phrase', pronounce: 'soo-mee-mah-sen' },
+        { ja: 'ありがとう', ro: 'arigatou', meaning: 'Thank you', type: 'Survival Phrase', pronounce: 'ah-ree-gah-toh' },
+        { ja: 'はじめまして', ro: 'hajimemashite', meaning: 'Nice to meet you', type: 'Greeting', pronounce: 'hah-jee-meh-mah-shee-teh' },
+        { ja: 'さようなら', ro: 'sayounara', meaning: 'Goodbye', type: 'Greeting', pronounce: 'sah-yoh-nah-rah' },
+        { ja: 'どこですか', ro: 'doko desu ka', meaning: 'Where is it?', type: 'Survival Phrase', pronounce: 'doh-koh deh-soo kah' },
+        { ja: 'いくらですか', ro: 'ikura desu ka', meaning: 'How much is this?', type: 'Survival Phrase', pronounce: 'ee-koo-rah deh-soo kah' },
+        { ja: 'お水をください', ro: 'omizu o kudasai', meaning: 'Water, please', type: 'Survival Phrase', pronounce: 'oh-mee-zoo oh koo-dah-sigh' },
+        { ja: 'わかりません', ro: 'wakarimasen', meaning: 'I don\'t understand', type: 'Survival Phrase', pronounce: 'wah-kah-ree-mah-sen' },
+        { ja: 'たすけてください', ro: 'tasukete kudasai', meaning: 'Help, please', type: 'Survival Phrase', pronounce: 'tah-soo-keh-teh koo-dah-sigh' }
+    ],
+    verbs: [
+        { ja: 'たべる', ro: 'taberu', meaning: 'To eat', type: 'Verb', pronounce: 'tah-beh-roo' },
+        { ja: 'のむ', ro: 'nomu', meaning: 'To drink', type: 'Verb', pronounce: 'noh-moo' },
+        { ja: 'いく', ro: 'iku', meaning: 'To go', type: 'Verb', pronounce: 'ee-koo' },
+        { ja: 'くる', ro: 'kuru', meaning: 'To come', type: 'Verb', pronounce: 'koo-roo' },
+        { ja: 'みる', ro: 'miru', meaning: 'To see / watch', type: 'Verb', pronounce: 'mee-roo' },
+        { ja: 'きく', ro: 'kiku', meaning: 'To hear / listen', type: 'Verb', pronounce: 'kee-koo' },
+        { ja: 'よむ', ro: 'yomu', meaning: 'To read', type: 'Verb', pronounce: 'yoh-moo' },
+        { ja: 'かく', ro: 'kaku', meaning: 'To write', type: 'Verb', pronounce: 'kah-koo' },
+        { ja: 'はなす', ro: 'hanasu', meaning: 'To speak', type: 'Verb', pronounce: 'hah-nah-soo' },
+        { ja: 'する', ro: 'suru', meaning: 'To do', type: 'Verb', pronounce: 'soo-roo' }
+    ],
+    adjectives: [
+        { ja: 'おいしい', ro: 'oishii', meaning: 'Delicious', type: 'Adjective', pronounce: 'oh-ee-shee' },
+        { ja: 'おおきい', ro: 'ookii', meaning: 'Big', type: 'Adjective', pronounce: 'oh-oh-kee' },
+        { ja: 'ちいさい', ro: 'chiisai', meaning: 'Small', type: 'Adjective', pronounce: 'chee-sigh' },
+        { ja: 'あつい', ro: 'atsui', meaning: 'Hot', type: 'Adjective', pronounce: 'ah-tsoo-ee' },
+        { ja: 'さむい', ro: 'samui', meaning: 'Cold', type: 'Adjective', pronounce: 'sah-moo-ee' },
+        { ja: 'かわいい', ro: 'kawaii', meaning: 'Cute', type: 'Adjective', pronounce: 'kah-wah-ee' },
+        { ja: 'たかい', ro: 'takai', meaning: 'Expensive / High', type: 'Adjective', pronounce: 'tah-kah-ee' },
+        { ja: 'やすい', ro: 'yasui', meaning: 'Cheap', type: 'Adjective', pronounce: 'yah-soo-ee' }
     ]
 };
 
@@ -244,6 +407,9 @@ const SENTENCE_LEVELS = [
         prompt: 'Target: "I eat sushi."',
         tePrompt: 'నేను సుశి తింటాను (Nenu sushi thintaanu)',
         hiPrompt: 'मैं सुशी खाता हूँ (Main sushi khaata hoon)',
+        koPrompt: '나는 스시를 먹습니다 (Naneun seusileul meogseumnida)',
+        taPrompt: 'நான் சுஷி சாப்பிடுகிறேன் (Naan sushi saapidugiren)',
+        esPrompt: 'Yo como sushi.',
         correctOrder: ['わたし', 'は', 'すし', 'を', 'たべます'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -257,6 +423,9 @@ const SENTENCE_LEVELS = [
         prompt: 'Target: "She drinks water."',
         tePrompt: 'ఆమె నీరు తాగుతుంది (Ame neeru thaguthundi)',
         hiPrompt: 'वह पानी पीती है (Wah paani peeti hai)',
+        koPrompt: '그녀는 물을 마십니다 (Geunyeoneun muleul masibnida)',
+        taPrompt: 'அவள் தண்ணீர் குடிக்கிறாள் (Aval thanneer kudikkiraal)',
+        esPrompt: 'Ella bebe agua.',
         correctOrder: ['かのじょ', 'は', 'みず', 'を', 'のみます'],
         words: [
             { ja: 'かのじょ', en: 'She', part: false },
@@ -270,6 +439,9 @@ const SENTENCE_LEVELS = [
         prompt: 'Target: "I go to Japan."',
         tePrompt: 'నేను జపాన్ కు వెళ్తాను (Nenu Japan ku velthaanu)',
         hiPrompt: 'मैं जापान जाता हूँ (Main Japan jaata hoon)',
+        koPrompt: '나는 일본에 갑니다 (Naneun ilbone gabnida)',
+        taPrompt: 'நான் ஜப்பான் செல்கிறேன் (Naan Jappan selgiren)',
+        esPrompt: 'Voy a Japón.',
         correctOrder: ['わたし', 'は', 'にほん', 'に', 'いきます'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -283,6 +455,9 @@ const SENTENCE_LEVELS = [
         prompt: 'Target: "My cat is cute."',
         tePrompt: 'నా పిల్లి ముద్దుగా ఉంది (Naa pilli mudduga undi)',
         hiPrompt: 'मेरी बिल्ली प्यारी है (Meri billi pyaari hai)',
+        koPrompt: '내 고양이는 귀엽습니다 (Nae goyang-ineun gwiyeobseumnida)',
+        taPrompt: 'என் பூனை அழகாக இருக்கிறது (En poonai azhagaga irukkiradhu)',
+        esPrompt: 'Mi gato es lindo.',
         correctOrder: ['わたし', 'の', 'ねこ', 'は', 'かわいい', 'です'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -291,6 +466,144 @@ const SENTENCE_LEVELS = [
             { ja: 'は', en: '[Topic]', part: true },
             { ja: 'かわいい', en: 'Cute', part: false },
             { ja: 'です', en: 'Is', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "He reads a book at the library."',
+        tePrompt: 'అతను లైబ్రరీలో పుస్తకం చదువుతాడు (Athanu library lo pusthakam chaduvuthaadu)',
+        hiPrompt: 'वह पुस्तकालय में किताब पढ़ता है (Wah pustakalay mein kitab padhta hai)',
+        koPrompt: '그는 도서관에서 책을 읽습니다 (Geuneun doseogwan-eseo chaeg-eul ilgseumnida)',
+        taPrompt: 'அவன் நூலகத்தில் புத்தகம் படிக்கிறான் (Avan noolagathil puthagam padikkiraan)',
+        esPrompt: 'Él lee un libro en la biblioteca.',
+        correctOrder: ['かれ', 'は', 'としょかん', 'で', 'ほん', 'を', 'よみます'],
+        words: [
+            { ja: 'かれ', en: 'He', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'としょかん', en: 'Library', part: false },
+            { ja: 'で', en: '[At/In]', part: true },
+            { ja: 'ほん', en: 'Book', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'よみます', en: 'Read', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I came from home."',
+        tePrompt: 'నేను ఇంటి నుండి వచ్చాను (Nenu inti nundi vacchaanu)',
+        hiPrompt: 'मैं घर से आया हूँ (Main ghar se aaya hoon)',
+        koPrompt: '나는 집에서 왔습니다 (Naneun jib-eseo wasseumnida)',
+        taPrompt: 'நான் வீட்டிலிருந்து வந்தேன் (Naan veettil-irundhu vandhen)',
+        esPrompt: 'Vine de casa.',
+        correctOrder: ['わたし', 'は', 'うち', 'から', 'きました'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'うち', en: 'Home', part: false },
+            { ja: 'から', en: '[From]', part: true },
+            { ja: 'きました', en: 'Came', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "She studies until night."',
+        tePrompt: 'ఆమె రాత్రి వరకు చదువుకుంటుంది (Ame raathri varaku chaduvukuntundi)',
+        hiPrompt: 'वह रात तक पढ़ाई करती है (Wah raat tak padhai karti hai)',
+        koPrompt: '그녀는 밤까지 공부합니다 (Geunyeoneun bam-kkaji gongbuhabnida)',
+        taPrompt: 'அவள் இரவு வரை படிக்கிறாள் (Aval iravu varai padikkiraal)',
+        esPrompt: 'Ella estudia hasta la noche.',
+        correctOrder: ['かのじょ', 'は', 'よる', 'まで', 'べんきょうします'],
+        words: [
+            { ja: 'かのじょ', en: 'She', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'よる', en: 'Night', part: false },
+            { ja: 'まで', en: '[Until]', part: true },
+            { ja: 'べんきょうします', en: 'Study', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I go to school with a friend."',
+        tePrompt: 'నేను స్నేహితుడితో పాఠశాలకు వెళ్తాను (Nenu snehithuditho paatashaalaku velthaanu)',
+        hiPrompt: 'मैं दोस्त के साथ स्कूल जाता हूँ (Main dost ke sath school jaata hoon)',
+        koPrompt: '나는 친구와 함께 학교에 갑니다 (Naneun chingu-wa hamkke haggyo-e gabnida)',
+        taPrompt: 'நான் நண்பனுடன் பள்ளிக்குச் செல்கிறேன் (Naan nanbanudan pallikkuch selgiren)',
+        esPrompt: 'Voy a la escuela con un amigo.',
+        correctOrder: ['わたし', 'は', 'ともだち', 'と', 'がっこう', 'に', 'いきます'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'ともだち', en: 'Friend', part: false },
+            { ja: 'と', en: '[With]', part: true },
+            { ja: 'がっこう', en: 'School', part: false },
+            { ja: 'に', en: '[To]', part: true },
+            { ja: 'いきます', en: 'Go', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Mother\'s cooking is delicious."',
+        tePrompt: 'అమ్మ వంట రుచిగా ఉంటుంది (Amma vanta ruchiga untundi)',
+        hiPrompt: 'माँ का खाना स्वादिष्ट है (Maa ka khana swadisht hai)',
+        koPrompt: '어머니의 요리는 맛있습니다 (Eomeoni-ui yolineun mas-issseumnida)',
+        taPrompt: 'அம்மாவின் சமையல் சுவையாக இருக்கிறது (Ammavin samayal suvaiyaga irukkiradhu)',
+        esPrompt: 'La comida de mi madre es deliciosa.',
+        correctOrder: ['はは', 'の', 'りょうり', 'は', 'おいしい', 'です'],
+        words: [
+            { ja: 'はは', en: 'Mother', part: false },
+            { ja: 'の', en: '[\'s / Possession]', part: true },
+            { ja: 'りょうり', en: 'Cooking', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'おいしい', en: 'Delicious', part: false },
+            { ja: 'です', en: 'Is', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I drink tea every morning."',
+        tePrompt: 'నేను ప్రతి ఉదయం టీ తాగుతాను (Nenu prathi udayam tea thaaguthaanu)',
+        hiPrompt: 'मैं हर सुबह चाय पीता हूँ (Main har subah chai peeta hoon)',
+        koPrompt: '나는 매일 아침 차를 마십니다 (Naneun maeil achim cha-leul masibnida)',
+        taPrompt: 'நான் தினமும் காலையில் தேநீர் குடிக்கிறேன் (Naan dhinamum kaalaiyil theneer kudikkiren)',
+        esPrompt: 'Bebo té todas las mañanas.',
+        correctOrder: ['わたし', 'は', 'まいあさ', 'おちゃ', 'を', 'のみます'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'まいあさ', en: 'Every Morning', part: false },
+            { ja: 'おちゃ', en: 'Tea', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'のみます', en: 'Drink', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "The teacher teaches Japanese at school."',
+        tePrompt: 'ఉపాధ్యాయుడు పాఠశాలలో జపనీస్ బోధిస్తాడు (Upadhyaayudu paatashaalalo Japanese bodhisthaadu)',
+        hiPrompt: 'शिक्षक स्कूल में जापानी पढ़ाते हैं (Shikshak school mein japani padhate hain)',
+        koPrompt: '선생님은 학교에서 일본어를 가르칩니다 (Seonsaengnim-eun haggyo-eseo ilboneo-leul galeuchibnida)',
+        taPrompt: 'ஆசிரியர் பள்ளியில் ஜப்பானிய மொழி கற்பிக்கிறார் (Aasiriyar palliyil Jappaniya mozhi karpikkiraar)',
+        esPrompt: 'El profesor enseña japonés en la escuela.',
+        correctOrder: ['せんせい', 'は', 'がっこう', 'で', 'にほんご', 'を', 'おしえます'],
+        words: [
+            { ja: 'せんせい', en: 'Teacher', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'がっこう', en: 'School', part: false },
+            { ja: 'で', en: '[At]', part: true },
+            { ja: 'にほんご', en: 'Japanese', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'おしえます', en: 'Teach', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I want to go to Japan next year."',
+        tePrompt: 'నేను వచ్చే ఏడాది జపాన్ వెళ్లాలనుకుంటున్నాను (Nenu vacche edadi Japan vellalanukuntunnanu)',
+        hiPrompt: 'मैं अगले साल जापान जाना चाहता हूँ (Main agle saal Japan jaana chahta hoon)',
+        koPrompt: '나는 내년에 일본에 가고 싶습니다 (Naneun naenyeon-e ilbone gago sipseumnida)',
+        taPrompt: 'நான் அடுத்த வருடம் ஜப்பான் செல்ல விரும்புகிறேன் (Naan adutha varudam Jappan sella virumbugiren)',
+        esPrompt: 'Quiero ir a Japón el año que viene.',
+        correctOrder: ['わたし', 'は', 'らいねん', 'にほん', 'に', 'いきたい', 'です'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'らいねん', en: 'Next Year', part: false },
+            { ja: 'にほん', en: 'Japan', part: false },
+            { ja: 'に', en: '[To]', part: true },
+            { ja: 'いきたい', en: 'Want to go', part: false },
+            { ja: 'です', en: 'Is/Polite', part: false }
         ]
     }
 ];
@@ -332,6 +645,21 @@ function loadGameData() {
     if (savedPlayer) {
         player = JSON.parse(savedPlayer);
     }
+    // Ensure stats structure exists
+    if (!player.stats) {
+        player.stats = {
+            totalAnswered: 0,
+            totalCorrect: 0,
+            byLevel: {
+                N5: { answered: 0, correct: 0 },
+                N4: { answered: 0, correct: 0 },
+                N3: { answered: 0, correct: 0 },
+                N2: { answered: 0, correct: 0 },
+                N1: { answered: 0, correct: 0 }
+            },
+            byType: {}
+        };
+    }
 }
 
 function saveGameData() {
@@ -357,6 +685,13 @@ function updateHUDDisplays() {
     if (player.level >= 12) rank = 'Shogun';
     if (player.level >= 20) rank = 'Kensei (Sword Saint)';
     document.getElementById('rank-name').textContent = rank;
+
+    // Update accuracy display
+    const accEl = document.getElementById('accuracy-display');
+    if (accEl && player.stats) {
+        const pct = player.stats.totalAnswered > 0 ? Math.round((player.stats.totalCorrect / player.stats.totalAnswered) * 100) : 0;
+        accEl.innerHTML = `<i class="fa-solid fa-bullseye"></i> Accuracy: <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
+    }
 
     updateInventoryBadges();
 }
@@ -693,6 +1028,12 @@ function loadBuildLevel() {
         promptText += ` <br><span style="font-size: 0.9rem; color: var(--accent-pink);">Native: ${lvl.tePrompt}</span>`;
     } else if (lang === 'hindi' && lvl.hiPrompt) {
         promptText += ` <br><span style="font-size: 0.9rem; color: var(--accent-gold);">Native: ${lvl.hiPrompt}</span>`;
+    } else if (lang === 'korean' && lvl.koPrompt) {
+        promptText += ` <br><span style="font-size: 0.9rem; color: #4facfe;">Native: ${lvl.koPrompt}</span>`;
+    } else if (lang === 'tamil' && lvl.taPrompt) {
+        promptText += ` <br><span style="font-size: 0.9rem; color: #00f2fe;">Native: ${lvl.taPrompt}</span>`;
+    } else if (lang === 'spanish' && lvl.esPrompt) {
+        promptText += ` <br><span style="font-size: 0.9rem; color: #f9d423;">Native: ${lvl.esPrompt}</span>`;
     }
     document.getElementById('sentence-prompt').innerHTML = promptText;
     document.getElementById('sentence-feedback').className = 'sentence-feedback';
@@ -924,9 +1265,37 @@ function handleQuestAttack(btn, selection, correct) {
     const buttons = document.querySelectorAll('#combat-options button');
     buttons.forEach(b => b.style.pointerEvents = 'none');
     
+    // Stats tracking
+    const q = currentQuestQuestions[activeQuestionIdx];
+    if (!player.stats) {
+        player.stats = {
+            totalAnswered: 0,
+            totalCorrect: 0,
+            byLevel: {
+                N5: { answered: 0, correct: 0 },
+                N4: { answered: 0, correct: 0 },
+                N3: { answered: 0, correct: 0 },
+                N2: { answered: 0, correct: 0 },
+                N1: { answered: 0, correct: 0 }
+            },
+            byType: {}
+        };
+    }
+    player.stats.totalAnswered++;
+    if (!player.stats.byLevel[currentTier]) {
+        player.stats.byLevel[currentTier] = { answered: 0, correct: 0 };
+    }
+    player.stats.byLevel[currentTier].answered++;
+    if (q && q.type) {
+        player.stats.byType[q.type] = (player.stats.byType[q.type] || 0) + 1;
+    }
+    
     const dmgDealt = Math.round(20 + Math.random() * 10);
     
     if (selection === correct) {
+        player.stats.totalCorrect++;
+        player.stats.byLevel[currentTier].correct++;
+        
         btn.classList.add('correct');
         activeEnemy.hp -= dmgDealt;
         if (activeEnemy.hp < 0) activeEnemy.hp = 0;
@@ -955,13 +1324,41 @@ function handleQuestAttack(btn, selection, correct) {
 function submitTextAttack() {
     const input = document.getElementById('combat-text-answer');
     const ans = input.value.trim().toLowerCase();
-    const correct = currentQuestQuestions[activeQuestionIdx].answer.toLowerCase();
+    const q = currentQuestQuestions[activeQuestionIdx];
+    const correct = q.answer.toLowerCase();
     
     if (!ans) return;
     
+    // Stats tracking
+    if (!player.stats) {
+        player.stats = {
+            totalAnswered: 0,
+            totalCorrect: 0,
+            byLevel: {
+                N5: { answered: 0, correct: 0 },
+                N4: { answered: 0, correct: 0 },
+                N3: { answered: 0, correct: 0 },
+                N2: { answered: 0, correct: 0 },
+                N1: { answered: 0, correct: 0 }
+            },
+            byType: {}
+        };
+    }
+    player.stats.totalAnswered++;
+    if (!player.stats.byLevel[currentTier]) {
+        player.stats.byLevel[currentTier] = { answered: 0, correct: 0 };
+    }
+    player.stats.byLevel[currentTier].answered++;
+    if (q && q.type) {
+        player.stats.byType[q.type] = (player.stats.byType[q.type] || 0) + 1;
+    }
+
     const dmgDealt = Math.round(30 + Math.random() * 10);
     
     if (ans === correct) {
+        player.stats.totalCorrect++;
+        player.stats.byLevel[currentTier].correct++;
+        
         activeEnemy.hp -= dmgDealt;
         if (activeEnemy.hp < 0) activeEnemy.hp = 0;
         updateEnemyHPBar();

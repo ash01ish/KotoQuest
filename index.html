@@ -43,6 +43,7 @@
                         <div class="stats-badge">
                             <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> Streak: <strong id="streak-count">1 Day</strong></span>
                             <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> Rank: <strong id="rank-name">Novice</strong></span>
+                            <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Accuracy: <strong>0%</strong> (0/0)</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px);">
                             <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
@@ -858,6 +859,8 @@
                             <button class="toggle-btn active" data-cat="kana">Letters</button>
                             <button class="toggle-btn" data-cat="numbers">Numbers</button>
                             <button class="toggle-btn" data-cat="phrases">Survival Phrases</button>
+                            <button class="toggle-btn" data-cat="verbs">Verbs</button>
+                            <button class="toggle-btn" data-cat="adjectives">Adjectives</button>
                         </div>
                         <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
                     </div>
