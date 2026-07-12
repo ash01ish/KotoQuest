@@ -660,6 +660,10 @@ function loadGameData() {
             byType: {}
         };
     }
+    // Ensure SRS data structure exists
+    if (!player.srsData) {
+        player.srsData = {};
+    }
 }
 
 function saveGameData() {
@@ -731,11 +735,13 @@ function speakJapanese(text) {
 }
 
 function setupAudioSpeakButtons() {
-    document.querySelectorAll('.speak-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+    document.body.addEventListener('click', (e) => {
+        const btn = e.target.closest('.speak-btn');
+        if (btn) {
             e.stopPropagation();
-            speakJapanese(btn.getAttribute('data-speak'));
-        });
+            const text = btn.getAttribute('data-speak');
+            if (text) speakJapanese(text);
+        }
     });
 }
 
@@ -952,9 +958,49 @@ function updateGuide() {
 
 // --- FLASHCARDS CONTROLLER ---
 let cardCat = 'kana', cardIdx = 0;
+let dueOnly = false;
+
+function getActiveCardList() {
+    const fullList = VOCAB_DATA[cardCat] || [];
+    if (!dueOnly) return fullList;
+    
+    return fullList.filter(card => {
+        if (!player.srsData) player.srsData = {};
+        const srs = player.srsData[card.ja];
+        if (!srs) return true; // New card is due
+        return srs.nextReviewTime <= Date.now();
+    });
+}
+
+function updateFlashcardControlsDisplay() {
+    const box = document.getElementById('flashcard-card-box');
+    const stdNav = document.getElementById('card-nav-standard');
+    const srsNav = document.getElementById('card-nav-srs');
+    
+    const list = getActiveCardList();
+    if (list.length === 0) {
+        stdNav.style.display = 'none';
+        srsNav.style.display = 'none';
+        return;
+    }
+    
+    if (box.classList.contains('flipped')) {
+        stdNav.style.display = 'none';
+        srsNav.style.display = 'flex';
+    } else {
+        stdNav.style.display = 'flex';
+        srsNav.style.display = 'none';
+    }
+}
+
 function setupFlashcards() {
     const box = document.getElementById('flashcard-card-box');
-    box.addEventListener('click', () => box.classList.toggle('flipped'));
+    box.addEventListener('click', () => {
+        const list = getActiveCardList();
+        if (list.length === 0) return; // ignore flip if no cards
+        box.classList.toggle('flipped');
+        updateFlashcardControlsDisplay();
+    });
     
     const toggles = document.querySelectorAll('#flashcard-category-toggle .toggle-btn');
     toggles.forEach(t => {
@@ -964,37 +1010,121 @@ function setupFlashcards() {
             cardCat = t.getAttribute('data-cat');
             cardIdx = 0;
             updateCard();
+            updateFlashcardControlsDisplay();
         });
     });
     
-    document.getElementById('btn-card-prev').addEventListener('click', () => {
-        const list = VOCAB_DATA[cardCat];
-        cardIdx = (cardIdx - 1 + list.length) % list.length;
+    document.getElementById('chk-srs-due').addEventListener('change', function() {
+        dueOnly = this.checked;
+        cardIdx = 0;
         updateCard();
+        updateFlashcardControlsDisplay();
     });
     
-    document.getElementById('btn-card-next').addEventListener('click', () => {
-        const list = VOCAB_DATA[cardCat];
+    document.getElementById('btn-card-prev').addEventListener('click', (e) => {
+        e.stopPropagation();
+        const list = getActiveCardList();
+        if (list.length === 0) return;
+        cardIdx = (cardIdx - 1 + list.length) % list.length;
+        updateCard();
+        updateFlashcardControlsDisplay();
+    });
+    
+    document.getElementById('btn-card-next').addEventListener('click', (e) => {
+        e.stopPropagation();
+        const list = getActiveCardList();
+        if (list.length === 0) return;
         cardIdx = (cardIdx + 1) % list.length;
         updateCard();
+        updateFlashcardControlsDisplay();
     });
     
     document.getElementById('btn-card-audio').addEventListener('click', (e) => {
         e.stopPropagation();
-        const list = VOCAB_DATA[cardCat];
+        const list = getActiveCardList();
+        if (list.length === 0) return;
         speakJapanese(list[cardIdx].ja);
     });
     
+    // Bind SRS rating buttons
+    document.getElementById('btn-srs-again').addEventListener('click', (e) => { e.stopPropagation(); rateCard('again'); });
+    document.getElementById('btn-srs-hard').addEventListener('click', (e) => { e.stopPropagation(); rateCard('hard'); });
+    document.getElementById('btn-srs-good').addEventListener('click', (e) => { e.stopPropagation(); rateCard('good'); });
+    document.getElementById('btn-srs-easy').addEventListener('click', (e) => { e.stopPropagation(); rateCard('easy'); });
+    
     updateCard();
+    updateFlashcardControlsDisplay();
+}
+
+function rateCard(rating) {
+    const list = getActiveCardList();
+    if (list.length === 0) return;
+    const card = list[cardIdx];
+    
+    if (!player.srsData) player.srsData = {};
+    if (!player.srsData[card.ja]) {
+        player.srsData[card.ja] = {
+            intervalDays: 0,
+            easeFactor: 2.5,
+            nextReviewTime: 0
+        };
+    }
+    
+    const srs = player.srsData[card.ja];
+    let nextMs = 0;
+    
+    if (rating === 'again') {
+        srs.intervalDays = 0;
+        nextMs = 60 * 1000; // 1 minute
+    } else if (rating === 'hard') {
+        srs.intervalDays = 0.5;
+        nextMs = 12 * 3600 * 1000; // 12 hours
+    } else if (rating === 'good') {
+        srs.intervalDays = srs.intervalDays === 0 ? 3 : srs.intervalDays * 2.4;
+        nextMs = srs.intervalDays * 24 * 3600 * 1000;
+    } else if (rating === 'easy') {
+        srs.intervalDays = srs.intervalDays === 0 ? 7 : srs.intervalDays * 4.0;
+        nextMs = srs.intervalDays * 24 * 3600 * 1000;
+    }
+    
+    srs.nextReviewTime = Date.now() + nextMs;
+    saveGameData();
+    
+    // Slide card effect
+    const box = document.getElementById('flashcard-card-box');
+    box.classList.add('slide-out');
+    
+    setTimeout(() => {
+        box.classList.remove('slide-out');
+        box.classList.remove('flipped');
+        
+        const newList = getActiveCardList();
+        if (cardIdx >= newList.length) {
+            cardIdx = 0;
+        }
+        updateCard();
+        updateFlashcardControlsDisplay();
+    }, 400);
 }
 
 function updateCard() {
     const box = document.getElementById('flashcard-card-box');
     box.classList.remove('flipped');
     
-    const list = VOCAB_DATA[cardCat];
-    const card = list[cardIdx];
+    const list = getActiveCardList();
     
+    if (list.length === 0) {
+        document.getElementById('card-progress').textContent = `0 / 0`;
+        document.getElementById('card-front-type').textContent = 'SRS SUCCESS';
+        document.getElementById('card-front-txt').textContent = 'All caught up! 🎉';
+        document.getElementById('card-back-type').textContent = 'SRS SUCCESS';
+        document.getElementById('card-back-pronounce').textContent = 'No cards currently due for review.';
+        document.getElementById('card-back-meaning').textContent = 'Try checking in later or uncheck "Due Only" to browse cards.';
+        document.getElementById('card-back-romaji').textContent = '';
+        return;
+    }
+    
+    const card = list[cardIdx];
     document.getElementById('card-progress').textContent = `${cardIdx + 1} / ${list.length}`;
     document.getElementById('card-front-type').textContent = card.type.toUpperCase();
     document.getElementById('card-front-txt').textContent = card.ja;
@@ -1543,6 +1673,13 @@ function renderParticleCalculator(key) {
     };
     document.getElementById('calc-native-label').textContent = langLabels[lang] || 'Native Equivalent';
 
+    const titleBtn = document.getElementById('btn-speak-calc-particle');
+    if (titleBtn) {
+        // extract active particle char: e.g. "は" from "は (wa)"
+        const activeChar = (data.title || '').split(' ')[0] || '';
+        titleBtn.setAttribute('data-speak', activeChar);
+    }
+
     const listContainer = document.getElementById('calc-examples-list');
     listContainer.innerHTML = '';
 
@@ -1556,8 +1693,11 @@ function renderParticleCalculator(key) {
         const nativeText = ex[lang] || '';
 
         item.innerHTML = `
-            <div style="font-family: var(--font-japanese); font-size: 1.15rem; color: #fff; margin-bottom: 2px;">
-                ${ex.ja} <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-sans);">(${ex.ro})</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+                <div style="font-family: var(--font-japanese); font-size: 1.15rem; color: #fff;">
+                    ${ex.ja} <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-sans);">(${ex.ro})</span>
+                </div>
+                <button class="btn btn-icon speak-btn" data-speak="${ex.ja}" style="padding: 2px 6px; font-size: 0.75rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff;"><i class="fa-solid fa-volume-high"></i></button>
             </div>
             <div style="font-size: 0.85rem; margin-bottom: 2px;">
                 <strong style="color: var(--accent-teal);">English:</strong> ${ex.en}

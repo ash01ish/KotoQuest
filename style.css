@@ -1360,6 +1360,13 @@ canvas {
     color: var(--accent-pink);
 }
 
+/* SRS Animations & styles */
+.flashcard-container.slide-out {
+    transform: scale(0.9) translateX(200px);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
 /* ========== MOBILE RESPONSIVE ========== */
 @media (max-width: 768px) {
     .container { padding: 10px; }

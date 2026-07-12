@@ -277,10 +277,12 @@
                             <button class="btn p-calc-btn" data-p="made">まで (made)</button>
                         </div>
 
-                        <!-- Calculator Display Screen -->
                         <div class="formula-card" id="particle-display-panel" style="border-left: 4px solid var(--accent-teal);">
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-bottom: 15px;">
-                                <h3 id="calc-particle-title" style="color: #fff; font-size: 1.4rem;">は (wa)</h3>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <h3 id="calc-particle-title" style="color: #fff; font-size: 1.4rem; margin: 0;">は (wa)</h3>
+                                    <button class="btn" id="btn-speak-calc-particle" style="padding: 4px 8px; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-volume-high"></i></button>
+                                </div>
                                 <span class="badge" id="calc-particle-role" style="font-size: 0.8rem;">Topic Marker</span>
                             </div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;" id="calc-grid-layout">
@@ -862,7 +864,12 @@
                             <button class="toggle-btn" data-cat="verbs">Verbs</button>
                             <button class="toggle-btn" data-cat="adjectives">Adjectives</button>
                         </div>
-                        <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
+                                <input type="checkbox" id="chk-srs-due" style="accent-color: var(--accent-pink); width: 15px; height: 15px; cursor: pointer;"> Due Only
+                            </label>
+                            <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
+                        </div>
                     </div>
 
                     <div class="flashcard-area">
@@ -881,10 +888,19 @@
                             </div>
                         </div>
 
-                        <div class="flashcard-btn-row">
+                        <!-- Standard navigation controls -->
+                        <div class="flashcard-btn-row" id="card-nav-standard">
                             <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> Previous</button>
                             <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> Listen</button>
                             <button class="btn btn-primary" id="btn-card-next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- SRS Rating controls, shown on flip -->
+                        <div class="flashcard-btn-row" id="card-nav-srs" style="display: none; justify-content: center; gap: 8px;">
+                            <button class="btn" id="btn-srs-again" style="background: #e74c3c; border-color: #c0392b; color: #fff;">Again <small style="display:block; font-size: 0.65rem; opacity: 0.85; margin-top: 2px;">1m</small></button>
+                            <button class="btn" id="btn-srs-hard" style="background: #e67e22; border-color: #d35400; color: #fff;">Hard <small style="display:block; font-size: 0.65rem; opacity: 0.85; margin-top: 2px;">12h</small></button>
+                            <button class="btn" id="btn-srs-good" style="background: #3498db; border-color: #2980b9; color: #fff;">Good <small style="display:block; font-size: 0.65rem; opacity: 0.85; margin-top: 2px;">3d</small></button>
+                            <button class="btn" id="btn-srs-easy" style="background: #2ecc71; border-color: #27ae60; color: #fff;">Easy <small style="display:block; font-size: 0.65rem; opacity: 0.85; margin-top: 2px;">7d</small></button>
                         </div>
                     </div>
                 </div>
