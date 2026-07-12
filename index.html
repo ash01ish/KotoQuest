@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KotoQuest - A gamified multilingual Japanese learning portal for JLPT N5 to N1 mastery.">
+    <title>KotoQuest - Gamified Multilingual Japanese N1 Academy</title>
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Dashboard / HUD -->
+        <header>
+            <div class="hero-banner">
+                <div class="hero-overlay"></div>
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h1>KotoQuest</h1>
+                        <p id="hero-subtitle">Japanese Mastery for Telugu & Hindi Speakers (JLPT N5 &rarr; N1)</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+                        <div class="stats-badge">
+                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> Streak: <strong id="streak-count">1 Day</strong></span>
+                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> Rank: <strong id="rank-name">Novice</strong></span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px);">
+                            <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
+                            <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
+                                <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
+                                <option value="hindi" style="background: #14161f; color: #fff;">Hindi (हिन्दी)</option>
+                                <option value="korean" style="background: #14161f; color: #fff;">Korean (한국어)</option>
+                                <option value="tamil" style="background: #14161f; color: #fff;">Tamil (தமிழ்)</option>
+                                <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
+                                <option value="english" style="background: #14161f; color: #fff;">English (English Only)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <nav id="main-nav">
+                <button class="nav-tab active" data-tab="arena">
+                    <i class="fa-solid fa-shield-halved"></i> Quest Arena
+                </button>
+                <button class="nav-tab" data-tab="bridge">
+                    <i class="fa-solid fa-circle-nodes"></i> Trilingual Bridge
+                </button>
+                <button class="nav-tab" data-tab="curriculum">
+                    <i class="fa-solid fa-book-open"></i> Daily Lessons
+                </button>
+                <button class="nav-tab" data-tab="kana">
+                    <i class="fa-solid fa-font"></i> Kana Charts
+                </button>
+                <button class="nav-tab" data-tab="canvas">
+                    <i class="fa-solid fa-paintbrush"></i> Canvas Writer
+                </button>
+                <button class="nav-tab" data-tab="flashcards">
+                    <i class="fa-solid fa-clone"></i> Flashcards
+                </button>
+                <button class="nav-tab" data-tab="builder">
+                    <i class="fa-solid fa-cubes"></i> Sentence Builder
+                </button>
+            </nav>
+        </header>
+
+        <!-- Dynamic Game HUD (Level, HP, XP, Gold, Inventory) -->
+        <div class="game-hud">
+            <div class="hud-level" id="player-level-display">Lv. 1</div>
+            
+            <div class="hud-stat">
+                <div class="stat-label">
+                    <span>HP (Health Points)</span>
+                    <span id="player-hp-text">100 / 100</span>
+                </div>
+                <div class="hud-bar-container">
+                    <div class="hud-bar-fill hp" id="player-hp-bar" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="hud-stat">
+                <div class="stat-label">
+                    <span>XP (Experience Points)</span>
+                    <span id="player-xp-text">0 / 100</span>
+                </div>
+                <div class="hud-bar-container">
+                    <div class="hud-bar-fill xp" id="player-xp-bar" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="hud-gold" id="player-gold-display">
+                <i class="fa-solid fa-coins"></i> 0 Gold
+            </div>
+
+            <!-- Player Inventory Quick Access -->
+            <div class="hud-inventory-box">
+                <span class="inventory-title">Inventory:</span>
+                <div class="inventory-slot empty" id="slot-potion" data-item="potion" title="Healing Potion: Click to use (Restores 40 HP)">
+                    <i class="fa-solid fa-flask"></i>
+                    <span class="inventory-badge" id="badge-potion" style="display: none;">0</span>
+                </div>
+                <div class="inventory-slot empty" id="slot-shield" data-item="shield" title="Grammar Shield: Automatically blocks damage from 1 incorrect answer">
+                    <i class="fa-solid fa-shield"></i>
+                    <span class="inventory-badge" id="badge-shield" style="display: none;">0</span>
+                </div>
+                <div class="inventory-slot empty" id="slot-hint" data-item="hint" title="Hint Scroll: Click to eliminate one incorrect answer option in battle">
+                    <i class="fa-solid fa-scroll"></i>
+                    <span class="inventory-badge" id="badge-hint" style="display: none;">0</span>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <!-- 1. QUEST ARENA (CORE GAME) -->
+            <section id="arena" class="tab-content active">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <i class="fa-solid fa-map-location-dot" style="color: var(--accent-pink);"></i> Select Quest Difficulty Tier
+                    </div>
+                    <div class="quest-selection-grid" id="quest-tier-selector">
+                        <button class="quest-tier-btn active" data-tier="N5">N5 (Beginner)</button>
+                        <button class="quest-tier-btn" data-tier="N4">N4 (Apprentice)</button>
+                        <button class="quest-tier-btn" data-tier="N3">N3 (Intermediate)</button>
+                        <button class="quest-tier-btn" data-tier="N2">N2 (Advanced)</button>
+                        <button class="quest-tier-btn" data-tier="N1">N1 (Master/Native)</button>
+                    </div>
+                </div>
+
+                <div class="rpg-arena">
+                    <!-- Left: Monster / Battle Status -->
+                    <div class="enemy-panel">
+                        <div class="enemy-info">
+                            <div class="enemy-name" id="enemy-name">KANJI SHOGUN</div>
+                            <div class="enemy-hp-container">
+                                <div class="stat-label">
+                                    <span>Enemy HP</span>
+                                    <span id="enemy-hp-text">80/80</span>
+                                </div>
+                                <div class="hud-bar-container" style="height: 10px;">
+                                    <div class="hud-bar-fill hp" id="enemy-hp-bar" style="width: 100%; background: #ff4d4d;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="monster-sprite" id="enemy-sprite">日</div>
+                        <div class="monster-sub" id="enemy-sub-label">Type: N5 Kanji Monster</div>
+
+                        <!-- Combat Console Logs -->
+                        <div class="battle-logs-wrapper" id="battle-log">
+                            <div class="log-entry system">A wild Kanji Monster appeared! Select your combat action...</div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Questions / Controls -->
+                    <div class="glass-card combat-controls" style="margin-bottom: 0;">
+                        <div class="combat-question-box">
+                            <div class="combat-question-title" id="combat-question-lbl">Combat Question:</div>
+                            <div class="combat-question-text" id="combat-question-main">What is the meaning of this Kanji: "日" ?</div>
+                        </div>
+
+                        <!-- Options grid -->
+                        <div class="combat-options-grid" id="combat-options">
+                            <button class="option-btn">Sun / Day</button>
+                            <button class="option-btn">Moon / Month</button>
+                            <button class="option-btn">Water</button>
+                            <button class="option-btn">Tree</button>
+                        </div>
+
+                        <!-- Text inputs (when writing kanji/vocabulary spelling) -->
+                        <div class="quiz-input-box" id="combat-input-box" style="display: none; margin-bottom: 0;">
+                            <input type="text" class="quiz-input" id="combat-text-answer" placeholder="Type correct spelling..." autocomplete="off">
+                            <button class="btn btn-primary" id="btn-combat-submit-answer">Attack!</button>
+                        </div>
+                        
+                        <div style="display: flex; gap: 10px; margin-top: 15px;">
+                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> Pronounce Question</button>
+                            <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> Run Away</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merchant Shop -->
+                <div class="glass-card" style="margin-top: 25px;">
+                    <div class="card-title">
+                        <i class="fa-solid fa-shop" style="color: var(--accent-gold);"></i> Samurai Merchant Shop
+                        <span class="badge" style="background: rgba(255,165,2,0.15); color: var(--accent-gold); border-color: var(--accent-gold);">Gold Exchange</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Earn Gold by defeating monsters, then buy essential battle aids to survive N3, N2, and N1 boss fights!</p>
+                    
+                    <div class="shop-grid">
+                        <div class="shop-card">
+                            <div>
+                                <div class="shop-icon"><i class="fa-solid fa-flask"></i></div>
+                                <div class="shop-name">Healing Potion</div>
+                                <div class="shop-desc">Restores 40 Health Points (HP) instantly. Can be clicked in your inventory bar to drink during combat.</div>
+                            </div>
+                            <div>
+                                <div class="shop-cost">50 Gold</div>
+                                <button class="btn btn-gold btn-buy" data-item="potion">Buy Potion</button>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <div>
+                                <div class="shop-icon"><i class="fa-solid fa-shield"></i></div>
+                                <div class="shop-name">Grammar Shield</div>
+                                <div class="shop-desc">Blocks all damage from one incorrect answer in battle. Triggers automatically when you make a mistake.</div>
+                            </div>
+                            <div>
+                                <div class="shop-cost">80 Gold</div>
+                                <button class="btn btn-gold btn-buy" data-item="shield">Buy Shield</button>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <div>
+                                <div class="shop-icon"><i class="fa-solid fa-scroll"></i></div>
+                                <div class="shop-name">Hint Scroll</div>
+                                <div class="shop-desc">Eliminates one wrong answer option from the multiple-choice grid. Click in inventory during battle.</div>
+                            </div>
+                            <div>
+                                <div class="shop-cost">120 Gold</div>
+                                <button class="btn btn-gold btn-buy" data-item="hint">Buy Scroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. TRILINGUAL BRIDGE (COMPARATIVE LINGUISTICS & N1 STRATEGY) -->
+            <section id="bridge" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <i class="fa-solid fa-bridge-water" style="color: var(--accent-pink);"></i> Trilingual Japanese Grammar Bridge
+                        <span class="badge">Linguistic Mappings</span>
+                    </div>
+
+                    <div class="telugu-header">
+                        <h3>Linguistic Hacks for Telugu & Hindi Speakers</h3>
+                        <p>Japanese, Telugu, and Hindi are all **SOV (Subject-Object-Verb)** languages that use **postpositional particle systems**. You share identical syntactic wiring, meaning you can translate Japanese thoughts directly in order, without flipping them like English speakers must!</p>
+                    </div>
+
+                    <!-- Particle Calculator Widget -->
+                    <div class="glass-card" style="background: rgba(0,0,0,0.15); border-color: rgba(255,255,255,0.05); margin-bottom: 25px;">
+                        <h4 style="color: #fff; margin-bottom: 10px;"><i class="fa-solid fa-calculator" style="color: var(--accent-gold);"></i> Interactive Particle Calculator</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Click any Japanese particle to view its structural Telugu, Hindi, and English equivalents and comparative sentence formulas:</p>
+                        
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;" id="particle-calc-buttons">
+                            <button class="btn btn-teal p-calc-btn active" data-p="wa">は (wa)</button>
+                            <button class="btn p-calc-btn" data-p="o">を (o)</button>
+                            <button class="btn p-calc-btn" data-p="ni">に (ni)</button>
+                            <button class="btn p-calc-btn" data-p="de">で (de)</button>
+                            <button class="btn p-calc-btn" data-p="no">の (no)</button>
+                            <button class="btn p-calc-btn" data-p="to">と (to)</button>
+                            <button class="btn p-calc-btn" data-p="kara">から (kara)</button>
+                            <button class="btn p-calc-btn" data-p="made">まで (made)</button>
+                        </div>
+
+                        <!-- Calculator Display Screen -->
+                        <div class="formula-card" id="particle-display-panel" style="border-left: 4px solid var(--accent-teal);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-bottom: 15px;">
+                                <h3 id="calc-particle-title" style="color: #fff; font-size: 1.4rem;">は (wa)</h3>
+                                <span class="badge" id="calc-particle-role" style="font-size: 0.8rem;">Topic Marker</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;" id="calc-grid-layout">
+                                <div id="calc-native-col">
+                                    <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;" id="calc-native-label">Telugu Equivalent</div>
+                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-pink);" id="calc-native-eq">అయితే (aithe) / (unmarked)</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">English Equivalent</div>
+                                    <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-teal);" id="calc-english-eq">As for... / (subject)</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Comparative Mappings:</div>
+                                <div id="calc-examples-list" style="display: flex; flex-direction: column; gap: 6px;">
+                                    <!-- Dynamic formulas -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pre-Nominal Clause Comparison -->
+                    <div class="grammar-card">
+                        <div class="grammar-card-title"><i class="fa-solid fa-shuffle"></i> Advanced Hack: Pre-Nominal Relative Clauses</div>
+                        <p>In English, descriptive clauses follow nouns ("The book **[I read yesterday]**"). Japanese and Telugu place descriptive clauses **before** the noun they modify, requiring zero structural conversion for you:</p>
+                        <table class="telugu-table">
+                            <thead>
+                                <tr>
+                                    <th>Language</th>
+                                    <th>Structure</th>
+                                    <th>Example Formula</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>English</strong></td>
+                                    <td>Noun + Modifier</td>
+                                    <td>The book &larr; <strong>[that I read yesterday]</strong></td>
+                                </tr>
+                                <tr class="lang-col-te">
+                                    <td><strong style="color: var(--accent-teal);">Telugu</strong></td>
+                                    <td>Modifier + Noun</td>
+                                    <td><strong>[నేను నిన్న చదివిన]</strong> &rarr; పుస్తకం (*chadivina* &rarr; book)</td>
+                                </tr>
+                                <tr class="lang-col-hi">
+                                    <td><strong style="color: var(--accent-gold);">Hindi</strong></td>
+                                    <td>Modifier + Noun</td>
+                                    <td><strong>[कल मेरे द्वारा पढ़ी गई]</strong> &rarr; किताब (*padhi gayi* &rarr; book)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style="color: var(--accent-pink);">Japanese</strong></td>
+                                    <td>Modifier + Noun</td>
+                                    <td><strong>[昨日読んだ]</strong> &rarr; 本 (*yonda* &rarr; hon)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 24-Month Study Roadmap Plan -->
+                    <div class="glass-card" style="margin-top: 25px;">
+                        <div class="card-title">
+                            <i class="fa-solid fa-route" style="color: var(--accent-gold);"></i> 24-Month Multilingual N1 Study Planner
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Use this structured schedule designed to get a Telugu/Hindi/English speaker to JLPT N1 level in 2 years of daily study:</p>
+
+                        <div class="day-selector" style="gap: 15px;">
+                            <div class="formula-card" style="border-left: 4px solid var(--accent-pink);">
+                                <h4 style="color:#fff; margin-bottom: 5px;">Phase 1: Foundation (Months 1–3)</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Learn the Kana characters and map Japanese grammar directly to your Telugu/Hindi equivalents. Memorize the Core 1,500 word vocabulary deck.</p>
+                                <ul class="bullet-list" style="font-size: 0.85rem;">
+                                    <li>Study Hiragana & Katakana using stroke guides.</li>
+                                    <li>Read Tae Kim's Grammar Guide while applying Telugu case analogies.</li>
+                                    <li>Build basic vocab with 15–20 cards daily in Anki.</li>
+                                </ul>
+                            </div>
+
+                            <div class="formula-card" style="border-left: 4px solid var(--accent-purple);">
+                                <h4 style="color:#fff; margin-bottom: 5px;">Phase 2: Transition (Months 4–9)</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Break into native Japanese media (anime, easy manga) and mine custom sentences to learn vocabulary in context.</p>
+                                <ul class="bullet-list" style="font-size: 0.85rem;">
+                                    <li>Immerse in slice-of-life anime with Japanese subtitles.</li>
+                                    <li>Practice sentence mining (creating Anki cards from words you encounter).</li>
+                                    <li>Review intermediate JLPT N3/N2 tenses on Bunpro.</li>
+                                </ul>
+                            </div>
+
+                            <div class="formula-card" style="border-left: 4px solid var(--accent-teal);">
+                                <h4 style="color:#fff; margin-bottom: 5px;">Phase 3: Immersion Engine (Months 10–18)</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Shift heavily to reading books, and switch definitions from English to native Japanese monolingual lookups.</p>
+                                <ul class="bullet-list" style="font-size: 0.85rem;">
+                                    <li>Read Japanese light novels and NHK standard news.</li>
+                                    <li>Transition Anki flashcards to monolingual Japanese definitions.</li>
+                                    <li>Develop internal linguistic pattern recognition; avoid translating in your head.</li>
+                                </ul>
+                            </div>
+
+                            <div class="formula-card" style="border-left: 4px solid var(--accent-gold);">
+                                <h4 style="color:#fff; margin-bottom: 5px;">Phase 4: Exam Polish (Months 19–24)</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Study academic structures and archaic grammar patterns specific to the N1 exam, and practice timed scans.</p>
+                                <ul class="bullet-list" style="font-size: 0.85rem;">
+                                    <li>Complete the Shin Kanzen Master N1 study series.</li>
+                                    <li>Practice timed JLPT N1 mock exams.</li>
+                                    <li>Read editorial essays and listen to academic debates.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. DAILY LESSONS TAB -->
+            <section id="curriculum" class="tab-content">
+                <div class="curriculum-grid">
+                    
+                    <!-- Left Sidebar - Day Selector -->
+                    <div class="day-selector">
+                        <button class="day-btn active" data-day="1">
+                            <span class="day-label">Day 1</span>
+                            <span class="day-title">Hiragana Foundation</span>
+                            <span class="day-desc">Master the core 46 phonetic characters.</span>
+                        </button>
+                        <button class="day-btn" data-day="2">
+                            <span class="day-label">Day 2</span>
+                            <span class="day-title">Katakana & Sound Twists</span>
+                            <span class="day-desc">Learn loanwords, dakuon, & double sounds.</span>
+                        </button>
+                        <button class="day-btn" data-day="3">
+                            <span class="day-label">Day 3</span>
+                            <span class="day-title">Numbers & Kanji Intro</span>
+                            <span class="day-desc">Count to 100 and read 10 essential kanji.</span>
+                        </button>
+                        <button class="day-btn" data-day="4">
+                            <span class="day-label">Day 4</span>
+                            <span class="day-title">Particles & Sentence Structure</span>
+                            <span class="day-desc">Understanding SOV order and は, を, に.</span>
+                        </button>
+                        <button class="day-btn" data-day="5">
+                            <span class="day-label">Day 5</span>
+                            <span class="day-title">Verbs & Basic Conjugation</span>
+                            <span class="day-desc">Polite present, past, and negative forms.</span>
+                        </button>
+                        <button class="day-btn" data-day="6">
+                            <span class="day-label">Day 6</span>
+                            <span class="day-title">Adjectives & Survival Phrases</span>
+                            <span class="day-desc">How to ask for things, order food & describe.</span>
+                        </button>
+                        <button class="day-btn" data-day="7">
+                            <span class="day-label">Day 7</span>
+                            <span class="day-title">Conversational Masterclass</span>
+                            <span class="day-desc">Real-world dialogues & comprehensive exam.</span>
+                        </button>
+                    </div>
+
+                    <!-- Right Side - Content Panes -->
+                    <div class="day-content">
+                        
+                        <!-- Day 1 Panel -->
+                        <div id="day-pane-1" class="day-pane active">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-leaf" style="color: var(--accent-pink);"></i> Day 1: Hiragana Foundation
+                                    <span class="badge">Phonetics</span>
+                                </div>
+                                <p>Welcome to the game! Japanese uses three writing systems: **Hiragana** (phonetic letters for native words), **Katakana** (phonetic letters for foreign loanwords), and **Kanji** (Chinese characters representing ideas). Today, we focus entirely on **Hiragana**.</p>
+                                
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">The Five Base Vowels (a, i, u, e, o)</div>
+                                    <p>Every Japanese sound contains one of these vowels. Pronounce them like this:</p>
+                                    <ul class="bullet-list">
+                                        <li><strong>あ (a)</strong> - "ah" as in father <button class="speak-btn" data-speak="あ"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>い (i)</strong> - "ee" as in feet <button class="speak-btn" data-speak="い"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>う (u)</strong> - "oo" as in boot <button class="speak-btn" data-speak="う"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>え (e)</strong> - "eh" as in red <button class="speak-btn" data-speak="え"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>お (o)</strong> - "oh" as in boat <button class="speak-btn" data-speak="お"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                    </ul>
+                                </div>
+
+                                <h3 style="margin: 20px 0 10px 0; color: #fff;">Consonant Grouping System</h3>
+                                <p>All other characters are formed by pairing consonants (K, S, T, N, H, M, Y, R, W) with the base vowels. For example, the K-row is: <strong>か (ka), き (ki), く (ku), け (ke), こ (ko)</strong>.</p>
+                                
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">Day 1 Target Goal</div>
+                                    <p>Go to the <strong>Kana Charts</strong> tab to look at the full Hiragana grid and practice their sounds. Then, navigate to the <strong>Canvas Writer</strong> tab to practice writing characters. Once comfortable, test your knowledge in the <strong>Take Quiz</strong> tab under Hiragana!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 2 Panel -->
+                        <div id="day-pane-2" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-bolt" style="color: var(--accent-pink);"></i> Day 2: Katakana & Sound Modifiers
+                                    <span class="badge">Phonetics Part II</span>
+                                </div>
+                                <p>Today we expand our sound system by learning **Katakana** and how to modify base sounds to create voiced and combined sounds.</p>
+                                
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Katakana (カタカナ)</div>
+                                    <p>Katakana represents the exact same sounds as Hiragana but uses sharp, straight strokes. It is used for foreign names, places, and loanwords (e.g., カメラ - kamera for camera).</p>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. Dakuon & Handakuon (Sound Twists)</div>
+                                    <p>By adding quotation marks (dakuten <strong>゛</strong>) or small circles (handakuten <strong>゜</strong>) to the upper right of Hiragana, you change the consonant sound:</p>
+                                    <ul class="bullet-list">
+                                        <li><strong>K-row</strong> (か) + ゛ = <strong>G-row</strong> (が - ga)</li>
+                                        <li><strong>S-row</strong> (さ) + ゛ = <strong>Z-row</strong> (ざ - za)</li>
+                                        <li><strong>T-row</strong> (た) + ゛ = <strong>D-row</strong> (だ - da)</li>
+                                        <li><strong>H-row</strong> (は) + ゛ = <strong>B-row</strong> (ば - ba)</li>
+                                        <li><strong>H-row</strong> (は) + ゜ = <strong>P-row</strong> (ぱ - pa)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. Yōon (Combined Sounds) & Sokuon (Double Consonants)</div>
+                                    <p>We combine Hiragana from the 'i' column (ki, shi, chi, etc.) with small versions of <strong>ゃ (ya)</strong>, <strong>ゅ (yu)</strong>, <strong>ょ (yo)</strong> to make sounds like <strong>きゃ (kya)</strong> or <strong>しゅ (shu)</strong>.</p>
+                                    <p>A small <strong>っ (tsu)</strong> creates a brief double consonant pause in speech (e.g., さっき - sakki: a moment ago).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 3 Panel -->
+                        <div id="day-pane-3" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-arrow-up-9-1" style="color: var(--accent-pink);"></i> Day 3: Numbers & Kanji Intro
+                                    <span class="badge">Vocabulary</span>
+                                </div>
+                                <p>Congratulations, you are now phonetic! Let's get into concrete vocabulary. We will learn numbers 1 to 100 and introduce our first Kanji characters.</p>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">Numbers 1 to 10</div>
+                                    <table class="grammar-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Number</th>
+                                                <th>Hiragana</th>
+                                                <th>Romaji</th>
+                                                <th>Kanji</th>
+                                                <th>Audio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>1</td><td><span class="ja-word">いち</span></td><td>ichi</td><td>一</td><td><button class="speak-btn" data-speak="いち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>2</td><td><span class="ja-word">に</span></td><td>ni</td><td>二</td><td><button class="speak-btn" data-speak="に"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>3</td><td><span class="ja-word">さん</span></td><td>san</td><td>三</td><td><button class="speak-btn" data-speak="さん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>4</td><td><span class="ja-word">よん / し</span></td><td>yon / shi</td><td>四</td><td><button class="speak-btn" data-speak="よん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>5</td><td><span class="ja-word">ご</span></td><td>go</td><td>五</td><td><button class="speak-btn" data-speak="ご"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>6</td><td><span class="ja-word">ろく</span></td><td>roku</td><td>六</td><td><button class="speak-btn" data-speak="ろく"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>7</td><td><span class="ja-word">なな / しち</span></td><td>nana / shichi</td><td>七</td><td><button class="speak-btn" data-speak="なな"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>8</td><td><span class="ja-word">はち</span></td><td>hachi</td><td>八</td><td><button class="speak-btn" data-speak="はち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>9</td><td><span class="ja-word">きゅう / く</span></td><td>kyuu / ku</td><td>九</td><td><button class="speak-btn" data-speak="きゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>10</td><td><span class="ja-word">じゅう</span></td><td>juu</td><td>十</td><td><button class="speak-btn" data-speak="じゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-top: 10px;"><strong>Counting up to 99 is mathematical:</strong></p>
+                                    <ul class="bullet-list">
+                                        <li>11 = Ten + One = じゅういち (juu-ichi)</li>
+                                        <li>20 = Two + Ten = にじゅう (ni-juu)</li>
+                                        <li>45 = Four + Ten + Five = よんじゅうご (yon-juu-go)</li>
+                                        <li>100 is <strong>ひゃく (hyaku)</strong></li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">10 Essential Kanji Characters</div>
+                                    <p>Kanji represent whole words or concepts. Learn these pictograms:</p>
+                                    <table class="grammar-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Kanji</th>
+                                                <th>Meaning</th>
+                                                <th>Pronunciation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">日</span></td><td>Sun / Day</td><td>hi / nihi</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">月</span></td><td>Moon / Month</td><td>tsuki / getsu</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">火</span></td><td>Fire</td><td>hi / ka</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">水</span></td><td>Water</td><td>mizu / sui</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">木</span></td><td>Tree / Wood</td><td>ki / moku</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">金</span></td><td>Gold / Money</td><td>kane / kin</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">土</span></td><td>Earth / Soil</td><td>tsuchi / do</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">山</span></td><td>Mountain</td><td>yama / san</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">川</span></td><td>River</td><td>kawa</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">人</span></td><td>Person</td><td>hito / jin</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 4 Panel -->
+                        <div id="day-pane-4" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> Day 4: Particles & Sentence Structure
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Today we decode the mechanics of Japanese sentences. While English uses Subject-Verb-Object (SVO: "I eat sushi"), Japanese uses **Subject-Object-Verb** (SOV: "I sushi eat").</p>
+                                
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Word Order Structure</div>
+                                    <p>English: <em>I read books.</em></p>
+                                    <p>Japanese: <em>わたしは ほんを よみます (Watashi wa hon o yomimasu)</em> &rarr; <strong>I [Topic] Book [Object] Read.</strong></p>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. Critical Particles (助詞)</div>
+                                    <p>Particles are small words added after nouns to indicate their grammatical role:</p>
+                                    <table class="grammar-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Particle</th>
+                                                <th>Function</th>
+                                                <th>Example</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="ja-word">は (wa)</span></td>
+                                                <td>Marks the main **Topic** of the sentence. (Written as "ha" but spoken "wa").</td>
+                                                <td>わたし<strong>は</strong>... (As for me...)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="ja-word">を (o)</span></td>
+                                                <td>Marks the **Direct Object** receiving the action. (Written as "wo" but spoken "o").</td>
+                                                <td>ほん<strong>を</strong>よむ (Read a book)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="ja-word">に (ni)</span></td>
+                                                <td>Marks **Time** or **Direction/Destination** (to/at).</td>
+                                                <td>にほん<strong>に</strong>いく (Go to Japan)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="ja-word">で (de)</span></td>
+                                                <td>Marks the **Location** of an action, or a **Tool/Method** (by/at).</td>
+                                                <td>レストラン<strong>で</strong>たべる (Eat at a restaurant)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="ja-word">の (no)</span></td>
+                                                <td>Indicates **Possession** (adds apostrophe 's).</td>
+                                                <td>わたし<strong>の</strong>ねこ (My cat)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 5 Panel -->
+                        <div id="day-pane-5" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-code-commit" style="color: var(--accent-pink);"></i> Day 5: Verbs & Conjugation
+                                    <span class="badge">Grammar Part II</span>
+                                </div>
+                                <p>Today we learn Japanese verbs and how to conjugate them into formal polite levels. Japanese conjugation is incredibly regular - no changing by subject person (I, you, they all conjugate exactly the same)!</p>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Verb Groups</div>
+                                    <p>All Japanese verbs in their dictionary (base) form end in a 'u' sound. They fall into three groups:</p>
+                                    <ul class="bullet-list">
+                                        <li><strong>Ru-verbs (Group 1)</strong>: End in -iru or -eru. (e.g., たべる - taberu: to eat, みる - miru: to watch).</li>
+                                        <li><strong>U-verbs (Group 2)</strong>: End in other -u sounds. (e.g., のむ - nomu: to drink, いく - iku: to go, はなす - hanasu: to speak).</li>
+                                        <li><strong>Irregular Verbs (Group 3)</strong>: Only two! <strong>する (suru: to do)</strong> and <strong>くる (kuru: to come)</strong>.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. The Polite (~masu) Form Conjugation</div>
+                                    <p>To talk politely, change verbs to the <strong>~ます (~masu)</strong> suffix. Conjugation formulas:</p>
+                                    <table class="grammar-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Group</th>
+                                                <th>Dictionary Form</th>
+                                                <th>Polite Form (Positive)</th>
+                                                <th>Polite Form (Negative)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Ru-verbs</strong> (Drop -ru, add -masu)</td>
+                                                <td>たべる (taberu)</td>
+                                                <td><span class="ja-word">たべます</span> (tabemasu)</td>
+                                                <td><span class="ja-word">たべません</span> (tabemasen)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>U-verbs</strong> (Change 'u' to 'i' vowel, add -masu)</td>
+                                                <td>のむ (nomu)</td>
+                                                <td><span class="ja-word">のみます</span> (nomimasu)</td>
+                                                <td><span class="ja-word">のみません</span> (nomimasen)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Irregulars</strong> (Fixed change)</td>
+                                                <td>する (suru) / くる (kuru)</td>
+                                                <td><span class="ja-word">します</span> / <span class="ja-word">きます</span></td>
+                                                <td><span class="ja-word">しません</span> / <span class="ja-word">きません</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. Past Tense Polite</div>
+                                    <ul class="bullet-list">
+                                        <li>Past Affirmative: Replace <strong>~ます</strong> with <strong>~ました (~mashita)</strong>. E.g., たべました (I ate).</li>
+                                        <li>Past Negative: Replace <strong>~ます</strong> with <strong>~ませんでした (~masendeshita)</strong>. E.g., たべませんでした (I did not eat).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 6 Panel -->
+                        <div id="day-pane-6" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-heart" style="color: var(--accent-pink);"></i> Day 6: Adjectives & Survival Phrases
+                                    <span class="badge">Conversation</span>
+                                </div>
+                                <p>Today we learn to describe things using Japanese adjectives, and gather survival phrases for traveling, dining, and navigating Japan.</p>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. The Two Types of Adjectives</div>
+                                    <ul class="bullet-list">
+                                        <li><strong>I-adjectives</strong>: End in a hiragana **い (i)**. E.g., おいしい (oishii: delicious), おおきい (ookii: big). You can put them directly before nouns: おいしいすし (delicious sushi).</li>
+                                        <li><strong>Na-adjectives</strong>: Need a **な (na)** when describing nouns. E.g., しずか (shizuka: quiet) &rarr; しずかな部屋 (shizuka na heya: a quiet room).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. Ultimate Survival Phrases</div>
+                                    <table class="grammar-table">
+                                        <thead>
+                                            <tr>
+                                                <th>English</th>
+                                                <th>Japanese (Hiragana / Kanji)</th>
+                                                <th>Romaji</th>
+                                                <th>Audio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>Hello / Good Afternoon</td><td><span class="ja-word">こんにちは</span></td><td>Konnichiwa</td><td><button class="speak-btn" data-speak="こんにちは"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Thank you (Polite)</td><td><span class="ja-word">ありがとうございます</span></td><td>Arigatou gozaimasu</td><td><button class="speak-btn" data-speak="ありがとうございます"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Excuse me / Sorry</td><td><span class="ja-word">すみません</span></td><td>Sumimasen</td><td><button class="speak-btn" data-speak="すみません"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Where is the bathroom?</td><td><span class="ja-word">トイレはどこですか。</span></td><td>Toire wa doko desu ka?</td><td><button class="speak-btn" data-speak="トイレはどこですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Please give me water.</td><td><span class="ja-word">お水をください。</span></td><td>Omizu o kudasai</td><td><button class="speak-btn" data-speak="お水をください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>How much is this?</td><td><span class="ja-word">これはいくらですか。</span></td><td>Kore wa ikura desu ka?</td><td><button class="speak-btn" data-speak="これはいくらですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 7 Panel -->
+                        <div id="day-pane-7" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-trophy" style="color: var(--accent-pink);"></i> Day 7: Conversational Masterclass
+                                    <span class="badge">Mastery</span>
+                                </div>
+                                <p>Welcome to the final day. Let's look at a full conversational scenario, connecting all elements from phonetics to verb structures.</p>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">Restaurant Scenario Dialogue</div>
+                                    <p>Read the dialogue below and click the speaker icons to hear it spoken:</p>
+                                    
+                                    <p style="margin-top: 15px;"><strong>Customer:</strong></p>
+                                    <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">すみません、メニューをください。</span><br>
+                                    <em>Sumimasen, menyuu o kudasai.</em><br>
+                                    (Excuse me, please give me a menu.) 
+                                    <button class="speak-btn" data-speak="すみません、メニューをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    
+                                    <p style="margin-top: 15px;"><strong>Waiter:</strong></p>
+                                    <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">はい、どうぞ。</span><br>
+                                    <em>Hai, douzo.</em><br>
+                                    (Yes, here you are.) 
+                                    <button class="speak-btn" data-speak="はい、どうぞ。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+
+                                    <p style="margin-top: 15px;"><strong>Customer:</strong></p>
+                                    <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">これはいくらですか。</span><br>
+                                    <em>Kore wa ikura desu ka.</em><br>
+                                    (How much is this?) 
+                                    <button class="speak-btn" data-speak="これはいくらですか。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+
+                                    <p style="margin-top: 15px;"><strong>Waiter:</strong></p>
+                                    <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">それは千円です。</span><br>
+                                    <em>Sore wa sen en desu.</em><br>
+                                    (That is 1000 yen.) 
+                                    <button class="speak-btn" data-speak="それはせんえんです。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+
+                                    <p style="margin-top: 15px;"><strong>Customer:</strong></p>
+                                    <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">じゃあ、これをください。</span><br>
+                                    <em>Jaa, kore o kudasai.</em><br>
+                                    (Well then, please give me this.) 
+                                    <button class="speak-btn" data-speak="じゃあ、これをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. KANA CHARTS TAB -->
+            <section id="kana" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <i class="fa-solid fa-table" style="color: var(--accent-pink);"></i> Interactive Kana Charts
+                        <span class="badge">Phonetics Lookup</span>
+                    </div>
+                    
+                    <div class="kana-controls">
+                        <div class="toggle-group" id="kana-type-toggle">
+                            <button class="toggle-btn active" data-type="hiragana">Hiragana</button>
+                            <button class="toggle-btn" data-type="katakana">Katakana</button>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Click any card below to play pronunciation audio!</p>
+                    </div>
+
+                    <div class="kana-grid" id="kana-grid-container">
+                        <!-- Dynamic cells injected by app.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. CANVAS WRITER TAB -->
+            <section id="canvas" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <i class="fa-solid fa-pencil" style="color: var(--accent-pink);"></i> Kana Writing Practice Canvas
+                        <span class="badge">Stroke Practice</span>
+                    </div>
+                    
+                    <div class="canvas-container">
+                        <div class="canvas-wrapper">
+                            <canvas id="practice-canvas" width="350" height="350"></canvas>
+                            <div class="canvas-controls">
+                                <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> Clear Canvas</button>
+                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> Show Guide Lines</button>
+                            </div>
+                        </div>
+                        
+                        <div class="canvas-guide-card">
+                            <div class="guide-char-box">
+                                <div class="guide-char-type" id="guide-type">Hiragana</div>
+                                <div class="guide-char" id="guide-character">あ</div>
+                                <div class="guide-char-romaji" id="guide-romaji">a</div>
+                            </div>
+                            
+                            <div class="canvas-guide-nav">
+                                <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                                <button class="btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> Audio</button>
+                                <button class="btn" id="btn-next-guide">Next <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            
+                            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+                                <strong>Instructions:</strong> Use your mouse or trackpad (or touch screen) to trace the guide character. Practicing writing reinforces physical muscle memory which is vital to master character recognition rapidly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. FLASHCARDS TAB -->
+            <section id="flashcards" class="tab-content">
+                <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
+                    <div class="card-title">
+                        <i class="fa-solid fa-layer-group" style="color: var(--accent-pink);"></i> Vocabulary Flashcards
+                        <span class="badge">SRS Review</span>
+                    </div>
+                    
+                    <div class="kana-controls">
+                        <div class="toggle-group" id="flashcard-category-toggle">
+                            <button class="toggle-btn active" data-cat="kana">Letters</button>
+                            <button class="toggle-btn" data-cat="numbers">Numbers</button>
+                            <button class="toggle-btn" data-cat="phrases">Survival Phrases</button>
+                        </div>
+                        <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
+                    </div>
+
+                    <div class="flashcard-area">
+                        <div class="flashcard-container" id="flashcard-card-box">
+                            <div class="flashcard">
+                                <div class="card-face card-front">
+                                    <div class="flashcard-type" id="card-front-type">HIRAGANA</div>
+                                    <div class="flashcard-main-txt" id="card-front-txt">あ</div>
+                                </div>
+                                <div class="card-face card-back">
+                                    <div class="flashcard-type" id="card-back-type">ENGLISH</div>
+                                    <div class="flashcard-sub-txt" id="card-back-pronounce">Pronounced: "ah"</div>
+                                    <div class="flashcard-meaning" id="card-back-meaning">Letter: A</div>
+                                    <div class="flashcard-romaji" id="card-back-romaji">Romaji: a</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flashcard-btn-row">
+                            <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                            <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> Listen</button>
+                            <button class="btn btn-primary" id="btn-card-next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. SENTENCE BUILDER TAB -->
+            <section id="builder" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> Particle Sentence Builder
+                        <span class="badge">Grammar Lab</span>
+                    </div>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Assemble the Japanese sentence using the word chips from the bank. Place them in the target workspace box in the correct order (Subject &rarr; Topic Particle &rarr; Object &rarr; Object Particle &rarr; Verb)!</p>
+                    
+                    <div class="sentence-builder-container">
+                        <div style="font-weight: 700; color: #fff; font-size: 1.1rem;" id="sentence-prompt">Target: "I eat sushi."</div>
+                        
+                        <!-- Sentence workspace -->
+                        <div class="sentence-workspace" id="sentence-workspace">
+                            <!-- Selected chips go here -->
+                        </div>
+
+                        <!-- Word bank chips -->
+                        <div class="word-bank" id="sentence-word-bank">
+                            <!-- Chips loaded dynamically -->
+                        </div>
+
+                        <div class="sentence-builder-controls">
+                            <div class="sentence-feedback" id="sentence-feedback"></div>
+                            <div style="display: flex; gap: 10px;">
+                                <button class="btn" id="btn-clear-sentence"><i class="fa-solid fa-arrow-rotate-left"></i> Reset</button>
+                                <button class="btn btn-teal" id="btn-check-sentence"><i class="fa-solid fa-check"></i> Check Sentence</button>
+                                <button class="btn btn-primary" id="btn-next-sentence">Next Challenge <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
