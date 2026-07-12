@@ -1,10 +1,35 @@
-# KotoQuest: Gamified Multilingual Japanese N1 Academy
+# 🏯 KotoQuest
+### Gamified Multilingual Japanese N1 Academy
 
-An interactive, gamified learning application designed to take complete novices to JLPT N1 proficiency by leveraging native language syntactic logic (Telugu, Hindi, Korean, Tamil, Spanish, and English).
+> **Learn Japanese through your own language's grammar — not against it.**
 
-Live Demo: [Launch index.html locally](index.html)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Built With](https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JS-blue)]()
+[![JLPT](https://img.shields.io/badge/JLPT-N5%20→%20N1-red)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 ---
+
+### 🧠 The Core Insight
+
+Most Japanese learning apps treat every learner the same. **KotoQuest doesn't.**
+
+Over **45% of the world's population** speaks a Subject-Object-Verb (SOV) language — Telugu, Hindi, Korean, Tamil, Turkish, and many more. These languages share the **exact same sentence structure** as Japanese. Their postpositions map 1-to-1 to Japanese particles. Their relative clauses sit in the same position.
+
+**If you already speak an SOV language, you're not starting from zero. You're starting from 40%.**
+
+KotoQuest exploits this by dynamically mapping Japanese grammar to your native language's existing structures, turning years of study into months.
+
+### 🌍 Supported Native Languages
+| Language | Script | SOV? | Particle Mapping |
+|----------|--------|------|-----------------|
+| Telugu | తెలుగు | ✅ | Vibhaktulu → 助詞 |
+| Hindi | हिन्दी | ✅ | Postpositions → 助詞 |
+| Korean | 한국어 | ✅ | 조사 → 助詞 |
+| Tamil | தமிழ் | ✅ | Case suffixes → 助詞 |
+| Spanish | Español | ❌ (SVO) | Prepositions → 助詞 |
+| English | English | ❌ (SVO) | Standard reference |
+
 
 ## 🚀 Deployment Instructions
 
