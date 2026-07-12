@@ -1,0 +1,6 @@
+# Ignore local comparative grammar documentation
+telugu_japanese_bridge.md
+
+# OS files
+.DS_Store
+Thumbs.db
