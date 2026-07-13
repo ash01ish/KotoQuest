@@ -610,7 +610,20 @@ const SENTENCE_LEVELS = [
 
 const CANVAS_GUIDES = [
     { ja: 'あ', ro: 'a', type: 'Hiragana' },
-    { ja: 'い', ro: 'i', type: 'Hiragana' }
+    { ja: 'い', ro: 'i', type: 'Hiragana' },
+    { ja: 'う', ro: 'u', type: 'Hiragana' },
+    { ja: 'え', ro: 'e', type: 'Hiragana' },
+    { ja: 'お', ro: 'o', type: 'Hiragana' },
+    { ja: 'か', ro: 'ka', type: 'Hiragana' },
+    { ja: 'き', ro: 'ki', type: 'Hiragana' },
+    { ja: 'く', ro: 'ku', type: 'Hiragana' },
+    { ja: 'け', ro: 'ke', type: 'Hiragana' },
+    { ja: 'こ', ro: 'ko', type: 'Hiragana' },
+    { ja: 'さ', ro: 'sa', type: 'Hiragana' },
+    { ja: 'し', ro: 'shi', type: 'Hiragana' },
+    { ja: 'す', ro: 'su', type: 'Hiragana' },
+    { ja: 'せ', ro: 'se', type: 'Hiragana' },
+    { ja: 'そ', ro: 'so', type: 'Hiragana' }
 ];
 
 // --- APP INITIALIZATION ---
@@ -634,6 +647,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Native Language selector binds
     setupNativeLanguageSelector();
     
+    // Reset Game bind
+    setupResetGameButton();
+    
     // Draw initial HUD & start first battle
     updateHUDDisplays();
     startNewBattle();
@@ -642,26 +658,81 @@ document.addEventListener('DOMContentLoaded', () => {
 // Load player stats from LocalStorage
 function loadGameData() {
     const savedPlayer = localStorage.getItem('samurai_player');
+    let loaded = null;
     if (savedPlayer) {
-        player = JSON.parse(savedPlayer);
+        try {
+            loaded = JSON.parse(savedPlayer);
+        } catch (e) {
+            console.error("Failed to parse saved game data, resetting:", e);
+        }
     }
-    // Ensure stats structure exists
-    if (!player.stats) {
-        player.stats = {
-            totalAnswered: 0,
-            totalCorrect: 0,
-            byLevel: {
-                N5: { answered: 0, correct: 0 },
-                N4: { answered: 0, correct: 0 },
-                N3: { answered: 0, correct: 0 },
-                N2: { answered: 0, correct: 0 },
-                N1: { answered: 0, correct: 0 }
-            },
-            byType: {}
-        };
-    }
-    // Ensure SRS data structure exists
-    if (!player.srsData) {
+    
+    if (loaded && typeof loaded === 'object') {
+        player.level = typeof loaded.level === 'number' ? loaded.level : 1;
+        player.maxHp = typeof loaded.maxHp === 'number' ? loaded.maxHp : 100;
+        player.hp = typeof loaded.hp === 'number' ? Math.min(loaded.hp, player.maxHp) : player.maxHp;
+        player.xp = typeof loaded.xp === 'number' ? loaded.xp : 0;
+        player.maxXp = typeof loaded.maxXp === 'number' ? loaded.maxXp : 100;
+        player.gold = typeof loaded.gold === 'number' ? loaded.gold : 50;
+        player.streak = typeof loaded.streak === 'number' ? loaded.streak : 1;
+        player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'telugu';
+        
+        if (loaded.inventory && typeof loaded.inventory === 'object') {
+            player.inventory = {
+                potion: typeof loaded.inventory.potion === 'number' ? loaded.inventory.potion : 1,
+                shield: typeof loaded.inventory.shield === 'number' ? loaded.inventory.shield : 1,
+                hint: typeof loaded.inventory.hint === 'number' ? loaded.inventory.hint : 1
+            };
+        } else {
+            player.inventory = { potion: 1, shield: 1, hint: 1 };
+        }
+        
+        if (loaded.stats && typeof loaded.stats === 'object') {
+            player.stats = {
+                totalAnswered: typeof loaded.stats.totalAnswered === 'number' ? loaded.stats.totalAnswered : 0,
+                totalCorrect: typeof loaded.stats.totalCorrect === 'number' ? loaded.stats.totalCorrect : 0,
+                byLevel: {
+                    N5: { answered: 0, correct: 0 },
+                    N4: { answered: 0, correct: 0 },
+                    N3: { answered: 0, correct: 0 },
+                    N2: { answered: 0, correct: 0 },
+                    N1: { answered: 0, correct: 0 }
+                },
+                byType: {}
+            };
+            if (loaded.stats.byLevel && typeof loaded.stats.byLevel === 'object') {
+                const tiers = ['N5', 'N4', 'N3', 'N2', 'N1'];
+                tiers.forEach(t => {
+                    if (loaded.stats.byLevel[t] && typeof loaded.stats.byLevel[t] === 'object') {
+                        player.stats.byLevel[t].answered = typeof loaded.stats.byLevel[t].answered === 'number' ? loaded.stats.byLevel[t].answered : 0;
+                        player.stats.byLevel[t].correct = typeof loaded.stats.byLevel[t].correct === 'number' ? loaded.stats.byLevel[t].correct : 0;
+                    }
+                });
+            }
+            if (loaded.stats.byType && typeof loaded.stats.byType === 'object') {
+                player.stats.byType = { ...loaded.stats.byType };
+            }
+        } else {
+            player.stats = {
+                totalAnswered: 0,
+                totalCorrect: 0,
+                byLevel: {
+                    N5: { answered: 0, correct: 0 },
+                    N4: { answered: 0, correct: 0 },
+                    N3: { answered: 0, correct: 0 },
+                    N2: { answered: 0, correct: 0 },
+                    N1: { answered: 0, correct: 0 }
+                },
+                byType: {}
+            };
+        }
+        
+        if (loaded.srsData && typeof loaded.srsData === 'object') {
+            player.srsData = { ...loaded.srsData };
+        } else {
+            player.srsData = {};
+        }
+    } else {
         player.srsData = {};
     }
 }
@@ -695,6 +766,19 @@ function updateHUDDisplays() {
     if (accEl && player.stats) {
         const pct = player.stats.totalAnswered > 0 ? Math.round((player.stats.totalCorrect / player.stats.totalAnswered) * 100) : 0;
         accEl.innerHTML = `<i class="fa-solid fa-bullseye"></i> Accuracy: <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
+    }
+
+    // Update category practice stats breakdown
+    const breakdownEl = document.getElementById('stats-type-breakdown');
+    if (breakdownEl && player.stats && player.stats.byType) {
+        const entries = Object.entries(player.stats.byType);
+        if (entries.length > 0) {
+            breakdownEl.innerHTML = entries.map(([type, count]) => {
+                return `<span class="badge" style="background: rgba(255,255,255,0.05); font-size: 0.85rem; padding: 6px 12px; border-radius: 8px; color: #fff; border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-tags" style="color: var(--accent-teal); margin-right: 4px;"></i> ${type}: <strong>${count}</strong></span>`;
+            }).join('');
+        } else {
+            breakdownEl.innerHTML = `<span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the Quest Arena to see analysis.</span>`;
+        }
     }
 
     updateInventoryBadges();
@@ -952,6 +1036,12 @@ function updateGuide() {
     document.getElementById('guide-character').textContent = item.ja;
     document.getElementById('guide-romaji').textContent = item.ro;
     document.getElementById('guide-type').textContent = item.type;
+    
+    const audioBtn = document.getElementById('btn-play-guide-audio');
+    if (audioBtn) {
+        audioBtn.setAttribute('data-speak', item.ja);
+    }
+    
     ctx.clearRect(0,0,canvas.width,canvas.height);
     drawCanvasGuide();
 }
@@ -1803,4 +1893,76 @@ function applyNativeLanguageNuances() {
         }
         document.getElementById('sentence-prompt').innerHTML = promptText;
     }
+}
+
+function setupResetGameButton() {
+    const btn = document.getElementById('btn-reset-game');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        if (confirm("Are you sure you want to reset all game progress, statistics, gold, and SRS history? This cannot be undone.")) {
+            localStorage.removeItem('samurai_player');
+            player = {
+                level: 1,
+                hp: 100,
+                maxHp: 100,
+                xp: 0,
+                maxXp: 100,
+                gold: 50,
+                inventory: {
+                    potion: 1,
+                    shield: 1,
+                    hint: 1
+                },
+                streak: 1,
+                stats: {
+                    totalAnswered: 0,
+                    totalCorrect: 0,
+                    byLevel: {
+                        N5: { answered: 0, correct: 0 },
+                        N4: { answered: 0, correct: 0 },
+                        N3: { answered: 0, correct: 0 },
+                        N2: { answered: 0, correct: 0 },
+                        N1: { answered: 0, correct: 0 }
+                    },
+                    byType: {}
+                },
+                srsData: {},
+                nativeLanguage: 'telugu'
+            };
+            saveGameData();
+            updateHUDDisplays();
+            
+            // Reload native select dropdown
+            const select = document.getElementById('native-lang-select');
+            if (select) select.value = 'telugu';
+            
+            // Reload nuances
+            applyNativeLanguageNuances();
+            
+            // Reload card cat to kana & refresh flashcards
+            cardCat = 'kana';
+            cardIdx = 0;
+            const toggles = document.querySelectorAll('#flashcard-category-toggle .toggle-btn');
+            toggles.forEach(btn => {
+                if (btn.getAttribute('data-cat') === 'kana') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            const chkSrs = document.getElementById('chk-srs-due');
+            if (chkSrs) chkSrs.checked = false;
+            dueOnly = false;
+            updateCard();
+            updateFlashcardControlsDisplay();
+            
+            // Restart quest battle
+            currentTier = 'N5';
+            const tierBtns = document.querySelectorAll('#quest-tier-selector .quest-tier-btn');
+            tierBtns.forEach(btn => {
+                if (btn.getAttribute('data-tier') === 'N5') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            startNewBattle();
+            
+            alert("Game progress reset successfully!");
+        }
+    });
 }

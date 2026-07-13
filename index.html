@@ -45,16 +45,19 @@
                             <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> Rank: <strong id="rank-name">Novice</strong></span>
                             <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Accuracy: <strong>0%</strong> (0/0)</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px);">
-                            <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
-                            <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
-                                <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
-                                <option value="hindi" style="background: #14161f; color: #fff;">Hindi (हिन्दी)</option>
-                                <option value="korean" style="background: #14161f; color: #fff;">Korean (한국어)</option>
-                                <option value="tamil" style="background: #14161f; color: #fff;">Tamil (தமிழ்)</option>
-                                <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
-                                <option value="english" style="background: #14161f; color: #fff;">English (English Only)</option>
-                            </select>
+                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
+                            <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px);">
+                                <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
+                                <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
+                                    <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
+                                    <option value="hindi" style="background: #14161f; color: #fff;">Hindi (हिन्दी)</option>
+                                    <option value="korean" style="background: #14161f; color: #fff;">Korean (한국어)</option>
+                                    <option value="tamil" style="background: #14161f; color: #fff;">Tamil (தமிழ்)</option>
+                                    <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
+                                    <option value="english" style="background: #14161f; color: #fff;">English (English Only)</option>
+                                </select>
+                            </div>
+                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> Reset Game</button>
                         </div>
                     </div>
                 </div>
@@ -246,6 +249,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Detailed Statistics Breakdown -->
+                <div class="glass-card" style="margin-top: 25px;">
+                    <div class="card-title">
+                        <i class="fa-solid fa-chart-simple" style="color: var(--accent-teal);"></i> Detailed Practice Statistics
+                        <span class="badge" style="background: rgba(0,242,254,0.15); color: var(--accent-teal); border-color: var(--accent-teal);">Category Analytics</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">A live breakdown of your answers by Japanese grammar categories and question types:</p>
+                    
+                    <div id="stats-type-breakdown" style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the Quest Arena to see analysis.</span>
+                    </div>
+                </div>
             </section>
 
             <!-- 2. TRILINGUAL BRIDGE (COMPARATIVE LINGUISTICS & N1 STRATEGY) -->
@@ -281,7 +297,7 @@
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-bottom: 15px;">
                                 <div style="display: flex; align-items: center; gap: 8px;">
                                     <h3 id="calc-particle-title" style="color: #fff; font-size: 1.4rem; margin: 0;">は (wa)</h3>
-                                    <button class="btn" id="btn-speak-calc-particle" style="padding: 4px 8px; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="btn speak-btn" id="btn-speak-calc-particle" style="padding: 4px 8px; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-volume-high"></i></button>
                                 </div>
                                 <span class="badge" id="calc-particle-role" style="font-size: 0.8rem;">Topic Marker</span>
                             </div>
@@ -465,7 +481,7 @@
                                 
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">Day 1 Target Goal</div>
-                                    <p>Go to the <strong>Kana Charts</strong> tab to look at the full Hiragana grid and practice their sounds. Then, navigate to the <strong>Canvas Writer</strong> tab to practice writing characters. Once comfortable, test your knowledge in the <strong>Take Quiz</strong> tab under Hiragana!</p>
+                                    <p>Go to the <strong>Kana Charts</strong> tab to look at the full Hiragana grid and practice their sounds. Then, navigate to the <strong>Canvas Writer</strong> tab to practice writing characters. Once comfortable, test your knowledge in the <strong>Quest Arena</strong> tab under Hiragana difficulty!</p>
                                 </div>
                             </div>
                         </div>
@@ -836,7 +852,7 @@
                             
                             <div class="canvas-guide-nav">
                                 <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> Previous</button>
-                                <button class="btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> Audio</button>
+                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> Audio</button>
                                 <button class="btn" id="btn-next-guide">Next <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
