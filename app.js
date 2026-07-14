@@ -1189,8 +1189,16 @@ function rateCard(rating) {
         box.classList.remove('flipped');
         
         const newList = getActiveCardList();
-        if (cardIdx >= newList.length) {
-            cardIdx = 0;
+        if (dueOnly) {
+            if (cardIdx >= newList.length) {
+                cardIdx = 0;
+            }
+        } else {
+            if (newList.length > 0) {
+                cardIdx = (cardIdx + 1) % newList.length;
+            } else {
+                cardIdx = 0;
+            }
         }
         updateCard();
         updateFlashcardControlsDisplay();
