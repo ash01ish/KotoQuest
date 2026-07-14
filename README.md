@@ -36,10 +36,10 @@ KotoQuest exploits this by dynamically mapping Japanese grammar to your native l
 This repository is built as a clean, self-contained single-page static web application (HTML5, Vanilla CSS3, Vanilla JS). It requires **no server build steps**, making deployment extremely simple:
 
 ### 1. Deploying to GitHub Pages
-1. Push this repository to a public GitHub repository named `koto-quest`.
+1. Push this repository to a public GitHub repository named `KotoQuest`.
 2. Go to your repository settings page: **Settings &rarr; Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch** and set the source branch to `main` (or `master`) and directory to `/ (root)`.
-4. Click **Save**. Your game will be live at `https://<your-username>.github.io/koto-quest/` in a few minutes!
+3. Under **Build and deployment &rarr; Source**, click the dropdown and select **GitHub Actions**.
+4. The workflow in `.github/workflows/deploy.yml` will automatically build and publish your game to `https://<your-username>.github.io/KotoQuest/` on every push!
 
 ### 2. Deploying to Vercel / Netlify
 1. Connect your GitHub account to [Vercel](https://vercel.com) or [Netlify](https://netlify.com).
