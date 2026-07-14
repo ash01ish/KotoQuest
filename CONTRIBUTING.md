@@ -72,10 +72,11 @@ All JLPT quiz questions live in the `QUEST_DATABASE` object inside **`app.js`**.
 const QUEST_DATABASE = {
     N5: [
         {
-            q: "What is 'water' in Japanese?",    // The question text
-            o: ["みず", "ひ", "かぜ", "つち"],      // Array of 4 options
-            a: 0,                                   // Index of correct answer (0-based)
-            hint: "Think about what flows in rivers" // Optional hint shown to player
+            q: "What is the meaning of \"水\" (mizu)?",    // The question text
+            answer: "Water",                               // The correct answer string
+            options: ["Water", "Fire", "Earth", "Wind"],  // Array of 4 options (for multiple choice)
+            style: "mc",                                   // Question style: "mc" (multiple choice) or "text" (free-text entry)
+            type: "Vocabulary"                             // Category classification tag
         },
         // ... more questions
     ],
@@ -121,47 +122,39 @@ KotoQuest supports multilingual grammar bridges through the `PARTICLE_CALC_DATA`
 
 ```javascript
 const PARTICLE_CALC_DATA = {
-    telugu: {
-        label: "తెలుగు (Telugu)",
-        particles: {
-            "は (wa)": {
-                native: "... అనేది / విషయంలో",       // Native script equivalent
-                romaji: "... anēdi / vishayamlō",      // Romanized pronunciation
-                example_ja: "私は学生です。",              // Japanese example sentence
-                example_native: "నేను విద్యార్థిని.",      // Native language translation
-                explanation: "Marks the topic of a sentence, like the Telugu topic marker"
-            },
-            // ... more particles
-        }
+    wa: {
+        title: 'は (wa)',
+        role: 'Topic Marker',
+        english: 'As for... / (subject focus)',
+        telugu: 'అయితే (aithe) / (unmarked)',
+        hindi: 'तो (toh) / (unmarked)',
+        korean: '은 / 는 (eun / neun)',
+        tamil: 'அதாவது (adhavadhu) / (unmarked)',
+        spanish: '(sujeto / nominativo)',
+        examples: [
+            { 
+                ja: '私は学生です。', 
+                ro: 'Watashi wa gakusei desu.', 
+                en: 'I am a student.', 
+                te: 'నేను అయితే విద్యార్థిని (Nenu aithe vidyarthini).', 
+                hi: 'मैं तो छात्र हूँ (Main toh chhaatr hoon).', 
+                ko: '나는 학생입니다 (Naneun haksaeng-imnida).', 
+                ta: 'நான் மாணவன் (Naan maanavan).', 
+                es: 'Yo soy estudiante.' 
+            }
+        ]
     },
-    hindi: { /* same structure */ },
-    korean: { /* same structure */ },
-    tamil: { /* same structure */ },
-    spanish: { /* same structure */ }
+    // ... other particles: o, ni, de, no, to, kara, made
 };
 ```
 
 ### How to Add a New Language
 
-1. Choose a **key** (lowercase language name) and **abbreviation** (2-letter ISO code).
-2. Add a new entry to `PARTICLE_CALC_DATA` in `app.js`:
-   ```javascript
-   french: {
-       label: "Français (French)",
-       particles: {
-           "は (wa)": {
-               native: "...",
-               romaji: "...",
-               example_ja: "私は学生です。",
-               example_native: "Je suis étudiant(e).",
-               explanation: "Marks the topic of a sentence"
-           },
-           // Add entries for all Japanese particles
-       }
-   }
-   ```
-3. Add the language option to the language selector in `index.html`.
-4. Update the hero subtitle logic in `app.js` to include the new language.
+1. Choose a lowercase key representing the language (e.g. `french`) and a display label.
+2. Add a new translation property to every particle definition block in `PARTICLE_CALC_DATA` inside `app.js` (e.g. `french: "..."`).
+3. Add a matching language translation property to each example object inside the `examples` array (e.g. `fr: "..."`).
+4. Update the language options dropdown selector in `index.html` by adding a new `<option>` tag under `#native-lang-select`.
+5. Add the translation configuration rules inside `applyNativeLanguageNuances()` and `renderParticleCalculator()` in `app.js`.
 
 > **Important:** Please provide translations reviewed by a native speaker or a qualified linguist.
 
@@ -176,18 +169,18 @@ Sentence builder challenges are defined in the `SENTENCE_LEVELS` array in **`app
 ```javascript
 const SENTENCE_LEVELS = [
     {
-        id: 1,
-        label: "N5 Basics",                           // Display name for the level
-        words: ["私", "は", "学生", "です", "。"],       // Correct word order (the answer)
-        hint: "I am a student.",                       // English hint / translation
-        grammar: "Subject + は + Noun + です"          // Grammar pattern explanation
-    },
-    {
-        id: 2,
-        label: "N5 Location",
-        words: ["猫", "が", "いえ", "に", "います", "。"],
-        hint: "The cat is in the house.",
-        grammar: "Subject + が + Place + に + います"
+        prompt: 'Target: "I eat sushi."',
+        tePrompt: 'నేను సుశి తింటాను (Nenu sushi thintaanu)',
+        hiPrompt: 'मैं सुशी खाता हूँ (Main sushi khaata hoon)',
+        koPrompt: '나는 스시를 먹습니다 (Naneun seusileul meogseumnida)',
+        taPrompt: 'நான் சுஷி சாப்பிடுகிறேன் (Naan sushi saapidugiren)',
+        esPrompt: 'Yo como sushi.',
+        answer: '私はすしを食べます。',
+        words: [
+            { ja: '私は', en: 'I', part: true },
+            { ja: 'すしを', en: 'Sushi (Object)', part: true },
+            { ja: '食べます。', en: 'Eat', part: false }
+        ]
     },
     // ... more levels
 ];
@@ -196,9 +189,9 @@ const SENTENCE_LEVELS = [
 ### How to Add New Challenges
 
 1. Open `app.js` and find the `SENTENCE_LEVELS` array.
-2. Add a new object with a unique `id` (increment from the last one).
-3. The `words` array must be in **correct Japanese word order** — the game shuffles them for the player.
-4. Include a clear `hint` in English and a `grammar` pattern.
+2. Add a new object following the schema above.
+3. Provide the English prompt, all comparative translation prompts (`tePrompt`, `hiPrompt`, etc.), the expected full correct string in `answer`, and the word chips array `words`.
+4. In the `words` array, specify the Japanese text (`ja`), the English translation hint (`en`), and whether it represents a structural particle/marker (`part: true`). The game automatically shuffles these chips on the screen.
 
 ### Tips
 

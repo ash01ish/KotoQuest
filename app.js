@@ -253,7 +253,7 @@ const QUEST_DATABASE = {
         { q: '"Aについて" means:', answer: 'About A / Regarding A', options: ['About A / Regarding A', 'Because of A', 'Instead of A', 'Despite A'], style: 'mc', type: 'Grammar' },
         { q: '"Aにとって" means:', answer: "For A / From A's perspective", options: ["For A / From A's perspective", 'About A', 'Because of A', 'Against A'], style: 'mc', type: 'Grammar' },
         { q: '"Aによって" means:', answer: 'Depending on A / By means of A', options: ['Depending on A / By means of A', 'About A', 'For A', 'Despite A'], style: 'mc', type: 'Grammar' },
-        { q: '"Aにもかかわらず" means:', answer: 'Despite A / In spite of A', options: ['Despite A', 'Because of A', 'According to A', 'Instead of A'], style: 'mc', type: 'Grammar' },
+        { q: '"Aにもかかわらず" means:', answer: 'Despite A', options: ['Despite A', 'Because of A', 'According to A', 'Instead of A'], style: 'mc', type: 'Grammar' },
         { q: '"Aだけでなく、Bも" means:', answer: 'Not only A, but also B', options: ['Not only A, but also B', 'Either A or B', 'Neither A nor B', 'A instead of B'], style: 'mc', type: 'Grammar' },
         { q: '"ばいいのに" expresses:', answer: 'Regret / Wish it were different', options: ['Regret / Wish it were different', 'Certainty', 'Permission', 'Obligation'], style: 'mc', type: 'Grammar' },
         { q: '"としても" means:', answer: 'Even if / Even assuming', options: ['Even if / Even assuming', 'Because', 'Therefore', 'However'], style: 'mc', type: 'Grammar' },
