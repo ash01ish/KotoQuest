@@ -148,6 +148,11 @@
                         <button class="quest-tier-btn" data-tier="N2">N2 (Advanced)</button>
                         <button class="quest-tier-btn" data-tier="N1">N1 (Master/Native)</button>
                     </div>
+                    <div style="margin-top: 15px; display: flex; justify-content: flex-end; align-items: center;">
+                        <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
+                            <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> Enable Procedural Vocabulary Quizzes (8,100+ words)
+                        </label>
+                    </div>
                 </div>
 
                 <div class="rpg-arena">
@@ -879,6 +884,11 @@
                             <button class="toggle-btn" data-cat="phrases">Survival Phrases</button>
                             <button class="toggle-btn" data-cat="verbs">Verbs</button>
                             <button class="toggle-btn" data-cat="adjectives">Adjectives</button>
+                            <button class="toggle-btn" data-cat="n5">N5 Dict</button>
+                            <button class="toggle-btn" data-cat="n4">N4 Dict</button>
+                            <button class="toggle-btn" data-cat="n3">N3 Dict</button>
+                            <button class="toggle-btn" data-cat="n2">N2 Dict</button>
+                            <button class="toggle-btn" data-cat="n1">N1 Dict</button>
                         </div>
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
@@ -960,6 +970,7 @@
     </div>
 
     <!-- Application Script -->
+    <script src="vocab_db.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

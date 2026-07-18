@@ -1051,7 +1051,20 @@ let cardCat = 'kana', cardIdx = 0;
 let dueOnly = false;
 
 function getActiveCardList() {
-    const fullList = VOCAB_DATA[cardCat] || [];
+    let fullList = [];
+    const catUpper = cardCat.toUpperCase();
+    if (typeof FULL_VOCAB_DB !== 'undefined' && FULL_VOCAB_DB[catUpper]) {
+        fullList = FULL_VOCAB_DB[catUpper].map(item => ({
+            ja: item.j,
+            ro: '',
+            meaning: item.m,
+            type: `${catUpper} Vocab`,
+            pronounce: item.r
+        }));
+    } else {
+        fullList = VOCAB_DATA[cardCat] || [];
+    }
+    
     if (!dueOnly) return fullList;
     
     return fullList.filter(card => {
@@ -1336,6 +1349,66 @@ function checkBuildSentence() {
 // --- RPG COMBAT ARENA LOOP ENGINE                         ---
 // --- ==================================================== ---
 
+function generateProceduralQuestions(tier, count = 20) {
+    if (typeof FULL_VOCAB_DB === 'undefined' || !FULL_VOCAB_DB[tier]) return [];
+    const dict = FULL_VOCAB_DB[tier];
+    if (dict.length === 0) return [];
+    
+    const questions = [];
+    const dictLength = dict.length;
+    
+    for (let i = 0; i < count; i++) {
+        const targetIdx = Math.floor(Math.random() * dictLength);
+        const item = dict[targetIdx];
+        const isReadingQuestion = Math.random() < 0.5;
+        
+        if (isReadingQuestion) {
+            const wrongOptions = [];
+            let attempts = 0;
+            while (wrongOptions.length < 3 && attempts < 50) {
+                attempts++;
+                const w = dict[Math.floor(Math.random() * dictLength)];
+                if (w.r !== item.r && !wrongOptions.includes(w.r)) {
+                    wrongOptions.push(w.r);
+                }
+            }
+            while (wrongOptions.length < 3) {
+                wrongOptions.push('-');
+            }
+            const options = [item.r, ...wrongOptions].sort(() => Math.random() - 0.5);
+            questions.push({
+                q: `What is the reading of "${item.j}"?`,
+                answer: item.r,
+                options: options,
+                style: 'mc',
+                type: 'Vocab Reading'
+            });
+        } else {
+            const wrongOptions = [];
+            let attempts = 0;
+            while (wrongOptions.length < 3 && attempts < 50) {
+                attempts++;
+                const w = dict[Math.floor(Math.random() * dictLength)];
+                if (w.m !== item.m && !wrongOptions.includes(w.m)) {
+                    wrongOptions.push(w.m);
+                }
+            }
+            while (wrongOptions.length < 3) {
+                wrongOptions.push('-');
+            }
+            const options = [item.m, ...wrongOptions].sort(() => Math.random() - 0.5);
+            questions.push({
+                q: `What does "${item.j}" mean?`,
+                answer: item.m,
+                options: options,
+                style: 'mc',
+                type: 'Vocab Meaning'
+            });
+        }
+    }
+    return questions;
+}
+
 function setupRPGQuestArena() {
     const btns = document.querySelectorAll('#quest-tier-selector .quest-tier-btn');
     btns.forEach(btn => {
@@ -1432,7 +1505,14 @@ function startNewBattle() {
     updateEnemyHPBar();
     
     const rawQuestions = QUEST_DATABASE[currentTier];
-    currentQuestQuestions = [...rawQuestions].sort(() => Math.random() - 0.5);
+    let list = [...rawQuestions];
+    const chk = document.getElementById('chk-procedural-vocab');
+    const useProcedural = chk ? chk.checked : true;
+    if (useProcedural) {
+        const procQuests = generateProceduralQuestions(currentTier, 20);
+        list = [...list, ...procQuests];
+    }
+    currentQuestQuestions = list.sort(() => Math.random() - 0.5);
     activeQuestionIdx = 0;
     
     addLog(`A wild ${activeEnemy.name} appeared! (HP: ${activeEnemy.hp})`, 'system');
@@ -1457,7 +1537,14 @@ function loadBattleQuestion() {
     const q = currentQuestQuestions[activeQuestionIdx];
     if (!q) {
         const raw = QUEST_DATABASE[currentTier];
-        currentQuestQuestions = [...raw].sort(() => Math.random() - 0.5);
+        let list = [...raw];
+        const chk = document.getElementById('chk-procedural-vocab');
+        const useProcedural = chk ? chk.checked : true;
+        if (useProcedural) {
+            const procQuests = generateProceduralQuestions(currentTier, 20);
+            list = [...list, ...procQuests];
+        }
+        currentQuestQuestions = list.sort(() => Math.random() - 0.5);
         activeQuestionIdx = 0;
         loadBattleQuestion();
         return;
