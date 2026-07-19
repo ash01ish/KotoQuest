@@ -4,3 +4,8 @@ telugu_japanese_bridge.md
 # OS files
 .DS_Store
 Thumbs.db
+
+# Tool & Audit Artifacts
+.qaos/
+qaos-plan.json
+
