@@ -11,7 +11,8 @@ let player = {
         shield: 1,
         hint: 1
     },
-    streak: 1,
+    streak: 0,
+    lastActiveDate: '',
     stats: {
         totalAnswered: 0,
         totalCorrect: 0,
@@ -674,8 +675,21 @@ function loadGameData() {
         player.xp = typeof loaded.xp === 'number' ? loaded.xp : 0;
         player.maxXp = typeof loaded.maxXp === 'number' ? loaded.maxXp : 100;
         player.gold = typeof loaded.gold === 'number' ? loaded.gold : 50;
-        player.streak = typeof loaded.streak === 'number' ? loaded.streak : 1;
+        player.streak = typeof loaded.streak === 'number' ? loaded.streak : 0;
+        player.lastActiveDate = typeof loaded.lastActiveDate === 'string' ? loaded.lastActiveDate : '';
         player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'telugu';
+        
+        // Verify streak isn't broken on load
+        if (player.lastActiveDate) {
+            const today = getLocalDateString();
+            const prevDate = new Date(player.lastActiveDate);
+            const currDate = new Date(today);
+            const diffMs = currDate - prevDate;
+            const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+            if (diffDays > 1) {
+                player.streak = 0; // Streak reset due to inactivity
+            }
+        }
         
         if (loaded.inventory && typeof loaded.inventory === 'object') {
             player.inventory = {
@@ -741,6 +755,47 @@ function saveGameData() {
     localStorage.setItem('samurai_player', JSON.stringify(player));
 }
 
+function getLocalDateString() {
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function updateStreak() {
+    const today = getLocalDateString();
+    if (!player.lastActiveDate) {
+        player.streak = 1;
+        player.lastActiveDate = today;
+        saveGameData();
+        updateHUDDisplays();
+        return;
+    }
+    
+    if (player.lastActiveDate === today) {
+        return; // already active today
+    }
+    
+    const prevDate = new Date(player.lastActiveDate);
+    const currDate = new Date(today);
+    const diffMs = currDate - prevDate;
+    const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+    
+    if (diffDays === 1) {
+        player.streak++;
+        player.lastActiveDate = today;
+        addLog(`Streak extended! You've studied ${player.streak} days in a row! 🔥`, 'system');
+    } else if (diffDays > 1) {
+        player.streak = 1;
+        player.lastActiveDate = today;
+        addLog("Streak reset to 1 day. Keep up the daily practice! 💪", "system");
+    }
+    
+    saveGameData();
+    updateHUDDisplays();
+}
+
 // Global visual HUD synchronization
 function updateHUDDisplays() {
     document.getElementById('player-level-display').textContent = `Lv. ${player.level}`;
@@ -753,7 +808,7 @@ function updateHUDDisplays() {
     document.getElementById('player-hp-bar').style.width = `${hpPercent}%`;
     
     document.getElementById('player-gold-display').innerHTML = `<i class="fa-solid fa-coins"></i> ${player.gold} Gold`;
-    document.getElementById('streak-count').textContent = `${player.streak} Day`;
+    document.getElementById('streak-count').textContent = `${player.streak} Day${player.streak === 1 ? '' : 's'}`;
     
     let rank = 'Novice';
     if (player.level >= 5) rank = 'Bushido';
@@ -1191,7 +1246,7 @@ function rateCard(rating) {
     }
     
     srs.nextReviewTime = Date.now() + nextMs;
-    saveGameData();
+    updateStreak();
     
     // Slide card effect
     const box = document.getElementById('flashcard-card-box');
@@ -1339,6 +1394,7 @@ function checkBuildSentence() {
         feedback.className = 'sentence-feedback success';
         feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Correct order!';
         speakJapanese(sequence.join(''));
+        updateStreak();
     } else {
         feedback.className = 'sentence-feedback error';
         feedback.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> Wrong structure. Keep practicing SOV order!';
@@ -1610,6 +1666,7 @@ function handleQuestAttack(btn, selection, correct) {
     if (selection === correct) {
         player.stats.totalCorrect++;
         player.stats.byLevel[currentTier].correct++;
+        updateStreak();
         
         btn.classList.add('correct');
         activeEnemy.hp -= dmgDealt;
@@ -1673,6 +1730,7 @@ function submitTextAttack() {
     if (ans === correct) {
         player.stats.totalCorrect++;
         player.stats.byLevel[currentTier].correct++;
+        updateStreak();
         
         activeEnemy.hp -= dmgDealt;
         if (activeEnemy.hp < 0) activeEnemy.hp = 0;
@@ -2008,7 +2066,8 @@ function setupResetGameButton() {
                     shield: 1,
                     hint: 1
                 },
-                streak: 1,
+                streak: 0,
+                lastActiveDate: '',
                 stats: {
                     totalAnswered: 0,
                     totalCorrect: 0,
