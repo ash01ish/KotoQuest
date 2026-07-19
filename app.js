@@ -647,7 +647,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Native Language selector binds
     setupNativeLanguageSelector();
-    
+
+    // First-visit welcome / onboarding
+    setupOnboarding();
+
     // Reset Game bind
     setupResetGameButton();
 
@@ -666,6 +669,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setupKeyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
+        // Ignore game shortcuts while the onboarding overlay is open
+        const onboarding = document.getElementById('onboarding-overlay');
+        if (onboarding && onboarding.classList.contains('show')) return;
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
             return;
@@ -726,7 +732,7 @@ function loadGameData() {
         player.gold = typeof loaded.gold === 'number' ? loaded.gold : 50;
         player.streak = typeof loaded.streak === 'number' ? loaded.streak : 0;
         player.lastActiveDate = typeof loaded.lastActiveDate === 'string' ? loaded.lastActiveDate : '';
-        player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'telugu';
+        player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'english';
         
         // Verify streak isn't broken on load
         if (player.lastActiveDate) {
@@ -1367,7 +1373,7 @@ let currentBankShuffled = [];
 
 function loadBuildLevel() {
     const lvl = SENTENCE_LEVELS[buildIdx];
-    const lang = player.nativeLanguage || 'telugu';
+    const lang = player.nativeLanguage || 'english';
     let promptText = lvl.prompt;
     if (lang === 'telugu' && lvl.tePrompt) {
         promptText += ` <br><span style="font-size: 0.9rem; color: var(--accent-pink);">Native: ${lvl.tePrompt}</span>`;
@@ -1838,8 +1844,8 @@ function checkBattleResolution() {
         
         player.gold += activeEnemy.goldReward;
         player.xp += activeEnemy.xpReward;
-        
-        if (player.xp >= player.maxXp) {
+
+        while (player.xp >= player.maxXp) {
             player.level++;
             player.xp -= player.maxXp;
             player.maxHp += 20;
@@ -1953,7 +1959,7 @@ function renderParticleCalculator(key) {
     document.getElementById('calc-particle-role').textContent = data.role;
     document.getElementById('calc-english-eq').textContent = data.english;
 
-    const lang = player.nativeLanguage || 'telugu';
+    const lang = player.nativeLanguage || 'english';
     document.getElementById('calc-native-eq').textContent = data[lang] || '-';
 
     const langLabels = {
@@ -1982,7 +1988,8 @@ function renderParticleCalculator(key) {
         item.style.borderRadius = '6px';
         item.style.border = '1px solid rgba(255,255,255,0.03)';
         
-        const nativeText = ex[lang] || '';
+        const shortLang = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es' }[lang];
+        const nativeText = (shortLang && ex[shortLang]) || '';
 
         item.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
@@ -2011,12 +2018,9 @@ function setupNativeLanguageSelector() {
     const select = document.getElementById('native-lang-select');
     if (!select) return;
     
-    if (player.nativeLanguage) {
-        select.value = player.nativeLanguage;
-    } else {
-        player.nativeLanguage = 'telugu';
-    }
-    
+    if (!player.nativeLanguage) player.nativeLanguage = 'english';
+    select.value = player.nativeLanguage;
+
     select.addEventListener('change', () => {
         player.nativeLanguage = select.value;
         saveGameData();
@@ -2027,7 +2031,7 @@ function setupNativeLanguageSelector() {
 }
 
 function applyNativeLanguageNuances() {
-    const lang = player.nativeLanguage || 'telugu';
+    const lang = player.nativeLanguage || 'english';
     
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
@@ -2097,6 +2101,42 @@ function applyNativeLanguageNuances() {
     }
 }
 
+function setupOnboarding() {
+    const overlay = document.getElementById('onboarding-overlay');
+    if (!overlay) return;
+    // Returning visitors have already chosen — never show again.
+    if (localStorage.getItem('kotoquest_onboarded')) return;
+
+    let chosen = player.nativeLanguage || 'english';
+    const langButtons = overlay.querySelectorAll('.onboard-lang-btn');
+    const markChosen = () => langButtons.forEach(b =>
+        b.classList.toggle('active', b.getAttribute('data-lang') === chosen));
+    markChosen();
+    langButtons.forEach(b => b.addEventListener('click', () => {
+        chosen = b.getAttribute('data-lang');
+        markChosen();
+    }));
+
+    const finish = () => {
+        player.nativeLanguage = chosen;
+        const select = document.getElementById('native-lang-select');
+        if (select) select.value = chosen;
+        applyNativeLanguageNuances();
+        saveGameData();
+        localStorage.setItem('kotoquest_onboarded', '1');
+        overlay.classList.remove('show');
+    };
+    const startBtn = document.getElementById('onboard-start');
+    if (startBtn) startBtn.addEventListener('click', finish);
+    const skipBtn = document.getElementById('onboard-skip');
+    if (skipBtn) skipBtn.addEventListener('click', (e) => { e.preventDefault(); finish(); });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('show')) finish();
+    });
+
+    overlay.classList.add('show');
+}
+
 function setupResetGameButton() {
     const btn = document.getElementById('btn-reset-game');
     if (!btn) return;
@@ -2130,14 +2170,14 @@ function setupResetGameButton() {
                     byType: {}
                 },
                 srsData: {},
-                nativeLanguage: 'telugu'
+                nativeLanguage: 'english'
             };
             saveGameData();
             updateHUDDisplays();
             
             // Reload native select dropdown
             const select = document.getElementById('native-lang-select');
-            if (select) select.value = 'telugu';
+            if (select) select.value = 'english';
             
             // Reload nuances
             applyNativeLanguageNuances();
