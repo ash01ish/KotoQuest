@@ -606,6 +606,115 @@ const SENTENCE_LEVELS = [
             { ja: 'いきたい', en: 'Want to go', part: false },
             { ja: 'です', en: 'Is/Polite', part: false }
         ]
+    },
+    {
+        prompt: 'Target: "I read a book every day."',
+        correctOrder: ['わたし', 'は', 'まいにち', 'ほん', 'を', 'よみます'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'まいにち', en: 'Every day', part: false },
+            { ja: 'ほん', en: 'Book', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'よみます', en: 'Read', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Please wait a little."',
+        correctOrder: ['ちょっと', 'まって', 'ください'],
+        words: [
+            { ja: 'ちょっと', en: 'A little', part: false },
+            { ja: 'まって', en: 'Wait (te-form)', part: false },
+            { ja: 'ください', en: 'Please', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Can you speak Japanese?"',
+        correctOrder: ['にほんご', 'が', 'はなせますか'],
+        words: [
+            { ja: 'にほんご', en: 'Japanese', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'はなせますか', en: 'Can speak?', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I want to drink coffee."',
+        correctOrder: ['わたし', 'は', 'コーヒー', 'が', 'のみたい', 'です'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'コーヒー', en: 'Coffee', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'のみたい', en: 'Want to drink', part: false },
+            { ja: 'です', en: 'Polite', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "My friend gave me a present."',
+        correctOrder: ['ともだち', 'が', 'プレゼント', 'を', 'くれました'],
+        words: [
+            { ja: 'ともだち', en: 'Friend', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'プレゼント', en: 'Present', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'くれました', en: 'Gave (to me)', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Let\'s eat lunch together."',
+        correctOrder: ['いっしょに', 'ひるごはん', 'を', 'たべましょう'],
+        words: [
+            { ja: 'いっしょに', en: 'Together', part: false },
+            { ja: 'ひるごはん', en: 'Lunch', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'たべましょう', en: "Let's eat", part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I went to Tokyo yesterday."',
+        correctOrder: ['わたし', 'は', 'きのう', 'とうきょう', 'に', 'いきました'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'きのう', en: 'Yesterday', part: false },
+            { ja: 'とうきょう', en: 'Tokyo', part: false },
+            { ja: 'に', en: '[To]', part: true },
+            { ja: 'いきました', en: 'Went', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Please open the window."',
+        correctOrder: ['まど', 'を', 'あけて', 'ください'],
+        words: [
+            { ja: 'まど', en: 'Window', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'あけて', en: 'Open (te-form)', part: false },
+            { ja: 'ください', en: 'Please', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "This ramen is delicious."',
+        correctOrder: ['この', 'ラーメン', 'は', 'おいしい', 'です'],
+        words: [
+            { ja: 'この', en: 'This', part: false },
+            { ja: 'ラーメン', en: 'Ramen', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'おいしい', en: 'Delicious', part: false },
+            { ja: 'です', en: 'Is', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I study Japanese at the library."',
+        correctOrder: ['わたし', 'は', 'としょかん', 'で', 'にほんご', 'を', 'べんきょうします'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'としょかん', en: 'Library', part: false },
+            { ja: 'で', en: '[At/In]', part: true },
+            { ja: 'にほんご', en: 'Japanese', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'べんきょうします', en: 'Study', part: false }
+        ]
     }
 ];
 
@@ -631,7 +740,7 @@ const CANVAS_GUIDES = [
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
     setupTabs();
-    setupDaySelector();
+    setupCurriculum();
     setupKanaGrid();
     setupCanvas();
     setupFlashcards();
@@ -736,7 +845,7 @@ function loadGameData() {
         player.lastActiveDate = typeof loaded.lastActiveDate === 'string' ? loaded.lastActiveDate : '';
         player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'english';
         player.lastTab = typeof loaded.lastTab === 'string' ? loaded.lastTab : '';
-        player.currentDay = typeof loaded.currentDay === 'string' ? loaded.currentDay : '';
+        player.currentLesson = typeof loaded.currentLesson === 'string' ? loaded.currentLesson : '';
         
         // Verify streak isn't broken on load
         if (player.lastActiveDate) {
@@ -975,30 +1084,76 @@ function setupTabs() {
 }
 
 // --- DAY SELECTOR ---
-function setupDaySelector() {
-    const dayBtns = document.querySelectorAll('.day-btn');
-    const dayPanes = document.querySelectorAll('.day-pane');
+// --- CURRICULUM: level-grouped, data-driven lesson navigation ---
+// Lesson content lives as .day-pane blocks in index.html; this metadata drives
+// the grouped lesson list. Add a lesson = add a pane + one entry here.
+const CURRICULUM = [
+    { level: 'N5', title: 'Foundations', lessons: [
+        { title: 'Hiragana Foundation', pane: 'day-pane-1' },
+        { title: 'Katakana & Sound Modifiers', pane: 'day-pane-2' },
+        { title: 'Numbers & Kanji Intro', pane: 'day-pane-3' },
+        { title: 'Particles & Sentence Structure', pane: 'day-pane-4' },
+        { title: 'Verbs & Conjugation', pane: 'day-pane-5' },
+        { title: 'Adjectives & Survival Phrases', pane: 'day-pane-6' },
+        { title: 'Conversational Masterclass', pane: 'day-pane-7' }
+    ]},
+    { level: 'N4', title: 'Everyday Grammar', lessons: [
+        { title: 'The Te-form', pane: 'day-pane-8' },
+        { title: 'Plain (Casual) Form', pane: 'day-pane-9' },
+        { title: 'Plain Past & Negative', pane: 'day-pane-10' },
+        { title: 'Counters', pane: 'day-pane-11' },
+        { title: 'Giving & Receiving', pane: 'day-pane-12' },
+        { title: 'Potential Form', pane: 'day-pane-13' }
+    ]},
+    { level: 'N3', title: 'Intermediate', lessons: [] },
+    { level: 'N2', title: 'Advanced', lessons: [] },
+    { level: 'N1', title: 'Mastery', lessons: [] }
+];
 
-    const activateDay = (day) => {
-        dayBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-day') === String(day)));
-        dayPanes.forEach(p => p.classList.remove('active'));
-        const pane = document.getElementById(`day-pane-${day}`);
+function setupCurriculum() {
+    const nav = document.getElementById('lesson-nav');
+    const panes = document.querySelectorAll('.day-pane');
+    if (!nav) return;
+
+    const activateLesson = (paneId) => {
+        nav.querySelectorAll('.lesson-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-pane') === paneId));
+        panes.forEach(p => p.classList.remove('active'));
+        const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
     };
 
-    dayBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const day = btn.getAttribute('data-day');
-            activateDay(day);
-            player.currentDay = day;
-            saveGameData();
+    let firstPane = null;
+    CURRICULUM.forEach(group => {
+        const header = document.createElement('div');
+        header.className = 'lesson-level-header';
+        header.textContent = `${group.level} · ${group.title}`;
+        nav.appendChild(header);
+
+        if (!group.lessons.length) {
+            const soon = document.createElement('div');
+            soon.className = 'lesson-soon';
+            soon.textContent = 'More lessons coming soon';
+            nav.appendChild(soon);
+            return;
+        }
+        group.lessons.forEach((lesson, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'lesson-btn';
+            btn.setAttribute('data-pane', lesson.pane);
+            btn.innerHTML = `<span class="lesson-btn-num">${group.level}·${i + 1}</span><span class="lesson-btn-title">${lesson.title}</span>`;
+            btn.addEventListener('click', () => {
+                activateLesson(lesson.pane);
+                player.currentLesson = lesson.pane;
+                saveGameData();
+            });
+            nav.appendChild(btn);
+            if (!firstPane) firstPane = lesson.pane;
         });
     });
 
-    // Resume the lesson day the user was last on instead of always starting at Day 1.
-    if (player.currentDay && document.getElementById(`day-pane-${player.currentDay}`)) {
-        activateDay(player.currentDay);
-    }
+    // Resume the lesson the user was last on, else open the first one.
+    const resume = (player.currentLesson && document.getElementById(player.currentLesson)) ? player.currentLesson : firstPane;
+    if (resume) activateLesson(resume);
 }
 
 // --- KANA GRID GENERATION ---
@@ -2243,7 +2398,7 @@ function setupResetGameButton() {
                 srsData: {},
                 nativeLanguage: 'english',
                 lastTab: '',
-                currentDay: ''
+                currentLesson: ''
             };
             saveGameData();
             updateHUDDisplays();
