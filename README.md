@@ -97,12 +97,11 @@ cd KotoQuest
 open index.html # On macOS
 ```
 
-### GitHub Pages Auto-Deploy
-This repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`):
-1. Push your repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Set **Source** to **GitHub Actions**.
-4. Your site will automatically deploy to `https://<your-username>.github.io/KotoQuest/`.
+### Cloudflare Pages Auto-Deploy (Git Integration)
+1. Push this repository to GitHub.
+2. Go to [dash.cloudflare.com](https://dash.cloudflare.com) &rarr; **Workers & Pages** &rarr; **Create application** &rarr; **Pages** &rarr; **Connect to Git**.
+3. Select your repository, set **Build command** to blank/empty, and **Output directory** to `/`.
+4. Your site will automatically build and publish to `https://kotoquest.pages.dev` on every `git push`!
 
 ---
 
