@@ -74,6 +74,47 @@
 </head>
 <body>
 
+    <!-- First-visit welcome / onboarding overlay -->
+    <div id="onboarding-overlay" class="onboarding-overlay">
+        <div class="onboarding-card glass-card">
+            <div class="onboarding-hero">
+                <h2>Welcome to KotoQuest <span aria-hidden="true">🏯</span></h2>
+                <p>Learn Japanese from N5 to N1 like an RPG — answer questions to fight monsters, build sentences, and drill an 8,000-word deck. It maps Japanese onto the grammar you already think in.</p>
+            </div>
+
+            <div class="onboarding-section">
+                <h3>1. Pick the language you think in</h3>
+                <p class="onboarding-hint">Several languages share Japanese's word order. If yours is here you get side-by-side grammar bridges. Not sure? Leave it on English.</p>
+                <div class="onboard-lang-grid">
+                    <button type="button" class="onboard-lang-btn" data-lang="english">English</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="telugu">Telugu (తెలుగు)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="hindi">Hindi (हिन्दी)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="korean">Korean (한국어)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="tamil">Tamil (தமிழ்)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="spanish">Spanish (Español)</button>
+                </div>
+            </div>
+
+            <div class="onboarding-section">
+                <h3>2. Here's what's inside</h3>
+                <div class="onboard-tour">
+                    <div class="onboard-tour-item"><i class="fa-solid fa-shield-halved"></i><div><strong>Quest Arena</strong><span>Answer to attack. Win gold &amp; XP.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-circle-nodes"></i><div><strong>Trilingual Bridge</strong><span>Particles mapped to your language.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-book-open"></i><div><strong>Daily Lessons</strong><span>A 7-day guided start.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-font"></i><div><strong>Kana Charts</strong><span>Hiragana &amp; katakana with audio.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-paintbrush"></i><div><strong>Canvas Writer</strong><span>Trace the strokes by hand.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-clone"></i><div><strong>Flashcards</strong><span>Spaced-repetition vocab.</span></div></div>
+                    <div class="onboard-tour-item"><i class="fa-solid fa-cubes"></i><div><strong>Sentence Builder</strong><span>Put the words in order.</span></div></div>
+                </div>
+            </div>
+
+            <div class="onboarding-actions">
+                <button type="button" id="onboard-start" class="btn btn-primary">Start learning &rarr;</button>
+                <a href="#" id="onboard-skip" class="onboard-skip">Skip intro</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         
         <!-- Header Dashboard / HUD -->
@@ -83,7 +124,7 @@
                 <div class="hero-text">
                     <div class="hero-title">
                         <h1>KotoQuest</h1>
-                        <p id="hero-subtitle">Japanese Mastery for Telugu & Hindi Speakers (JLPT N5 &rarr; N1)</p>
+                        <p id="hero-subtitle">Japanese Mastery Portal (JLPT N5 &rarr; N1)</p>
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
                         <div class="stats-badge">
@@ -95,12 +136,12 @@
                             <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px);">
                                 <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
                                 <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
+                                    <option value="english" style="background: #14161f; color: #fff;">English</option>
                                     <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
                                     <option value="hindi" style="background: #14161f; color: #fff;">Hindi (हिन्दी)</option>
                                     <option value="korean" style="background: #14161f; color: #fff;">Korean (한국어)</option>
                                     <option value="tamil" style="background: #14161f; color: #fff;">Tamil (தமிழ்)</option>
                                     <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
-                                    <option value="english" style="background: #14161f; color: #fff;">English (English Only)</option>
                                 </select>
                             </div>
                             <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> Reset Game</button>
@@ -626,7 +667,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">日</span></td><td>Sun / Day</td><td>hi / nihi</td></tr>
+                                            <tr><td><span class="ja-word" style="font-size: 1.5rem;">日</span></td><td>Sun / Day</td><td>hi / nichi</td></tr>
                                             <tr><td><span class="ja-word" style="font-size: 1.5rem;">月</span></td><td>Moon / Month</td><td>tsuki / getsu</td></tr>
                                             <tr><td><span class="ja-word" style="font-size: 1.5rem;">火</span></td><td>Fire</td><td>hi / ka</td></tr>
                                             <tr><td><span class="ja-word" style="font-size: 1.5rem;">水</span></td><td>Water</td><td>mizu / sui</td></tr>
@@ -713,8 +754,8 @@
                                     <div class="grammar-card-title">1. Verb Groups</div>
                                     <p>All Japanese verbs in their dictionary (base) form end in a 'u' sound. They fall into three groups:</p>
                                     <ul class="bullet-list">
-                                        <li><strong>Ru-verbs (Group 1)</strong>: End in -iru or -eru. (e.g., たべる - taberu: to eat, みる - miru: to watch).</li>
-                                        <li><strong>U-verbs (Group 2)</strong>: End in other -u sounds. (e.g., のむ - nomu: to drink, いく - iku: to go, はなす - hanasu: to speak).</li>
+                                        <li><strong>Ru-verbs (Group 2)</strong>: End in -iru or -eru. (e.g., たべる - taberu: to eat, みる - miru: to watch).</li>
+                                        <li><strong>U-verbs (Group 1)</strong>: End in other -u sounds. (e.g., のむ - nomu: to drink, いく - iku: to go, はなす - hanasu: to speak).</li>
                                         <li><strong>Irregular Verbs (Group 3)</strong>: Only two! <strong>する (suru: to do)</strong> and <strong>くる (kuru: to come)</strong>.</li>
                                     </ul>
                                 </div>
@@ -890,7 +931,7 @@
                             <canvas id="practice-canvas" width="350" height="350"></canvas>
                             <div class="canvas-controls">
                                 <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> Clear Canvas</button>
-                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> Show Guide Lines</button>
+                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> Hide Guide Lines</button>
                             </div>
                         </div>
                         

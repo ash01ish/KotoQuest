@@ -1429,3 +1429,63 @@ canvas {
     font-weight: 700;
 }
 .site-footer a:hover { text-decoration: underline; }
+
+/* First-visit onboarding overlay */
+.onboarding-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(6, 7, 12, 0.82);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+.onboarding-overlay.show { display: flex; }
+.onboarding-card { max-width: 640px; width: 100%; margin: auto; }
+.onboarding-hero h2 { color: #fff; font-size: 1.6rem; margin-bottom: 8px; }
+.onboarding-hero p { color: var(--text-muted); margin-bottom: 22px; }
+.onboarding-section { margin-bottom: 22px; }
+.onboarding-section h3 { color: #fff; font-size: 1.05rem; margin-bottom: 6px; }
+.onboarding-hint { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px; }
+.onboard-lang-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.onboard-lang-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    color: var(--text-main);
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+.onboard-lang-btn:hover { border-color: rgba(255, 255, 255, 0.25); }
+.onboard-lang-btn.active {
+    background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
+    border-color: var(--accent-pink);
+    color: #fff;
+}
+.onboard-tour { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.onboard-tour-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+.onboard-tour-item i { color: var(--accent-teal); font-size: 1.1rem; width: 22px; text-align: center; }
+.onboard-tour-item strong { display: block; color: #fff; font-size: 0.85rem; }
+.onboard-tour-item span { display: block; color: var(--text-muted); font-size: 0.75rem; }
+.onboarding-actions { display: flex; align-items: center; gap: 16px; margin-top: 8px; }
+.onboard-skip { color: var(--text-muted); font-size: 0.85rem; text-decoration: none; }
+.onboard-skip:hover { color: var(--text-main); text-decoration: underline; }
+@media (max-width: 480px) {
+    .onboard-tour { grid-template-columns: 1fr; }
+    .onboarding-hero h2 { font-size: 1.3rem; }
+}
