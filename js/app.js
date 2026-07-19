@@ -1622,10 +1622,28 @@ function ensureLangDb(onReady) {
     document.head.appendChild(s);
 }
 
+function getNativeGlossByKey(key) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code || !window.LANG_DB || !window.LANG_DB[code]) return '';
+    return window.LANG_DB[code][key] || '';
+}
+
 function getNativeGloss(card) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
-    if (!code || !card.key || !window.LANG_DB || !window.LANG_DB[code]) return '';
-    return window.LANG_DB[code][card.key] || '';
+    if (!code || !window.LANG_DB || !window.LANG_DB[code]) return '';
+    if (card.key) return window.LANG_DB[code][card.key] || '';
+    // Curated decks (Letters/Numbers/Phrases/Verbs/Adjectives) have no dict key:
+    // fall back to a lazily built kanji-only index over the loaded pack.
+    let byJ = window.LANG_DB[code + '_byJ'];
+    if (!byJ) {
+        byJ = {};
+        for (const [k, v] of Object.entries(window.LANG_DB[code])) {
+            const j = k.split('|')[0];
+            if (!(j in byJ)) byJ[j] = v;
+        }
+        window.LANG_DB[code + '_byJ'] = byJ;
+    }
+    return byJ[card.ja] || '';
 }
 
 // --- SENTENCE BUILDER ---
@@ -1768,22 +1786,31 @@ function generateProceduralQuestions(tier, count = 20) {
                 type: 'Vocab Reading'
             });
         } else {
+            // When a language pack is loaded, options read "English · native gloss".
+            // Answer checking compares the same composed strings, so it stays consistent.
+            const withGloss = (e) => {
+                const g = getNativeGlossByKey(`${e.j}|${e.r}`);
+                return g ? `${e.m} · ${g}` : e.m;
+            };
             const wrongOptions = [];
+            const wrongRaw = [];
             let attempts = 0;
             while (wrongOptions.length < 3 && attempts < 50) {
                 attempts++;
                 const w = dict[Math.floor(Math.random() * dictLength)];
-                if (w.m !== item.m && !wrongOptions.includes(w.m)) {
-                    wrongOptions.push(w.m);
+                if (w.m !== item.m && !wrongRaw.includes(w.m)) {
+                    wrongRaw.push(w.m);
+                    wrongOptions.push(withGloss(w));
                 }
             }
             while (wrongOptions.length < 3) {
                 wrongOptions.push('-');
             }
-            const options = [item.m, ...wrongOptions].sort(() => Math.random() - 0.5);
+            const answerText = withGloss(item);
+            const options = [answerText, ...wrongOptions].sort(() => Math.random() - 0.5);
             questions.push({
                 q: `What does "${item.j}" mean?`,
-                answer: item.m,
+                answer: answerText,
                 options: options,
                 style: 'mc',
                 type: 'Vocab Meaning'
