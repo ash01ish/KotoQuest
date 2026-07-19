@@ -328,7 +328,7 @@ const KATAKANA_DATA = [
     { ja: 'ナ', ro: 'na' }, { ja: 'ニ', ro: 'ni' }, { ja: 'ヌ', ro: 'nu' }, { ja: 'ネ', ro: 'ne' }, { ja: 'ノ', ro: 'no' },
     { ja: 'ハ', ro: 'ha' }, { ja: 'ヒ', ro: 'hi' }, { ja: 'フ', ro: 'fu' }, { ja: 'ヘ', ro: 'he' }, { ja: 'ホ', ro: 'ho' },
     { ja: 'マ', ro: 'ma' }, { ja: 'ミ', ro: 'mi' }, { ja: 'ム', ro: 'mu' }, { ja: 'メ', ro: 'me' }, { ja: 'モ', ro: 'mo' },
-    { ja: 'ヤ', ro: 'ya' }, { empty: true }, { ja: 'ユ', ro: 'yu' }, { empty: true }, { ja: 'よ', ro: 'yo' },
+    { ja: 'ヤ', ro: 'ya' }, { empty: true }, { ja: 'ユ', ro: 'yu' }, { empty: true }, { ja: 'ヨ', ro: 'yo' },
     { ja: 'ラ', ro: 'ra' }, { ja: 'リ', ro: 'ri' }, { ja: 'ル', ro: 'ru' }, { ja: 'レ', ro: 're' }, { ja: 'ロ', ro: 'ro' },
     { ja: 'ワ', ro: 'wa' }, { empty: true }, { empty: true }, { empty: true }, { ja: 'ヲ', ro: 'o' },
     { ja: 'ン', ro: 'n' }, { empty: true }, { empty: true }, { empty: true }, { empty: true }
