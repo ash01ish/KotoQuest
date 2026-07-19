@@ -1,0 +1,4 @@
+name = "kotoquest"
+pages_build_output_dir = "."
+workers_dev = false
+preview_urls = true
