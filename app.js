@@ -631,7 +631,7 @@ const CANVAS_GUIDES = [
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
     setupTabs();
-    setupDaySelector();
+    setupCurriculum();
     setupKanaGrid();
     setupCanvas();
     setupFlashcards();
@@ -736,7 +736,7 @@ function loadGameData() {
         player.lastActiveDate = typeof loaded.lastActiveDate === 'string' ? loaded.lastActiveDate : '';
         player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'english';
         player.lastTab = typeof loaded.lastTab === 'string' ? loaded.lastTab : '';
-        player.currentDay = typeof loaded.currentDay === 'string' ? loaded.currentDay : '';
+        player.currentLesson = typeof loaded.currentLesson === 'string' ? loaded.currentLesson : '';
         
         // Verify streak isn't broken on load
         if (player.lastActiveDate) {
@@ -975,30 +975,69 @@ function setupTabs() {
 }
 
 // --- DAY SELECTOR ---
-function setupDaySelector() {
-    const dayBtns = document.querySelectorAll('.day-btn');
-    const dayPanes = document.querySelectorAll('.day-pane');
+// --- CURRICULUM: level-grouped, data-driven lesson navigation ---
+// Lesson content lives as .day-pane blocks in index.html; this metadata drives
+// the grouped lesson list. Add a lesson = add a pane + one entry here.
+const CURRICULUM = [
+    { level: 'N5', title: 'Foundations', lessons: [
+        { title: 'Hiragana Foundation', pane: 'day-pane-1' },
+        { title: 'Katakana & Sound Modifiers', pane: 'day-pane-2' },
+        { title: 'Numbers & Kanji Intro', pane: 'day-pane-3' },
+        { title: 'Particles & Sentence Structure', pane: 'day-pane-4' },
+        { title: 'Verbs & Conjugation', pane: 'day-pane-5' },
+        { title: 'Adjectives & Survival Phrases', pane: 'day-pane-6' },
+        { title: 'Conversational Masterclass', pane: 'day-pane-7' }
+    ]},
+    { level: 'N4', title: 'Everyday Grammar', lessons: [] },
+    { level: 'N3', title: 'Intermediate', lessons: [] },
+    { level: 'N2', title: 'Advanced', lessons: [] },
+    { level: 'N1', title: 'Mastery', lessons: [] }
+];
 
-    const activateDay = (day) => {
-        dayBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-day') === String(day)));
-        dayPanes.forEach(p => p.classList.remove('active'));
-        const pane = document.getElementById(`day-pane-${day}`);
+function setupCurriculum() {
+    const nav = document.getElementById('lesson-nav');
+    const panes = document.querySelectorAll('.day-pane');
+    if (!nav) return;
+
+    const activateLesson = (paneId) => {
+        nav.querySelectorAll('.lesson-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-pane') === paneId));
+        panes.forEach(p => p.classList.remove('active'));
+        const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
     };
 
-    dayBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const day = btn.getAttribute('data-day');
-            activateDay(day);
-            player.currentDay = day;
-            saveGameData();
+    let firstPane = null;
+    CURRICULUM.forEach(group => {
+        const header = document.createElement('div');
+        header.className = 'lesson-level-header';
+        header.textContent = `${group.level} · ${group.title}`;
+        nav.appendChild(header);
+
+        if (!group.lessons.length) {
+            const soon = document.createElement('div');
+            soon.className = 'lesson-soon';
+            soon.textContent = 'More lessons coming soon';
+            nav.appendChild(soon);
+            return;
+        }
+        group.lessons.forEach((lesson, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'lesson-btn';
+            btn.setAttribute('data-pane', lesson.pane);
+            btn.innerHTML = `<span class="lesson-btn-num">${group.level}·${i + 1}</span><span class="lesson-btn-title">${lesson.title}</span>`;
+            btn.addEventListener('click', () => {
+                activateLesson(lesson.pane);
+                player.currentLesson = lesson.pane;
+                saveGameData();
+            });
+            nav.appendChild(btn);
+            if (!firstPane) firstPane = lesson.pane;
         });
     });
 
-    // Resume the lesson day the user was last on instead of always starting at Day 1.
-    if (player.currentDay && document.getElementById(`day-pane-${player.currentDay}`)) {
-        activateDay(player.currentDay);
-    }
+    // Resume the lesson the user was last on, else open the first one.
+    const resume = (player.currentLesson && document.getElementById(player.currentLesson)) ? player.currentLesson : firstPane;
+    if (resume) activateLesson(resume);
 }
 
 // --- KANA GRID GENERATION ---
@@ -2243,7 +2282,7 @@ function setupResetGameButton() {
                 srsData: {},
                 nativeLanguage: 'english',
                 lastTab: '',
-                currentDay: ''
+                currentLesson: ''
             };
             saveGameData();
             updateHUDDisplays();
