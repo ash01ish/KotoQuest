@@ -1,8 +1,8 @@
 # 🏯 KotoQuest (言クエスト)
-### Gamified Multilingual Japanese N1 Academy (Offline-First)
+### Gamified multilingual Japanese academy, JLPT N5 to N1 (offline-first)
 
-> **Learn Japanese through your own native language's grammar — not against it.**  
-> *Free, open-source JLPT N5 → N1 portal with an offline 8,129-word dictionary, RPG combat loop, SRS flashcards, and native SOV grammar bridge.*
+> Learn Japanese through your own language's grammar instead of fighting it.
+> A free, open-source JLPT N5 → N1 study app with an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, and a native SOV grammar bridge.
 
 [![JLPT Coverage](https://img.shields.io/badge/JLPT-N5%20%E2%86%92%20N1%20%288%2C129%20Words%29-ff6b8b?style=for-the-badge&logo=japanese&logoColor=white)](vocab_db.js)
 [![Offline First](https://img.shields.io/badge/Offline--First-100%25%20Browser%20Native-2ed573?style=for-the-badge&logo=html5&logoColor=white)](index.html)
@@ -11,20 +11,21 @@
 
 ---
 
-## 🧠 The Core Philosophy: The SOV Advantage
+## The idea: use the SOV head start
 
-Most Japanese learning platforms treat every student like an English speaker. **KotoQuest doesn't.**
+Most Japanese apps teach every student as if they think in English. KotoQuest doesn't.
 
-Over **45% of the world's population** speaks a Subject-Object-Verb (SOV) language — including **Telugu, Hindi, Korean, Tamil**, and many others. These languages share the **exact same syntactic architecture** as Japanese:
-- Identical word order: `Subject → Object → Verb`
-- 1-to-1 postpositional particle systems (Telugu *Vibhaktulu*, Hindi *Postpositions*, Korean *조사*, Japanese *助詞*)
-- Pre-nominal relative clause placement (descriptive clauses sit *before* nouns)
+A large share of the world speaks a Subject-Object-Verb (SOV) language: Telugu, Hindi, Bengali, Korean, Tamil, Turkish, and many more. Those languages already share Japanese's basic machinery:
 
-> 💡 **If you speak an SOV language, you aren't starting from zero. You're starting from 40% mastery.** KotoQuest directly exploits these linguistic bridges so you translate thoughts naturally without mental rearrangement!
+- The same word order: Subject → Object → Verb
+- Postpositional particles that line up almost one-to-one (Telugu *vibhaktulu*, Hindi postpositions, Korean *조사*, Japanese *助詞*)
+- Descriptive clauses that sit *before* the noun, not after
+
+So if you already think in one of those languages, a lot of Japanese grammar is stuff you do without noticing. KotoQuest leans on that instead of routing everything through English.
 
 ---
 
-## 🌍 Supported Native Languages
+## Supported native languages
 
 | Language | Native Script | Word Order | Particle Bridge | Example Formula |
 | :--- | :--- | :---: | :--- | :--- |
@@ -37,87 +38,84 @@ Over **45% of the world's population** speaks a Subject-Object-Verb (SOV) langua
 
 ---
 
-## 🎮 Features & Systems
+## Features
 
-### ⚔️ 1. RPG Quest Arena & Merchant Shop
-* **Turn-Based Combat:** Battle monsters across 5 JLPT tiers:
-  * 🟢 **N5:** Hiragana Slime (Beginner)
-  * 🔵 **N4:** Conjugation Warrior (Apprentice)
-  * 🟣 **N3:** Kanji Shogun (Intermediate)
-  * 🔴 **N2:** Advanced Ninja (Advanced)
-  * 🟡 **N1:** Master Dragon (Native)
-* **Procedural Dictionary Quizzes:** Pulls dynamically from the embedded 8,129-word dictionary to generate infinite multiple-choice and spelling quizzes with distractors.
-* **Samurai Merchant Shop:** Spend Gold earned from victories on **Healing Potions**, **Grammar Shields** (absorbs wrong-answer damage), and **Hint Scrolls** (eliminates wrong choices).
-* **Category Analytics:** Live statistical breakdown tracking accuracy by question type (Particles, Kanji, Verbs, Phrases, Readings).
+### RPG quest arena and shop
+- Turn-based battles across five JLPT tiers:
+  - N5: Hiragana Slime (beginner)
+  - N4: Conjugation Warrior (apprentice)
+  - N3: Kanji Shogun (intermediate)
+  - N2: Advanced Ninja
+  - N1: Master Dragon (native)
+- Dictionary-driven quizzes: pulls from the 8,129-word dictionary to generate fresh multiple-choice and spelling questions with plausible wrong answers.
+- Shop: spend the gold you win on healing potions, grammar shields (soak one wrong-answer hit), and hint scrolls (remove a wrong choice).
+- Category stats: tracks your accuracy by question type — particles, kanji, verbs, phrases, readings.
 
-### 🌉 2. Trilingual Grammar Bridge & N1 Planner
-* **Interactive Particle Calculator:** Select any Japanese particle (`は`, `を`, `に`, `で`, `の`, `と`, `から`, `made`) to view instant structural equivalents in Telugu, Hindi, Korean, Tamil, Spanish, and English.
-* **24-Month N1 Study Planner:** A structured 4-phase roadmap tailored for native SOV speakers to reach JLPT N1 within 2 years.
+### Grammar bridge and N1 planner
+- Particle calculator: pick any particle (は, を, に, で, の, と, から, まで) and see its equivalent in Telugu, Hindi, Korean, Tamil, Spanish, and English, side by side.
+- 24-month N1 study plan: a four-phase roadmap aimed at SOV speakers.
 
-### 🃏 3. SRS Flashcards & 8,129-Word Dictionary
-* **Anki-Style Spaced Repetition:** Rate cards as `Again` (1m), `Hard` (12h), `Good` (3d), or `Easy` (7d).
-* **"Due Only" Filtering:** Focus strictly on cards scheduled for review based on timestamp calculations.
-* **Full Dictionary Browser:** Access N5, N4, N3, N2, and N1 vocabulary alongside foundational Kana, Numbers, Survival Phrases, Verbs, and Adjectives.
-* **Native Audio Engine:** Powered by Web Speech API (`ja-JP`) for instant pronunciation playback.
+### SRS flashcards and dictionary
+- Anki-style spaced repetition: rate a card Again (1m), Hard (12h), Good (3d), or Easy (7d).
+- "Due only" filter to review just what's scheduled.
+- Browse the full N5–N1 vocabulary plus kana, numbers, survival phrases, verbs, and adjectives.
+- Audio through the browser's Web Speech API (`ja-JP`).
 
-### 🧩 4. SOV Sentence Builder
-* Assemble Japanese sentences using drag/click word chips in correct grammatical order (`Subject` → `Topic` → `Object` → `Object Particle` → `Verb`).
-* Real-time native language prompt translations for all 6 supported languages.
+### Sentence builder
+- Drag or click word chips into the right order (Subject → Topic → Object → Object particle → Verb).
+- Prompts show up in all six supported languages.
 
-### 🎨 5. Kana Canvas Writer
-* Interactive HTML5 stroke canvas for practicing Hiragana and Katakana character writing.
-* Includes dashed guide lines, toggleable overlays, character switching, and phonetic audio playback.
+### Kana canvas
+- An HTML5 canvas for practicing Hiragana and Katakana strokes, with guide lines and audio.
 
-### 🔥 6. Progressive Web App (PWA) & Offline Persistence
-* **Installable PWA:** Can be added to iOS/Android home screens or Desktop as a standalone native app (`manifest.json` + `sw.js`).
-* **Streak Tracker:** Automatically tracks consecutive study days using local calendar logic (`YYYY-MM-DD`).
-* **Desktop Keyboard Shortcuts:** Lightning-fast navigation (`1`, `2`, `3`, `4` keys for Quest Arena battle answers; `Spacebar` to flip flashcards; `←` / `→` arrow keys to switch cards).
-* **100% Offline LocalStorage:** Player Level, HP/XP, Gold, Merchant Inventory, SRS intervals, and Accuracy statistics persist automatically in `localStorage.samurai_player`.
-
----
-
-## 🛠️ Technology Stack
-
-* **Core Engine:** Pure Vanilla JavaScript (ES6+), HTML5, CSS3. Zero framework overhead.
-* **Audio:** HTML5 SpeechSynthesis API (`ja-JP`).
-* **Graphics & UI:** CSS Custom Properties, Obsidian-dark neon glassmorphism design system, HTML5 Canvas.
-* **Database:** Native JavaScript module (`vocab_db.js`) holding 8,129 curated JLPT entries from Tanos/Anki datasets.
-* **Deployment:** Zero-build static architecture — compatible with GitHub Pages, Vercel, Netlify, or local file open.
+### PWA and offline
+- Installable to a phone home screen or the desktop (`manifest.json` + `sw.js`).
+- Tracks your study streak by calendar day.
+- Keyboard shortcuts: `1`–`4` to answer in battle, `Space` to flip a card, `←` / `→` to move between cards.
+- Everything (level, HP/XP, gold, inventory, SRS intervals, stats) is saved to `localStorage` — no account, no server.
 
 ---
 
-## 🚀 Running Locally & Deployment
+## Built with
 
-### Run Locally (Instant)
-Simply open `index.html` in any modern web browser! No `npm install`, Node.js server, or build step required.
+- Vanilla JavaScript (ES6+), HTML5, CSS3. No framework, no build step.
+- Audio: HTML5 SpeechSynthesis (`ja-JP`).
+- UI: CSS custom properties, a dark neon glass look, HTML5 Canvas.
+- Data: `vocab_db.js`, 8,129 curated JLPT entries drawn from the Tanos/Anki datasets.
+- Hosting: static files, so it runs on Cloudflare Pages, GitHub Pages, Netlify, or straight off your disk.
+
+---
+
+## Run it locally
+
+Open `index.html` in any modern browser. No `npm install`, no server, no build.
 
 ```bash
-git clone https://github.com/ashishthirunagari/KotoQuest.git
+git clone https://github.com/ash01ish/KotoQuest.git
 cd KotoQuest
-open index.html # On macOS
+open index.html   # macOS
 ```
 
-### Cloudflare Pages Auto-Deploy (Git Integration)
-1. Push this repository to GitHub.
-2. Go to [dash.cloudflare.com](https://dash.cloudflare.com) &rarr; **Workers & Pages** &rarr; **Create application** &rarr; **Pages** &rarr; **Connect to Git**.
-3. Select your repository, set **Build command** to blank/empty, and **Output directory** to `/`.
-4. Your site will automatically build and publish to `https://kotoquest.pages.dev` on every `git push`!
+### Deploy on Cloudflare Pages
+1. Connect the GitHub repo in the Cloudflare dashboard: Workers & Pages → Pages → Connect to Git.
+2. Leave the build command empty and set the output directory to `/`.
+3. It publishes to https://kotoquest.pages.dev whenever `main` updates.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
-- Adding new JLPT quest challenges to `QUEST_DATABASE`.
-- Adding new native language particle mappings to `PARTICLE_CALC_DATA`.
-- Adding sentence builder challenges to `SENTENCE_LEVELS`.
+Pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good places to add things:
+- New quiz questions in `QUEST_DATABASE`
+- New particle mappings in `PARTICLE_CALC_DATA`
+- New sentence challenges in `SENTENCE_LEVELS`
 
 ---
 
-## 📄 License
+## License
 
-This project is open-source and licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE)**.
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE).
 
-* **Attribution:** Credit **Ashish Thirunagari** and link to this repository.
-* **Non-Commercial:** May not be used for commercial purposes without permission.
-* **ShareAlike:** Derivative works must be distributed under the same license.
+- **Attribution:** credit [Ashish Thirunagari](https://github.com/ash01ish) and link back to this repository.
+- **Non-commercial:** not for commercial use without permission.
+- **ShareAlike:** derivative works must use the same license.

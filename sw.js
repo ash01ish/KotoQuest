@@ -1,5 +1,5 @@
 // Service Worker for KotoQuest Progressive Web App (PWA)
-const CACHE_NAME = 'kotoquest-v1';
+const CACHE_NAME = 'kotoquest-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -12,32 +12,36 @@ const ASSETS_TO_CACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
   );
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
-        keys.map((key) => {
-          if (key !== CACHE_NAME) {
-            return caches.delete(key);
-          }
-        })
-      );
-    })
+    caches.keys().then((keys) =>
+      Promise.all(keys.map((key) => (key !== CACHE_NAME ? caches.delete(key) : null)))
+    )
   );
   self.clients.claim();
 });
 
+// Stale-while-revalidate: serve cache instantly (fast + offline), and refresh the
+// cache from the network in the background so the NEXT load has the latest deploy.
+// This is what stops returning users getting stuck on an old version forever.
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request);
-    })
+    caches.open(CACHE_NAME).then((cache) =>
+      cache.match(event.request).then((cached) => {
+        const fromNetwork = fetch(event.request)
+          .then((res) => {
+            if (res && res.status === 200) cache.put(event.request, res.clone());
+            return res;
+          })
+          .catch(() => cached); // offline: fall back to cache
+        return cached || fromNetwork; // instant if cached, else wait for network
+      })
+    )
   );
 });

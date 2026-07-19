@@ -1412,3 +1412,20 @@ canvas {
     .flashcard-main-txt { font-size: 2.5rem; }
     .monster-sprite { font-size: 3rem; }
 }
+
+/* Site footer / attribution */
+.site-footer {
+    margin-top: 40px;
+    padding: 24px 16px;
+    text-align: center;
+    border-top: 1px solid var(--card-border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+.site-footer a {
+    color: var(--accent-teal);
+    text-decoration: none;
+    font-weight: 700;
+}
+.site-footer a:hover { text-decoration: underline; }
