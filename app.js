@@ -650,11 +650,55 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Reset Game bind
     setupResetGameButton();
+
+    // Keyboard Shortcuts (1-4 for battle, Space/Arrows for flashcards)
+    setupKeyboardShortcuts();
     
     // Draw initial HUD & start first battle
     updateHUDDisplays();
     startNewBattle();
 });
+
+function setupKeyboardShortcuts() {
+    document.addEventListener('keydown', (e) => {
+        const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+        if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
+            return;
+        }
+
+        const arenaTab = document.getElementById('arena');
+        const flashcardsTab = document.getElementById('flashcards');
+
+        // Quest Arena 1, 2, 3, 4 shortcuts for options
+        if (arenaTab && arenaTab.classList.contains('active')) {
+            if (['1', '2', '3', '4'].includes(e.key)) {
+                const idx = parseInt(e.key) - 1;
+                const buttons = document.querySelectorAll('#combat-options button');
+                if (buttons && buttons[idx] && buttons[idx].style.display !== 'none' && buttons[idx].style.pointerEvents !== 'none') {
+                    e.preventDefault();
+                    buttons[idx].click();
+                }
+            }
+        }
+
+        // Flashcards Spacebar flip & Arrow key navigation shortcuts
+        if (flashcardsTab && flashcardsTab.classList.contains('active')) {
+            if (e.code === 'Space') {
+                e.preventDefault();
+                const cardBox = document.getElementById('flashcard-card-box');
+                if (cardBox) cardBox.click();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                const prevBtn = document.getElementById('btn-card-prev');
+                if (prevBtn) prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                const nextBtn = document.getElementById('btn-card-next');
+                if (nextBtn) nextBtn.click();
+            }
+        }
+    });
+}
 
 // Load player stats from LocalStorage
 function loadGameData() {
