@@ -1622,6 +1622,28 @@ function ensureLangDb(onReady) {
     document.head.appendChild(s);
 }
 
+// --- UI CHROME I18N (data-i18n attributes + js/lang/ui.js strings) ---
+function ensureUiI18n(onReady) {
+    if (window.UI_I18N) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = 'js/lang/ui.js';
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => console.log('UI i18n strings failed to load');
+    document.head.appendChild(s);
+}
+
+function applyUiLanguage() {
+    const code = LANG_PACK_CODES[player.nativeLanguage]; // undefined for english
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        // innerHTML (not textContent): a few strings carry inline markup (links, <strong>).
+        // Translations come from our own committed ui.js, never user input.
+        if (el.dataset.i18nOriginal === undefined) el.dataset.i18nOriginal = el.innerHTML;
+        const t = window.UI_I18N && code && window.UI_I18N[code] && window.UI_I18N[code][key];
+        el.innerHTML = t || el.dataset.i18nOriginal;
+    });
+}
+
 function getNativeGlossByKey(key) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
     if (!code || !window.LANG_DB || !window.LANG_DB[code]) return '';
@@ -2336,6 +2358,9 @@ function applyNativeLanguageNuances() {
     // 0. Lazy-load the native gloss pack, then refresh the visible flashcard
     ensureLangDb(() => { if (typeof updateCard === 'function') updateCard(); });
 
+    // 0b. Translate the UI chrome (data-i18n elements); restores English when selected
+    ensureUiI18n(applyUiLanguage);
+
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
     if (subtitle) {
@@ -2463,9 +2488,13 @@ function setupHelp() {
         return active ? active.getAttribute('data-tab') : 'arena';
     };
     const openHelp = () => {
-        const info = TAB_HELP[activeTabId()] || TAB_HELP.arena;
-        titleEl.textContent = info.title;
-        bodyEl.textContent = info.body;
+        const tab = activeTabId();
+        const info = TAB_HELP[tab] || TAB_HELP.arena;
+        // Translated help when a UI language pack is active; English fallback.
+        const code = LANG_PACK_CODES[player.nativeLanguage];
+        const tr = (code && window.UI_I18N && window.UI_I18N[code]) || {};
+        titleEl.textContent = tr[`help.${tab}.title`] || info.title;
+        bodyEl.textContent = tr[`help.${tab}.body`] || info.body;
         overlay.classList.add('show');
     };
     const closeHelp = () => overlay.classList.remove('show');

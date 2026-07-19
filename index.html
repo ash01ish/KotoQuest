@@ -128,13 +128,13 @@
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
                         <div class="stats-badge">
-                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> Streak: <strong id="streak-count">1 Day</strong></span>
-                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> Rank: <strong id="rank-name">Novice</strong></span>
-                            <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Accuracy: <strong>0%</strong> (0/0)</span>
+                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> <span data-i18n="badge.streak">Streak:</span> <strong id="streak-count">1 Day</strong></span>
+                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> <span data-i18n="badge.rank">Rank:</span> <strong id="rank-name">Novice</strong></span>
+                            <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy">Accuracy:</span> <strong>0%</strong> (0/0)</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
                             <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
-                                <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
+                                <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> <span data-i18n="label.nativelang">Native Language:</span></label>
                                 <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
                                     <option value="english" style="background: #14161f; color: #fff;">English</option>
                                     <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
@@ -144,7 +144,7 @@
                                     <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
                                 </select>
                             </div>
-                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> Reset Game</button>
+                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset Game</span></button>
                         </div>
                     </div>
                 </div>
@@ -152,25 +152,25 @@
             
             <nav id="main-nav">
                 <button class="nav-tab active" data-tab="arena">
-                    <i class="fa-solid fa-shield-halved"></i> Quest Arena
+                    <i class="fa-solid fa-shield-halved"></i> <span data-i18n="nav.arena">Quest Arena</span>
                 </button>
                 <button class="nav-tab" data-tab="bridge">
-                    <i class="fa-solid fa-circle-nodes"></i> Trilingual Bridge
+                    <i class="fa-solid fa-circle-nodes"></i> <span data-i18n="nav.bridge">Trilingual Bridge</span>
                 </button>
                 <button class="nav-tab" data-tab="curriculum">
-                    <i class="fa-solid fa-book-open"></i> Daily Lessons
+                    <i class="fa-solid fa-book-open"></i> <span data-i18n="nav.lessons">Daily Lessons</span>
                 </button>
                 <button class="nav-tab" data-tab="kana">
-                    <i class="fa-solid fa-font"></i> Kana Charts
+                    <i class="fa-solid fa-font"></i> <span data-i18n="nav.kana">Kana Charts</span>
                 </button>
                 <button class="nav-tab" data-tab="canvas">
-                    <i class="fa-solid fa-paintbrush"></i> Canvas Writer
+                    <i class="fa-solid fa-paintbrush"></i> <span data-i18n="nav.canvas">Canvas Writer</span>
                 </button>
                 <button class="nav-tab" data-tab="flashcards">
-                    <i class="fa-solid fa-clone"></i> Flashcards
+                    <i class="fa-solid fa-clone"></i> <span data-i18n="nav.flashcards">Flashcards</span>
                 </button>
                 <button class="nav-tab" data-tab="builder">
-                    <i class="fa-solid fa-cubes"></i> Sentence Builder
+                    <i class="fa-solid fa-cubes"></i> <span data-i18n="nav.builder">Sentence Builder</span>
                 </button>
             </nav>
         </header>
@@ -181,7 +181,7 @@
             
             <div class="hud-stat">
                 <div class="stat-label">
-                    <span>HP (Health Points)</span>
+                    <span data-i18n="hud.hp">HP (Health Points)</span>
                     <span id="player-hp-text">100 / 100</span>
                 </div>
                 <div class="hud-bar-container">
@@ -191,7 +191,7 @@
 
             <div class="hud-stat">
                 <div class="stat-label">
-                    <span>XP (Experience Points)</span>
+                    <span data-i18n="hud.xp">XP (Experience Points)</span>
                     <span id="player-xp-text">0 / 100</span>
                 </div>
                 <div class="hud-bar-container">
@@ -205,7 +205,7 @@
 
             <!-- Player Inventory Quick Access -->
             <div class="hud-inventory-box">
-                <span class="inventory-title">Inventory:</span>
+                <span class="inventory-title" data-i18n="hud.inventory">Inventory:</span>
                 <div class="inventory-slot empty" id="slot-potion" data-item="potion" title="Healing Potion: Click to use (Restores 40 HP)">
                     <i class="fa-solid fa-flask"></i>
                     <span class="inventory-badge" id="badge-potion" style="display: none;">0</span>
@@ -226,7 +226,7 @@
             <section id="arena" class="tab-content active">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-map-location-dot" style="color: var(--accent-pink);"></i> Select Quest Difficulty Tier
+                        <i class="fa-solid fa-map-location-dot" style="color: var(--accent-pink);"></i> <span data-i18n="arena.selecttier">Select Quest Difficulty Tier</span>
                     </div>
                     <div class="quest-selection-grid" id="quest-tier-selector">
                         <button class="quest-tier-btn active" data-tier="N5">N5 (Beginner)</button>
@@ -237,7 +237,7 @@
                     </div>
                     <div style="margin-top: 15px; display: flex; justify-content: flex-end; align-items: center;">
                         <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
-                            <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> Enable Procedural Vocabulary Quizzes (8,100+ words)
+                            <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> <span data-i18n="arena.procedural">Enable Procedural Vocabulary Quizzes (8,100+ words)</span>
                         </label>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                             <div class="enemy-name" id="enemy-name">KANJI SHOGUN</div>
                             <div class="enemy-hp-container">
                                 <div class="stat-label">
-                                    <span>Enemy HP</span>
+                                    <span data-i18n="arena.enemyhp">Enemy HP</span>
                                     <span id="enemy-hp-text">80/80</span>
                                 </div>
                                 <div class="hud-bar-container" style="height: 10px;">
@@ -270,7 +270,7 @@
                     <!-- Right: Questions / Controls -->
                     <div class="glass-card combat-controls" style="margin-bottom: 0;">
                         <div class="combat-question-box">
-                            <div class="combat-question-title" id="combat-question-lbl">Combat Question:</div>
+                            <div class="combat-question-title" id="combat-question-lbl" data-i18n="arena.question">Combat Question:</div>
                             <div class="combat-question-text" id="combat-question-main">What is the meaning of this Kanji: "日" ?</div>
                         </div>
 
@@ -289,8 +289,8 @@
                         </div>
                         
                         <div style="display: flex; gap: 10px; margin-top: 15px;">
-                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> Pronounce Question</button>
-                            <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> Run Away</button>
+                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> <span data-i18n="arena.pronounce">Pronounce Question</span></button>
+                            <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> <span data-i18n="arena.runaway">Run Away</span></button>
                         </div>
                     </div>
                 </div>
@@ -298,45 +298,45 @@
                 <!-- Merchant Shop -->
                 <div class="glass-card" style="margin-top: 25px;">
                     <div class="card-title">
-                        <i class="fa-solid fa-shop" style="color: var(--accent-gold);"></i> Samurai Merchant Shop
+                        <i class="fa-solid fa-shop" style="color: var(--accent-gold);"></i> <span data-i18n="shop.title">Samurai Merchant Shop</span>
                         <span class="badge" style="background: rgba(255,165,2,0.15); color: var(--accent-gold); border-color: var(--accent-gold);">Gold Exchange</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Earn Gold by defeating monsters, then buy essential battle aids to survive N3, N2, and N1 boss fights!</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;" data-i18n="shop.intro">Earn Gold by defeating monsters, then buy essential battle aids to survive N3, N2, and N1 boss fights!</p>
                     
                     <div class="shop-grid">
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-flask"></i></div>
-                                <div class="shop-name">Healing Potion</div>
-                                <div class="shop-desc">Restores 40 Health Points (HP) instantly. Can be clicked in your inventory bar to drink during combat.</div>
+                                <div class="shop-name" data-i18n="shop.potion">Healing Potion</div>
+                                <div class="shop-desc" data-i18n="shop.potiondesc">Restores 40 Health Points (HP) instantly. Can be clicked in your inventory bar to drink during combat.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">50 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="potion">Buy Potion</button>
+                                <button class="btn btn-gold btn-buy" data-item="potion" data-i18n="shop.buypotion">Buy Potion</button>
                             </div>
                         </div>
 
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-shield"></i></div>
-                                <div class="shop-name">Grammar Shield</div>
-                                <div class="shop-desc">Blocks all damage from one incorrect answer in battle. Triggers automatically when you make a mistake.</div>
+                                <div class="shop-name" data-i18n="shop.shield">Grammar Shield</div>
+                                <div class="shop-desc" data-i18n="shop.shielddesc">Blocks all damage from one incorrect answer in battle. Triggers automatically when you make a mistake.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">80 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="shield">Buy Shield</button>
+                                <button class="btn btn-gold btn-buy" data-item="shield" data-i18n="shop.buyshield">Buy Shield</button>
                             </div>
                         </div>
 
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-scroll"></i></div>
-                                <div class="shop-name">Hint Scroll</div>
-                                <div class="shop-desc">Eliminates one wrong answer option from the multiple-choice grid. Click in inventory during battle.</div>
+                                <div class="shop-name" data-i18n="shop.scroll">Hint Scroll</div>
+                                <div class="shop-desc" data-i18n="shop.scrolldesc">Eliminates one wrong answer option from the multiple-choice grid. Click in inventory during battle.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">120 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="hint">Buy Scroll</button>
+                                <button class="btn btn-gold btn-buy" data-item="hint" data-i18n="shop.buyscroll">Buy Scroll</button>
                             </div>
                         </div>
                     </div>
@@ -345,10 +345,10 @@
                 <!-- Detailed Statistics Breakdown -->
                 <div class="glass-card" style="margin-top: 25px;">
                     <div class="card-title">
-                        <i class="fa-solid fa-chart-simple" style="color: var(--accent-teal);"></i> Detailed Practice Statistics
+                        <i class="fa-solid fa-chart-simple" style="color: var(--accent-teal);"></i> <span data-i18n="stats.title">Detailed Practice Statistics</span>
                         <span class="badge" style="background: rgba(0,242,254,0.15); color: var(--accent-teal); border-color: var(--accent-teal);">Category Analytics</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">A live breakdown of your answers by Japanese grammar categories and question types:</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;" data-i18n="stats.intro">A live breakdown of your answers by Japanese grammar categories and question types:</p>
                     
                     <div id="stats-type-breakdown" style="display: flex; gap: 12px; flex-wrap: wrap;">
                         <span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the <a href="#" data-goto-tab="arena">Quest Arena</a> to see analysis.</span>
@@ -1448,7 +1448,7 @@
             <section id="kana" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-table" style="color: var(--accent-pink);"></i> Interactive Kana Charts
+                        <i class="fa-solid fa-table" style="color: var(--accent-pink);"></i> <span data-i18n="kana.title">Interactive Kana Charts</span>
                         <span class="badge">Phonetics Lookup</span>
                     </div>
                     
@@ -1457,7 +1457,7 @@
                             <button class="toggle-btn active" data-type="hiragana">Hiragana</button>
                             <button class="toggle-btn" data-type="katakana">Katakana</button>
                         </div>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">Click any card below to play pronunciation audio!</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="kana.hint">Click any card below to play pronunciation audio!</p>
                     </div>
 
                     <div class="kana-grid" id="kana-grid-container">
@@ -1470,7 +1470,7 @@
             <section id="canvas" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-pencil" style="color: var(--accent-pink);"></i> Kana Writing Practice Canvas
+                        <i class="fa-solid fa-pencil" style="color: var(--accent-pink);"></i> <span data-i18n="canvas.title">Kana Writing Practice Canvas</span>
                         <span class="badge">Stroke Practice</span>
                     </div>
                     
@@ -1478,8 +1478,8 @@
                         <div class="canvas-wrapper">
                             <canvas id="practice-canvas" width="350" height="350"></canvas>
                             <div class="canvas-controls">
-                                <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> Clear Canvas</button>
-                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> Hide Guide Lines</button>
+                                <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> <span data-i18n="canvas.clear">Clear Canvas</span></button>
+                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="canvas.guides">Hide Guide Lines</span></button>
                             </div>
                         </div>
                         
@@ -1491,12 +1491,12 @@
                             </div>
                             
                             <div class="canvas-guide-nav">
-                                <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> Previous</button>
-                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> Audio</button>
-                                <button class="btn" id="btn-next-guide">Next <i class="fa-solid fa-chevron-right"></i></button>
+                                <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> <span data-i18n="canvas.prev">Previous</span></button>
+                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="canvas.audio">Audio</span></button>
+                                <button class="btn" id="btn-next-guide"><span data-i18n="canvas.next">Next</span> <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
-                            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+                            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;" data-i18n="canvas.instructions">
                                 <strong>How to use it:</strong> trace the guide character with your mouse, trackpad, or finger. Writing the shapes by hand builds the muscle memory that makes them stick, which is usually faster than trying to memorize them by sight alone.
                             </p>
                         </div>
@@ -1508,18 +1508,18 @@
             <section id="flashcards" class="tab-content">
                 <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
                     <div class="card-title">
-                        <i class="fa-solid fa-layer-group" style="color: var(--accent-pink);"></i> Vocabulary Flashcards
+                        <i class="fa-solid fa-layer-group" style="color: var(--accent-pink);"></i> <span data-i18n="flash.title">Vocabulary Flashcards</span>
                         <span class="badge">SRS Review</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Flip the card, then rate how well you knew it — <strong style="color:#e74c3c;">Again</strong> (~1 min), <strong style="color:#e67e22;">Hard</strong> (~12 h), <strong style="color:#3498db;">Good</strong> (~3 days), <strong style="color:#2ecc71;">Easy</strong> (~7 days). Cards you find hard come back sooner (spaced repetition). <strong>Due Only</strong> shows just the cards scheduled for review right now.</p>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;" data-i18n="flash.legend">Flip the card, then rate how well you knew it — <strong style="color:#e74c3c;">Again</strong> (~1 min), <strong style="color:#e67e22;">Hard</strong> (~12 h), <strong style="color:#3498db;">Good</strong> (~3 days), <strong style="color:#2ecc71;">Easy</strong> (~7 days). Cards you find hard come back sooner (spaced repetition). <strong>Due Only</strong> shows just the cards scheduled for review right now.</p>
 
                     <div class="kana-controls">
                         <div class="toggle-group" id="flashcard-category-toggle">
-                            <button class="toggle-btn active" data-cat="kana">Letters</button>
-                            <button class="toggle-btn" data-cat="numbers">Numbers</button>
-                            <button class="toggle-btn" data-cat="phrases">Survival Phrases</button>
-                            <button class="toggle-btn" data-cat="verbs">Verbs</button>
-                            <button class="toggle-btn" data-cat="adjectives">Adjectives</button>
+                            <button class="toggle-btn active" data-cat="kana" data-i18n="flash.deck.kana">Letters</button>
+                            <button class="toggle-btn" data-cat="numbers" data-i18n="flash.deck.numbers">Numbers</button>
+                            <button class="toggle-btn" data-cat="phrases" data-i18n="flash.deck.phrases">Survival Phrases</button>
+                            <button class="toggle-btn" data-cat="verbs" data-i18n="flash.deck.verbs">Verbs</button>
+                            <button class="toggle-btn" data-cat="adjectives" data-i18n="flash.deck.adjectives">Adjectives</button>
                             <button class="toggle-btn" data-cat="n5">N5 Dict</button>
                             <button class="toggle-btn" data-cat="n4">N4 Dict</button>
                             <button class="toggle-btn" data-cat="n3">N3 Dict</button>
@@ -1528,7 +1528,7 @@
                         </div>
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
-                                <input type="checkbox" id="chk-srs-due" style="accent-color: var(--accent-pink); width: 15px; height: 15px; cursor: pointer;"> Due Only
+                                <input type="checkbox" id="chk-srs-due" style="accent-color: var(--accent-pink); width: 15px; height: 15px; cursor: pointer;"> <span data-i18n="flash.dueonly">Due Only</span>
                             </label>
                             <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
                         </div>
@@ -1552,9 +1552,9 @@
 
                         <!-- Standard navigation controls -->
                         <div class="flashcard-btn-row" id="card-nav-standard">
-                            <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> Previous</button>
-                            <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> Listen</button>
-                            <button class="btn btn-primary" id="btn-card-next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="flash.prev">Previous</span></button>
+                            <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="flash.listen">Listen</span></button>
+                            <button class="btn btn-primary" id="btn-card-next"><span data-i18n="flash.next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
 
                         <!-- SRS Rating controls, shown on flip -->
@@ -1572,10 +1572,10 @@
             <section id="builder" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> Particle Sentence Builder
+                        <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> <span data-i18n="builder.title">Particle Sentence Builder</span>
                         <span class="badge">Grammar Lab</span>
                     </div>
-                    <p style="margin-bottom: 20px; color: var(--text-muted);">Assemble the Japanese sentence using the word chips from the bank. Place them in the target workspace box in the correct order (Subject &rarr; Topic Particle &rarr; Object &rarr; Object Particle &rarr; Verb)!</p>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);" data-i18n="builder.intro">Assemble the Japanese sentence using the word chips from the bank. Place them in the target workspace box in the correct order (Subject &rarr; Topic Particle &rarr; Object &rarr; Object Particle &rarr; Verb)!</p>
                     
                     <div class="sentence-builder-container">
                         <div style="font-weight: 700; color: #fff; font-size: 1.1rem;" id="sentence-prompt">Target: "I eat sushi."</div>
@@ -1593,9 +1593,9 @@
                         <div class="sentence-builder-controls">
                             <div class="sentence-feedback" id="sentence-feedback"></div>
                             <div style="display: flex; gap: 10px;">
-                                <button class="btn" id="btn-clear-sentence"><i class="fa-solid fa-arrow-rotate-left"></i> Reset</button>
-                                <button class="btn btn-teal" id="btn-check-sentence"><i class="fa-solid fa-check"></i> Check Sentence</button>
-                                <button class="btn btn-primary" id="btn-next-sentence">Next Challenge <i class="fa-solid fa-chevron-right"></i></button>
+                                <button class="btn" id="btn-clear-sentence"><i class="fa-solid fa-arrow-rotate-left"></i> <span data-i18n="builder.reset">Reset</span></button>
+                                <button class="btn btn-teal" id="btn-check-sentence"><i class="fa-solid fa-check"></i> <span data-i18n="builder.check">Check Sentence</span></button>
+                                <button class="btn btn-primary" id="btn-next-sentence"><span data-i18n="builder.next">Next Challenge</span> <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -1604,11 +1604,11 @@
         </main>
 
         <footer class="site-footer">
-            <p>Built by <a href="https://github.com/ash01ish" target="_blank" rel="noopener">Ashish Thirunagari</a>. Free and open source under CC BY-NC-SA 4.0.</p>
-            <p style="margin-top: 4px;">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
+            <p data-i18n="footer.built">Built by <a href="https://github.com/ash01ish" target="_blank" rel="noopener">Ashish Thirunagari</a>. Free and open source under CC BY-NC-SA 4.0.</p>
+            <p style="margin-top: 4px;" data-i18n="footer.star1">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
             <div class="footer-cta">
-                <a class="footer-btn footer-btn-star" href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> Star on GitHub</a>
-                <a class="footer-btn footer-btn-sponsor" href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> Sponsor</a>
+                <a class="footer-btn footer-btn-star" href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> <span data-i18n="footer.starbtn">Star on GitHub</span></a>
+                <a class="footer-btn footer-btn-sponsor" href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> <span data-i18n="footer.sponsorbtn">Sponsor</span></a>
             </div>
         </footer>
 
@@ -1624,8 +1624,8 @@
             </div>
             <p id="help-body"></p>
             <div class="help-actions">
-                <button type="button" id="help-replay" class="btn">Replay intro tour</button>
-                <button type="button" id="help-ok" class="btn btn-teal">Got it</button>
+                <button type="button" id="help-replay" class="btn" data-i18n="help.replay">Replay intro tour</button>
+                <button type="button" id="help-ok" class="btn btn-teal" data-i18n="help.gotit">Got it</button>
             </div>
         </div>
     </div>
