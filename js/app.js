@@ -1168,7 +1168,16 @@ const CURRICULUM = [
         { title: 'Giving & Receiving', pane: 'day-pane-12' },
         { title: 'Potential Form', pane: 'day-pane-13' }
     ]},
-    { level: 'N3', title: 'Intermediate', lessons: [] },
+    { level: 'N3', title: 'Intermediate', lessons: [
+        { title: 'Conditionals I: たら & と', pane: 'day-pane-14' },
+        { title: 'Conditionals II: ば & なら', pane: 'day-pane-15' },
+        { title: 'Passive', pane: 'day-pane-16' },
+        { title: 'Causative & Causative-Passive', pane: 'day-pane-17' },
+        { title: 'Change & Decisions', pane: 'day-pane-18' },
+        { title: 'Hearsay & Appearance', pane: 'day-pane-19' },
+        { title: 'Te-form Extensions', pane: 'day-pane-20' },
+        { title: 'Keigo I: Honorific & Humble', pane: 'day-pane-21' }
+    ]},
     { level: 'N2', title: 'Advanced', lessons: [] },
     { level: 'N1', title: 'Mastery', lessons: [] }
 ];
