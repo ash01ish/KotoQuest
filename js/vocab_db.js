@@ -1188,7 +1188,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "結婚",
-      "r": "けっこ�� (する)",
+      "r": "けっこん (する)",
       "m": "marriage (get married)"
     },
     {
@@ -1582,7 +1582,7 @@ const FULL_VOCAB_DB = {
       "m": "~ weeks"
     },
     {
-      "j": "���業",
+      "j": "授業",
       "r": "じゅぎょう",
       "m": "a class (of school)"
     },
@@ -2823,7 +2823,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "一つ",
-      "r": "��とつ",
+      "r": "ひとつ",
       "m": "one thing"
     },
     {
@@ -3388,7 +3388,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "郵便局",
-      "r": "ゆうびん��ょく",
+      "r": "ゆうびんきょく",
       "m": "post office"
     },
     {
@@ -7962,7 +7962,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "人類",
-      "r": "じんる��",
+      "r": "じんるい",
       "m": "mankind, humanity"
     },
     {
@@ -9012,7 +9012,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "否",
-      "r": "い��",
+      "r": "いな",
       "m": "no, the noes"
     },
     {
@@ -13202,7 +13202,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "起源",
-      "r": "���げん",
+      "r": "きげん",
       "m": "origin, beginning, rise"
     },
     {
@@ -16217,7 +16217,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "風景",
-      "r": "ふ���けい",
+      "r": "ふうけい",
       "m": "scenery"
     },
     {
@@ -21024,7 +21024,7 @@ const FULL_VOCAB_DB = {
     },
     {
       "j": "堪える",
-      "r": "こ���える",
+      "r": "こらえる",
       "m": "to bear, to endure, to put up with"
     },
     {
