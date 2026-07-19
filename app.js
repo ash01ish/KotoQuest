@@ -606,6 +606,115 @@ const SENTENCE_LEVELS = [
             { ja: 'いきたい', en: 'Want to go', part: false },
             { ja: 'です', en: 'Is/Polite', part: false }
         ]
+    },
+    {
+        prompt: 'Target: "I read a book every day."',
+        correctOrder: ['わたし', 'は', 'まいにち', 'ほん', 'を', 'よみます'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'まいにち', en: 'Every day', part: false },
+            { ja: 'ほん', en: 'Book', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'よみます', en: 'Read', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Please wait a little."',
+        correctOrder: ['ちょっと', 'まって', 'ください'],
+        words: [
+            { ja: 'ちょっと', en: 'A little', part: false },
+            { ja: 'まって', en: 'Wait (te-form)', part: false },
+            { ja: 'ください', en: 'Please', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Can you speak Japanese?"',
+        correctOrder: ['にほんご', 'が', 'はなせますか'],
+        words: [
+            { ja: 'にほんご', en: 'Japanese', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'はなせますか', en: 'Can speak?', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I want to drink coffee."',
+        correctOrder: ['わたし', 'は', 'コーヒー', 'が', 'のみたい', 'です'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'コーヒー', en: 'Coffee', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'のみたい', en: 'Want to drink', part: false },
+            { ja: 'です', en: 'Polite', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "My friend gave me a present."',
+        correctOrder: ['ともだち', 'が', 'プレゼント', 'を', 'くれました'],
+        words: [
+            { ja: 'ともだち', en: 'Friend', part: false },
+            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'プレゼント', en: 'Present', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'くれました', en: 'Gave (to me)', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Let\'s eat lunch together."',
+        correctOrder: ['いっしょに', 'ひるごはん', 'を', 'たべましょう'],
+        words: [
+            { ja: 'いっしょに', en: 'Together', part: false },
+            { ja: 'ひるごはん', en: 'Lunch', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'たべましょう', en: "Let's eat", part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I went to Tokyo yesterday."',
+        correctOrder: ['わたし', 'は', 'きのう', 'とうきょう', 'に', 'いきました'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'きのう', en: 'Yesterday', part: false },
+            { ja: 'とうきょう', en: 'Tokyo', part: false },
+            { ja: 'に', en: '[To]', part: true },
+            { ja: 'いきました', en: 'Went', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "Please open the window."',
+        correctOrder: ['まど', 'を', 'あけて', 'ください'],
+        words: [
+            { ja: 'まど', en: 'Window', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'あけて', en: 'Open (te-form)', part: false },
+            { ja: 'ください', en: 'Please', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "This ramen is delicious."',
+        correctOrder: ['この', 'ラーメン', 'は', 'おいしい', 'です'],
+        words: [
+            { ja: 'この', en: 'This', part: false },
+            { ja: 'ラーメン', en: 'Ramen', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'おいしい', en: 'Delicious', part: false },
+            { ja: 'です', en: 'Is', part: false }
+        ]
+    },
+    {
+        prompt: 'Target: "I study Japanese at the library."',
+        correctOrder: ['わたし', 'は', 'としょかん', 'で', 'にほんご', 'を', 'べんきょうします'],
+        words: [
+            { ja: 'わたし', en: 'I', part: false },
+            { ja: 'は', en: '[Topic]', part: true },
+            { ja: 'としょかん', en: 'Library', part: false },
+            { ja: 'で', en: '[At/In]', part: true },
+            { ja: 'にほんご', en: 'Japanese', part: false },
+            { ja: 'を', en: '[Object]', part: true },
+            { ja: 'べんきょうします', en: 'Study', part: false }
+        ]
     }
 ];
 
@@ -988,7 +1097,14 @@ const CURRICULUM = [
         { title: 'Adjectives & Survival Phrases', pane: 'day-pane-6' },
         { title: 'Conversational Masterclass', pane: 'day-pane-7' }
     ]},
-    { level: 'N4', title: 'Everyday Grammar', lessons: [] },
+    { level: 'N4', title: 'Everyday Grammar', lessons: [
+        { title: 'The Te-form', pane: 'day-pane-8' },
+        { title: 'Plain (Casual) Form', pane: 'day-pane-9' },
+        { title: 'Plain Past & Negative', pane: 'day-pane-10' },
+        { title: 'Counters', pane: 'day-pane-11' },
+        { title: 'Giving & Receiving', pane: 'day-pane-12' },
+        { title: 'Potential Form', pane: 'day-pane-13' }
+    ]},
     { level: 'N3', title: 'Intermediate', lessons: [] },
     { level: 'N2', title: 'Advanced', lessons: [] },
     { level: 'N1', title: 'Mastery', lessons: [] }
