@@ -16,7 +16,10 @@ const PRECACHE = [
   './vendor/fontawesome/webfonts/fa-solid-900.woff2',
   './vendor/fonts/outfit.css',
   './vendor/fonts/outfit-latin.woff2',
-  './vendor/fonts/outfit-latin-ext.woff2'
+  './vendor/fonts/outfit-latin-ext.woff2',
+  './icon-192.png',
+  './icon-512.png',
+  './favicon-32.png'
 ];
 
 self.addEventListener('install', (event) => {

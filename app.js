@@ -651,6 +651,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // First-visit welcome / onboarding
     setupOnboarding();
 
+    // Per-tab guided help + replay tour
+    setupHelp();
+
     // Reset Game bind
     setupResetGameButton();
 
@@ -669,9 +672,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setupKeyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
-        // Ignore game shortcuts while the onboarding overlay is open
-        const onboarding = document.getElementById('onboarding-overlay');
-        if (onboarding && onboarding.classList.contains('show')) return;
+        // Ignore game shortcuts while any modal overlay is open
+        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show')) return;
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
             return;
@@ -733,6 +735,8 @@ function loadGameData() {
         player.streak = typeof loaded.streak === 'number' ? loaded.streak : 0;
         player.lastActiveDate = typeof loaded.lastActiveDate === 'string' ? loaded.lastActiveDate : '';
         player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'english';
+        player.lastTab = typeof loaded.lastTab === 'string' ? loaded.lastTab : '';
+        player.currentDay = typeof loaded.currentDay === 'string' ? loaded.currentDay : '';
         
         // Verify streak isn't broken on load
         if (player.lastActiveDate) {
@@ -943,40 +947,58 @@ function setupAudioSpeakButtons() {
 function setupTabs() {
     const navTabs = document.querySelectorAll('.nav-tab');
     const tabPanels = document.querySelectorAll('.tab-content');
-    
+
+    const activateTab = (targetTab) => {
+        navTabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-tab') === targetTab));
+        tabPanels.forEach(p => p.classList.remove('active'));
+        const targetEl = document.getElementById(targetTab);
+        if (targetEl) targetEl.classList.add('active');
+        if (targetTab === 'canvas') {
+            resizeCanvas();
+            drawCanvasGuide();
+        }
+    };
+
     navTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const targetTab = tab.getAttribute('data-tab');
-            
-            navTabs.forEach(t => t.classList.remove('active'));
-            tabPanels.forEach(p => p.classList.remove('active'));
-            
-            tab.classList.add('active');
-            const targetEl = document.getElementById(targetTab);
-            if (targetEl) targetEl.classList.add('active');
-            
-            if (targetTab === 'canvas') {
-                resizeCanvas();
-                drawCanvasGuide();
-            }
+            activateTab(targetTab);
+            player.lastTab = targetTab;
+            saveGameData();
         });
     });
+
+    // Resume the tab the user was last on.
+    if (player.lastTab && document.getElementById(player.lastTab)) {
+        activateTab(player.lastTab);
+    }
 }
 
 // --- DAY SELECTOR ---
 function setupDaySelector() {
     const dayBtns = document.querySelectorAll('.day-btn');
     const dayPanes = document.querySelectorAll('.day-pane');
-    
+
+    const activateDay = (day) => {
+        dayBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-day') === String(day)));
+        dayPanes.forEach(p => p.classList.remove('active'));
+        const pane = document.getElementById(`day-pane-${day}`);
+        if (pane) pane.classList.add('active');
+    };
+
     dayBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            dayBtns.forEach(b => b.classList.remove('active'));
-            dayPanes.forEach(p => p.classList.remove('active'));
-            
-            btn.classList.add('active');
-            document.getElementById(`day-pane-${btn.getAttribute('data-day')}`).classList.add('active');
+            const day = btn.getAttribute('data-day');
+            activateDay(day);
+            player.currentDay = day;
+            saveGameData();
         });
     });
+
+    // Resume the lesson day the user was last on instead of always starting at Day 1.
+    if (player.currentDay && document.getElementById(`day-pane-${player.currentDay}`)) {
+        activateDay(player.currentDay);
+    }
 }
 
 // --- KANA GRID GENERATION ---
@@ -2137,6 +2159,55 @@ function setupOnboarding() {
     overlay.classList.add('show');
 }
 
+// Short "how to use this" guide for each tab, shown by the floating ? button.
+const TAB_HELP = {
+    arena: { title: 'Quest Arena', body: 'Pick a difficulty tier (N5–N1), then answer each combat question to attack the monster. Correct answers deal damage and earn XP + gold; wrong answers cost you HP. Spend gold in the Samurai Merchant Shop on potions (heal), shields (block one wrong answer), and hints (remove a wrong option).' },
+    bridge: { title: 'Trilingual Bridge', body: 'See how Japanese grammar lines up with your own language. Click any particle (は, を, に…) to view its equivalent and example sentences in your native language. The 24-month planner below maps out a path to JLPT N1.' },
+    curriculum: { title: 'Daily Lessons', body: 'A guided, day-by-day course from kana to conversation. Pick a day on the left — it remembers where you left off, so you can pick up next time right where you stopped.' },
+    kana: { title: 'Kana Charts', body: 'Tap any hiragana or katakana card to hear it pronounced. Use the toggle up top to switch between the two scripts.' },
+    canvas: { title: 'Canvas Writer', body: 'Trace the guide character with your mouse, trackpad, or finger to build muscle memory. Toggle the guide lines on/off and step through characters with Previous / Next.' },
+    flashcards: { title: 'Flashcards', body: 'Flip a card, then rate how well you knew it: Again (see it again in ~1 min), Hard (~12 h), Good (~3 days), Easy (~7 days). This is spaced repetition — cards you find hard come back sooner. "Due Only" shows just the cards scheduled for review right now.' },
+    builder: { title: 'Sentence Builder', body: 'Tap the word chips into the correct Japanese order (Subject → Topic particle → Object → Object particle → Verb), then Check Sentence. Reset to try again, or move on to the Next Challenge.' }
+};
+
+function setupHelp() {
+    const fab = document.getElementById('help-fab');
+    const overlay = document.getElementById('help-overlay');
+    if (!fab || !overlay) return;
+    const titleEl = document.getElementById('help-title');
+    const bodyEl = document.getElementById('help-body');
+
+    const activeTabId = () => {
+        const active = document.querySelector('.nav-tab.active');
+        return active ? active.getAttribute('data-tab') : 'arena';
+    };
+    const openHelp = () => {
+        const info = TAB_HELP[activeTabId()] || TAB_HELP.arena;
+        titleEl.textContent = info.title;
+        bodyEl.textContent = info.body;
+        overlay.classList.add('show');
+    };
+    const closeHelp = () => overlay.classList.remove('show');
+
+    fab.addEventListener('click', openHelp);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeHelp(); });
+    ['help-close', 'help-ok'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('click', closeHelp);
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('show')) closeHelp();
+    });
+
+    // Replay the first-visit intro tour.
+    const replay = document.getElementById('help-replay');
+    if (replay) replay.addEventListener('click', () => {
+        closeHelp();
+        const onboarding = document.getElementById('onboarding-overlay');
+        if (onboarding) onboarding.classList.add('show');
+    });
+}
+
 function setupResetGameButton() {
     const btn = document.getElementById('btn-reset-game');
     if (!btn) return;
@@ -2170,7 +2241,9 @@ function setupResetGameButton() {
                     byType: {}
                 },
                 srsData: {},
-                nativeLanguage: 'english'
+                nativeLanguage: 'english',
+                lastTab: '',
+                currentDay: ''
             };
             saveGameData();
             updateHUDDisplays();
