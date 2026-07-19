@@ -120,6 +120,7 @@ header {
 
 .stats-badge {
     background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
@@ -141,6 +142,7 @@ header {
 
 nav {
     background: rgba(18, 22, 33, 0.8);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     display: flex;
     overflow-x: auto;
@@ -197,6 +199,7 @@ nav {
     border: 1px solid var(--card-border);
     border-radius: 18px;
     padding: 25px;
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     box-shadow: var(--shadow-soft);
     margin-bottom: 25px;
@@ -1437,6 +1440,7 @@ canvas {
     inset: 0;
     z-index: 1000;
     background: rgba(6, 7, 12, 0.82);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     padding: 20px;
     overflow-y: auto;
@@ -1489,3 +1493,57 @@ canvas {
     .onboard-tour { grid-template-columns: 1fr; }
     .onboarding-hero h2 { font-size: 1.3rem; }
 }
+
+/* Floating help button + per-page help overlay */
+.help-fab {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 900;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.help-fab:hover { filter: brightness(1.1); }
+.help-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(6, 7, 12, 0.82);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.help-overlay.show { display: flex; }
+.help-card { max-width: 460px; width: 100%; }
+.help-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.help-head h3 { color: #fff; font-size: 1.2rem; }
+.help-close { background: none; border: none; color: var(--text-muted); font-size: 1.6rem; line-height: 1; cursor: pointer; }
+.help-close:hover { color: #fff; }
+.help-overlay p { color: var(--text-muted); line-height: 1.6; margin-bottom: 18px; }
+.help-actions { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
+
+/* Footer star / sponsor CTAs */
+.site-footer .footer-cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+.site-footer .footer-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 50px;
+    font-weight: 700; font-size: 0.85rem; text-decoration: none;
+    border: 1px solid var(--card-border);
+    transition: var(--transition-smooth);
+}
+.site-footer .footer-btn:hover { text-decoration: none; }
+.site-footer .footer-btn-star { color: var(--accent-gold); border-color: rgba(255, 165, 2, 0.4); background: rgba(255, 165, 2, 0.08); }
+.site-footer .footer-btn-star:hover { background: rgba(255, 165, 2, 0.18); }
+.site-footer .footer-btn-sponsor { color: var(--accent-pink); border-color: rgba(255, 107, 139, 0.4); background: rgba(255, 107, 139, 0.08); }
+.site-footer .footer-btn-sponsor:hover { background: rgba(255, 107, 139, 0.18); }

@@ -1,19 +1,29 @@
-// Service Worker for KotoQuest Progressive Web App (PWA)
-const CACHE_NAME = 'kotoquest-v2';
-const ASSETS_TO_CACHE = [
+// Service Worker for KotoQuest (PWA) — NETWORK-FIRST.
+// Always tries the latest from the network so a new deploy reaches people
+// immediately; falls back to the cache only when offline. The cache is refreshed
+// on every load, so offline always has the most recent working copy.
+// This never touches localStorage, so study progress is safe across any cache change.
+const CACHE_NAME = 'kotoquest-v3';
+const PRECACHE = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './vocab_db.js',
   './hero.jpg',
-  './manifest.json'
+  './manifest.json',
+  './vendor/fontawesome/css/all.min.css',
+  './vendor/fontawesome/webfonts/fa-solid-900.woff2',
+  './vendor/fonts/outfit.css',
+  './vendor/fonts/outfit-latin.woff2',
+  './vendor/fonts/outfit-latin-ext.woff2',
+  './icon-192.png',
+  './icon-512.png',
+  './favicon-32.png'
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
-  );
+  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE)));
   self.skipWaiting();
 });
 
@@ -26,22 +36,19 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Stale-while-revalidate: serve cache instantly (fast + offline), and refresh the
-// cache from the network in the background so the NEXT load has the latest deploy.
-// This is what stops returning users getting stuck on an old version forever.
 self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return;
+  const req = event.request;
+  if (req.method !== 'GET') return;
   event.respondWith(
-    caches.open(CACHE_NAME).then((cache) =>
-      cache.match(event.request).then((cached) => {
-        const fromNetwork = fetch(event.request)
-          .then((res) => {
-            if (res && res.status === 200) cache.put(event.request, res.clone());
-            return res;
-          })
-          .catch(() => cached); // offline: fall back to cache
-        return cached || fromNetwork; // instant if cached, else wait for network
+    fetch(req)
+      .then((res) => {
+        // Keep same-origin successes in the cache for offline use.
+        if (res && res.status === 200 && new URL(req.url).origin === self.location.origin) {
+          const copy = res.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
+        }
+        return res;
       })
-    )
+      .catch(() => caches.match(req).then((cached) => cached || caches.match('./index.html')))
   );
 });

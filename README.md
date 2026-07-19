@@ -96,11 +96,6 @@ cd KotoQuest
 open index.html   # macOS
 ```
 
-### Deploy on Cloudflare Pages
-1. Connect the GitHub repo in the Cloudflare dashboard: Workers & Pages → Pages → Connect to Git.
-2. Leave the build command empty and set the output directory to `/`.
-3. It publishes to https://kotoquest.pages.dev whenever `main` updates.
-
 ---
 
 ## Contributing

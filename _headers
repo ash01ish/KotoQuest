@@ -1,0 +1,13 @@
+# Cloudflare Pages response headers.
+# Always revalidate the app shell so a new deploy is picked up immediately
+# (works together with the network-first service worker in sw.js).
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate
+/style.css
+  Cache-Control: public, max-age=0, must-revalidate
+/vocab_db.js
+  Cache-Control: public, max-age=0, must-revalidate

@@ -12,3 +12,9 @@ wrangler.toml
 
 .wrangler/cache/pages.json
 .wrangler/cache/wrangler-account.json
+
+# Local test artifacts
+.playwright-mcp/
+m-*.png
+verify-*.png
+vendor/fonts/outfit-google.css
