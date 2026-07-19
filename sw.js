@@ -3,23 +3,23 @@
 // immediately; falls back to the cache only when offline. The cache is refreshed
 // on every load, so offline always has the most recent working copy.
 // This never touches localStorage, so study progress is safe across any cache change.
-const CACHE_NAME = 'kotoquest-v3';
+const CACHE_NAME = 'kotoquest-v4';
 const PRECACHE = [
   './',
   './index.html',
-  './style.css',
-  './app.js',
-  './vocab_db.js',
-  './hero.jpg',
+  './css/style.css',
+  './js/app.js',
+  './js/vocab_db.js',
+  './assets/hero.jpg',
   './manifest.json',
   './vendor/fontawesome/css/all.min.css',
   './vendor/fontawesome/webfonts/fa-solid-900.woff2',
   './vendor/fonts/outfit.css',
   './vendor/fonts/outfit-latin.woff2',
   './vendor/fonts/outfit-latin-ext.woff2',
-  './icon-192.png',
-  './icon-512.png',
-  './favicon-32.png'
+  './assets/icon-192.png',
+  './assets/icon-512.png',
+  './assets/favicon-32.png'
 ];
 
 self.addEventListener('install', (event) => {

@@ -76,7 +76,7 @@ header {
 
 .hero-banner {
     height: 220px;
-    background-image: url('hero.jpg');
+    background-image: url('../assets/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
