@@ -10,3 +10,5 @@ Thumbs.db
 qaos-plan.json
 wrangler.toml
 
+.wrangler/cache/pages.json
+.wrangler/cache/wrangler-account.json
