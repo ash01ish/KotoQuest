@@ -1,0 +1,17 @@
+{
+  "name": "KotoQuest - Gamified Multilingual Japanese N1 Academy",
+  "short_name": "KotoQuest",
+  "description": "Learn Japanese through native Telugu, Hindi, Korean, Tamil, Spanish & English grammar. Free offline JLPT N5-N1 academy.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#14161f",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://fav.farm/🏯",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}

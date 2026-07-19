@@ -68,7 +68,8 @@ Over **45% of the world's population** speaks a Subject-Object-Verb (SOV) langua
 * Interactive HTML5 stroke canvas for practicing Hiragana and Katakana character writing.
 * Includes dashed guide lines, toggleable overlays, character switching, and phonetic audio playback.
 
-### 🔥 6. Daily Streak & Desktop Keyboard Navigation
+### 🔥 6. Progressive Web App (PWA) & Offline Persistence
+* **Installable PWA:** Can be added to iOS/Android home screens or Desktop as a standalone native app (`manifest.json` + `sw.js`).
 * **Streak Tracker:** Automatically tracks consecutive study days using local calendar logic (`YYYY-MM-DD`).
 * **Desktop Keyboard Shortcuts:** Lightning-fast navigation (`1`, `2`, `3`, `4` keys for Quest Arena battle answers; `Spacebar` to flip flashcards; `←` / `→` arrow keys to switch cards).
 * **100% Offline LocalStorage:** Player Level, HP/XP, Gold, Merchant Inventory, SRS intervals, and Accuracy statistics persist automatically in `localStorage.samurai_player`.

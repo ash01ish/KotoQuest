@@ -651,6 +651,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Reset Game bind
     setupResetGameButton();
 
+    // Register PWA Service Worker for offline installation
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(err => console.log('PWA ServiceWorker registration failed:', err));
+    }
+
     // Keyboard Shortcuts (1-4 for battle, Space/Arrows for flashcards)
     setupKeyboardShortcuts();
     
