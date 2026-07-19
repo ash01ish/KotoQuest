@@ -64,7 +64,7 @@ python -m http.server 8000
 
 ## 📝 Adding New JLPT Questions
 
-All JLPT quiz questions live in the `QUEST_DATABASE` object inside **`app.js`**.
+All JLPT quiz questions live in the `QUEST_DATABASE` object inside **`js/app.js`**.
 
 ### Data Structure
 
@@ -89,7 +89,7 @@ const QUEST_DATABASE = {
 
 ### How to Add Questions
 
-1. Open `app.js` and locate the `QUEST_DATABASE` object.
+1. Open `js/app.js` and locate the `QUEST_DATABASE` object.
 2. Find the appropriate JLPT level (N5 = easiest, N1 = hardest).
 3. Add a new question object following the format above.
 
@@ -106,7 +106,7 @@ const QUEST_DATABASE = {
 
 ## 🌐 Adding a New Native Language
 
-KotoQuest supports multilingual grammar bridges through the `PARTICLE_CALC_DATA` structure in **`app.js`**.
+KotoQuest supports multilingual grammar bridges through the `PARTICLE_CALC_DATA` structure in **`js/app.js`**.
 
 ### Current Languages
 
@@ -151,10 +151,10 @@ const PARTICLE_CALC_DATA = {
 ### How to Add a New Language
 
 1. Choose a lowercase key representing the language (e.g. `french`) and a display label.
-2. Add a new translation property to every particle definition block in `PARTICLE_CALC_DATA` inside `app.js` (e.g. `french: "..."`).
+2. Add a new translation property to every particle definition block in `PARTICLE_CALC_DATA` inside `js/app.js` (e.g. `french: "..."`).
 3. Add a matching language translation property to each example object inside the `examples` array (e.g. `fr: "..."`).
 4. Update the language options dropdown selector in `index.html` by adding a new `<option>` tag under `#native-lang-select`.
-5. Add the translation configuration rules inside `applyNativeLanguageNuances()` and `renderParticleCalculator()` in `app.js`.
+5. Add the translation configuration rules inside `applyNativeLanguageNuances()` and `renderParticleCalculator()` in `js/app.js`.
 
 > **Important:** Please provide translations reviewed by a native speaker or a qualified linguist.
 
@@ -162,7 +162,7 @@ const PARTICLE_CALC_DATA = {
 
 ## 🧩 Adding Sentence Builder Challenges
 
-Sentence builder challenges are defined in the `SENTENCE_LEVELS` array in **`app.js`**.
+Sentence builder challenges are defined in the `SENTENCE_LEVELS` array in **`js/app.js`**.
 
 ### Data Structure
 
@@ -188,7 +188,7 @@ const SENTENCE_LEVELS = [
 
 ### How to Add New Challenges
 
-1. Open `app.js` and find the `SENTENCE_LEVELS` array.
+1. Open `js/app.js` and find the `SENTENCE_LEVELS` array.
 2. Add a new object following the schema above.
 3. Provide the English prompt, all comparative translation prompts (`tePrompt`, `hiPrompt`, etc.), the expected full correct string in `answer`, and the word chips array `words`.
 4. In the `words` array, specify the Japanese text (`ja`), the English translation hint (`en`), and whether it represents a structural particle/marker (`part: true`). The game automatically shuffles these chips on the screen.
@@ -211,13 +211,13 @@ KotoQuest is proudly built with **vanilla web technologies** — no frameworks, 
 | Layer   | Technology |
 |---------|-----------|
 | Structure | HTML5 (`index.html`) |
-| Styling   | CSS3 (`style.css`) |
-| Logic     | Vanilla JavaScript ES6+ (`app.js`) |
+| Styling   | CSS3 (`css/style.css`) |
+| Logic     | Vanilla JavaScript ES6+ (`js/app.js`) |
 
 ### Rules
 
 1. **No frameworks or libraries** — no React, Vue, Angular, jQuery, Tailwind, etc. Font Awesome and Google Fonts are the only external dependencies.
-2. **Single-file architecture** — keep HTML in `index.html`, styles in `style.css`, and JS in `app.js`.
+2. **Single-file architecture** — keep HTML in `index.html`, styles in `css/style.css`, and JS in `js/app.js`.
 3. **Use `const` and `let`** — never use `var`.
 4. **Use template literals** for string interpolation.
 5. **Use meaningful variable names** — `questionIndex` not `qi`.

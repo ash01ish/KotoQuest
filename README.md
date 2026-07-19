@@ -4,7 +4,7 @@
 > Learn Japanese through your own language's grammar instead of fighting it.
 > A free, open-source JLPT N5 → N1 study app with an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, and a native SOV grammar bridge.
 
-[![JLPT Coverage](https://img.shields.io/badge/JLPT-N5%20%E2%86%92%20N1%20%288%2C129%20Words%29-ff6b8b?style=for-the-badge&logo=japanese&logoColor=white)](vocab_db.js)
+[![JLPT Coverage](https://img.shields.io/badge/JLPT-N5%20%E2%86%92%20N1%20%288%2C129%20Words%29-ff6b8b?style=for-the-badge&logo=japanese&logoColor=white)](js/vocab_db.js)
 [![Offline First](https://img.shields.io/badge/Offline--First-100%25%20Browser%20Native-2ed573?style=for-the-badge&logo=html5&logoColor=white)](index.html)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ffa502?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-a55eea?style=for-the-badge&logo=github)](CONTRIBUTING.md)
@@ -81,7 +81,7 @@ So if you already think in one of those languages, a lot of Japanese grammar is 
 - Vanilla JavaScript (ES6+), HTML5, CSS3. No framework, no build step.
 - Audio: HTML5 SpeechSynthesis (`ja-JP`).
 - UI: CSS custom properties, a dark neon glass look, HTML5 Canvas.
-- Data: `vocab_db.js`, 8,129 curated JLPT entries drawn from the Tanos/Anki datasets.
+- Data: `js/vocab_db.js`, 8,129 curated JLPT entries drawn from the Tanos/Anki datasets.
 - Hosting: static files, so it runs on Cloudflare Pages, GitHub Pages, Netlify, or straight off your disk.
 
 ---

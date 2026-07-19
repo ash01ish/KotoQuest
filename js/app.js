@@ -644,7 +644,7 @@ const SENTENCE_LEVELS = [
             { ja: 'わたし', en: 'I', part: false },
             { ja: 'は', en: '[Topic]', part: true },
             { ja: 'コーヒー', en: 'Coffee', part: false },
-            { ja: 'が', en: '[Subject]', part: true },
+            { ja: 'が', en: '[Object of desire]', part: true },
             { ja: 'のみたい', en: 'Want to drink', part: false },
             { ja: 'です', en: 'Polite', part: false }
         ]
@@ -740,6 +740,7 @@ const CANVAS_GUIDES = [
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
     setupTabs();
+    setupTabLinks();
     setupCurriculum();
     setupKanaGrid();
     setupCanvas();
@@ -1000,7 +1001,7 @@ function updateHUDDisplays() {
                 return `<span class="badge" style="background: rgba(255,255,255,0.05); font-size: 0.85rem; padding: 6px 12px; border-radius: 8px; color: #fff; border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-tags" style="color: var(--accent-teal); margin-right: 4px;"></i> ${type}: <strong>${count}</strong></span>`;
             }).join('');
         } else {
-            breakdownEl.innerHTML = `<span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the Quest Arena to see analysis.</span>`;
+            breakdownEl.innerHTML = `<span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the <a href="#" data-goto-tab="arena">Quest Arena</a> to see analysis.</span>`;
         }
     }
 
@@ -1083,7 +1084,19 @@ function setupTabs() {
     }
 }
 
-// --- DAY SELECTOR ---
+// Delegated handler for in-app links that jump to another tab, e.g.
+// <a href="#" data-goto-tab="arena">Quest Arena</a>. Reuses the nav-tab
+// click path (activate + lastTab save) instead of duplicating it.
+function setupTabLinks() {
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[data-goto-tab]');
+        if (!link) return;
+        e.preventDefault();
+        const btn = document.querySelector(`.nav-tab[data-tab="${link.getAttribute('data-goto-tab')}"]`);
+        if (btn) { btn.click(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    });
+}
+
 // --- CURRICULUM: level-grouped, data-driven lesson navigation ---
 // Lesson content lives as .day-pane blocks in index.html; this metadata drives
 // the grouped lesson list. Add a lesson = add a pane + one entry here.
@@ -2281,8 +2294,6 @@ function applyNativeLanguageNuances() {
 function setupOnboarding() {
     const overlay = document.getElementById('onboarding-overlay');
     if (!overlay) return;
-    // Returning visitors have already chosen — never show again.
-    if (localStorage.getItem('kotoquest_onboarded')) return;
 
     let chosen = player.nativeLanguage || 'english';
     const langButtons = overlay.querySelectorAll('.onboard-lang-btn');
@@ -2311,7 +2322,9 @@ function setupOnboarding() {
         if (e.key === 'Escape' && overlay.classList.contains('show')) finish();
     });
 
-    overlay.classList.add('show');
+    // Only auto-show for first-time visitors; returning visitors already chose.
+    // Replay (via help) shows it later by calling overlay.classList.add('show') directly.
+    if (!localStorage.getItem('kotoquest_onboarded')) overlay.classList.add('show');
 }
 
 // Short "how to use this" guide for each tab, shown by the floating ? button.

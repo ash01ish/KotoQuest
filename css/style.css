@@ -76,7 +76,7 @@ header {
 
 .hero-banner {
     height: 220px;
-    background-image: url('hero.jpg');
+    background-image: url('../assets/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -247,49 +247,6 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.day-btn {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 16px;
-    text-align: left;
-    cursor: pointer;
-    transition: var(--transition-smooth);
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.day-btn:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.day-btn.active {
-    background: linear-gradient(135deg, rgba(255, 107, 139, 0.15), rgba(165, 94, 234, 0.15));
-    border-color: var(--accent-pink);
-    box-shadow: 0 4px 15px rgba(255, 107, 139, 0.08);
-}
-
-.day-btn .day-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--accent-pink);
-    font-weight: 700;
-}
-
-.day-btn .day-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-.day-btn .day-desc {
-    font-size: 0.8rem;
-    color: var(--text-muted);
 }
 
 .day-pane {
@@ -1569,3 +1526,7 @@ canvas {
 }
 .lesson-btn-num { font-size: 0.7rem; font-weight: 800; color: var(--accent-pink); min-width: 34px; }
 .lesson-btn-title { font-size: 0.9rem; font-weight: 600; color: #fff; }
+
+/* In-lesson tab links (data-goto-tab) */
+a[data-goto-tab] { color: var(--accent-teal); font-weight: 700; text-decoration: none; }
+a[data-goto-tab]:hover { text-decoration: underline; }

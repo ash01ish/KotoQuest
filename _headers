@@ -5,9 +5,9 @@
   Cache-Control: public, max-age=0, must-revalidate
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
-/app.js
+/js/app.js
   Cache-Control: public, max-age=0, must-revalidate
-/style.css
+/css/style.css
   Cache-Control: public, max-age=0, must-revalidate
-/vocab_db.js
+/js/vocab_db.js
   Cache-Control: public, max-age=0, must-revalidate
