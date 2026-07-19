@@ -609,6 +609,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "I read a book every day."',
+        tePrompt: 'నేను ప్రతిరోజు పుస్తకం చదువుతాను (Nenu prathi roju pusthakam chaduvuthaanu)',
+        hiPrompt: 'मैं हर दिन एक किताब पढ़ता हूँ (Main har din ek kitab padhta hoon)',
+        koPrompt: '나는 매일 책을 읽습니다 (Naneun maeil chaeg-eul ilgseumnida)',
+        taPrompt: 'நான் தினமும் ஒரு புத்தகம் படிக்கிறேன் (Naan dhinamum oru puthagam padikkiren)',
+        esPrompt: 'Leo un libro todos los días.',
         correctOrder: ['わたし', 'は', 'まいにち', 'ほん', 'を', 'よみます'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -621,6 +626,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "Please wait a little."',
+        tePrompt: 'దయచేసి కొంచెం సేపు వేచి ఉండండి (Dayachesi konchem sepu vechi undandi)',
+        hiPrompt: 'कृपया थोड़ा इंतज़ार करें (Kripya thoda intezaar karein)',
+        koPrompt: '잠깐만 기다려 주세요 (Jamkkanman gidalyeo juseyo)',
+        taPrompt: 'தயவுசெய்து கொஞ்சம் காத்திருங்கள் (Thayavu seydhu konjam kaathirungal)',
+        esPrompt: 'Por favor, espera un poco.',
         correctOrder: ['ちょっと', 'まって', 'ください'],
         words: [
             { ja: 'ちょっと', en: 'A little', part: false },
@@ -630,6 +640,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "Can you speak Japanese?"',
+        tePrompt: 'మీరు జపనీస్ మాట్లాడగలరా? (Meeru Japanese maatladagalara?)',
+        hiPrompt: 'क्या आप जापानी बोल सकते हैं? (Kya aap japani bol sakte hain?)',
+        koPrompt: '일본어를 말할 수 있습니까? (Ilboneo-leul malhal su issseumnikka?)',
+        taPrompt: 'நீங்கள் ஜப்பானிய மொழி பேச முடியுமா? (Neengal Jappaniya mozhi pesa mudiyuma?)',
+        esPrompt: '¿Puedes hablar japonés?',
         correctOrder: ['にほんご', 'が', 'はなせますか'],
         words: [
             { ja: 'にほんご', en: 'Japanese', part: false },
@@ -639,6 +654,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "I want to drink coffee."',
+        tePrompt: 'నేను కాఫీ తాగాలనుకుంటున్నాను (Nenu coffee thaagaalanukuntunnanu)',
+        hiPrompt: 'मैं कॉफ़ी पीना चाहता हूँ (Main coffee peena chahta hoon)',
+        koPrompt: '나는 커피를 마시고 싶습니다 (Naneun keopileul masigo sipseumnida)',
+        taPrompt: 'நான் காபி குடிக்க விரும்புகிறேன் (Naan kaapi kudikka virumbugiren)',
+        esPrompt: 'Quiero beber café.',
         correctOrder: ['わたし', 'は', 'コーヒー', 'が', 'のみたい', 'です'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -651,6 +671,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "My friend gave me a present."',
+        tePrompt: 'నా స్నేహితుడు నాకు బహుమతి ఇచ్చాడు (Naa snehithudu naaku bahumathi icchaadu)',
+        hiPrompt: 'मेरे दोस्त ने मुझे एक तोहफा दिया (Mere dost ne mujhe ek tohfa diya)',
+        koPrompt: '제 친구가 저에게 선물을 주었습니다 (Je chinguga jeoege seonmul-eul jueossseumnida)',
+        taPrompt: 'என் நண்பன் எனக்கு ஒரு பரிசு கொடுத்தான் (En nanban enakku oru parisu koduthaan)',
+        esPrompt: 'Mi amigo me dio un regalo.',
         correctOrder: ['ともだち', 'が', 'プレゼント', 'を', 'くれました'],
         words: [
             { ja: 'ともだち', en: 'Friend', part: false },
@@ -662,6 +687,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "Let\'s eat lunch together."',
+        tePrompt: 'మనం కలిసి మధ్యాహ్న భోజనం చేద్దాం (Manam kalisi madhyaahna bhojanam cheddaam)',
+        hiPrompt: 'चलो साथ में दोपहर का खाना खाते हैं (Chalo saath mein dopahar ka khana khaate hain)',
+        koPrompt: '같이 점심을 먹읍시다 (Gachi jeomsim-eul meog-eupsida)',
+        taPrompt: 'நாம் ஒன்றாக மதிய உணவு சாப்பிடுவோம் (Naam ondraaga madhiya unavu saappiduvom)',
+        esPrompt: 'Comamos el almuerzo juntos.',
         correctOrder: ['いっしょに', 'ひるごはん', 'を', 'たべましょう'],
         words: [
             { ja: 'いっしょに', en: 'Together', part: false },
@@ -672,6 +702,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "I went to Tokyo yesterday."',
+        tePrompt: 'నేను నిన్న టోక్యోకు వెళ్ళాను (Nenu ninna Tokyo ku vellaanu)',
+        hiPrompt: 'मैं कल टोक्यो गया था (Main kal Tokyo gaya tha)',
+        koPrompt: '나는 어제 도쿄에 갔습니다 (Naneun eoje Dokyo-e gassseumnida)',
+        taPrompt: 'நான் நேற்று டோக்கியோவிற்கு சென்றேன் (Naan netru Tokyovirku sendren)',
+        esPrompt: 'Ayer fui a Tokio.',
         correctOrder: ['わたし', 'は', 'きのう', 'とうきょう', 'に', 'いきました'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -684,6 +719,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "Please open the window."',
+        tePrompt: 'దయచేసి కిటికీ తెరవండి (Dayachesi kitiki theravandi)',
+        hiPrompt: 'कृपया खिड़की खोलिए (Kripya khidki kholiye)',
+        koPrompt: '창문을 열어 주세요 (Changmun-eul yeol-eo juseyo)',
+        taPrompt: 'தயவுசெய்து ஜன்னலைத் திறக்கவும் (Thayavu seydhu jannalai thirakkavum)',
+        esPrompt: 'Por favor, abre la ventana.',
         correctOrder: ['まど', 'を', 'あけて', 'ください'],
         words: [
             { ja: 'まど', en: 'Window', part: false },
@@ -694,6 +734,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "This ramen is delicious."',
+        tePrompt: 'ఈ రామెన్ చాలా రుచిగా ఉంది (Ee ramen chaala ruchiga undi)',
+        hiPrompt: 'यह रामेन बहुत स्वादिष्ट है (Yah ramen bahut swadisht hai)',
+        koPrompt: '이 라멘은 맛있습니다 (I ramen-eun mas-issseumnida)',
+        taPrompt: 'இந்த ராமென் மிகவும் சுவையாக இருக்கிறது (Indha ramen migavum suvaiyaga irukkiradhu)',
+        esPrompt: 'Este ramen está delicioso.',
         correctOrder: ['この', 'ラーメン', 'は', 'おいしい', 'です'],
         words: [
             { ja: 'この', en: 'This', part: false },
@@ -705,6 +750,11 @@ const SENTENCE_LEVELS = [
     },
     {
         prompt: 'Target: "I study Japanese at the library."',
+        tePrompt: 'నేను లైబ్రరీలో జపనీస్ చదువుతాను (Nenu library lo Japanese chaduvuthaanu)',
+        hiPrompt: 'मैं पुस्तकालय में जापानी पढ़ता हूँ (Main pustakalay mein japani padhta hoon)',
+        koPrompt: '나는 도서관에서 일본어를 공부합니다 (Naneun doseogwan-eseo ilboneo-leul gongbuhabnida)',
+        taPrompt: 'நான் நூலகத்தில் ஜப்பானிய மொழி படிக்கிறேன் (Naan noolagathil Jappaniya mozhi padikkiren)',
+        esPrompt: 'Estudio japonés en la biblioteca.',
         correctOrder: ['わたし', 'は', 'としょかん', 'で', 'にほんご', 'を', 'べんきょうします'],
         words: [
             { ja: 'わたし', en: 'I', part: false },
@@ -1118,7 +1168,16 @@ const CURRICULUM = [
         { title: 'Giving & Receiving', pane: 'day-pane-12' },
         { title: 'Potential Form', pane: 'day-pane-13' }
     ]},
-    { level: 'N3', title: 'Intermediate', lessons: [] },
+    { level: 'N3', title: 'Intermediate', lessons: [
+        { title: 'Conditionals I: たら & と', pane: 'day-pane-14' },
+        { title: 'Conditionals II: ば & なら', pane: 'day-pane-15' },
+        { title: 'Passive', pane: 'day-pane-16' },
+        { title: 'Causative & Causative-Passive', pane: 'day-pane-17' },
+        { title: 'Change & Decisions', pane: 'day-pane-18' },
+        { title: 'Hearsay & Appearance', pane: 'day-pane-19' },
+        { title: 'Te-form Extensions', pane: 'day-pane-20' },
+        { title: 'Keigo I: Honorific & Humble', pane: 'day-pane-21' }
+    ]},
     { level: 'N2', title: 'Advanced', lessons: [] },
     { level: 'N1', title: 'Mastery', lessons: [] }
 ];
@@ -1359,7 +1418,8 @@ function getActiveCardList() {
             ro: '',
             meaning: item.m,
             type: `${catUpper} Vocab`,
-            pronounce: item.r
+            pronounce: item.r,
+            key: `${item.j}|${item.r}` // lookup key into the native-language gloss DB
         }));
     } else {
         fullList = VOCAB_DATA[cardCat] || [];
@@ -1541,8 +1601,31 @@ function updateCard() {
     document.getElementById('card-front-txt').textContent = card.ja;
     document.getElementById('card-back-type').textContent = 'EXPLANATION';
     document.getElementById('card-back-pronounce').textContent = `Pronunciation: ${card.pronounce}`;
-    document.getElementById('card-back-meaning').textContent = card.meaning;
+    // Native-language gloss first when a language pack is loaded; English kept as the safety net.
+    const nativeGloss = getNativeGloss(card);
+    document.getElementById('card-back-meaning').textContent = nativeGloss ? `${nativeGloss}  ·  ${card.meaning}` : card.meaning;
     document.getElementById('card-back-romaji').textContent = `Romaji: ${card.ro}`;
+}
+
+// --- NATIVE-LANGUAGE GLOSS PACKS (lazy-loaded js/lang/<code>.js) ---
+const LANG_PACK_CODES = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es' };
+
+function ensureLangDb(onReady) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code) { if (onReady) onReady(); return; } // english: nothing to load
+    window.LANG_DB = window.LANG_DB || {};
+    if (window.LANG_DB[code]) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = `js/lang/${code}.js`;
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => console.log('Language pack failed to load:', code);
+    document.head.appendChild(s);
+}
+
+function getNativeGloss(card) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code || !card.key || !window.LANG_DB || !window.LANG_DB[code]) return '';
+    return window.LANG_DB[code][card.key] || '';
 }
 
 // --- SENTENCE BUILDER ---
@@ -2222,7 +2305,10 @@ function setupNativeLanguageSelector() {
 
 function applyNativeLanguageNuances() {
     const lang = player.nativeLanguage || 'english';
-    
+
+    // 0. Lazy-load the native gloss pack, then refresh the visible flashcard
+    ensureLangDb(() => { if (typeof updateCard === 'function') updateCard(); });
+
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
     if (subtitle) {
