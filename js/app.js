@@ -789,6 +789,7 @@ const CANVAS_GUIDES = [
 // --- APP INITIALIZATION ---
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
+    captureLessonOriginals();
     setupTabs();
     setupTabLinks();
     setupCurriculum();
@@ -1758,6 +1759,39 @@ function setupArena3dToggle() {
     if (localStorage.getItem('kotoquest_3d')) { chk.checked = true; enable(); }
 }
 
+// --- FULL LESSON PROSE TRANSLATION (lazy js/lang/lessons-html.js) ---
+// The lesson panes are English HTML in index.html. We capture each pane's
+// original English HTML once at startup, then swap innerHTML to the translated
+// version when a language is selected (English restores the original).
+// Japanese examples, kana, romaji and data-speak audio are preserved verbatim
+// in the translations; speak/tab links keep working (they're delegated).
+const ORIG_LESSON_HTML = {};
+function captureLessonOriginals() {
+    document.querySelectorAll('.day-pane').forEach(p => { ORIG_LESSON_HTML[p.id] = p.innerHTML; });
+}
+
+function ensureLessonHtml(onReady) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code) { if (onReady) onReady(); return; } // english: originals only
+    window.LESSON_HTML = window.LESSON_HTML || {};
+    if (window.LESSON_HTML[code]) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = `js/lang/lessons-html-${code}.js`;
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => { console.log('Lesson translations failed to load'); if (onReady) onReady(); };
+    document.head.appendChild(s);
+}
+
+function applyLessonLanguage() {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    document.querySelectorAll('.day-pane').forEach(pane => {
+        const orig = ORIG_LESSON_HTML[pane.id];
+        if (orig === undefined) return;
+        const t = code && window.LESSON_HTML && window.LESSON_HTML[code] && window.LESSON_HTML[code][pane.id];
+        pane.innerHTML = t || orig;
+    });
+}
+
 // --- NATIVE LESSON SUMMARIES (lazy js/lang/lessons.js) ---
 function ensureLessonI18n(onReady) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
@@ -2565,8 +2599,12 @@ function applyNativeLanguageNuances() {
     // 0b. Translate the UI chrome (data-i18n elements); restores English when selected
     ensureUiI18n(applyUiLanguage);
 
-    // 0c. Native summary on the open lesson (removed when English)
-    ensureLessonI18n(renderLessonSummary);
+    // 0c. Translate the full lesson prose into the native language (English fallback),
+    //     then re-add the native summary on top of the (now translated) open lesson.
+    ensureLessonHtml(() => {
+        applyLessonLanguage();
+        ensureLessonI18n(renderLessonSummary);
+    });
 
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
