@@ -824,6 +824,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keyboard Shortcuts (1-4 for battle, Space/Arrows for flashcards)
     setupKeyboardShortcuts();
+
+    // 3D / juice: card tilt, hero parallax, optional WebGL battle mode
+    setupCardTilt();
+    setupHeroParallax();
+    setupArena3dToggle();
     
     // Draw initial HUD & start first battle
     updateHUDDisplays();
@@ -1644,6 +1649,112 @@ function ensureLangDb(onReady) {
     document.head.appendChild(s);
 }
 
+// --- 3D / BATTLE JUICE ---
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function fxShake(el, cls) {
+    if (REDUCED_MOTION || !el) return;
+    el.classList.remove(cls);
+    void el.offsetWidth; // restart the animation
+    el.classList.add(cls);
+}
+
+function fxDamageNumber(anchorEl, text, kind) {
+    if (REDUCED_MOTION || !anchorEl) return;
+    const n = document.createElement('div');
+    n.className = `dmg-float ${kind}`;
+    n.textContent = text;
+    const r = anchorEl.getBoundingClientRect();
+    n.style.left = `${r.left + r.width / 2 - 20 + (Math.random() * 40 - 20)}px`;
+    n.style.top = `${r.top + r.height * 0.3}px`;
+    document.body.appendChild(n);
+    setTimeout(() => n.remove(), 1100);
+}
+
+function fxEnemyHit(dmg) {
+    const s = document.getElementById('enemy-sprite');
+    fxShake(s, 'fx-hit');
+    fxDamageNumber(s, `-${dmg}`, 'dmg-enemy');
+    if (window.arena3d && window.arena3d.active) window.arena3d.hit();
+}
+
+function fxPlayerHit(dmg) {
+    fxShake(document.querySelector('.rpg-arena'), 'fx-screenshake');
+    fxDamageNumber(document.querySelector('.game-hud'), `-${dmg} HP`, 'dmg-player');
+}
+
+function fxShieldBlock() {
+    const s = document.getElementById('slot-shield');
+    fxShake(s, 'fx-hit');
+    fxDamageNumber(s, 'BLOCKED', 'dmg-block');
+}
+
+function fxVictory() {
+    fxShake(document.querySelector('.enemy-panel'), 'fx-victory');
+}
+
+// Pointer tilt on battle/shop cards (hover-capable devices only)
+function setupCardTilt() {
+    if (REDUCED_MOTION || !window.matchMedia('(hover: hover)').matches) return;
+    const MAX = 5; // degrees
+    document.querySelectorAll('.shop-card, .enemy-panel').forEach(el => {
+        el.classList.add('tilt-3d');
+        el.addEventListener('pointermove', (e) => {
+            const r = el.getBoundingClientRect();
+            el.style.setProperty('--tilt-y', `${((e.clientX - r.left) / r.width - 0.5) * 2 * MAX}deg`);
+            el.style.setProperty('--tilt-x', `${((e.clientY - r.top) / r.height - 0.5) * -2 * MAX}deg`);
+        });
+        el.addEventListener('pointerleave', () => {
+            el.style.setProperty('--tilt-x', '0deg');
+            el.style.setProperty('--tilt-y', '0deg');
+        });
+    });
+}
+
+// Subtle hero-banner parallax on scroll
+function setupHeroParallax() {
+    if (REDUCED_MOTION) return;
+    const hero = document.querySelector('.hero-banner');
+    if (!hero) return;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+            hero.style.backgroundPosition = `center calc(50% + ${Math.min(window.scrollY * 0.25, 80)}px)`;
+            ticking = false;
+        });
+    }, { passive: true });
+}
+
+// Optional WebGL 3D battle mode (experimental, lazy-loaded, off by default)
+function setupArena3dToggle() {
+    const chk = document.getElementById('chk-arena-3d');
+    if (!chk) return;
+    const enable = () => {
+        import('./arena3d.js').then(m => {
+            const ok = m.init(document.getElementById('enemy-sprite'), activeEnemy.sprite);
+            if (!ok) { // WebGL unavailable: silently fall back
+                chk.checked = false;
+                localStorage.removeItem('kotoquest_3d');
+            }
+        }).catch(err => {
+            console.log('3D mode failed to load:', err);
+            chk.checked = false;
+            localStorage.removeItem('kotoquest_3d');
+        });
+    };
+    const disable = () => {
+        if (window.arena3d) window.arena3d.destroy();
+        document.getElementById('enemy-sprite').textContent = activeEnemy.sprite;
+    };
+    chk.addEventListener('change', () => {
+        if (chk.checked) { localStorage.setItem('kotoquest_3d', '1'); enable(); }
+        else { localStorage.removeItem('kotoquest_3d'); disable(); }
+    });
+    if (localStorage.getItem('kotoquest_3d')) { chk.checked = true; enable(); }
+}
+
 // --- NATIVE LESSON SUMMARIES (lazy js/lang/lessons.js) ---
 function ensureLessonI18n(onReady) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
@@ -1988,7 +2099,11 @@ function startNewBattle() {
     };
     
     document.getElementById('enemy-name').textContent = activeEnemy.name;
-    document.getElementById('enemy-sprite').textContent = activeEnemy.sprite;
+    if (window.arena3d && window.arena3d.active) {
+        window.arena3d.setSprite(activeEnemy.sprite);
+    } else {
+        document.getElementById('enemy-sprite').textContent = activeEnemy.sprite;
+    }
     document.getElementById('enemy-sub-label').textContent = activeEnemy.sub;
     updateEnemyHPBar();
     
@@ -2104,6 +2219,7 @@ function handleQuestAttack(btn, selection, correct) {
         activeEnemy.hp -= dmgDealt;
         if (activeEnemy.hp < 0) activeEnemy.hp = 0;
         updateEnemyHPBar();
+        fxEnemyHit(dmgDealt);
         addLog(`CORRECT! You strike ${activeEnemy.name} for ${dmgDealt} DMG!`, 'heal');
         
         speakJapanese(activeEnemy.sprite);
@@ -2167,6 +2283,7 @@ function submitTextAttack() {
         activeEnemy.hp -= dmgDealt;
         if (activeEnemy.hp < 0) activeEnemy.hp = 0;
         updateEnemyHPBar();
+        fxEnemyHit(dmgDealt);
         addLog(`CRITICAL HIT! You strike ${activeEnemy.name} for ${dmgDealt} DMG!`, 'critical');
         
         speakJapanese(activeEnemy.sprite);
@@ -2185,6 +2302,7 @@ function submitTextAttack() {
 function triggerEnemyCounterAttack() {
     if (player.inventory.shield > 0) {
         player.inventory.shield--;
+        fxShieldBlock();
         addLog(`${activeEnemy.name} counter-attacks, but your Grammar Shield absorbed the blow!`, 'system');
         updateHUDDisplays();
         saveGameData();
@@ -2196,7 +2314,7 @@ function triggerEnemyCounterAttack() {
         if (player.hp < 0) player.hp = 0;
         updateHUDDisplays();
         saveGameData();
-        
+        fxPlayerHit(dmg);
         addLog(`${activeEnemy.name} counter-attacks! You take ${dmg} damage.`, 'damage');
         
         setTimeout(() => {
@@ -2216,6 +2334,7 @@ function triggerEnemyCounterAttack() {
 
 function checkBattleResolution() {
     if (activeEnemy.hp <= 0) {
+        fxVictory();
         addLog(`VICTORY! You defeated ${activeEnemy.name}!`, 'heal');
         addLog(`Gained: +${activeEnemy.xpReward} XP, +${activeEnemy.goldReward} Gold!`, 'system');
         

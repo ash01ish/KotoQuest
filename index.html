@@ -239,6 +239,9 @@
                         <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
                             <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> <span data-i18n="arena.procedural">Enable Procedural Vocabulary Quizzes (8,100+ words)</span>
                         </label>
+                        <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted); margin-left: 18px;">
+                            <input type="checkbox" id="chk-arena-3d" style="accent-color: var(--accent-teal); width: 16px; height: 16px; cursor: pointer;"> 3D battle mode (experimental)
+                        </label>
                     </div>
                 </div>
 
@@ -523,7 +526,7 @@
                                 
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">The Five Base Vowels (a, i, u, e, o)</div>
-                                    <p>Every Japanese sound contains one of these vowels. Pronounce them like this:</p>
+                                    <p>Almost every Japanese sound contains one of these vowels — the exceptions are ん (n) and the small っ pause. Pronounce them like this:</p>
                                     <ul class="bullet-list">
                                         <li><strong>あ (a)</strong> - "ah" as in father <button class="speak-btn" data-speak="あ"><i class="fa-solid fa-volume-high"></i> Play</button></li>
                                         <li><strong>い (i)</strong> - "ee" as in feet <button class="speak-btn" data-speak="い"><i class="fa-solid fa-volume-high"></i> Play</button></li>
@@ -559,7 +562,7 @@
 
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. Dakuon & Handakuon (Sound Twists)</div>
-                                    <p>By adding quotation marks (dakuten <strong>゛</strong>) or small circles (handakuten <strong>゜</strong>) to the upper right of Hiragana, you change the consonant sound:</p>
+                                    <p>By adding quotation marks (dakuten <strong>゛</strong>) or small circles (handakuten <strong>゜</strong>) to the upper right of a hiragana or katakana, you change the consonant sound:</p>
                                     <ul class="bullet-list">
                                         <li><strong>K-row</strong> (か) + ゛ = <strong>G-row</strong> (が - ga)</li>
                                         <li><strong>S-row</strong> (さ) + ゛ = <strong>Z-row</strong> (ざ - za)</li>
@@ -736,6 +739,7 @@
                                     <ul class="bullet-list">
                                         <li><strong>Ru-verbs (Group 2)</strong>: End in -iru or -eru. (e.g., たべる - taberu: to eat, みる - miru: to watch).</li>
                                         <li><strong>U-verbs (Group 1)</strong>: End in other -u sounds. (e.g., のむ - nomu: to drink, いく - iku: to go, はなす - hanasu: to speak).</li>
+                                        <li><strong>Watch out:</strong> not every -iru/-eru verb is a ru-verb — a handful are u-verbs you just memorize: かえる (kaeru — to return), はしる (hashiru — to run), はいる (hairu — to enter), きる (kiru — to cut), いる (iru — to need).</li>
                                         <li><strong>Irregular Verbs (Group 3)</strong>: Only two! <strong>する (suru: to do)</strong> and <strong>くる (kuru: to come)</strong>.</li>
                                     </ul>
                                 </div>
@@ -1049,9 +1053,9 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">The three verbs</div>
                                     <ul class="bullet-list">
-                                        <li><strong class="ja-word">あげる</strong> — I/someone gives <em>outward</em>. わたしは ともだち<strong>に</strong> プレゼントを あげる. (Watashi wa tomodachi ni purezento o ageru. — I give my friend a present.) <button class="speak-btn" data-speak="ともだちにプレゼントをあげる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong class="ja-word">あげる</strong> — I/someone gives <em>outward</em>. わたしは ともだち<strong>に</strong> プレゼントを あげる. (Watashi wa tomodachi ni purezento o ageru. — I give my friend a present.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをあげる"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li><strong class="ja-word">くれる</strong> — someone gives <em>to me</em>. ともだちが わたしに プレゼントを <strong>くれる</strong>. (Tomodachi ga watashi ni purezento o kureru. — My friend gives me a present.) <button class="speak-btn" data-speak="ともだちがわたしにプレゼントをくれる"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li><strong class="ja-word">もらう</strong> — I <em>receive</em> (giver marked に／から). わたしは ともだち<strong>に</strong> プレゼントを <strong>もらう</strong>. (Watashi wa tomodachi ni purezento o morau. — I receive a present from my friend.) <button class="speak-btn" data-speak="ともだちにプレゼントをもらう"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong class="ja-word">もらう</strong> — I <em>receive</em> (giver marked に／から). わたしは ともだち<strong>に</strong> プレゼントを <strong>もらう</strong>. (Watashi wa tomodachi ni purezento o morau. — I receive a present from my friend.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをもらう"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                     <p style="font-size:0.85rem;color:var(--text-muted);">Rule of thumb: if the gift comes <strong>to you</strong>, it is くれる or もらう — never あげる.</p>
                                 </div>
@@ -1192,7 +1196,7 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Group</th><th>Rule</th><th>Example</th></tr></thead>
                                         <tbody>
-                                            <tr><td>う-verbs</td><td>-u → -a + れる</td><td>のむ → <span class="ja-word">のまれる</span> (nomu → nomareru — drink → be drunk [by someone])</td></tr>
+                                            <tr><td>う-verbs</td><td>-u → -a + れる (う → わ)</td><td>のむ → <span class="ja-word">のまれる</span> (nomu → nomareru); かう → <span class="ja-word">かわれる</span> (kau → kawareru)</td></tr>
                                             <tr><td>う-verbs ending in う</td><td>う → われる</td><td>かう → <span class="ja-word">かわれる</span> (kau → kawareru — buy → be bought)</td></tr>
                                             <tr><td>る-verbs</td><td>drop る + られる</td><td>たべる → <span class="ja-word">たべられる</span> (taberu → taberareru — eat → be eaten)</td></tr>
                                             <tr><td>Irregular</td><td>—</td><td>する → <span class="ja-word">される</span>, くる → <span class="ja-word">こられる</span> (suru → sareru, kuru → korareru)</td></tr>
@@ -1238,7 +1242,7 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Group</th><th>Rule</th><th>Example</th></tr></thead>
                                         <tbody>
-                                            <tr><td>う-verbs</td><td>-u → -a + せる</td><td>のむ → <span class="ja-word">のませる</span> (nomu → nomaseru — drink → make/let [someone] drink)</td></tr>
+                                            <tr><td>う-verbs</td><td>-u → -a + せる (う → わ)</td><td>のむ → <span class="ja-word">のませる</span> (nomu → nomaseru); かう → <span class="ja-word">かわせる</span> (kau → kawaseru)</td></tr>
                                             <tr><td>る-verbs</td><td>drop る + させる</td><td>たべる → <span class="ja-word">たべさせる</span> (taberu → tabesaseru — eat → make/let [someone] eat)</td></tr>
                                             <tr><td>Irregular</td><td>—</td><td>する → <span class="ja-word">させる</span>, くる → <span class="ja-word">こさせる</span> (suru → saseru, kuru → kosaseru)</td></tr>
                                         </tbody>
@@ -1755,7 +1759,7 @@
                                     <ul class="bullet-list">
                                         <li>お + verb ます-stem + します (or ご + verbal noun + します for many する-verbs) humbly offers to do something for the listener. Watch the honorific お doubling with an お-initial stem: おくる → おくり → <span class="ja-word">おおくりします</span> (okuru → okuri → o okuri shimasu — I will send it to you), not おくりします.</li>
                                         <li>ごれんらくします (go renraku shimasu — I will contact you) <button class="speak-btn" data-speak="ごれんらくします"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>Standard phone/email openers and closers: いつもおせわになっております (itsumo osewa ni natte orimasu — thank you always for your support); よろしくおねがいいたします (yoroshiku onegai itashimasu — thank you in advance) <button class="speak-btn" data-speak="よろしくおねがいいたします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Standard phone/email openers and closers: いつもおせわになっております (itsumo osewa ni natte orimasu — thank you always for your support); よろしくおねがいいたします (yoroshiku onegai itashimasu — thank you in advance) <button class="speak-btn" data-speak="いつもおせわになっております。よろしくおねがいいたします"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
