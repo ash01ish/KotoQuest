@@ -128,13 +128,13 @@
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
                         <div class="stats-badge">
-                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> Streak: <strong id="streak-count">1 Day</strong></span>
-                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> Rank: <strong id="rank-name">Novice</strong></span>
-                            <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Accuracy: <strong>0%</strong> (0/0)</span>
+                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> <span data-i18n="badge.streak">Streak:</span> <strong id="streak-count">1 Day</strong></span>
+                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> <span data-i18n="badge.rank">Rank:</span> <strong id="rank-name">Novice</strong></span>
+                            <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy">Accuracy:</span> <strong>0%</strong> (0/0)</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
                             <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
-                                <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> Native Language:</label>
+                                <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> <span data-i18n="label.nativelang">Native Language:</span></label>
                                 <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
                                     <option value="english" style="background: #14161f; color: #fff;">English</option>
                                     <option value="telugu" style="background: #14161f; color: #fff;">Telugu (తెలుగు)</option>
@@ -144,7 +144,7 @@
                                     <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
                                 </select>
                             </div>
-                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> Reset Game</button>
+                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset Game</span></button>
                         </div>
                     </div>
                 </div>
@@ -152,25 +152,25 @@
             
             <nav id="main-nav">
                 <button class="nav-tab active" data-tab="arena">
-                    <i class="fa-solid fa-shield-halved"></i> Quest Arena
+                    <i class="fa-solid fa-shield-halved"></i> <span data-i18n="nav.arena">Quest Arena</span>
                 </button>
                 <button class="nav-tab" data-tab="bridge">
-                    <i class="fa-solid fa-circle-nodes"></i> Trilingual Bridge
+                    <i class="fa-solid fa-circle-nodes"></i> <span data-i18n="nav.bridge">Trilingual Bridge</span>
                 </button>
                 <button class="nav-tab" data-tab="curriculum">
-                    <i class="fa-solid fa-book-open"></i> Daily Lessons
+                    <i class="fa-solid fa-book-open"></i> <span data-i18n="nav.lessons">Daily Lessons</span>
                 </button>
                 <button class="nav-tab" data-tab="kana">
-                    <i class="fa-solid fa-font"></i> Kana Charts
+                    <i class="fa-solid fa-font"></i> <span data-i18n="nav.kana">Kana Charts</span>
                 </button>
                 <button class="nav-tab" data-tab="canvas">
-                    <i class="fa-solid fa-paintbrush"></i> Canvas Writer
+                    <i class="fa-solid fa-paintbrush"></i> <span data-i18n="nav.canvas">Canvas Writer</span>
                 </button>
                 <button class="nav-tab" data-tab="flashcards">
-                    <i class="fa-solid fa-clone"></i> Flashcards
+                    <i class="fa-solid fa-clone"></i> <span data-i18n="nav.flashcards">Flashcards</span>
                 </button>
                 <button class="nav-tab" data-tab="builder">
-                    <i class="fa-solid fa-cubes"></i> Sentence Builder
+                    <i class="fa-solid fa-cubes"></i> <span data-i18n="nav.builder">Sentence Builder</span>
                 </button>
             </nav>
         </header>
@@ -181,7 +181,7 @@
             
             <div class="hud-stat">
                 <div class="stat-label">
-                    <span>HP (Health Points)</span>
+                    <span data-i18n="hud.hp">HP (Health Points)</span>
                     <span id="player-hp-text">100 / 100</span>
                 </div>
                 <div class="hud-bar-container">
@@ -191,7 +191,7 @@
 
             <div class="hud-stat">
                 <div class="stat-label">
-                    <span>XP (Experience Points)</span>
+                    <span data-i18n="hud.xp">XP (Experience Points)</span>
                     <span id="player-xp-text">0 / 100</span>
                 </div>
                 <div class="hud-bar-container">
@@ -205,7 +205,7 @@
 
             <!-- Player Inventory Quick Access -->
             <div class="hud-inventory-box">
-                <span class="inventory-title">Inventory:</span>
+                <span class="inventory-title" data-i18n="hud.inventory">Inventory:</span>
                 <div class="inventory-slot empty" id="slot-potion" data-item="potion" title="Healing Potion: Click to use (Restores 40 HP)">
                     <i class="fa-solid fa-flask"></i>
                     <span class="inventory-badge" id="badge-potion" style="display: none;">0</span>
@@ -226,7 +226,7 @@
             <section id="arena" class="tab-content active">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-map-location-dot" style="color: var(--accent-pink);"></i> Select Quest Difficulty Tier
+                        <i class="fa-solid fa-map-location-dot" style="color: var(--accent-pink);"></i> <span data-i18n="arena.selecttier">Select Quest Difficulty Tier</span>
                     </div>
                     <div class="quest-selection-grid" id="quest-tier-selector">
                         <button class="quest-tier-btn active" data-tier="N5">N5 (Beginner)</button>
@@ -237,7 +237,7 @@
                     </div>
                     <div style="margin-top: 15px; display: flex; justify-content: flex-end; align-items: center;">
                         <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
-                            <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> Enable Procedural Vocabulary Quizzes (8,100+ words)
+                            <input type="checkbox" id="chk-procedural-vocab" checked style="accent-color: var(--accent-pink); width: 16px; height: 16px; cursor: pointer;"> <span data-i18n="arena.procedural">Enable Procedural Vocabulary Quizzes (8,100+ words)</span>
                         </label>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                             <div class="enemy-name" id="enemy-name">KANJI SHOGUN</div>
                             <div class="enemy-hp-container">
                                 <div class="stat-label">
-                                    <span>Enemy HP</span>
+                                    <span data-i18n="arena.enemyhp">Enemy HP</span>
                                     <span id="enemy-hp-text">80/80</span>
                                 </div>
                                 <div class="hud-bar-container" style="height: 10px;">
@@ -270,7 +270,7 @@
                     <!-- Right: Questions / Controls -->
                     <div class="glass-card combat-controls" style="margin-bottom: 0;">
                         <div class="combat-question-box">
-                            <div class="combat-question-title" id="combat-question-lbl">Combat Question:</div>
+                            <div class="combat-question-title" id="combat-question-lbl" data-i18n="arena.question">Combat Question:</div>
                             <div class="combat-question-text" id="combat-question-main">What is the meaning of this Kanji: "日" ?</div>
                         </div>
 
@@ -289,8 +289,8 @@
                         </div>
                         
                         <div style="display: flex; gap: 10px; margin-top: 15px;">
-                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> Pronounce Question</button>
-                            <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> Run Away</button>
+                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> <span data-i18n="arena.pronounce">Pronounce Question</span></button>
+                            <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> <span data-i18n="arena.runaway">Run Away</span></button>
                         </div>
                     </div>
                 </div>
@@ -298,45 +298,45 @@
                 <!-- Merchant Shop -->
                 <div class="glass-card" style="margin-top: 25px;">
                     <div class="card-title">
-                        <i class="fa-solid fa-shop" style="color: var(--accent-gold);"></i> Samurai Merchant Shop
+                        <i class="fa-solid fa-shop" style="color: var(--accent-gold);"></i> <span data-i18n="shop.title">Samurai Merchant Shop</span>
                         <span class="badge" style="background: rgba(255,165,2,0.15); color: var(--accent-gold); border-color: var(--accent-gold);">Gold Exchange</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Earn Gold by defeating monsters, then buy essential battle aids to survive N3, N2, and N1 boss fights!</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;" data-i18n="shop.intro">Earn Gold by defeating monsters, then buy essential battle aids to survive N3, N2, and N1 boss fights!</p>
                     
                     <div class="shop-grid">
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-flask"></i></div>
-                                <div class="shop-name">Healing Potion</div>
-                                <div class="shop-desc">Restores 40 Health Points (HP) instantly. Can be clicked in your inventory bar to drink during combat.</div>
+                                <div class="shop-name" data-i18n="shop.potion">Healing Potion</div>
+                                <div class="shop-desc" data-i18n="shop.potiondesc">Restores 40 Health Points (HP) instantly. Can be clicked in your inventory bar to drink during combat.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">50 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="potion">Buy Potion</button>
+                                <button class="btn btn-gold btn-buy" data-item="potion" data-i18n="shop.buypotion">Buy Potion</button>
                             </div>
                         </div>
 
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-shield"></i></div>
-                                <div class="shop-name">Grammar Shield</div>
-                                <div class="shop-desc">Blocks all damage from one incorrect answer in battle. Triggers automatically when you make a mistake.</div>
+                                <div class="shop-name" data-i18n="shop.shield">Grammar Shield</div>
+                                <div class="shop-desc" data-i18n="shop.shielddesc">Blocks all damage from one incorrect answer in battle. Triggers automatically when you make a mistake.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">80 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="shield">Buy Shield</button>
+                                <button class="btn btn-gold btn-buy" data-item="shield" data-i18n="shop.buyshield">Buy Shield</button>
                             </div>
                         </div>
 
                         <div class="shop-card">
                             <div>
                                 <div class="shop-icon"><i class="fa-solid fa-scroll"></i></div>
-                                <div class="shop-name">Hint Scroll</div>
-                                <div class="shop-desc">Eliminates one wrong answer option from the multiple-choice grid. Click in inventory during battle.</div>
+                                <div class="shop-name" data-i18n="shop.scroll">Hint Scroll</div>
+                                <div class="shop-desc" data-i18n="shop.scrolldesc">Eliminates one wrong answer option from the multiple-choice grid. Click in inventory during battle.</div>
                             </div>
                             <div>
                                 <div class="shop-cost">120 Gold</div>
-                                <button class="btn btn-gold btn-buy" data-item="hint">Buy Scroll</button>
+                                <button class="btn btn-gold btn-buy" data-item="hint" data-i18n="shop.buyscroll">Buy Scroll</button>
                             </div>
                         </div>
                     </div>
@@ -345,10 +345,10 @@
                 <!-- Detailed Statistics Breakdown -->
                 <div class="glass-card" style="margin-top: 25px;">
                     <div class="card-title">
-                        <i class="fa-solid fa-chart-simple" style="color: var(--accent-teal);"></i> Detailed Practice Statistics
+                        <i class="fa-solid fa-chart-simple" style="color: var(--accent-teal);"></i> <span data-i18n="stats.title">Detailed Practice Statistics</span>
                         <span class="badge" style="background: rgba(0,242,254,0.15); color: var(--accent-teal); border-color: var(--accent-teal);">Category Analytics</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">A live breakdown of your answers by Japanese grammar categories and question types:</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;" data-i18n="stats.intro">A live breakdown of your answers by Japanese grammar categories and question types:</p>
                     
                     <div id="stats-type-breakdown" style="display: flex; gap: 12px; flex-wrap: wrap;">
                         <span style="font-size: 0.85rem; color: var(--text-muted);">No stats collected yet. Play in the <a href="#" data-goto-tab="arena">Quest Arena</a> to see analysis.</span>
@@ -1440,6 +1440,568 @@
                             </div>
                         </div>
 
+                        <!-- N2 Lesson 1 -->
+                        <div id="day-pane-22" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-scroll" style="color: var(--accent-pink);"></i> N2·1: ～ものだ Family
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>もの ("thing") turns into three very different endings here: <strong>ものだ</strong> voices a general truth, a nostalgic memory, or a gentle scolding; <strong>ものの</strong> concedes a fact before pivoting to something contrary; <strong>ものだから</strong> leans on a reason to excuse what just happened.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ものだ — three moods, one ending</div>
+                                    <table class="grammar-table">
+                                        <thead><tr><th>Use</th><th>Rule</th><th>Example</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>General truth</td><td>plain form + ものだ</td><td>ひとはだれでもしっぱいするものだ (hito wa dare demo shippai suru mono da — everyone makes mistakes, that's just how it is) <button class="speak-btn" data-speak="ひとはだれでもしっぱいするものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Nostalgia (past habit)</td><td>た-form + ものだ</td><td>こどものころ、よくこのかわでおよいだものだ (kodomo no koro, yoku kono kawa de oyoida mono da — when I was a kid, I used to swim in this river often) <button class="speak-btn" data-speak="こどものころ、よくこのかわでおよいだものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Mild command ("should")</td><td>plain form + ものだ</td><td>あいさつはきちんとするものだ (aisatsu wa kichinto suru mono da — you should greet people properly)</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ものの — although, but then...</div>
+                                    <ul class="bullet-list">
+                                        <li>Plain form (any tense) + ものの concedes a fact, then states an unexpected or disappointing result — more formal/written than けれども.</li>
+                                        <li>にほんごをさんねんべんきょうしたものの、まだうまくはなせない (nihongo o sannen benkyou shita mono no, mada umaku hanasenai — although I've studied Japanese for three years, I still can't speak it well) <button class="speak-btn" data-speak="にほんごをさんねんべんきょうしたものの、まだうまくはなせない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>あたまではわかっているものの、なかなかじっこうできない (atama de wa wakatteiru mono no, nakanaka jikkou dekinai — although I understand it in my head, I can't easily put it into practice)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ものだから — the excuse-reason</div>
+                                    <ul class="bullet-list">
+                                        <li>Plain form + ものだから gives a reason that doubles as an excuse, usually followed by an apology or explanation — common in spoken Japanese.</li>
+                                        <li>でんしゃがおくれたものだから、ちこくしてしまいました (densha ga okureta mono da kara, chikoku shite shimaimashita — the train was late, so [that's why] I ended up being late) <button class="speak-btn" data-speak="でんしゃがおくれたものだから、ちこくしてしまいました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Casual speech contracts it: ものだから → もんだから (mono da kara → mon da kara).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Spot the three もの endings in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then drill them with <a href="#" data-goto-tab="flashcards">Flashcards</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 2 -->
+                        <div id="day-pane-23" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-scale-balanced" style="color: var(--accent-pink);"></i> N2·2: ～わけだ Family
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>わけ ("reason/circumstance") builds three N2 staples. <strong>わけだ</strong> draws the natural conclusion — "no wonder, so that means..." <strong>わけではない</strong> softens a blanket statement into "it's not necessarily..." and <strong>わけにはいかない</strong> says a social or moral obligation rules an action out.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. わけだ — no wonder / so that means</div>
+                                    <ul class="bullet-list">
+                                        <li>Plain form + わけだ states a conclusion that logically follows from what was just said or observed.</li>
+                                        <li>さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ (san-nen kan nihon ni sundeita. dakara, nihongo ga jouzu na wake da — they lived in Japan for three years. No wonder their Japanese is good) <button class="speak-btn" data-speak="さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>どうりでさむいわけだ、ゆきがふっている (douri de samui wake da, yuki ga futteiru — no wonder it's cold, it's snowing) <button class="speak-btn" data-speak="どうりでさむいわけだ、ゆきがふっている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. わけではない — it's not that... / not necessarily</div>
+                                    <ul class="bullet-list">
+                                        <li>Plain form + わけではない partially denies an assumption without rejecting it outright.</li>
+                                        <li>きらいなわけではないが、あまりたべたくない (kirai na wake de wa nai ga, amari tabetakunai — it's not that I dislike it, but I don't really want to eat it) <button class="speak-btn" data-speak="きらいなわけではないが、あまりたべたくない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>ぜんぶわかったわけではない (zenbu wakatta wake de wa nai — it's not that I understood everything)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. わけにはいかない — can't afford to / can't just</div>
+                                    <ul class="bullet-list">
+                                        <li>Dictionary form + わけにはいかない: a social, moral, or circumstantial obligation blocks an action, even if you'd like to do it.</li>
+                                        <li>あしたはしけんがあるから、きょうはあそぶわけにはいかない (ashita wa shiken ga aru kara, kyou wa asobu wake ni wa ikanai — I have an exam tomorrow, so I can't just go play today) <button class="speak-btn" data-speak="あしたはしけんがあるから、きょうはあそぶわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>The negative twist, ないわけにはいかない ("can't afford not to"), gets its own spotlight next lesson.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Untangle わけだ from わけではない in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then check your notes on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 3 -->
+                        <div id="day-pane-24" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-hand-fist" style="color: var(--accent-pink);"></i> N2·3: Obligation & Compulsion
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Three heavier ways to say "I have no choice." <strong>～ざるを得ない</strong> is reluctant compulsion from circumstances beyond your control. <strong>～ずにはいられない</strong> is an emotional urge too strong to suppress. <strong>～ないわけにはいかない</strong> is a social or moral duty you can't skip.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Forming ～ざるを得ない (and ～ずにはいられない)</div>
+                                    <table class="grammar-table">
+                                        <thead><tr><th>Group</th><th>Rule</th><th>Example</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>う-verbs</td><td>ない-form stem + ざるを得ない</td><td>のむ → のまない → <span class="ja-word">のまざるをえない</span> (nomu → nomanai → nomazaru o enai — drink → have no choice but to drink)</td></tr>
+                                            <tr><td>る-verbs</td><td>ない-form stem + ざるを得ない</td><td>やめる → やめない → <span class="ja-word">やめざるをえない</span> (yameru → yamenai → yamezaru o enai — quit → have no choice but to quit)</td></tr>
+                                            <tr><td>Irregular する</td><td>せざるを得ない, not さざるを得ない</td><td>する → <span class="ja-word">せざるをえない</span> (suru → sezaru o enai)</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-top:8px;font-size:0.85rem;color:var(--text-muted);">～ずにはいられない is built the same way — swap ざるを得ない for ずにはいられない (irregular する → せずにはいられない, same せ as above).</p>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～ざるを得ない in action — reluctant compulsion</div>
+                                    <ul class="bullet-list">
+                                        <li>きゅうりょうがやすいので、やめざるをえない (kyuuryou ga yasui node, yamezaru o enai — the pay is low, so I have no choice but to quit) <button class="speak-btn" data-speak="きゅうりょうがやすいので、やめざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>じょうしにいわれたら、ざんぎょうせざるをえない (joushi ni iwaretara, zangyou sezaru o enai — if the boss tells you to, you have no choice but to work overtime) <button class="speak-btn" data-speak="じょうしにいわれたら、ざんぎょうせざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～ずにはいられない vs ～ないわけにはいかない</div>
+                                    <ul class="bullet-list">
+                                        <li>～ずにはいられない is an emotional impulse too strong to resist: あのえいがをみると、なかずにはいられない (ano eiga o miru to, nakazu ni wa irarenai — when I watch that movie, I can't help but cry) <button class="speak-btn" data-speak="あのえいがをみると、なかずにはいられない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～ないわけにはいかない (ない-form + わけにはいかない) is a social or moral duty you can't skip: せんせいによばれたら、いかないわけにはいかない (sensei ni yobaretara, ikanai wake ni wa ikanai — if the teacher calls you, you can't not go) <button class="speak-btn" data-speak="せんせいによばれたら、いかないわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>The difference: ざるを得ない points at "no realistic alternative"; ないわけにはいかない points at "duty says I must."</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Drill all three "no choice" patterns in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then build your own with the <a href="#" data-goto-tab="builder">Sentence Builder</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 4 -->
+                        <div id="day-pane-25" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-scale-unbalanced" style="color: var(--accent-pink);"></i> N2·4: Concessives
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Three ways to flag a mismatch between expectation and reality. <strong>にもかかわらず</strong> is the strongest "despite/even though." <strong>にしては</strong> judges something against what its category should imply. <strong>わりに(は)</strong> says a result is disproportionate to the given condition — a milder, more neutral cousin of にしては.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. にもかかわらず — despite / in spite of</div>
+                                    <ul class="bullet-list">
+                                        <li>Plain form / noun + にもかかわらず states a fact, then a surprising or contrary result — formal, common in writing.</li>
+                                        <li>あめにもかかわらず、おおぜいのひとがきた (ame ni mo kakawarazu, oozei no hito ga kita — despite the rain, a lot of people came) <button class="speak-btn" data-speak="あめにもかかわらず、おおぜいのひとがきた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった (isshoukenmei benkyou shita ni mo kakawarazu, shiken ni ochite shimatta — despite studying hard, I failed the exam) <button class="speak-btn" data-speak="いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. にしては — for a... / considering (surprised tone)</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun / plain form + にしては judges someone or something against the standard implied by a category: "for a ~, this is surprising."</li>
+                                        <li>こどもにしては、よくかんじをしっている (kodomo ni shite wa, yoku kanji o shitteiru — for a kid, they know a lot of kanji) <button class="speak-btn" data-speak="こどもにしては、よくかんじをしっている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>はじめてにしては、じょうずにできた (hajimete ni shite wa, jouzu ni dekita — for a first try, it went well)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. わりに(は) — relatively / considering (neutral tone)</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun (+の) / な-adjective (+な) / plain form + わりに(は): the result doesn't match what the condition would normally predict — unlike にしては, no built-in "standard" is required.</li>
+                                        <li>このみせはねだんがたかいわりには、あまりおいしくない (kono mise wa nedan ga takai wari ni wa, amari oishikunai — considering how expensive this restaurant is, it's not very tasty)</li>
+                                        <li>ねんれいのわりに、わかくみえる (nenrei no wari ni, wakaku mieru — they look young for their age) <button class="speak-btn" data-speak="ねんれいのわりに、わかくみえる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Tell the three mismatches apart in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then review the nuance notes on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 5 -->
+                        <div id="day-pane-26" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-wave-square" style="color: var(--accent-pink);"></i> N2·5: Tendencies
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Three suffixes for "leaning toward" a state without fully being it. <strong>～がち</strong> is a recurring pattern, usually unwanted. <strong>～気味</strong> (ぎみ) is a slight, often physical, tendency happening right now. <strong>～っぽい</strong> paints something as "-ish" — resembling a quality or type.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～がち — prone to / tends to</div>
+                                    <ul class="bullet-list">
+                                        <li>ます-stem or noun + がち marks a recurring tendency, usually toward something undesirable.</li>
+                                        <li>かれはやくそくをわすれがちだ (kare wa yakusoku o wasuregachi da — he tends to forget his promises) <button class="speak-btn" data-speak="かれはやくそくをわすれがちだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>このごろ、くもりがちのてんきがつづいている (kono goro, kumorigachi no tenki ga tsuzuiteiru — lately, the weather has tended to be cloudy)</li>
+                                        <li>Common set phrase: びょうきがち (byoukigachi — sickly, prone to getting ill).</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～気味 (ぎみ) — a slight sense of / a bit</div>
+                                    <ul class="bullet-list">
+                                        <li>ます-stem or noun + 気味: a slight current tendency or feeling, milder and more physical/mental than がち.</li>
+                                        <li>さいきん、つかれぎみだ (saikin, tsukaregimi da — I've been feeling a bit tired lately) <button class="speak-btn" data-speak="さいきん、つかれぎみだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>かぜぎみなので、きょうははやくねます (kazegimi na node, kyou wa hayaku nemasu — I'm feeling a bit like I have a cold, so I'll go to bed early today)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～っぽい — -ish / looks or acts like</div>
+                                    <ul class="bullet-list">
+                                        <li>い-adjective stem / noun / ます-stem + っぽい gives an impression of a quality, often slightly negative or casual.</li>
+                                        <li>わすれっぽいひとですね (wasureppoi hito desu ne — you're a forgetful person, aren't you) <button class="speak-btn" data-speak="わすれっぽいひとですね"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>かのじょはこどもっぽい (kanojo wa kodomoppoi — she's childish)</li>
+                                        <li>みずっぽいスープ (mizuppoi suupu — watery soup)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Quiz yourself on all three tendencies with <a href="#" data-goto-tab="flashcards">Flashcards</a>, then use them in your own sentences with the <a href="#" data-goto-tab="builder">Sentence Builder</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 6 -->
+                        <div id="day-pane-27" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-arrow-trend-up" style="color: var(--accent-pink);"></i> N2·6: Correlated Change
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>All three describe two things changing together — "as X changes, Y changes" — and they overlap heavily. But each leans a different way: <strong>につれて</strong> is gradual and natural, <strong>に伴って</strong> highlights one change bringing about another, and <strong>に従って</strong> can also mean "in accordance with" a rule.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Forming and comparing all three</div>
+                                    <table class="grammar-table">
+                                        <thead><tr><th>Pattern</th><th>Nuance</th><th>Example</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>～につれて</td><td>gradual, parallel natural change</td><td>としをとるにつれて、からだがよわくなる (toshi o toru ni tsurete, karada ga yowaku naru — as one ages, the body grows weaker) <button class="speak-btn" data-speak="としをとるにつれて、からだがよわくなる"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>～に伴って</td><td>one change brings/accompanies another, often larger-scale</td><td>じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている (jinkou no zouka ni tomonatte, juutaku busoku ga shinkokuka shiteiru — along with population growth, the housing shortage is worsening) <button class="speak-btn" data-speak="じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>～に従って</td><td>following a rule/instruction, or gradual progression</td><td>きそくにしたがってこうどうしてください (kisoku ni shitagatte koudou shite kudasai — please act in accordance with the rules) <button class="speak-btn" data-speak="きそくにしたがってこうどうしてください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. Where they split</div>
+                                    <ul class="bullet-list">
+                                        <li>For a purely gradual, parallel change, all three can often substitute for one another: ぶっかがあがるにつれて、せいかつがくるしくなる (bukka ga agaru ni tsurete, seikatsu ga kurushiku naru — as prices rise, life gets harder) — に伴って or に従って would work here too with little change in meaning.</li>
+                                        <li>Only に伴って naturally attaches to event nouns describing an accompanying consequence: たいふうのせっきんにともなって、でんしゃがとまった (taifuu no sekkin ni tomonatte, densha ga tomatta — with the typhoon's approach, trains stopped) <button class="speak-btn" data-speak="たいふうのせっきんにともなって、でんしゃがとまった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Only に従って extends naturally to "in accordance with" a rule, order, or instruction — not just gradual change.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Match the right correlated-change pattern in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then review the nuance notes on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 7 -->
+                        <div id="day-pane-28" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-newspaper" style="color: var(--accent-pink);"></i> N2·7: Written Japanese
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Formal written Japanese — newspapers, reports, academic papers — swaps the polite です／ます register for the plain・である style, and leans on a handful of grammar patterns rarely heard in casual speech.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. である style — the written-report register</div>
+                                    <table class="grammar-table">
+                                        <thead><tr><th>Casual/polite ending</th><th>Written (である) equivalent</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>だ／です</td><td>である — これはもんだいである (kore wa mondai de aru — this is a problem) <button class="speak-btn" data-speak="これはもんだいである"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>だった</td><td>であった</td></tr>
+                                            <tr><td>ではない／じゃない</td><td>ではない (unchanged — only the affirmative copula shifts)</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-top:8px;font-size:0.85rem;color:var(--text-muted);">である style still uses plain-form verbs and adjectives (たべる、たかい) — only the copula changes. Never mix ですます and である within the same piece of writing.</p>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. により and における — cause and context, formally</div>
+                                    <ul class="bullet-list">
+                                        <li>～により (formal for によって／で) marks a cause, means, or method: たいふうにより、おおくのいえがこわれた (taifuu ni yori, ooku no ie ga kowareta — due to the typhoon, many houses were destroyed) <button class="speak-btn" data-speak="たいふうにより、おおくのいえがこわれた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～における (formal for での／においての) specifies a time, place, or field a statement applies to, and attaches directly to a noun: にほんにおけるしょうしかもんだい (nihon ni okeru shoushika mondai — the declining-birthrate problem in Japan)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. をめぐって — concerning / over (a dispute)</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun + をめぐって means "concerning/over" a contested topic — almost always paired with a dispute, discussion, or debate.</li>
+                                        <li>あたらしいほうりつをめぐって、はげしいぎろんがつづいている (atarashii houritsu o megutte, hageshii giron ga tsuzuiteiru — fierce debate continues over the new law) <button class="speak-btn" data-speak="あたらしいほうりつをめぐって、はげしいぎろんがつづいている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Spot written-style grammar in the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>, then quiz yourself with <a href="#" data-goto-tab="flashcards">Flashcards</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N2 Lesson 8 -->
+                        <div id="day-pane-29" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-briefcase" style="color: var(--accent-pink);"></i> N2·8: Keigo II — Business Register
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Business keigo builds on N3's honorific/humble basics with one more rule: <strong>内・外 (uchi・soto)</strong>. Speaking to an outside client, your own boss and coworkers become "your side" (内) — describe their actions with humble language, never honorific, even though you'd use honorific speech talking to that same boss directly.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. 内 (uchi) vs 外 (soto) — who gets honored</div>
+                                    <ul class="bullet-list">
+                                        <li>To a coworker, inside the company: ぶちょうはもういらっしゃいました (buchou wa mou irasshaimashita — the manager has already arrived) — honorific, since everyone here is "inside." <button class="speak-btn" data-speak="ぶちょうはもういらっしゃいました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>To an outside client, about the very same manager: ぶちょうはもうまいりました (buchou wa mou mairimashita — the manager has already arrived) — humble, because from the client's view your manager is now "your side"; rank inside the company no longer matters. <button class="speak-btn" data-speak="ぶちょうはもうまいりました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>This flip trips up learners more than any single verb form — the rule is about the listener, not the person being talked about.</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ございます, おる, まいる — the business-formal set</div>
+                                    <ul class="bullet-list">
+                                        <li>です → でございます: こちらがしりょうでございます (kochira ga shiryou de gozaimasu — here is the material)</li>
+                                        <li>ある → ございます: おてあらいはあちらにございます (otearai wa achira ni gozaimasu — the restroom is over there)</li>
+                                        <li>いる → おる (humble, own side): たなかはただいまがいしゅつしております (Tanaka wa tadaima gaishutsu shite orimasu — Tanaka is currently out of the office)</li>
+                                        <li>いく／くる → まいる (humble, own side): すぐにまいります (sugu ni mairimasu — I'll be right there)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. お／ご + stem + します — "let me do X for you"</div>
+                                    <ul class="bullet-list">
+                                        <li>お + verb ます-stem + します (or ご + verbal noun + します for many する-verbs) humbly offers to do something for the listener. Watch the honorific お doubling with an お-initial stem: おくる → おくり → <span class="ja-word">おおくりします</span> (okuru → okuri → o okuri shimasu — I will send it to you), not おくりします.</li>
+                                        <li>ごれんらくします (go renraku shimasu — I will contact you) <button class="speak-btn" data-speak="ごれんらくします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Standard phone/email openers and closers: いつもおせわになっております (itsumo osewa ni natte orimasu — thank you always for your support); よろしくおねがいいたします (yoroshiku onegai itashimasu — thank you in advance) <button class="speak-btn" data-speak="よろしくおねがいいたします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Practice uchi/soto switching in the <a href="#" data-goto-tab="arena">Quest Arena</a>, build your own business phrases in the <a href="#" data-goto-tab="builder">Sentence Builder</a>, then review the full set on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="day-pane-30" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-scroll" style="color: var(--accent-pink);"></i> N1·1: Literary Negatives — ～んがため, ～ずして, ～べからず
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>N1 texts lean on classical grammar that survives only in set phrases, proverbs, and formal writing today. These three patterns all trace back to negatives or auxiliaries from classical Japanese — recognizing them unlocks mottos, signs, and literary prose.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～んがため(に) — "in order to" (archaic purpose)</div>
+                                    <table class="grammar-table">
+                                        <thead><tr><th>Form</th><th>Rule</th><th>Example</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>Regular verbs</td><td>ない-form, drop ない + んがために</td><td>生きる → 生きない → <span class="ja-word">生きんがために</span> (ikiru → ikinai → ikin ga tame ni — in order to live)</td></tr>
+                                            <tr><td>する (irregular)</td><td>せんがために, never しんがために</td><td>合格する → <span class="ja-word">合格せんがために</span> (goukaku suru → goukaku sen ga tame ni — in order to pass [an exam])</td></tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-top:8px;font-size:0.85rem;color:var(--text-muted);">Famous line: 人は生きんがために食う (hito wa ikin ga tame ni kuu — people eat in order to live) — the reverse of the usual "live to eat."</p>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～ずして — "without doing ~" (formal ～ないで)</div>
+                                    <ul class="bullet-list">
+                                        <li>ない-form, drop ない + ずして — する becomes せずして, never しずして.</li>
+                                        <li>努力せずして成功はあり得ない (doryoku sezu shite seikou wa arienai — without effort, success is impossible) <button class="speak-btn" data-speak="努力せずして成功はあり得ない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Common in rhetorical questions built as "～ずして何であろうか" (sezu shite nan de arou ka — if this isn't ~, then what is?), affirming something emphatically by denying its alternative.</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～べからず — "must not" (formal prohibition)</div>
+                                    <ul class="bullet-list">
+                                        <li>Dictionary form + べからず — the negative of べし (must/should); する becomes すべからず, the one common irregular exception.</li>
+                                        <li>芝生に入るべからず (shibafu ni hairu bekarazu — do not enter the lawn) <button class="speak-btn" data-speak="芝生に入るべからず"><i class="fa-solid fa-volume-high"></i></button> — the classic wording on old signs and notices.</li>
+                                        <li>More common today as the plain notice 立入禁止, but べからず still appears on historical signs, in mottos, and in formal writing as a stronger, more literary alternative to ～べきではない.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Spot these archaic negatives in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then check the classical auxiliaries behind them on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N1 Lesson 2 -->
+                        <div id="day-pane-31" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-scale-unbalanced" style="color: var(--accent-pink);"></i> N1·2: Concessive Nuance — ～ものを, ～ながら(も), ～といえども
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Concessive grammar admits one fact while asserting something that seems to contradict it — "despite X, Y." These three patterns each add a different flavor: regret, quiet contrast, or formal argument.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～ものを — regret: "if only..."</div>
+                                    <ul class="bullet-list">
+                                        <li>Attaches to a plain-form clause describing what should have happened — then leaves the speaker's frustration or regret hanging, since reality went otherwise.</li>
+                                        <li>すぐに謝ればいいものを、彼は意地を張った (sugu ni ayamareba ii mono o, kare wa iji o hatta — he should have just apologized right away, but he stubbornly refused) <button class="speak-btn" data-speak="すぐに謝ればいいものを、彼は意地を張った"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Often the clause after ものを is dropped entirely, leaving the regret implied: 早く言ってくれればよかったものを…(hayaku itte kurereba yokatta mono o… — if only you'd told me sooner…)</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～ながら(も) — "even though / despite"</div>
+                                    <ul class="bullet-list">
+                                        <li>い-adjective / な-adjective stem (no な, e.g. 残念ながら) / noun / verb ます-stem + ながら(も) — different from the simultaneous-action ながら from N4; here it concedes a contrast within a single subject.</li>
+                                        <li>狭いながらも、幸せな家庭を築いた (semai nagara mo, shiawase na katei o kizuita — despite being small, [they] built a happy home) <button class="speak-btn" data-speak="狭いながらも、幸せな家庭を築いた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>知っていながら、彼は黙っていた (shitte inagara, kare wa damatte ita — even though he knew, he stayed silent).</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～といえども — "even ~ / even though" (formal)</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun / plain form + といえども — grants a point fully, then insists it changes nothing; common in essays, speeches, and legal-style argument.</li>
+                                        <li>子供といえども、責任は免れない (kodomo to iedomo, sekinin wa manugarenai — even though [he's] a child, [he] cannot escape responsibility) <button class="speak-btn" data-speak="子供といえども、責任は免れない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>プロといえども、失敗することはある (puro to iedomo, shippai suru koto wa aru — even professionals sometimes fail).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Untangle regret from concession in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then drill all three forms with <a href="#" data-goto-tab="flashcards">Flashcards</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N1 Lesson 3 -->
+                        <div id="day-pane-32" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-bolt" style="color: var(--accent-pink);"></i> N1·3: Immediacy — ～なり, ～や否や, ～そばから
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Three ways to say "the instant X happens, Y follows" — but they aren't interchangeable. なり and や否や describe a single unexpected moment; そばから describes a frustrating cycle that keeps repeating.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～なり — "as soon as" (a single surprising follow-up)</div>
+                                    <ul class="bullet-list">
+                                        <li>Dictionary form + なり — the second action follows the first almost instantly, and is often unexpected; the subject of both clauses is normally the same person.</li>
+                                        <li>彼は帰宅するなり、部屋に閉じこもった (kare wa kitaku suru nari, heya ni tojikomotta — as soon as he got home, he shut himself in his room) <button class="speak-btn" data-speak="彼は帰宅するなり、部屋に閉じこもった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～や否や(やいなや) — "the moment that..." (literary)</div>
+                                    <ul class="bullet-list">
+                                        <li>Dictionary form + や否や — more literary than なり, common in narrative writing; the two clauses can involve different subjects.</li>
+                                        <li>ベルが鳴るや否や、生徒たちは教室を飛び出した (beru ga naru ya ina ya, seitotachi wa kyoushitsu o tobidashita — the moment the bell rang, the students dashed out of the classroom) <button class="speak-btn" data-speak="ベルが鳴るや否や、生徒たちは教室を飛び出した"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～そばから — "no sooner...than" (a repeating cycle)</div>
+                                    <ul class="bullet-list">
+                                        <li>Dictionary form / た-form + そばから — unlike なり and や否や, this describes a repeated, often frustrating pattern where the second action keeps undoing the first.</li>
+                                        <li>片付けるそばから、子供が散らかす (katazukeru soba kara, kodomo ga chirakasu — no sooner do I tidy up than the kids make a mess again) <button class="speak-btn" data-speak="片付けるそばから、子供が散らかす"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>習ったそばから忘れてしまう (naratta soba kara wasurete shimau — I forget things as fast as I learn them).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Tell one-time immediacy from repeating cycles in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then build your own なり and そばから sentences in the <a href="#" data-goto-tab="builder">Sentence Builder</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N1 Lesson 4 -->
+                        <div id="day-pane-33" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-landmark" style="color: var(--accent-pink);"></i> N1·4: Formal Circumstance — ～ともなると, ～とあって, ～に至って
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>These three describe how a special stage, occasion, or extreme point changes everything around it — standard fare in news reports and formal commentary.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～ともなると／～ともなれば — "once it reaches the stage of..."</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun / verb dictionary form + ともなると(なれば) — a special level, time, or status is reached, and things naturally follow from it.</li>
+                                        <li>大企業の社長ともなると、責任は非常に重い (dai kigyou no shachou tomo naru to, sekinin wa hijou ni omoi — when one becomes the president of a major company, the responsibility is extremely heavy) <button class="speak-btn" data-speak="大企業の社長ともなると、責任は非常に重い"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>年末ともなれば、街は買い物客でにぎわう (nenmatsu tomo nareba, machi wa kaimonokyaku de nigiwau — when it's the end of the year, the streets bustle with shoppers).</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～とあって — "given that it's a special ~"</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun / plain form + とあって — states a special circumstance, then describes the natural reaction it causes; common in news-style writing.</li>
+                                        <li>連休とあって、高速道路はどこも渋滞している (renkyuu to atte, kousoku douro wa doko mo juutai shiteiru — since it's a long holiday, the highways are congested everywhere) <button class="speak-btn" data-speak="連休とあって、高速道路はどこも渋滞している"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～に至って(いたって) — "only when it reached the point of..."</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun / verb dictionary form + に至って — something is finally realized, decided, or acted on only once an extreme point is reached, often implying "too late."</li>
+                                        <li>手術が必要な状態に至って、彼はやっと病院へ行った (shujutsu ga hitsuyou na joutai ni itatte, kare wa yatto byouin e itta — only when it reached the point of needing surgery did he finally go to the hospital) <button class="speak-btn" data-speak="手術が必要な状態に至って、彼はやっと病院へ行った"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Related: ～に至っては singles out one extreme example within a larger group for comment; ～に至るまで means "all the way up to ~."</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Practice reading these formal-circumstance sentences in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then review the nuances on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N1 Lesson 5 -->
+                        <div id="day-pane-34" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-fingerprint" style="color: var(--accent-pink);"></i> N1·5: Character & Set Phrases — ～きらいがある, ～ずにはおかない, ～を余儀なくされる
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>Three set phrases for describing tendencies and forced outcomes — a person's negative habit, an inevitable emotional effect, and a circumstance nobody chose.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. ～きらいがある — "has a tendency to ~" (negative)</div>
+                                    <ul class="bullet-list">
+                                        <li>Verb dictionary form + きらいがある, or noun + の + きらいがある — describes an inherent, usually undesirable tendency or bad habit, not a one-time event.</li>
+                                        <li>彼は仕事を先延ばしにするきらいがある (kare wa shigoto o sakinobashi ni suru kirai ga aru — he has a tendency to procrastinate on work) <button class="speak-btn" data-speak="彼は仕事を先延ばしにするきらいがある"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. ～ないではおかない／～ずにはおかない — "bound to ~ / cannot help but ~"</div>
+                                    <ul class="bullet-list">
+                                        <li>ない-form + ではおかない, or ない-form (drop ない) + ずにはおかない — a natural force or strong emotion makes an effect inevitable; the double negative reads as a strong positive.</li>
+                                        <li>この映画は観客を感動させないではおかない (kono eiga wa kankyaku o kandou sasenai de wa okanai — this movie is bound to move the audience) <button class="speak-btn" data-speak="この映画は観客を感動させないではおかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>彼の行動は皆を怒らせずにはおかない (kare no koudou wa mina o okorasezu niwa okanai — his behavior can't help but anger everyone).</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. ～を余儀なくされる(よぎなくされる) — "be forced to ~"</div>
+                                    <ul class="bullet-list">
+                                        <li>Noun (often a verb turned into a noun) + を余儀なくされる — circumstances beyond anyone's control force an unwanted outcome; a formal, passive-feeling construction common in news reports.</li>
+                                        <li>台風のため、試合は中止を余儀なくされた (taifuu no tame, shiai wa chuushi o yoginaku sareta — due to the typhoon, the match was forced to be canceled) <button class="speak-btn" data-speak="台風のため、試合は中止を余儀なくされた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Spot forced outcomes and negative tendencies in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then quiz yourself on all three with <a href="#" data-goto-tab="flashcards">Flashcards</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- N1 Lesson 6 -->
+                        <div id="day-pane-35" class="day-pane">
+                            <div class="glass-card">
+                                <div class="card-title">
+                                    <i class="fa-solid fa-newspaper" style="color: var(--accent-pink);"></i> N1·6: Reading the Editorial
+                                    <span class="badge">Grammar</span>
+                                </div>
+                                <p>N1 reading comprehension leans heavily on 論説文 — opinion essays and newspaper editorials. Knowing their stock phrases and connectors turns a wall of formal text into a predictable argument structure. Two keigo traps round out this lesson.</p>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">1. Stock editorial phrases (論説文の決まり文句)</div>
+                                    <ul class="bullet-list">
+                                        <li><strong>～と言わざるを得ない</strong> (to iwazaru o enai — cannot help but say/conclude that): この結果は失敗だったと言わざるを得ない (kono kekka wa shippai datta to iwazaru o enai — one cannot help but conclude this result was a failure) <button class="speak-btn" data-speak="この結果は失敗だったと言わざるを得ない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>～ではなかろうか</strong> (de wa nakarou ka — isn't it perhaps...?): a softened, formal way to state an opinion as a rhetorical question. それは杞憂ではなかろうか (sore wa kiyuu de wa nakarou ka — isn't that perhaps needless worry?)</li>
+                                        <li><strong>～に他ならない</strong> (ni hoka naranai — is nothing other than): 彼の成功は努力の賜物に他ならない (kare no seikou wa doryoku no tamamono ni hoka naranai — his success is nothing other than the fruit of effort) <button class="speak-btn" data-speak="彼の成功は努力の賜物に他ならない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">2. Formal connectors — したがって, もっとも, ゆえに</div>
+                                    <ul class="bullet-list">
+                                        <li><strong>したがって</strong> (shitagatte — therefore, accordingly): links a conclusion drawn logically from what came before, more formal than だから.</li>
+                                        <li><strong>もっとも</strong> (mottomo — that said, although): follows a claim with a qualification or exception, softening what was just argued.</li>
+                                        <li><strong>ゆえに</strong> (yueni — therefore, hence): the most formal/logical of the three, common in academic and legal writing; often preceded by それ (それゆえに).</li>
+                                    </ul>
+                                </div>
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title">3. Two keigo traps</div>
+                                    <ul class="bullet-list">
+                                        <li><strong>二重敬語 (double keigo):</strong> おっしゃられる is wrong — it stacks the already-honorific おっしゃる (say) with the honorific suffix ～られる. Say just おっしゃる, or 言われる.</li>
+                                        <li><strong>伺う vs 参る</strong> (both humble "go/come," but not interchangeable): 伺う (ukagau) implies going to see, ask, or hear from someone of higher status — directed at the other party. 参る (mairu) is a plain humble "go/come" with no such direction, fine for general business use: 今参ります (ima mairimasu — I'm coming right now).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="grammar-card">
+                                    <div class="grammar-card-title"><i class="fa-solid fa-dumbbell"></i> Practice what you learned</div>
+                                    <p>Practice spotting these editorial patterns in the <a href="#" data-goto-tab="arena">Quest Arena</a>, then review the full keigo ladder on the <a href="#" data-goto-tab="bridge">Grammar Bridge</a>.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1448,7 +2010,7 @@
             <section id="kana" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-table" style="color: var(--accent-pink);"></i> Interactive Kana Charts
+                        <i class="fa-solid fa-table" style="color: var(--accent-pink);"></i> <span data-i18n="kana.title">Interactive Kana Charts</span>
                         <span class="badge">Phonetics Lookup</span>
                     </div>
                     
@@ -1457,7 +2019,7 @@
                             <button class="toggle-btn active" data-type="hiragana">Hiragana</button>
                             <button class="toggle-btn" data-type="katakana">Katakana</button>
                         </div>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">Click any card below to play pronunciation audio!</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="kana.hint">Click any card below to play pronunciation audio!</p>
                     </div>
 
                     <div class="kana-grid" id="kana-grid-container">
@@ -1470,7 +2032,7 @@
             <section id="canvas" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-pencil" style="color: var(--accent-pink);"></i> Kana Writing Practice Canvas
+                        <i class="fa-solid fa-pencil" style="color: var(--accent-pink);"></i> <span data-i18n="canvas.title">Kana Writing Practice Canvas</span>
                         <span class="badge">Stroke Practice</span>
                     </div>
                     
@@ -1478,8 +2040,8 @@
                         <div class="canvas-wrapper">
                             <canvas id="practice-canvas" width="350" height="350"></canvas>
                             <div class="canvas-controls">
-                                <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> Clear Canvas</button>
-                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> Hide Guide Lines</button>
+                                <button class="btn" id="btn-clear-canvas"><i class="fa-solid fa-trash-can"></i> <span data-i18n="canvas.clear">Clear Canvas</span></button>
+                                <button class="btn btn-teal" id="btn-check-stroke"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="canvas.guides">Hide Guide Lines</span></button>
                             </div>
                         </div>
                         
@@ -1491,12 +2053,12 @@
                             </div>
                             
                             <div class="canvas-guide-nav">
-                                <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> Previous</button>
-                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> Audio</button>
-                                <button class="btn" id="btn-next-guide">Next <i class="fa-solid fa-chevron-right"></i></button>
+                                <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> <span data-i18n="canvas.prev">Previous</span></button>
+                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="canvas.audio">Audio</span></button>
+                                <button class="btn" id="btn-next-guide"><span data-i18n="canvas.next">Next</span> <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
-                            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+                            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;" data-i18n="canvas.instructions">
                                 <strong>How to use it:</strong> trace the guide character with your mouse, trackpad, or finger. Writing the shapes by hand builds the muscle memory that makes them stick, which is usually faster than trying to memorize them by sight alone.
                             </p>
                         </div>
@@ -1508,18 +2070,18 @@
             <section id="flashcards" class="tab-content">
                 <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
                     <div class="card-title">
-                        <i class="fa-solid fa-layer-group" style="color: var(--accent-pink);"></i> Vocabulary Flashcards
+                        <i class="fa-solid fa-layer-group" style="color: var(--accent-pink);"></i> <span data-i18n="flash.title">Vocabulary Flashcards</span>
                         <span class="badge">SRS Review</span>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Flip the card, then rate how well you knew it — <strong style="color:#e74c3c;">Again</strong> (~1 min), <strong style="color:#e67e22;">Hard</strong> (~12 h), <strong style="color:#3498db;">Good</strong> (~3 days), <strong style="color:#2ecc71;">Easy</strong> (~7 days). Cards you find hard come back sooner (spaced repetition). <strong>Due Only</strong> shows just the cards scheduled for review right now.</p>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;" data-i18n="flash.legend">Flip the card, then rate how well you knew it — <strong style="color:#e74c3c;">Again</strong> (~1 min), <strong style="color:#e67e22;">Hard</strong> (~12 h), <strong style="color:#3498db;">Good</strong> (~3 days), <strong style="color:#2ecc71;">Easy</strong> (~7 days). Cards you find hard come back sooner (spaced repetition). <strong>Due Only</strong> shows just the cards scheduled for review right now.</p>
 
                     <div class="kana-controls">
                         <div class="toggle-group" id="flashcard-category-toggle">
-                            <button class="toggle-btn active" data-cat="kana">Letters</button>
-                            <button class="toggle-btn" data-cat="numbers">Numbers</button>
-                            <button class="toggle-btn" data-cat="phrases">Survival Phrases</button>
-                            <button class="toggle-btn" data-cat="verbs">Verbs</button>
-                            <button class="toggle-btn" data-cat="adjectives">Adjectives</button>
+                            <button class="toggle-btn active" data-cat="kana" data-i18n="flash.deck.kana">Letters</button>
+                            <button class="toggle-btn" data-cat="numbers" data-i18n="flash.deck.numbers">Numbers</button>
+                            <button class="toggle-btn" data-cat="phrases" data-i18n="flash.deck.phrases">Survival Phrases</button>
+                            <button class="toggle-btn" data-cat="verbs" data-i18n="flash.deck.verbs">Verbs</button>
+                            <button class="toggle-btn" data-cat="adjectives" data-i18n="flash.deck.adjectives">Adjectives</button>
                             <button class="toggle-btn" data-cat="n5">N5 Dict</button>
                             <button class="toggle-btn" data-cat="n4">N4 Dict</button>
                             <button class="toggle-btn" data-cat="n3">N3 Dict</button>
@@ -1528,7 +2090,7 @@
                         </div>
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-muted);">
-                                <input type="checkbox" id="chk-srs-due" style="accent-color: var(--accent-pink); width: 15px; height: 15px; cursor: pointer;"> Due Only
+                                <input type="checkbox" id="chk-srs-due" style="accent-color: var(--accent-pink); width: 15px; height: 15px; cursor: pointer;"> <span data-i18n="flash.dueonly">Due Only</span>
                             </label>
                             <span style="color: var(--accent-pink); font-weight: 700; font-size: 0.9rem;" id="card-progress">1 / 10</span>
                         </div>
@@ -1552,9 +2114,9 @@
 
                         <!-- Standard navigation controls -->
                         <div class="flashcard-btn-row" id="card-nav-standard">
-                            <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> Previous</button>
-                            <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> Listen</button>
-                            <button class="btn btn-primary" id="btn-card-next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="btn" id="btn-card-prev"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="flash.prev">Previous</span></button>
+                            <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="flash.listen">Listen</span></button>
+                            <button class="btn btn-primary" id="btn-card-next"><span data-i18n="flash.next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
 
                         <!-- SRS Rating controls, shown on flip -->
@@ -1572,10 +2134,10 @@
             <section id="builder" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
-                        <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> Particle Sentence Builder
+                        <i class="fa-solid fa-puzzle-piece" style="color: var(--accent-pink);"></i> <span data-i18n="builder.title">Particle Sentence Builder</span>
                         <span class="badge">Grammar Lab</span>
                     </div>
-                    <p style="margin-bottom: 20px; color: var(--text-muted);">Assemble the Japanese sentence using the word chips from the bank. Place them in the target workspace box in the correct order (Subject &rarr; Topic Particle &rarr; Object &rarr; Object Particle &rarr; Verb)!</p>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);" data-i18n="builder.intro">Assemble the Japanese sentence using the word chips from the bank. Place them in the target workspace box in the correct order (Subject &rarr; Topic Particle &rarr; Object &rarr; Object Particle &rarr; Verb)!</p>
                     
                     <div class="sentence-builder-container">
                         <div style="font-weight: 700; color: #fff; font-size: 1.1rem;" id="sentence-prompt">Target: "I eat sushi."</div>
@@ -1593,9 +2155,9 @@
                         <div class="sentence-builder-controls">
                             <div class="sentence-feedback" id="sentence-feedback"></div>
                             <div style="display: flex; gap: 10px;">
-                                <button class="btn" id="btn-clear-sentence"><i class="fa-solid fa-arrow-rotate-left"></i> Reset</button>
-                                <button class="btn btn-teal" id="btn-check-sentence"><i class="fa-solid fa-check"></i> Check Sentence</button>
-                                <button class="btn btn-primary" id="btn-next-sentence">Next Challenge <i class="fa-solid fa-chevron-right"></i></button>
+                                <button class="btn" id="btn-clear-sentence"><i class="fa-solid fa-arrow-rotate-left"></i> <span data-i18n="builder.reset">Reset</span></button>
+                                <button class="btn btn-teal" id="btn-check-sentence"><i class="fa-solid fa-check"></i> <span data-i18n="builder.check">Check Sentence</span></button>
+                                <button class="btn btn-primary" id="btn-next-sentence"><span data-i18n="builder.next">Next Challenge</span> <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -1604,11 +2166,11 @@
         </main>
 
         <footer class="site-footer">
-            <p>Built by <a href="https://github.com/ash01ish" target="_blank" rel="noopener">Ashish Thirunagari</a>. Free and open source under CC BY-NC-SA 4.0.</p>
-            <p style="margin-top: 4px;">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
+            <p data-i18n="footer.built">Built by <a href="https://github.com/ash01ish" target="_blank" rel="noopener">Ashish Thirunagari</a>. Free and open source under CC BY-NC-SA 4.0.</p>
+            <p style="margin-top: 4px;" data-i18n="footer.star1">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
             <div class="footer-cta">
-                <a class="footer-btn footer-btn-star" href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> Star on GitHub</a>
-                <a class="footer-btn footer-btn-sponsor" href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> Sponsor</a>
+                <a class="footer-btn footer-btn-star" href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> <span data-i18n="footer.starbtn">Star on GitHub</span></a>
+                <a class="footer-btn footer-btn-sponsor" href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> <span data-i18n="footer.sponsorbtn">Sponsor</span></a>
             </div>
         </footer>
 
@@ -1624,8 +2186,8 @@
             </div>
             <p id="help-body"></p>
             <div class="help-actions">
-                <button type="button" id="help-replay" class="btn">Replay intro tour</button>
-                <button type="button" id="help-ok" class="btn btn-teal">Got it</button>
+                <button type="button" id="help-replay" class="btn" data-i18n="help.replay">Replay intro tour</button>
+                <button type="button" id="help-ok" class="btn btn-teal" data-i18n="help.gotit">Got it</button>
             </div>
         </div>
     </div>

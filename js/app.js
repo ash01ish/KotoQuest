@@ -1039,7 +1039,12 @@ function updateHUDDisplays() {
     const accEl = document.getElementById('accuracy-display');
     if (accEl && player.stats) {
         const pct = player.stats.totalAnswered > 0 ? Math.round((player.stats.totalCorrect / player.stats.totalAnswered) * 100) : 0;
-        accEl.innerHTML = `<i class="fa-solid fa-bullseye"></i> Accuracy: <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
+        // Keep the gold icon and the translated label (the old template dropped both):
+        // resolve the label from the active UI language, and carry data-i18n-original
+        // so switching back to English still restores correctly.
+        const code = LANG_PACK_CODES[player.nativeLanguage];
+        const label = (code && window.UI_I18N && window.UI_I18N[code] && window.UI_I18N[code]['badge.accuracy']) || 'Accuracy:';
+        accEl.innerHTML = `<i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy" data-i18n-original="Accuracy:">${label}</span> <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
     }
 
     // Update category practice stats breakdown
@@ -1178,8 +1183,24 @@ const CURRICULUM = [
         { title: 'Te-form Extensions', pane: 'day-pane-20' },
         { title: 'Keigo I: Honorific & Humble', pane: 'day-pane-21' }
     ]},
-    { level: 'N2', title: 'Advanced', lessons: [] },
-    { level: 'N1', title: 'Mastery', lessons: [] }
+    { level: 'N2', title: 'Advanced', lessons: [
+        { title: 'ものだ Family', pane: 'day-pane-22' },
+        { title: 'わけだ Family', pane: 'day-pane-23' },
+        { title: 'Obligation & Compulsion', pane: 'day-pane-24' },
+        { title: 'Concessives', pane: 'day-pane-25' },
+        { title: 'Tendencies: がち・気味・っぽい', pane: 'day-pane-26' },
+        { title: 'Correlated Change', pane: 'day-pane-27' },
+        { title: 'Written Japanese (である)', pane: 'day-pane-28' },
+        { title: 'Keigo II: Business', pane: 'day-pane-29' }
+    ]},
+    { level: 'N1', title: 'Mastery', lessons: [
+        { title: 'Literary Negatives', pane: 'day-pane-30' },
+        { title: 'Concessive Nuance', pane: 'day-pane-31' },
+        { title: 'Immediacy: なり・や否や', pane: 'day-pane-32' },
+        { title: 'Formal Circumstance', pane: 'day-pane-33' },
+        { title: 'Character & Set Phrases', pane: 'day-pane-34' },
+        { title: 'Reading the Editorial', pane: 'day-pane-35' }
+    ]}
 ];
 
 function setupCurriculum() {
@@ -1192,6 +1213,7 @@ function setupCurriculum() {
         panes.forEach(p => p.classList.remove('active'));
         const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
+        ensureLessonI18n(renderLessonSummary);
     };
 
     let firstPane = null;
@@ -1622,10 +1644,83 @@ function ensureLangDb(onReady) {
     document.head.appendChild(s);
 }
 
+// --- NATIVE LESSON SUMMARIES (lazy js/lang/lessons.js) ---
+function ensureLessonI18n(onReady) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code) { if (onReady) onReady(); return; } // english: nothing to load
+    if (window.LESSON_I18N) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = 'js/lang/lessons.js';
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => console.log('Lesson summaries failed to load');
+    document.head.appendChild(s);
+}
+
+// Shows a short native-language summary at the top of the active lesson pane
+// (full lesson prose stays English; the summary carries the core rule).
+function renderLessonSummary() {
+    const pane = document.querySelector('.day-pane.active');
+    if (!pane) return;
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    let box = pane.querySelector('.lesson-native-summary');
+    const text = code && window.LESSON_I18N && window.LESSON_I18N[code] && window.LESSON_I18N[code][pane.id];
+    if (!text) { if (box) box.remove(); return; }
+    if (!box) {
+        box = document.createElement('div');
+        box.className = 'lesson-native-summary';
+        const card = pane.querySelector('.glass-card');
+        const title = card ? card.querySelector('.card-title') : null;
+        if (title && title.parentNode === card) title.insertAdjacentElement('afterend', box);
+        else if (card) card.prepend(box);
+        else pane.prepend(box);
+    }
+    box.textContent = text;
+}
+
+// --- UI CHROME I18N (data-i18n attributes + js/lang/ui.js strings) ---
+function ensureUiI18n(onReady) {
+    if (window.UI_I18N) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = 'js/lang/ui.js';
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => console.log('UI i18n strings failed to load');
+    document.head.appendChild(s);
+}
+
+function applyUiLanguage() {
+    const code = LANG_PACK_CODES[player.nativeLanguage]; // undefined for english
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        // innerHTML (not textContent): a few strings carry inline markup (links, <strong>).
+        // Translations come from our own committed ui.js, never user input.
+        if (el.dataset.i18nOriginal === undefined) el.dataset.i18nOriginal = el.innerHTML;
+        const t = window.UI_I18N && code && window.UI_I18N[code] && window.UI_I18N[code][key];
+        el.innerHTML = t || el.dataset.i18nOriginal;
+    });
+}
+
+function getNativeGlossByKey(key) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code || !window.LANG_DB || !window.LANG_DB[code]) return '';
+    return window.LANG_DB[code][key] || '';
+}
+
 function getNativeGloss(card) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
-    if (!code || !card.key || !window.LANG_DB || !window.LANG_DB[code]) return '';
-    return window.LANG_DB[code][card.key] || '';
+    if (!code || !window.LANG_DB || !window.LANG_DB[code]) return '';
+    if (card.key) return window.LANG_DB[code][card.key] || '';
+    // Curated decks (Letters/Numbers/Phrases/Verbs/Adjectives) have no dict key:
+    // fall back to a lazily built kanji-only index over the loaded pack.
+    let byJ = window.LANG_DB[code + '_byJ'];
+    if (!byJ) {
+        byJ = {};
+        for (const [k, v] of Object.entries(window.LANG_DB[code])) {
+            const j = k.split('|')[0];
+            if (!(j in byJ)) byJ[j] = v;
+        }
+        window.LANG_DB[code + '_byJ'] = byJ;
+    }
+    return byJ[card.ja] || '';
 }
 
 // --- SENTENCE BUILDER ---
@@ -1768,22 +1863,31 @@ function generateProceduralQuestions(tier, count = 20) {
                 type: 'Vocab Reading'
             });
         } else {
+            // When a language pack is loaded, options read "English · native gloss".
+            // Answer checking compares the same composed strings, so it stays consistent.
+            const withGloss = (e) => {
+                const g = getNativeGlossByKey(`${e.j}|${e.r}`);
+                return g ? `${e.m} · ${g}` : e.m;
+            };
             const wrongOptions = [];
+            const wrongRaw = [];
             let attempts = 0;
             while (wrongOptions.length < 3 && attempts < 50) {
                 attempts++;
                 const w = dict[Math.floor(Math.random() * dictLength)];
-                if (w.m !== item.m && !wrongOptions.includes(w.m)) {
-                    wrongOptions.push(w.m);
+                if (w.m !== item.m && !wrongRaw.includes(w.m)) {
+                    wrongRaw.push(w.m);
+                    wrongOptions.push(withGloss(w));
                 }
             }
             while (wrongOptions.length < 3) {
                 wrongOptions.push('-');
             }
-            const options = [item.m, ...wrongOptions].sort(() => Math.random() - 0.5);
+            const answerText = withGloss(item);
+            const options = [answerText, ...wrongOptions].sort(() => Math.random() - 0.5);
             questions.push({
                 q: `What does "${item.j}" mean?`,
-                answer: item.m,
+                answer: answerText,
                 options: options,
                 style: 'mc',
                 type: 'Vocab Meaning'
@@ -2309,6 +2413,12 @@ function applyNativeLanguageNuances() {
     // 0. Lazy-load the native gloss pack, then refresh the visible flashcard
     ensureLangDb(() => { if (typeof updateCard === 'function') updateCard(); });
 
+    // 0b. Translate the UI chrome (data-i18n elements); restores English when selected
+    ensureUiI18n(applyUiLanguage);
+
+    // 0c. Native summary on the open lesson (removed when English)
+    ensureLessonI18n(renderLessonSummary);
+
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
     if (subtitle) {
@@ -2357,8 +2467,10 @@ function applyNativeLanguageNuances() {
     }
     
     // 4. Update sentence builder prompt if builder is active
+    // Always refresh the builder prompt (even when the tab is hidden) so arriving
+    // at the Sentence Builder after a language switch shows the native line.
     const builderSec = document.getElementById('builder');
-    if (builderSec && builderSec.classList.contains('active')) {
+    if (builderSec) {
         const lvl = SENTENCE_LEVELS[buildIdx];
         let promptText = lvl.prompt;
         
@@ -2436,9 +2548,13 @@ function setupHelp() {
         return active ? active.getAttribute('data-tab') : 'arena';
     };
     const openHelp = () => {
-        const info = TAB_HELP[activeTabId()] || TAB_HELP.arena;
-        titleEl.textContent = info.title;
-        bodyEl.textContent = info.body;
+        const tab = activeTabId();
+        const info = TAB_HELP[tab] || TAB_HELP.arena;
+        // Translated help when a UI language pack is active; English fallback.
+        const code = LANG_PACK_CODES[player.nativeLanguage];
+        const tr = (code && window.UI_I18N && window.UI_I18N[code]) || {};
+        titleEl.textContent = tr[`help.${tab}.title`] || info.title;
+        bodyEl.textContent = tr[`help.${tab}.body`] || info.body;
         overlay.classList.add('show');
     };
     const closeHelp = () => overlay.classList.remove('show');

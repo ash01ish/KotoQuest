@@ -1525,6 +1525,18 @@ canvas {
     border-color: var(--accent-pink);
 }
 .lesson-btn-num { font-size: 0.7rem; font-weight: 800; color: var(--accent-pink); min-width: 34px; }
+/* Native-language lesson summary box (injected when a language is selected) */
+.lesson-native-summary {
+    background: rgba(46, 213, 115, 0.07);
+    border: 1px solid rgba(46, 213, 115, 0.3);
+    border-left: 4px solid var(--accent-teal);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
 .lesson-btn-title { font-size: 0.9rem; font-weight: 600; color: #fff; }
 
 /* In-lesson tab links (data-goto-tab) */
