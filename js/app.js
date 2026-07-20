@@ -2467,8 +2467,10 @@ function applyNativeLanguageNuances() {
     }
     
     // 4. Update sentence builder prompt if builder is active
+    // Always refresh the builder prompt (even when the tab is hidden) so arriving
+    // at the Sentence Builder after a language switch shows the native line.
     const builderSec = document.getElementById('builder');
-    if (builderSec && builderSec.classList.contains('active')) {
+    if (builderSec) {
         const lvl = SENTENCE_LEVELS[buildIdx];
         let promptText = lvl.prompt;
         
