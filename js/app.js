@@ -1039,7 +1039,12 @@ function updateHUDDisplays() {
     const accEl = document.getElementById('accuracy-display');
     if (accEl && player.stats) {
         const pct = player.stats.totalAnswered > 0 ? Math.round((player.stats.totalCorrect / player.stats.totalAnswered) * 100) : 0;
-        accEl.innerHTML = `<i class="fa-solid fa-bullseye"></i> Accuracy: <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
+        // Keep the gold icon and the translated label (the old template dropped both):
+        // resolve the label from the active UI language, and carry data-i18n-original
+        // so switching back to English still restores correctly.
+        const code = LANG_PACK_CODES[player.nativeLanguage];
+        const label = (code && window.UI_I18N && window.UI_I18N[code] && window.UI_I18N[code]['badge.accuracy']) || 'Accuracy:';
+        accEl.innerHTML = `<i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy" data-i18n-original="Accuracy:">${label}</span> <strong>${pct}%</strong> (${player.stats.totalCorrect}/${player.stats.totalAnswered})`;
     }
 
     // Update category practice stats breakdown
@@ -1178,8 +1183,24 @@ const CURRICULUM = [
         { title: 'Te-form Extensions', pane: 'day-pane-20' },
         { title: 'Keigo I: Honorific & Humble', pane: 'day-pane-21' }
     ]},
-    { level: 'N2', title: 'Advanced', lessons: [] },
-    { level: 'N1', title: 'Mastery', lessons: [] }
+    { level: 'N2', title: 'Advanced', lessons: [
+        { title: 'ものだ Family', pane: 'day-pane-22' },
+        { title: 'わけだ Family', pane: 'day-pane-23' },
+        { title: 'Obligation & Compulsion', pane: 'day-pane-24' },
+        { title: 'Concessives', pane: 'day-pane-25' },
+        { title: 'Tendencies: がち・気味・っぽい', pane: 'day-pane-26' },
+        { title: 'Correlated Change', pane: 'day-pane-27' },
+        { title: 'Written Japanese (である)', pane: 'day-pane-28' },
+        { title: 'Keigo II: Business', pane: 'day-pane-29' }
+    ]},
+    { level: 'N1', title: 'Mastery', lessons: [
+        { title: 'Literary Negatives', pane: 'day-pane-30' },
+        { title: 'Concessive Nuance', pane: 'day-pane-31' },
+        { title: 'Immediacy: なり・や否や', pane: 'day-pane-32' },
+        { title: 'Formal Circumstance', pane: 'day-pane-33' },
+        { title: 'Character & Set Phrases', pane: 'day-pane-34' },
+        { title: 'Reading the Editorial', pane: 'day-pane-35' }
+    ]}
 ];
 
 function setupCurriculum() {
@@ -1192,6 +1213,7 @@ function setupCurriculum() {
         panes.forEach(p => p.classList.remove('active'));
         const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
+        ensureLessonI18n(renderLessonSummary);
     };
 
     let firstPane = null;
@@ -1620,6 +1642,39 @@ function ensureLangDb(onReady) {
     s.onload = () => { if (onReady) onReady(); };
     s.onerror = () => console.log('Language pack failed to load:', code);
     document.head.appendChild(s);
+}
+
+// --- NATIVE LESSON SUMMARIES (lazy js/lang/lessons.js) ---
+function ensureLessonI18n(onReady) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code) { if (onReady) onReady(); return; } // english: nothing to load
+    if (window.LESSON_I18N) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = 'js/lang/lessons.js';
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => console.log('Lesson summaries failed to load');
+    document.head.appendChild(s);
+}
+
+// Shows a short native-language summary at the top of the active lesson pane
+// (full lesson prose stays English; the summary carries the core rule).
+function renderLessonSummary() {
+    const pane = document.querySelector('.day-pane.active');
+    if (!pane) return;
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    let box = pane.querySelector('.lesson-native-summary');
+    const text = code && window.LESSON_I18N && window.LESSON_I18N[code] && window.LESSON_I18N[code][pane.id];
+    if (!text) { if (box) box.remove(); return; }
+    if (!box) {
+        box = document.createElement('div');
+        box.className = 'lesson-native-summary';
+        const card = pane.querySelector('.glass-card');
+        const title = card ? card.querySelector('.card-title') : null;
+        if (title && title.parentNode === card) title.insertAdjacentElement('afterend', box);
+        else if (card) card.prepend(box);
+        else pane.prepend(box);
+    }
+    box.textContent = text;
 }
 
 // --- UI CHROME I18N (data-i18n attributes + js/lang/ui.js strings) ---
@@ -2360,6 +2415,9 @@ function applyNativeLanguageNuances() {
 
     // 0b. Translate the UI chrome (data-i18n elements); restores English when selected
     ensureUiI18n(applyUiLanguage);
+
+    // 0c. Native summary on the open lesson (removed when English)
+    ensureLessonI18n(renderLessonSummary);
 
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
