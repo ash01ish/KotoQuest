@@ -814,6 +814,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Per-tab guided help + replay tour
     setupHelp();
 
+    // "Report a translation issue" -> prefilled GitHub issue
+    setupReportButton();
+
     // Reset Game bind
     setupResetGameButton();
 
@@ -1807,6 +1810,33 @@ function applyUiLanguage() {
         if (el.dataset.i18nOriginal === undefined) el.dataset.i18nOriginal = el.innerHTML;
         const t = window.UI_I18N && code && window.UI_I18N[code] && window.UI_I18N[code][key];
         el.innerHTML = t || el.dataset.i18nOriginal;
+    });
+}
+
+// Opens a prefilled GitHub issue for the current flashcard so users can flag
+// translation errors — the durable long-tail fix for the AI-generated glosses.
+function setupReportButton() {
+    const btn = document.getElementById('btn-report-card');
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const list = getActiveCardList();
+        const card = list[cardIdx];
+        if (!card) return;
+        const lang = player.nativeLanguage || 'english';
+        const native = getNativeGloss(card) || '(no native gloss)';
+        const title = `Translation issue: ${card.ja} [${lang}]`;
+        const body = [
+            `**Word:** ${card.ja} (${card.pronounce || ''})`,
+            `**English:** ${card.meaning}`,
+            `**Language:** ${lang}`,
+            `**Current gloss:** ${native}`,
+            '',
+            '**Suggested correction:** ',
+            '**Notes:** ',
+        ].join('\n');
+        const url = `https://github.com/ash01ish/KotoQuest/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=translation`;
+        window.open(url, '_blank', 'noopener');
     });
 }
 
