@@ -51,7 +51,7 @@ const PARTICLE_CALC_DATA = {
         telugu: 'అయితే (aithe) / (unmarked)',
         hindi: 'तो (toh) / (unmarked)',
         korean: '은 / 는 (eun / neun)',
-        tamil: 'அதாவது (adhavadhu) / (unmarked)',
+        tamil: 'தனிக்குறி இல்லை (unmarked)',
         spanish: '(sujeto / nominativo)',
         examples: [
             { ja: '私は学生です。', ro: 'Watashi wa gakusei desu.', en: 'I am a student.', te: 'నేను అయితే విద్యార్థిని (Nenu aithe vidyarthini).', hi: 'मैं तो छात्र हूँ (Main toh chhaatr hoon).', ko: '나는 학생입니다 (Naneun haksaeng-imnida).', ta: 'நான் மாணவன் (Naan maanavan).', es: 'Yo soy estudiante.' }
@@ -94,7 +94,7 @@ const PARTICLE_CALC_DATA = {
         spanish: 'con / en',
         examples: [
             { ja: 'ペンで書きます。', ro: 'Pen de kakimasu.', en: 'Write with a pen.', te: 'పెన్నుతో రాస్తాను (Pennuto raastaanu).', hi: 'पेन से लिखता हूँ (Pen se likhta hoon).', ko: '펜으로 씁니다 (Peneuro sseubnida).', ta: 'பேனாவால் எழுதுகிறேன் (Penavaal ezhudhugiren).', es: 'Escribo con un bolígrafo.' },
-            { ja: 'レストランで食べます。', ro: 'Resutoran de tabemasu.', en: 'Eat at a restaurant.', te: 'రెస్టారెంట్ లో తింటాను (Restaurant lo thintaanu).', hi: 'रेस्टोरेंट में खाता हूँ (Restaurant mein khaata hoon).', ko: '식당에서 먹습니다 (Sigdang-eseo meogseumnida).', ta: 'உணவகத்தில் சாப்பிடுகிறேன் (Unavagathil saapidugiren).', es: 'Como en el restaurante.' }
+            { ja: 'レストランで食べます。', ro: 'Resutoran de tabemasu.', en: 'Eat at a restaurant.', te: 'రెస్టారెంట్ లో తింటాను (Restaurant lo thintaanu).', hi: 'रेस्टोरेंट में खाता हूँ (Restaurant mein khaata hoon).', ko: '식당에서 먹습니다 (Sigdang-eseo meogseumnida).', ta: 'உணவகத்தில் சாப்பிடுகிறேன் (Unavagathil saapidugiren).', es: 'Como en un restaurante.' }
         ]
     },
     no: {
@@ -107,7 +107,7 @@ const PARTICLE_CALC_DATA = {
         tamil: 'உடைய (udaiya)',
         spanish: 'de',
         examples: [
-            { ja: '私の本。', ro: 'Watashi no hon.', en: 'My book.', te: 'నా యొక్క పుస్తకం (Naa yokka pustakam).', hi: 'मेरी किताब (Meri kitaab).', ko: '나의 책 (Naui chaeg).', ta: 'என்னுடைய புத்தகம் (Ennudaiya puthagam).', es: 'Mi libro (El libro de mí).' }
+            { ja: '私の本。', ro: 'Watashi no hon.', en: 'My book.', te: 'నా యొక్క పుస్తకం (Naa yokka pustakam).', hi: 'मेरी किताब (Meri kitaab).', ko: '나의 책 (Naui chaeg).', ta: 'என்னுடைய புத்தகம் (Ennudaiya puthagam).', es: 'Mi libro.' }
         ]
     },
     to: {
@@ -691,7 +691,7 @@ const SENTENCE_LEVELS = [
         hiPrompt: 'चलो साथ में दोपहर का खाना खाते हैं (Chalo saath mein dopahar ka khana khaate hain)',
         koPrompt: '같이 점심을 먹읍시다 (Gachi jeomsim-eul meog-eupsida)',
         taPrompt: 'நாம் ஒன்றாக மதிய உணவு சாப்பிடுவோம் (Naam ondraaga madhiya unavu saappiduvom)',
-        esPrompt: 'Comamos el almuerzo juntos.',
+        esPrompt: 'Almorcemos juntos.',
         correctOrder: ['いっしょに', 'ひるごはん', 'を', 'たべましょう'],
         words: [
             { ja: 'いっしょに', en: 'Together', part: false },
