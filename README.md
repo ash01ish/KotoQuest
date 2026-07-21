@@ -2,7 +2,7 @@
 ### Gamified multilingual Japanese academy, JLPT N5 to N1 (offline-first)
 
 > Learn Japanese through your own language's grammar instead of fighting it.
-> A free, open-source JLPT N5 → N1 study app with an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, and a native SOV grammar bridge.
+> A free, open-source JLPT N5 → N1 study app: a full grammar curriculum taught in your own language, reading/listening/mock-exam practice, an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, and a native SOV grammar bridge.
 
 [![JLPT Coverage](https://img.shields.io/badge/JLPT-N5%20%E2%86%92%20N1%20%288%2C129%20Words%29-ff6b8b?style=for-the-badge&logo=japanese&logoColor=white)](js/vocab_db.js)
 [![Offline First](https://img.shields.io/badge/Offline--First-100%25%20Browser%20Native-2ed573?style=for-the-badge&logo=html5&logoColor=white)](index.html)
@@ -39,6 +39,17 @@ So if you already think in one of those languages, a lot of Japanese grammar is 
 ---
 
 ## Features
+
+### Full N5 → N1 curriculum, in your language
+- 35 structured grammar lessons, from kana all the way to N1 keigo and literary patterns.
+- Every lesson's actual teaching — not just word meanings — is translated into **Telugu, Hindi, Tamil, Korean, and Spanish**, so you can study the grammar itself in your own language rather than through English.
+- One-tap **Show English** reveals the English version alongside for cross-reference. Japanese examples, romaji, and audio stay intact in every version.
+
+### Reading, listening & mock exams
+The back half of the study loop — **Learn → Drill → Read → Listen → Test** — without leaving the app:
+- **Reading:** original JLPT-style passages with comprehension questions and an English-translation toggle, across every level.
+- **Listening:** short dialogues read aloud by the browser's Japanese voice at Slow / Normal / Fast; the script and translation stay hidden until you answer.
+- **Mock Exam:** a timed, three-section test (Language Knowledge / Reading / Listening) scored with real JLPT gating — you pass only with **100/180 overall and at least 19/60 in every section**. Practice material, not official JLPT content.
 
 ### RPG quest arena and shop
 - Turn-based battles across five JLPT tiers:
@@ -101,6 +112,8 @@ open index.html   # macOS
 ## Contributing
 
 Pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good places to add things:
+- New reading/listening practice in `js/data/reading.js` and `js/data/listening.js`
+- New lessons in `index.html` (`.day-pane` blocks) and their translations in `js/lang/lessons-html-*.js`
 - New quiz questions in `QUEST_DATABASE`
 - New particle mappings in `PARTICLE_CALC_DATA`
 - New sentence challenges in `SENTENCE_LEVELS`
