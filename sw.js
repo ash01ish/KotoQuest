@@ -3,7 +3,7 @@
 // immediately; falls back to the cache only when offline. The cache is refreshed
 // on every load, so offline always has the most recent working copy.
 // This never touches localStorage, so study progress is safe across any cache change.
-const CACHE_NAME = 'kotoquest-v6';
+const CACHE_NAME = 'kotoquest-v7';
 const PRECACHE = [
   './',
   './index.html',
