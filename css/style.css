@@ -1648,3 +1648,57 @@ canvas {
 /* In-lesson tab links (data-goto-tab) */
 a[data-goto-tab] { color: var(--accent-teal); font-weight: 700; text-decoration: none; }
 a[data-goto-tab]:hover { text-decoration: underline; }
+
+/* --- Reading / Listening / Mock-Exam modules (js/practice.js) --- */
+.practice-intro { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 8px 0 4px; }
+.practice-levels { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.practice-level {
+    padding: 6px 16px; border-radius: 999px; cursor: pointer; font-weight: 700; font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14); color: var(--text-main);
+}
+.practice-level.active { background: var(--accent-teal); border-color: var(--accent-teal); color: #05231a; }
+.practice-item {
+    display: block; width: 100%; text-align: left; margin: 8px 0; padding: 14px 16px; cursor: pointer;
+    background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid var(--accent-teal);
+    border-radius: 10px; transition: background 0.15s ease;
+}
+.practice-item:hover { background: rgba(255, 255, 255, 0.09); }
+.practice-item-title { font-weight: 700; color: #fff; }
+.practice-empty { color: var(--text-muted); font-style: italic; margin: 14px 2px; }
+.practice-back { background: none; border: none; color: var(--accent-teal); font-weight: 700; cursor: pointer; padding: 0 0 12px; font-size: 0.9rem; }
+.reading-passage {
+    background: rgba(255, 255, 255, 0.04); border-radius: 10px; padding: 18px 20px; margin: 14px 0;
+    font-size: 1.15rem; line-height: 2.1; color: #fff;
+}
+.practice-details { margin: 6px 0 14px; }
+.practice-details summary { cursor: pointer; color: var(--accent-pink); font-weight: 700; font-size: 0.85rem; }
+.practice-details-body { color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; margin-top: 8px; }
+.practice-q { margin: 16px 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.practice-q-text { font-weight: 600; color: #fff; font-size: 1rem; margin-bottom: 3px; }
+.practice-q-en { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
+.practice-opts { display: grid; gap: 8px; }
+.practice-opt {
+    text-align: left; padding: 11px 15px; cursor: pointer; border-radius: 9px; font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14); color: var(--text-main);
+}
+.practice-opt:hover { background: rgba(255, 255, 255, 0.1); }
+.practice-opt.chosen { border-color: var(--accent-teal); background: rgba(46, 213, 115, 0.12); }
+.practice-opt.right { background: rgba(46, 213, 115, 0.22); border-color: var(--accent-teal); color: #fff; }
+.practice-opt.wrong { background: rgba(255, 107, 139, 0.2); border-color: var(--accent-pink); color: #fff; }
+.practice-result { margin-top: 16px; padding: 12px 16px; border-radius: 10px; font-weight: 700; color: #fff; background: rgba(46, 213, 115, 0.14); border: 1px solid var(--accent-teal); }
+.listening-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 4px; }
+.listening-play { display: inline-flex; align-items: center; gap: 8px; }
+.listening-speed { padding: 6px 14px; border-radius: 999px; cursor: pointer; font-size: 0.8rem; font-weight: 700; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14); color: var(--text-main); }
+.listening-speed.active { background: var(--accent-pink); border-color: var(--accent-pink); color: #2a0713; }
+.listening-script { background: rgba(255, 255, 255, 0.04); border-radius: 10px; padding: 16px 18px; margin: 14px 0 4px; font-size: 1.1rem; line-height: 2; color: #fff; }
+.exam-start, .exam-submit { margin-top: 14px; }
+.exam-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: sticky; top: 0; z-index: 5; padding: 10px 0; background: linear-gradient(180deg, var(--bg-card, #12101c) 70%, transparent); }
+.exam-timer { font-weight: 800; font-size: 1.05rem; color: var(--accent-pink); }
+.exam-section { margin-top: 8px; }
+.exam-section-title { font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent-purple); font-size: 0.85rem; margin: 22px 0 6px; padding-top: 14px; border-top: 2px dashed rgba(255, 255, 255, 0.14); }
+.exam-result { padding: 16px 18px; border-radius: 12px; margin-bottom: 16px; }
+.exam-result.pass { background: rgba(46, 213, 115, 0.14); border: 1px solid var(--accent-teal); }
+.exam-result.fail { background: rgba(255, 107, 139, 0.14); border: 1px solid var(--accent-pink); }
+.exam-verdict { font-weight: 900; font-size: 1.4rem; color: #fff; margin-bottom: 8px; }
+.exam-line { color: var(--text-main); font-size: 0.95rem; margin: 2px 0; }
+.exam-note { color: var(--text-muted); font-size: 0.82rem; margin-top: 10px; }

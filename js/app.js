@@ -1091,17 +1091,17 @@ function updateInventoryBadges() {
 }
 
 // --- SPEECH SYNTHESIS ENGINE ---
-function speakJapanese(text) {
+function speakJapanese(text, rate) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'ja-JP';
-        
+
         const voices = window.speechSynthesis.getVoices();
         const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang.startsWith('ja'));
         if (jaVoice) utterance.voice = jaVoice;
-        
-        utterance.rate = 0.8;
+
+        utterance.rate = typeof rate === 'number' ? rate : 0.8;
         window.speechSynthesis.speak(utterance);
     }
 }
