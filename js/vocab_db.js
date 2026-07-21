@@ -109,7 +109,7 @@ const FULL_VOCAB_DB = {
     {
       "j": "あちら",
       "r": "あちら",
-      "m": "this way (polite)"
+      "m": "that way, over there (polite)"
     },
     {
       "j": "暑い",
@@ -4096,7 +4096,7 @@ const FULL_VOCAB_DB = {
     {
       "j": "中学校",
       "r": "ちゅうがっこう",
-      "m": "junior high school pupil"
+      "m": "junior high school"
     },
     {
       "j": "ガス",
@@ -4731,7 +4731,7 @@ const FULL_VOCAB_DB = {
     {
       "j": "辞典",
       "r": "じてん",
-      "m": "encyclopedia, reference book"
+      "m": "dictionary, reference book"
     },
     {
       "j": "残る",
@@ -12898,7 +12898,7 @@ const FULL_VOCAB_DB = {
     {
       "j": "湧く",
       "r": "わく",
-      "m": "to boil, to grow hot"
+      "m": "to well up, to gush forth, (of feelings) to arise"
     },
     {
       "j": "分ける",

@@ -172,6 +172,15 @@
                 <button class="nav-tab" data-tab="builder">
                     <i class="fa-solid fa-cubes"></i> <span data-i18n="nav.builder">Sentence Builder</span>
                 </button>
+                <button class="nav-tab" data-tab="reading">
+                    <i class="fa-solid fa-book-reader"></i> <span data-i18n="nav.reading">Reading</span>
+                </button>
+                <button class="nav-tab" data-tab="listening">
+                    <i class="fa-solid fa-headphones"></i> <span data-i18n="nav.listening">Listening</span>
+                </button>
+                <button class="nav-tab" data-tab="exam">
+                    <i class="fa-solid fa-file-pen"></i> <span data-i18n="nav.exam">Mock Exam</span>
+                </button>
             </nav>
         </header>
 
@@ -2122,6 +2131,9 @@
                             <button class="btn btn-teal" id="btn-card-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="flash.listen">Listen</span></button>
                             <button class="btn btn-primary" id="btn-card-next"><span data-i18n="flash.next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <a href="#" id="btn-report-card" style="color: var(--text-muted); font-size: 0.78rem; text-decoration: none;"><i class="fa-solid fa-flag"></i> <span data-i18n="flash.report">Report a translation issue</span></a>
+                        </div>
 
                         <!-- SRS Rating controls, shown on flip -->
                         <div class="flashcard-btn-row" id="card-nav-srs" style="display: none; justify-content: center; gap: 8px;">
@@ -2167,6 +2179,11 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Reading / Listening / Mock-Exam modules render into these via js/practice.js -->
+            <section id="reading" class="tab-content"></section>
+            <section id="listening" class="tab-content"></section>
+            <section id="exam" class="tab-content"></section>
         </main>
 
         <footer class="site-footer">
@@ -2199,5 +2216,6 @@
     <!-- Application Script -->
     <script src="js/vocab_db.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/practice.js"></script>
 </body>
 </html>

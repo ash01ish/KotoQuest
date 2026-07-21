@@ -21,3 +21,6 @@ vendor/fonts/outfit-google.css
 
 # Intermediate translation chunk files (assembled into js/lang/*.js)
 js/lang/parts/
+
+# deprecated combined lesson file (split into lessons-html-<code>.js)
+js/lang/lessons-html.js

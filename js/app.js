@@ -51,7 +51,7 @@ const PARTICLE_CALC_DATA = {
         telugu: 'అయితే (aithe) / (unmarked)',
         hindi: 'तो (toh) / (unmarked)',
         korean: '은 / 는 (eun / neun)',
-        tamil: 'அதாவது (adhavadhu) / (unmarked)',
+        tamil: 'தனிக்குறி இல்லை (unmarked)',
         spanish: '(sujeto / nominativo)',
         examples: [
             { ja: '私は学生です。', ro: 'Watashi wa gakusei desu.', en: 'I am a student.', te: 'నేను అయితే విద్యార్థిని (Nenu aithe vidyarthini).', hi: 'मैं तो छात्र हूँ (Main toh chhaatr hoon).', ko: '나는 학생입니다 (Naneun haksaeng-imnida).', ta: 'நான் மாணவன் (Naan maanavan).', es: 'Yo soy estudiante.' }
@@ -94,7 +94,7 @@ const PARTICLE_CALC_DATA = {
         spanish: 'con / en',
         examples: [
             { ja: 'ペンで書きます。', ro: 'Pen de kakimasu.', en: 'Write with a pen.', te: 'పెన్నుతో రాస్తాను (Pennuto raastaanu).', hi: 'पेन से लिखता हूँ (Pen se likhta hoon).', ko: '펜으로 씁니다 (Peneuro sseubnida).', ta: 'பேனாவால் எழுதுகிறேன் (Penavaal ezhudhugiren).', es: 'Escribo con un bolígrafo.' },
-            { ja: 'レストランで食べます。', ro: 'Resutoran de tabemasu.', en: 'Eat at a restaurant.', te: 'రెస్టారెంట్ లో తింటాను (Restaurant lo thintaanu).', hi: 'रेस्टोरेंट में खाता हूँ (Restaurant mein khaata hoon).', ko: '식당에서 먹습니다 (Sigdang-eseo meogseumnida).', ta: 'உணவகத்தில் சாப்பிடுகிறேன் (Unavagathil saapidugiren).', es: 'Como en el restaurante.' }
+            { ja: 'レストランで食べます。', ro: 'Resutoran de tabemasu.', en: 'Eat at a restaurant.', te: 'రెస్టారెంట్ లో తింటాను (Restaurant lo thintaanu).', hi: 'रेस्टोरेंट में खाता हूँ (Restaurant mein khaata hoon).', ko: '식당에서 먹습니다 (Sigdang-eseo meogseumnida).', ta: 'உணவகத்தில் சாப்பிடுகிறேன் (Unavagathil saapidugiren).', es: 'Como en un restaurante.' }
         ]
     },
     no: {
@@ -107,7 +107,7 @@ const PARTICLE_CALC_DATA = {
         tamil: 'உடைய (udaiya)',
         spanish: 'de',
         examples: [
-            { ja: '私の本。', ro: 'Watashi no hon.', en: 'My book.', te: 'నా యొక్క పుస్తకం (Naa yokka pustakam).', hi: 'मेरी किताब (Meri kitaab).', ko: '나의 책 (Naui chaeg).', ta: 'என்னுடைய புத்தகம் (Ennudaiya puthagam).', es: 'Mi libro (El libro de mí).' }
+            { ja: '私の本。', ro: 'Watashi no hon.', en: 'My book.', te: 'నా యొక్క పుస్తకం (Naa yokka pustakam).', hi: 'मेरी किताब (Meri kitaab).', ko: '나의 책 (Naui chaeg).', ta: 'என்னுடைய புத்தகம் (Ennudaiya puthagam).', es: 'Mi libro.' }
         ]
     },
     to: {
@@ -691,7 +691,7 @@ const SENTENCE_LEVELS = [
         hiPrompt: 'चलो साथ में दोपहर का खाना खाते हैं (Chalo saath mein dopahar ka khana khaate hain)',
         koPrompt: '같이 점심을 먹읍시다 (Gachi jeomsim-eul meog-eupsida)',
         taPrompt: 'நாம் ஒன்றாக மதிய உணவு சாப்பிடுவோம் (Naam ondraaga madhiya unavu saappiduvom)',
-        esPrompt: 'Comamos el almuerzo juntos.',
+        esPrompt: 'Almorcemos juntos.',
         correctOrder: ['いっしょに', 'ひるごはん', 'を', 'たべましょう'],
         words: [
             { ja: 'いっしょに', en: 'Together', part: false },
@@ -789,6 +789,7 @@ const CANVAS_GUIDES = [
 // --- APP INITIALIZATION ---
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
+    captureLessonOriginals();
     setupTabs();
     setupTabLinks();
     setupCurriculum();
@@ -813,6 +814,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Per-tab guided help + replay tour
     setupHelp();
+
+    // "Report a translation issue" -> prefilled GitHub issue
+    setupReportButton();
 
     // Reset Game bind
     setupResetGameButton();
@@ -1087,17 +1091,17 @@ function updateInventoryBadges() {
 }
 
 // --- SPEECH SYNTHESIS ENGINE ---
-function speakJapanese(text) {
+function speakJapanese(text, rate) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'ja-JP';
-        
+
         const voices = window.speechSynthesis.getVoices();
         const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang.startsWith('ja'));
         if (jaVoice) utterance.voice = jaVoice;
-        
-        utterance.rate = 0.8;
+
+        utterance.rate = typeof rate === 'number' ? rate : 0.8;
         window.speechSynthesis.speak(utterance);
     }
 }
@@ -1219,6 +1223,7 @@ function setupCurriculum() {
         const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
         ensureLessonI18n(renderLessonSummary);
+        renderLessonEnControls();
     };
 
     let firstPane = null;
@@ -1755,6 +1760,39 @@ function setupArena3dToggle() {
     if (localStorage.getItem('kotoquest_3d')) { chk.checked = true; enable(); }
 }
 
+// --- FULL LESSON PROSE TRANSLATION (lazy js/lang/lessons-html.js) ---
+// The lesson panes are English HTML in index.html. We capture each pane's
+// original English HTML once at startup, then swap innerHTML to the translated
+// version when a language is selected (English restores the original).
+// Japanese examples, kana, romaji and data-speak audio are preserved verbatim
+// in the translations; speak/tab links keep working (they're delegated).
+const ORIG_LESSON_HTML = {};
+function captureLessonOriginals() {
+    document.querySelectorAll('.day-pane').forEach(p => { ORIG_LESSON_HTML[p.id] = p.innerHTML; });
+}
+
+function ensureLessonHtml(onReady) {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    if (!code) { if (onReady) onReady(); return; } // english: originals only
+    window.LESSON_HTML = window.LESSON_HTML || {};
+    if (window.LESSON_HTML[code]) { if (onReady) onReady(); return; }
+    const s = document.createElement('script');
+    s.src = `js/lang/lessons-html-${code}.js`;
+    s.onload = () => { if (onReady) onReady(); };
+    s.onerror = () => { console.log('Lesson translations failed to load'); if (onReady) onReady(); };
+    document.head.appendChild(s);
+}
+
+function applyLessonLanguage() {
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    document.querySelectorAll('.day-pane').forEach(pane => {
+        const orig = ORIG_LESSON_HTML[pane.id];
+        if (orig === undefined) return;
+        const t = code && window.LESSON_HTML && window.LESSON_HTML[code] && window.LESSON_HTML[code][pane.id];
+        pane.innerHTML = t || orig;
+    });
+}
+
 // --- NATIVE LESSON SUMMARIES (lazy js/lang/lessons.js) ---
 function ensureLessonI18n(onReady) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
@@ -1788,6 +1826,53 @@ function renderLessonSummary() {
     box.textContent = text;
 }
 
+// --- ENGLISH MIRROR TOGGLE ---
+// When studying in a native language, offer a one-tap reveal of the English
+// version of the open lesson (the original captured in ORIG_LESSON_HTML), so a
+// learner can cross-reference without leaving their language. English selected
+// -> no toggle (the lesson is already English).
+const lessonEnOn = () => localStorage.getItem('kotoquest_lesson_en') === '1';
+function renderLessonEnControls() {
+    const pane = document.querySelector('.day-pane.active');
+    if (!pane) return;
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    let toggle = pane.querySelector('.lesson-en-toggle');
+    let mirror = pane.querySelector('.lesson-en-mirror');
+    if (!code || ORIG_LESSON_HTML[pane.id] === undefined) {
+        if (toggle) toggle.remove();
+        if (mirror) mirror.remove();
+        return;
+    }
+    if (!toggle) {
+        toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'lesson-en-toggle';
+        toggle.addEventListener('click', () => {
+            localStorage.setItem('kotoquest_lesson_en', lessonEnOn() ? '0' : '1');
+            renderLessonEnControls();
+        });
+        const summary = pane.querySelector('.lesson-native-summary');
+        const card = pane.querySelector('.glass-card');
+        const title = card ? card.querySelector('.card-title') : null;
+        if (summary) summary.insertAdjacentElement('afterend', toggle);
+        else if (title) title.insertAdjacentElement('afterend', toggle);
+        else pane.prepend(toggle);
+    }
+    const on = lessonEnOn();
+    toggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+    toggle.innerHTML = `<i class="fa-solid fa-language"></i> ${on ? 'Hide' : 'Show'} English`;
+    if (on) {
+        if (!mirror) {
+            mirror = document.createElement('div');
+            mirror.className = 'lesson-en-mirror';
+            pane.appendChild(mirror);
+        }
+        mirror.innerHTML = '<div class="lesson-en-mirror-label"><i class="fa-solid fa-language"></i> English</div>' + ORIG_LESSON_HTML[pane.id];
+    } else if (mirror) {
+        mirror.remove();
+    }
+}
+
 // --- UI CHROME I18N (data-i18n attributes + js/lang/ui.js strings) ---
 function ensureUiI18n(onReady) {
     if (window.UI_I18N) { if (onReady) onReady(); return; }
@@ -1807,6 +1892,33 @@ function applyUiLanguage() {
         if (el.dataset.i18nOriginal === undefined) el.dataset.i18nOriginal = el.innerHTML;
         const t = window.UI_I18N && code && window.UI_I18N[code] && window.UI_I18N[code][key];
         el.innerHTML = t || el.dataset.i18nOriginal;
+    });
+}
+
+// Opens a prefilled GitHub issue for the current flashcard so users can flag
+// translation errors — the durable long-tail fix for the AI-generated glosses.
+function setupReportButton() {
+    const btn = document.getElementById('btn-report-card');
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const list = getActiveCardList();
+        const card = list[cardIdx];
+        if (!card) return;
+        const lang = player.nativeLanguage || 'english';
+        const native = getNativeGloss(card) || '(no native gloss)';
+        const title = `Translation issue: ${card.ja} [${lang}]`;
+        const body = [
+            `**Word:** ${card.ja} (${card.pronounce || ''})`,
+            `**English:** ${card.meaning}`,
+            `**Language:** ${lang}`,
+            `**Current gloss:** ${native}`,
+            '',
+            '**Suggested correction:** ',
+            '**Notes:** ',
+        ].join('\n');
+        const url = `https://github.com/ash01ish/KotoQuest/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=translation`;
+        window.open(url, '_blank', 'noopener');
     });
 }
 
@@ -2535,8 +2647,13 @@ function applyNativeLanguageNuances() {
     // 0b. Translate the UI chrome (data-i18n elements); restores English when selected
     ensureUiI18n(applyUiLanguage);
 
-    // 0c. Native summary on the open lesson (removed when English)
-    ensureLessonI18n(renderLessonSummary);
+    // 0c. Translate the full lesson prose into the native language (English fallback),
+    //     then re-add the native summary on top of the (now translated) open lesson.
+    ensureLessonHtml(() => {
+        applyLessonLanguage();
+        ensureLessonI18n(renderLessonSummary);
+        renderLessonEnControls();
+    });
 
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
