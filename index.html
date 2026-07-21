@@ -66,6 +66,10 @@
     }
     </script>
 
+    <!-- Preload the LCP hero (it's a CSS background, so otherwise discovered late) -->
+    <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+    <!-- Preload the primary font subset so its swap doesn't reflow the page (CLS) -->
+    <link rel="preload" as="font" type="font/woff2" href="vendor/fonts/outfit-latin.woff2" crossorigin>
     <!-- Fonts and Icons -->
     <link rel="stylesheet" href="vendor/fonts/outfit.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
