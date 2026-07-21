@@ -72,6 +72,11 @@
         if (typeof saveGameData === 'function') saveGameData();
     }
 
+    // random n items (for exam variety across attempts)
+    function pickN(arr, n) {
+        return [...arr].sort(() => Math.random() - 0.5).slice(0, n);
+    }
+
     function levelPills(current, onPick) {
         const wrap = document.createElement('div');
         wrap.className = 'practice-levels';
@@ -374,8 +379,8 @@
         const listeningBank = (window.LISTENING_BANK || {})[lv] || [];
         const sections = [
             { key: 'Language Knowledge', type: 'vocab', questions: buildVocabSection(lv, 10) },
-            { key: 'Reading', type: 'reading', items: readingBank.slice(0, 2) },
-            { key: 'Listening', type: 'listening', items: listeningBank.slice(0, 2) }
+            { key: 'Reading', type: 'reading', items: pickN(readingBank, 2) },
+            { key: 'Listening', type: 'listening', items: pickN(listeningBank, 2) }
         ];
 
         const root = document.getElementById('exam');
