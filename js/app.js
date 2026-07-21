@@ -1223,6 +1223,7 @@ function setupCurriculum() {
         const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
         ensureLessonI18n(renderLessonSummary);
+        renderLessonEnControls();
     };
 
     let firstPane = null;
@@ -1823,6 +1824,53 @@ function renderLessonSummary() {
         else pane.prepend(box);
     }
     box.textContent = text;
+}
+
+// --- ENGLISH MIRROR TOGGLE ---
+// When studying in a native language, offer a one-tap reveal of the English
+// version of the open lesson (the original captured in ORIG_LESSON_HTML), so a
+// learner can cross-reference without leaving their language. English selected
+// -> no toggle (the lesson is already English).
+const lessonEnOn = () => localStorage.getItem('kotoquest_lesson_en') === '1';
+function renderLessonEnControls() {
+    const pane = document.querySelector('.day-pane.active');
+    if (!pane) return;
+    const code = LANG_PACK_CODES[player.nativeLanguage];
+    let toggle = pane.querySelector('.lesson-en-toggle');
+    let mirror = pane.querySelector('.lesson-en-mirror');
+    if (!code || ORIG_LESSON_HTML[pane.id] === undefined) {
+        if (toggle) toggle.remove();
+        if (mirror) mirror.remove();
+        return;
+    }
+    if (!toggle) {
+        toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'lesson-en-toggle';
+        toggle.addEventListener('click', () => {
+            localStorage.setItem('kotoquest_lesson_en', lessonEnOn() ? '0' : '1');
+            renderLessonEnControls();
+        });
+        const summary = pane.querySelector('.lesson-native-summary');
+        const card = pane.querySelector('.glass-card');
+        const title = card ? card.querySelector('.card-title') : null;
+        if (summary) summary.insertAdjacentElement('afterend', toggle);
+        else if (title) title.insertAdjacentElement('afterend', toggle);
+        else pane.prepend(toggle);
+    }
+    const on = lessonEnOn();
+    toggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+    toggle.innerHTML = `<i class="fa-solid fa-language"></i> ${on ? 'Hide' : 'Show'} English`;
+    if (on) {
+        if (!mirror) {
+            mirror = document.createElement('div');
+            mirror.className = 'lesson-en-mirror';
+            pane.appendChild(mirror);
+        }
+        mirror.innerHTML = '<div class="lesson-en-mirror-label"><i class="fa-solid fa-language"></i> English</div>' + ORIG_LESSON_HTML[pane.id];
+    } else if (mirror) {
+        mirror.remove();
+    }
 }
 
 // --- UI CHROME I18N (data-i18n attributes + js/lang/ui.js strings) ---
@@ -2604,6 +2652,7 @@ function applyNativeLanguageNuances() {
     ensureLessonHtml(() => {
         applyLessonLanguage();
         ensureLessonI18n(renderLessonSummary);
+        renderLessonEnControls();
     });
 
     // 1. Subtitle text

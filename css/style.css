@@ -1611,6 +1611,40 @@ canvas {
 }
 .lesson-btn-title { font-size: 0.9rem; font-weight: 600; color: #fff; }
 
+/* English mirror: one-tap reveal of the English version while studying natively */
+.lesson-en-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 16px;
+    padding: 6px 14px;
+    background: rgba(255, 107, 139, 0.08);
+    border: 1px solid rgba(255, 107, 139, 0.35);
+    border-radius: 999px;
+    color: var(--accent-pink);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+.lesson-en-toggle:hover { background: rgba(255, 107, 139, 0.16); }
+.lesson-en-mirror {
+    margin-top: 22px;
+    padding-top: 4px;
+    border-top: 2px dashed rgba(255, 255, 255, 0.14);
+}
+.lesson-en-mirror-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 18px 0 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-pink);
+}
+
 /* In-lesson tab links (data-goto-tab) */
 a[data-goto-tab] { color: var(--accent-teal); font-weight: 700; text-decoration: none; }
 a[data-goto-tab]:hover { text-decoration: underline; }
