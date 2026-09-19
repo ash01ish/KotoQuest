@@ -1723,3 +1723,412 @@ a[data-goto-tab]:hover { text-decoration: underline; }
 .exam-verdict { font-weight: 900; font-size: 1.4rem; color: #fff; margin-bottom: 8px; }
 .exam-line { color: var(--text-main); font-size: 0.95rem; margin: 2px 0; }
 .exam-note { color: var(--text-muted); font-size: 0.82rem; margin-top: 10px; }
+
+/* Social Sharing & Viral Brag Components */
+.share-tray {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.share-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: 4px;
+}
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    border: 1px solid transparent;
+}
+.share-btn-primary {
+    background: linear-gradient(135deg, var(--accent-pink), var(--accent-purple));
+    color: #fff;
+    box-shadow: 0 2px 10px var(--accent-pink-glow);
+}
+.share-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--accent-pink-glow);
+}
+.share-btn-wa {
+    background: #25D366;
+    color: #fff;
+}
+.share-btn-wa:hover {
+    background: #20ba59;
+    transform: translateY(-2px);
+}
+.share-btn-x {
+    background: #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.share-btn-x:hover {
+    background: #181818;
+    transform: translateY(-2px);
+}
+.share-btn-copy {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.share-btn-copy:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Floating Toast Notification */
+.toast-notice {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: rgba(20, 24, 38, 0.95);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--accent-teal);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+}
+.toast-notice.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- DAILY JAPANESE CHALLENGE (WORDLE-STYLE) --- */
+.daily-overlay,
+.cert-overlay,
+.duel-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(6, 7, 12, 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+.daily-overlay.show,
+.cert-overlay.show,
+.duel-overlay.show {
+    display: flex;
+}
+.daily-card,
+.duel-card {
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+}
+.daily-header,
+.cert-header,
+.duel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+}
+.daily-header h3,
+.cert-header h3,
+.duel-header h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.modal-close-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+.modal-close-btn:hover {
+    color: #fff;
+    transform: rotate(90deg);
+}
+.daily-progress-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.daily-dot {
+    width: 32px;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: var(--transition-smooth);
+}
+.daily-dot.active {
+    background: var(--accent-teal);
+    box-shadow: 0 0 10px var(--accent-teal);
+}
+.daily-dot.correct {
+    background: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+.daily-dot.wrong {
+    background: #e74c3c;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+.daily-question-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.daily-question-text {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.daily-question-sub {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.daily-options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    .daily-options-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.daily-opt-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    color: var(--text-main);
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    text-align: center;
+}
+.daily-opt-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+.daily-opt-btn.correct {
+    background: rgba(46, 204, 113, 0.2) !important;
+    border-color: #2ecc71 !important;
+    color: #2ecc71 !important;
+}
+.daily-opt-btn.wrong {
+    background: rgba(231, 76, 60, 0.2) !important;
+    border-color: #e74c3c !important;
+    color: #ff7675 !important;
+}
+.daily-grid-display {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 16px 0;
+    font-family: monospace;
+}
+.daily-countdown-wrap {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 14px;
+}
+.daily-countdown {
+    font-weight: 700;
+    color: var(--accent-gold);
+    font-size: 1rem;
+}
+
+/* --- CANVAS CERTIFICATE & SOCIAL TROPHY GENERATOR --- */
+.cert-card {
+    max-width: 580px;
+    width: 100%;
+    margin: auto;
+}
+.cert-canvas-wrap {
+    width: 100%;
+    max-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+#cert-canvas {
+    max-width: 100%;
+    max-height: 480px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+.cert-input-wrap {
+    margin-bottom: 16px;
+}
+.cert-input-wrap label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+.cert-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+.cert-input:focus {
+    border-color: var(--accent-teal);
+    background: rgba(255, 255, 255, 0.1);
+}
+.cert-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* --- 1v1 ASYNCHRONOUS DUEL MODE --- */
+.duel-timer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(231, 76, 60, 0.15);
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    color: #ff7675;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+}
+.duel-vs-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 14px;
+    margin: 20px 0;
+}
+.duel-vs-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+.duel-vs-card.winner {
+    border-color: var(--accent-gold);
+    background: rgba(241, 196, 15, 0.08);
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.2);
+}
+.duel-vs-card h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.duel-vs-score {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--accent-teal);
+    margin-bottom: 4px;
+}
+.duel-vs-time {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+.duel-vs-divider {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--accent-pink);
+    text-shadow: 0 0 10px var(--accent-pink-glow);
+}
+.duel-verdict {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.duel-verdict.victory { color: #2ecc71; text-shadow: 0 0 15px rgba(46, 204, 113, 0.4); }
+.duel-verdict.defeat { color: #e74c3c; text-shadow: 0 0 15px rgba(231, 76, 60, 0.4); }
+.duel-verdict.tie { color: var(--accent-gold); }
+
+/* --- HEADER BUTTONS FOR EXPANDED VIRALITY --- */
+.btn-daily-quest {
+    background: linear-gradient(135deg, #e17055, #d63031);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 10px rgba(214, 48, 49, 0.35);
+    animation: pulseGlow 3s infinite;
+}
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 2px 10px rgba(214, 48, 49, 0.35); }
+    50% { box-shadow: 0 4px 20px rgba(214, 48, 49, 0.7); }
+}
+.btn-certificate {
+    background: linear-gradient(135deg, var(--accent-purple), #6c5ce7);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+

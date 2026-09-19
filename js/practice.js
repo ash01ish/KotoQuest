@@ -146,12 +146,13 @@
     }
 
     // ---- READING ----
-    function renderReading() {
+    function renderReading(defaultLevel) {
         const root = document.getElementById('reading');
         if (!root) return;
         loadScript('js/data/reading.js', () => {
             const bank = window.READING_BANK || {};
-            let level = 'N5';
+            const validLevels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+            let level = (defaultLevel && validLevels.includes(defaultLevel.toUpperCase())) ? defaultLevel.toUpperCase() : 'N5';
             root.innerHTML = '';
             const head = document.createElement('div');
             head.className = 'glass-card';
@@ -221,12 +222,13 @@
     }
 
     // ---- LISTENING ----
-    function renderListening() {
+    function renderListening(defaultLevel) {
         const root = document.getElementById('listening');
         if (!root) return;
         loadScript('js/data/listening.js', () => {
             const bank = window.LISTENING_BANK || {};
-            let level = 'N5';
+            const validLevels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+            let level = (defaultLevel && validLevels.includes(defaultLevel.toUpperCase())) ? defaultLevel.toUpperCase() : 'N5';
             root.innerHTML = '';
             const head = document.createElement('div');
             head.className = 'glass-card';
@@ -324,12 +326,13 @@
     // ---- MOCK EXAM ----
     // Three timed sections with sectional pass thresholds, mirroring the real
     // JLPT gating (overall >= 100/180 AND each section >= 19/60).
-    function renderExam() {
+    function renderExam(defaultLevel) {
         const root = document.getElementById('exam');
         if (!root) return;
         // exam pulls from both banks
         loadScript('js/data/reading.js', () => loadScript('js/data/listening.js', () => {
-            let level = 'N5';
+            const validLevels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+            let level = (defaultLevel && validLevels.includes(defaultLevel.toUpperCase())) ? defaultLevel.toUpperCase() : 'N5';
             root.innerHTML = '';
             const head = document.createElement('div');
             head.className = 'glass-card';
@@ -499,13 +502,65 @@
             res.innerHTML = `<div class="exam-verdict">${passed ? t('p.pass') : t('p.notYet')} — ${overall}/180</div>`
                 + lines.map(l => `<div class="exam-line">${l}</div>`).join('')
                 + `<div class="exam-note">${t('p.passNote')}</div>`;
+
+            // Social Brag / Viral Share Tray
+            const shareText = `🏯 I scored ${overall}/180 (${passed ? 'PASS 🎉' : 'NOT YET 💪'}) on the JLPT ${lv} Mock Exam on KotoQuest!\n`
+                + lines.map(l => `• ${l}`).join('\n') + '\n\n'
+                + `Free, offline JLPT study academy: https://kotoquest.pages.dev/#exam?level=${lv}`;
+
+            const shareTray = document.createElement('div');
+            shareTray.className = 'share-tray';
+            shareTray.innerHTML = `
+                <span class="share-label"><i class="fa-solid fa-share-nodes"></i> Share:</span>
+                ${passed ? '<button type="button" class="share-btn share-btn-primary" id="btn-claim-cert"><i class="fa-solid fa-award"></i> Claim Certificate</button>' : ''}
+                <button type="button" class="share-btn share-btn-primary" id="btn-share-native"><i class="fa-solid fa-share-from-square"></i> Share Score</button>
+                <a class="share-btn share-btn-wa" href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="share-btn share-btn-x" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Post</a>
+                <button type="button" class="share-btn share-btn-copy" id="btn-share-copy"><i class="fa-solid fa-copy"></i> Copy</button>
+            `;
+            res.appendChild(shareTray);
+
+            const btnCert = shareTray.querySelector('#btn-claim-cert');
+            if (btnCert) {
+                btnCert.onclick = () => {
+                    if (typeof window.openCertificateModal === 'function') {
+                        window.openCertificateModal();
+                    } else {
+                        window.location.hash = '#certificate';
+                    }
+                };
+            }
+
+            const btnNative = shareTray.querySelector('#btn-share-native');
+            if (btnNative) {
+                btnNative.onclick = () => {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: `KotoQuest - JLPT ${lv} Mock Exam`,
+                            text: shareText,
+                            url: `https://kotoquest.pages.dev/#exam?level=${lv}`
+                        }).catch(() => {});
+                    } else {
+                        navigator.clipboard.writeText(shareText);
+                        if (typeof window.showToast === 'function') window.showToast('Score copied to clipboard!');
+                    }
+                };
+            }
+            const btnCopy = shareTray.querySelector('#btn-share-copy');
+            if (btnCopy) {
+                btnCopy.onclick = () => {
+                    navigator.clipboard.writeText(shareText);
+                    if (typeof window.showToast === 'function') window.showToast('Score copied to clipboard!');
+                };
+            }
+
             card.insertBefore(res, card.children[1]);
             const retry = document.createElement('button');
             retry.type = 'button';
             retry.className = 'btn';
             retry.style.marginTop = '14px';
             retry.textContent = t('p.backExam');
-            retry.onclick = () => renderExam();
+            retry.onclick = () => renderExam(lv);
             card.appendChild(retry);
             res.scrollIntoView({ block: 'start', behavior: 'smooth' });
         }
@@ -515,11 +570,17 @@
     // Lazy-render each module the first time its tab is opened (and on resume).
     const RENDERERS = { reading: renderReading, listening: renderListening, exam: renderExam };
     const rendered = {};
-    function ensureRendered(tab) {
-        if (rendered[tab] || !RENDERERS[tab]) return;
+    function ensureRendered(tab, level) {
+        if (!RENDERERS[tab]) return;
         rendered[tab] = true;
-        RENDERERS[tab]();
+        RENDERERS[tab](level);
     }
+    // Allow external callers to render a practice tab directly with an optional level
+    window.renderPracticeTab = function(tab, level) {
+        if (RENDERERS[tab]) {
+            ensureRendered(tab, level);
+        }
+    };
     // Allow external callers (e.g. applyNativeLanguageNuances in app.js) to re-render
     // practice modules in the newly selected language.
     window.refreshPracticeModules = function() {
