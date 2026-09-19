@@ -134,12 +134,15 @@
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
                         <div class="stats-badge">
                             <span id="streak-badge-btn" style="cursor: pointer;" title="Share your daily study streak!"><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> <span data-i18n="badge.streak">Streak:</span> <strong id="streak-count">1 Day</strong></span>
-                            <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> <span data-i18n="badge.rank">Rank:</span> <strong id="rank-name">Novice</strong></span>
+                            <span id="rank-badge-btn" style="cursor: pointer;" title="View your Samurai Certificate!"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> <span data-i18n="badge.rank">Rank:</span> <strong id="rank-name">Novice</strong></span>
                             <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy">Accuracy:</span> <strong>0%</strong> (0/0)</span>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
-                            <button id="btn-share-app" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(0, 206, 201, 0.15); border: 1px solid rgba(0, 206, 201, 0.35); color: var(--accent-teal); font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Share KotoQuest"><i class="fa-solid fa-share-nodes"></i> <span data-i18n="btn.shareApp">Share App</span></button>
-                            <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
+                        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                            <button id="btn-open-daily" class="btn btn-daily-quest" style="padding: 8px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Wordle-style Daily Japanese Quest"><i class="fa-solid fa-calendar-check"></i> <span>Daily Quest</span></button>
+                            <button id="btn-open-cert" class="btn btn-certificate" style="padding: 8px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Generate your Japanese Mastery Certificate"><i class="fa-solid fa-award"></i> <span>Certificate</span></button>
+                            <button id="btn-open-duel" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.35); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Challenge a friend to a 1v1 Japanese Duel"><i class="fa-solid fa-bolt"></i> <span>1v1 Duel</span></button>
+                            <button id="btn-share-app" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(0, 206, 201, 0.15); border: 1px solid rgba(0, 206, 201, 0.35); color: var(--accent-teal); font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Share KotoQuest"><i class="fa-solid fa-share-nodes"></i> <span data-i18n="btn.shareApp">Share App</span></button>
+                            <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
                                 <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> <span data-i18n="label.nativelang">Native Language:</span></label>
                                 <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">
                                     <option value="english" style="background: #14161f; color: #fff;">English</option>
@@ -150,7 +153,7 @@
                                     <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
                                 </select>
                             </div>
-                            <button id="btn-reset-game" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset Game</span></button>
+                            <button id="btn-reset-game" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset</span></button>
                         </div>
                     </div>
                 </div>
@@ -2216,6 +2219,143 @@
             </div>
         </footer>
 
+    </div>
+
+    <!-- Daily Japanese Challenge Overlay (Wordle-Style) -->
+    <div id="daily-overlay" class="daily-overlay" role="dialog" aria-modal="true">
+        <div class="daily-card glass-card">
+            <div class="daily-header">
+                <h3><i class="fa-solid fa-calendar-check" style="color: var(--accent-gold);"></i> <span id="daily-modal-title">Daily Challenge</span></h3>
+                <button type="button" class="modal-close-btn" id="daily-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div id="daily-active-view">
+                <div class="daily-progress-dots" id="daily-dots">
+                    <span class="daily-dot active"></span>
+                    <span class="daily-dot"></span>
+                    <span class="daily-dot"></span>
+                    <span class="daily-dot"></span>
+                    <span class="daily-dot"></span>
+                </div>
+                <div class="daily-question-box">
+                    <div class="daily-question-text" id="daily-question-text">Loading question...</div>
+                    <div class="daily-question-sub">
+                        <span id="daily-question-type" class="badge">Vocabulary</span>
+                        <button type="button" class="btn speak-btn" id="btn-speak-daily" style="padding: 2px 8px; font-size: 0.8rem;"><i class="fa-solid fa-volume-high"></i></button>
+                    </div>
+                </div>
+                <div class="daily-options-grid" id="daily-options">
+                    <!-- 4 options injected -->
+                </div>
+            </div>
+            <div id="daily-complete-view" style="display: none; text-align: center;">
+                <div style="font-size: 2.2rem; margin-bottom: 6px;">🎉</div>
+                <h3 style="color: #fff; margin-bottom: 6px;" id="daily-verdict-title">Challenge Completed!</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;" id="daily-verdict-sub">You scored 5/5 today!</p>
+                <div class="daily-grid-display" id="daily-grid-display">🟩🟩🟩🟩🟩</div>
+                <div class="share-tray" style="justify-content: center; margin-top: 15px;">
+                    <button type="button" class="share-btn share-btn-primary" id="btn-share-daily"><i class="fa-solid fa-share-nodes"></i> Share Score</button>
+                    <a class="share-btn share-btn-wa" id="btn-wa-daily" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a class="share-btn share-btn-x" id="btn-x-daily" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Post</a>
+                    <button type="button" class="share-btn share-btn-copy" id="btn-copy-daily"><i class="fa-solid fa-copy"></i> Copy</button>
+                </div>
+                <div class="daily-countdown-wrap">
+                    Next Daily Challenge in: <span class="daily-countdown" id="daily-countdown">--:--:--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Samurai Certificate & Social Trophy Overlay -->
+    <div id="certificate-overlay" class="cert-overlay" role="dialog" aria-modal="true">
+        <div class="cert-card glass-card">
+            <div class="cert-header">
+                <h3><i class="fa-solid fa-award" style="color: var(--accent-gold);"></i> <span>Samurai Credential</span></h3>
+                <button type="button" class="modal-close-btn" id="cert-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="cert-canvas-wrap">
+                <canvas id="cert-canvas" width="1080" height="1350"></canvas>
+            </div>
+            <div class="cert-input-wrap">
+                <label for="cert-name-input"><i class="fa-solid fa-signature"></i> Your Name / Samurai Handle:</label>
+                <input type="text" id="cert-name-input" class="cert-input" maxlength="28" placeholder="Enter your name or handle">
+            </div>
+            <div class="cert-actions">
+                <button type="button" class="share-btn share-btn-primary" id="btn-download-cert"><i class="fa-solid fa-download"></i> Download PNG</button>
+                <button type="button" class="share-btn share-btn-wa" id="btn-share-cert"><i class="fa-solid fa-share-nodes"></i> Share Credential</button>
+                <button type="button" class="share-btn share-btn-copy" id="btn-copy-cert-link"><i class="fa-solid fa-copy"></i> Copy Link</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1v1 Asynchronous Duel Mode Overlay -->
+    <div id="duel-overlay" class="duel-overlay" role="dialog" aria-modal="true">
+        <div class="duel-card glass-card">
+            <div class="duel-header">
+                <h3><i class="fa-solid fa-bolt" style="color: var(--accent-pink);"></i> <span id="duel-title">JLPT 1v1 Duel</span></h3>
+                <button type="button" class="modal-close-btn" id="duel-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <!-- View 1: Duel Invitation / Start Screen -->
+            <div id="duel-invite-view" style="text-align: center;">
+                <div style="font-size: 2.4rem; margin-bottom: 8px;">⚔️</div>
+                <h3 style="color: #fff; margin-bottom: 8px;" id="duel-invite-heading">You've Been Challenged!</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;" id="duel-invite-sub">Can you beat their score in 5 speed questions?</p>
+                <div class="glass-card" style="background: rgba(0,0,0,0.25); margin-bottom: 20px; padding: 15px;">
+                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Challenger Target</div>
+                    <div style="font-size: 1.6rem; font-weight: 900; color: var(--accent-gold); margin: 6px 0;" id="duel-invite-target">4/5 in 32.4s</div>
+                    <div style="font-size: 0.85rem; color: var(--text-main);" id="duel-invite-challenger">Challenger: Ashish</div>
+                </div>
+                <button type="button" class="btn btn-primary" id="btn-start-duel" style="padding: 12px 30px; font-size: 1rem; width: 100%;"><i class="fa-solid fa-bolt"></i> Accept Challenge & Fight!</button>
+            </div>
+            <!-- View 2: Active Duel Combat -->
+            <div id="duel-combat-view" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <span class="badge" id="duel-progress">Question 1/5</span>
+                    <span class="duel-timer-badge" id="duel-timer"><i class="fa-solid fa-stopwatch"></i> 0.0s</span>
+                </div>
+                <div class="daily-question-box">
+                    <div class="daily-question-text" id="duel-question-text">...</div>
+                    <div class="daily-question-sub">
+                        <span id="duel-question-type" class="badge">JLPT Duel</span>
+                        <button type="button" class="btn speak-btn" id="btn-speak-duel" style="padding: 2px 8px; font-size: 0.8rem;"><i class="fa-solid fa-volume-high"></i></button>
+                    </div>
+                </div>
+                <div class="daily-options-grid" id="duel-options"></div>
+            </div>
+            <!-- View 3: Duel Result & Split-Screen Comparison -->
+            <div id="duel-result-view" style="display: none; text-align: center;">
+                <div class="duel-verdict" id="duel-verdict-banner">VICTORY!</div>
+                <div class="duel-vs-grid">
+                    <div class="duel-vs-card" id="duel-vs-challenger">
+                        <h4 id="duel-vs-challenger-name">Challenger</h4>
+                        <div class="duel-vs-score" id="duel-vs-challenger-score">4/5</div>
+                        <div class="duel-vs-time" id="duel-vs-challenger-time">32.4s</div>
+                    </div>
+                    <div class="duel-vs-divider">VS</div>
+                    <div class="duel-vs-card" id="duel-vs-player">
+                        <h4 id="duel-vs-player-name">You</h4>
+                        <div class="duel-vs-score" id="duel-vs-player-score">5/5</div>
+                        <div class="duel-vs-time" id="duel-vs-player-time">28.1s</div>
+                    </div>
+                </div>
+                <div class="share-tray" style="justify-content: center; margin-top: 15px;">
+                    <button type="button" class="share-btn share-btn-primary" id="btn-share-duel-result"><i class="fa-solid fa-share-nodes"></i> Share Result</button>
+                    <button type="button" class="share-btn share-btn-wa" id="btn-rematch-duel"><i class="fa-solid fa-rotate-right"></i> Counter-Challenge</button>
+                    <button type="button" class="share-btn share-btn-copy" id="btn-copy-duel-result"><i class="fa-solid fa-copy"></i> Copy Link</button>
+                </div>
+            </div>
+            <!-- View 4: Create a New Duel (Challenger Launchpad) -->
+            <div id="duel-create-view" style="display: none; text-align: center;">
+                <div style="font-size: 2.2rem; margin-bottom: 8px;">⚔️</div>
+                <h3 style="color: #fff; margin-bottom: 8px;">Duel Link Ready!</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">You completed 5 questions in <strong id="duel-created-stats" style="color: var(--accent-gold);">4/5 in 31s</strong>. Send this link to any friend to see if they can beat your score!</p>
+                <div class="share-tray" style="justify-content: center; margin-top: 15px;">
+                    <button type="button" class="share-btn share-btn-primary" id="btn-share-new-duel"><i class="fa-solid fa-share-nodes"></i> Share Duel</button>
+                    <a class="share-btn share-btn-wa" id="btn-wa-new-duel" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a class="share-btn share-btn-x" id="btn-x-new-duel" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Post</a>
+                    <button type="button" class="share-btn share-btn-copy" id="btn-copy-new-duel"><i class="fa-solid fa-copy"></i> Copy Link</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Floating help button + contextual per-page help overlay -->

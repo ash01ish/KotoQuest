@@ -512,12 +512,24 @@
             shareTray.className = 'share-tray';
             shareTray.innerHTML = `
                 <span class="share-label"><i class="fa-solid fa-share-nodes"></i> Share:</span>
+                ${passed ? '<button type="button" class="share-btn share-btn-primary" id="btn-claim-cert"><i class="fa-solid fa-award"></i> Claim Certificate</button>' : ''}
                 <button type="button" class="share-btn share-btn-primary" id="btn-share-native"><i class="fa-solid fa-share-from-square"></i> Share Score</button>
                 <a class="share-btn share-btn-wa" href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 <a class="share-btn share-btn-x" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Post</a>
                 <button type="button" class="share-btn share-btn-copy" id="btn-share-copy"><i class="fa-solid fa-copy"></i> Copy</button>
             `;
             res.appendChild(shareTray);
+
+            const btnCert = shareTray.querySelector('#btn-claim-cert');
+            if (btnCert) {
+                btnCert.onclick = () => {
+                    if (typeof window.openCertificateModal === 'function') {
+                        window.openCertificateModal();
+                    } else {
+                        window.location.hash = '#certificate';
+                    }
+                };
+            }
 
             const btnNative = shareTray.querySelector('#btn-share-native');
             if (btnNative) {

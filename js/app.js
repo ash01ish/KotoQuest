@@ -878,6 +878,1088 @@ function setupSocialSharing() {
 }
 
 // --- ==================================================== ---
+// --- VIRAL GROWTH ENGINE: DAILY, CERTIFICATE & 1v1 DUELS   ---
+// --- ==================================================== ---
+
+// 1. Deterministic PRNG (Mulberry32 & String Hasher)
+function hashDateString(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = Math.imul(31, hash) + str.charCodeAt(i) | 0;
+    }
+    return hash;
+}
+
+function mulberry32(a) {
+    return function() {
+        let t = a += 0x6D2B79F5;
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+function getLocalDateString() {
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+// 2. Deterministic Question Generators
+function getVocabQuestion(tier, rng) {
+    const list = (typeof FULL_VOCAB_DB !== 'undefined' && FULL_VOCAB_DB[tier]) ? FULL_VOCAB_DB[tier] : null;
+    if (!list || list.length === 0) return null;
+    const targetIdx = Math.floor(rng() * list.length);
+    const target = list[targetIdx];
+    
+    // Choose between meaning question or reading question (if kanji)
+    const isKanji = target.j !== target.r;
+    const askReading = isKanji && rng() > 0.5;
+
+    const distractors = [];
+    let attempts = 0;
+    while (distractors.length < 3 && attempts < 60) {
+        attempts++;
+        const dIdx = Math.floor(rng() * list.length);
+        const d = list[dIdx];
+        const val = askReading ? d.r : d.m;
+        const targetVal = askReading ? target.r : target.m;
+        if (val !== targetVal && !distractors.includes(val)) {
+            distractors.push(val);
+        }
+    }
+    while (distractors.length < 3) {
+        distractors.push(`Option ${distractors.length + 1}`);
+    }
+
+    const answer = askReading ? target.r : target.m;
+    const options = [answer, ...distractors];
+    // Deterministic shuffle
+    for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+    }
+
+    return {
+        q: askReading ? `What is the reading for 「${target.j}」?` : `What is the meaning of 「${target.j}」 (${target.r})?`,
+        answer: answer,
+        options: options,
+        type: `${tier} Vocabulary`,
+        speak: target.j
+    };
+}
+
+function getGrammarQuestion(tier, rng) {
+    const list = (typeof QUEST_DATABASE !== 'undefined' && QUEST_DATABASE[tier])
+        ? QUEST_DATABASE[tier].filter(q => q.style === 'mc' && Array.isArray(q.options) && q.options.length >= 2)
+        : [];
+    if (list.length === 0) return null;
+    const qItem = list[Math.floor(rng() * list.length)];
+    const options = [...qItem.options];
+    for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+    }
+    return {
+        q: qItem.q,
+        answer: qItem.answer,
+        options: options,
+        type: `${tier} ${qItem.type || 'Grammar'}`,
+        speak: qItem.answer && qItem.answer.match(/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/) ? qItem.answer : ''
+    };
+}
+
+function getDailyQuestions(dateStr) {
+    const seed = hashDateString(dateStr);
+    const rng = mulberry32(seed);
+    const questions = [];
+    
+    // Q1: N5 vocab
+    const q1 = getVocabQuestion('N5', rng);
+    if (q1) questions.push(q1);
+    // Q2: N4 vocab
+    const q2 = getVocabQuestion('N4', rng) || getVocabQuestion('N5', rng);
+    if (q2) questions.push(q2);
+    // Q3: N3 vocab (or N5 fallback)
+    const q3 = getVocabQuestion('N3', rng) || getVocabQuestion('N5', rng);
+    if (q3) questions.push(q3);
+    // Q4: N5 grammar
+    const q4 = getGrammarQuestion('N5', rng);
+    if (q4) questions.push(q4);
+    // Q5: N4 grammar
+    const q5 = getGrammarQuestion('N4', rng) || getGrammarQuestion('N5', rng);
+    if (q5) questions.push(q5);
+
+    return questions;
+}
+
+function getDuelQuestions(seedNum, tier) {
+    const rng = mulberry32(seedNum);
+    const questions = [];
+    const validTier = (['N5', 'N4', 'N3', 'N2', 'N1'].includes(tier)) ? tier : 'N5';
+    
+    for (let i = 0; i < 3; i++) {
+        const q = getVocabQuestion(validTier, rng);
+        if (q) questions.push(q);
+    }
+    for (let i = 0; i < 2; i++) {
+        const q = getGrammarQuestion(validTier, rng) || getVocabQuestion(validTier, rng);
+        if (q) questions.push(q);
+    }
+    while (questions.length < 5) {
+        questions.push(getVocabQuestion('N5', rng) || {
+            q: 'What is the meaning of 「水」 (mizu)?',
+            answer: 'Water',
+            options: ['Water', 'Fire', 'Earth', 'Wind'],
+            type: 'N5 Vocabulary',
+            speak: '水'
+        });
+    }
+    return questions;
+}
+
+// 3. Daily Japanese Challenge State & Logic
+let dailyState = {
+    questions: [],
+    currentIndex: 0,
+    answers: [],
+    countdownTimer: null
+};
+
+function getStoredDailyData() {
+    try {
+        const raw = localStorage.getItem('koto_daily_state');
+        return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+        return null;
+    }
+}
+
+function saveStoredDailyData(data) {
+    try {
+        localStorage.setItem('koto_daily_state', JSON.stringify(data));
+    } catch (e) {}
+}
+
+function openDailyChallenge() {
+    const overlay = document.getElementById('daily-overlay');
+    if (!overlay) return;
+    overlay.classList.add('show');
+
+    const todayStr = getLocalDateString();
+    const stored = getStoredDailyData();
+
+    if (stored && stored.date === todayStr && stored.completed) {
+        showDailyCompleteView(stored);
+    } else {
+        startDailyChallenge(todayStr);
+    }
+}
+window.openDailyChallenge = openDailyChallenge;
+
+function closeDailyChallenge() {
+    const overlay = document.getElementById('daily-overlay');
+    if (overlay) overlay.classList.remove('show');
+    if (dailyState.countdownTimer) {
+        clearInterval(dailyState.countdownTimer);
+        dailyState.countdownTimer = null;
+    }
+    if (window.location.hash.startsWith('#daily')) {
+        history.replaceState(null, '', '#arena');
+    }
+}
+window.closeDailyChallenge = closeDailyChallenge;
+
+function startDailyChallenge(dateStr) {
+    dailyState.questions = getDailyQuestions(dateStr);
+    dailyState.currentIndex = 0;
+    dailyState.answers = [];
+
+    const activeView = document.getElementById('daily-active-view');
+    const completeView = document.getElementById('daily-complete-view');
+    if (activeView) activeView.style.display = 'block';
+    if (completeView) completeView.style.display = 'none';
+
+    const titleEl = document.getElementById('daily-modal-title');
+    if (titleEl) {
+        const formattedDate = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        titleEl.textContent = `Daily Quest · ${formattedDate}`;
+    }
+
+    renderDailyQuestion(0);
+}
+
+function renderDailyQuestion(idx) {
+    const q = dailyState.questions[idx];
+    if (!q) return;
+
+    const dots = document.querySelectorAll('#daily-dots .daily-dot');
+    dots.forEach((dot, i) => {
+        dot.className = 'daily-dot';
+        if (i < idx) {
+            dot.classList.add(dailyState.answers[i] ? 'correct' : 'wrong');
+        } else if (i === idx) {
+            dot.classList.add('active');
+        }
+    });
+
+    const qText = document.getElementById('daily-question-text');
+    const qType = document.getElementById('daily-question-type');
+    const speakBtn = document.getElementById('btn-speak-daily');
+
+    if (qText) qText.textContent = q.q;
+    if (qType) qType.textContent = q.type || 'Vocabulary';
+    if (speakBtn) {
+        if (q.speak) {
+            speakBtn.style.display = 'inline-flex';
+            speakBtn.setAttribute('data-speak', q.speak);
+        } else {
+            speakBtn.style.display = 'none';
+        }
+    }
+
+    const optContainer = document.getElementById('daily-options');
+    if (!optContainer) return;
+    optContainer.innerHTML = '';
+
+    q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'daily-opt-btn';
+        btn.textContent = opt;
+        btn.onclick = () => handleDailyAnswer(btn, opt, q.answer);
+        optContainer.appendChild(btn);
+    });
+}
+
+function handleDailyAnswer(btn, chosen, correct) {
+    const allBtns = document.querySelectorAll('#daily-options .daily-opt-btn');
+    allBtns.forEach(b => b.disabled = true);
+
+    const isCorrect = chosen === correct;
+    dailyState.answers.push(isCorrect);
+
+    if (isCorrect) {
+        btn.classList.add('correct');
+    } else {
+        btn.classList.add('wrong');
+        allBtns.forEach(b => {
+            if (b.textContent === correct) b.classList.add('correct');
+        });
+    }
+
+    setTimeout(() => {
+        if (dailyState.currentIndex + 1 < dailyState.questions.length) {
+            dailyState.currentIndex++;
+            renderDailyQuestion(dailyState.currentIndex);
+        } else {
+            finishDailyChallenge();
+        }
+    }, 700);
+}
+
+function finishDailyChallenge() {
+    const todayStr = getLocalDateString();
+    const correctCount = dailyState.answers.filter(Boolean).length;
+    const grid = dailyState.answers.map(a => a ? '🟩' : '🟥').join('');
+
+    const prevData = getStoredDailyData();
+    let streak = 1;
+    if (prevData && prevData.lastCompletedDate) {
+        const lastDate = new Date(prevData.lastCompletedDate);
+        const today = new Date(todayStr);
+        const diffDays = Math.round((today - lastDate) / (1000 * 60 * 60 * 24));
+        if (diffDays === 1) {
+            streak = (prevData.streak || 1) + 1;
+        } else if (diffDays === 0) {
+            streak = prevData.streak || 1;
+        }
+    }
+
+    const savedRecord = {
+        date: todayStr,
+        lastCompletedDate: todayStr,
+        answers: dailyState.answers,
+        score: correctCount,
+        grid: grid,
+        streak: streak,
+        completed: true
+    };
+    saveStoredDailyData(savedRecord);
+
+    player.xp = (player.xp || 0) + (correctCount * 15);
+    player.gold = (player.gold || 0) + (correctCount * 10);
+    saveGameData();
+    updateHUDDisplays();
+
+    showDailyCompleteView(savedRecord);
+}
+
+function showDailyCompleteView(data) {
+    const activeView = document.getElementById('daily-active-view');
+    const completeView = document.getElementById('daily-complete-view');
+    if (activeView) activeView.style.display = 'none';
+    if (completeView) completeView.style.display = 'block';
+
+    const titleEl = document.getElementById('daily-verdict-title');
+    const subEl = document.getElementById('daily-verdict-sub');
+    const gridEl = document.getElementById('daily-grid-display');
+
+    if (titleEl) {
+        titleEl.textContent = data.score === 5 ? '🎉 Perfect Mastery!' : (data.score >= 3 ? '⚔️ Quest Victorious!' : '📚 Keep Training!');
+    }
+    if (subEl) {
+        subEl.textContent = `You scored ${data.score}/5 today! Daily Streak: ${data.streak || 1} Day${(data.streak || 1) === 1 ? '' : 's'} 🔥`;
+    }
+    if (gridEl) {
+        gridEl.textContent = data.grid || '🟩🟩🟩🟩🟩';
+    }
+
+    const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+    const shareText = `🏯 KotoQuest Daily #${dayOfYear}\n${data.grid}\nScore: ${data.score}/5 · Streak: ${data.streak || 1}d 🔥\nPlay today's challenge: https://kotoquest.pages.dev/#daily`;
+
+    const shareBtn = document.getElementById('btn-share-daily');
+    if (shareBtn) {
+        shareBtn.onclick = () => {
+            window.shareQuestProgress({
+                title: `KotoQuest Daily #${dayOfYear}`,
+                text: shareText,
+                url: 'https://kotoquest.pages.dev/#daily'
+            });
+        };
+    }
+
+    const waBtn = document.getElementById('btn-wa-daily');
+    if (waBtn) {
+        waBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const xBtn = document.getElementById('btn-x-daily');
+    if (xBtn) {
+        xBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const copyBtn = document.getElementById('btn-copy-daily');
+    if (copyBtn) {
+        copyBtn.onclick = () => {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareText).then(() => {
+                    window.showToast('Daily score copied to clipboard!');
+                });
+            } else {
+                prompt('Copy score:', shareText);
+            }
+        };
+    }
+
+    startDailyCountdown();
+}
+
+function startDailyCountdown() {
+    if (dailyState.countdownTimer) clearInterval(dailyState.countdownTimer);
+    
+    function update() {
+        const now = new Date();
+        const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+        const diffMs = tomorrow - now;
+        if (diffMs <= 0) {
+            const countdownEl = document.getElementById('daily-countdown');
+            if (countdownEl) countdownEl.textContent = '00:00:00 (New Quest Ready!)';
+            return;
+        }
+        const hours = String(Math.floor(diffMs / (1000 * 60 * 60))).padStart(2, '0');
+        const mins = String(Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        const secs = String(Math.floor((diffMs % (1000 * 60)) / 1000)).padStart(2, '0');
+        const countdownEl = document.getElementById('daily-countdown');
+        if (countdownEl) countdownEl.textContent = `${hours}:${mins}:${secs}`;
+    }
+
+    update();
+    dailyState.countdownTimer = setInterval(update, 1000);
+}
+
+// 4. HTML5 Canvas Certificate Generator
+function openCertificateModal() {
+    const overlay = document.getElementById('certificate-overlay');
+    if (!overlay) return;
+    overlay.classList.add('show');
+
+    const nameInput = document.getElementById('cert-name-input');
+    const storedName = localStorage.getItem('koto_player_name') || 'Samurai Scholar';
+    if (nameInput) {
+        nameInput.value = storedName;
+    }
+    drawCertificate(storedName);
+}
+window.openCertificateModal = openCertificateModal;
+
+function closeCertificateModal() {
+    const overlay = document.getElementById('certificate-overlay');
+    if (overlay) overlay.classList.remove('show');
+    if (window.location.hash.startsWith('#certificate')) {
+        history.replaceState(null, '', '#arena');
+    }
+}
+window.closeCertificateModal = closeCertificateModal;
+
+function drawCertificate(playerName) {
+    const canvas = document.getElementById('cert-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const W = 1080;
+    const H = 1350;
+
+    // 1. Background Gradient (Dark samurai indigo)
+    const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+    bgGrad.addColorStop(0, '#0a0d18');
+    bgGrad.addColorStop(0.5, '#12172b');
+    bgGrad.addColorStop(1, '#080a14');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, W, H);
+
+    // 2. Subtle decorative geometry / Japanese pattern
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.05)';
+    ctx.lineWidth = 1;
+    const step = 60;
+    for (let x = 0; x < W; x += step) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, H);
+        ctx.stroke();
+    }
+    for (let y = 0; y < H; y += step) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(W, y);
+        ctx.stroke();
+    }
+
+    // 3. Ornate Double Gold Border
+    ctx.strokeStyle = '#d4af37';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(40, 40, W - 80, H - 80);
+
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(52, 52, W - 104, H - 104);
+
+    // Japanese Corner Brackets
+    const bracketSize = 36;
+    const corners = [
+        [40, 40, 1, 1],
+        [W - 40, 40, -1, 1],
+        [40, H - 40, 1, -1],
+        [W - 40, H - 40, -1, -1]
+    ];
+    ctx.strokeStyle = '#f1c40f';
+    ctx.lineWidth = 6;
+    corners.forEach(([cx, cy, dx, dy]) => {
+        ctx.beginPath();
+        ctx.moveTo(cx, cy + dy * bracketSize);
+        ctx.lineTo(cx, cy);
+        ctx.lineTo(cx + dx * bracketSize, cy);
+        ctx.stroke();
+    });
+
+    // 4. Kanji Watermark
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+    ctx.font = 'bold 220px serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('侍道', W / 2, 530);
+
+    // 5. Title & Headers
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#f1c40f';
+    ctx.font = 'bold 28px sans-serif';
+    ctx.fillText('言クエスト · KOTOQUEST ACADEMY', W / 2, 160);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '900 50px serif';
+    ctx.fillText('日本語修業認定証', W / 2, 235);
+
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = '600 20px sans-serif';
+    ctx.fillText('CERTIFICATE OF JAPANESE MASTERY', W / 2, 280);
+
+    // Gold Divider Line with diamond in center
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.6)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(W / 2 - 240, 315);
+    ctx.lineTo(W / 2 + 240, 315);
+    ctx.stroke();
+
+    ctx.fillStyle = '#f1c40f';
+    ctx.beginPath();
+    ctx.arc(W / 2, 315, 6, 0, Math.PI * 2);
+    ctx.fill();
+
+    // 6. Subtext
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = 'italic 24px serif';
+    ctx.fillText('This is proudly awarded to', W / 2, 385);
+
+    // 7. Student Name
+    const name = (playerName || 'Samurai Scholar').trim();
+    ctx.fillStyle = '#ffffff';
+    ctx.font = name.length > 18 ? 'bold 44px sans-serif' : 'bold 56px sans-serif';
+    ctx.fillText(name, W / 2, 455);
+
+    // Underline for name
+    const nameWidth = Math.min(ctx.measureText(name).width + 60, 640);
+    ctx.strokeStyle = '#f1c40f';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(W / 2 - nameWidth / 2, 480);
+    ctx.lineTo(W / 2 + nameWidth / 2, 480);
+    ctx.stroke();
+
+    // 8. Certification Paragraph
+    ctx.fillStyle = '#cbd5e1';
+    ctx.font = '22px sans-serif';
+    ctx.fillText('for demonstrated excellence and dedication in mastering the Japanese language,', W / 2, 540);
+    ctx.fillText('achieving the following samurai combat and linguistic credentials:', W / 2, 575);
+
+    // 9. Stats Grid (4 Cards: Rank, Level, Streak, Accuracy)
+    const rank = document.getElementById('rank-name') ? document.getElementById('rank-name').textContent : 'Novice';
+    const level = `Lv. ${player.level || 1}`;
+    const streak = `${player.streak || 1} Days`;
+    const pct = (player.stats && player.stats.totalAnswered > 0)
+        ? `${Math.round((player.stats.totalCorrect / player.stats.totalAnswered) * 100)}%`
+        : '100%';
+
+    const statCards = [
+        { label: 'SAMURAI RANK', val: rank },
+        { label: 'ACADEMY LEVEL', val: level },
+        { label: 'STUDY STREAK', val: streak },
+        { label: 'COMBAT ACCURACY', val: pct }
+    ];
+
+    const startX = 140;
+    const startY = 640;
+    const cardW = 380;
+    const cardH = 140;
+    const gapX = 40;
+    const gapY = 30;
+
+    statCards.forEach((c, idx) => {
+        const col = idx % 2;
+        const row = Math.floor(idx / 2);
+        const cx = startX + col * (cardW + gapX);
+        const cy = startY + row * (cardH + gapY);
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.04)';
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.3)';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.roundRect(cx, cy, cardW, cardH, 12);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#a0aec0';
+        ctx.font = 'bold 16px sans-serif';
+        ctx.fillText(c.label, cx + cardW / 2, cy + 45);
+
+        ctx.fillStyle = '#f1c40f';
+        ctx.font = '900 32px sans-serif';
+        ctx.fillText(c.val, cx + cardW / 2, cy + 95);
+    });
+
+    // 10. Traditional Red Hanko Seal (Japanese Official Seal: 合格)
+    const hankoX = W / 2;
+    const hankoY = 1040;
+    const hankoSize = 120;
+
+    ctx.save();
+    ctx.translate(hankoX, hankoY);
+    ctx.rotate(-0.04);
+
+    ctx.strokeStyle = '#e74c3c';
+    ctx.lineWidth = 6;
+    ctx.strokeRect(-hankoSize / 2, -hankoSize / 2, hankoSize, hankoSize);
+
+    ctx.strokeStyle = '#e74c3c';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(-hankoSize / 2 + 6, -hankoSize / 2 + 6, hankoSize - 12, hankoSize - 12);
+
+    ctx.fillStyle = '#e74c3c';
+    ctx.font = '900 48px serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('合格', 0, 0);
+
+    ctx.restore();
+
+    // 11. Issue Date & Verification Footer
+    const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = '600 18px sans-serif';
+    ctx.fillText(`ISSUED: ${today.toUpperCase()} · VERIFIED CREDENTIAL`, W / 2, 1180);
+
+    ctx.fillStyle = '#00cec9';
+    ctx.font = 'bold 20px monospace';
+    ctx.fillText('KOTOQUEST.PAGES.DEV', W / 2, 1225);
+}
+window.drawCertificate = drawCertificate;
+
+function downloadCertificate() {
+    const canvas = document.getElementById('cert-canvas');
+    if (!canvas) return;
+    const nameInput = document.getElementById('cert-name-input');
+    const name = (nameInput && nameInput.value.trim()) || 'Samurai-Scholar';
+    const filename = `kotoquest-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-certificate.png`;
+
+    canvas.toBlob((blob) => {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+        window.showToast('Certificate downloaded successfully!');
+    }, 'image/png');
+}
+
+async function shareCertificate() {
+    const canvas = document.getElementById('cert-canvas');
+    if (!canvas) return;
+    const nameInput = document.getElementById('cert-name-input');
+    const name = (nameInput && nameInput.value.trim()) || 'Samurai Scholar';
+
+    canvas.toBlob(async (blob) => {
+        if (!blob) return;
+        const file = new File([blob], 'kotoquest-samurai-certificate.png', { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try {
+                await navigator.share({
+                    title: `${name}'s Japanese Credential · KotoQuest`,
+                    text: `I just earned my Samurai Japanese Credential on KotoQuest! 🏯🇯🇵\nCheck it out: https://kotoquest.pages.dev/#certificate`,
+                    files: [file]
+                });
+            } catch (e) {}
+        } else {
+            downloadCertificate();
+            window.shareQuestProgress({
+                title: `${name}'s Japanese Credential`,
+                text: `I just earned my Samurai Japanese Credential on KotoQuest! 🏯🇯🇵`,
+                url: 'https://kotoquest.pages.dev/#certificate'
+            });
+        }
+    }, 'image/png');
+}
+
+// 5. 1v1 Asynchronous Duel Mode Logic
+let duelState = {
+    seed: 0,
+    tier: 'N5',
+    questions: [],
+    currentIndex: 0,
+    answers: [],
+    startTime: 0,
+    timerInterval: null,
+    challenger: null
+};
+
+function openDuelModal(params = {}) {
+    const overlay = document.getElementById('duel-overlay');
+    if (!overlay) return;
+    overlay.classList.add('show');
+
+    const inviteView = document.getElementById('duel-invite-view');
+    const combatView = document.getElementById('duel-combat-view');
+    const resultView = document.getElementById('duel-result-view');
+    const createView = document.getElementById('duel-create-view');
+
+    if (inviteView) inviteView.style.display = 'none';
+    if (combatView) combatView.style.display = 'none';
+    if (resultView) resultView.style.display = 'none';
+    if (createView) createView.style.display = 'none';
+
+    if (params.s && params.score && params.name) {
+        duelState.seed = parseInt(params.s, 10) || 123456;
+        duelState.tier = params.tier || 'N5';
+        duelState.challenger = {
+            name: decodeURIComponent(params.name),
+            score: parseInt(params.score, 10) || 0,
+            time: parseFloat(params.time) || 30.0,
+            tier: duelState.tier
+        };
+
+        if (inviteView) {
+            inviteView.style.display = 'block';
+            const heading = document.getElementById('duel-invite-heading');
+            const target = document.getElementById('duel-invite-target');
+            const challengerEl = document.getElementById('duel-invite-challenger');
+            if (heading) heading.textContent = `${duelState.challenger.name} Challenged You!`;
+            if (target) target.textContent = `${duelState.challenger.score}/5 in ${duelState.challenger.time.toFixed(1)}s`;
+            if (challengerEl) challengerEl.textContent = `Tier: ${duelState.challenger.tier} · Challenger: ${duelState.challenger.name}`;
+        }
+    } else {
+        duelState.seed = Math.floor(100000 + Math.random() * 900000);
+        duelState.tier = params.tier || (typeof currentTier !== 'undefined' ? currentTier : 'N5');
+        duelState.challenger = null;
+        startActiveDuel();
+    }
+}
+window.openDuelModal = openDuelModal;
+
+function closeDuelModal() {
+    const overlay = document.getElementById('duel-overlay');
+    if (overlay) overlay.classList.remove('show');
+    if (duelState.timerInterval) {
+        clearInterval(duelState.timerInterval);
+        duelState.timerInterval = null;
+    }
+    if (window.location.hash.startsWith('#duel')) {
+        history.replaceState(null, '', '#arena');
+    }
+}
+window.closeDuelModal = closeDuelModal;
+
+function startActiveDuel() {
+    const inviteView = document.getElementById('duel-invite-view');
+    const combatView = document.getElementById('duel-combat-view');
+    const resultView = document.getElementById('duel-result-view');
+    const createView = document.getElementById('duel-create-view');
+
+    if (inviteView) inviteView.style.display = 'none';
+    if (combatView) combatView.style.display = 'block';
+    if (resultView) resultView.style.display = 'none';
+    if (createView) createView.style.display = 'none';
+
+    duelState.questions = getDuelQuestions(duelState.seed, duelState.tier);
+    duelState.currentIndex = 0;
+    duelState.answers = [];
+    duelState.startTime = Date.now();
+
+    if (duelState.timerInterval) clearInterval(duelState.timerInterval);
+    const timerEl = document.getElementById('duel-timer');
+    duelState.timerInterval = setInterval(() => {
+        if (timerEl) {
+            const elapsed = ((Date.now() - duelState.startTime) / 1000).toFixed(1);
+            timerEl.innerHTML = `<i class="fa-solid fa-stopwatch"></i> ${elapsed}s`;
+        }
+    }, 100);
+
+    renderDuelQuestion(0);
+}
+
+function renderDuelQuestion(idx) {
+    const q = duelState.questions[idx];
+    if (!q) return;
+
+    const progress = document.getElementById('duel-progress');
+    const qText = document.getElementById('duel-question-text');
+    const qType = document.getElementById('duel-question-type');
+    const speakBtn = document.getElementById('btn-speak-duel');
+
+    if (progress) progress.textContent = `Question ${idx + 1}/5`;
+    if (qText) qText.textContent = q.q;
+    if (qType) qType.textContent = q.type || 'JLPT Duel';
+    if (speakBtn) {
+        if (q.speak) {
+            speakBtn.style.display = 'inline-flex';
+            speakBtn.setAttribute('data-speak', q.speak);
+        } else {
+            speakBtn.style.display = 'none';
+        }
+    }
+
+    const optContainer = document.getElementById('duel-options');
+    if (!optContainer) return;
+    optContainer.innerHTML = '';
+
+    q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'daily-opt-btn';
+        btn.textContent = opt;
+        btn.onclick = () => handleDuelAnswer(btn, opt, q.answer);
+        optContainer.appendChild(btn);
+    });
+}
+
+function handleDuelAnswer(btn, chosen, correct) {
+    const allBtns = document.querySelectorAll('#duel-options .daily-opt-btn');
+    allBtns.forEach(b => b.disabled = true);
+
+    const isCorrect = chosen === correct;
+    duelState.answers.push(isCorrect);
+
+    if (isCorrect) {
+        btn.classList.add('correct');
+    } else {
+        btn.classList.add('wrong');
+        allBtns.forEach(b => {
+            if (b.textContent === correct) b.classList.add('correct');
+        });
+    }
+
+    setTimeout(() => {
+        if (duelState.currentIndex + 1 < duelState.questions.length) {
+            duelState.currentIndex++;
+            renderDuelQuestion(duelState.currentIndex);
+        } else {
+            finishDuelRun();
+        }
+    }, 600);
+}
+
+function finishDuelRun() {
+    if (duelState.timerInterval) {
+        clearInterval(duelState.timerInterval);
+        duelState.timerInterval = null;
+    }
+
+    const finalTime = parseFloat(((Date.now() - duelState.startTime) / 1000).toFixed(1));
+    const finalScore = duelState.answers.filter(Boolean).length;
+    const combatView = document.getElementById('duel-combat-view');
+    if (combatView) combatView.style.display = 'none';
+
+    if (duelState.challenger) {
+        showDuelResultView(duelState.challenger, { score: finalScore, time: finalTime });
+    } else {
+        showDuelCreateView({ score: finalScore, time: finalTime, seed: duelState.seed, tier: duelState.tier });
+    }
+}
+
+function showDuelResultView(challenger, playerRun) {
+    const resultView = document.getElementById('duel-result-view');
+    if (resultView) resultView.style.display = 'block';
+
+    const verdictBanner = document.getElementById('duel-verdict-banner');
+    const chName = document.getElementById('duel-vs-challenger-name');
+    const chScore = document.getElementById('duel-vs-challenger-score');
+    const chTime = document.getElementById('duel-vs-challenger-time');
+    const plName = document.getElementById('duel-vs-player-name');
+    const plScore = document.getElementById('duel-vs-player-score');
+    const plTime = document.getElementById('duel-vs-player-time');
+
+    const chCard = document.getElementById('duel-vs-challenger');
+    const plCard = document.getElementById('duel-vs-player');
+
+    if (chName) chName.textContent = challenger.name;
+    if (chScore) chScore.textContent = `${challenger.score}/5`;
+    if (chTime) chTime.textContent = `${challenger.time.toFixed(1)}s`;
+
+    const myName = localStorage.getItem('koto_player_name') || 'You';
+    if (plName) plName.textContent = myName;
+    if (plScore) plScore.textContent = `${playerRun.score}/5`;
+    if (plTime) plTime.textContent = `${playerRun.time.toFixed(1)}s`;
+
+    if (chCard) chCard.classList.remove('winner');
+    if (plCard) plCard.classList.remove('winner');
+
+    let verdictText = '';
+    let verdictClass = '';
+    if (playerRun.score > challenger.score) {
+        verdictText = '🎉 VICTORY! You outscored the challenger!';
+        verdictClass = 'victory';
+        if (plCard) plCard.classList.add('winner');
+    } else if (playerRun.score === challenger.score) {
+        if (playerRun.time < challenger.time) {
+            const diff = (challenger.time - playerRun.time).toFixed(1);
+            verdictText = `⚡ VICTORY! You were faster by ${diff}s!`;
+            verdictClass = 'victory';
+            if (plCard) plCard.classList.add('winner');
+        } else if (playerRun.time === challenger.time) {
+            verdictText = '🤝 TIE! An honorable samurai standoff!';
+            verdictClass = 'tie';
+        } else {
+            const diff = (playerRun.time - challenger.time).toFixed(1);
+            verdictText = `💀 DEFEAT! Challenger was faster by ${diff}s!`;
+            verdictClass = 'defeat';
+            if (chCard) chCard.classList.add('winner');
+        }
+    } else {
+        verdictText = '💀 DEFEAT! Challenger prevailed!';
+        verdictClass = 'defeat';
+        if (chCard) chCard.classList.add('winner');
+    }
+
+    if (verdictBanner) {
+        verdictBanner.textContent = verdictText;
+        verdictBanner.className = `duel-verdict ${verdictClass}`;
+    }
+
+    const shareText = `⚔️ KotoQuest 1v1 Duel Verdict:\n${verdictText}\nMe (${myName}): ${playerRun.score}/5 (${playerRun.time}s)\n${challenger.name}: ${challenger.score}/5 (${challenger.time}s)\nPlay KotoQuest: https://kotoquest.pages.dev/#duel`;
+
+    const shareBtn = document.getElementById('btn-share-duel-result');
+    if (shareBtn) {
+        shareBtn.onclick = () => {
+            window.shareQuestProgress({
+                title: 'KotoQuest 1v1 Duel Result',
+                text: shareText,
+                url: 'https://kotoquest.pages.dev/#duel'
+            });
+        };
+    }
+
+    const copyBtn = document.getElementById('btn-copy-duel-result');
+    if (copyBtn) {
+        copyBtn.onclick = () => {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareText).then(() => {
+                    window.showToast('Duel result copied to clipboard!');
+                });
+            } else {
+                prompt('Copy result:', shareText);
+            }
+        };
+    }
+
+    const rematchBtn = document.getElementById('btn-rematch-duel');
+    if (rematchBtn) {
+        rematchBtn.onclick = () => {
+            duelState.seed = Math.floor(100000 + Math.random() * 900000);
+            duelState.challenger = null;
+            startActiveDuel();
+        };
+    }
+}
+
+function showDuelCreateView(playerRun) {
+    const createView = document.getElementById('duel-create-view');
+    if (createView) createView.style.display = 'block';
+
+    const statsEl = document.getElementById('duel-created-stats');
+    if (statsEl) {
+        statsEl.textContent = `${playerRun.score}/5 in ${playerRun.time.toFixed(1)}s`;
+    }
+
+    const myName = localStorage.getItem('koto_player_name') || 'Samurai';
+    const duelUrl = `https://kotoquest.pages.dev/#duel?s=${playerRun.seed}&name=${encodeURIComponent(myName)}&score=${playerRun.score}&time=${playerRun.time}&tier=${playerRun.tier}`;
+    const shareText = `⚔️ I challenge you to a 1v1 Japanese Duel on KotoQuest!\nMy target: ${playerRun.score}/5 in ${playerRun.time}s (${playerRun.tier} tier).\nCan you beat me? Accept here:\n${duelUrl}`;
+
+    const shareBtn = document.getElementById('btn-share-new-duel');
+    if (shareBtn) {
+        shareBtn.onclick = () => {
+            window.shareQuestProgress({
+                title: 'Japanese 1v1 Duel Challenge',
+                text: shareText,
+                url: duelUrl
+            });
+        };
+    }
+
+    const waBtn = document.getElementById('btn-wa-new-duel');
+    if (waBtn) {
+        waBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const xBtn = document.getElementById('btn-x-new-duel');
+    if (xBtn) {
+        xBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const copyBtn = document.getElementById('btn-copy-new-duel');
+    if (copyBtn) {
+        copyBtn.onclick = () => {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(duelUrl).then(() => {
+                    window.showToast('Duel challenge link copied!');
+                });
+            } else {
+                prompt('Copy duel link:', duelUrl);
+            }
+        };
+    }
+}
+
+// 6. Viral Growth Engine Event Binds
+function setupViralGrowthEngine() {
+    const openDailyBtn = document.getElementById('btn-open-daily');
+    if (openDailyBtn) {
+        openDailyBtn.addEventListener('click', () => openDailyChallenge());
+    }
+    const closeDailyBtn = document.getElementById('daily-close-btn');
+    if (closeDailyBtn) {
+        closeDailyBtn.addEventListener('click', () => closeDailyChallenge());
+    }
+
+    const openCertBtn = document.getElementById('btn-open-cert');
+    if (openCertBtn) {
+        openCertBtn.addEventListener('click', () => openCertificateModal());
+    }
+    const rankBadgeBtn = document.getElementById('rank-badge-btn');
+    if (rankBadgeBtn) {
+        rankBadgeBtn.addEventListener('click', () => openCertificateModal());
+    }
+    const closeCertBtn = document.getElementById('cert-close-btn');
+    if (closeCertBtn) {
+        closeCertBtn.addEventListener('click', () => closeCertificateModal());
+    }
+    const certNameInput = document.getElementById('cert-name-input');
+    if (certNameInput) {
+        certNameInput.addEventListener('input', (e) => {
+            const val = e.target.value.trim() || 'Samurai Scholar';
+            localStorage.setItem('koto_player_name', val);
+            drawCertificate(val);
+        });
+    }
+    const downloadCertBtn = document.getElementById('btn-download-cert');
+    if (downloadCertBtn) {
+        downloadCertBtn.addEventListener('click', () => downloadCertificate());
+    }
+    const shareCertBtn = document.getElementById('btn-share-cert');
+    if (shareCertBtn) {
+        shareCertBtn.addEventListener('click', () => shareCertificate());
+    }
+    const copyCertBtn = document.getElementById('btn-copy-cert-link');
+    if (copyCertBtn) {
+        copyCertBtn.addEventListener('click', () => {
+            const url = 'https://kotoquest.pages.dev/#certificate';
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(() => {
+                    window.showToast('Certificate link copied to clipboard!');
+                });
+            } else {
+                prompt('Copy link:', url);
+            }
+        });
+    }
+
+    const openDuelBtn = document.getElementById('btn-open-duel');
+    if (openDuelBtn) {
+        openDuelBtn.addEventListener('click', () => openDuelModal());
+    }
+    const closeDuelBtn = document.getElementById('duel-close-btn');
+    if (closeDuelBtn) {
+        closeDuelBtn.addEventListener('click', () => closeDuelModal());
+    }
+    const startDuelBtn = document.getElementById('btn-start-duel');
+    if (startDuelBtn) {
+        startDuelBtn.addEventListener('click', () => startActiveDuel());
+    }
+
+    [
+        { overlayId: 'daily-overlay', closeFn: closeDailyChallenge },
+        { overlayId: 'certificate-overlay', closeFn: closeCertificateModal },
+        { overlayId: 'duel-overlay', closeFn: closeDuelModal }
+    ].forEach(({ overlayId, closeFn }) => {
+        const overlay = document.getElementById(overlayId);
+        if (overlay) {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) closeFn();
+            });
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeDailyChallenge();
+            closeCertificateModal();
+            closeDuelModal();
+        }
+    });
+}
+
+// --- ==================================================== ---
 // --- URL HASH ROUTING & DEEP LINKING ENGINE               ---
 // --- ==================================================== ---
 function parseHash() {
@@ -911,6 +1993,19 @@ function handleHashRouting() {
     if (!parsed || !parsed.tab) return false;
     
     const { tab, params } = parsed;
+
+    // Modal routes
+    if (tab === 'daily') {
+        openDailyChallenge();
+        return true;
+    } else if (tab === 'certificate') {
+        openCertificateModal();
+        return true;
+    } else if (tab === 'duel') {
+        openDuelModal(params);
+        return true;
+    }
+
     const targetEl = document.getElementById(tab);
     if (!targetEl) return false;
     
@@ -1017,6 +2112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Social Sharing & Bragging Loops
     setupSocialSharing();
+    setupViralGrowthEngine();
 
     // Deep Linking & Hash Routing
     setupHashRouting();
@@ -1029,7 +2125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupKeyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
         // Ignore game shortcuts while any modal overlay is open
-        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show')) return;
+        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show, .daily-overlay.show, .cert-overlay.show, .duel-overlay.show')) return;
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
             return;
@@ -2719,6 +3815,11 @@ function checkBattleResolution() {
                     url: `https://kotoquest.pages.dev/#arena?tier=${currentTier}`
                 });
             });
+            if (player.level === 5 || player.level === 12 || player.level === 20) {
+                addBragLogEntry(`📜 Claim Samurai Certificate!`, () => {
+                    if (typeof window.openCertificateModal === 'function') window.openCertificateModal();
+                });
+            }
         } else if (currentTier === 'N1' || currentTier === 'N2' || currentTier === 'N3') {
             addBragLogEntry(`⚔️ Brag Victory over ${activeEnemy.name}!`, () => {
                 const text = `⚔️ I defeated ${activeEnemy.name} (JLPT ${currentTier}) in KotoQuest Quest Arena!`;
@@ -2729,6 +3830,13 @@ function checkBattleResolution() {
                 });
             });
         }
+        
+        // 1v1 Duel Challenge hook
+        addBragLogEntry(`⚔️ 1v1 Duel a Friend!`, () => {
+            if (typeof window.openDuelModal === 'function') {
+                window.openDuelModal({ tier: currentTier });
+            }
+        });
         
         setTimeout(() => {
             startNewBattle();
