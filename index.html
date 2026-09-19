@@ -236,6 +236,10 @@
                     <i class="fa-solid fa-scroll"></i>
                     <span class="inventory-badge" id="badge-hint" style="display: none;">0</span>
                 </div>
+                <div class="inventory-slot empty" id="slot-streakFreeze" data-item="streakFreeze" title="Streak Freeze: Automatically preserves your streak if you miss a day">
+                    <i class="fa-solid fa-snowflake" style="color: #74b9ff;"></i>
+                    <span class="inventory-badge" id="badge-streakFreeze" style="display: none;">0</span>
+                </div>
             </div>
         </div>
 
@@ -360,6 +364,18 @@
                                 <button class="btn btn-gold btn-buy" data-item="hint" data-i18n="shop.buyscroll">Buy Scroll</button>
                             </div>
                         </div>
+
+                        <div class="shop-card">
+                            <div>
+                                <div class="shop-icon"><i class="fa-solid fa-snowflake" style="color: #74b9ff;"></i></div>
+                                <div class="shop-name">Streak Freeze</div>
+                                <div class="shop-desc">Protects your daily study streak from resetting if you miss a day of training. Automatically consumed when a day is missed.</div>
+                            </div>
+                            <div>
+                                <div class="shop-cost">100 Gold</div>
+                                <button class="btn btn-gold btn-buy" data-item="streakFreeze">Buy Freeze</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -386,8 +402,13 @@
                     </div>
 
                     <div class="telugu-header">
-                        <h3 id="bridge-header-title">Linguistic Hacks for SOV Speakers</h3>
-                        <p id="bridge-header-desc">Japanese, Telugu, Hindi, Tamil, and Korean are all <strong>SOV (Subject-Object-Verb)</strong> languages that mark grammar with postpositional particles. The wiring is the same, so you can translate a Japanese thought straight through in order instead of flipping it around the way English forces you to.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+                            <div style="flex: 1; min-width: 260px;">
+                                <h3 id="bridge-header-title">Linguistic Hacks for SOV Speakers</h3>
+                                <p id="bridge-header-desc">Japanese, Telugu, Hindi, Tamil, and Korean are all <strong>SOV (Subject-Object-Verb)</strong> languages that mark grammar with postpositional particles. The wiring is the same, so you can translate a Japanese thought straight through in order instead of flipping it around the way English forces you to.</p>
+                            </div>
+                            <button type="button" id="btn-open-cheat-sheet" class="btn btn-gold" style="padding: 10px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; gap: 8px; white-space: nowrap; cursor: pointer;" title="Download High-Res Particle Cheat Sheet"><i class="fa-solid fa-file-image"></i> <span>Download Cheat Sheet (HD)</span></button>
+                        </div>
                     </div>
 
                     <!-- Particle Calculator Widget -->
@@ -2338,6 +2359,7 @@
                     </div>
                 </div>
                 <div class="share-tray" style="justify-content: center; margin-top: 15px;">
+                    <button type="button" class="share-btn share-btn-primary" id="btn-duel-story-trophy"><i class="fa-solid fa-award"></i> Story Trophy</button>
                     <button type="button" class="share-btn share-btn-primary" id="btn-share-duel-result"><i class="fa-solid fa-share-nodes"></i> Share Result</button>
                     <button type="button" class="share-btn share-btn-wa" id="btn-rematch-duel"><i class="fa-solid fa-rotate-right"></i> Counter-Challenge</button>
                     <button type="button" class="share-btn share-btn-copy" id="btn-copy-duel-result"><i class="fa-solid fa-copy"></i> Copy Link</button>
@@ -2358,6 +2380,36 @@
         </div>
     </div>
 
+    <!-- Particle Cheat Sheet Generator Overlay -->
+    <div id="cheat-sheet-overlay" class="cheat-sheet-overlay" role="dialog" aria-modal="true">
+        <div class="cheat-sheet-card glass-card">
+            <div class="cheat-sheet-header">
+                <h3><i class="fa-solid fa-file-image" style="color: var(--accent-gold);"></i> <span>Particle Cheat Sheet (HD)</span></h3>
+                <button type="button" class="modal-close-btn" id="cheat-sheet-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="cheat-sheet-canvas-wrap">
+                <canvas id="cheat-sheet-canvas" width="1200" height="1600"></canvas>
+            </div>
+            <div class="cheat-sheet-controls">
+                <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                    <label for="cheat-sheet-lang-select" style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);"><i class="fa-solid fa-language"></i> Bridge Language:</label>
+                    <select id="cheat-sheet-lang-select" class="cert-input" style="width: auto; padding: 6px 12px; font-size: 0.85rem;">
+                        <option value="telugu">Telugu (తెలుగు)</option>
+                        <option value="hindi">Hindi (हिन्दी)</option>
+                        <option value="tamil">Tamil (தமிழ்)</option>
+                        <option value="korean">Korean (한국어)</option>
+                        <option value="spanish">Spanish (Español)</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+                <div class="cheat-sheet-actions">
+                    <button type="button" class="share-btn share-btn-primary" id="btn-download-cheat-sheet"><i class="fa-solid fa-download"></i> Download PNG</button>
+                    <button type="button" class="share-btn share-btn-wa" id="btn-share-cheat-sheet"><i class="fa-solid fa-share-nodes"></i> Share Cheat Sheet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating help button + contextual per-page help overlay -->
     <button type="button" id="help-fab" class="help-fab" aria-label="Help for this page" title="Help">?</button>
     <div id="help-overlay" class="help-overlay">
@@ -2371,6 +2423,21 @@
                 <button type="button" id="help-replay" class="btn" data-i18n="help.replay">Replay intro tour</button>
                 <button type="button" id="help-ok" class="btn btn-teal" data-i18n="help.gotit">Got it</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Custom PWA Install Banner -->
+    <div id="pwa-install-banner" class="pwa-install-banner" style="display: none;">
+        <div class="pwa-install-content">
+            <div class="pwa-install-icon">🏯</div>
+            <div class="pwa-install-text">
+                <div class="pwa-install-title">Install KotoQuest App</div>
+                <div class="pwa-install-sub">100% offline JLPT academy with zero data usage & instant load.</div>
+            </div>
+        </div>
+        <div class="pwa-install-actions">
+            <button type="button" class="btn btn-primary" id="btn-pwa-install" style="padding: 8px 18px; font-size: 0.85rem;"><i class="fa-solid fa-download"></i> Install</button>
+            <button type="button" class="pwa-dismiss-btn" id="btn-pwa-dismiss" aria-label="Dismiss">&times;</button>
         </div>
     </div>
 
