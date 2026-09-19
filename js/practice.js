@@ -520,6 +520,15 @@
         rendered[tab] = true;
         RENDERERS[tab]();
     }
+    // Allow external callers (e.g. applyNativeLanguageNuances in app.js) to re-render
+    // practice modules in the newly selected language.
+    window.refreshPracticeModules = function() {
+        for (const tab in rendered) {
+            if (rendered[tab] && RENDERERS[tab]) {
+                RENDERERS[tab]();
+            }
+        }
+    };
 
     document.addEventListener('DOMContentLoaded', () => {
         const nav = document.getElementById('main-nav');

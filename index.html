@@ -8,6 +8,7 @@
     <meta name="author" content="Ashish Thirunagari">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#14161f">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="KotoQuest">
@@ -69,7 +70,7 @@
     <!-- Preload the LCP hero (it's a CSS background, so otherwise discovered late) -->
     <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
     <!-- Preload the primary font subset so its swap doesn't reflow the page (CLS) -->
-    <link rel="preload" as="font" type="font/woff2" href="vendor/fonts/outfit-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="vendor/fonts/outfit-latin.woff2" crossorigin="anonymous">
     <!-- Fonts and Icons -->
     <link rel="stylesheet" href="vendor/fonts/outfit.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
@@ -381,8 +382,8 @@
                     </div>
 
                     <div class="telugu-header">
-                        <h3>Linguistic Hacks for Telugu & Hindi Speakers</h3>
-                        <p>Japanese, Telugu, and Hindi are all <strong>SOV (Subject-Object-Verb)</strong> languages that mark grammar with postpositional particles. The wiring is the same, so you can translate a Japanese thought straight through in order instead of flipping it around the way English forces you to.</p>
+                        <h3 id="bridge-header-title">Linguistic Hacks for SOV Speakers</h3>
+                        <p id="bridge-header-desc">Japanese, Telugu, Hindi, Tamil, and Korean are all <strong>SOV (Subject-Object-Verb)</strong> languages that mark grammar with postpositional particles. The wiring is the same, so you can translate a Japanese thought straight through in order instead of flipping it around the way English forces you to.</p>
                     </div>
 
                     <!-- Particle Calculator Widget -->
@@ -454,7 +455,22 @@
                                 <tr class="lang-col-hi">
                                     <td><strong style="color: var(--accent-gold);">Hindi</strong></td>
                                     <td>Modifier + Noun</td>
-                                    <td><strong>[कल मेरे द्वारा पढ़ी गई]</strong> &rarr; किताब (*padhi gayi* &rarr; book)</td>
+                                    <td><strong>[कल मेरे द्वारा पढ़ी गई]</strong> &rarr; किताब (*padhi gayi* &rarr; book)</td>
+                                </tr>
+                                <tr class="lang-col-ta" style="display: none;">
+                                    <td><strong style="color: var(--accent-teal);">Tamil</strong></td>
+                                    <td>Modifier + Noun</td>
+                                    <td><strong>[நான் நேற்று படித்த]</strong> &rarr; புத்தகம் (*paditha* &rarr; book)</td>
+                                </tr>
+                                <tr class="lang-col-ko" style="display: none;">
+                                    <td><strong style="color: var(--accent-pink);">Korean</strong></td>
+                                    <td>Modifier + Noun</td>
+                                    <td><strong>[내가 어제 읽은]</strong> &rarr; 책 (*ilkeun* &rarr; book)</td>
+                                </tr>
+                                <tr class="lang-col-es" style="display: none;">
+                                    <td><strong style="color: var(--accent-gold);">Spanish</strong></td>
+                                    <td>Noun + Modifier</td>
+                                    <td>El libro &larr; <strong>[que leí ayer]</strong></td>
                                 </tr>
                                 <tr>
                                     <td><strong style="color: var(--accent-pink);">Japanese</strong></td>
