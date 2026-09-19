@@ -9,7 +9,8 @@ let player = {
     inventory: {
         potion: 1,
         shield: 1,
-        hint: 1
+        hint: 1,
+        streakFreeze: 0
     },
     streak: 0,
     lastActiveDate: '',
@@ -1789,6 +1790,13 @@ function showDuelResultView(challenger, playerRun) {
 
     const shareText = `⚔️ KotoQuest 1v1 Duel Verdict:\n${verdictText}\nMe (${myName}): ${playerRun.score}/5 (${playerRun.time}s)\n${challenger.name}: ${challenger.score}/5 (${challenger.time}s)\nPlay KotoQuest: https://kotoquest.pages.dev/#duel`;
 
+    const trophyBtn = document.getElementById('btn-duel-story-trophy');
+    if (trophyBtn) {
+        trophyBtn.onclick = () => {
+            generateDuelStoryTrophy(challenger, playerRun, verdictText);
+        };
+    }
+
     const shareBtn = document.getElementById('btn-share-duel-result');
     if (shareBtn) {
         shareBtn.onclick = () => {
@@ -1871,7 +1879,422 @@ function showDuelCreateView(playerRun) {
     }
 }
 
-// 6. Viral Growth Engine Event Binds
+// 6. Duel Story Trophy Image Generator (1080x1350 for Social Stories)
+function generateDuelStoryTrophy(challenger, playerRun, verdictText) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    canvas.height = 1350;
+    const ctx = canvas.getContext('2d');
+    const W = 1080;
+    const H = 1350;
+
+    // 1. Background Gradient
+    const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+    bgGrad.addColorStop(0, '#0a0d18');
+    bgGrad.addColorStop(0.5, '#151a2e');
+    bgGrad.addColorStop(1, '#080a14');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, W, H);
+
+    // 2. Gold Borders & Corner Brackets
+    ctx.strokeStyle = '#d4af37';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(40, 40, W - 80, H - 80);
+
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(52, 52, W - 104, H - 104);
+
+    const bSize = 36;
+    const corners = [
+        [40, 40, 1, 1],
+        [W - 40, 40, -1, 1],
+        [40, H - 40, 1, -1],
+        [W - 40, H - 40, -1, -1]
+    ];
+    ctx.strokeStyle = '#f1c40f';
+    ctx.lineWidth = 6;
+    corners.forEach(([cx, cy, dx, dy]) => {
+        ctx.beginPath();
+        ctx.moveTo(cx, cy + dy * bSize);
+        ctx.lineTo(cx, cy);
+        ctx.lineTo(cx + dx * bSize, cy);
+        ctx.stroke();
+    });
+
+    // 3. Header
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#f1c40f';
+    ctx.font = 'bold 28px sans-serif';
+    ctx.fillText('⚔️ KOTOQUEST · JLPT 1v1 DUEL', W / 2, 150);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '900 50px serif';
+    ctx.fillText('SAMURAI VERSUS BATTLE', W / 2, 220);
+
+    // 4. Big Verdict Banner
+    const isVictory = playerRun.score > challenger.score || (playerRun.score === challenger.score && playerRun.time < challenger.time);
+    const isTie = playerRun.score === challenger.score && playerRun.time === challenger.time;
+
+    ctx.fillStyle = isVictory ? '#2ecc71' : isTie ? '#f1c40f' : '#e74c3c';
+    ctx.font = '900 60px sans-serif';
+    ctx.fillText(isVictory ? '🎉 VICTORY! 🎉' : isTie ? '🤝 DRAW / TIE 🤝' : '💀 DEFEAT 💀', W / 2, 330);
+
+    // 5. Versus Cards
+    const myName = localStorage.getItem('koto_player_name') || 'You';
+    const cardW = 420;
+    const cardH = 340;
+    const yCard = 440;
+
+    // Challenger Card
+    const chX = 90;
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.04)';
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(chX, yCard, cardW, cardH, 16);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = 'bold 24px sans-serif';
+    ctx.fillText('CHALLENGER', chX + cardW / 2, yCard + 55);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '900 36px sans-serif';
+    ctx.fillText(challenger.name, chX + cardW / 2, yCard + 115);
+
+    ctx.fillStyle = '#ff7675';
+    ctx.font = '900 64px sans-serif';
+    ctx.fillText(`${challenger.score}/5`, chX + cardW / 2, yCard + 210);
+
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = '600 24px sans-serif';
+    ctx.fillText(`${challenger.time.toFixed(1)}s`, chX + cardW / 2, yCard + 280);
+
+    // VS in center
+    ctx.fillStyle = '#ff7675';
+    ctx.font = '900 48px sans-serif';
+    ctx.fillText('VS', W / 2, yCard + cardH / 2 + 16);
+
+    // Player Card
+    const plX = W - 90 - cardW;
+    ctx.fillStyle = isVictory ? 'rgba(46, 204, 113, 0.08)' : 'rgba(255, 255, 255, 0.04)';
+    ctx.strokeStyle = isVictory ? '#2ecc71' : 'rgba(255, 255, 255, 0.15)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(plX, yCard, cardW, cardH, 16);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = 'bold 24px sans-serif';
+    ctx.fillText('DEFENDER', plX + cardW / 2, yCard + 55);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '900 36px sans-serif';
+    ctx.fillText(myName, plX + cardW / 2, yCard + 115);
+
+    ctx.fillStyle = '#2ecc71';
+    ctx.font = '900 64px sans-serif';
+    ctx.fillText(`${playerRun.score}/5`, plX + cardW / 2, yCard + 210);
+
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = '600 24px sans-serif';
+    ctx.fillText(`${playerRun.time.toFixed(1)}s`, plX + cardW / 2, yCard + 280);
+
+    // 6. Tier & Date & Watermark
+    ctx.fillStyle = '#f1c40f';
+    ctx.font = 'bold 26px sans-serif';
+    ctx.fillText(`JLPT ${challenger.tier || 'N5'} SPEED CHALLENGE`, W / 2, 880);
+
+    const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = '600 22px sans-serif';
+    ctx.fillText(`BATTLE DATE: ${today.toUpperCase()}`, W / 2, 940);
+
+    ctx.fillStyle = '#00cec9';
+    ctx.font = 'bold 24px monospace';
+    ctx.fillText('KOTOQUEST.PAGES.DEV', W / 2, 1180);
+
+    canvas.toBlob(async (blob) => {
+        if (!blob) return;
+        const file = new File([blob], 'kotoquest-duel-trophy.png', { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try {
+                await navigator.share({
+                    title: 'KotoQuest 1v1 Duel Trophy',
+                    text: `1v1 Japanese Duel: ${myName} vs ${challenger.name}!\nChallenge me: https://kotoquest.pages.dev/#duel`,
+                    files: [file]
+                });
+            } catch (e) {}
+        } else {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'kotoquest-duel-trophy.png';
+            a.click();
+            URL.revokeObjectURL(url);
+            window.showToast('Duel Story Trophy downloaded!');
+        }
+    }, 'image/png');
+}
+window.generateDuelStoryTrophy = generateDuelStoryTrophy;
+
+// 7. Particle Cheat Sheet Generator (1200x1600 Canvas)
+function openCheatSheetModal() {
+    const overlay = document.getElementById('cheat-sheet-overlay');
+    if (!overlay) return;
+    overlay.classList.add('show');
+
+    const langSelect = document.getElementById('cheat-sheet-lang-select');
+    const currentLang = player.nativeLanguage || 'telugu';
+    if (langSelect) langSelect.value = currentLang;
+    drawParticleCheatSheet(currentLang);
+}
+window.openCheatSheetModal = openCheatSheetModal;
+
+function closeCheatSheetModal() {
+    const overlay = document.getElementById('cheat-sheet-overlay');
+    if (overlay) overlay.classList.remove('show');
+    if (window.location.hash.startsWith('#cheatsheet')) {
+        history.replaceState(null, '', '#bridge');
+    }
+}
+window.closeCheatSheetModal = closeCheatSheetModal;
+
+function drawParticleCheatSheet(targetLang = 'telugu') {
+    const canvas = document.getElementById('cheat-sheet-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const W = 1200;
+    const H = 1600;
+
+    // 1. Background Gradient
+    const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+    bgGrad.addColorStop(0, '#0a0d18');
+    bgGrad.addColorStop(0.5, '#12172b');
+    bgGrad.addColorStop(1, '#080a14');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, W, H);
+
+    // 2. Decorative Gold Borders
+    ctx.strokeStyle = '#d4af37';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(30, 30, W - 60, H - 60);
+
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(42, 42, W - 84, H - 84);
+
+    const bSize = 30;
+    const corners = [
+        [30, 30, 1, 1],
+        [W - 30, 30, -1, 1],
+        [30, H - 30, 1, -1],
+        [W - 30, H - 30, -1, -1]
+    ];
+    ctx.strokeStyle = '#f1c40f';
+    ctx.lineWidth = 5;
+    corners.forEach(([cx, cy, dx, dy]) => {
+        ctx.beginPath();
+        ctx.moveTo(cx, cy + dy * bSize);
+        ctx.lineTo(cx, cy);
+        ctx.lineTo(cx + dx * bSize, cy);
+        ctx.stroke();
+    });
+
+    // 3. Header Titles
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#f1c40f';
+    ctx.font = 'bold 24px sans-serif';
+    ctx.fillText('言クエスト · KOTOQUEST LINGUISTIC ACADEMY', W / 2, 90);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '900 44px serif';
+    ctx.fillText('JAPANESE PARTICLES CHEAT SHEET', W / 2, 145);
+
+    const langNames = {
+        telugu: 'Telugu (తెలుగు)',
+        hindi: 'Hindi (हिन्दी)',
+        tamil: 'Tamil (தமிழ்)',
+        korean: 'Korean (한국어)',
+        spanish: 'Spanish (Español)',
+        english: 'English'
+    };
+    ctx.fillStyle = '#00cec9';
+    ctx.font = 'bold 20px sans-serif';
+    ctx.fillText(`Comparative Postpositional Grammar: Japanese ↔ ${langNames[targetLang] || 'English'}`, W / 2, 185);
+
+    // 4. Table Header Row
+    const startY = 220;
+    const rowH = 125;
+    const colX = { p: 70, role: 210, en: 440, nat: 680, ex: 880 };
+
+    ctx.fillStyle = 'rgba(212, 175, 55, 0.15)';
+    ctx.fillRect(50, startY, W - 100, 45);
+
+    ctx.fillStyle = '#f1c40f';
+    ctx.font = 'bold 16px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('PARTICLE', colX.p, startY + 28);
+    ctx.fillText('ROLE', colX.role, startY + 28);
+    ctx.fillText('ENGLISH MEANING', colX.en, startY + 28);
+    ctx.fillText(targetLang.toUpperCase() + ' EQUIVALENT', colX.nat, startY + 28);
+    ctx.fillText('EXAMPLE SENTENCE', colX.ex, startY + 28);
+
+    // 5. Table Rows (from PARTICLE_CALC_DATA)
+    const keys = Object.keys(PARTICLE_CALC_DATA);
+    keys.forEach((k, idx) => {
+        const item = PARTICLE_CALC_DATA[k];
+        const y = startY + 50 + idx * rowH;
+
+        if (idx % 2 === 1) {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.02)';
+            ctx.fillRect(50, y, W - 100, rowH);
+        }
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(50, y + rowH);
+        ctx.lineTo(W - 50, y + rowH);
+        ctx.stroke();
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '900 28px serif';
+        ctx.fillText(item.title, colX.p, y + 45);
+
+        ctx.fillStyle = '#ff7675';
+        ctx.font = 'bold 16px sans-serif';
+        ctx.fillText(item.role, colX.role, y + 42);
+
+        ctx.fillStyle = '#cbd5e1';
+        ctx.font = '15px sans-serif';
+        ctx.fillText(item.english, colX.en, y + 42);
+
+        ctx.fillStyle = '#00cec9';
+        ctx.font = 'bold 16px sans-serif';
+        const nativeVal = item[targetLang] || item.english || '-';
+        ctx.fillText(nativeVal, colX.nat, y + 42);
+
+        if (item.examples && item.examples[0]) {
+            const ex = item.examples[0];
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '15px serif';
+            ctx.fillText(ex.ja, colX.ex, y + 35);
+
+            ctx.fillStyle = '#a0aec0';
+            ctx.font = '13px sans-serif';
+            ctx.fillText(ex.ro, colX.ex, y + 55);
+
+            ctx.fillStyle = '#f1c40f';
+            ctx.font = '13px sans-serif';
+            const exTrans = ex[targetLang === 'telugu' ? 'te' : targetLang === 'hindi' ? 'hi' : targetLang === 'tamil' ? 'ta' : targetLang === 'korean' ? 'ko' : targetLang === 'spanish' ? 'es' : 'en'] || ex.en;
+            ctx.fillText(exTrans, colX.ex, y + 75);
+        }
+    });
+
+    // 6. Footer Watermark
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#a0aec0';
+    ctx.font = 'bold 18px monospace';
+    ctx.fillText('FREE OFFLINE JLPT ACADEMY · KOTOQUEST.PAGES.DEV', W / 2, 1540);
+}
+window.drawParticleCheatSheet = drawParticleCheatSheet;
+
+function downloadParticleCheatSheet() {
+    const canvas = document.getElementById('cheat-sheet-canvas');
+    if (!canvas) return;
+    const langSelect = document.getElementById('cheat-sheet-lang-select');
+    const lang = (langSelect && langSelect.value) || 'telugu';
+
+    canvas.toBlob((blob) => {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `kotoquest-japanese-particles-${lang}-cheatsheet.png`;
+        a.click();
+        URL.revokeObjectURL(url);
+        window.showToast('Cheat Sheet downloaded in HD!');
+    }, 'image/png');
+}
+
+async function shareParticleCheatSheet() {
+    const canvas = document.getElementById('cheat-sheet-canvas');
+    if (!canvas) return;
+    const langSelect = document.getElementById('cheat-sheet-lang-select');
+    const lang = (langSelect && langSelect.value) || 'telugu';
+
+    canvas.toBlob(async (blob) => {
+        if (!blob) return;
+        const file = new File([blob], `kotoquest-particles-${lang}-cheatsheet.png`, { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try {
+                await navigator.share({
+                    title: 'Japanese Particles Cheat Sheet · KotoQuest',
+                    text: `Japanese particles comparative grammar cheat sheet for ${lang.toUpperCase()} speakers! 🏯🇯🇵\nFree at: https://kotoquest.pages.dev/#bridge`,
+                    files: [file]
+                });
+            } catch (e) {}
+        } else {
+            downloadParticleCheatSheet();
+            window.shareQuestProgress({
+                title: 'Japanese Particles Cheat Sheet',
+                text: 'Comparative Japanese particles grammar cheat sheet! 🏯🇯🇵',
+                url: 'https://kotoquest.pages.dev/#bridge'
+            });
+        }
+    }, 'image/png');
+}
+
+// 8. Custom PWA Install Prompt Logic
+let deferredPwaPrompt = null;
+function setupPwaInstallPrompt() {
+    const banner = document.getElementById('pwa-install-banner');
+    const installBtn = document.getElementById('btn-pwa-install');
+    const dismissBtn = document.getElementById('btn-pwa-dismiss');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPwaPrompt = e;
+
+        const dismissed = localStorage.getItem('koto_pwa_dismissed');
+        if (dismissed && Date.now() - parseInt(dismissed, 10) < 3 * 24 * 60 * 60 * 1000) {
+            return;
+        }
+        if (banner) banner.style.display = 'flex';
+    });
+
+    window.addEventListener('appinstalled', () => {
+        if (banner) banner.style.display = 'none';
+        deferredPwaPrompt = null;
+        if (typeof window.showToast === 'function') window.showToast('KotoQuest successfully installed!');
+    });
+
+    if (installBtn) {
+        installBtn.addEventListener('click', async () => {
+            if (deferredPwaPrompt) {
+                deferredPwaPrompt.prompt();
+                const choice = await deferredPwaPrompt.userChoice;
+                if (choice.outcome === 'accepted') {
+                    if (banner) banner.style.display = 'none';
+                }
+                deferredPwaPrompt = null;
+            }
+        });
+    }
+
+    if (dismissBtn) {
+        dismissBtn.addEventListener('click', () => {
+            if (banner) banner.style.display = 'none';
+            localStorage.setItem('koto_pwa_dismissed', Date.now().toString());
+        });
+    }
+}
+
+// 9. Viral Growth Engine Event Binds
 function setupViralGrowthEngine() {
     const openDailyBtn = document.getElementById('btn-open-daily');
     if (openDailyBtn) {
@@ -1937,10 +2360,34 @@ function setupViralGrowthEngine() {
         startDuelBtn.addEventListener('click', () => startActiveDuel());
     }
 
+    const openCheatSheetBtn = document.getElementById('btn-open-cheat-sheet');
+    if (openCheatSheetBtn) {
+        openCheatSheetBtn.addEventListener('click', () => openCheatSheetModal());
+    }
+    const closeCheatSheetBtn = document.getElementById('cheat-sheet-close-btn');
+    if (closeCheatSheetBtn) {
+        closeCheatSheetBtn.addEventListener('click', () => closeCheatSheetModal());
+    }
+    const cheatSheetLangSelect = document.getElementById('cheat-sheet-lang-select');
+    if (cheatSheetLangSelect) {
+        cheatSheetLangSelect.addEventListener('change', (e) => {
+            drawParticleCheatSheet(e.target.value);
+        });
+    }
+    const downloadCheatSheetBtn = document.getElementById('btn-download-cheat-sheet');
+    if (downloadCheatSheetBtn) {
+        downloadCheatSheetBtn.addEventListener('click', () => downloadParticleCheatSheet());
+    }
+    const shareCheatSheetBtn = document.getElementById('btn-share-cheat-sheet');
+    if (shareCheatSheetBtn) {
+        shareCheatSheetBtn.addEventListener('click', () => shareParticleCheatSheet());
+    }
+
     [
         { overlayId: 'daily-overlay', closeFn: closeDailyChallenge },
         { overlayId: 'certificate-overlay', closeFn: closeCertificateModal },
-        { overlayId: 'duel-overlay', closeFn: closeDuelModal }
+        { overlayId: 'duel-overlay', closeFn: closeDuelModal },
+        { overlayId: 'cheat-sheet-overlay', closeFn: closeCheatSheetModal }
     ].forEach(({ overlayId, closeFn }) => {
         const overlay = document.getElementById(overlayId);
         if (overlay) {
@@ -1955,6 +2402,7 @@ function setupViralGrowthEngine() {
             closeDailyChallenge();
             closeCertificateModal();
             closeDuelModal();
+            closeCheatSheetModal();
         }
     });
 }
@@ -2003,6 +2451,9 @@ function handleHashRouting() {
         return true;
     } else if (tab === 'duel') {
         openDuelModal(params);
+        return true;
+    } else if (tab === 'cheatsheet') {
+        openCheatSheetModal();
         return true;
     }
 
@@ -2101,6 +2552,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js').catch(err => console.log('PWA ServiceWorker registration failed:', err));
     }
+    setupPwaInstallPrompt();
 
     // Keyboard Shortcuts (1-4 for battle, Space/Arrows for flashcards)
     setupKeyboardShortcuts();
@@ -2125,7 +2577,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupKeyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
         // Ignore game shortcuts while any modal overlay is open
-        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show, .daily-overlay.show, .cert-overlay.show, .duel-overlay.show')) return;
+        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show, .daily-overlay.show, .cert-overlay.show, .duel-overlay.show, .cheat-sheet-overlay.show')) return;
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
             return;
@@ -2198,7 +2650,14 @@ function loadGameData() {
             const diffMs = currDate - prevDate;
             const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
             if (diffDays > 1) {
-                player.streak = 0; // Streak reset due to inactivity
+                if (loaded.inventory && loaded.inventory.streakFreeze > 0) {
+                    loaded.inventory.streakFreeze--;
+                    if (typeof showToast === 'function') {
+                        showToast(`❄️ Streak Freeze activated! Your ${player.streak}-day streak was saved!`);
+                    }
+                } else {
+                    player.streak = 0; // Streak reset due to inactivity
+                }
             }
         }
         
@@ -2206,10 +2665,11 @@ function loadGameData() {
             player.inventory = {
                 potion: typeof loaded.inventory.potion === 'number' ? loaded.inventory.potion : 1,
                 shield: typeof loaded.inventory.shield === 'number' ? loaded.inventory.shield : 1,
-                hint: typeof loaded.inventory.hint === 'number' ? loaded.inventory.hint : 1
+                hint: typeof loaded.inventory.hint === 'number' ? loaded.inventory.hint : 1,
+                streakFreeze: typeof loaded.inventory.streakFreeze === 'number' ? loaded.inventory.streakFreeze : 0
             };
         } else {
-            player.inventory = { potion: 1, shield: 1, hint: 1 };
+            player.inventory = { potion: 1, shield: 1, hint: 1, streakFreeze: 0 };
         }
         
         if (loaded.stats && typeof loaded.stats === 'object') {
@@ -2301,9 +2761,19 @@ function updateStreak() {
             showToast(`🔥 Streak extended! ${player.streak} days in a row!`);
         }
     } else if (diffDays > 1) {
-        player.streak = 1;
-        player.lastActiveDate = today;
-        addLog("Streak reset to 1 day. Keep up the daily practice! 💪", "system");
+        if (player.inventory && player.inventory.streakFreeze > 0) {
+            player.inventory.streakFreeze--;
+            player.streak++;
+            player.lastActiveDate = today;
+            addLog(`❄️ Streak Freeze activated! Your ${player.streak}-day streak was saved!`, 'heal');
+            if (typeof showToast === 'function') {
+                showToast(`❄️ Streak Freeze activated! ${player.streak} days preserved!`);
+            }
+        } else {
+            player.streak = 1;
+            player.lastActiveDate = today;
+            addLog("Streak reset to 1 day. Keep up the daily practice! 💪", "system");
+        }
     }
     
     saveGameData();
@@ -2359,19 +2829,21 @@ function updateHUDDisplays() {
 }
 
 function updateInventoryBadges() {
-    const items = ['potion', 'shield', 'hint'];
+    const items = ['potion', 'shield', 'hint', 'streakFreeze'];
     items.forEach(item => {
         const qty = player.inventory[item] || 0;
         const badge = document.getElementById(`badge-${item}`);
         const slot = document.getElementById(`slot-${item}`);
         
         if (qty > 0) {
-            badge.textContent = qty;
-            badge.style.display = 'flex';
-            slot.classList.remove('empty');
+            if (badge) {
+                badge.textContent = qty;
+                badge.style.display = 'flex';
+            }
+            if (slot) slot.classList.remove('empty');
         } else {
-            badge.style.display = 'none';
-            slot.classList.add('empty');
+            if (badge) badge.style.display = 'none';
+            if (slot) slot.classList.add('empty');
         }
     });
 }
@@ -3898,12 +4370,14 @@ function setupRPGShop() {
             let cost = 50;
             if (item === 'shield') cost = 80;
             if (item === 'hint') cost = 120;
+            if (item === 'streakFreeze') cost = 100;
             
             if (player.gold >= cost) {
                 player.gold -= cost;
                 player.inventory[item] = (player.inventory[item] || 0) + 1;
                 
-                addLog(`Bought 1 ${item === 'potion' ? 'Healing Potion' : item === 'shield' ? 'Grammar Shield' : 'Hint Scroll'} from merchant shop!`, 'system');
+                const itemNames = { potion: 'Healing Potion', shield: 'Grammar Shield', hint: 'Hint Scroll', streakFreeze: 'Streak Freeze' };
+                addLog(`Bought 1 ${itemNames[item] || item} from merchant shop!`, 'system');
                 updateHUDDisplays();
                 saveGameData();
             } else {
