@@ -133,11 +133,12 @@
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
                         <div class="stats-badge">
-                            <span><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> <span data-i18n="badge.streak">Streak:</span> <strong id="streak-count">1 Day</strong></span>
+                            <span id="streak-badge-btn" style="cursor: pointer;" title="Share your daily study streak!"><i class="fa-solid fa-fire" style="color: var(--accent-pink);"></i> <span data-i18n="badge.streak">Streak:</span> <strong id="streak-count">1 Day</strong></span>
                             <span><i class="fa-solid fa-graduation-cap" style="color: var(--accent-teal);"></i> <span data-i18n="badge.rank">Rank:</span> <strong id="rank-name">Novice</strong></span>
                             <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy">Accuracy:</span> <strong>0%</strong> (0/0)</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
+                            <button id="btn-share-app" class="btn" style="padding: 8px 16px; border-radius: 50px; background: rgba(0, 206, 201, 0.15); border: 1px solid rgba(0, 206, 201, 0.35); color: var(--accent-teal); font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Share KotoQuest"><i class="fa-solid fa-share-nodes"></i> <span data-i18n="btn.shareApp">Share App</span></button>
                             <div style="display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
                                 <label for="native-lang-select" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid fa-earth-asia"></i> <span data-i18n="label.nativelang">Native Language:</span></label>
                                 <select id="native-lang-select" style="background: transparent; border: none; color: #fff; font-family: var(--font-sans); font-weight: 700; outline: none; cursor: pointer; font-size: 0.85rem;">

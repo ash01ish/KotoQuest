@@ -786,6 +786,187 @@ const CANVAS_GUIDES = [
     { ja: 'そ', ro: 'so', type: 'Hiragana' }
 ];
 
+// --- ==================================================== ---
+// --- FLOATING TOAST & VIRAL SOCIAL SHARING ENGINE         ---
+// --- ==================================================== ---
+window.showToast = function(message) {
+    let toast = document.getElementById('toast-notice');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast-notice';
+        toast.className = 'toast-notice';
+        document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: var(--accent-teal);"></i> ${message}`;
+    toast.classList.add('show');
+    clearTimeout(toast._hideTimer);
+    toast._hideTimer = setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3200);
+};
+
+window.shareQuestProgress = function({ title, text, url }) {
+    const shareUrl = url || window.location.href;
+    const fullText = text ? `${text}\n${shareUrl}` : shareUrl;
+    if (navigator.share) {
+        navigator.share({
+            title: title || 'KotoQuest - Japanese Academy',
+            text: text,
+            url: shareUrl
+        }).catch(() => {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(fullText);
+        window.showToast('Copied to clipboard!');
+    } else {
+        prompt('Copy this link:', shareUrl);
+    }
+};
+
+function addBragLogEntry(label, onShare) {
+    const box = document.getElementById('battle-log');
+    if (!box) return;
+    const entry = document.createElement('div');
+    entry.className = 'log-entry system';
+    entry.style.display = 'flex';
+    entry.style.alignItems = 'center';
+    entry.style.gap = '8px';
+    entry.style.margin = '4px 0';
+    
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'share-btn share-btn-primary';
+    btn.style.padding = '3px 10px';
+    btn.style.fontSize = '0.75rem';
+    btn.style.cursor = 'pointer';
+    btn.innerHTML = `<i class="fa-solid fa-share-nodes"></i> ${label}`;
+    btn.onclick = (e) => {
+        e.stopPropagation();
+        onShare();
+    };
+    entry.appendChild(btn);
+    box.appendChild(entry);
+    box.scrollTop = box.scrollHeight;
+}
+
+function setupSocialSharing() {
+    const shareAppBtn = document.getElementById('btn-share-app');
+    if (shareAppBtn) {
+        shareAppBtn.addEventListener('click', () => {
+            const currentTab = (window.location.hash || '#arena').replace('#', '').split('?')[0];
+            const url = `https://kotoquest.pages.dev/#${currentTab}`;
+            const text = `🏯 KotoQuest — Free, offline-first JLPT N5–N1 Japanese academy with 8,129-word dictionary and SOV grammar bridge (Telugu, Hindi, Tamil, Korean, Spanish, English)!`;
+            window.shareQuestProgress({
+                title: 'KotoQuest - Gamified Japanese Academy',
+                text: text,
+                url: url
+            });
+        });
+    }
+
+    const streakBtn = document.getElementById('streak-badge-btn');
+    if (streakBtn) {
+        streakBtn.addEventListener('click', () => {
+            const days = player.streak || 1;
+            const text = `🔥 I have a ${days}-day Japanese study streak on KotoQuest! Free offline JLPT academy:`;
+            window.shareQuestProgress({
+                title: `${days}-Day Study Streak on KotoQuest`,
+                text: text,
+                url: 'https://kotoquest.pages.dev/#curriculum'
+            });
+        });
+    }
+}
+
+// --- ==================================================== ---
+// --- URL HASH ROUTING & DEEP LINKING ENGINE               ---
+// --- ==================================================== ---
+function parseHash() {
+    const raw = (window.location.hash || '').replace(/^#/, '').trim();
+    if (!raw) return null;
+    const [tab, queryString] = raw.split('?');
+    const params = {};
+    if (queryString) {
+        new URLSearchParams(queryString).forEach((val, key) => {
+            params[key] = val;
+        });
+    }
+    return { tab: tab.toLowerCase(), params };
+}
+
+function updateURLHash(tab, params = {}) {
+    let hash = '#' + tab;
+    const query = [];
+    for (const [k, v] of Object.entries(params)) {
+        if (v) query.push(`${encodeURIComponent(k)}=${encodeURIComponent(v)}`);
+    }
+    if (query.length > 0) hash += '?' + query.join('&');
+    if (window.location.hash !== hash) {
+        history.replaceState(null, '', hash);
+    }
+}
+window.updateURLHash = updateURLHash;
+
+function handleHashRouting() {
+    const parsed = parseHash();
+    if (!parsed || !parsed.tab) return false;
+    
+    const { tab, params } = parsed;
+    const targetEl = document.getElementById(tab);
+    if (!targetEl) return false;
+    
+    // Activate main tab without re-updating hash to prevent loops
+    if (typeof window.activateTab === 'function') {
+        window.activateTab(tab, true);
+    }
+    
+    // Handle sub-states
+    if (tab === 'curriculum') {
+        if (params.lesson && typeof window.activateLesson === 'function') {
+            window.activateLesson(params.lesson, true);
+            player.currentLesson = params.lesson;
+            saveGameData();
+        }
+    } else if (tab === 'arena') {
+        if (params.tier) {
+            const tierUpper = params.tier.toUpperCase();
+            const btn = document.querySelector(`#quest-tier-selector .quest-tier-btn[data-tier="${tierUpper}"]`);
+            if (btn && !btn.classList.contains('active')) {
+                btn.click();
+            }
+        }
+    } else if (tab === 'bridge') {
+        if (params.p) {
+            const pLower = params.p.toLowerCase();
+            const btn = document.querySelector(`#particle-calc-buttons .p-calc-btn[data-p="${pLower}"]`);
+            if (btn) btn.click();
+        }
+    } else if (tab === 'kana') {
+        if (params.type) {
+            const btn = document.querySelector(`#kana-type-toggle .toggle-btn[data-type="${params.type.toLowerCase()}"]`);
+            if (btn) btn.click();
+        }
+    } else if (tab === 'exam' || tab === 'reading' || tab === 'listening') {
+        if (typeof window.renderPracticeTab === 'function') {
+            window.renderPracticeTab(tab, params.level);
+        }
+    }
+    return true;
+}
+
+function setupHashRouting() {
+    window.addEventListener('hashchange', () => {
+        handleHashRouting();
+    });
+    
+    const routed = handleHashRouting();
+    if (!routed) {
+        const initialTab = (player.lastTab && document.getElementById(player.lastTab)) ? player.lastTab : 'arena';
+        if (typeof window.activateTab === 'function') {
+            window.activateTab(initialTab);
+        }
+    }
+}
+
 // --- APP INITIALIZATION ---
 document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
@@ -833,6 +1014,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setupCardTilt();
     setupHeroParallax();
     setupArena3dToggle();
+
+    // Social Sharing & Bragging Loops
+    setupSocialSharing();
+
+    // Deep Linking & Hash Routing
+    setupHashRouting();
     
     // Draw initial HUD & start first battle
     updateHUDDisplays();
@@ -1014,6 +1201,9 @@ function updateStreak() {
         player.streak++;
         player.lastActiveDate = today;
         addLog(`Streak extended! You've studied ${player.streak} days in a row! 🔥`, 'system');
+        if (typeof showToast === 'function') {
+            showToast(`🔥 Streak extended! ${player.streak} days in a row!`);
+        }
     } else if (diffDays > 1) {
         player.streak = 1;
         player.lastActiveDate = today;
@@ -1136,7 +1326,7 @@ function setupTabs() {
     const navTabs = document.querySelectorAll('.nav-tab');
     const tabPanels = document.querySelectorAll('.tab-content');
 
-    const activateTab = (targetTab) => {
+    const activateTab = (targetTab, skipHash = false) => {
         navTabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-tab') === targetTab));
         tabPanels.forEach(p => p.classList.remove('active'));
         const targetEl = document.getElementById(targetTab);
@@ -1145,7 +1335,11 @@ function setupTabs() {
             resizeCanvas();
             drawCanvasGuide();
         }
+        if (!skipHash && typeof updateURLHash === 'function') {
+            updateURLHash(targetTab);
+        }
     };
+    window.activateTab = activateTab;
 
     navTabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -1156,8 +1350,8 @@ function setupTabs() {
         });
     });
 
-    // Resume the tab the user was last on.
-    if (player.lastTab && document.getElementById(player.lastTab)) {
+    // Resume the tab the user was last on (only if no hash is present in the URL).
+    if (!window.location.hash && player.lastTab && document.getElementById(player.lastTab)) {
         activateTab(player.lastTab);
     }
 }
@@ -1231,14 +1425,18 @@ function setupCurriculum() {
     const panes = document.querySelectorAll('.day-pane');
     if (!nav) return;
 
-    const activateLesson = (paneId) => {
+    const activateLesson = (paneId, skipHash = false) => {
         nav.querySelectorAll('.lesson-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-pane') === paneId));
         panes.forEach(p => p.classList.remove('active'));
         const pane = document.getElementById(paneId);
         if (pane) pane.classList.add('active');
         ensureLessonI18n(renderLessonSummary);
         renderLessonEnControls();
+        if (!skipHash && typeof updateURLHash === 'function') {
+            updateURLHash('curriculum', { lesson: paneId });
+        }
     };
+    window.activateLesson = activateLesson;
 
     let firstPane = null;
     CURRICULUM.forEach(group => {
@@ -1271,7 +1469,7 @@ function setupCurriculum() {
 
     // Resume the lesson the user was last on, else open the first one.
     const resume = (player.currentLesson && document.getElementById(player.currentLesson)) ? player.currentLesson : firstPane;
-    if (resume) activateLesson(resume);
+    if (resume) activateLesson(resume, true);
 }
 
 // --- KANA GRID GENERATION ---
@@ -2170,6 +2368,10 @@ function setupRPGQuestArena() {
             currentTier = btn.getAttribute('data-tier');
             addLog(`Quest changed to ${currentTier} Difficulty. Spawning boss...`, 'system');
             startNewBattle();
+            const activeTab = document.querySelector('.nav-tab.active');
+            if (activeTab && activeTab.getAttribute('data-tab') === 'arena' && typeof updateURLHash === 'function') {
+                updateURLHash('arena', { tier: currentTier });
+            }
         });
     });
 
@@ -2494,6 +2696,7 @@ function checkBattleResolution() {
         player.gold += activeEnemy.goldReward;
         player.xp += activeEnemy.xpReward;
 
+        let leveledUp = false;
         while (player.xp >= player.maxXp) {
             player.level++;
             player.xp -= player.maxXp;
@@ -2501,10 +2704,31 @@ function checkBattleResolution() {
             player.hp = player.maxHp;
             player.maxXp = Math.round(player.maxXp * 1.5);
             addLog(`LEVEL UP! You reached Level ${player.level}! Max HP increased to ${player.maxHp}!`, 'critical');
+            leveledUp = true;
         }
         
         updateHUDDisplays();
         saveGameData();
+
+        if (leveledUp) {
+            addBragLogEntry(`🎉 Share Level ${player.level}!`, () => {
+                const text = `⚔️ I reached Level ${player.level} on KotoQuest! Defeating monsters while mastering Japanese.\nFree offline JLPT academy:`;
+                window.shareQuestProgress({
+                    title: `Level ${player.level} on KotoQuest`,
+                    text: text,
+                    url: `https://kotoquest.pages.dev/#arena?tier=${currentTier}`
+                });
+            });
+        } else if (currentTier === 'N1' || currentTier === 'N2' || currentTier === 'N3') {
+            addBragLogEntry(`⚔️ Brag Victory over ${activeEnemy.name}!`, () => {
+                const text = `⚔️ I defeated ${activeEnemy.name} (JLPT ${currentTier}) in KotoQuest Quest Arena!`;
+                window.shareQuestProgress({
+                    title: `Defeated ${activeEnemy.name} on KotoQuest`,
+                    text: text,
+                    url: `https://kotoquest.pages.dev/#arena?tier=${currentTier}`
+                });
+            });
+        }
         
         setTimeout(() => {
             startNewBattle();
@@ -2593,6 +2817,11 @@ function setupTrilingualCalculator() {
             
             const key = btn.getAttribute('data-p');
             renderParticleCalculator(key);
+
+            const activeTab = document.querySelector('.nav-tab.active');
+            if (activeTab && activeTab.getAttribute('data-tab') === 'bridge' && typeof updateURLHash === 'function') {
+                updateURLHash('bridge', { p: key });
+            }
         });
     });
 
