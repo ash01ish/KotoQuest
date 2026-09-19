@@ -48,15 +48,6 @@
         document.head.appendChild(s);
     }
 
-    function loadScript(src, cb) {
-        if (loadedSrc[src]) { cb(); return; }
-        const s = document.createElement('script');
-        s.src = src;
-        s.onload = () => { loadedSrc[src] = true; cb(); };
-        s.onerror = () => { console.log('practice: failed to load', src); cb(); };
-        document.head.appendChild(s);
-    }
-
     // Award XP/gold on the same level-up curve as the arena.
     // ponytail: mirrors the arena's inline level-up (checkBattleResolution); a
     // 6-line dup beats refactoring that hot path just to share it.
@@ -529,6 +520,15 @@
         rendered[tab] = true;
         RENDERERS[tab]();
     }
+    // Allow external callers (e.g. applyNativeLanguageNuances in app.js) to re-render
+    // practice modules in the newly selected language.
+    window.refreshPracticeModules = function() {
+        for (const tab in rendered) {
+            if (rendered[tab] && RENDERERS[tab]) {
+                RENDERERS[tab]();
+            }
+        }
+    };
 
     document.addEventListener('DOMContentLoaded', () => {
         const nav = document.getElementById('main-nav');

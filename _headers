@@ -11,3 +11,7 @@
   Cache-Control: public, max-age=0, must-revalidate
 /js/vocab_db.js
   Cache-Control: public, max-age=0, must-revalidate
+/js/practice.js
+  Cache-Control: public, max-age=0, must-revalidate
+/js/arena3d.js
+  Cache-Control: public, max-age=0, must-revalidate

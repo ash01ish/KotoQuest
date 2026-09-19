@@ -1091,15 +1091,29 @@ function updateInventoryBadges() {
 }
 
 // --- SPEECH SYNTHESIS ENGINE ---
+let cachedJaVoice = null;
+function loadJapaneseVoice() {
+    if (!('speechSynthesis' in window)) return;
+    const voices = window.speechSynthesis.getVoices();
+    if (voices && voices.length > 0) {
+        cachedJaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP' || (v.lang && v.lang.startsWith('ja'))) || null;
+    }
+}
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    loadJapaneseVoice();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = loadJapaneseVoice;
+    }
+}
+
 function speakJapanese(text, rate) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'ja-JP';
 
-        const voices = window.speechSynthesis.getVoices();
-        const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang.startsWith('ja'));
-        if (jaVoice) utterance.voice = jaVoice;
+        if (!cachedJaVoice) loadJapaneseVoice();
+        if (cachedJaVoice) utterance.voice = cachedJaVoice;
 
         utterance.rate = typeof rate === 'number' ? rate : 0.8;
         window.speechSynthesis.speak(utterance);
@@ -1312,25 +1326,35 @@ function setupCanvas() {
     canvas.addEventListener('mouseup', stopDraw);
     canvas.addEventListener('mouseleave', stopDraw);
     
+    function getCanvasCoords(clientX, clientY) {
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = rect.width ? canvas.width / rect.width : 1;
+        const scaleY = rect.height ? canvas.height / rect.height : 1;
+        return {
+            x: (clientX - rect.left) * scaleX,
+            y: (clientY - rect.top) * scaleY
+        };
+    }
+
     // Mobile Touch binds
     canvas.addEventListener('touchstart', (e) => {
-        const touch = e.touches[0];
-        const rect = canvas.getBoundingClientRect();
-        isDrawing = true;
-        lastX = touch.clientX - rect.left;
-        lastY = touch.clientY - rect.top;
-    });
-    canvas.addEventListener('touchmove', (e) => {
-        if (!isDrawing) return;
+        if (!e.touches || e.touches.length === 0) return;
         e.preventDefault();
         const touch = e.touches[0];
-        const rect = canvas.getBoundingClientRect();
-        const curX = touch.clientX - rect.left;
-        const curY = touch.clientY - rect.top;
-        drawStroke(lastX, lastY, curX, curY);
-        lastX = curX;
-        lastY = curY;
-    });
+        isDrawing = true;
+        const coords = getCanvasCoords(touch.clientX, touch.clientY);
+        lastX = coords.x;
+        lastY = coords.y;
+    }, { passive: false });
+    canvas.addEventListener('touchmove', (e) => {
+        if (!isDrawing || !e.touches || e.touches.length === 0) return;
+        e.preventDefault();
+        const touch = e.touches[0];
+        const coords = getCanvasCoords(touch.clientX, touch.clientY);
+        drawStroke(lastX, lastY, coords.x, coords.y);
+        lastX = coords.x;
+        lastY = coords.y;
+    }, { passive: false });
     canvas.addEventListener('touchend', stopDraw);
     
     document.getElementById('btn-clear-canvas').addEventListener('click', () => {
@@ -1363,15 +1387,19 @@ function setupCanvas() {
 function startDraw(e) {
     isDrawing = true;
     const rect = canvas.getBoundingClientRect();
-    lastX = e.clientX - rect.left;
-    lastY = e.clientY - rect.top;
+    const scaleX = rect.width ? canvas.width / rect.width : 1;
+    const scaleY = rect.height ? canvas.height / rect.height : 1;
+    lastX = (e.clientX - rect.left) * scaleX;
+    lastY = (e.clientY - rect.top) * scaleY;
 }
 
 function drawing(e) {
     if (!isDrawing) return;
     const rect = canvas.getBoundingClientRect();
-    const curX = e.clientX - rect.left;
-    const curY = e.clientY - rect.top;
+    const scaleX = rect.width ? canvas.width / rect.width : 1;
+    const scaleY = rect.height ? canvas.height / rect.height : 1;
+    const curX = (e.clientX - rect.left) * scaleX;
+    const curY = (e.clientY - rect.top) * scaleY;
     drawStroke(lastX, lastY, curX, curY);
     lastX = curX;
     lastY = curY;
@@ -1584,6 +1612,7 @@ function rateCard(rating) {
     
     srs.nextReviewTime = Date.now() + nextMs;
     updateStreak();
+    saveGameData();
     
     // Slide card effect
     const box = document.getElementById('flashcard-card-box');
@@ -2038,7 +2067,19 @@ function checkBuildSentence() {
     if (matches) {
         ws.classList.add('correct');
         feedback.className = 'sentence-feedback success';
-        feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Correct order!';
+        feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> Correct order! (+15 XP, +10 Gold)';
+        player.xp += 15;
+        player.gold += 10;
+        while (player.xp >= player.maxXp) {
+            player.level++;
+            player.xp -= player.maxXp;
+            player.maxHp += 20;
+            player.hp = player.maxHp;
+            player.maxXp = Math.round(player.maxXp * 1.5);
+            addLog(`LEVEL UP! You reached Level ${player.level}! Max HP increased to ${player.maxHp}!`, 'critical');
+        }
+        updateHUDDisplays();
+        saveGameData();
         speakJapanese(sequence.join(''));
         updateStreak();
     } else {
@@ -2655,6 +2696,11 @@ function applyNativeLanguageNuances() {
         renderLessonEnControls();
     });
 
+    // 0d. Refresh practice modules (reading, listening, exam) in the new native language
+    if (typeof window.refreshPracticeModules === 'function') {
+        window.refreshPracticeModules();
+    }
+
     // 1. Subtitle text
     const subtitle = document.getElementById('hero-subtitle');
     if (subtitle) {
@@ -2669,17 +2715,31 @@ function applyNativeLanguageNuances() {
         subtitle.innerHTML = langSubtitles[lang] || 'Japanese Mastery Portal (JLPT N5 &rarr; N1)';
     }
     
-    // 2. Comparative table columns
-    const teCols = document.querySelectorAll('.lang-col-te');
-    const hiCols = document.querySelectorAll('.lang-col-hi');
-    
-    teCols.forEach(el => el.style.display = 'none');
-    hiCols.forEach(el => el.style.display = 'none');
-    
-    if (lang === 'telugu') {
-        teCols.forEach(el => el.style.display = '');
-    } else if (lang === 'hindi') {
-        hiCols.forEach(el => el.style.display = '');
+    // 2. Comparative table columns (Telugu, Hindi, Tamil, Korean, Spanish)
+    const langCols = {
+        telugu: document.querySelectorAll('.lang-col-te'),
+        hindi: document.querySelectorAll('.lang-col-hi'),
+        tamil: document.querySelectorAll('.lang-col-ta'),
+        korean: document.querySelectorAll('.lang-col-ko'),
+        spanish: document.querySelectorAll('.lang-col-es')
+    };
+    Object.values(langCols).forEach(nodeList => nodeList.forEach(el => el.style.display = 'none'));
+    if (langCols[lang]) {
+        langCols[lang].forEach(el => el.style.display = '');
+    }
+
+    // Update Bridge header title
+    const bridgeTitle = document.getElementById('bridge-header-title');
+    if (bridgeTitle) {
+        const titles = {
+            telugu: 'Linguistic Hacks for Telugu Speakers',
+            hindi: 'Linguistic Hacks for Hindi Speakers',
+            tamil: 'Linguistic Hacks for Tamil Speakers',
+            korean: 'Linguistic Hacks for Korean Speakers',
+            spanish: 'Comparative Grammar Hacks for Spanish Speakers',
+            english: 'SOV Linguistic Hacks vs SVO English'
+        };
+        bridgeTitle.textContent = titles[lang] || 'Linguistic Hacks for SOV Speakers';
     }
     
     // Hide/show Native Column in Calculator Display
