@@ -18,6 +18,7 @@
         'p.examTitle': 'Mock Exam',
         'p.examIntro': 'A short, timed JLPT-style test in three sections — Language Knowledge, Reading, Listening. You pass only if you clear <strong>100/180 overall AND at least 19/60 in every section</strong>, exactly like the real exam. Practice material, not official content.',
         'p.showEn': 'Show English translation',
+        'p.showTranslation': 'Show translation',
         'p.backReading': 'Reading list',
         'p.backListening': 'Listening list',
         'p.backExam': 'Back to mock exams',
@@ -93,10 +94,12 @@
             qt.className = 'practice-q-text';
             qt.textContent = (qi + 1) + '. ' + qq.q;
             card.appendChild(qt);
-            if (qq.q_en) {
+            const code = (typeof LANG_PACK_CODES !== 'undefined' && typeof player !== 'undefined') ? LANG_PACK_CODES[player.nativeLanguage] : null;
+            const nativeQ = (code && qq['q_' + code]) || qq.q_en;
+            if (nativeQ) {
                 const en = document.createElement('div');
                 en.className = 'practice-q-en';
-                en.textContent = qq.q_en;
+                en.textContent = nativeQ;
                 card.appendChild(en);
             }
             const opts = document.createElement('div');
@@ -205,7 +208,10 @@
         passage.className = 'reading-passage';
         passage.textContent = item.passage;
         card.appendChild(passage);
-        if (item.passage_en) card.appendChild(detailsBlock(t('p.showEn'),item.passage_en));
+        const code = (typeof LANG_PACK_CODES !== 'undefined' && typeof player !== 'undefined') ? LANG_PACK_CODES[player.nativeLanguage] : null;
+        const nativePassage = (code && item['passage_' + code]) || item.passage_en;
+        const toggleLabel = (code && code !== 'en') ? (t('p.showTranslation') || 'Show translation') : t('p.showEn');
+        if (nativePassage) card.appendChild(detailsBlock(toggleLabel, nativePassage));
 
         const qWrap = document.createElement('div');
         qWrap.className = 'practice-questions';
@@ -318,7 +324,10 @@
             script.className = 'listening-script';
             script.textContent = item.script;
             after.appendChild(script);
-            if (item.transcript_en) after.appendChild(detailsBlock(t('p.showEn'),item.transcript_en));
+            const code = (typeof LANG_PACK_CODES !== 'undefined' && typeof player !== 'undefined') ? LANG_PACK_CODES[player.nativeLanguage] : null;
+            const nativeTranscript = (code && item['transcript_' + code]) || item.transcript_en;
+            const toggleLabel = (code && code !== 'en') ? (t('p.showTranslation') || 'Show translation') : t('p.showEn');
+            if (nativeTranscript) after.appendChild(detailsBlock(toggleLabel, nativeTranscript));
         });
         root.appendChild(card);
     }

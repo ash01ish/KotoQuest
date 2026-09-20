@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KotoQuest - Free gamified Japanese N5 to N1 academy. Learn Japanese grammar, particles, and vocabulary through native Telugu, Hindi, Korean, Tamil, Spanish, and English syntactic bridges.">
-    <meta name="keywords" content="Japanese, JLPT, N1, N2, N3, N4, N5, learn Japanese, Telugu, Hindi, Korean, Tamil, Spanish, gamified, RPG, particles, grammar, spaced repetition, SRS, flashcards">
+    <meta name="description" content="KotoQuest - Free gamified Japanese N5 to N1 academy. Learn Japanese grammar, particles, and vocabulary through native Telugu, Hindi, Korean, Tamil, Spanish, Kannada, Malayalam, and English syntactic bridges.">
+    <meta name="keywords" content="Japanese, JLPT, N1, N2, N3, N4, N5, learn Japanese, Telugu, Hindi, Korean, Tamil, Spanish, Kannada, Malayalam, gamified, RPG, particles, grammar, spaced repetition, SRS, flashcards">
     <meta name="author" content="Ashish Thirunagari">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#14161f">
@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://kotoquest.pages.dev/">
     <meta property="og:site_name" content="KotoQuest">
     <meta property="og:title" content="KotoQuest - Gamified Multilingual Japanese N1 Academy">
-    <meta property="og:description" content="Learn Japanese through your native grammar. Free, open-source JLPT N5→N1 academy with 8,129-word dictionary & RPG combat loop for Telugu, Hindi, Korean, Tamil, Spanish & English speakers.">
+    <meta property="og:description" content="Learn Japanese through your native grammar. Free, open-source JLPT N5→N1 academy with 8,129-word dictionary & RPG combat loop for Telugu, Hindi, Korean, Tamil, Spanish, Kannada, Malayalam & English speakers.">
     <meta property="og:image" content="https://kotoquest.pages.dev/assets/hero.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://kotoquest.pages.dev/">
     <meta name="twitter:title" content="KotoQuest - Gamified Multilingual Japanese N1 Academy">
-    <meta name="twitter:description" content="Learn Japanese through your native grammar. Free, open-source JLPT N5→N1 academy with 8,129-word dictionary & RPG combat loop for Telugu, Hindi, Korean, Tamil, Spanish & English speakers.">
+    <meta name="twitter:description" content="Learn Japanese through your native grammar. Free, open-source JLPT N5→N1 academy with 8,129-word dictionary & RPG combat loop for Telugu, Hindi, Korean, Tamil, Spanish, Kannada, Malayalam & English speakers.">
     <meta name="twitter:image" content="https://kotoquest.pages.dev/assets/hero.jpg">
 
     <!-- Favicon -->
@@ -97,6 +97,8 @@
                     <button type="button" class="onboard-lang-btn" data-lang="korean">Korean (한국어)</button>
                     <button type="button" class="onboard-lang-btn" data-lang="tamil">Tamil (தமிழ்)</button>
                     <button type="button" class="onboard-lang-btn" data-lang="spanish">Spanish (Español)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="kannada">Kannada (ಕನ್ನಡ)</button>
+                    <button type="button" class="onboard-lang-btn" data-lang="malayalam">Malayalam (മലയാളം)</button>
                 </div>
             </div>
 
@@ -151,6 +153,8 @@
                                     <option value="korean" style="background: #14161f; color: #fff;">Korean (한국어)</option>
                                     <option value="tamil" style="background: #14161f; color: #fff;">Tamil (தமிழ்)</option>
                                     <option value="spanish" style="background: #14161f; color: #fff;">Spanish (Español)</option>
+                                    <option value="kannada" style="background: #14161f; color: #fff;">Kannada (ಕನ್ನಡ)</option>
+                                    <option value="malayalam" style="background: #14161f; color: #fff;">Malayalam (മലയാളം)</option>
                                 </select>
                             </div>
                             <button id="btn-reset-game" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset</span></button>
@@ -2399,7 +2403,14 @@
                         <option value="tamil">Tamil (தமிழ்)</option>
                         <option value="korean">Korean (한국어)</option>
                         <option value="spanish">Spanish (Español)</option>
+                        <option value="kannada">Kannada (ಕನ್ನಡ)</option>
+                        <option value="malayalam">Malayalam (മലയാളം)</option>
                         <option value="english">English</option>
+                    </select>
+                    <label for="cheat-sheet-set-select" style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-left: 10px;"><i class="fa-solid fa-layer-group"></i> Particle Set:</label>
+                    <select id="cheat-sheet-set-select" class="cert-input" style="width: auto; padding: 6px 12px; font-size: 0.85rem;">
+                        <option value="core">Core 10 (は, が, を, に, で, の, と, から, まで, も)</option>
+                        <option value="advanced">Advanced 10 (へ, より, か, や, ね, よ, し, のに, ので, たら/ば)</option>
                     </select>
                 </div>
                 <div class="cheat-sheet-actions">
