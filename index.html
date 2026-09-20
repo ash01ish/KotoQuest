@@ -140,6 +140,8 @@
                             <span id="accuracy-display"><i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> <span data-i18n="badge.accuracy">Accuracy:</span> <strong>0%</strong> (0/0)</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                            <button id="btn-global-search" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(0, 206, 201, 0.15); border: 1px solid rgba(0, 206, 201, 0.35); color: var(--accent-teal); font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Universal Dictionary & Grammar Search (Press /)"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="btn.search">Search (/)</span></button>
+                            <button id="btn-audio-toggle" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(253, 203, 110, 0.15); border: 1px solid rgba(253, 203, 110, 0.35); color: var(--accent-gold); font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Toggle Retro Sound Effects"><i class="fa-solid fa-volume-high" id="audio-toggle-icon"></i> <span id="audio-toggle-text">SFX</span></button>
                             <button id="btn-open-daily" class="btn btn-daily-quest" style="padding: 8px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Wordle-style Daily Japanese Quest"><i class="fa-solid fa-calendar-check"></i> <span>Daily Quest</span></button>
                             <button id="btn-open-cert" class="btn btn-certificate" style="padding: 8px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Generate your Japanese Mastery Certificate"><i class="fa-solid fa-award"></i> <span>Certificate</span></button>
                             <button id="btn-open-duel" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.35); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;" title="Challenge a friend to a 1v1 Japanese Duel"><i class="fa-solid fa-bolt"></i> <span>1v1 Duel</span></button>
@@ -176,6 +178,9 @@
                 <button class="nav-tab" data-tab="kana">
                     <i class="fa-solid fa-font"></i> <span data-i18n="nav.kana">Kana Charts</span>
                 </button>
+                <button class="nav-tab" data-tab="kanji">
+                    <i class="fa-solid fa-torii-gate"></i> <span data-i18n="nav.kanji">Kanji Dojo</span>
+                </button>
                 <button class="nav-tab" data-tab="canvas">
                     <i class="fa-solid fa-paintbrush"></i> <span data-i18n="nav.canvas">Canvas Writer</span>
                 </button>
@@ -199,7 +204,7 @@
 
         <!-- Dynamic Game HUD (Level, HP, XP, Gold, Inventory) -->
         <div class="game-hud">
-            <div class="hud-level" id="player-level-display">Lv. 1</div>
+            <div class="hud-level" id="player-level-display" style="cursor: pointer;" title="Click to view Samurai Profile & Trophy Room">Lv. 1</div>
             
             <div class="hud-stat">
                 <div class="stat-label">
@@ -557,6 +562,24 @@
                                     <li>Read editorial essays and listen to academic debates.</li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- JLPT Grammar Compendium & Handbook -->
+                    <div class="glass-card" style="background: rgba(0,0,0,0.15); border-color: rgba(255,255,255,0.05); margin-top: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                            <div>
+                                <h4 style="color: #fff; margin: 0; font-size: 1.15rem;"><i class="fa-solid fa-scroll" style="color: var(--accent-teal);"></i> <span data-i18n="grammar.title">JLPT Grammar Handbook</span></h4>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 4px 0 0 0;" data-i18n="grammar.desc">Master essential N5 &amp; N4 sentence patterns, structure formulas, and multilingual comparative examples.</p>
+                            </div>
+                            <div class="kanji-filters" id="grammar-level-filters">
+                                <button class="kanji-filter-btn active" data-grammar-filter="all">All (25+)</button>
+                                <button class="kanji-filter-btn" data-grammar-filter="N5">N5 (Basic)</button>
+                                <button class="kanji-filter-btn" data-grammar-filter="N4">N4 (Intermediate)</button>
+                            </div>
+                        </div>
+                        <div class="grammar-cards-grid" id="grammar-handbook-grid">
+                            <!-- Populated dynamically by setupGrammarHandbook in app.js -->
                         </div>
                     </div>
                 </div>
@@ -2090,7 +2113,36 @@
                 </div>
             </section>
 
-            <!-- 5. CANVAS WRITER TAB -->
+            <!-- 5. KANJI DOJO & EXPLORER TAB -->
+            <section id="kanji" class="tab-content">
+                <div class="glass-card">
+                    <div class="kanji-header-box">
+                        <div>
+                            <div class="card-title">
+                                <i class="fa-solid fa-torii-gate" style="color: var(--accent-gold);"></i> <span data-i18n="kanji.title">Kanji Dojo &amp; Explorer</span>
+                                <span class="badge">Joyo &amp; JLPT</span>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px;" data-i18n="kanji.desc">
+                                Master essential Kanji characters with stroke counts, Onyomi &amp; Kunyomi readings, native meanings, compound words, and direct stroke practice.
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                            <div class="kanji-filters" id="kanji-level-filters">
+                                <button class="kanji-filter-btn active" data-filter="all">All (150+)</button>
+                                <button class="kanji-filter-btn" data-filter="N5">N5 (103)</button>
+                                <button class="kanji-filter-btn" data-filter="N4">N4 (50+)</button>
+                            </div>
+                            <input type="text" id="kanji-search-input" class="kanji-search-input" placeholder="Search Kanji / Meaning...">
+                        </div>
+                    </div>
+
+                    <div class="kanji-grid" id="kanji-grid">
+                        <!-- Populated dynamically by setupKanjiDojo in app.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. CANVAS WRITER TAB -->
             <section id="canvas" class="tab-content">
                 <div class="glass-card">
                     <div class="card-title">
@@ -2421,6 +2473,94 @@
         </div>
     </div>
 
+    <!-- Kanji Detail Modal -->
+    <div id="kanji-detail-overlay" class="cheat-sheet-overlay" role="dialog" aria-modal="true" style="display: none;">
+        <div class="cheat-sheet-card glass-card" style="max-width: 550px;">
+            <div class="cheat-sheet-header">
+                <h3><i class="fa-solid fa-torii-gate" style="color: var(--accent-gold);"></i> <span id="kanji-modal-title">Kanji Inspector</span></h3>
+                <button type="button" class="modal-close-btn" id="kanji-modal-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="kanji-detail-body" id="kanji-modal-body">
+                <!-- Dynamically populated -->
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px;">
+                <button type="button" class="btn btn-teal" id="btn-kanji-draw-canvas"><i class="fa-solid fa-paintbrush"></i> Draw in Canvas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Multilingual Search Modal -->
+    <div id="global-search-overlay" class="cheat-sheet-overlay" role="dialog" aria-modal="true" style="display: none;">
+        <div class="cheat-sheet-card glass-card search-modal-box">
+            <div class="cheat-sheet-header">
+                <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--accent-teal);"></i> <span>Universal Search</span></h3>
+                <button type="button" class="modal-close-btn" id="search-modal-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="global-search-input" class="search-input-field" placeholder="Type in Japanese, English, Romaji, or Native language..." autofocus>
+            </div>
+            <div class="search-filter-pills" id="search-filter-pills">
+                <button class="search-pill active" data-search-filter="all">All</button>
+                <button class="search-pill" data-search-filter="vocab">Vocabulary</button>
+                <button class="search-pill" data-search-filter="kanji">Kanji</button>
+                <button class="search-pill" data-search-filter="grammar">Grammar</button>
+            </div>
+            <div class="search-results-box" id="search-results-container">
+                <div style="text-align: center; color: var(--text-muted); padding: 40px 0;">
+                    <i class="fa-solid fa-search" style="font-size: 2rem; margin-bottom: 10px; opacity: 0.5;"></i>
+                    <p>Search over 8,000 words, 150+ kanji, and grammar patterns across 8 languages.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Samurai Profile & Trophy Room Modal -->
+    <div id="samurai-profile-overlay" class="cheat-sheet-overlay" role="dialog" aria-modal="true" style="display: none;">
+        <div class="cheat-sheet-card glass-card profile-modal-box">
+            <div class="cheat-sheet-header">
+                <h3><i class="fa-solid fa-crown" style="color: var(--accent-gold);"></i> <span>Samurai Dojo Profile</span></h3>
+                <button type="button" class="modal-close-btn" id="profile-modal-close-btn" aria-label="Close">&times;</button>
+            </div>
+            <div class="profile-hero-card">
+                <div class="profile-avatar-circle" id="profile-avatar-icon">🏯</div>
+                <div class="profile-info">
+                    <div class="profile-name">
+                        <span id="profile-user-name">Samurai Learner</span>
+                        <span class="profile-title-tag" id="profile-title-badge">Novice</span>
+                    </div>
+                    <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px;">
+                        Level <strong id="profile-level-val" style="color:#fff;">1</strong> &bull; <span id="profile-native-lang">English</span> Speaker
+                    </div>
+                </div>
+            </div>
+            <div class="profile-stats-grid">
+                <div class="profile-stat-box">
+                    <div class="profile-stat-val" id="prof-streak-val" style="color: var(--accent-pink);">1</div>
+                    <div class="profile-stat-lbl">Day Streak</div>
+                </div>
+                <div class="profile-stat-box">
+                    <div class="profile-stat-val" id="prof-accuracy-val" style="color: var(--accent-gold);">0%</div>
+                    <div class="profile-stat-lbl">Accuracy</div>
+                </div>
+                <div class="profile-stat-box">
+                    <div class="profile-stat-val" id="prof-battles-val" style="color: var(--accent-teal);">0</div>
+                    <div class="profile-stat-lbl">Battles Won</div>
+                </div>
+                <div class="profile-stat-box">
+                    <div class="profile-stat-val" id="prof-kanji-val" style="color: #a29bfe;">154</div>
+                    <div class="profile-stat-lbl">Kanji Unlocked</div>
+                </div>
+            </div>
+            <div>
+                <h4 style="color: #fff; margin-bottom: 8px;"><i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i> Trophy Room (Achievements)</h4>
+                <div class="trophy-grid" id="trophy-room-grid">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating help button + contextual per-page help overlay -->
     <button type="button" id="help-fab" class="help-fab" aria-label="Help for this page" title="Help">?</button>
     <div id="help-overlay" class="help-overlay">
@@ -2453,6 +2593,9 @@
     </div>
 
     <!-- Application Script -->
+    <script src="js/audio.js"></script>
+    <script src="js/data/kanji.js"></script>
+    <script src="js/data/grammar.js"></script>
     <script src="js/vocab_db.js"></script>
     <script src="js/app.js"></script>
     <script src="js/practice.js"></script>
