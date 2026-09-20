@@ -45,109 +45,524 @@ let currentQuestQuestions = [];
 
 // --- TRILINGUAL PARTICLE CALCULATOR DATA --// --- TRILINGUAL PARTICLE CALCULATOR DATA ---
 const PARTICLE_CALC_DATA = {
-    wa: {
-        title: 'は (wa)',
-        role: 'Topic Marker',
-        english: 'As for... / (subject focus)',
-        telugu: 'అయితే (aithe) / (unmarked)',
-        hindi: 'तो (toh) / (unmarked)',
-        korean: '은 / 는 (eun / neun)',
-        tamil: 'தனிக்குறி இல்லை (unmarked)',
-        spanish: '(sujeto / nominativo)',
-        examples: [
-            { ja: '私は学生です。', ro: 'Watashi wa gakusei desu.', en: 'I am a student.', te: 'నేను అయితే విద్యార్థిని (Nenu aithe vidyarthini).', hi: 'मैं तो छात्र हूँ (Main toh chhaatr hoon).', ko: '나는 학생입니다 (Naneun haksaeng-imnida).', ta: 'நான் மாணவன் (Naan maanavan).', es: 'Yo soy estudiante.' }
+    "wa": {
+        "title": "は (wa)",
+        "role": "Topic Marker",
+        "english": "As for... / (subject focus)",
+        "telugu": "అయితే (aithe) / (unmarked)",
+        "hindi": "तो (toh) / (unmarked)",
+        "korean": "은 / 는 (eun / neun)",
+        "tamil": "தனிக்குறி இல்லை (unmarked)",
+        "spanish": "(sujeto / nominativo)",
+        "kannada": "ಆದರೆ (aadare) / (unmarked)",
+        "malayalam": "ആകട്ടെ (aakatte) / (unmarked)",
+        "examples": [
+            {
+                "ja": "私は学生です。",
+                "ro": "Watashi wa gakusei desu.",
+                "en": "I am a student.",
+                "te": "నేను అయితే విద్యార్థిని (Nenu aithe vidyarthini).",
+                "hi": "मैं तो छात्र हूँ (Main toh chhaatr hoon).",
+                "ko": "나는 학생입니다 (Naneun haksaeng-imnida).",
+                "ta": "நான் மாணவன் (Naan maanavan).",
+                "es": "Yo soy estudiante.",
+                "kn": "ನಾನು ವಿದ್ಯಾರ್ಥಿ (Naanu vidyarthi).",
+                "ml": "ഞാൻ വിദ്യാർത്ഥിയാണ് (Njaan vidyarthiyaanu)."
+            }
         ]
     },
-    o: {
-        title: 'を (o)',
-        role: 'Direct Object Marker',
-        english: '(Marks receiving noun of the action)',
-        telugu: 'ను / ని (nu / ni)',
-        hindi: 'को (ko) / (unmarked)',
-        korean: '을 / 를 (eul / reul)',
-        tamil: 'ஐ (ai)',
-        spanish: '(objeto directo)',
-        examples: [
-            { ja: '本を読みます。', ro: 'Hon o yomimasu.', en: 'Read a book.', te: 'పుస్తకాన్ని చదువుతాను (Pustakaanni chaduvutaanu).', hi: 'किताब को पढ़ता हूँ (Kitaab ko padhta hoon).', ko: '책을 읽습니다 (Chaegeul ilgseumnida).', ta: 'புத்தகத்தை படிக்கிறேன் (Puthagathai padikkiren).', es: 'Leo un libro.' }
+    "ga": {
+        "title": "が (ga)",
+        "role": "Subject / Identifier",
+        "english": "Subject marker (who/what does action, specific identifier)",
+        "telugu": "కర్త (ముఖ్యంగా ఎవరని గుర్తించేటప్పుడు)",
+        "hindi": "ने / कर्ता सूचक (विशेष पहचान)",
+        "korean": "이 / 가 (i / ga)",
+        "tamil": "எழுவாய் குறிப்பான்",
+        "spanish": "(sujeto específico / identificador)",
+        "kannada": "ಕರ್ತೃ ಸೂಚಕ (ಯಾರು/ಯಾವುದು)",
+        "malayalam": "കർത്താവ് സൂചകം (ആര്/എന്ത്)",
+        "examples": [
+            {
+                "ja": "誰が来ましたか。猫がいます。",
+                "ro": "Dare ga kimashita ka. Neko ga imasu.",
+                "en": "Who came? There is a cat.",
+                "te": "ఎవరు వచ్చారు? పిల్లి ఉంది.",
+                "hi": "कौन आया? बिल्ली है।",
+                "ko": "누가 왔습니까? 고양이가 있습니다.",
+                "ta": "யார் வந்தார்? பூனை இருக்கிறது.",
+                "es": "¿Quién vino? Hay un gato.",
+                "kn": "ಯಾರು ಬಂದರು? ಬೆಕ್ಕು ಇದೆ.",
+                "ml": "ആരാണ് വന്നത്? പൂച്ചയുണ്ട്."
+            }
         ]
     },
-    ni: {
-        title: 'に (ni)',
-        role: 'Destination & Time Marker',
-        english: 'To / At / On',
-        telugu: 'కి / కు (ki / ku)',
-        hindi: 'को / में (ko / mein)',
-        korean: '에 / 에게 (e / ege)',
-        tamil: 'க்கு (ku)',
-        spanish: 'a / en',
-        examples: [
-            { ja: '東京に行きます。', ro: 'Toukyou ni ikimasu.', en: 'Go to Tokyo.', te: 'టోక్యోకు వెళ్తాను (Tokyoku velthaanu).', hi: 'टोक्यो को जाता हूँ (Tokyo ko jaata hoon).', ko: '도쿄에 갑니다 (Dokyo-e gabnida).', ta: 'டோக்கியோவுக்கு போகிறேன் (Tokyovukku pogiren).', es: 'Voy a Tokio.' }
+    "o": {
+        "title": "を (o)",
+        "role": "Direct Object Marker",
+        "english": "(Marks receiving noun of the action)",
+        "telugu": "ను / ని (nu / ni)",
+        "hindi": "को (ko) / (unmarked)",
+        "korean": "을 / 를 (eul / reul)",
+        "tamil": "ஐ (ai)",
+        "spanish": "(objeto directo)",
+        "kannada": "ಅನ್ನು (annu)",
+        "malayalam": "എ (e)",
+        "examples": [
+            {
+                "ja": "本を読みます。",
+                "ro": "Hon o yomimasu.",
+                "en": "Read a book.",
+                "te": "పుస్తకాన్ని చదువుతాను (Pustakaanni chaduvutaanu).",
+                "hi": "किताब को पढ़ता हूँ (Kitaab ko padhta hoon).",
+                "ko": "책을 읽습니다 (Chaegeul ilgseumnida).",
+                "ta": "புத்தகத்தை படிக்கிறேன் (Puthagathai padikkiren).",
+                "es": "Leo un libro.",
+                "kn": "ಪುಸ್ತಕವನ್ನು ಓದುತ್ತೇನೆ (Pustakavannu oduttene).",
+                "ml": "പുസ്തകം വായിക്കുന്നു (Pusthakam vaayikkunnu)."
+            }
         ]
     },
-    de: {
-        title: 'で (de)',
-        role: 'Instrument / Location of Action',
-        english: 'With / At / By / In',
-        telugu: 'తో (tho) / లో (lo)',
-        hindi: 'से (se) / में (mein)',
-        korean: '로 (ro) / 에서 (eseo)',
-        tamil: 'ஆல் (aal) / இல் (il)',
-        spanish: 'con / en',
-        examples: [
-            { ja: 'ペンで書きます。', ro: 'Pen de kakimasu.', en: 'Write with a pen.', te: 'పెన్నుతో రాస్తాను (Pennuto raastaanu).', hi: 'पेन से लिखता हूँ (Pen se likhta hoon).', ko: '펜으로 씁니다 (Peneuro sseubnida).', ta: 'பேனாவால் எழுதுகிறேன் (Penavaal ezhudhugiren).', es: 'Escribo con un bolígrafo.' },
-            { ja: 'レストランで食べます。', ro: 'Resutoran de tabemasu.', en: 'Eat at a restaurant.', te: 'రెస్టారెంట్ లో తింటాను (Restaurant lo thintaanu).', hi: 'रेस्टोरेंट में खाता हूँ (Restaurant mein khaata hoon).', ko: '식당에서 먹습니다 (Sigdang-eseo meogseumnida).', ta: 'உணவகத்தில் சாப்பிடுகிறேன் (Unavagathil saapidugiren).', es: 'Como en un restaurante.' }
+    "ni": {
+        "title": "に (ni)",
+        "role": "Destination & Time Marker",
+        "english": "To / At / On / Indirect Object",
+        "telugu": "కి / కు (ki / ku)",
+        "hindi": "को / में (ko / mein)",
+        "korean": "에 / 에게 (e / ege)",
+        "tamil": "க்கு (ku)",
+        "spanish": "a / en",
+        "kannada": "ಇಗೆ / ಕ್ಕೆ (ige / kke)",
+        "malayalam": "ക്ക് / ലേക്ക് (kku / lekku)",
+        "examples": [
+            {
+                "ja": "東京に行きます。七時に起きます。",
+                "ro": "Toukyou ni ikimasu. Shichiji ni okimasu.",
+                "en": "Go to Tokyo. Wake up at 7:00.",
+                "te": "టోక్యోకు వెళ్తాను. ఏడు గంటలకు లేస్తాను.",
+                "hi": "टोक्यो को जाता हूँ। सात बजे उठता हूँ।",
+                "ko": "도쿄에 갑니다. 7시에 일어납니다.",
+                "ta": "டோக்கியோவுக்கு போகிறேன். 7 மணிக்கு எழுகிறேன்.",
+                "es": "Voy a Tokio. Me despierto a las 7:00.",
+                "kn": "ಟೋಕಿಯೋಗೆ ಹೋಗುತ್ತೇನೆ. ಏಳು ಗಂಟೆಗೆ ಏಳುತ್ತೇನೆ.",
+                "ml": "ടോക്കിയോയിലേക്ക് പോകുന്നു. ഏഴ് മണിക്ക് ഉണരുന്നു."
+            }
         ]
     },
-    no: {
-        title: 'の (no)',
-        role: 'Possessive Marker',
-        english: 'Of / \'s',
-        telugu: 'యొక్క (yokka)',
-        hindi: 'का / की / के (ka / ki / ke)',
-        korean: '의 (ui)',
-        tamil: 'உடைய (udaiya)',
-        spanish: 'de',
-        examples: [
-            { ja: '私の本。', ro: 'Watashi no hon.', en: 'My book.', te: 'నా యొక్క పుస్తకం (Naa yokka pustakam).', hi: 'मेरी किताब (Meri kitaab).', ko: '나의 책 (Naui chaeg).', ta: 'என்னுடைய புத்தகம் (Ennudaiya puthagam).', es: 'Mi libro.' }
+    "de": {
+        "title": "で (de)",
+        "role": "Instrument / Location of Action",
+        "english": "With / At / By / In",
+        "telugu": "తో (tho) / లో (lo)",
+        "hindi": "से (se) / में (mein)",
+        "korean": "로 (ro) / 에서 (eseo)",
+        "tamil": "ஆல் (aal) / இல் (il)",
+        "spanish": "con / en",
+        "kannada": "ಇಂದ / ಅಲ್ಲಿ (inda / alli)",
+        "malayalam": "ആൽ / ഇൽ (aal / il)",
+        "examples": [
+            {
+                "ja": "ペンで書きます。レストランで食べます。",
+                "ro": "Pen de kakimasu. Resutoran de tabemasu.",
+                "en": "Write with a pen. Eat at a restaurant.",
+                "te": "పెన్నుతో రాస్తాను. రెస్టారెంట్‌లో తింటాను.",
+                "hi": "पेन से लिखता हूँ। रेस्टोरेंट में खाता हूँ।",
+                "ko": "펜으로 씁니다. 식당에서 먹습니다.",
+                "ta": "பேனாவால் எழுதுகிறேன். உணவகத்தில் சாப்பிடுகிறேன்.",
+                "es": "Escribo con bolígrafo. Como en el restaurante.",
+                "kn": "ಪೆನ್ನಿನಿಂದ ಬರೆಯುತ್ತೇನೆ. ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ತಿನ್ನುತ್ತೇನೆ.",
+                "ml": "പേന കൊണ്ട് എഴുതുന്നു. റെസ്റ്റോറന്റിൽ കഴിക്കുന്നു."
+            }
         ]
     },
-    to: {
-        title: 'と (to)',
-        role: 'Accompaniment / And',
-        english: 'With / And',
-        telugu: 'తో (tho) / మరియు (mariyu)',
-        hindi: 'के साथ (ke sath) / और (aur)',
-        korean: '와 / 과 (wa / gwa) / 하고 (hago)',
-        tamil: 'உடன் (udan) / மற்றும் (matrum)',
-        spanish: 'con / y',
-        examples: [
-            { ja: '友達と行きます。', ro: 'Tomodachi to ikimasu.', en: 'Go with a friend.', te: 'స్నేహితుడితో వెళ్తాను (Snehitudito velthaanu).', hi: 'दोस्त के साथ जाता हूँ (Dost ke sath jaata hoon).', ko: '친구와 갑니다 (Chingu-wa gabnida).', ta: 'நண்பனுடன் போகிறேன் (Nanbanudan pogiren).', es: 'Voy con un amigo.' }
+    "no": {
+        "title": "の (no)",
+        "role": "Possessive & Modifier",
+        "english": "Of / 's / Modifier connector",
+        "telugu": "యొక్క (yokka) / సంబంధిత",
+        "hindi": "का / की / के (ka / ki / ke)",
+        "korean": "의 (ui)",
+        "tamil": "உடைய (udaiya)",
+        "spanish": "de",
+        "kannada": "ಅ (a) / ದ (da)",
+        "malayalam": "ന്റെ (nte)",
+        "examples": [
+            {
+                "ja": "私の本。日本語の先生。",
+                "ro": "Watashi no hon. Nihongo no sensei.",
+                "en": "My book. Japanese teacher.",
+                "te": "నా యొక్క పుస్తకం. జపనీస్ ఉపాధ్యాయుడు.",
+                "hi": "मेरी किताब। जापानी के शिक्षक।",
+                "ko": "나의 책. 일본어 선생님.",
+                "ta": "என்னுடைய புத்தகம். ஜப்பானிய ஆசிரியர்.",
+                "es": "Mi libro. Profesor de japonés.",
+                "kn": "ನನ್ನ ಪುಸ್ತಕ. ಜಪಾನಿ ಭಾಷೆಯ ಶಿಕ್ಷಕ.",
+                "ml": "എന്റെ പുസ്തകം. ജാപ്പനീസ് അധ്യാപകൻ."
+            }
         ]
     },
-    kara: {
-        title: 'から (kara)',
-        role: 'Source Marker (From)',
-        english: 'From / Since',
-        telugu: 'నుండి / నుంచి (nundi / nunchi)',
-        hindi: 'से (se)',
-        korean: '에서 (eseo) / 부터 (buteo)',
-        tamil: 'இருந்து (irundhu)',
-        spanish: 'desde / de',
-        examples: [
-            { ja: '家から来ました。', ro: 'Ie kara kimashita.', en: 'Came from home.', te: 'ఇంటి నుండి వచ్చాను (Inti nundi vacchaanu).', hi: 'घर से आया हूँ (Ghar se aaya hoon).', ko: '집에서 왔습니다 (Jib-eseo wasseumnida).', ta: 'வீட்டிலிருந்து வந்தேன் (Veettil-irundhu vandhen).', es: 'Vine de casa.' }
+    "to": {
+        "title": "と (to)",
+        "role": "Accompaniment / And",
+        "english": "With / And (exhaustive list)",
+        "telugu": "తో (tho) / మరియు (mariyu)",
+        "hindi": "के साथ (ke sath) / और (aur)",
+        "korean": "와 / 과 (wa / gwa) / 하고 (hago)",
+        "tamil": "உடன் (udan) / மற்றும் (matrum)",
+        "spanish": "con / y",
+        "kannada": "ಜೊತೆಗೆ (jotege) / ಮತ್ತು (mattu)",
+        "malayalam": "കൂടെ (koode) / ഉം (um)",
+        "examples": [
+            {
+                "ja": "友達と行きます。パンと卵。",
+                "ro": "Tomodachi to ikimasu. Pan to tamago.",
+                "en": "Go with a friend. Bread and eggs.",
+                "te": "స్నేహితుడితో వెళ్తాను. రొట్టె మరియు గుడ్లు.",
+                "hi": "दोस्त के साथ जाता हूँ। रोटी और अंडे।",
+                "ko": "친구와 갑니다. 빵과 계란.",
+                "ta": "நண்பனுடன் போகிறேன். ரொட்டியும் முட்டையும்.",
+                "es": "Voy con un amigo. Pan y huevos.",
+                "kn": "ಸ್ನೇಹಿತನ ಜೊತೆ ಹೋಗುತ್ತೇನೆ. ಬ್ರೆಡ್ ಮತ್ತು ಮೊಟ್ಟೆ.",
+                "ml": "സുഹൃത്തിന്റെ കൂടെ പോകുന്നു. ബ്രെഡും മുട്ടയും."
+            }
         ]
     },
-    made: {
-        title: 'まで (made)',
-        role: 'Limit Marker (Until)',
-        english: 'Until / Up to / As far as',
-        telugu: 'వరకు (varaku)',
-        hindi: 'तक (tak)',
-        korean: '까지 (kkaji)',
-        tamil: 'வரை (varai)',
-        spanish: 'hasta',
-        examples: [
-            { ja: '明日まで待ちます。', ro: 'Ashita made machimasu.', en: 'Wait until tomorrow.', te: 'రేపటి వరకు వేచి ఉంటాను (Repati varaku vechi untaanu).', hi: 'कल तक इंतज़ार करूँगा (Kal tak intezar karunga).', ko: '내일까지 기다립니다 (Naeil-kkaji gidaribnida).', ta: 'நாளை வரை காத்திருப்பேன் (Naalai varai kaathiruppen).', es: 'Esperaré hasta mañana.' }
+    "kara": {
+        "title": "から (kara)",
+        "role": "Source Marker (From / Because)",
+        "english": "From / Since / Because",
+        "telugu": "నుండి / నుంచి (nundi / nunchi) / కాబట్టి",
+        "hindi": "से (se) / क्योंकि",
+        "korean": "에서 (eseo) / 부터 (buteo) / 때문에",
+        "tamil": "இருந்து (irundhu) / அதனால்",
+        "spanish": "desde / de / porque",
+        "kannada": "ಇಂದ (inda) / ಆದ್ದರಿಂದ",
+        "malayalam": "നിന്ന് (ninnu) / ആയതുകൊണ്ട്",
+        "examples": [
+            {
+                "ja": "家から来ました。暑いから窓を開けます。",
+                "ro": "Ie kara kimashita. Atsui kara mado o akemasu.",
+                "en": "Came from home. Open the window because it is hot.",
+                "te": "ఇంటి నుండి వచ్చాను. వేడిగా ఉంది కాబట్టి కిటికీ తెరుస్తాను.",
+                "hi": "घर से आया हूँ। गर्मी है इसलिए खिड़की खोलता हूँ।",
+                "ko": "집에서 왔습니다. 더우니까 창문을 엽니다.",
+                "ta": "வீட்டிலிருந்து வந்தேன். சூடாக இருப்பதால் ஜன்னலைத் திறக்கிறேன்.",
+                "es": "Vine de casa. Abro la ventana porque hace calor.",
+                "kn": "ಮನೆಯಿಂದ ಬಂದೆ. ಬಿಸಿಯಾಗಿರುವುದರಿಂದ ಕಿಟಕಿ ತೆರೆಯುತ್ತೇನೆ.",
+                "ml": "വീട്ടിൽ നിന്ന് വന്നു. ചൂടായതുകൊണ്ട് ജനൽ തുറക്കുന്നു."
+            }
+        ]
+    },
+    "made": {
+        "title": "まで (made)",
+        "role": "Limit Marker (Until)",
+        "english": "Until / Up to / As far as",
+        "telugu": "వరకు (varaku)",
+        "hindi": "तक (tak)",
+        "korean": "까지 (kkaji)",
+        "tamil": "வரை (varai)",
+        "spanish": "hasta",
+        "kannada": "ವರೆಗೆ (varege)",
+        "malayalam": "വരെ (vare)",
+        "examples": [
+            {
+                "ja": "明日まで待ちます。駅まで歩きます。",
+                "ro": "Ashita made machimasu. Eki made arukimasu.",
+                "en": "Wait until tomorrow. Walk as far as the station.",
+                "te": "రేపటి వరకు వేచి ఉంటాను. స్టేషన్ వరకు నడుస్తాను.",
+                "hi": "कल तक इंतज़ार करूँगा। स्टेशन तक पैदल जाता हूँ।",
+                "ko": "내일까지 기다립니다. 역까지 걷습니다.",
+                "ta": "நாளை வரை காத்திருப்பேன். நிலையம் வரை நடக்கிறேன்.",
+                "es": "Esperaré hasta mañana. Camino hasta la estación.",
+                "kn": "ನಾಳೆಯವರೆಗೆ ಕಾಯುತ್ತೇನೆ. ನಿಲ್ದಾಣದವರೆಗೆ ನಡೆಯುತ್ತೇನೆ.",
+                "ml": "നാളെ വരെ കാത്തിരിക്കും. സ്റ്റേഷൻ വരെ നടക്കുന്നു."
+            }
+        ]
+    },
+    "mo": {
+        "title": "も (mo)",
+        "role": "Inclusion (Also / Too)",
+        "english": "Also / Too / Even",
+        "telugu": "కూడా (kooda)",
+        "hindi": "भी (bhee)",
+        "korean": "도 (do)",
+        "tamil": "உம் (um - கூட)",
+        "spanish": "también / tampoco",
+        "kannada": "ಕೂಡ (kooda)",
+        "malayalam": "ഉം (um - കൂടെ)",
+        "examples": [
+            {
+                "ja": "私も行きます。これも美味しいです。",
+                "ro": "Watashi mo ikimasu. Kore mo oishii desu.",
+                "en": "I will also go. This is delicious too.",
+                "te": "నేను కూడా వెళ్తాను. ఇది కూడా రుచిగా ఉంది.",
+                "hi": "मैं भी जाऊँगा। यह भी स्वादिष्ट है।",
+                "ko": "나도 갑니다. 이것도 맛있습니다.",
+                "ta": "நானும் போகிறேன். இதுவும் சுவையாக உள்ளது.",
+                "es": "Yo también voy. Esto también es delicioso.",
+                "kn": "ನಾನೂ ಹೋಗುತ್ತೇನೆ. ಇದೂ ರುಚಿಯಾಗಿದೆ.",
+                "ml": "ഞാനും പോകും. ഇതും രുചികരമാണ്."
+            }
+        ]
+    },
+    "he": {
+        "title": "へ (e/he)",
+        "role": "Directional Marker (Towards)",
+        "english": "Towards / Heading to",
+        "telugu": "వైపు (vaipu) / దిశగా",
+        "hindi": "की ओर (kee or)",
+        "korean": "로 / 으로 (ro / euro)",
+        "tamil": "நோக்கி (nokki)",
+        "spanish": "hacia / rumbo a",
+        "kannada": "ಕಡೆಗೆ (kadege)",
+        "malayalam": "ലേക്ക് (lekku / nere)",
+        "examples": [
+            {
+                "ja": "日本へ行きます。",
+                "ro": "Nihon e ikimasu.",
+                "en": "Heading towards Japan.",
+                "te": "జపాన్ వైపు వెళ్తున్నాను.",
+                "hi": "जापान की ओर जा रहा हूँ।",
+                "ko": "일본으로 갑니다.",
+                "ta": "ஜப்பான் நோக்கிப் போகிறேன்.",
+                "es": "Voy hacia Japón.",
+                "kn": "ಜಪಾನ್ ಕಡೆಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ.",
+                "ml": "ജപ്പാനിലേക്ക് പോകുന്നു."
+            }
+        ]
+    },
+    "yori": {
+        "title": "より (yori)",
+        "role": "Comparison Marker (Than)",
+        "english": "Than / Rather than",
+        "telugu": "కంటే (kante)",
+        "hindi": "से (se - तुलना में)",
+        "korean": "보다 (boda)",
+        "tamil": "விட (vida)",
+        "spanish": "más que / que",
+        "kannada": "ಕಿಂತ (kinta)",
+        "malayalam": "ക്കാൾ (kkaal)",
+        "examples": [
+            {
+                "ja": "猫は犬より小さいです。",
+                "ro": "Neko wa inu yori chiisai desu.",
+                "en": "Cats are smaller than dogs.",
+                "te": "పిల్లి కుక్క కంటే చిన్నది.",
+                "hi": "बिल्ली कुत्ते से छोटी है।",
+                "ko": "고양이는 개보다 작습니다.",
+                "ta": "பூனை நாயை விட சிறியது.",
+                "es": "El gato es más pequeño que el perro.",
+                "kn": "ಬೆಕ್ಕು ನಾಯಿಗಿಂತ ಚಿಕ್ಕದಾಗಿದೆ.",
+                "ml": "പൂച്ച നായയെക്കാൾ ചെറുതാണ്."
+            }
+        ]
+    },
+    "ka": {
+        "title": "か (ka)",
+        "role": "Question / Choice Marker",
+        "english": "Question marker (?) / Or",
+        "telugu": "ప్రశ్నార్థకం (?) / లేదా (leda)",
+        "hindi": "क्या (?) / या (yaa)",
+        "korean": "까 (?) / 거나 (geona)",
+        "tamil": "ஆ (?) / அல்லது (alladhu)",
+        "spanish": "¿? / o (disyunción)",
+        "kannada": "ಪ್ರಶ್ನಾರ್ಥಕ (?) / ಅಥವಾ (athava)",
+        "malayalam": "ചോദ്യം (?) / അല്ലെങ്കിൽ (allenkil)",
+        "examples": [
+            {
+                "ja": "これですか。お茶かコーヒー。",
+                "ro": "Kore desu ka. Ocha ka koohii.",
+                "en": "Is it this? Tea or coffee.",
+                "te": "ఇదా? టీ లేదా కాఫీ.",
+                "hi": "क्या यह है? चाय या कॉफ़ी।",
+                "ko": "이것입니까? 차나 커피.",
+                "ta": "இதுவா? தேநீர் அல்லது காபி.",
+                "es": "¿Es esto? Té o café.",
+                "kn": "ಇದಾ? ಚಹಾ ಅಥವಾ ಕಾಫಿ.",
+                "ml": "ഇതാണോ? ചായ അല്ലെങ്കിൽ കാപ്പി."
+            }
+        ]
+    },
+    "ya": {
+        "title": "や (ya)",
+        "role": "Non-exhaustive Listing",
+        "english": "And (such as... among other things)",
+        "telugu": "వంటివి (vantivi) / మొదలైనవి",
+        "hindi": "और (आदि / जैसे कि)",
+        "korean": "랑 / 이랑 (rang / irang) / 등",
+        "tamil": "போன்றவை (pondravai)",
+        "spanish": "y (entre otras cosas)",
+        "kannada": "ಮುಂತಾದವು (muntaadavu)",
+        "malayalam": "തുടങ്ങിയവ (thudangiyava)",
+        "examples": [
+            {
+                "ja": "本やペンを買いました。",
+                "ro": "Hon ya pen o kaimashita.",
+                "en": "Bought books, pens, and such.",
+                "te": "పుస్తకాలు, పెన్నులు వంటివి కొన్నాను.",
+                "hi": "किताबें और पेन जैसी चीज़ें खरीदीं।",
+                "ko": "책이랑 펜 등을 샀습니다.",
+                "ta": "புத்தகங்கள், பேனாக்கள் போன்றவற்றை வாங்கினேன்.",
+                "es": "Compré libros, bolígrafos, etc.",
+                "kn": "ಪುಸ್ತಕಗಳು, ಪೆನ್ನುಗಳಂತಹವುಗಳನ್ನು ಖರೀದಿಸಿದೆ.",
+                "ml": "പുസ്തകങ്ങളും പേനകളും തുടങ്ങിയവ വാങ്ങി."
+            }
+        ]
+    },
+    "ne": {
+        "title": "ね (ne)",
+        "role": "Confirmation / Agreement Tag",
+        "english": "Isn't it? / Right?",
+        "telugu": "కదా? (kadaa?)",
+        "hindi": "है ना? (hai na?)",
+        "korean": "네요 (neyo) / 지요 (jiyo)",
+        "tamil": "அல்லவா? (allavaa?) / தானே?",
+        "spanish": "¿verdad? / ¿no?",
+        "kannada": "ಅಲ್ವಾ? (alvaa?)",
+        "malayalam": "അല്ലേ? (alle?)",
+        "examples": [
+            {
+                "ja": "今日は暑いですね。",
+                "ro": "Kyou wa atsui desu ne.",
+                "en": "It is hot today, isn't it?",
+                "te": "ఈ రోజు వేడిగా ఉంది కదా?",
+                "hi": "आज गर्मी है, है ना?",
+                "ko": "오늘 덥네요, 그렇죠?",
+                "ta": "இன்று சூடாக இருக்கிறது, அல்லவா?",
+                "es": "Hoy hace calor, ¿verdad?",
+                "kn": "ಇವತ್ತು ಬಿಸಿಯಾಗಿದೆ, ಅಲ್ವಾ?",
+                "ml": "ഇന്ന് ചൂടാണ്, അല്ലേ?"
+            }
+        ]
+    },
+    "yo": {
+        "title": "よ (yo)",
+        "role": "Assertion / Informing Marker",
+        "english": "You know! / I assure you (new info)",
+        "telugu": "తెలుసా! / సుమా!",
+        "hindi": "बता दूँ! / सुनिए!",
+        "korean": "거든요 (geodeunyo) / 요 (yo)",
+        "tamil": "தெரியுமா! / பாருங்கள்!",
+        "spanish": "¡te aseguro! / ¡sabes!",
+        "kannada": "ಗೊತ್ತಾ! / ತಿಳಿಯಿರಿ!",
+        "malayalam": "അറിയാമോ! / കേട്ടോ!",
+        "examples": [
+            {
+                "ja": "この映画は面白いですよ。",
+                "ro": "Kono eiga wa omoshiroi desu yo.",
+                "en": "This movie is really interesting, you know!",
+                "te": "ఈ సినిమా చాలా బాగుంది తెలుసా!",
+                "hi": "यह फिल्म बहुत दिलचस्प है, बता दूँ!",
+                "ko": "이 영화 정말 재미있어요!",
+                "ta": "இந்த படம் மிகவும் சுவாரஸ்யமாக இருக்கிறது, தெரியுமா!",
+                "es": "¡Esta película es muy interesante, sabes!",
+                "kn": "ಈ ಚಲನಚಿತ್ರ ತುಂಬಾ ಆಸಕ್ತಿದಾಯಕವಾಗಿದೆ, ಗೊತ್ತಾ!",
+                "ml": "ഈ സിനിമ വളരെ രസകരമാണ്, കേട്ടോ!"
+            }
+        ]
+    },
+    "shi": {
+        "title": "し (shi)",
+        "role": "Listing Reasons / Features",
+        "english": "And what's more / Not only that, but...",
+        "telugu": "అంతేకాక / మరియు పైగా",
+        "hindi": "और तो और / इसके अलावा",
+        "korean": "고 (go) / 데다가 (dedaga)",
+        "tamil": "மட்டுமல்லாமல் / மேலும்",
+        "spanish": "y además / encima",
+        "kannada": "ಅಲ್ಲದೆ / ಮತ್ತು ಮೇಲಾಗಿ",
+        "malayalam": "കൂടാതെ / മാത്രമല്ല",
+        "examples": [
+            {
+                "ja": "美味しかったし、安かったです。",
+                "ro": "Oishikatta shi, yasukatta desu.",
+                "en": "It was delicious, and what's more, it was cheap.",
+                "te": "రుచిగా ఉంది, అంతేకాక చవకగా కూడా ఉంది.",
+                "hi": "स्वादिष्ट भी था, और सस्ता भी था।",
+                "ko": "맛있었고, 게다가 쌌습니다.",
+                "ta": "சுவையாகவும் இருந்தது, மேலும் மலிவாகவும் இருந்தது.",
+                "es": "Estaba delicioso y, además, era barato.",
+                "kn": "ರುಚಿಯಾಗಿತ್ತು, ಮತ್ತು ಅಗ್ಗವೂ ಆಗಿತ್ತು.",
+                "ml": "രുചികരമായിരുന്നു, മാത്രമല്ല വിലക്കുറവുള്ളതുമായിരുന്നു."
+            }
+        ]
+    },
+    "noni": {
+        "title": "のに (noni)",
+        "role": "Contrast / Defied Expectation",
+        "english": "Even though / Despite / Although",
+        "telugu": "అయినప్పటికీ (ainappatiki)",
+        "hindi": "होने के बावजूद (hone ke baavajood)",
+        "korean": "는데도 (neundedo)",
+        "tamil": "இருந்தபோதிலும் (irundhapodhylum)",
+        "spanish": "a pesar de que / aunque",
+        "kannada": "ಆದಾಗ್ಯೂ (aadaagyu)",
+        "malayalam": "എന്നിട്ടും (ennittum)",
+        "examples": [
+            {
+                "ja": "勉強したのに、不合格でした。",
+                "ro": "Benkyou shita noni, fugoukaku deshita.",
+                "en": "Even though I studied, I failed.",
+                "te": "చదివినప్పటికీ, ఫెయిల్ అయ్యాను.",
+                "hi": "पढ़ाई करने के बावजूद, अनुत्तीर्ण हो गया।",
+                "ko": "공부했는데도 불합격했습니다.",
+                "ta": "படித்தபோதிலும், தேர்ச்சி பெறவில்லை.",
+                "es": "A pesar de haber estudiado, reprobé.",
+                "kn": "ಓದಿದ್ದರೂ ಕೂಡ, ಅನುತ್ತೀರ್ಣನಾದೆ.",
+                "ml": "പഠിച്ചിട്ടും പരാജയപ്പെട്ടു."
+            }
+        ]
+    },
+    "node": {
+        "title": "ので (node)",
+        "role": "Objective Reason (Since/Because)",
+        "english": "Because / Since / As (polite & objective)",
+        "telugu": "కారణంగా / కాబట్టి (మర్యాదపూర్వకంగా)",
+        "hindi": "क्योंकि / के कारण (विनम्र)",
+        "korean": "기 때문에 (gi ttaemune) / 으므로 (eumeuro)",
+        "tamil": "காரணத்தினால் / படியால்",
+        "spanish": "puesto que / dado que",
+        "kannada": "ಕಾರಣದಿಂದ / ಆದ್ದರಿಂದ (ವಿನಮ್ರ)",
+        "malayalam": "കാരണം / ആയതിനാൽ",
+        "examples": [
+            {
+                "ja": "雨が降っているので、傘を持って行きます。",
+                "ro": "Ame ga futte iru node, kasa o motte ikimasu.",
+                "en": "Since it is raining, I will take an umbrella.",
+                "te": "వర్షం పడుతున్న కారణంగా, గొడుగు తీసుకెళ్తాను.",
+                "hi": "बारिश हो रही है इसलिए छाता ले जा रहा हूँ।",
+                "ko": "비가 오고 있기 때문에 우산을 가지고 갑니다.",
+                "ta": "மழை பெய்வதால், குடையை எடுத்துச் செல்கிறேன்.",
+                "es": "Dado que está lloviendo, llevaré un paraguas.",
+                "kn": "ಮಳೆ ಬರುತ್ತಿರುವುದರಿಂದ, ಛತ್ರಿ ತೆಗೆದುಕೊಂಡು ಹೋಗುತ್ತೇನೆ.",
+                "ml": "മഴ പെയ്യുന്നതിനാൽ, കുട എടുക്കുന്നു."
+            }
+        ]
+    },
+    "tara_ba": {
+        "title": "たら / ば (tara / ba)",
+        "role": "Conditionals (If / When)",
+        "english": "If / When / In case",
+        "telugu": "ఒకవేళ... అయితే (okavela... aithe)",
+        "hindi": "अगर... तो (agar... toh)",
+        "korean": "면 / 으면 (myeon / eumyeon)",
+        "tamil": "ஆல் / என்றால் (aal / endraal)",
+        "spanish": "si / cuando (condicional)",
+        "kannada": "ಆದರೆ / ಸಂದರ್ಭದಲ್ಲಿ (aadare)",
+        "malayalam": "എങ്കിൽ (enkil)",
+        "examples": [
+            {
+                "ja": "安かったら、買います。",
+                "ro": "Yasukattara, kaimasu.",
+                "en": "If it is cheap, I will buy it.",
+                "te": "చవకగా ఉంటే, కొంటాను.",
+                "hi": "अगर सस्ता होगा, तो खरीदूँगा।",
+                "ko": "싸면 사겠습니다.",
+                "ta": "மலிவாக இருந்தால், வாங்குவேன்.",
+                "es": "Si es barato, lo compro.",
+                "kn": "ಅಗ್ಗವಾಗಿದ್ದರೆ, ಖರೀದಿಸುತ್ತೇನೆ.",
+                "ml": "വിലക്കുറവാണെങ്കിൽ, വാങ്ങും."
+            }
         ]
     }
 };
@@ -155,6 +570,41 @@ const PARTICLE_CALC_DATA = {
 // --- EXTENDED LEVEL DATABASES (N5 TO N1) ---
 const QUEST_DATABASE = {
     N5: [
+        {"q":"Which particle marks the Direction of movement (towards)?","answer":"へ","options":["へ","を","で","から"],"style":"mc","type":"Particle"},
+        {"q":"Which particle marks Inclusion (meaning \"also\" or \"too\")?","answer":"も","options":["も","は","が","と"],"style":"mc","type":"Particle"},
+        {"q":"Which particle marks the specific Subject / Identifier?","answer":"が","options":["が","は","を","に"],"style":"mc","type":"Particle"},
+        {"q":"Which particle marks a Question at the end of a sentence?","answer":"か","options":["か","ね","よ","の"],"style":"mc","type":"Particle"},
+        {"q":"Which sentence ending seeks agreement (\"isn't it?\")?","answer":"ね","options":["ね","よ","か","さ"],"style":"mc","type":"Particle"},
+        {"q":"Which sentence ending provides new information (\"you know!\")?","answer":"よ","options":["よ","ね","わ","ぞ"],"style":"mc","type":"Particle"},
+        {"q":"How do you say \"Please give me this\" in Japanese?","answer":"これをください","options":["これをください","これはいかが","これはいくら","これをみます"],"style":"mc","type":"Phrase"},
+        {"q":"How do you say \"Good night\" politely?","answer":"おやすみなさい","options":["おやすみなさい","おはよう","さようなら","こんにちは"],"style":"mc","type":"Phrase"},
+        {"q":"How do you say \"Thank you very much\"?","answer":"ありがとうございます","options":["ありがとうございます","すみません","ごめんなさい","いただきます"],"style":"mc","type":"Phrase"},
+        {"q":"What does \"やすみ\" (yasumi) mean?","answer":"Rest / Holiday","options":["Rest / Holiday","Work","School","Study"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"ともだち\" (tomodachi) mean?","answer":"Friend","options":["Friend","Teacher","Doctor","Family"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"くるま\" (kuruma) mean?","answer":"Car","options":["Car","Train","Bicycle","Airplane"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"えき\" (eki) mean?","answer":"Station","options":["Station","Airport","Store","Park"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is \"Tuesday\" in Japanese?","answer":"かようび","options":["かようび","すいようび","もくようび","きんようび"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is \"Wednesday\" in Japanese?","answer":"すいようび","options":["すいようび","かようび","もくようび","どようび"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is \"Thursday\" in Japanese?","answer":"もくようび","options":["もくようび","きんようび","どようび","げつようび"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is \"Friday\" in Japanese?","answer":"きんようび","options":["きんようび","もくようび","かようび","にちようび"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is \"Saturday\" in Japanese?","answer":"どようび","options":["どようび","にちようび","きんようび","げつようび"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"おおきい\" (ookii) mean?","answer":"Big","options":["Big","Small","Expensive","Cheap"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"ちいさい\" (chiisai) mean?","answer":"Small","options":["Small","Big","Fast","Slow"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"たかい\" (takai) mean?","answer":"High / Expensive","options":["High / Expensive","Low / Cheap","Delicious","Quiet"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"やすい\" (yasui) mean?","answer":"Cheap / Inexpensive","options":["Cheap / Inexpensive","Expensive","Difficult","Easy"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"あたらしい\" (atarashii) mean?","answer":"New","options":["New","Old","Good","Bad"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"ふるい\" (furui) mean?","answer":"Old (for things)","options":["Old (for things)","New","Young","Clean"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"みる\" (miru) mean?","answer":"To see / To watch","options":["To see / To watch","To hear","To speak","To read"],"style":"mc","type":"Verb"},
+        {"q":"What does \"きく\" (kiku) mean?","answer":"To listen / To ask","options":["To listen / To ask","To speak","To write","To read"],"style":"mc","type":"Verb"},
+        {"q":"What does \"はなす\" (hanasu) mean?","answer":"To speak","options":["To speak","To listen","To walk","To run"],"style":"mc","type":"Verb"},
+        {"q":"What does \"かく\" (kaku) mean?","answer":"To write","options":["To write","To read","To buy","To sell"],"style":"mc","type":"Verb"},
+        {"q":"What does \"かう\" (kau) mean?","answer":"To buy","options":["To buy","To sell","To give","To receive"],"style":"mc","type":"Verb"},
+        {"q":"What does \"くる\" (kuru) mean?","answer":"To come","options":["To come","To go","To return","To leave"],"style":"mc","type":"Verb"},
+        {"q":"Meaning of the Kanji: 木?","answer":"Tree / Wood","options":["Tree / Wood","Water","Fire","Earth"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 金?","answer":"Gold / Money","options":["Gold / Money","Silver","Iron","Stone"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 土?","answer":"Soil / Earth","options":["Soil / Earth","Fire","Water","Sky"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 川?","answer":"River","options":["River","Mountain","Sea","Rain"],"style":"mc","type":"Kanji"},
+        {"q":"How do you say \"Please speak slowly\"?","answer":"ゆっくり話してください","options":["ゆっくり話してください","早く話してください","もう一度言って","書いてください"],"style":"mc","type":"Phrase"},
         { q: 'What is the vowel character representing the "ah" sound?', answer: 'あ', options: ['あ', 'い', 'う', 'え'], style: 'mc', type: 'Hiragana' },
         { q: 'What is the vowel character representing the "ee" sound?', answer: 'い', options: ['あ', 'い', 'う', 'お'], style: 'mc', type: 'Hiragana' },
         { q: 'What is the vowel character representing the "oo" sound?', answer: 'う', options: ['あ', 'え', 'う', 'お'], style: 'mc', type: 'Hiragana' },
@@ -192,6 +642,41 @@ const QUEST_DATABASE = {
         { q: 'What does "行く" (iku) mean?', answer: 'To go', options: ['To come', 'To go', 'To return', 'To run'], style: 'mc', type: 'Verb' }
     ],
     N4: [
+        {"q":"What does \"~てしまう\" express?","answer":"Completed action / Regret","options":["Completed action / Regret","Doing in advance","Trying something out","Giving advice"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ておく\" express?","answer":"Doing in preparation / Advance","options":["Doing in preparation / Advance","Regret","Prohibition","Simultaneous actions"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~てみる\" express?","answer":"Try doing something to see","options":["Try doing something to see","Must do","Cannot do","Already done"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~すぎる\" (sugiru) mean when attached to a verb stem?","answer":"To do too much / Excessively","options":["To do too much / Excessively","To start doing","To finish doing","To dislike doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~やすい\" (yasui) mean after a verb stem?","answer":"Easy to do","options":["Easy to do","Hard to do","Want to do","Cheap to do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~にくい\" (nikui) mean after a verb stem?","answer":"Difficult / Hard to do","options":["Difficult / Hard to do","Easy to do","Fun to do","Boring to do"],"style":"mc","type":"Grammar"},
+        {"q":"Which particle indicates a non-exhaustive list of items (\"such as X and Y\")?","answer":"や","options":["や","と","も","に"],"style":"mc","type":"Particle"},
+        {"q":"Which particle marks the agent in a passive sentence (\"by someone\")?","answer":"に","options":["に","で","を","は"],"style":"mc","type":"Particle"},
+        {"q":"What is the plain form of \"ありません\"?","answer":"ない","options":["ない","ある","なかった","ず"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What is the plain past of \"行く\" (iku)?","answer":"いった","options":["いった","いいた","いきた","いくだ"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What is the volitional form (\"Let's do\") of \"食べる\"?","answer":"たべよう","options":["たべよう","たべたい","たべた","たべる"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What is the volitional form (\"Let's go\") of \"行く\"?","answer":"いこう","options":["いこう","いきたい","いこうか","いきましょう"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What does \"~ながら\" (nagara) express?","answer":"Doing two actions at the same time","options":["Doing two actions at the same time","Doing one after another","Before doing","Without doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ないでください\" mean?","answer":"Please do not do","options":["Please do not do","Please do","You must do","May do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~なければなりません\" mean?","answer":"Must do / Have to do","options":["Must do / Have to do","Do not have to do","Should not do","May do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~なくてもいいです\" mean?","answer":"Do not have to do (optional)","options":["Do not have to do (optional)","Must do","Should do","Cannot do"],"style":"mc","type":"Grammar"},
+        {"q":"What is the meaning of \"案内する\" (annai suru)?","answer":"To guide / To show around","options":["To guide / To show around","To explain","To invite","To clean"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is the meaning of \"約束\" (yakusoku)?","answer":"Promise / Appointment","options":["Promise / Appointment","Rule","Contract","Meeting"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is the meaning of \"準備\" (junbi)?","answer":"Preparation","options":["Preparation","Repair","Cleaning","Study"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is the meaning of \"故障\" (koshou)?","answer":"Breakdown / Out of order","options":["Breakdown / Out of order","Accident","Injury","Repair"],"style":"mc","type":"Vocabulary"},
+        {"q":"What is the meaning of \"遠慮\" (enryo)?","answer":"Restraint / Holding back","options":["Restraint / Holding back","Refusal","Politeness","Worry"],"style":"mc","type":"Vocabulary"},
+        {"q":"Which is the intransitive partner of \"消す\" (kesu - to turn off)?","answer":"消える (kieru)","options":["消える (kieru)","消される","消しる","消す"],"style":"mc","type":"Grammar"},
+        {"q":"Which is the intransitive partner of \"閉める\" (shimeru - to close)?","answer":"閉まる (shimaru)","options":["閉まる (shimaru)","閉められる","閉じる","閉き"],"style":"mc","type":"Grammar"},
+        {"q":"Which is the transitive partner of \"壊れる\" (kowareru - to break)?","answer":"壊す (kowasu)","options":["壊す (kowasu)","壊れる","壊される","壊させる"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~方\" (kata) after a verb stem mean?","answer":"Way / Method of doing","options":["Way / Method of doing","Person who does","Time of doing","Reason for doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"食べ方\" (tabekata) mean?","answer":"Way of eating / Manner of eating","options":["Way of eating / Manner of eating","Easy to eat","Before eating","Want to eat"],"style":"mc","type":"Grammar"},
+        {"q":"Meaning of the Kanji: 会議?","answer":"Meeting / Conference","options":["Meeting / Conference","Company","Conversation","Class"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 宿題?","answer":"Homework","options":["Homework","Exam","Lesson","Question"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 試験?","answer":"Exam / Test","options":["Exam / Test","Experiment","Experience","Interview"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 経験?","answer":"Experience","options":["Experience","Experiment","Examination","Exploration"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 危険?","answer":"Danger / Hazardous","options":["Danger / Hazardous","Safety","Difficulty","Emergency"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 安全?","answer":"Safety / Secure","options":["Safety / Secure","Danger","Quiet","Healthy"],"style":"mc","type":"Kanji"},
+        {"q":"What does \"~予定\" (yotei) mean?","answer":"Plan / Schedule","options":["Plan / Schedule","Promise","Memory","Goal"],"style":"mc","type":"Vocabulary"},
+        {"q":"What does \"~つもり\" (tsumori) express?","answer":"Intention to do","options":["Intention to do","Regret","Ability","Obligation"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"間に合う\" (maniau) mean?","answer":"To be in time for","options":["To be in time for","To meet someone","To be late","To run fast"],"style":"mc","type":"Verb"},
         { q: 'What is the polite past form of "食べる" (ate)?', answer: 'たべました', options: ['たべました', 'たべません', 'たべます', 'たべませんでした'], style: 'mc', type: 'Verb Conjugation' },
         { q: 'What is the negative polite form of "飲む" (do not drink)?', answer: 'のみません', options: ['のみません', 'のみます', 'のみました', 'のみませんでした'], style: 'mc', type: 'Verb Conjugation' },
         { q: 'What is the Te-form of "食べる"?', answer: 'たべて', options: ['たべて', 'たべた', 'たべない', 'たべよう'], style: 'mc', type: 'Verb Conjugation' },
@@ -224,6 +709,41 @@ const QUEST_DATABASE = {
         { q: 'Which particle marks the Location of action (Telugu: lo)?', answer: 'で', options: ['に', 'で', 'を', 'は'], style: 'mc', type: 'Particle' }
     ],
     N3: [
+        {"q":"What does \"~わけだ\" (wake da) express?","answer":"Naturally / That is why (logical conclusion)","options":["Naturally / That is why (logical conclusion)","It is impossible","I wonder why","I have no reason"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~わけではない\" express?","answer":"It does not mean that... / Not necessarily","options":["It does not mean that... / Not necessarily","It is totally impossible","Certainly is","Must not do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~わけにはいかない\" express?","answer":"Cannot do due to social / moral reasons","options":["Cannot do due to social / moral reasons","Lack the physical ability","Do not want to","No permission"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ものだ\" (mono da) express when used with past tense?","answer":"Nostalgic past habit (used to do)","options":["Nostalgic past habit (used to do)","General truth","Social duty","Recent occurrence"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ものの\" (mono no) express?","answer":"Although / Even though (concession)","options":["Although / Even though (concession)","Because","In order to","As soon as"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ものだから\" (mono dakara) express?","answer":"Because / Reason for an excuse in speech","options":["Because / Reason for an excuse in speech","Even though","In order to","Despite that"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ことにする\" express?","answer":"Deciding to do (speaker's personal choice)","options":["Deciding to do (speaker's personal choice)","Decided by rules / others","Becoming able to do","Making an effort to do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ことになる\" express?","answer":"Has been decided by circumstances / others","options":["Has been decided by circumstances / others","Personal decision","Habitual effort","Desire to do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に違いない\" (ni chigainai) express?","answer":"Must be / No doubt that...","options":["Must be / No doubt that...","Might be","Cannot be","Is strange"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~はずだ\" (hazu da) express?","answer":"Should be / Expected to be","options":["Should be / Expected to be","Definitely not","Impossible","Wanted to be"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~うちに\" (uchi ni) express?","answer":"While in a certain state / Before state changes","options":["While in a certain state / Before state changes","After finishing","Because of","In order to"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~たびに\" (tabi ni) express?","answer":"Every time / Whenever","options":["Every time / Whenever","Occasionally","Only once","Almost never"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~を中心に\" (o chuushin ni) mean?","answer":"Centered around / Focused on","options":["Centered around / Focused on","Separated from","In contrast to","In place of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~をはじめ\" (o hajime) mean?","answer":"Starting with / Above all","options":["Starting with / Above all","Ending with","Except for","Instead of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に対して\" (ni taishite) mean?","answer":"Towards / In contrast to","options":["Towards / In contrast to","Because of","In accordance with","Along with"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~にとって\" (ni totte) mean?","answer":"For / From the viewpoint of","options":["For / From the viewpoint of","Compared to","Because of","Instead of"],"style":"mc","type":"Grammar"},
+        {"q":"What is the honorific (尊敬語) form of \"食べる\"?","answer":"召し上がる (meshiaagaru)","options":["召し上がる (meshiaagaru)","いただく","申す","参る"],"style":"mc","type":"Keigo"},
+        {"q":"What is the humble (謙譲語) form of \"食べる\"?","answer":"いただく (itadaku)","options":["いただく (itadaku)","召し上がる","おっしゃる","ごらんになる"],"style":"mc","type":"Keigo"},
+        {"q":"What is the honorific form of \"言う\" (to say)?","answer":"おっしゃる (ossharu)","options":["おっしゃる (ossharu)","申す (mousu)","まいる","いたす"],"style":"mc","type":"Keigo"},
+        {"q":"What is the humble form of \"言う\" (to say)?","answer":"申す (mousu)","options":["申す (mousu)","おっしゃる","くださる","なさる"],"style":"mc","type":"Keigo"},
+        {"q":"What is the honorific form of \"見る\" (to look)?","answer":"ご覧になる (goran ni naru)","options":["ご覧になる (goran ni naru)","拝見する","申す","参る"],"style":"mc","type":"Keigo"},
+        {"q":"What is the humble form of \"見る\" (to look)?","answer":"拝見する (haiken suru)","options":["拝見する (haiken suru)","ご覧になる","伺う","お目にかかる"],"style":"mc","type":"Keigo"},
+        {"q":"Meaning of the Kanji: 遠慮?","answer":"Restraint / Reserve / Holding back","options":["Restraint / Reserve / Holding back","Anger","Happiness","Sympathy"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 複雑?","answer":"Complex / Complicated","options":["Complex / Complicated","Simple","Easy","Quick"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 簡単?","answer":"Simple / Easy","options":["Simple / Easy","Complex","Rare","Ordinary"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 賛成?","answer":"Agreement / Approval","options":["Agreement / Approval","Opposition","Discussion","Voting"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 反対?","answer":"Opposition / Objection","options":["Opposition / Objection","Agreement","Approval","Sympathy"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 成功?","answer":"Success","options":["Success","Failure","Attempt","Goal"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 失敗?","answer":"Failure / Mistake","options":["Failure / Mistake","Success","Accident","Chance"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 相談?","answer":"Consultation / Discussion","options":["Consultation / Discussion","Argument","Speech","Decision"],"style":"mc","type":"Kanji"},
+        {"q":"What does \"お世話になります\" mean?","answer":"Thank you for your kind support / Care","options":["Thank you for your kind support / Care","Excuse me for leaving","Good morning","Please do not mention it"],"style":"mc","type":"Phrase"},
+        {"q":"What does \"お疲れ様でした\" mean?","answer":"Thank you for your hard work","options":["Thank you for your hard work","Welcome","Please eat","Good night"],"style":"mc","type":"Phrase"},
+        {"q":"What does \"~てたまらない\" express?","answer":"Unbearably / Can't help feeling","options":["Unbearably / Can't help feeling","Must not do","Don't care about","Can endure"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~てしょうがない\" express?","answer":"Extremely / Can't help but feel","options":["Extremely / Can't help but feel","It cannot be helped","Unimportant","Tolerable"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~おかげで\" express?","answer":"Thanks to (positive reason)","options":["Thanks to (positive reason)","Fault of","In spite of","Instead of"],"style":"mc","type":"Grammar"},
         { q: 'Meaning of the Kanji: 日?', answer: 'Sun / Day', options: ['Sun / Day', 'Moon / Month', 'Water', 'Fire'], style: 'mc', type: 'Kanji' },
         { q: 'Meaning of the Kanji: 月?', answer: 'Moon / Month', options: ['Sun / Day', 'Moon / Month', 'Water', 'Tree'], style: 'mc', type: 'Kanji' },
         { q: 'Meaning of the Kanji: 人?', answer: 'Person', options: ['Person', 'Mountain', 'River', 'Gold'], style: 'mc', type: 'Kanji' },
@@ -252,6 +772,41 @@ const QUEST_DATABASE = {
         { q: 'Type the reading of 旅行:', answer: 'ryokou', style: 'text', type: 'Kanji' }
     ],
     N2: [
+        {"q":"What does \"~に際して\" (ni saishite) mean?","answer":"On the occasion of / When starting","options":["On the occasion of / When starting","Because of","In place of","Without"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~を通じて\" (o tsuujite) mean?","answer":"Through / Via / Throughout","options":["Through / Via / Throughout","In contrast to","According to","In place of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に基づいて\" (ni motozuite) mean?","answer":"Based on / Grounded upon","options":["Based on / Grounded upon","Apart from","In contrast to","In exchange for"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~げ\" (ge) attached to an adjective stem express?","answer":"Looking like / Seeming (state or expression)","options":["Looking like / Seeming (state or expression)","Extremely","Very easy to","Disliking"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~気味\" (gimi) express?","answer":"Slight tendency / Touch of (e.g. cold, tiredness)","options":["Slight tendency / Touch of (e.g. cold, tiredness)","Full-blown","Recovery from","Prevention of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~がち\" (gachi) express?","answer":"Tendency to often / Apt to (undesirable)","options":["Tendency to often / Apt to (undesirable)","Rarely happens","Only once","Desirable habit"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~っぽい\" (ppoi) express?","answer":"Having the quality / -ish / -like","options":["Having the quality / -ish / -like","Exactly identical","Opposite of","Completely devoid of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ざるを得ない\" (zaru o enai) mean?","answer":"Cannot help but do / Have no choice but to do","options":["Cannot help but do / Have no choice but to do","Should not do","Refuse to do","Can easily do"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ずにはいられない\" mean?","answer":"Cannot help feeling / Cannot stop oneself from doing","options":["Cannot help feeling / Cannot stop oneself from doing","Must refrain from doing","Have no choice but to accept","Can endure"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ないわけにはいかない\" mean?","answer":"Cannot avoid doing / Must do out of social duty","options":["Cannot avoid doing / Must do out of social duty","Should not do","Don't need to do","Must avoid doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~にもかかわらず\" mean?","answer":"In spite of / Despite","options":["In spite of / Despite","Because of","In accordance with","Along with"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~にしては\" mean?","answer":"For / Considering that (surprising for category)","options":["For / Considering that (surprising for category)","Naturally as expected","Because of","Instead of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~わりに(は)\" mean?","answer":"Considering / Relatively (unexpected result)","options":["Considering / Relatively (unexpected result)","Strictly according to","In proportion to","Without exception"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~につれて\" mean?","answer":"As X changes, Y changes gradually","options":["As X changes, Y changes gradually","Immediately after","Instead of","Without changing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に従って\" (ni shitagatte) mean?","answer":"In accordance with / As X progresses","options":["In accordance with / As X progresses","Despite the rule","In opposition to","In place of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に伴って\" (ni tomonatte) mean?","answer":"Along with / As a consequence of","options":["Along with / As a consequence of","Regardless of","In contrast to","Before"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~をめぐって\" (o megutte) mean?","answer":"Concerning / Centered around (dispute/issue)","options":["Concerning / Centered around (dispute/issue)","Without considering","In place of","In order to"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~において\" (ni oite) mean?","answer":"In / At (formal written locative)","options":["In / At (formal written locative)","Because of","Together with","After"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~により / による\" mean?","answer":"Due to / By means of / Depending on","options":["Due to / By means of / Depending on","In contrast to","In addition to","Without"],"style":"mc","type":"Grammar"},
+        {"q":"Meaning of the Kanji: 影響 (eikyou)?","answer":"Influence / Effect","options":["Influence / Effect","Shadow","Sound","Cause"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 傾向 (keikou)?","answer":"Tendency / Trend","options":["Tendency / Trend","Direction","Problem","Solution"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 責任 (sekinin)?","answer":"Responsibility","options":["Responsibility","Duty","Right","Blame"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 開発 (kaihatsu)?","answer":"Development","options":["Development","Discovery","Design","Destruction"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 現象 (genshou)?","answer":"Phenomenon","options":["Phenomenon","Reality","Image","Situation"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 批判 (hihan)?","answer":"Criticism / Judgment","options":["Criticism / Judgment","Praise","Explanation","Decision"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 克服 (kokufuku)?","answer":"Conquest / Overcoming","options":["Conquest / Overcoming","Submission","Fight","Surrender"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 貢献 (kouken)?","answer":"Contribution / Service","options":["Contribution / Service","Donation","Sacrifice","Loyalty"],"style":"mc","type":"Kanji"},
+        {"q":"What does \"~にすぎない\" mean?","answer":"Merely / Nothing more than","options":["Merely / Nothing more than","Exceeding","Unimportant","Very important"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~にほかならない\" mean?","answer":"None other than / Nothing but","options":["None other than / Nothing but","Different from","Unknown whether","Cannot be"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ざるをえない\" with verb \"する\" become?","answer":"せざるを得ない","options":["せざるを得ない","すざるを得ない","しざるを得ない","されざるを得ない"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What does \"~っこない\" express in spoken Japanese?","answer":"No way that... / Definitely impossible","options":["No way that... / Definitely impossible","Very likely to","Might happen","Will certainly happen"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~げ\" in \"寂しげ\" mean?","answer":"Looking lonely / Seeming lonely","options":["Looking lonely / Seeming lonely","Not lonely","Extremely lonely","Used to be lonely"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~からには\" express?","answer":"Now that / Since (strong resolution follows)","options":["Now that / Since (strong resolution follows)","Even though","Before","In order to"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~以上(は)\" (ijou wa) express?","answer":"Since / As long as (duty/determination follows)","options":["Since / As long as (duty/determination follows)","More than numbers","Underneath","Unless"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~反面\" (hanmen) express?","answer":"On the other hand / Conversely","options":["On the other hand / Conversely","Because of","In the middle of","After"],"style":"mc","type":"Grammar"},
         { q: '"Aについて" means:', answer: 'About A / Regarding A', options: ['About A / Regarding A', 'Because of A', 'Instead of A', 'Despite A'], style: 'mc', type: 'Grammar' },
         { q: '"Aにとって" means:', answer: "For A / From A's perspective", options: ["For A / From A's perspective", 'About A', 'Because of A', 'Against A'], style: 'mc', type: 'Grammar' },
         { q: '"Aによって" means:', answer: 'Depending on A / By means of A', options: ['Depending on A / By means of A', 'About A', 'For A', 'Despite A'], style: 'mc', type: 'Grammar' },
@@ -279,6 +834,41 @@ const QUEST_DATABASE = {
         { q: 'Which particle shows accompaniment (Telugu: tho)?', answer: 'と', options: ['と', 'で', 'に', 'を'], style: 'mc', type: 'Particle' }
     ],
     N1: [
+        {"q":"What does \"~んがため(に)\" mean?","answer":"In order to / For the purpose of","options":["In order to / For the purpose of","Because of","Without doing","In spite of"],"style":"mc","type":"Grammar"},
+        {"q":"How does verb \"する\" conjugate before \"~んがため\"?","answer":"せんがため","options":["せんがため","すんがため","しんがため","されんがため"],"style":"mc","type":"Verb Conjugation"},
+        {"q":"What does \"~ずして\" mean in formal Japanese?","answer":"Without doing (formal ないで)","options":["Without doing (formal ないで)","After doing","In order to do","While doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~べからず\" mean on notices/signs?","answer":"Must not do (strong prohibition)","options":["Must not do (strong prohibition)","Please do","Can do","Should do if possible"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ものを\" express at sentence end?","answer":"Regret / Lament (\"If only... but alas\")","options":["Regret / Lament (\"If only... but alas\")","Absolute joy","Definite refusal","Strong command"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ながら(も)\" express in N1 context?","answer":"Although / Even while admitting (concession)","options":["Although / Even while admitting (concession)","Simultaneous actions","In order to","As soon as"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~といえども\" mean?","answer":"Even / Even though (even an expert, etc.)","options":["Even / Even though (even an expert, etc.)","Because of","Just like","Instead of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~や否や\" (ya ina ya) express?","answer":"No sooner than / As soon as (surprise)","options":["No sooner than / As soon as (surprise)","Long after","Without doing","Occasionally"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~そばから\" express?","answer":"As soon as X, Y happens repeatedly (annoying cycle)","options":["As soon as X, Y happens repeatedly (annoying cycle)","Happened only once","Never happens","Happened by chance"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~なり\" express after a verb in N1?","answer":"As soon as (immediate action by same subject)","options":["As soon as (immediate action by same subject)","Whether or not","In place of","Without"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ともなると\" express?","answer":"When it reaches the stage / level of","options":["When it reaches the stage / level of","Before becoming","Regardless of level","Despite being"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~とあって\" express?","answer":"Due to the special circumstance of","options":["Due to the special circumstance of","In contrast to","Regardless of","In place of"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に至って\" (ni itatte) express?","answer":"Having reached the extreme point of / Only after","options":["Having reached the extreme point of / Only after","At the very beginning","Without reaching","Before reaching"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~きらいがある\" express?","answer":"Has a tendency / Proneness to (undesirable trait)","options":["Has a tendency / Proneness to (undesirable trait)","Has a strong dislike for","Has no tendency to","Enjoys doing"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ずにはおかない\" express?","answer":"Will certainly / Inevitably cause/compel","options":["Will certainly / Inevitably cause/compel","Will never do","Can avoid doing","Cannot happen"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~を余儀なくされる\" mean?","answer":"To be forced to / Compelled by circumstances","options":["To be forced to / Compelled by circumstances","To volunteer freely","To easily avoid","To decline politely"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~極まる / 極まりない\" (kiwamaru) express?","answer":"Extremely / In the highest degree (unmatched)","options":["Extremely / In the highest degree (unmatched)","Slightly","Not at all","Moderate amount"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~を皮切りに\" (o kawakiri ni) mean?","answer":"Starting with / Beginning with as a trigger","options":["Starting with / Beginning with as a trigger","Ending with","Except for","In exchange for"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~たるもの\" express?","answer":"As someone who is / In the position of (high duty)","options":["As someone who is / In the position of (high duty)","Despite being","Without becoming","Instead of being"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ならでは\" express?","answer":"Unique to / Distinctive of only...","options":["Unique to / Distinctive of only...","Common to all","Lacking in","Similar to"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~に耐えない\" (ni taenai) express with emotion nouns?","answer":"Cannot contain / Overflowing with (gratitude/joy)","options":["Cannot contain / Overflowing with (gratitude/joy)","Cannot endure pain","Lacking emotion","Slightly feeling"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~を禁じ得ない\" (o kinji enai) mean?","answer":"Cannot help feeling / Cannot suppress (tears/anger)","options":["Cannot help feeling / Cannot suppress (tears/anger)","Can strictly control","Prohibited by law","Forbidden to enter"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~まみれ\" express?","answer":"Covered all over with (mud, dust, blood, debt)","options":["Covered all over with (mud, dust, blood, debt)","Completely clean of","Partially touched by","Free from"],"style":"mc","type":"Grammar"},
+        {"q":"What does \"~ずくめ\" express?","answer":"Entirely full of / Nothing but (good news, black clothes)","options":["Entirely full of / Nothing but (good news, black clothes)","Lacking in","Occasionally with","Free of"],"style":"mc","type":"Grammar"},
+        {"q":"Meaning of the Kanji: 乖離 (kairi)?","answer":"Divergence / Estrangement / Gap","options":["Divergence / Estrangement / Gap","Harmony","Union","Cooperation"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 齟齬 (sogo)?","answer":"Discord / Inconsistency / Friction","options":["Discord / Inconsistency / Friction","Agreement","Smooth progress","Understanding"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 脆弱 (zeijaku)?","answer":"Fragile / Vulnerable / Weak","options":["Fragile / Vulnerable / Weak","Sturdy","Robust","Powerful"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 蓋然性 (gaizansei)?","answer":"Probability / Likelihood","options":["Probability / Likelihood","Impossibility","Certainty","Coincidence"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 杞憂 (kiyuu)?","answer":"Groundless fear / Needless anxiety","options":["Groundless fear / Needless anxiety","Real danger","Deep sorrow","Great anger"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 諮問 (shimon)?","answer":"Consultation / Inquiring an advisory body","options":["Consultation / Inquiring an advisory body","Answer","Rejection","Punishment"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 躊躇 (chuucho)?","answer":"Hesitation / Vacillation","options":["Hesitation / Vacillation","Decisiveness","Boldness","Courage"],"style":"mc","type":"Kanji"},
+        {"q":"Meaning of the Kanji: 폄 (N/A) / 熾烈 (shiretsu)?","answer":"Fierce / Keen / Vehement","options":["Fierce / Keen / Vehement","Gentle","Calm","Peaceful"],"style":"mc","type":"Kanji"},
+        {"q":"What is wrong with \"おっしゃられる\"?","answer":"It is a redundant double honorific (二重敬語)","options":["It is a redundant double honorific (二重敬語)","It is humble language","It is casual speech","It is incorrect grammar only in spoken Japanese"],"style":"mc","type":"Keigo"},
+        {"q":"What is the correct humble form when visiting a client?","answer":"伺う (ukagau)","options":["伺う (ukagau)","参る (mairu)","おいでになる","いらっしゃる"],"style":"mc","type":"Keigo"},
+        {"q":"What does \"~をおいてほかにない\" express?","answer":"There is none other than / Only X can do it","options":["There is none other than / Only X can do it","Anyone can do it","It is impossible for all","There are many alternatives"],"style":"mc","type":"Grammar"},
         { q: 'Translate: 社会 (Shakai)', answer: 'Society', options: ['Society', 'Education', 'Economy', 'Government'], style: 'mc', type: 'Vocab' },
         { q: 'Translate: 教育 (Kyoiku)', answer: 'Education', options: ['Education', 'Society', 'Economy', 'Science'], style: 'mc', type: 'Vocab' },
         { q: 'Translate: 経済 (Keizai)', answer: 'Economy', options: ['Economy', 'Politics', 'Law', 'Industry'], style: 'mc', type: 'Vocab' },
@@ -2049,9 +2639,11 @@ function openCheatSheetModal() {
     overlay.classList.add('show');
 
     const langSelect = document.getElementById('cheat-sheet-lang-select');
+    const setSelect = document.getElementById('cheat-sheet-set-select');
     const currentLang = player.nativeLanguage || 'telugu';
+    const currentSet = (setSelect && setSelect.value) || 'core';
     if (langSelect) langSelect.value = currentLang;
-    drawParticleCheatSheet(currentLang);
+    drawParticleCheatSheet(currentLang, currentSet);
 }
 window.openCheatSheetModal = openCheatSheetModal;
 
@@ -2064,7 +2656,7 @@ function closeCheatSheetModal() {
 }
 window.closeCheatSheetModal = closeCheatSheetModal;
 
-function drawParticleCheatSheet(targetLang = 'telugu') {
+function drawParticleCheatSheet(targetLang = 'telugu', targetSet = 'core') {
     const canvas = document.getElementById('cheat-sheet-canvas');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
@@ -2121,11 +2713,17 @@ function drawParticleCheatSheet(targetLang = 'telugu') {
         tamil: 'Tamil (தமிழ்)',
         korean: 'Korean (한국어)',
         spanish: 'Spanish (Español)',
+        kannada: 'Kannada (ಕನ್ನಡ)',
+        malayalam: 'Malayalam (മലയാളം)',
         english: 'English'
+    };
+    const setLabels = {
+        core: 'Core Particles (は, が, を, に, で, の, と, から, まで, も)',
+        advanced: 'Advanced Particles (へ, より, か, や, ね, よ, し, のに, ので, たら/ば)'
     };
     ctx.fillStyle = '#00cec9';
     ctx.font = 'bold 20px sans-serif';
-    ctx.fillText(`Comparative Postpositional Grammar: Japanese ↔ ${langNames[targetLang] || 'English'}`, W / 2, 185);
+    ctx.fillText(`Comparative Postpositional Grammar: Japanese ↔ ${langNames[targetLang] || 'English'} [${setLabels[targetSet] || setLabels.core}]`, W / 2, 185);
 
     // 4. Table Header Row
     const startY = 220;
@@ -2145,7 +2743,8 @@ function drawParticleCheatSheet(targetLang = 'telugu') {
     ctx.fillText('EXAMPLE SENTENCE', colX.ex, startY + 28);
 
     // 5. Table Rows (from PARTICLE_CALC_DATA)
-    const keys = Object.keys(PARTICLE_CALC_DATA);
+    const allKeys = Object.keys(PARTICLE_CALC_DATA);
+    const keys = targetSet === 'advanced' ? allKeys.slice(10, 20) : allKeys.slice(0, 10);
     keys.forEach((k, idx) => {
         const item = PARTICLE_CALC_DATA[k];
         const y = startY + 50 + idx * rowH;
@@ -2190,7 +2789,8 @@ function drawParticleCheatSheet(targetLang = 'telugu') {
 
             ctx.fillStyle = '#f1c40f';
             ctx.font = '13px sans-serif';
-            const exTrans = ex[targetLang === 'telugu' ? 'te' : targetLang === 'hindi' ? 'hi' : targetLang === 'tamil' ? 'ta' : targetLang === 'korean' ? 'ko' : targetLang === 'spanish' ? 'es' : 'en'] || ex.en;
+            const shortLang = { telugu: 'te', hindi: 'hi', tamil: 'ta', korean: 'ko', spanish: 'es', kannada: 'kn', malayalam: 'ml' }[targetLang] || 'en';
+            const exTrans = ex[shortLang] || ex.en;
             ctx.fillText(exTrans, colX.ex, y + 75);
         }
     });
@@ -2369,11 +2969,14 @@ function setupViralGrowthEngine() {
         closeCheatSheetBtn.addEventListener('click', () => closeCheatSheetModal());
     }
     const cheatSheetLangSelect = document.getElementById('cheat-sheet-lang-select');
-    if (cheatSheetLangSelect) {
-        cheatSheetLangSelect.addEventListener('change', (e) => {
-            drawParticleCheatSheet(e.target.value);
-        });
-    }
+    const cheatSheetSetSelect = document.getElementById('cheat-sheet-set-select');
+    const redrawCheatSheet = () => {
+        const lang = (cheatSheetLangSelect && cheatSheetLangSelect.value) || 'telugu';
+        const set = (cheatSheetSetSelect && cheatSheetSetSelect.value) || 'core';
+        drawParticleCheatSheet(lang, set);
+    };
+    if (cheatSheetLangSelect) cheatSheetLangSelect.addEventListener('change', redrawCheatSheet);
+    if (cheatSheetSetSelect) cheatSheetSetSelect.addEventListener('change', redrawCheatSheet);
     const downloadCheatSheetBtn = document.getElementById('btn-download-cheat-sheet');
     if (downloadCheatSheetBtn) {
         downloadCheatSheetBtn.addEventListener('click', () => downloadParticleCheatSheet());
@@ -3435,7 +4038,7 @@ function updateCard() {
 }
 
 // --- NATIVE-LANGUAGE GLOSS PACKS (lazy-loaded js/lang/<code>.js) ---
-const LANG_PACK_CODES = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es' };
+const LANG_PACK_CODES = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es', kannada: 'kn', malayalam: 'ml' };
 
 function ensureLangDb(onReady) {
     const code = LANG_PACK_CODES[player.nativeLanguage];
@@ -4391,23 +4994,28 @@ function setupRPGShop() {
 // --- TRILINGUAL PARTICLE CALCULATOR ENGINE                 ---
 // --- ==================================================== ---
 function setupTrilingualCalculator() {
-    const btns = document.querySelectorAll('#particle-calc-buttons .p-calc-btn');
-    btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const key = btn.getAttribute('data-p');
-            renderParticleCalculator(key);
-
-            const activeTab = document.querySelector('.nav-tab.active');
-            if (activeTab && activeTab.getAttribute('data-tab') === 'bridge' && typeof updateURLHash === 'function') {
-                updateURLHash('bridge', { p: key });
-            }
+    const container = document.getElementById('particle-calc-buttons');
+    if (container) {
+        container.innerHTML = '';
+        Object.keys(PARTICLE_CALC_DATA).forEach((k, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'btn p-calc-btn' + (idx === 0 ? ' btn-teal active' : '');
+            btn.setAttribute('data-p', k);
+            btn.textContent = PARTICLE_CALC_DATA[k].title;
+            btn.addEventListener('click', () => {
+                container.querySelectorAll('.p-calc-btn').forEach(b => {
+                    b.classList.remove('active', 'btn-teal');
+                });
+                btn.classList.add('active', 'btn-teal');
+                renderParticleCalculator(k);
+                const activeTab = document.querySelector('.nav-tab.active');
+                if (activeTab && activeTab.getAttribute('data-tab') === 'bridge' && typeof updateURLHash === 'function') {
+                    updateURLHash('bridge', { p: k });
+                }
+            });
+            container.appendChild(btn);
         });
-    });
-
-    // Load default
+    }
     renderParticleCalculator('wa');
 }
 
@@ -4427,7 +5035,9 @@ function renderParticleCalculator(key) {
         hindi: 'Hindi Equivalent',
         korean: 'Korean Equivalent',
         tamil: 'Tamil Equivalent',
-        spanish: 'Spanish Equivalent'
+        spanish: 'Spanish Equivalent',
+        kannada: 'Kannada Equivalent',
+        malayalam: 'Malayalam Equivalent'
     };
     document.getElementById('calc-native-label').textContent = langLabels[lang] || 'Native Equivalent';
 
@@ -4448,7 +5058,7 @@ function renderParticleCalculator(key) {
         item.style.borderRadius = '6px';
         item.style.border = '1px solid rgba(255,255,255,0.03)';
         
-        const shortLang = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es' }[lang];
+        const shortLang = { telugu: 'te', hindi: 'hi', korean: 'ko', tamil: 'ta', spanish: 'es', kannada: 'kn', malayalam: 'ml' }[lang];
         const nativeText = (shortLang && ex[shortLang]) || '';
 
         item.innerHTML = `
