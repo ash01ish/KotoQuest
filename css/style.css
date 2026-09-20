@@ -2267,5 +2267,531 @@ a[data-goto-tab]:hover { text-decoration: underline; }
     transform: scale(1.15);
 }
 
+/* ==========================================================================
+   KANJI DOJO & EXPLORER (#kanji)
+   ========================================================================== */
+.kanji-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.kanji-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.kanji-filter-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-muted);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+.kanji-filter-btn:hover,
+.kanji-filter-btn.active {
+    background: var(--accent-pink);
+    border-color: var(--accent-pink);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(255, 118, 117, 0.3);
+}
+.kanji-search-input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 0.85rem;
+    width: 220px;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+.kanji-search-input:focus {
+    border-color: var(--accent-teal);
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.25);
+}
+.kanji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 14px;
+    margin-top: 15px;
+}
+.kanji-tile {
+    background: rgba(20, 24, 38, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+.kanji-tile:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 8px 20px rgba(253, 203, 110, 0.2);
+    background: rgba(30, 36, 58, 0.9);
+}
+.kanji-tile-char {
+    font-size: 2.2rem;
+    font-family: var(--font-japanese);
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+.kanji-tile-meaning {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 0 4px;
+}
+.kanji-tile-level {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    background: rgba(0, 206, 201, 0.15);
+    color: var(--accent-teal);
+    border: 1px solid rgba(0, 206, 201, 0.3);
+}
 
+/* Kanji Detail Modal */
+.kanji-detail-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.kanji-detail-hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.kanji-detail-big {
+    font-size: 4.5rem;
+    font-family: var(--font-japanese);
+    color: #fff;
+    line-height: 1;
+    min-width: 80px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(253, 203, 110, 0.3);
+}
+.kanji-detail-meta {
+    flex: 1;
+}
+.kanji-detail-meaning-en {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.kanji-detail-meaning-native {
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.kanji-detail-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.kanji-detail-badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-muted);
+}
+.kanji-readings-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.reading-cell {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+.reading-cell-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.reading-cell-val {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-japanese);
+}
+.kanji-compounds-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.kanji-compound-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.kanji-compound-ja {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-japanese);
+}
+.kanji-compound-kana {
+    font-size: 0.8rem;
+    color: var(--accent-teal);
+    margin-left: 8px;
+}
+.kanji-compound-en {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
 
+/* ==========================================================================
+   GLOBAL MULTILINGUAL SEARCH MODAL (#global-search-modal)
+   ========================================================================== */
+.search-modal-box {
+    width: 90%;
+    max-width: 650px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.search-input-wrap {
+    position: relative;
+    margin-bottom: 12px;
+}
+.search-input-wrap i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+.search-input-field {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 14px 14px 14px 44px;
+    font-size: 1.05rem;
+    color: #fff;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+.search-input-field:focus {
+    border-color: var(--accent-teal);
+    box-shadow: 0 0 16px rgba(0, 206, 201, 0.3);
+}
+.search-filter-pills {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+.search-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+.search-pill.active,
+.search-pill:hover {
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
+    color: #14161f;
+}
+.search-results-box {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 250px;
+    padding-right: 4px;
+}
+.search-result-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition-smooth);
+}
+.search-result-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 206, 201, 0.3);
+}
+.search-res-ja {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-japanese);
+}
+.search-res-reading {
+    font-size: 0.85rem;
+    color: var(--accent-teal);
+    margin-left: 8px;
+}
+.search-res-en {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+.search-res-native {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   SAMURAI PROFILE & ACHIEVEMENTS (#samurai-profile-modal)
+   ========================================================================== */
+.profile-modal-box {
+    width: 90%;
+    max-width: 720px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+.profile-hero-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.15), rgba(108, 92, 231, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.profile-avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--accent-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    box-shadow: 0 0 20px rgba(253, 203, 110, 0.3);
+}
+.profile-info {
+    flex: 1;
+}
+.profile-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-title-tag {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 50px;
+    background: var(--accent-gold);
+    color: #14161f;
+    font-weight: 800;
+}
+.profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.profile-stat-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+.profile-stat-val {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.profile-stat-lbl {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Trophy Room */
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+.trophy-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+.trophy-card.unlocked {
+    background: rgba(253, 203, 110, 0.08);
+    border-color: rgba(253, 203, 110, 0.35);
+    box-shadow: 0 4px 15px rgba(253, 203, 110, 0.15);
+}
+.trophy-card.locked {
+    opacity: 0.45;
+    filter: grayscale(1);
+}
+.trophy-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: var(--accent-gold);
+}
+.trophy-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.trophy-desc {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+/* ==========================================================================
+   GRAMMAR COMPENDIUM & HANDBOOK
+   ========================================================================== */
+.grammar-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+.grammar-compendium-card {
+    background: rgba(20, 24, 38, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: var(--transition-smooth);
+}
+.grammar-compendium-card:hover {
+    border-color: var(--accent-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 206, 201, 0.15);
+}
+.grammar-head-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grammar-pat-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: var(--font-japanese);
+}
+.grammar-level-pill {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 50px;
+    background: rgba(255, 118, 117, 0.15);
+    color: #ff7675;
+    border: 1px solid rgba(255, 118, 117, 0.3);
+    font-weight: 700;
+}
+.grammar-formula-box {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid var(--accent-teal);
+    padding: 6px 10px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.82rem;
+    color: #74b9ff;
+    font-family: monospace;
+}
+.grammar-meanings {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.grammar-meanings .en {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 600;
+}
+.grammar-meanings .native {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+}
+.grammar-examples {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 8px;
+}
+.grammar-ex-item {
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+.grammar-ex-ja {
+    color: #fff;
+    font-family: var(--font-japanese);
+    font-weight: 600;
+}
+.grammar-ex-en {
+    color: var(--text-muted);
+}

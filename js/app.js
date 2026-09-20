@@ -3169,6 +3169,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSocialSharing();
     setupViralGrowthEngine();
 
+    // Academy Platform Expansions: Audio, Kanji, Global Search, Grammar Handbook, Profile
+    setupAudioControls();
+    setupKanjiDojo();
+    setupGlobalSearch();
+    setupGrammarHandbook();
+    setupSamuraiProfile();
+
     // Deep Linking & Hash Routing
     setupHashRouting();
     
@@ -3498,6 +3505,9 @@ function setupTabs() {
     const tabPanels = document.querySelectorAll('.tab-content');
 
     const activateTab = (targetTab, skipHash = false) => {
+        if (window.KotoAudio && window.KotoAudio.sfx) {
+            window.KotoAudio.sfx.click();
+        }
         navTabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-tab') === targetTab));
         tabPanels.forEach(p => p.classList.remove('active'));
         const targetEl = document.getElementById(targetTab);
@@ -3505,6 +3515,10 @@ function setupTabs() {
         if (targetTab === 'canvas') {
             resizeCanvas();
             drawCanvasGuide();
+        } else if (targetTab === 'kanji') {
+            renderKanjiGrid();
+        } else if (targetTab === 'bridge') {
+            renderGrammarHandbook();
         }
         if (!skipHash && typeof updateURLHash === 'function') {
             updateURLHash(targetTab);
@@ -3834,6 +3848,17 @@ function updateGuide() {
     drawCanvasGuide();
 }
 
+window.setCanvasGuideCharacter = function(char) {
+    if (!char || !Array.isArray(CANVAS_GUIDES)) return;
+    let idx = CANVAS_GUIDES.findIndex(g => g.ja === char);
+    if (idx === -1) {
+        CANVAS_GUIDES.push({ ja: char, ro: 'Kanji', type: 'Kanji' });
+        idx = CANVAS_GUIDES.length - 1;
+    }
+    guideIdx = idx;
+    updateGuide();
+};
+
 // --- FLASHCARDS CONTROLLER ---
 let cardCat = 'kana', cardIdx = 0;
 let dueOnly = false;
@@ -4075,6 +4100,7 @@ function fxDamageNumber(anchorEl, text, kind) {
 }
 
 function fxEnemyHit(dmg) {
+    if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.sword();
     const s = document.getElementById('enemy-sprite');
     fxShake(s, 'fx-hit');
     fxDamageNumber(s, `-${dmg}`, 'dmg-enemy');
@@ -4082,17 +4108,20 @@ function fxEnemyHit(dmg) {
 }
 
 function fxPlayerHit(dmg) {
+    if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.hit();
     fxShake(document.querySelector('.rpg-arena'), 'fx-screenshake');
     fxDamageNumber(document.querySelector('.game-hud'), `-${dmg} HP`, 'dmg-player');
 }
 
 function fxShieldBlock() {
+    if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.click();
     const s = document.getElementById('slot-shield');
     fxShake(s, 'fx-hit');
     fxDamageNumber(s, 'BLOCKED', 'dmg-block');
 }
 
 function fxVictory() {
+    if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.coin();
     fxShake(document.querySelector('.enemy-panel'), 'fx-victory');
 }
 
@@ -4882,6 +4911,7 @@ function checkBattleResolution() {
         saveGameData();
 
         if (leveledUp) {
+            if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.levelUp();
             addBragLogEntry(`🎉 Share Level ${player.level}!`, () => {
                 const text = `⚔️ I reached Level ${player.level} on KotoQuest! Defeating monsters while mastering Japanese.\nFree offline JLPT academy:`;
                 window.shareQuestProgress({
@@ -4936,6 +4966,7 @@ function useInventoryItem(item) {
         }
         player.inventory.potion--;
         player.hp = Math.min(player.hp + 40, player.maxHp);
+        if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.heal();
         addLog(`You drank a Healing Potion! Recovered 40 HP.`, 'heal');
         updateHUDDisplays();
         saveGameData();
@@ -4957,6 +4988,7 @@ function useInventoryItem(item) {
         
         if (hidden) {
             player.inventory.hint--;
+            if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.click();
             addLog(`You read a Hint Scroll! One wrong answer was eliminated.`, 'system');
             updateHUDDisplays();
             saveGameData();
@@ -4978,6 +5010,7 @@ function setupRPGShop() {
             if (player.gold >= cost) {
                 player.gold -= cost;
                 player.inventory[item] = (player.inventory[item] || 0) + 1;
+                if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.coin();
                 
                 const itemNames = { potion: 'Healing Potion', shield: 'Grammar Shield', hint: 'Hint Scroll', streakFreeze: 'Streak Freeze' };
                 addLog(`Bought 1 ${itemNames[item] || item} from merchant shop!`, 'system');
@@ -5368,4 +5401,507 @@ function setupResetGameButton() {
             alert("Game progress reset successfully!");
         }
     });
+}
+
+// ==========================================================================
+// 1. RETRO AUDIO ENGINE CONTROLS
+// ==========================================================================
+function setupAudioControls() {
+    const btn = document.getElementById('btn-audio-toggle');
+    const icon = document.getElementById('audio-toggle-icon');
+    const text = document.getElementById('audio-toggle-text');
+    if (!btn) return;
+
+    function updateAudioBtn() {
+        const muted = window.KotoAudio && window.KotoAudio.isMuted();
+        if (icon) {
+            icon.className = muted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high';
+            icon.style.color = muted ? '#e74c3c' : 'var(--accent-gold)';
+        }
+        if (text) {
+            text.textContent = muted ? 'MUTED' : 'SFX';
+        }
+    }
+
+    btn.addEventListener('click', () => {
+        if (window.KotoAudio) {
+            window.KotoAudio.toggleMute();
+            updateAudioBtn();
+            if (!window.KotoAudio.isMuted()) {
+                window.KotoAudio.sfx.coin();
+            }
+        }
+    });
+
+    updateAudioBtn();
+}
+
+// ==========================================================================
+// 2. KANJI DOJO & EXPLORER CONTROLLER
+// ==========================================================================
+let currentKanjiFilter = 'all';
+let currentKanjiSearch = '';
+
+function setupKanjiDojo() {
+    const filters = document.querySelectorAll('#kanji-level-filters .kanji-filter-btn');
+    filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filters.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentKanjiFilter = btn.getAttribute('data-filter');
+            renderKanjiGrid();
+        });
+    });
+
+    const searchInput = document.getElementById('kanji-search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            currentKanjiSearch = e.target.value.trim().toLowerCase();
+            renderKanjiGrid();
+        });
+    }
+
+    const modalClose = document.getElementById('kanji-modal-close-btn');
+    const modalOverlay = document.getElementById('kanji-detail-overlay');
+    if (modalClose && modalOverlay) {
+        modalClose.addEventListener('click', () => {
+            modalOverlay.style.display = 'none';
+        });
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) modalOverlay.style.display = 'none';
+        });
+    }
+
+    renderKanjiGrid();
+}
+
+function renderKanjiGrid() {
+    const grid = document.getElementById('kanji-grid');
+    if (!grid) return;
+    if (!window.KANJI_DATABASE || !window.KANJI_DATABASE.length) {
+        grid.innerHTML = '<p style="color:var(--text-muted); text-align:center; padding: 40px 0;">Loading Kanji Dojo...</p>';
+        return;
+    }
+
+    const langCode = (typeof LANG_PACK_CODES !== 'undefined' && LANG_PACK_CODES[player.nativeLanguage]) ? LANG_PACK_CODES[player.nativeLanguage] : 'en';
+    const meaningKey = `meaning_${langCode}`;
+
+    const filtered = window.KANJI_DATABASE.filter(item => {
+        if (currentKanjiFilter !== 'all' && item.jlpt !== currentKanjiFilter) return false;
+        if (currentKanjiSearch) {
+            const k = item.k || item.kanji || '';
+            const en = (item.en || item.meaning_en || '').toLowerCase();
+            const native = (item[meaningKey] || '').toLowerCase();
+            const rom = (item.rom || item.romaji || '').toLowerCase();
+            const on = (item.on || item.onyomi || '').toLowerCase();
+            const kun = (item.kun || item.kunyomi || '').toLowerCase();
+            return k.includes(currentKanjiSearch) || en.includes(currentKanjiSearch) || native.includes(currentKanjiSearch) || rom.includes(currentKanjiSearch) || on.includes(currentKanjiSearch) || kun.includes(currentKanjiSearch);
+        }
+        return true;
+    });
+
+    grid.innerHTML = '';
+    if (filtered.length === 0) {
+        grid.innerHTML = '<p style="color:var(--text-muted); grid-column: 1 / -1; text-align:center; padding: 40px 0;">No Kanji found matching your search.</p>';
+        return;
+    }
+
+    filtered.forEach(item => {
+        const char = item.k || item.kanji;
+        const nativeMeaning = item[meaningKey] || item.en || item.meaning_en;
+        const tile = document.createElement('div');
+        tile.className = 'kanji-tile';
+        tile.innerHTML = `
+            <span class="kanji-tile-level">${item.jlpt}</span>
+            <div class="kanji-tile-char">${char}</div>
+            <div class="kanji-tile-meaning" title="${nativeMeaning}">${nativeMeaning}</div>
+        `;
+        tile.addEventListener('click', () => {
+            if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.click();
+            openKanjiModal(item);
+        });
+        grid.appendChild(tile);
+    });
+}
+
+function openKanjiModal(item) {
+    const overlay = document.getElementById('kanji-detail-overlay');
+    const body = document.getElementById('kanji-modal-body');
+    const drawBtn = document.getElementById('btn-kanji-draw-canvas');
+    if (!overlay || !body) return;
+
+    const char = item.k || item.kanji;
+    const langCode = (typeof LANG_PACK_CODES !== 'undefined' && LANG_PACK_CODES[player.nativeLanguage]) ? LANG_PACK_CODES[player.nativeLanguage] : 'en';
+
+    body.innerHTML = `
+        <div class="kanji-detail-hero">
+            <div class="kanji-detail-big">${char}</div>
+            <div class="kanji-detail-meta">
+                <div class="kanji-detail-meaning-en">${item.en || item.meaning_en}</div>
+                ${item[`meaning_${langCode}`] ? `<div class="kanji-detail-meaning-native">${item[`meaning_${langCode}`]}</div>` : ''}
+                <div class="kanji-detail-badges">
+                    <span class="kanji-detail-badge"><i class="fa-solid fa-graduation-cap"></i> JLPT ${item.jlpt}</span>
+                    <span class="kanji-detail-badge"><i class="fa-solid fa-pen"></i> ${item.strokes} Strokes</span>
+                    <span class="kanji-detail-badge"><i class="fa-solid fa-cubes-stacked"></i> Radical: ${item.rad || item.radical}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="kanji-readings-box">
+            <div class="reading-cell">
+                <div class="reading-cell-title">Onyomi (Chinese reading)</div>
+                <div class="reading-cell-val">${item.on || item.onyomi || '—'}</div>
+            </div>
+            <div class="reading-cell">
+                <div class="reading-cell-title">Kunyomi (Japanese reading)</div>
+                <div class="reading-cell-val">${item.kun || item.kunyomi || '—'}</div>
+            </div>
+        </div>
+
+        ${item.compounds && item.compounds.length ? `
+            <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">Common Compounds (Jukugo)</div>
+                <div class="kanji-compounds-list">
+                    ${item.compounds.map(c => `
+                        <div class="kanji-compound-item">
+                            <div>
+                                <span class="kanji-compound-ja">${c.ja}</span>
+                                <span class="kanji-compound-kana">${c.kana}</span>
+                            </div>
+                            <div class="kanji-compound-en">${c.en}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        ` : ''}
+    `;
+
+    if (drawBtn) {
+        drawBtn.onclick = () => {
+            overlay.style.display = 'none';
+            if (typeof window.activateTab === 'function') {
+                window.activateTab('canvas');
+            }
+            if (typeof window.setCanvasGuideCharacter === 'function') {
+                window.setCanvasGuideCharacter(char);
+            }
+        };
+    }
+
+    overlay.style.display = 'flex';
+}
+
+// ==========================================================================
+// 3. GLOBAL MULTILINGUAL SEARCH CONTROLLER
+// ==========================================================================
+let currentSearchFilter = 'all';
+
+function setupGlobalSearch() {
+    const btn = document.getElementById('btn-global-search');
+    const overlay = document.getElementById('global-search-overlay');
+    const closeBtn = document.getElementById('search-modal-close-btn');
+    const input = document.getElementById('global-search-input');
+    const pills = document.querySelectorAll('#search-filter-pills .search-pill');
+
+    if (!overlay || !input) return;
+
+    function openSearch() {
+        overlay.style.display = 'flex';
+        input.focus();
+        input.select();
+        if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.click();
+    }
+
+    function closeSearch() {
+        overlay.style.display = 'none';
+    }
+
+    if (btn) btn.addEventListener('click', openSearch);
+    if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeSearch();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === '/' && !['input', 'textarea', 'select'].includes((document.activeElement?.tagName || '').toLowerCase())) {
+            e.preventDefault();
+            openSearch();
+        } else if (e.key === 'Escape' && overlay.style.display === 'flex') {
+            closeSearch();
+        }
+    });
+
+    pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            pills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            currentSearchFilter = pill.getAttribute('data-search-filter');
+            executeGlobalSearch(input.value);
+        });
+    });
+
+    let searchTimer = null;
+    input.addEventListener('input', (e) => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+            executeGlobalSearch(e.target.value);
+        }, 150);
+    });
+}
+
+function executeGlobalSearch(query) {
+    const container = document.getElementById('search-results-container');
+    if (!container) return;
+    const q = (query || '').trim().toLowerCase();
+    if (!q) {
+        container.innerHTML = `
+            <div style="text-align: center; color: var(--text-muted); padding: 40px 0;">
+                <i class="fa-solid fa-search" style="font-size: 2rem; margin-bottom: 10px; opacity: 0.5;"></i>
+                <p>Search over 8,000 words, 150+ kanji, and grammar patterns across 8 languages.</p>
+            </div>
+        `;
+        return;
+    }
+
+    const langCode = (typeof LANG_PACK_CODES !== 'undefined' && LANG_PACK_CODES[player.nativeLanguage]) ? LANG_PACK_CODES[player.nativeLanguage] : 'en';
+    const results = [];
+
+    // 1. Search Kanji
+    if (currentSearchFilter === 'all' || currentSearchFilter === 'kanji') {
+        if (window.KANJI_DATABASE) {
+            window.KANJI_DATABASE.forEach(k => {
+                const char = k.k || k.kanji || '';
+                const en = (k.en || k.meaning_en || '').toLowerCase();
+                const native = (k[`meaning_${langCode}`] || '').toLowerCase();
+                const rom = (k.rom || k.romaji || '').toLowerCase();
+                if (char.includes(q) || en.includes(q) || native.includes(q) || rom.includes(q)) {
+                    results.push({
+                        type: 'Kanji',
+                        ja: char,
+                        reading: `${k.on || ''} / ${k.kun || ''}`,
+                        en: k.en || k.meaning_en,
+                        native: k[`meaning_${langCode}`] || '',
+                        badge: `JLPT ${k.jlpt}`
+                    });
+                }
+            });
+        }
+    }
+
+    // 2. Search Grammar
+    if (currentSearchFilter === 'all' || currentSearchFilter === 'grammar') {
+        if (window.GRAMMAR_DATABASE) {
+            window.GRAMMAR_DATABASE.forEach(g => {
+                const pat = (g.pattern || '').toLowerCase();
+                const en = (g.meaning_en || '').toLowerCase();
+                const native = (g[`meaning_${langCode}`] || '').toLowerCase();
+                const rom = (g.romaji || '').toLowerCase();
+                if (pat.includes(q) || en.includes(q) || native.includes(q) || rom.includes(q)) {
+                    results.push({
+                        type: 'Grammar',
+                        ja: g.pattern,
+                        reading: g.romaji,
+                        en: g.meaning_en,
+                        native: g[`meaning_${langCode}`] || '',
+                        badge: `JLPT ${g.jlpt}`
+                    });
+                }
+            });
+        }
+    }
+
+    // 3. Search Vocabulary (from loaded LANG_DB or CURATED_VOCAB)
+    if (currentSearchFilter === 'all' || currentSearchFilter === 'vocab') {
+        const dict = (window.LANG_DB && window.LANG_DB[langCode]) || {};
+        let count = 0;
+        for (const [key, gloss] of Object.entries(dict)) {
+            if (count >= 20) break;
+            const parts = key.split('|');
+            const ja = parts[0];
+            const kana = parts[1] || '';
+            const en = parts[2] || '';
+            if (ja.includes(q) || kana.includes(q) || en.toLowerCase().includes(q) || (gloss && gloss.toLowerCase().includes(q))) {
+                results.push({
+                    type: 'Vocab',
+                    ja: ja,
+                    reading: kana,
+                    en: en,
+                    native: gloss || '',
+                    badge: 'Vocab'
+                });
+                count++;
+            }
+        }
+    }
+
+    if (results.length === 0) {
+        container.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 40px 0;"><p>No results found for "${query}".</p></div>`;
+        return;
+    }
+
+    container.innerHTML = results.slice(0, 30).map(r => `
+        <div class="search-result-card">
+            <div>
+                <div>
+                    <span class="search-res-ja">${r.ja}</span>
+                    <span class="search-res-reading">${r.reading}</span>
+                    <span style="font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.08); color: var(--text-muted); margin-left: 8px;">${r.badge}</span>
+                </div>
+                <div class="search-res-en">${r.en}</div>
+                ${r.native ? `<div class="search-res-native">${r.native}</div>` : ''}
+            </div>
+            <button class="btn speak-btn" data-speak="${r.ja}" style="padding: 6px 12px; font-size: 0.85rem;" title="Listen"><i class="fa-solid fa-volume-high"></i></button>
+        </div>
+    `).join('');
+
+    container.querySelectorAll('.speak-btn').forEach(b => {
+        b.addEventListener('click', (e) => {
+            e.stopPropagation();
+            speakJapanese(b.getAttribute('data-speak'));
+        });
+    });
+}
+
+// ==========================================================================
+// 4. JLPT GRAMMAR HANDBOOK CONTROLLER
+// ==========================================================================
+let currentGrammarFilter = 'all';
+
+function setupGrammarHandbook() {
+    const filters = document.querySelectorAll('#grammar-level-filters .kanji-filter-btn');
+    filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filters.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentGrammarFilter = btn.getAttribute('data-grammar-filter');
+            renderGrammarHandbook();
+        });
+    });
+
+    renderGrammarHandbook();
+}
+
+function renderGrammarHandbook() {
+    const grid = document.getElementById('grammar-handbook-grid');
+    if (!grid) return;
+    if (!window.GRAMMAR_DATABASE || !window.GRAMMAR_DATABASE.length) {
+        grid.innerHTML = '<p style="color:var(--text-muted); text-align:center; padding: 40px 0;">Loading Grammar Handbook...</p>';
+        return;
+    }
+
+    const langCode = (typeof LANG_PACK_CODES !== 'undefined' && LANG_PACK_CODES[player.nativeLanguage]) ? LANG_PACK_CODES[player.nativeLanguage] : 'en';
+    const filtered = window.GRAMMAR_DATABASE.filter(item => {
+        if (currentGrammarFilter !== 'all' && item.jlpt !== currentGrammarFilter) return false;
+        return true;
+    });
+
+    grid.innerHTML = filtered.map(item => `
+        <div class="grammar-compendium-card">
+            <div class="grammar-head-line">
+                <div class="grammar-pat-name">${item.pattern}</div>
+                <span class="grammar-level-pill">${item.jlpt}</span>
+            </div>
+            <div class="grammar-formula-box">${item.formation}</div>
+            <div class="grammar-meanings">
+                <div class="en">${item.meaning_en}</div>
+                ${item[`meaning_${langCode}`] ? `<div class="native">${item[`meaning_${langCode}`]}</div>` : ''}
+            </div>
+            <div class="grammar-examples">
+                ${(item.examples || []).map(ex => `
+                    <div class="grammar-ex-item">
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="grammar-ex-ja">${ex.ja}</span>
+                            <button class="btn speak-btn" data-speak="${ex.ja}" style="padding: 2px 6px; font-size: 0.75rem; background: transparent; border: none; color: var(--accent-teal); cursor: pointer;"><i class="fa-solid fa-volume-high"></i></button>
+                        </div>
+                        <div class="grammar-ex-en">${ex.en}</div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+
+    grid.querySelectorAll('.speak-btn').forEach(b => {
+        b.addEventListener('click', (e) => {
+            e.stopPropagation();
+            speakJapanese(b.getAttribute('data-speak'));
+        });
+    });
+}
+
+// ==========================================================================
+// 5. SAMURAI PROFILE & ACHIEVEMENTS CONTROLLER
+// ==========================================================================
+function setupSamuraiProfile() {
+    const levelDisplay = document.getElementById('player-level-display');
+    const overlay = document.getElementById('samurai-profile-overlay');
+    const closeBtn = document.getElementById('profile-modal-close-btn');
+
+    if (!overlay) return;
+
+    function openProfile() {
+        overlay.style.display = 'flex';
+        renderSamuraiProfile();
+        if (window.KotoAudio && window.KotoAudio.sfx) window.KotoAudio.sfx.click();
+    }
+
+    function closeProfile() {
+        overlay.style.display = 'none';
+    }
+
+    if (levelDisplay) levelDisplay.addEventListener('click', openProfile);
+    if (closeBtn) closeBtn.addEventListener('click', closeProfile);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeProfile();
+    });
+}
+
+function renderSamuraiProfile() {
+    const titleEl = document.getElementById('profile-title-badge');
+    const levelEl = document.getElementById('profile-level-val');
+    const langEl = document.getElementById('profile-native-lang');
+    const streakEl = document.getElementById('prof-streak-val');
+    const accEl = document.getElementById('prof-accuracy-val');
+    const battlesEl = document.getElementById('prof-battles-val');
+    const kanjiEl = document.getElementById('prof-kanji-val');
+    const trophyGrid = document.getElementById('trophy-room-grid');
+
+    const rankTitles = ['Novice', 'Apprentice', 'Ronin', 'Samurai', 'Bushi', 'Hatamoto', 'Daimyo', 'Shogun'];
+    const rankTitle = rankTitles[Math.min(Math.floor((player.level - 1) / 3), rankTitles.length - 1)];
+
+    if (titleEl) titleEl.textContent = rankTitle;
+    if (levelEl) levelEl.textContent = player.level;
+    if (langEl) langEl.textContent = (player.nativeLanguage || 'english').toUpperCase();
+    if (streakEl) streakEl.textContent = player.streak || 1;
+
+    const totalAns = (player.stats?.totalCorrect || 0) + (player.stats?.totalWrong || 0);
+    const acc = totalAns > 0 ? Math.round((player.stats.totalCorrect / totalAns) * 100) : 0;
+    if (accEl) accEl.textContent = `${acc}%`;
+    if (battlesEl) battlesEl.textContent = player.stats?.totalCorrect || 0;
+    if (kanjiEl) kanjiEl.textContent = window.KANJI_DATABASE ? window.KANJI_DATABASE.length : 154;
+
+    // 12 Unlockable Trophies
+    const trophies = [
+        { id: 'first_blood', name: 'First Victory', desc: 'Defeat your first monster in Quest Arena', icon: '⚔️', unlocked: (player.stats?.totalCorrect || 0) >= 1 },
+        { id: 'streak_3', name: '3-Day Fire', desc: 'Maintain a 3-day daily streak', icon: '🔥', unlocked: (player.streak || 1) >= 3 },
+        { id: 'streak_7', name: '7-Day Master', desc: 'Maintain a 7-day daily streak', icon: '⚡', unlocked: (player.streak || 1) >= 7 },
+        { id: 'battle_10', name: 'Battle Hardened', desc: 'Defeat 10 monsters in Quest Arena', icon: '🛡️', unlocked: (player.stats?.totalCorrect || 0) >= 10 },
+        { id: 'gold_100', name: 'Gold Hoarder', desc: 'Amass 100 Gold from quests', icon: '🪙', unlocked: (player.gold || 0) >= 100 },
+        { id: 'level_5', name: 'Level 5 Bushi', desc: 'Reach Level 5 in your RPG journey', icon: '🏯', unlocked: player.level >= 5 },
+        { id: 'level_10', name: 'Shogun Elite', desc: 'Reach Level 10 in your RPG journey', icon: '👑', unlocked: player.level >= 10 },
+        { id: 'polyglot', name: 'Polyglot Mind', desc: 'Study Japanese via a native SOV bridge', icon: '🌐', unlocked: player.nativeLanguage && player.nativeLanguage !== 'english' },
+        { id: 'kanji_explorer', name: 'Kanji Scholar', desc: 'Explore the 150+ Joyo Kanji Dojo', icon: '⛩️', unlocked: true },
+        { id: 'grammar_sage', name: 'Grammar Sage', desc: 'Consult the JLPT Grammar Handbook', icon: '📜', unlocked: true },
+        { id: 'potion_drinker', name: 'Alchemist', desc: 'Use a healing potion in combat', icon: '🧪', unlocked: (player.inventory?.potion || 0) > 0 || (player.hp < player.maxHp) },
+        { id: 'streak_shield', name: 'Shielded Soul', desc: 'Acquire a Streak Freeze protection', icon: '❄️', unlocked: (player.inventory?.streakFreeze || 0) > 0 }
+    ];
+
+    if (trophyGrid) {
+        trophyGrid.innerHTML = trophies.map(t => `
+            <div class="trophy-card ${t.unlocked ? 'unlocked' : 'locked'}">
+                <div class="trophy-icon">${t.icon}</div>
+                <div class="trophy-name">${t.name}</div>
+                <div class="trophy-desc">${t.desc}</div>
+            </div>
+        `).join('');
+    }
 }
