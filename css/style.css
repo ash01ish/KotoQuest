@@ -2795,7 +2795,6 @@ a[data-goto-tab]:hover { text-decoration: underline; }
 .grammar-ex-en {
     color: var(--text-muted);
 }
-
 /* --- Japanese Storybook Library (日本文学・民話) --- */
 .library-subnav { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 12px; }
 .subnav-btn {
