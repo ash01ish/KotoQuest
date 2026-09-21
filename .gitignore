@@ -19,6 +19,10 @@ m-*.png
 verify-*.png
 vendor/fonts/outfit-google.css
 
+# Python cache
+__pycache__/
+*.pyc
+
 # Intermediate translation chunk files (assembled into js/lang/*.js)
 js/lang/parts/
 

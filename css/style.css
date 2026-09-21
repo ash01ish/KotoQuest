@@ -949,6 +949,160 @@ canvas {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Daily Training Companion Widget */
+.daily-training-container {
+    background: linear-gradient(135deg, rgba(30, 36, 52, 0.75) 0%, rgba(18, 22, 34, 0.85) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px 20px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.daily-training-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 14px;
+}
+
+.sensei-avatar-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sensei-avatar {
+    font-size: 1.8rem;
+    background: rgba(243, 156, 18, 0.15);
+    border: 1px solid rgba(243, 156, 18, 0.3);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sensei-speech {
+    display: flex;
+    flex-direction: column;
+}
+
+.sensei-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    letter-spacing: 0.5px;
+}
+
+.sensei-quote {
+    font-size: 0.82rem;
+    color: #ccc;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.daily-progress-badge {
+    background: rgba(32, 191, 107, 0.15);
+    border: 1px solid rgba(32, 191, 107, 0.3);
+    color: var(--accent-teal);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.daily-missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.daily-mission-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+}
+
+.daily-mission-card.completed {
+    border-color: rgba(32, 191, 107, 0.4);
+    background: rgba(32, 191, 107, 0.08);
+}
+
+.mission-checkbox {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.daily-mission-card.completed .mission-checkbox {
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
+    color: #fff;
+}
+
+.mission-info {
+    flex: 1;
+}
+
+.mission-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.daily-mission-card.completed .mission-title {
+    color: var(--accent-teal);
+}
+
+.mission-desc {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.mission-action-btn {
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ddd;
+    cursor: pointer;
+}
+
+.daily-mission-card.completed .mission-action-btn {
+    display: none;
+}
+
+.daily-reward-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
 /* Quest Levels Selection Grid */
 .quest-selection-grid {
     display: grid;

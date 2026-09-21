@@ -1,3 +1,5081 @@
 // READING_BANK — original JLPT-style practice content with multilingual translations.
 // Practice material, not official exam content.
-window.READING_BANK = {"N5":[{"id":"r-n5-1","title":"朝のスケジュール (A Morning Schedule)","passage":"わたしは まいあさ 六時に おきます。それから、あさごはんを たべます。七時半に うちを でて、電車で 学校に いきます。学校は 八時に はじまります。","passage_en":"I wake up at 6:00 every morning. After that, I eat breakfast. I leave home at 7:30 and go to school by train. School starts at 8:00.","questions":[{"q":"この人は 何時に おきますか。","q_en":"What time does this person wake up?","options":["六時","七時半","八時","九時"],"answer":0},{"q":"この人は どうやって 学校に いきますか。","q_en":"How does this person get to school?","options":["電車で","バスで","じてんしゃで","あるいて"],"answer":0}]},{"id":"r-n5-2","title":"わたしの あさ (My Morning)","passage":"わたしは やまだです。まいあさ 六時に おきます。パンを たべて、コーヒーを のみます。それから でんしゃで かいしゃへ いきます。","passage_en":"I am Yamada. Every morning I get up at six. I eat bread and drink coffee. After that, I go to the company by train.","questions":[{"q":"やまださんは なんじに おきますか。","q_en":"What time does Yamada get up?","options":["五時","六時","七時","八時"],"answer":1},{"q":"やまださんは あさ なにを のみますか。","q_en":"What does Yamada drink in the morning?","options":["おちゃ","みず","コーヒー","ぎゅうにゅう"],"answer":2},{"q":"やまださんは なにで かいしゃへ いきますか。","q_en":"How does Yamada go to the company?","options":["でんしゃ","バス","くるま","じてんしゃ"],"answer":0}]},{"id":"r-n5-3","title":"スーパーで (At the Supermarket)","passage":"きのう スーパーへ いきました。りんごを 三つと たまごを かいました。ぜんぶで 五百円でした。くだものは やすかったです。","passage_en":"Yesterday I went to the supermarket. I bought three apples and some eggs. In total it was 500 yen. The fruit was cheap.","questions":[{"q":"いつ スーパーへ いきましたか。","q_en":"When did they go to the supermarket?","options":["きょう","きのう","あした","まいにち"],"answer":1},{"q":"りんごを いくつ かいましたか。","q_en":"How many apples did they buy?","options":["ひとつ","ふたつ","みっつ","よっつ"],"answer":2},{"q":"ぜんぶで いくらでしたか。","q_en":"How much was it in total?","options":["百円","千円","五千円","五百円"],"answer":3}]},{"id":"r-n5-4","title":"わたしの かぞく (My Family)","passage":"わたしの かぞくは 四人です。ちちと ははと あにが います。あには だいがくせいです。ちちは せんせいで、ははは いしゃです。","passage_en":"My family has four people. There are my father, my mother, and my older brother. My older brother is a university student. My father is a teacher, and my mother is a doctor.","questions":[{"q":"かぞくは なんにんですか。","q_en":"How many people are in the family?","options":["三人","四人","五人","六人"],"answer":1},{"q":"あには なにを していますか。","q_en":"What does the older brother do?","options":["せんせい","いしゃ","だいがくせい","かいしゃいん"],"answer":2},{"q":"ははの しごとは なんですか。","q_en":"What is the mother's job?","options":["せんせい","いしゃ","だいがくせい","しゅふ"],"answer":1}]},{"id":"r-n5-5","title":"あたらしい かいしゃ (My New Company)","passage":"わたしは あたらしい かいしゃで はたらいて います。まいあさ 八時に かいしゃへ いきます。ひるは ともだちと ごはんを たべます。しごとは たのしいです。","passage_en":"I work at a new company. Every morning I go to the company at eight o'clock. At lunch I eat a meal with my friend. The work is fun.","questions":[{"q":"何時に かいしゃへ いきますか。","q_en":"What time does this person go to the company?","options":["七時","八時","九時","十時"],"answer":1},{"q":"ひるは だれと ごはんを たべますか。","q_en":"Who does this person eat lunch with?","options":["かぞく","せんせい","ともだち","ひとり"],"answer":2},{"q":"しごとは どうですか。","q_en":"How is the work?","options":["つまらないです","たのしいです","たかいです","むずかしいです"],"answer":1}]},{"id":"r-n5-6","title":"でんしゃで うみへ (To the Sea by Train)","passage":"きのう ともだちと でんしゃで うみへ いきました。えきから うみまで とおかったです。でも、うみは とても きれいでした。","passage_en":"Yesterday I went to the sea by train with a friend. It was far from the station to the sea. But the sea was very beautiful.","questions":[{"q":"きのう どこへ いきましたか。","q_en":"Where did this person go yesterday?","options":["やま","うみ","こうえん","がっこう"],"answer":1},{"q":"何で いきましたか。","q_en":"How did they get there?","options":["でんしゃ","バス","くるま","じてんしゃ"],"answer":0},{"q":"うみは どうでしたか。","q_en":"How was the sea?","options":["きたなかったです","きれいでした","さむかったです","ちいさかったです"],"answer":1}]},{"id":"r-n5-7","title":"あさごはん (Breakfast)","passage":"わたしは まいあさ パンと たまごを たべます。そして、コーヒーを のみます。やさいも たべます。あさごはんは からだに いいです。","passage_en":"Every morning I eat bread and eggs. And I drink coffee. I also eat vegetables. Breakfast is good for the body.","questions":[{"q":"まいあさ 何を のみますか。","q_en":"What does this person drink every morning?","options":["おちゃ","みず","コーヒー","ぎゅうにゅう"],"answer":2},{"q":"この 人は 何を たべますか。","q_en":"Which of these does this person eat?","options":["にく","さかな","たまご","くだもの"],"answer":2},{"q":"あさごはんは からだに どうですか。","q_en":"How is breakfast for the body?","options":["わるいです","いいです","たかいです","おおいです"],"answer":1}]},{"id":"r-n5-8","title":"あたらしい スマホ (My New Smartphone)","passage":"わたしは あたらしい スマホを かいました。この スマホで しゃしんを たくさん とります。よる、インターネットで えいがを 見ます。とても べんりです。","passage_en":"I bought a new smartphone. With this smartphone I take a lot of photos. At night, I watch movies on the internet. It is very convenient.","questions":[{"q":"何を かいましたか。","q_en":"What did this person buy?","options":["テレビ","スマホ","カメラ","パソコン"],"answer":1},{"q":"よる、インターネットで 何を 見ますか。","q_en":"What do they watch on the internet at night?","options":["ニュース","えいが","しゃしん","ドラマ"],"answer":1},{"q":"スマホは どうですか。","q_en":"How is the smartphone?","options":["べんりです","ふべんです","ふるいです","おもいです"],"answer":0}]},{"id":"r-n5-9","title":"デパートで かいもの (Shopping at the Department Store)","passage":"どようびに デパートへ いきました。あかい くつを かいました。くつは 五千円でした。すこし たかかったですが、とても かわいいです。","passage_en":"On Saturday I went to the department store. I bought red shoes. The shoes were five thousand yen. They were a little expensive, but they are very cute.","questions":[{"q":"いつ デパートへ いきましたか。","q_en":"When did this person go to the department store?","options":["きんようび","どようび","にちようび","げつようび"],"answer":1},{"q":"何を かいましたか。","q_en":"What did this person buy?","options":["あかい くつ","あおい くつ","しろい ぼうし","くろい かばん"],"answer":0},{"q":"くつは いくらでしたか。","q_en":"How much were the shoes?","options":["千円","三千円","五千円","一万円"],"answer":2}]},{"id":"r-n5-10","title":"きょうの てんき (Today's Weather)","passage":"けさは あめでした。でも、ひるから はれました。そらが あおくて、とても きれいです。あした 山へ いきます。","passage_en":"This morning it was rainy. But from midday it cleared up. The sky is blue and very beautiful. Tomorrow I will go to the mountain.","questions":[{"q":"けさの てんきは どうでしたか。","q_en":"How was the weather this morning?","options":["ゆき","くもり","あめ","はれ"],"answer":2},{"q":"あした どこへ いきますか。","q_en":"Where will this person go tomorrow?","options":["山","うみ","まち","こうえん"],"answer":0},{"q":"いま そらは どうですか。","q_en":"How is the sky now?","options":["くろいです","しろいです","あかいです","あおいです"],"answer":3}]},{"id":"r-n5-11","title":"公園の散歩 (A Walk in the Park)","passage":"日曜日、妹と近くの公園へ行きました。公園にはたくさんの花が咲いていました。池には白い鳥が五羽いました。私たちはベンチに座って、サンドイッチを食べました。とても気持ちがよかったです。","passage_en":"On Sunday, I went to a nearby park with my younger sister. Many flowers were blooming in the park. In the pond, there were five white birds. We sat on a bench and ate sandwiches. It felt very pleasant.","passage_te":"ఆదివారం, నేను నా చెల్లెలితో కలిసి దగ్గర్లోని పార్కుకు వెళ్లాను. పార్కులో చాలా పువ్వులు పూసి ఉన్నాయి. చెరువులో ఐదు తెల్లటి పక్షులు ఉన్నాయి. మేము బెంచీపై కూర్చుని శాండ్‌విచ్‌లు తిన్నాము. చాలా ఆహ్లాదకరంగా అనిపించింది.","passage_hi":"रविवार को, मैं अपनी छोटी बहन के साथ पास के पार्क में गया। पार्क में बहुत सारे फूल खिले हुए थे। तालाब में पाँच सफेद पक्षी थे। हम बेंच पर बैठे और सैंडविच खाए। बहुत अच्छा लगा।","passage_ta":"ஞாயிற்றுக்கிழமை, நான் என் தங்கையுடன் அருகிலுள்ள பூங்காவிற்கு சென்றேன். பூங்காவில் பல பூக்கள் மலர்ந்திருந்தன. குளத்தில் ஐந்து வெள்ளை பறவைகள் இருந்தன. நாங்கள் ஒரு பெஞ்சில் அமர்ந்து சாண்ட்விச்களை சாப்பிட்டோம். மிகவும் இனிமையாக இருந்தது.","passage_ko":"일요일에 여동생과 가까운 공원에 갔습니다. 공원에는 많은 꽃이 피어 있었습니다. 연못에는 하얀 새가 다섯 마리 있었습니다. 우리는 벤치에 앉아 샌드위치를 먹었습니다. 기분이 아주 좋았습니다.","passage_es":"El domingo fui a un parque cercano con mi hermana menor. Muchas flores florecían en el parque. En el estanque había cinco pájaros blancos. Nos sentamos en un banco y comimos sándwiches. Fue muy agradable.","passage_kn":"ಭಾನುವಾರ, ನಾನು ನನ್ನ ತಂಗಿಯೊಂದಿಗೆ ಹತ್ತಿರದ ಉದ್ಯಾನವನಕ್ಕೆ ಹೋದೆ. ಉದ್ಯಾನದಲ್ಲಿ ಅನೇಕ ಹೂವುಗಳು ಅರಳಿದ್ದವು. ಕೊಳದಲ್ಲಿ ಐದು ಬಿಳಿ ಹಕ್ಕಿಗಳಿದ್ದವು. ನಾವು ಬೆಂಚಿನ ಮೇಲೆ ಕುಳಿತು ಸ್ಯಾಂಡ್‌ವಿಚ್ ತಿಂದೆವು. ತುಂಬಾ ಆಹ್ಲಾದಕರವಾಗಿತ್ತು.","passage_ml":"ഞായറാഴ്ച ഞാൻ അനുജത്തിയോടൊപ്പം അടുത്തുള്ള പാർക്കിൽ പോയി. പാർക്കിൽ ധാരാളം പൂക്കൾ വിരിഞ്ഞു നിന്നിരുന്നു. കുളത്തിൽ അഞ്ച് വെളുത്ത പക്ഷികൾ ഉണ്ടായിരുന്നു. ഞങ്ങൾ ബെഞ്ചിലിരുന്ന് സാൻഡ്‌വിച്ച് കഴിച്ചു. വളരെ സന്തോഷം തോന്നി.","questions":[{"q":"だれと 公園へ 行きましたか。","q_en":"Who did they go to the park with?","q_te":"ఎవరితో కలిసి పార్కుకు వెళ్లారు?","q_hi":"किसके साथ पार्क गए?","q_ta":"யாருடன் பூங்காவிற்கு சென்றார்கள்?","q_ko":"누구와 공원에 갔습니까?","q_es":"¿Con quién fueron al parque?","q_kn":"ಯಾರೊಂದಿಗೆ ಉದ್ಯಾನಕ್ಕೆ ಹೋದರು?","q_ml":"ആരോടൊപ്പമാണ് പാർക്കിൽ പോയത്?","options":["妹","友だち","母","一人"],"answer":0},{"q":"池に 鳥が 何羽 いましたか。","q_en":"How many birds were in the pond?","q_te":"చెరువులో ఎన్ని పక్షులు ఉన్నాయి?","q_hi":"तालाब में कितने पक्षी थे?","q_ta":"குளத்தில் எத்தனை பறவைகள் இருந்தன?","q_ko":"연못에 새가 몇 마리 있었습니까?","q_es":"¿Cuántos pájaros había en el estanque?","q_kn":"ಕೊಳದಲ್ಲಿ ಎಷ್ಟು ಹಕ್ಕಿಗಳಿದ್ದವು?","q_ml":"കുളത്തിൽ എത്ര പക്ഷികൾ ഉണ്ടായിരുന്നു?","options":["三羽","四羽","五羽","六羽"],"answer":2}]},{"id":"r-n5-12","title":"日本の友だち (My Japanese Friend)","passage":"わたしには日本人の友だちがいます。名前はケンさんです。ケンさんは日本語を教えてくれます。わたしはケンさんに英語を教えます。毎週金曜日の夜、オンラインで話します。","passage_en":"I have a Japanese friend. His name is Ken. Ken teaches me Japanese. I teach Ken English. Every Friday evening, we talk online.","passage_te":"నాకు ఒక జపనీస్ స్నేహితుడు ఉన్నాడు. అతని పేరు కెన్. కెన్ నాకు జపనీస్ నేర్పిస్తాడు. నేను కెన్‌కు ఇంగ్లీష్ నేర్పిస్తాను. ప్రతి శుక్రవారం రాత్రి, మేము ఆన్‌లైన్‌లో మాట్లాడుకుంటాము.","passage_hi":"मेरा एक जापानी दोस्त है। उसका नाम केन है। केन मुझे जापानी सिखाता है। मैं केन को अंग्रेज़ी सिखाता हूँ। हर शुक्रवार की शाम, हम ऑनलाइन बात करते हैं।","passage_ta":"எனக்கு ஒரு ஜப்பானிய நண்பர் இருக்கிறார். அவர் பெயர் கென். கென் எனக்கு ஜப்பானிய மொழியைக் கற்பிக்கிறார். நான் கென்னுக்கு ஆங்கிலம் கற்பிக்கிறேன். ஒவ்வொரு வெள்ளிக்கிழமை இரவும் நாங்கள் ஆன்லைனில் பேசுகிறோம்.","passage_ko":"나에게는 일본인 친구가 있습니다. 이름은 켄입니다. 켄은 나에게 일본어를 가르쳐 줍니다. 나는 켄에게 영어를 가르칩니다. 매주 금요일 밤에 온라인으로 이야기합니다.","passage_es":"Tengo un amigo japonés. Su nombre es Ken. Ken me enseña japonés. Yo le enseño inglés a Ken. Todos los viernes por la noche, hablamos en línea.","passage_kn":"ನನಗೆ ಒಬ್ಬ ಜಪಾನಿ ಸ್ನೇಹಿತನಿದ್ದಾನೆ. ಅವನ ಹೆಸರು ಕೆನ್. ಕೆನ್ ನನಗೆ ಜಪಾನಿ ಕಲಿಸುತ್ತಾನೆ. ನಾನು ಕೆನ್‌ಗೆ ಇಂಗ್ಲಿಷ್ ಕಲಿಸುತ್ತೇನೆ. ಪ್ರತಿ ಶುಕ್ರವಾರ ರಾತ್ರಿ, ನಾವು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾತನಾಡುತ್ತೇವೆ.","passage_ml":"എനിക്ക് ഒരു ജാപ്പനീസ് സുഹൃത്തുണ്ട്. പേര് കെൻ. കെൻ എന്നെ ജാപ്പനീസ് പഠിപ്പിക്കുന്നു. ഞാൻ കെന്നിന് ഇംഗ്ലീഷ് പഠിപ്പിക്കുന്നു. എല്ലാ വെള്ളിയാഴ്ചയും രാത്രി ഞങ്ങൾ ഓൺലൈനിൽ സംസാരിക്കുന്നു.","questions":[{"q":"ケンさんは 何を 教えてくれますか。","q_en":"What does Ken teach?","q_te":"కెన్ ఏమి నేర్పిస్తాడు?","q_hi":"केन क्या सिखाता है?","q_ta":"கென் என்ன கற்பிக்கிறார்?","q_ko":"켄은 무엇을 가르쳐 줍니까?","q_es":"¿Qué enseña Ken?","q_kn":"ಕೆನ್ ಏನು ಕಲಿಸುತ್ತಾನೆ?","q_ml":"കെൻ എന്താണ് പഠിപ്പിക്കുന്നത്?","options":["英語","日本語","数学","音楽"],"answer":1},{"q":"二人は いつ 話しますか。","q_en":"When do the two talk?","q_te":"ఇద్దరూ ఎప్పుడు మాట్లాడుకుంటారు?","q_hi":"वे दोनों कब बात करते हैं?","q_ta":"இருவரும் எப்போது பேசுகிறார்கள்?","q_ko":"두 사람은 언제 이야기합니까?","q_es":"¿Cuándo hablan los dos?","q_kn":"ಇಬ್ಬರೂ ಯಾವಾಗ ಮಾತನಾಡುತ್ತಾರೆ?","q_ml":"രണ്ടുപേരും എപ്പോഴാണ് സംസാരിക്കുന്നത്?","options":["毎週月曜日","毎週水曜日","毎週金曜日の夜","毎朝"],"answer":2}]},{"id":"r-n5-13","title":"あたらしい じてんしゃ (My New Bicycle)","passage":"たんじょうびに あおい じてんしゃを もらいました。ちちからの プレゼントです。この じてんしゃで えきまで いきます。あるくと 二十分ですが、じてんしゃなら 七分です。とても はやいです。","passage_en":"On my birthday, I received a blue bicycle. It is a present from my father. I go to the station with this bicycle. Walking takes 20 minutes, but by bicycle it is 7 minutes. It is very fast.","passage_te":"నా పుట్టినరోజున నాకు నీలిరంగు సైకిల్ బహుమతిగా వచ్చింది. ఇది నా నాన్నగారిచ్చిన బహుమతి. ఈ సైకిల్‌పై నేను స్టేషన్‌కు వెళ్తాను. నడిస్తే 20 నిమిషాలు పడుతుంది, కానీ సైకిల్‌పై కేవలం 7 నిమిషాలు. చాలా వేగంగా ఉంటుంది.","passage_hi":"मेरे जन्मदिन पर मुझे एक नीली साइकिल मिली। यह मेरे पिता की ओर से एक उपहार है। मैं इस साइकिल से स्टेशन जाता हूँ। पैदल चलने में 20 मिनट लगते हैं, लेकिन साइकिल से 7 मिनट लगते हैं। यह बहुत तेज़ है।","passage_ta":"என் பிறந்தநாளில் எனக்கு ஒரு நீல நிற மிதிவண்டி கிடைத்தது. இது என் தந்தையிடமிருந்து வந்த பரிசு. இந்த மிதிவண்டியில் நான் நிலையத்திற்குச் செல்கிறேன். நடந்தால் 20 நிமிடங்கள் ஆகும், ஆனால் மிதிவண்டியில் 7 நிமிடங்கள் மட்டுமே. மிகவும் வேகமானது.","passage_ko":"생일에 파란 자전거를 받았습니다. 아버지로부터의 선물입니다. 이 자전거로 역까지 갑니다. 걸으면 20분이지만, 자전거라면 7분입니다. 아주 빠릅니다.","passage_es":"En mi cumpleaños recibí una bicicleta azul. Es un regalo de mi padre. Voy a la estación con esta bicicleta. Caminando son 20 minutos, pero en bicicleta son 7 minutos. Es muy rápida.","passage_kn":"ನನ್ನ ಜನ್ಮದಿನದಂದು ನನಗೆ ನೀಲಿ ಸೈಕಲ್ ಸಿಕ್ಕಿತು. ಇದು ನನ್ನ ತಂದೆಯ ಉಡುಗೊರೆ. ಈ ಸೈಕಲ್‌ನಲ್ಲಿ ನಾನು ನಿಲ್ದಾಣಕ್ಕೆ ಹೋಗುತ್ತೇನೆ. ನಡೆದರೆ 20 ನಿಮಿಷ, ಸೈಕಲ್‌ನಲ್ಲಿ 7 ನಿಮಿಷ. ತುಂಬಾ ವೇಗವಾಗಿದೆ.","passage_ml":"എന്റെ ജന്മദിനത്തിൽ എനിക്ക് ഒരു നീല സൈക്കിൾ ലഭിച്ചു. അത് അച്ഛന്റെ സമ്മാനമാണ്. ഈ സൈക്കിളിലാണ് ഞാൻ സ്റ്റേഷനിലേക്ക് പോകുന്നത്. നടന്നാൽ 20 മിനിറ്റ്, സൈക്കിളിൽ 7 മിനിറ്റ്. വളരെ വേഗതയുണ്ട്.","questions":[{"q":"じてんしゃは だれからの プレゼントですか。","q_en":"Who was the bicycle a present from?","q_te":"సైకిల్ ఎవరిచ్చిన బహుమతి?","q_hi":"साइकिल किसकी ओर से उपहार थी?","q_ta":"மிதிவண்டி யாரிடமிருந்து வந்த பரிசு?","q_ko":"자전거는 누구로부터의 선물입니까?","q_es":"¿De quién fue el regalo de la bicicleta?","q_kn":"ಸೈಕಲ್ ಯಾರಿಂದ ಬಂದ ಉಡುಗೊರೆ?","q_ml":"സൈക്കിൾ ആരിൽ നിന്നുള്ള സമ്മാനമാണ്?","options":["はは","ちち","あに","ともだち"],"answer":1},{"q":"じてんしゃで えきまで なんぷん かかりますか。","q_en":"How many minutes does it take to the station by bicycle?","q_te":"సైకిల్‌పై స్టేషన్‌కు ఎన్ని నిమిషాలు పడుతుంది?","q_hi":"साइकिल से स्टेशन तक कितने मिनट लगते हैं?","q_ta":"மிதிவண்டியில் நிலையத்திற்கு எத்தனை நிமிடங்கள் ஆகும்?","q_ko":"자전거로 역까지 몇 분 걸립니까?","q_es":"¿Cuántos minutos toma ir a la estación en bicicleta?","q_kn":"ಸೈಕಲ್‌ನಲ್ಲಿ ನಿಲ್ದಾಣಕ್ಕೆ ಎಷ್ಟು ನಿಮಿಷ ತಗಲುತ್ತದೆ?","q_ml":"സൈക്കിളിൽ സ്റ്റേഷനിലേക്ക് എത്ര മിനിറ്റ് എടുക്കും?","options":["五分","七分","十分","二十分"],"answer":1}]},{"id":"r-n5-14","title":"りょこうの けいかく (Travel Plan)","passage":"らいげつ、京都へ いきます。しんかんせんで いきます。京都には ふるい おてらや じんじゃが たくさん あります。きものも 着てみたいです。写真も たくさん とります。","passage_en":"Next month, I am going to Kyoto. I will go by Shinkansen (bullet train). In Kyoto there are many old temples and shrines. I also want to try wearing a kimono. I will take lots of photos too.","passage_te":"వచ్చే నెల, నేను క్యోటోకు వెళ్తున్నాను. షింకన్‌సెన్ (బుల్లెట్ రైలు) లో వెళ్తాను. క్యోటోలో అనేక పురాతన దేవాలయాలు మరియు పుణ్యక్షేత్రాలు ఉన్నాయి. నేను కిమోనో కూడా ధరించి చూడాలనుకుంటున్నాను. చాలా ఫోటోలు కూడా తీస్తాను.","passage_hi":"अगले महीने, मैं क्योटो जा रहा हूँ। मैं शिंकानसेन (बुलेट ट्रेन) से जाऊँगा। क्योटो में कई पुराने मंदिर और तीर्थस्थल हैं। मैं किमोनो भी पहनकर देखना चाहता हूँ। बहुत सारी तस्वीरें भी खींचूँगा।","passage_ta":"அடுத்த மாதம், நான் கியோட்டோ செல்கிறேன். புல்லட் ரயிலில் செல்வேன். கியோட்டோவில் பல பழமையான கோயில்கள் உள்ளன. கிமோனோவையும் அணிந்து பார்க்க விரும்புகிறேன். நிறைய புகைப்படங்களையும் எடுப்பேன்.","passage_ko":"다음 달에 교토에 갑니다. 신칸센으로 갑니다. 교토에는 오래된 절과 신사가 많이 있습니다. 기모노도 입어보고 싶습니다. 사진도 많이 찍을 것입니다.","passage_es":"El próximo mes voy a Kioto. Iré en Shinkansen. En Kioto hay muchos templos antiguos y santuarios. También quiero probar ponerme un kimono. Tomaré muchas fotos.","passage_kn":"ಮುಂದಿನ ತಿಂಗಳು, ನಾನು ಕ್ಯೋಟೋಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ. ಶಿಂಕಾನ್‌ಸೆನ್‌ನಲ್ಲಿ ಹೋಗುತ್ತೇನೆ. ಕ್ಯೋಟೋದಲ್ಲಿ ಅನೇಕ ಹಳೆಯ ದೇವಾಲಯಗಳಿವೆ. ಕಿಮೋನೋ ಕೂಡ ಧರಿಸಲು ಬಯಸುತ್ತೇನೆ. ಸಾಕಷ್ಟು ಫೋಟೋಗಳನ್ನು ತೆಗೆಯುತ್ತೇನೆ.","passage_ml":"അടുത്ത മാസം ഞാൻ ക്യോട്ടോയിലേക്ക് പോകുന്നു. ബുള്ളറ്റ് ട്രെയിനിലാണ് പോകുന്നത്. ക്യോട്ടോയിൽ നിരവധി പുരാതന ക്ഷേത്രങ്ങളുണ്ട്. കിമോണോ ധരിച്ചുനോക്കാനും ആഗ്രഹമുണ്ട്. ധാരാളം ഫോട്ടോകളും എടുക്കും.","questions":[{"q":"何で 京都へ いきますか。","q_en":"How will they go to Kyoto?","q_te":"దేనిపై క్యోటోకు వెళ్తారు?","q_hi":"क्योटो कैसे जाएँगे?","q_ta":"எதில் கியோட்டோ செல்வார்கள்?","q_ko":"무엇으로 교토에 갑니까?","q_es":"¿Cómo irán a Kioto?","q_kn":"ಕ್ಯೋಟೋಗೆ ಯಾವುದರಲ್ಲಿ ಹೋಗುತ್ತಾರೆ?","q_ml":"ക്യോട്ടോയിലേക്ക് എങ്ങനെയാണ് പോകുന്നത്?","options":["ひこうき","バス","しんかんせん","ふね"],"answer":2},{"q":"京都で 何を してみたいですか。","q_en":"What do they want to try doing in Kyoto?","q_te":"క్యోటోలో ఏమి చేయాలని అనుకుంటున్నారు?","q_hi":"क्योटो में क्या करके देखना चाहते हैं?","q_ta":"கியோட்டோவில் என்ன செய்ய விரும்புகிறார்கள்?","q_ko":"교토에서 무엇을 해보고 싶습니까?","q_es":"¿Qué quieren probar hacer en Kioto?","q_kn":"ಕ್ಯೋಟೋದಲ್ಲಿ ಏನು ಮಾಡಲು ಬಯಸುತ್ತಾರೆ?","q_ml":"ക്യോട്ടോയിൽ എന്ത് ചെയ്യാനാണ് ആഗ്രഹിക്കുന്നത്?","options":["きものを着る","スキーをする","魚をつる","車をかう"],"answer":0}]},{"id":"r-n5-15","title":"ゆうびんきょくで (At the Post Office)","passage":"きのう ゆうびんきょくへ いきました。インドの かぞくに てがみを おくりました。きってを 三まい かいました。きっては 三百円でした。それから えき前の カフェで おちゃを のみました。","passage_en":"Yesterday I went to the post office. I sent a letter to my family in India. I bought three stamps. The stamps were 300 yen. After that, I drank tea at a cafe in front of the station.","passage_te":"నిన్న నేను పోస్టాఫీసుకు వెళ్లాను. భారతదేశంలోని నా కుటుంబానికి ఉత్తరం పంపాను. మూడు పోస్టల్ స్టాంపులు కొన్నాను. స్టాంపులు 300 యెన్లు. ఆ తర్వాత స్టేషన్ ఎదురుగా ఉన్న కేఫ్‌లో టీ తాగాను.","passage_hi":"कल मैं डाकघर गया था। मैंने भारत में अपने परिवार को एक पत्र भेजा। मैंने तीन डाक टिकट खरीदे। टिकट 300 येन के थे। उसके बाद मैंने स्टेशन के सामने वाले कैफे में चाय पी।","passage_ta":"நேற்று நான் தபால் நிலையத்திற்குச் சென்றேன். இந்தியாவில் உள்ள என் குடும்பத்திற்கு கடிதம் அனுப்பினேன். மூன்று தபால் தலைகளை வாங்கினேன். தபால் தலைகள் 300 யென். அதன் பிறகு நிலையத்திற்கு எதிரே உள்ள கஃபேயில் தேநீர் குடித்தேன்.","passage_ko":"어제 우체국에 갔습니다. 인도의 가족에게 편지를 보냈습니다. 우표를 세 장 샀습니다. 우표는 300엔이었습니다. 그러고 나서 역 앞 카페에서 차를 마셨습니다.","passage_es":"Ayer fui a la oficina de correos. Envié una carta a mi familia en la India. Compré tres sellos. Los sellos costaron 300 yenes. Después de eso, tomé té en una cafetería frente a la estación.","passage_kn":"ನಿನ್ನೆ ನಾನು ಅಂಚೆ ಕಚೇರಿಗೆ ಹೋಗಿದ್ದೆ. ಭಾರತದಲ್ಲಿರುವ ನನ್ನ ಕುಟುಂಬಕ್ಕೆ ಪತ್ರ ಕಳುಹಿಸಿದೆ. ಮೂರು ಅಂಚೆ ಚೀಟಿಗಳನ್ನು ಖರೀದಿಸಿದೆ. ಅಂಚೆ ಚೀಟಿಗಳು 300 ಯೆನ್ ಆಗಿದ್ದವು. ನಂತರ ನಿಲ್ದಾಣದ ಮುಂಭಾಗದ ಕೆಫೆಯಲ್ಲಿ ಚಹಾ ಕುಡಿದೆ.","passage_ml":"ഇന്നലെ ഞാൻ പോസ്റ്റ് ഓഫീസിൽ പോയി. ഇന്ത്യയിലെ കുടുംബത്തിന് ഒരു കത്തയച്ചു. മൂന്ന് സ്റ്റാമ്പുകൾ വാങ്ങി. സ്റ്റാമ്പുകൾക്ക് 300 യെൻ ആയിരുന്നു. അതിനുശേഷം സ്റ്റേഷന് മുന്നിലെ കഫേയിൽ നിന്ന് ചായ കുടിച്ചു.","questions":[{"q":"どこへ てがみを おくりましたか。","q_en":"Where did they send the letter to?","q_te":"ఉత్తరం ఎక్కడికి పంపారు?","q_hi":"पत्र कहाँ भेजा?","q_ta":"கடிதம் எங்கு அனுப்பப்பட்டது?","q_ko":"어디로 편지를 보냈습니까?","q_es":"¿A dónde enviaron la carta?","q_kn":"ಪತ್ರವನ್ನು ಎಲ್ಲಿಗೆ ಕಳುಹಿಸಿದರು?","q_ml":"കത്ത് എങ്ങോട്ടാണ് അയച്ചത്?","options":["アメリカ","インド","イギリス","フランス"],"answer":1},{"q":"きっては いくつ かいましたか。","q_en":"How many stamps did they buy?","q_te":"ఎన్ని స్టాంపులు కొన్నారు?","q_hi":"कितने टिकट खरीदे?","q_ta":"எத்தனை தபால் தலைகளை வாங்கினார்கள்?","q_ko":"우표를 몇 장 샀습니까?","q_es":"¿Cuántos sellos compraron?","q_kn":"ಎಷ್ಟು ಅಂಚೆ ಚೀಟಿಗಳನ್ನು ಖರೀದಿಸಿದರು?","q_ml":"എത്ര സ്റ്റാമ്പുകൾ വാങ്ങി?","options":["一枚","二枚","三枚","四枚"],"answer":2}]}],"N4":[{"id":"r-n4-1","title":"図書館へ行く (Going to the Library)","passage":"わたしは毎週土曜日に図書館へ行きます。先週、母がわたしに新しいかばんを買ってくれました。だから、そのかばんに本をたくさん入れて、図書館まで歩いて行きました。図書館では、日本語の本を三冊借りることができました。来週もまた行って、別の本を読みたいです。","passage_en":"Every Saturday I go to the library. Last week, my mother bought me a new bag. So I put a lot of books in that bag and walked to the library. At the library, I was able to borrow three Japanese books. Next week I want to go again and read some different books.","questions":[{"q":"だれが かばんを 買ってくれましたか。","q_en":"Who bought the bag (for the writer)?","options":["母","わたし","先生","友だち"],"answer":0},{"q":"図書館で 本を 何冊 借りましたか。","q_en":"How many books did the writer borrow at the library?","options":["一冊","二冊","三冊","四冊"],"answer":2},{"q":"この人は 図書館まで どうやって 行きましたか。","q_en":"How did the writer get to the library?","options":["電車で","歩いて","自転車で","バスで"],"answer":1}]},{"id":"r-n4-2","title":"いっしょにカレーを作る (Making Curry Together)","passage":"きのう、友だちのアリさんがうちに来ました。アリさんはカレーの作り方を知っているので、いっしょにカレーを作りました。わたしは野菜を切って、アリさんは肉をいためました。カレーはとてもおいしくて、アリさんもたくさん食べました。今度はわたしがアリさんの家でケーキを作ってあげたいです。","passage_en":"Yesterday my friend Ali came to my house. Ali knows how to make curry, so we made curry together. I cut the vegetables, and Ali stir-fried the meat. The curry was very delicious, and Ali ate a lot too. Next time, I want to make a cake for Ali at Ali's house.","questions":[{"q":"だれが 肉を いためましたか。","q_en":"Who stir-fried the meat?","options":["わたし","アリさん","母","父"],"answer":1},{"q":"カレーの 作り方を 知っているのは だれですか。","q_en":"Who knows how to make curry?","options":["わたし","妹","アリさん","先生"],"answer":2},{"q":"今度 わたしは 何を 作りたいですか。","q_en":"What does the writer want to make next time?","options":["ケーキ","カレー","パン","サラダ"],"answer":0}]},{"id":"r-n4-3","title":"日曜日の予定 (Sunday Plans)","passage":"今週の日曜日に山へ登るつもりでした。でも、天気予報を見たら、雨が降ると言っていました。雨の日はあぶないから、山に登ることができません。だから、友だちと映画を見に行くことにしました。次の晴れた日に、また山に登りたいです。","passage_en":"I was planning to climb the mountain this Sunday. But when I checked the weather forecast, it said it would rain. Because it is dangerous on rainy days, I can't climb the mountain. So I decided to go see a movie with a friend instead. On the next sunny day, I want to climb the mountain again.","questions":[{"q":"日曜日に はじめは 何を する つもりでしたか。","q_en":"What did the writer originally plan to do on Sunday?","options":["映画を見る","山に登る","買い物する","泳ぐ"],"answer":1},{"q":"なぜ 山に 登ることが できませんか。","q_en":"Why can't the writer climb the mountain?","options":["雨が降るから","時間がないから","お金がないから","友だちが来るから"],"answer":0},{"q":"この人は 日曜日に 何を することに しましたか。","q_en":"What did the writer decide to do on Sunday instead?","options":["家で寝る","山に登る","映画を見に行く","勉強する"],"answer":2}]},{"id":"r-n4-4","title":"新しい仕事 (A New Job)","passage":"先月、駅の近くのパン屋で働き始めました。朝が早いので、毎日五時に起きなければなりません。店長はとても親切で、パンの作り方を丁寧に教えてくれます。まだ上手に作れませんが、お客さんに「おいしい」と言ってもらえると、とてもうれしいです。","passage_en":"Last month I started working at a bakery near the station. Because the mornings are early, I have to get up at five o'clock every day. The store manager is very kind and teaches me how to make bread carefully. I still can't make it well, but when customers tell me it's delicious, I'm very happy.","questions":[{"q":"この人はどうして五時に起きますか。","q_en":"Why does this person get up at five o'clock?","options":["駅が遠いから","パン屋の仕事は朝が早いから","店長に会いたいから","パンを買いに行くから"],"answer":1},{"q":"店長はどんな人ですか。","q_en":"What kind of person is the store manager?","options":["親切で、作り方を教えてくれる","こわくて、あまり話さない","朝はいつも遅く来る","パンが上手に作れない"],"answer":0},{"q":"この人はどんな時にうれしくなりますか。","q_en":"When does this person become happy?","options":["五時に起きられた時","早く家に帰れる時","お客さんにおいしいと言ってもらえた時","店長にほめられた時"],"answer":2}]},{"id":"r-n4-5","title":"電車の忘れ物 (Something Left on the Train)","passage":"きのう、電車の中に傘を忘れてしまいました。会社に着いてから気がついて、駅に電話をかけました。駅員さんが「青い傘なら届いています」と教えてくれたので、仕事のあとで取りに行きました。次からは、電車を降りる前に忘れ物がないか確認しようと思います。","passage_en":"Yesterday I ended up leaving my umbrella on the train. I noticed after arriving at the company, so I called the station. The station attendant told me \"If it's a blue umbrella, it's been turned in,\" so I went to pick it up after work. From next time, I plan to check whether I've left anything behind before getting off the train.","questions":[{"q":"この人は電車の中に何を忘れましたか。","q_en":"What did this person leave on the train?","options":["かばん","傘","電話","本"],"answer":1},{"q":"この人はいつ傘を取りに行きましたか。","q_en":"When did this person go to pick up the umbrella?","options":["会社に着く前","電話をかける前","仕事のあと","次の日の朝"],"answer":2},{"q":"この人は次からどうしようと思っていますか。","q_en":"What does this person plan to do from next time?","options":["電車に乗らない","傘を持たない","降りる前に忘れ物を確認する","駅にすぐ電話する"],"answer":2}]},{"id":"r-n4-6","title":"かぜをひいた日 (The Day I Caught a Cold)","passage":"水曜日から少し熱があって、体の調子がよくありませんでした。病院へ行くと、医者に「三日間、ゆっくり休んでください」と言われました。母が作ってくれたおかゆを食べて、薬を飲んで、たくさん寝ました。今はもう元気になったので、あしたから学校に行けます。","passage_en":"From Wednesday I had a slight fever and my body wasn't feeling well. When I went to the hospital, the doctor told me \"Please rest for three days.\" I ate the rice porridge my mother made for me, took my medicine, and slept a lot. Now I've gotten better, so I can go to school from tomorrow.","questions":[{"q":"医者はこの人に何と言いましたか。","q_en":"What did the doctor say to this person?","options":["すぐ学校へ行ってください","三日間ゆっくり休んでください","薬を飲まないでください","水曜日に来てください"],"answer":1},{"q":"おかゆはだれが作りましたか。","q_en":"Who made the rice porridge?","options":["この人","医者","母","友だち"],"answer":2},{"q":"この人はあした何ができますか。","q_en":"What can this person do tomorrow?","options":["学校に行くこと","病院で働くこと","薬を作ること","熱を出すこと"],"answer":0}]},{"id":"r-n4-7","title":"スマホの写真 (Photos on My Phone)","passage":"最近、スマートフォンの写真が多すぎて、新しい写真が撮れなくなりました。友だちに聞いたら、いらない写真を消せば、また撮れると教えてくれました。同じような写真がたくさんあったので、半分ぐらい消しました。これで旅行の時も、安心して写真が撮れると思います。","passage_en":"Recently there were too many photos on my smartphone, and I became unable to take new photos. When I asked a friend, they told me that if I delete unneeded photos, I can take them again. There were many similar photos, so I deleted about half. With this, I think I can take photos without worry during my trip too.","questions":[{"q":"どうして新しい写真が撮れなくなりましたか。","q_en":"Why did this person become unable to take new photos?","options":["スマホが古いから","写真が多すぎるから","旅行に行くから","友だちに借りたから"],"answer":1},{"q":"友だちは何を教えてくれましたか。","q_en":"What did the friend tell this person?","options":["新しいスマホを買うこと","写真をたくさん撮ること","いらない写真を消せばまた撮れること","旅行に行かないこと"],"answer":2},{"q":"この人は写真をどうしましたか。","q_en":"What did this person do with the photos?","options":["全部消した","半分ぐらい消した","友だちにあげた","何もしなかった"],"answer":1}]},{"id":"r-n4-8","title":"町のそうじ (Cleaning the Neighborhood)","passage":"毎月第一日曜日の朝、私の町ではみんなで公園をそうじします。今月は雨が降っていたので、中止になるかと思いましたが、九時ごろに晴れました。近所の人と一緒にごみを拾ったり、花に水をやったりしました。作業のあとで、隣のおばあさんが冷たいお茶を持ってきてくれて、みんなで飲みました。","passage_en":"On the morning of the first Sunday of every month, everyone in my town cleans the park together. This month it was raining, so I thought it might be canceled, but around nine o'clock it cleared up. Together with the neighbors, we picked up trash and watered the flowers. After the work, the old lady next door brought us cold tea, and we all drank it together.","questions":[{"q":"町の人はいつ公園をそうじしますか。","q_en":"When do the town's people clean the park?","options":["毎週日曜日","毎月第一日曜日の朝","雨の日の朝","毎月最後の土曜日"],"answer":1},{"q":"今月、そうじはどうなりましたか。","q_en":"What happened with the cleaning this month?","options":["雨で中止になった","晴れたので行われた","夜に行われた","来月に変わった"],"answer":1},{"q":"隣のおばあさんは何をしてくれましたか。","q_en":"What did the old lady next door do for them?","options":["ごみを拾ってくれた","花を持ってきてくれた","冷たいお茶を持ってきてくれた","公園をそうじしてくれた"],"answer":2}]},{"id":"r-n4-9","title":"初めてのマラソン (My First Marathon)","passage":"先週の日曜日、初めて町のマラソン大会に出ました。十キロも走ったことがなかったので、最後まで走れるか心配でした。でも、道の途中でたくさんの人が「がんばって」と応援してくれて、力が出ました。ゴールした時は足がとても痛かったですが、あきらめなくてよかったと思いました。","passage_en":"Last Sunday, I took part in the town marathon for the first time. I had never run even ten kilometers, so I was worried about whether I could run to the end. But along the way, many people cheered me on saying \"Do your best,\" and I found strength. When I reached the goal my legs hurt a lot, but I thought it was good that I didn't give up.","questions":[{"q":"この人はどうして心配でしたか。","q_en":"Why was this person worried?","options":["十キロ走ったことがなかったから","足が痛かったから","応援する人がいなかったから","日曜日に用事があったから"],"answer":0},{"q":"道の途中で何がありましたか。","q_en":"What happened along the way?","options":["雨が降ってきた","たくさんの人が応援してくれた","足が痛くて止まった","友だちに会った"],"answer":1},{"q":"ゴールしたあと、この人はどう思いましたか。","q_en":"After reaching the goal, how did this person feel?","options":["もう走りたくない","来年は出ない","あきらめなくてよかった","足が痛くて残念だ"],"answer":2}]}],"N3":[{"id":"r-n3-1","title":"エレベーター点検のお知らせ (Notice of Elevator Inspection)","passage":"マンションにお住まいの皆様へ\n\nいつもご協力ありがとうございます。来週の水曜日、7月22日の午前9時から午後3時まで、エレベーターの定期点検が行われます。点検の間はエレベーターをご利用いただけませんので、階段をお使いください。お年寄りや小さいお子様がいるご家庭は、なるべく午前中に外出を済ませておくと便利だと思います。天気によっては、点検の日が変わることもあります。その場合は、前日までに掲示板でお知らせします。ご不便をおかけしますが、よろしくお願いいたします。\n\nさくら管理事務所","passage_en":"To all residents of the apartment building,\n\nThank you as always for your cooperation. Next Wednesday, July 22, from 9:00 a.m. to 3:00 p.m., a regular inspection of the elevator will be carried out. You will not be able to use the elevator during the inspection, so please use the stairs. For households with elderly people or small children, we think it would be convenient to finish any outings in the morning if possible. Depending on the weather, the inspection day may change. In that case, we will let you know on the notice board by the day before. We apologize for the inconvenience and thank you for your understanding.\n\nSakura Management Office","questions":[{"q":"点検の間、住民は何をしなければなりませんか。","q_en":"What must residents do during the inspection?","options":["エレベーターを午前中だけ使う","階段を使う","午前9時までに外出する","管理事務所で待つ"],"answer":1},{"q":"点検の日が変わることがあるのは、どんな時ですか。","q_en":"In what situation might the inspection day change?","options":["お年寄りが多い時","住民が希望した時","天気が悪い時","エレベーターが壊れた時"],"answer":2},{"q":"点検の日が変わる場合、どうやって知らせますか。","q_en":"If the inspection day changes, how will residents be informed?","options":["前日までに掲示板で知らせる","朝、電話で知らせる","メールで知らせる","各家を訪ねて知らせる"],"answer":0}]},{"id":"r-n3-2","title":"歓迎会のお誘い (Invitation to a Welcome Party)","passage":"田中さん\n\nお疲れ様です。営業部の山口です。\n今度、新しく入った鈴木さんの歓迎会を開くことになりました。日にちは来月の3日、金曜日の夜7時からで、場所は駅の近くの「海山亭」というお店です。\n\n鈴木さんは大学時代に3年間留学していたそうで、英語がとても上手だと聞きました。田中さんも英語を勉強しているので、きっと話が合うと思います。\n\n参加できるかどうか、今週の金曜日までに私に返事をいただけると助かります。もし来られない場合は、無理をなさらないでください。\n\nよろしくお願いします。\n山口","passage_en":"Tanaka-san,\n\nThank you for your hard work. This is Yamaguchi from the Sales Department.\nWe've decided to hold a welcome party for Suzuki-san, who recently joined us. The date is the 3rd of next month, a Friday, from 7:00 p.m., and the place is a restaurant near the station called \"Umiyama-tei.\"\n\nI hear that Suzuki-san studied abroad for three years during university, and that she is very good at English. Since you are also studying English, I'm sure the two of you will get along.\n\nIt would help me if you could reply by this Friday about whether you can attend. If you can't come, please don't push yourself.\n\nBest regards,\nYamaguchi","questions":[{"q":"このメールは、何のために書かれましたか。","q_en":"What was this email written for?","options":["新しいレストランを紹介するため","パーティーを中止するため","田中さんに英語を教えてもらうため","鈴木さんの歓迎会に誘うため"],"answer":3},{"q":"鈴木さんについて、正しいものはどれですか。","q_en":"Which statement about Suzuki-san is correct?","options":["3年間留学していて、英語が上手だ","英語の先生をしている","パーティーが嫌いだ","営業部に長く勤めている"],"answer":0},{"q":"山口さんは田中さんに何をお願いしていますか。","q_en":"What is Yamaguchi asking Tanaka to do?","options":["お店を予約すること","鈴木さんを店に連れて行くこと","今週の金曜日までに参加できるか返事をすること","パーティーの料金を払うこと"],"answer":2}]},{"id":"r-n3-3","title":"朝ごはんの習慣 (My Breakfast Habit)","passage":"私は去年まで、朝ごはんを食べない生活をしていました。時間がないと、つい食事を抜いてしまうのです。でも、健康診断で医者に「朝ごはんを食べないと、体に良くないですよ」と言われてから、少しずつ考えが変わりました。今では、毎朝早く起きて、簡単なものでも必ず食べるようになりました。おかげで、午前中も元気に働けるようになり、仕事も前より進むようになりました。友だちにこの話をしたら、彼女も朝ごはんを食べ始めたそうです。小さな習慣でも、続けると生活が変わるものだと感じています。","passage_en":"Until last year, I lived without eating breakfast. When I don't have time, I tend to end up skipping meals. But after a doctor told me at a health checkup, \"If you don't eat breakfast, it isn't good for your body,\" my thinking gradually changed. Now I get up early every morning and always eat something, even if it's simple. Thanks to that, I've become able to work energetically through the morning, and my work has come to progress better than before. When I told a friend about this, she apparently started eating breakfast too. I feel that even a small habit, if you keep it up, can change your life.","questions":[{"q":"この人は、どうして朝ごはんを食べるようになりましたか。","q_en":"Why did this person come to eat breakfast?","options":["友だちに勧められたから","医者に体に良くないと言われたから","朝、時間ができたから","太ってしまったから"],"answer":1},{"q":"朝ごはんを食べるようになって、どんな変化がありましたか。","q_en":"What change happened after this person started eating breakfast?","options":["長く寝るようになった","食欲がなくなった","仕事に行かなくなった","午前中も元気に働けて、仕事も進むようになった"],"answer":3},{"q":"友だちについて、正しいものはどれですか。","q_en":"Which statement about the friend is correct?","options":["彼女も朝ごはんを食べ始めた","彼女は医者だ","彼女は朝ごはんを食べない","彼女がこの人に朝ごはんを勧めた"],"answer":0}]},{"id":"r-n3-4","title":"会議室変更のお知らせ (Notice: Meeting Room Change)","passage":"社員のみなさまへ\n\nあしたの営業部の会議ですが、いつも使っている三階の会議室がエアコンの工事のため、使えなくなりました。そのため、会議の場所は五階の第二会議室に変わります。時間はこれまでどおり午後二時からです。\n\nなお、資料は各自で印刷して持ってきてください。工事は午前中に終わる予定ですが、もし長引いた場合は、会議がオンラインに変更されることもあります。その時はメールでお知らせします。\n\n総務部","passage_en":"To all staff,\n\nRegarding tomorrow's Sales Department meeting: the third-floor meeting room we usually use has become unavailable due to air-conditioner construction work. For that reason, the meeting location will change to the second meeting room on the fifth floor. The time remains 2:00 p.m. as before.\n\nAlso, please print the materials yourself and bring them. The construction is scheduled to finish in the morning, but if it runs long, the meeting may be changed to online. In that case, we will inform you by email.\n\nGeneral Affairs Department","questions":[{"q":"会議の場所が変わったのはどうしてですか。","q_en":"Why did the meeting location change?","options":["五階の会議室がせまいから","いつもの会議室が工事で使えないから","営業部の人数が増えたから","エアコンがこわれて暑いから"],"answer":1},{"q":"会議の時間について、正しいものはどれですか。","q_en":"Which is correct about the meeting time?","options":["午前中に始まる","一時間おそくなる","これまでと同じで午後二時からだ","工事が終わってから決める"],"answer":2},{"q":"工事が長引いた場合、どうなる可能性がありますか。","q_en":"If the construction runs long, what might happen?","options":["会議が中止になる","会議がオンラインに変わる","会議が三階にもどる","資料が配られなくなる"],"answer":1}]},{"id":"r-n3-5","title":"バスの遅れについて (About the Bus Delay)","passage":"けさ、駅前から山下町へ行くバスに乗ろうとしたら、雪のためにバスがなかなか来なかった。三十分ぐらい待って、やっと来たバスはとても込んでいた。運転手さんが「道がすべりやすくなっていますので、ゆっくり走ります。到着がおくれるかもしれません」と言った。\n\nわたしは九時から会議があったので、少し心配になった。でも、会社に電話したら、部長も同じバスに乗っていたそうで、「気をつけて来なさい」と言われた。会議は十時に変えてもらえることになり、ほっとした。","passage_en":"This morning, when I tried to board the bus from in front of the station to Yamashita-cho, the bus wouldn't come for a long time because of the snow. After waiting about thirty minutes, the bus that finally came was very crowded. The driver said, \"The roads have become slippery, so I'll drive slowly. The arrival may be delayed.\"\n\nBecause I had a meeting from nine o'clock, I got a little worried. But when I called the company, I heard that the department head was on the same bus, and I was told, \"Come carefully.\" The meeting ended up being changed to ten o'clock, and I was relieved.","questions":[{"q":"バスがなかなか来なかったのはどうしてですか。","q_en":"Why wouldn't the bus come for a long time?","options":["雪がふっていたから","運転手が休んでいたから","道が工事中だったから","お客が多すぎたから"],"answer":0},{"q":"「わたし」が会社に電話して分かったことは何ですか。","q_en":"What did the writer find out by calling the company?","options":["会議が中止になったこと","部長も同じバスに乗っていたこと","バスが来ないこと","部長がおこっていること"],"answer":1},{"q":"「わたし」が最後にほっとしたのはなぜですか。","q_en":"Why was the writer relieved in the end?","options":["バスがすいていたから","雪がやんだから","会議の時間を十時に変えてもらえたから","早く会社に着いたから"],"answer":2}]},{"id":"r-n3-6","title":"健康診断のお知らせ (Notice: Health Checkup)","passage":"山田様\n\nいつもみどり内科クリニックをご利用いただき、ありがとうございます。今年の健康診断のご予約についてご案内します。\n\n検査を受ける前の日は、夜九時までに食事を終わらせてください。それ以降は、水やお茶以外は飲まないようにお願いします。朝は何も食べずにおいでください。\n\nもし当日、熱があったり体の調子が悪かったりする場合は、無理をせず、前もってお電話ください。日を変えることができます。結果は二週間後にご自宅に郵送されます。\n\nみどり内科クリニック","passage_en":"Dear Mr. Yamada,\n\nThank you for always using Midori Internal Medicine Clinic. We would like to inform you about booking this year's health checkup.\n\nOn the day before the examination, please finish eating by 9:00 p.m. After that, please refrain from drinking anything other than water or tea. Please come in the morning without having eaten anything.\n\nIf on the day you have a fever or feel unwell, please do not push yourself and call us in advance. The date can be changed. The results will be mailed to your home two weeks later.\n\nMidori Internal Medicine Clinic","questions":[{"q":"検査の前の日の夜、してもよいことは何ですか。","q_en":"What is allowed on the night before the examination?","options":["九時すぎに食事をする","水やお茶を飲む","コーヒーを飲む","何も気にせず食べる"],"answer":1},{"q":"検査の日の朝はどうすればいいですか。","q_en":"What should you do on the morning of the examination?","options":["軽く朝ごはんを食べる","何も食べずに来る","たくさん食べてくる","牛乳を飲んでくる"],"answer":1},{"q":"当日、体の調子が悪いときはどうしますか。","q_en":"What should you do if you feel unwell on the day?","options":["無理をして検査を受ける","そのまま行かずに休む","前もって電話して日を変えてもらう","結果を待つ"],"answer":2}]},{"id":"r-n3-7","title":"アプリの更新について (About the App Update)","passage":"山川さんへ\n\nおつかれさまです。先週おすすめした家計簿アプリ、使ってみましたか。\n\nじつは、そのアプリが今週新しくなって、レシートを写真でとると、自動で金額が入力されるようになりました。前は自分で数字を打っていたので、とても便利になったと思います。\n\nただ、更新したあとで一度ログインし直さないと使えないので、気をつけてください。パスワードを忘れた場合は、登録したメールアドレスに新しいパスワードが送られてきます。\n\nもし使い方が分からなかったら、いつでも聞いてくださいね。\n\n田中","passage_en":"To Yamakawa-san,\n\nThanks for your hard work. Did you try the household-account-book app I recommended last week?\n\nActually, that app was renewed this week, and now when you take a photo of a receipt, the amount is entered automatically. Before, you had to type the numbers yourself, so I think it's become very convenient.\n\nHowever, please be careful, because after updating you have to log in again once, or you can't use it. If you forget your password, a new password will be sent to the email address you registered.\n\nIf you don't understand how to use it, please ask me anytime.\n\nTanaka","questions":[{"q":"アプリはどのように新しくなりましたか。","q_en":"How did the app become new?","options":["レシートの写真から自動で金額が入るようになった","無料で使えるようになった","数字を手で打つようになった","色が変わった"],"answer":0},{"q":"更新したあとに気をつけることは何ですか。","q_en":"What should you be careful about after updating?","options":["新しいレシートを買うこと","もう一度ログインし直すこと","アプリを消すこと","田中さんに電話すること"],"answer":1},{"q":"パスワードを忘れたとき、どうなりますか。","q_en":"What happens if you forget your password?","options":["アプリが使えなくなる","お店に行かなければならない","登録したメールに新しいパスワードが送られてくる","田中さんが教えてくれる"],"answer":2}]},{"id":"r-n3-8","title":"町内会のそうじについて (About the Neighborhood Cleanup)","passage":"みなみ町にお住まいのみなさまへ\n\n毎年恒例の公園そうじを、今週の日曜日の朝八時から行います。参加できる方は、軍手とタオルを持って、公園の入り口に集まってください。ほうきやごみ袋は町内会で用意します。\n\n去年は雨で中止になりましたが、今年は晴れそうなので、たくさんの方に手伝っていただけるとうれしいです。小さいお子さんといっしょの参加も大歓迎です。\n\nそうじのあとには、お茶とおかしが配られます。天気が悪くなりそうな場合は、前の日の夜に町内会のホームページでお知らせします。\n\nみなみ町内会","passage_en":"To everyone living in Minami-cho,\n\nWe will hold the annual park cleanup this Sunday from 8:00 a.m. Those who can participate, please gather at the park entrance with work gloves and a towel. Brooms and garbage bags will be prepared by the neighborhood association.\n\nLast year it was canceled due to rain, but this year it looks like it will be sunny, so we would be glad if many people could help. Participation together with small children is very welcome too.\n\nAfter the cleanup, tea and snacks will be handed out. If the weather looks like it will turn bad, we will announce it the night before on the neighborhood association's website.\n\nMinami Neighborhood Association","questions":[{"q":"そうじに参加する人が持っていくものは何ですか。","q_en":"What should people participating in the cleanup bring?","options":["ほうきとごみ袋","軍手とタオル","お茶とおかし","お金と地図"],"answer":1},{"q":"去年のそうじはどうなりましたか。","q_en":"What happened to last year's cleanup?","options":["雨で中止になった","人が来なかった","夜に行われた","予定どおり行われた"],"answer":0},{"q":"天気が悪くなりそうなとき、どうやって知らせますか。","q_en":"If the weather looks like it will turn bad, how will they announce it?","options":["当日の朝に電話で","公園の入り口ではり紙で","前の日の夜にホームページで","そうじのあとにメールで"],"answer":2}]},{"id":"r-n3-9","title":"テニス教室に通うようになって (Since I Started Going to Tennis Class)","passage":"去年の春から、家の近くのテニス教室に通うようになった。子どものころは運動が苦手で、体を動かすことがきらいだった。でも、友だちに「いっしょにやってみない?」とさそわれて、思いきって始めてみた。\n\n最初はボールがなかなか打てなくて、はずかしかった。しかし、先生がやさしく教えてくれたおかげで、少しずつ打てるようになった。今では毎週土曜日が楽しみで、しかたがない。\n\n運動を続けているうちに、前よりよく眠れるようになり、体の調子もよくなった。あのとき友だちにさそわれなかったら、今の楽しい生活はなかったと思う。","passage_en":"Since last spring, I started going to a tennis class near my house. When I was a child, I was bad at sports and hated moving my body. But a friend invited me, saying \"Won't you try it together?\", and I took the plunge and started.\n\nAt first I could hardly hit the ball, and I was embarrassed. However, thanks to the teacher kindly teaching me, I gradually became able to hit it. Now I can't help looking forward to every Saturday.\n\nWhile continuing to exercise, I became able to sleep better than before, and my physical condition improved too. If my friend hadn't invited me back then, I don't think I'd have the fun life I have now.","questions":[{"q":"「わたし」は子どものころ、運動についてどう思っていましたか。","q_en":"How did the writer feel about sports as a child?","options":["とても得意だった","苦手できらいだった","毎日していた","先生になりたかった"],"answer":1},{"q":"「わたし」がテニスを始めたのはどうしてですか。","q_en":"Why did the writer start tennis?","options":["友だちにさそわれたから","先生にたのまれたから","家が近かったから","有名になりたかったから"],"answer":0},{"q":"テニスを続けて、「わたし」の体はどう変わりましたか。","q_en":"How did the writer's body change from continuing tennis?","options":["太ってしまった","けがをするようになった","前よりよく眠れて調子がよくなった","何も変わらなかった"],"answer":2}]}],"N2":[{"id":"r-n2-1","title":"デジタル時代の「不便」の価値 (The value of \"inconvenience\" in the digital age)","passage":"近年、あらゆるものがボタン一つで手に入るようになった。しかし、便利さが増せば増すほど、人々の満足度も高まるかというと、必ずしもそうとは限らない。むしろ、手間をかけて何かを成し遂げたときにこそ、深い充実感が得られるものだ。たとえば、地図アプリに頼らず自分の足で道を探し当てたときの喜びは、目的地に着くという結果だけでは説明できない。効率ばかりを追い求めるあまり、私たちはそうした過程の楽しみを見失いつつあるのではないだろうか。不便であることは、決して悪いことばかりではないのである。","passage_en":"In recent years, virtually everything has become obtainable at the push of a button. However, whether people's satisfaction also rises as convenience increases is not necessarily the case. Rather, it is precisely when we accomplish something by putting in effort that we gain a deep sense of fulfillment. For example, the joy of finding one's own way on foot without relying on a map app cannot be explained by the mere result of reaching the destination. In our excessive pursuit of efficiency alone, aren't we losing sight of the enjoyment of such a process? Being inconvenient is by no means only a bad thing.","questions":[{"q":"便利さと満足度の関係について、筆者はどう述べているか。","q_en":"What does the author say about the relationship between convenience and satisfaction?","options":["便利になればなるほど、満足度は必ず高まる。","便利になっても、満足度が高まるとは限らない。","便利さと満足度には、まったく関係がない。","不便であるほうが、常に満足度は高くなる。"],"answer":1},{"q":"地図アプリの例を通して、筆者が言いたいことは何か。","q_en":"What is the author trying to say through the example of the map app?","options":["地図アプリを使うと、かえって道に迷いやすい。","目的地に早く着くことが、何よりも重要である。","道を探し当てる過程そのものにも喜びがある。","自分の足で歩くのは疲れるので避けるべきだ。"],"answer":2},{"q":"この文章で筆者が最も伝えようとしていることは何か。","q_en":"What is the author most trying to convey in this passage?","options":["不便さにも価値があり、過程を楽しむことが大切だ。","効率を追求することこそ、現代人に課された使命だ。","デジタル技術は、そもそも使うべきではない。","便利な道具は、すべて手放したほうがよい。"],"answer":0}]},{"id":"r-n2-2","title":"リモートワークとオフィスの意味 (Remote work and the meaning of the office)","passage":"感染症の流行をきっかけに在宅勤務が急速に広まり、通勤に費やしていた時間を有効に使えるようになったと歓迎する声は多い。その一方で、同じ職場の仲間と顔を合わせる機会が減ったことで、かえって孤独を感じる人も少なくないという。ある調査によれば、在宅勤務を経験した会社員の約六割が「雑談のような何気ないやりとりこそ、仕事を円滑に進める上で欠かせなかった」と答えている。効率の面ばかりが注目されがちだが、オフィスという場所は、単に作業をするためだけのものではなかったわけだ。働き方が多様化する今、企業には両者の利点をどう組み合わせるかが問われている。","passage_en":"With the outbreak of the epidemic as a trigger, working from home spread rapidly, and there are many voices welcoming the fact that people can now make effective use of the time they had spent commuting. On the other hand, it is said that quite a few people feel lonely instead, because their opportunities to meet colleagues from the same workplace face to face have decreased. According to one survey, about sixty percent of company employees who experienced working from home answered that \"casual exchanges such as small talk were exactly what was indispensable for carrying work forward smoothly.\" Although the aspect of efficiency tends to get all the attention, the office as a place was, after all, not merely something for doing work. Now that working styles are diversifying, companies are being asked how to combine the merits of both.","questions":[{"q":"在宅勤務が歓迎される理由として、本文で挙げられているのは何か。","q_en":"What is given in the passage as a reason working from home is welcomed?","options":["給料が以前より上がったから。","通勤に使っていた時間を有効に使えるようになったから。","同僚と顔を合わせる機会が増えたから。","任される仕事の量が減ったから。"],"answer":1},{"q":"調査の結果から分かることは何か。","q_en":"What can be understood from the results of the survey?","options":["多くの会社員が、雑談は仕事に不要だと考えている。","在宅勤務者の大半は、孤独をまったく感じていない。","何気ない会話が、仕事を円滑に進めるのに役立っていた。","六割の社員が、在宅勤務そのものに反対している。"],"answer":2},{"q":"筆者の考えに合うものはどれか。","q_en":"Which option matches the author's view?","options":["オフィスは、作業をする以外の役割も担っていた。","在宅勤務は、あらゆる面でオフィス勤務より優れている。","企業は、オフィスを完全に廃止すべきである。","効率だけを重視すれば、問題はすべて解決する。"],"answer":0}]},{"id":"r-n2-3","title":"若者の読書離れと図書館 (Young people's turn away from reading and the library)","passage":"「若者の活字離れ」ということばをよく耳にする。確かに、スマートフォンの普及によって、まとまった文章をじっくり読む時間は減っているのかもしれない。しかし、若者が文字を読まなくなったと結論づけるのは早計だろう。実際には、SNSやニュースサイトを通じて、以前より多くの情報に触れている面もあるからだ。問題は読む量そのものよりも、短い文章を次々と読み流す習慣が身につき、一つのテーマについて深く考える機会が失われつつあることにある。図書館が今、単に本を貸し出す場から、人々が落ち着いて思考を深められる場へと役割を変えようとしているのも、こうした背景があってのことなのである。","passage_en":"We often hear the phrase \"young people's turn away from the printed word.\" It is true that, with the spread of smartphones, the time to read substantial texts carefully may well be decreasing. However, it would be hasty to conclude that young people have stopped reading text. In reality, there is also the aspect that, through social media and news sites, they are exposed to more information than before. The problem lies not so much in the amount they read as in the fact that the habit of skimming through one short piece of text after another has taken hold, and opportunities to think deeply about a single theme are gradually being lost. It is precisely against such a background that libraries are now trying to shift their role from mere lenders of books to places where people can calmly deepen their thinking.","questions":[{"q":"「若者の活字離れ」について、筆者はどう考えているか。","q_en":"What does the author think about \"young people's turn away from the printed word\"?","options":["若者は、もう文字をまったく読まなくなった。","若者が文字を読まないと決めつけるのは早すぎる。","スマートフォンは、読書にとって有害なものだ。","若者は、昔よりも本をよく読むようになった。"],"answer":1},{"q":"筆者が最も問題だと考えていることは何か。","q_en":"What does the author consider the biggest problem?","options":["若者が触れる情報の量が、以前より減っていること。","図書館を利用する人の数が、年々減っていること。","SNSで得られる情報が、正確でない場合が多いこと。","短い文章を読み流し、深く考える機会が減っていること。"],"answer":3},{"q":"図書館の役割の変化について、本文の内容に合うものはどれか。","q_en":"Which option matches the passage regarding the change in the library's role?","options":["本を貸し出すことを、これからはやめようとしている。","人々が落ち着いてじっくり考えられる場になろうとしている。","若者だけが利用できる特別な場に変わろうとしている。","SNSの利用を全面的に禁止する場になろうとしている。"],"answer":1}]},{"id":"r-n2-4","title":"テレワークがもたらしたもの (What remote work brought about)","passage":"新型の感染症をきっかけに急速に広まったテレワークは、単に働く場所を変えただけのものではない。通勤に費やしていた時間が減った分、家族と過ごす時間が増えたという声がある一方で、仕事と私生活の境界があいまいになり、かえって長時間労働につながっているという指摘も少なくない。会社にとっても、社員が顔を合わせる機会が減ったことで、これまで自然に共有されていた情報や技術が若手に伝わりにくくなったという。とはいえ、一度その便利さを知った以上、以前とまったく同じ働き方に戻すわけにはいかないだろう。今後は、出社と在宅をどう組み合わせるかが、それぞれの企業に問われることになる。","passage_en":"Telework, which spread rapidly in the wake of a new infectious disease, is not merely a matter of changing where people work. While some say that, because the time they used to spend commuting has decreased, they now have more time to spend with family, there are also no few observations that the boundary between work and private life has grown blurred, which has, on the contrary, led to longer working hours. For companies too, it is said that because employees now have fewer chances to meet face to face, information and skills that used to be shared naturally have become harder to pass on to younger workers. That said, now that people have come to know its convenience, it will probably be impossible to go back to exactly the same way of working as before. From now on, each company will be asked how to combine coming into the office with working from home.","questions":[{"q":"テレワークの問題点として、本文で述べられているものはどれか。","q_en":"Which of the following is mentioned in the text as a problem of telework?","options":["通勤時間が以前より長くなったこと","仕事と私生活の区別がつきにくくなったこと","家族と過ごす時間が必ず減ること","給料が下がってしまったこと"],"answer":1},{"q":"会社にとっての影響として、本文で挙げられているものはどれか。","q_en":"Which of the following is cited in the text as an effect on companies?","options":["情報や技術が若手に伝わりにくくなったこと","社員の数が急に増えたこと","オフィスの家賃が上がったこと","若手の給料が上がったこと"],"answer":0},{"q":"筆者は今後の働き方についてどう考えているか。","q_en":"What does the author think about future ways of working?","options":["以前とまったく同じ働き方に戻すべきだ","すべての仕事を在宅にするべきだ","出社と在宅をどう組み合わせるかが課題になる","テレワークはすぐになくなるだろう"],"answer":2}]},{"id":"r-n2-5","title":"ローカル線の岐路 (A local railway line at a crossroads)","passage":"地方を走るローカル線の多くが、存続の危機に立たされている。利用者が減り続け、運賃収入だけでは路線を維持できないというのがその理由である。もっとも、赤字だからといって、すぐに廃止してよいというものではない。通学する高校生や、車を運転できない高齢者にとって、鉄道は生活を支える大切な足だからだ。一方、バスに切り替えれば費用を抑えられるという意見もあり、地元の住民の間でも考え方が分かれている。鉄道会社と自治体、そして住民が、それぞれの立場を超えて話し合わない限り、この問題の解決は難しいと言わざるを得ない。","passage_en":"Many local railway lines running through rural areas are being placed in a crisis of survival. The reason is that, with the number of users continuing to fall, the lines cannot be maintained on fare revenue alone. That said, just because a line is running a deficit does not mean it may be abolished at once. For the high school students who commute to school and for the elderly who cannot drive, the railway is an important means of getting around that supports their lives. On the other hand, there is also the view that switching to buses would keep costs down, and even among local residents opinion is divided. Unless the railway companies, the local governments, and the residents talk things over, going beyond their respective positions, one cannot but say that solving this problem will be difficult.","questions":[{"q":"ローカル線が危機に立たされている理由は何か。","q_en":"Why are local railway lines being placed in crisis?","options":["運賃が高すぎて客が怒っているから","利用者が減り、運賃収入だけでは維持できないから","バスの方が速くて快適だから","運転手が足りなくなったから"],"answer":1},{"q":"赤字のローカル線について、筆者はどう考えているか。","q_en":"What does the author think about loss-making local lines?","options":["赤字でもすぐに廃止してよいとは限らない","赤字ならすぐに廃止するべきだ","鉄道はもう必要ないと考えている","高齢者は鉄道を使うべきではない"],"answer":0},{"q":"この問題を解決するために必要なことは何か。","q_en":"What is needed to solve this problem?","options":["鉄道会社だけで結論を出すこと","住民の意見を無視して決めること","関係者が立場を超えて話し合うこと","とにかくすぐにバスに切り替えること"],"answer":2}]},{"id":"r-n2-6","title":"朝食をめぐる意識の変化 (Changing attitudes toward breakfast)","passage":"「朝食は一日で最も大切な食事だ」とよく言われる。しかし、近年の忙しい生活の中で、朝食を抜く人が増えているのも事実である。時間がないから食べないという人もいれば、そもそも朝は食欲がわかないという人もいる。ある調査によれば、朝食を毎日とる人ほど、集中力が続き、午前中の仕事や勉強がはかどる傾向にあるという。とはいえ、無理に食べればよいというものでもない。大切なのは、量よりもむしろ、自分の体の調子に合ったものを選ぶことではないだろうか。忙しい朝だからこそ、何をどう食べるかを一度見直してみる価値はあるだろう。","passage_en":"It is often said that \"breakfast is the most important meal of the day.\" However, it is also a fact that, amid the busy lives of recent years, more and more people are skipping breakfast. Some say they don't eat because they have no time, while others say that they simply have no appetite in the morning to begin with. According to a certain survey, it is said that the more regularly a person eats breakfast every day, the more their concentration tends to last and the more efficiently they get through their morning work or study. That said, it is not as though forcing oneself to eat is good either. What matters is, rather than quantity, choosing something suited to one's own physical condition, is it not? Precisely because mornings are busy, there is surely value in taking a moment to rethink what and how one eats.","questions":[{"q":"朝食を抜く理由として、本文に挙げられているものはどれか。","q_en":"Which is given in the text as a reason for skipping breakfast?","options":["朝食が体に悪いと医者に言われたから","時間がない、または朝は食欲がわかないから","朝食が高くて買えないから","家族が朝食を作ってくれないから"],"answer":1},{"q":"調査の結果として述べられていることはどれか。","q_en":"Which is stated as a result of the survey?","options":["朝食をとる人ほど午前中の仕事や勉強がはかどる傾向がある","朝食を抜く人ほど集中力が高い","朝食の量が多いほど健康になる","朝食と集中力にはまったく関係がない"],"answer":0},{"q":"筆者が最も大切だと考えていることは何か。","q_en":"What does the author consider most important?","options":["できるだけ多くの量を食べること","毎朝かならず朝食を抜くこと","毎日決まった時間に食べること","自分の体の調子に合ったものを選ぶこと"],"answer":3}]},{"id":"r-n2-7","title":"キャッシュレス化の光と影 (The light and shadow of going cashless)","passage":"スマートフォン一つで支払いが済むキャッシュレス決済が、急速に普及している。財布を持ち歩かなくてもよいうえ、支払いの記録が自動的に残るため、家計の管理がしやすくなったという利点がある。その便利さゆえに、現金をほとんど使わなくなったという人も珍しくない。しかし、便利になった反面、お金を使っている実感が薄れ、つい使いすぎてしまうという問題も指摘されている。また、通信や電気が止まれば決済ができなくなるという弱点もある。技術がどれほど進もうと、それに頼りきってしまうのは考えものだ。現金とキャッシュレスをうまく使い分ける工夫が、これからますます求められていくにちがいない。","passage_en":"Cashless payment, whereby a purchase is settled with a single smartphone, is spreading rapidly. It has the advantage that not only do you not need to carry a wallet, but because a record of payments is kept automatically, managing household finances has become easier. Owing to that convenience, it is not unusual for people to say they have come to hardly use cash at all. However, on the flip side of becoming convenient, it has also been pointed out that the real feeling of spending money fades, so that one ends up overspending without meaning to. There is also the weakness that if communications or electricity go down, payment becomes impossible. No matter how far technology advances, relying on it completely is something to think twice about. There is no doubt that the ingenuity to use cash and cashless payment properly, each in its place, will increasingly be called for from now on.","questions":[{"q":"キャッシュレス決済の利点として、本文に述べられているものはどれか。","q_en":"Which is stated in the text as an advantage of cashless payment?","options":["支払いの記録が自動的に残り、家計の管理がしやすい","通信や電気が止まっても問題なく使える","現金で払うより必ず値段が安くなる","お金を使いすぎることが決してなくなる"],"answer":0},{"q":"キャッシュレス決済の問題点として、本文で指摘されているものはどれか。","q_en":"Which is pointed out in the text as a problem of cashless payment?","options":["財布が重くなってしまうこと","使っている実感が薄れ、つい使いすぎてしまうこと","支払いの記録がまったく残らないこと","家計の管理が以前より難しくなること"],"answer":1},{"q":"筆者が最も言いたいことは何か。","q_en":"What is the author's main point?","options":["現金はもう完全に必要ない","キャッシュレス決済は使うべきではない","現金とキャッシュレスをうまく使い分ける工夫が必要だ","技術の進歩そのものを止めるべきだ"],"answer":2}]},{"id":"r-n2-8","title":"町内会は必要か (Are neighborhood associations necessary?)","passage":"かつては当たり前のように加入していた町内会だが、近年、参加をためらう人が増えている。仕事や子育てで忙しく、行事や会合に時間を割けないというのが主な理由である。役員が回ってくると負担が大きい、という声もあるだろう。しかし、災害が起きたときのことを考えれば、日ごろから近所の人と顔なじみになっておくことの意味は決して小さくない。実際、大きな地震の後、助け合ったのは遠くの親戚ではなく、隣近所の人々だったという例は数多い。町内会のあり方そのものを見直す必要はあるにせよ、地域のつながりを完全になくしてしまってよいわけではないだろう。","passage_en":"Neighborhood associations, which people once joined as a matter of course, have in recent years seen a growing number of people hesitant to take part. The main reason is that, being busy with work and child-rearing, people cannot spare time for events and meetings. There will also be voices saying that when the officer role comes around to you, the burden is heavy. However, if one thinks about when a disaster strikes, the significance of becoming familiar with one's neighbors on an everyday basis is by no means small. In fact, there are many examples where, after a major earthquake, it was not distant relatives but the people right next door and nearby who helped one another. Even granting that there is a need to reconsider the very form the neighborhood association takes, it does not follow that it is fine to do away with community ties entirely.","questions":[{"q":"町内会への参加をためらう主な理由は何か。","q_en":"What is the main reason people hesitate to join neighborhood associations?","options":["会費があまりに高すぎるから","仕事や子育てで忙しく、行事や会合に時間を割けないから","近所の人が気に入らないから","町内会そのものがなくなったから"],"answer":1},{"q":"大きな地震の後について、本文で述べられていることはどれか。","q_en":"What does the text say about the aftermath of a major earthquake?","options":["遠くの親戚が最も頼りになった","だれも互いに助け合おうとしなかった","助け合ったのは隣近所の人々だった","町内会は何の役にも立たなかった"],"answer":2},{"q":"筆者の考えに最も近いものはどれか。","q_en":"Which is closest to the author's view?","options":["地域のつながりは完全になくしてかまわない","町内会は昔のまま一切変えるべきではない","町内会には住民全員が必ず参加するべきだ","あり方は見直しつつ、地域のつながりは残すべきだ"],"answer":3}]},{"id":"r-n2-9","title":"都市の夏はなぜ暑いのか (Why are city summers so hot?)","passage":"近年、夏になると都市の気温が異常なほど高くなり、夜になっても気温が下がらない日が続くことがある。これには、地球全体の温暖化だけでなく、都市特有の事情も関係しているといわれる。アスファルトやコンクリートは日中の熱をため込みやすく、その熱を夜間にゆっくりと放出する。そのうえ、エアコンの室外機や自動車が絶えず熱を出しているのだから、気温が下がりにくいのも無理はない。緑地を増やしたり、風の通り道を確保したりする対策が各地で試みられているものの、効果が表れるまでには時間がかかる。便利で快適な都市生活を求めてきた結果が、こうした暑さとなって表れているとも言えるのではないだろうか。","passage_en":"In recent years, when summer comes, city temperatures climb to abnormally high levels, and there are stretches of days when the temperature does not fall even after night comes. This is said to be related not only to the warming of the earth as a whole, but also to circumstances peculiar to cities. Asphalt and concrete readily store up the daytime heat, and then release that heat slowly during the night. On top of that, since air-conditioner outdoor units and automobiles are constantly giving off heat, it is no wonder that the temperature is slow to fall. Although measures such as increasing green space and securing paths for the wind to pass through are being tried in various places, it takes time for their effects to appear. One might even say that the result of our having pursued a convenient and comfortable urban life is appearing in the very form of this heat.","questions":[{"q":"都市の気温が夜になっても下がりにくいのはなぜか。","q_en":"Why is the city temperature slow to fall even at night?","options":["夜も太陽が出て地面を照らしているから","アスファルトなどが夜に熱を放出し、室外機や車も熱を出すから","緑地が多すぎて風が通らないから","夜になると急に風が強くなるから"],"answer":1},{"q":"都市の暑さ対策について、本文で述べられていることはどれか。","q_en":"What does the text say about measures against city heat?","options":["対策はどこでもまったく行われていない","対策をすれば、その日のうちに効果が表れる","対策は試みられているが、効果が出るには時間がかかる","対策をしてもまったく意味がない"],"answer":2},{"q":"都市の暑さについて、筆者はどのように考えているか。","q_en":"How does the author view the city's heat?","options":["便利で快適な都市生活を求めてきた結果とも言える","地球全体の温暖化とはまったく関係がない","都市特有の事情はほとんど関係していない","エアコンをもっと使えば根本的に解決する"],"answer":0}]}],"N1":[{"id":"r-n1-1","title":"利便性の逆説 (The Paradox of Convenience)","passage":"利便性の追求は、しばしば人間の能力を拡張するものと見なされてきた。だが、その恩恵の陰で、私たちが手放しているものの大きさに、どれほど自覚的であろうか。かつては記憶に頼らざるを得なかった無数の情報が、今や端末の内に格納され、必要に応じて瞬時に引き出せる。この変化は、確かに労力の軽減をもたらした。しかし、記憶するという行為そのものが、単なる情報の保存ではなく、対象を反芻し、他の知識と結びつけ、自らの思考の一部として血肉化する過程であったことを想起するならば、外部化された記憶が、その過程まで肩代わりしてくれるわけではないことに気づかされる。便利さとは、目的地までの距離を縮める代わりに、その道中で得られたはずの発見を奪い去るものでもあるのだ。問題は技術そのものにあるのではない。むしろ、道具に委ねてよいものと、なお自らの内に留めおくべきものとを見極める判断を、私たちが怠りがちであることにこそある。","passage_en":"The pursuit of convenience has often been regarded as something that extends human capabilities. Yet how conscious are we of the magnitude of what we relinquish in the shadow of its benefits? Countless pieces of information that once had to be committed to memory are now stored within our devices and can be retrieved instantly whenever needed. This change has certainly reduced our labor. However, if we recall that the act of remembering was not merely the storage of information but a process of turning something over in the mind, connecting it with other knowledge, and making it flesh and blood as part of one's own thinking, we come to realize that externalized memory does not take over that process for us as well. Convenience, in shortening the distance to one's destination, is also something that robs us of the discoveries we might have made along the way. The problem does not lie in technology itself. Rather, it lies precisely in our tendency to neglect the judgment of discerning what may be entrusted to tools and what should still be kept within ourselves.","questions":[{"q":"筆者は「記憶するという行為」をどのようなものだと述べているか。","q_en":"How does the author describe the act of remembering?","options":["情報を端末に保存することと本質的に同じものである。","対象を反芻し、他の知識と結びつけて思考の一部にする過程である。","労力がかかるため、できる限り避けるべきものである。","外部化された記憶によって完全に肩代わりされたものである。"],"answer":1},{"q":"筆者が最も問題視しているのはどのようなことか。","q_en":"What does the author regard as the greatest problem?","options":["技術そのものが人間に害をもたらしていること。","端末の記憶容量が情報量に対して不足していること。","道具に委ねてよいものと自らに留めるべきものとを見極める判断を怠ること。","情報を瞬時に引き出せるようになったこと。"],"answer":2},{"q":"本文における「便利さ」の捉え方として最も適切なものはどれか。","q_en":"Which best captures how convenience is characterized in the passage?","options":["目的地までの距離を縮めるため、常に望ましいものである。","道中で得られたはずの発見を奪い去る側面も併せ持つ。","人間の能力を無条件に拡張する働きしか持たない。","記憶の過程そのものを完全に代替してくれるものである。"],"answer":1}]},{"id":"r-n1-2","title":"翻訳の不可能性をめぐって (On the So-Called Impossibility of Translation)","passage":"翻訳とは、ある言語で書かれた内容を、別の言語へと過不足なく移し替える作業だと、素朴には考えられている。しかし、言葉が単に事物を指し示す記号にとどまらず、その語が用いられてきた歴史や、話者の集団が共有する感覚の網の目のなかに置かれてはじめて意味をなすものだとすれば、ある語をそっくりそのまま別の語に置き換えるという発想自体が、はじめから成り立ちにくい。原文のもつ響きや含みは、しばしば訳語の選択の過程でこぼれ落ちる。とはいえ、このことをもって翻訳は不可能だと断ずるのは早計であろう。むしろ注目すべきは、翻訳者が二つの言語のあいだの埋めがたい隔たりを前にして、なお最も近い表現を探し当てようと苦闘する、その営みそのものである。完全な等価が原理的に得られないからこそ、訳文には訳者の解釈と選択が刻み込まれる。翻訳が創造的な行為でありうるのは、まさにこの不完全さゆえなのだ。","passage_en":"Translation is naively thought of as the work of transferring, without excess or deficiency, content written in one language into another. However, if words are not merely signs that point to things but come to mean something only when placed within the history in which they have been used and within the web of sensibilities shared by the community of speakers, then the very notion of replacing one word intact with another becomes difficult to sustain from the outset. The resonance and connotations of the original text often fall away in the process of choosing the translated words. Even so, it would be hasty to conclude from this that translation is impossible. What deserves attention, rather, is the very endeavor in which the translator, faced with the unbridgeable gap between two languages, nonetheless struggles to find the closest possible expression. Precisely because complete equivalence cannot in principle be obtained, the translator's interpretation and choices are inscribed in the translated text. It is exactly because of this imperfection that translation can be a creative act.","questions":[{"q":"「ある語をそっくりそのまま別の語に置き換える」という発想が成り立ちにくいのは、なぜだと筆者は述べているか。","q_en":"Why, according to the author, is the idea of swapping one word intact for another hard to sustain?","options":["翻訳者の語学的な能力が一般に不足しているから。","言葉は歴史や、話者が共有する感覚の網の目のなかで初めて意味をなすから。","対応する語を載せた辞書がまだ存在しないから。","二つの言語が互いに全く同じ構造を持っているから。"],"answer":1},{"q":"「翻訳は不可能だ」という考えに対する筆者の立場はどれか。","q_en":"What is the author's stance on the claim that translation is impossible?","options":["その結論に全面的に同意している。","そう断ずるのは早計だとして退けている。","翻訳者の苦闘は無意味だと考えている。","完全な等価は容易に得られると主張している。"],"answer":1},{"q":"翻訳が創造的な行為でありうる理由として、本文で述べられているものはどれか。","q_en":"For what reason, stated in the passage, can translation be a creative act?","options":["完全な等価が容易に得られるから。","訳者の解釈や選択を訳文から排除できるから。","完全な等価が得られない不完全さゆえに、訳者の解釈と選択が刻み込まれるから。","原文の響きや含みが訳文に一切失われずに残るから。"],"answer":2}]},{"id":"r-n1-3","title":"街の記憶 (The Memory of a Town)","passage":"久しぶりに訪れた故郷の駅前は、私の知る風景をほとんど留めていなかった。見慣れた商店の連なりは真新しい複合施設に取って代わられ、狭く入り組んだ路地は、広々とした歩道へと姿を変えていた。整備された街並みは、確かに以前より清潔で歩きやすい。それを進歩と呼ぶことに、あえて異を唱えるつもりはない。ただ、かつてその路地の角にあった古書店で、時の経つのも忘れて棚を眺めた午後や、軒先の看板が雨に濡れて光っていた夕暮れの記憶が、拠り所を失って宙に浮いてしまったように感じられたのである。場所とは、単なる物理的な空間ではない。そこで過ごした時間の堆積が、目に見えぬ層をなして染み込んでいる。建物が取り壊されるとき、失われるのは古びた木材や漆喰だけではなく、それに結びついていた無数の人々の記憶の手がかりでもある。新しさを一概に否定はできぬにせよ、私たちが「便利さ」や「効率」の名のもとに手放しているものの中には、二度と取り戻せぬものが含まれているのかもしれない。","passage_en":"The area in front of my hometown station, which I visited after a long absence, retained almost none of the scenery I knew. The familiar row of shops had been replaced by a brand-new complex, and the narrow, winding alleys had transformed into spacious sidewalks. The well-maintained townscape is certainly cleaner and easier to walk than before. I have no intention of deliberately objecting to calling that progress. And yet, the memory of an afternoon spent gazing at the shelves of the secondhand bookshop that used to stand on the corner of that alley, losing all track of time, and of a dusk when the signboard beneath the eaves glistened wet with rain, felt as though it had lost its anchor and been left floating in midair. A place is not merely a physical space. The accumulation of the time spent there permeates it, forming invisible layers. When a building is torn down, what is lost is not only the aged timber and plaster, but also the clues to the memories of countless people that were bound to it. While one cannot dismiss newness out of hand, among the things we relinquish in the name of 'convenience' and 'efficiency,' there may be included things that can never be recovered.","questions":[{"q":"整備された故郷の街並みについて、筆者はどのように述べているか。","q_en":"How does the author describe the renovated townscape of the hometown?","options":["以前より清潔で歩きやすくなったことは認めている。","何の価値もないものだとして全面的に否定している。","以前の路地よりかえって不便になったと述べている。","それを進歩と呼ぶことに強く反対している。"],"answer":0},{"q":"「場所」について、筆者の考えに最も近いものはどれか。","q_en":"Which is closest to the author's view of what a 'place' is?","options":["そこで過ごした時間とは無関係な、単なる物理的空間にすぎない。","そこで過ごした時間の堆積が、目に見えぬ層をなして染み込んだものである。","新しく整備されたものほど価値が高いものである。","記憶とは切り離して捉えるべきものである。"],"answer":1},{"q":"建物が取り壊されるとき失われるものとして、筆者が挙げているものはどれか。","q_en":"What does the author name as being lost when a building is torn down?","options":["古びた木材や漆喰といった物質だけである。","それに結びついていた人々の記憶の手がかりも含まれる。","清潔さと歩きやすさである。","実際には何も失われはしない。"],"answer":1}]},{"id":"r-n1-4","title":"効率化の逆説（The Paradox of Efficiency）","passage":"近年、多くの企業が業務の効率化を旗印に掲げ、会議の削減や書類の電子化を推し進めてきた。だが、効率という言葉が一人歩きするあまり、本来効率化が奉仕すべきはずの目的——すなわち、より質の高い仕事を生み出すこと——が、いつしか後景に退いてしまったきらいはないだろうか。無駄を省くという発想それ自体に異を唱えるつもりはない。しかし、一見無駄に見える雑談や、結論の出ない議論の往復こそが、後になって思わぬ発想の苗床となることも少なくない。目に見える成果を性急に求めるあまり、測りがたい価値を切り捨ててしまうとすれば、それはもはや効率化の名に値しない。真に問われるべきは、何を省くかではなく、何のために省くのかという一点にほかならない。","passage_en":"In recent years many companies have raised the banner of operational efficiency, pressing ahead with cutting meetings and digitizing paperwork. But hasn't the word \"efficiency\" taken on a life of its own to the point that the very purpose it was supposed to serve—namely, producing higher-quality work—has, before anyone noticed, receded into the background? I have no intention of objecting to the idea of eliminating waste itself. Yet it is not rare that precisely the seemingly wasteful chatter, or the back-and-forth of inconclusive debate, later becomes an unexpected seedbed for ideas. If, in impatiently chasing visible results, we cast aside values that are hard to measure, then that no longer deserves the name of efficiency. What should truly be asked is nothing other than this single point: not what to eliminate, but for what purpose we eliminate it.","questions":[{"q":"筆者が効率化について懸念していることは何か。","q_en":"What is the author concerned about regarding efficiency?","options":["会議の削減や書類の電子化が一向に進んでいないこと","無駄を省くという発想そのものが根本的に誤っていること","効率化が目的化し、本来の目的が見失われがちなこと","企業が効率化を旗印に掲げようとしないこと"],"answer":2},{"q":"「一見無駄に見える雑談」について、筆者はどう述べているか。","q_en":"What does the author say about \"seemingly wasteful chatter\"?","options":["直ちに目に見える成果へと結びつくものである","後になって思わぬ発想の源となることがある","効率化のために真っ先に省くべきものである","質の高い仕事を妨げる有害なものである"],"answer":1},{"q":"筆者が最も重要だと考えているのはどれか。","q_en":"What does the author consider most important?","options":["何を省くべきかを迅速に判断すること","目に見える成果をできるだけ早く得ること","何のために省くのかを問うこと","測りがたい価値をすべて数値に置き換えること"],"answer":2}]},{"id":"r-n1-5","title":"選択の自由という幻影（The Illusion of Freedom of Choice）","passage":"情報技術の発達は、私たちにかつてない選択肢の広がりをもたらしたと喧伝されている。確かに、指先一つで無数の商品や記事にたどり着ける現代において、選択の自由は飛躍的に拡大したかに見える。しかし、その自由なるものが、あらかじめ推薦アルゴリズムによって選り分けられた枠組みの内側でのみ許されているのだとすれば、話は別である。私たちは自らの意思で選んでいるつもりでいて、その実、過去の履歴から推し量られた「好むであろうもの」を差し出されているにすぎない。選ばされていることに気づかぬまま選ぶ——これを果たして自由と呼べるだろうか。真の自律とは、与えられた選択肢の中から選ぶ能力ではなく、選択肢の枠組みそのものを問い直す姿勢のうちにこそ宿るのである。","passage_en":"It is trumpeted that the development of information technology has brought us an unprecedented expansion of choices. Certainly, in an age where one can reach countless products and articles with a single fingertip, freedom of choice appears to have expanded dramatically. However, if that so-called freedom is permitted only within a framework already sorted out in advance by recommendation algorithms, then that is another matter entirely. We suppose we are choosing by our own will, when in reality we are merely being handed \"what we would presumably like,\" inferred from our past history. To choose without noticing that we are being made to choose—can this truly be called freedom? True autonomy dwells not in the ability to choose from among the options given, but precisely in the attitude of questioning the very framework of the options themselves.","questions":[{"q":"筆者は「選択の自由」の拡大についてどう考えているか。","q_en":"What does the author think about the expansion of \"freedom of choice\"?","options":["見かけ上は拡大したが、実際には枠組みに制約されていると考えている","情報技術の発達によって無条件に拡大したと考えている","選択肢が減ったことで自由もまた失われたと考えている","商品や記事が増えたことは自由とはまったく無関係だと考えている"],"answer":0},{"q":"「選ばされていることに気づかぬまま選ぶ」とはどういうことか。","q_en":"What does \"to choose without noticing that we are being made to choose\" mean?","options":["自分で選んだ結果に対して責任を負おうとしないこと","アルゴリズムが提示したものを、自らの意思だと思い込んで選ぶこと","過去の履歴を意図的に無視したうえで選ぶこと","無数の選択肢を一つ一つ慎重に吟味して選ぶこと"],"answer":1},{"q":"筆者の考える「真の自律」とは何か。","q_en":"What is \"true autonomy\" as the author conceives it?","options":["与えられた選択肢の中から最善のものを選び取る能力","推薦アルゴリズムの判断を全面的に信頼すること","選択肢の枠組みそのものを問い直す姿勢","できるだけ多くの選択肢を手元に集めること"],"answer":2}]},{"id":"r-n1-6","title":"健康という強迫（The Compulsion of Health）","passage":"何を食べるべきか、何を避けるべきか——健康をめぐる言説は、日々おびただしい量で私たちに降り注ぐ。ある食品が体に良いと持ち上げられたかと思えば、翌年には一転して警戒すべき対象とされる。こうした情報の揺れ動きに翻弄されるうちに、食卓はいつしか栄養素の計算の場と化し、食べる喜びそのものが痩せ細っていく。もとより、栄養に関する知見が健康の維持に資することを否定はしない。だが、一片の数値に一喜一憂し、口にするものすべてを損得勘定で測るようになれば、それは健康を追い求めているのか、それとも健康という観念に囚われているのか、判然としなくなる。健やかであろうとすることが、かえって心を蝕むとすれば、これほどの皮肉もあるまい。","passage_en":"What should we eat, what should we avoid—discourse about health rains down on us in prodigious quantities day after day. No sooner is a certain food lauded as good for the body than, the very next year, it is abruptly recast as something to be wary of. As we are tossed about by these fluctuations of information, the dining table imperceptibly turns into a site for calculating nutrients, and the very joy of eating grows emaciated. I do not, of course, deny that knowledge about nutrition contributes to maintaining health. But if we come to rejoice and despair over a single figure, and to measure everything we put in our mouths by a calculus of gain and loss, then it becomes unclear whether we are pursuing health or being held captive by the notion of health. If striving to be healthy instead corrodes the mind, there could hardly be an irony greater than this.","questions":[{"q":"「食卓はいつしか栄養素の計算の場と化し」とあるが、それはなぜか。","q_en":"The text says the dining table \"imperceptibly turns into a site for calculating nutrients.\" Why?","options":["栄養に関する知見が健康の維持にまったく役立たないから","健康をめぐる情報に振り回され、数値ばかりを気にするようになるから","食べる喜びを何よりも重視する人が増えてきたから","食品そのものの値段が年々大きく変動するから"],"answer":1},{"q":"筆者が指摘する「皮肉」とは何か。","q_en":"What is the \"irony\" the author points to?","options":["体に良いとされた食品が翌年には避けるべきものとされること","栄養に関する知識が健康の維持に確かに役立つこと","健康であろうとするあまり、かえって心が損なわれること","食べる喜びの感じ方が人によって異なるということ"],"answer":2},{"q":"この文章で筆者が最も言いたいことは何か。","q_en":"What is the author's main point in this passage?","options":["栄養に関する情報は一切信用すべきではない","健康のためには食べる喜びを完全に捨てるべきだ","数値にとらわれず、食べることとの向き合い方を見直すべきだ","食品の安全性をこれまで以上に厳しく監視すべきだ"],"answer":2}]},{"id":"r-n1-7","title":"隣人との距離（The Distance from One's Neighbor）","passage":"都市化の進展とともに、隣に誰が住んでいるのかさえ知らないという暮らしが、もはや珍しくなくなった。干渉を嫌い、互いに立ち入らないことを美徳とする風潮は、確かに個々人の自由を守る上で一定の役割を果たしてきた。とはいえ、災害が起きたその時、真っ先に手を差し伸べうるのは、遠方の親族でも行政でもなく、ほかならぬ隣人であるという事実を、私たちはともすれば忘れがちである。日頃の何気ない挨拶の積み重ねが、いざという場面で命綱にもなりうる。近すぎず遠すぎず、適度な距離を保ちながらも緩やかに結ばれていること——そうした関係のありようを、煩わしいものとして退けてしまってよいものだろうか。便利さと引き換えに、私たちは何を手放しつつあるのか、いま一度立ち止まって考えてみる必要があろう。","passage_en":"With the advance of urbanization, a way of life in which one does not even know who lives next door has become no longer unusual. The trend of disliking interference and treating non-intrusion into one another's affairs as a virtue has certainly played a certain role in protecting individual freedom. That said, we are apt to forget the fact that when a disaster strikes, the one who can extend a hand first is neither a distant relative nor the authorities, but none other than one's neighbor. The accumulation of casual everyday greetings can, at a critical moment, become a lifeline. To remain loosely bound while keeping an appropriate distance—neither too close nor too far—is it really acceptable to dismiss such a form of relationship as a mere nuisance? We ought to pause once more and consider what, in exchange for convenience, we are in the process of letting go.","questions":[{"q":"筆者は「互いに立ち入らないことを美徳とする風潮」をどう評価しているか。","q_en":"How does the author assess \"the trend of treating non-intrusion as a virtue\"?","options":["有害無益であるとして、全面的に否定している","個人の自由を守る面は認めつつ、失われるものもあると指摘している","都市化を進めるうえで不可欠なものだと称賛している","災害時にこそ最も役立つ心構えだと評価している"],"answer":1},{"q":"災害が起きた時について、筆者はどう述べているか。","q_en":"What does the author say about when a disaster strikes?","options":["行政の対応こそが最も頼りになる","遠方の親族が真っ先に助けに駆けつける","ほかならぬ隣人が最初に助けの手を差し伸べうる","日頃の挨拶などは何の役にも立たない"],"answer":2},{"q":"この文章で筆者が読者に問いかけていることは何か。","q_en":"What is the author asking the reader to consider?","options":["どうすれば都市化そのものを止められるか","便利さと引き換えに失われつつあるものは何か","隣人との関係をいかにして断ち切るか","行政サービスをいかにして充実させるか"],"answer":1}]},{"id":"r-n1-8","title":"自然を御するという傲り（The Arrogance of Governing Nature）","passage":"堤防を高くし、河川を整え、私たちは長きにわたって自然を意のままに制御しようと努めてきた。その努力が数多の命を救ってきたことは、疑いようもない。しかし、技術によって自然を封じ込めうるという確信が肥大するにつれ、私たちはいつしか、自然とは本来御しがたいものであるという素朴な畏れを手放してしまったのではないか。「想定」という言葉ほど、人間の傲慢を映し出すものはない。それは裏を返せば、想定の外にあるものへの目配りを怠ってきたことの証左にほかならないからだ。自然を完全に支配できるという前提に立つ限り、私たちは繰り返し不意を突かれ続けるだろう。むしろ、御しがたさを謙虚に受け入れ、それと折り合いをつけて生きる知恵の中にこそ、真の備えは存するのではあるまいか。","passage_en":"By raising embankments and regulating rivers, we have long striven to control nature at will. There is no doubting that these efforts have saved countless lives. However, as the conviction that technology can contain nature has swelled, have we not, before we knew it, let go of the simple awe that nature is by its very nature difficult to govern? No word reflects human arrogance more than \"assumption.\" For, conversely, it is nothing other than proof that we have neglected to keep an eye on what lies outside our assumptions. So long as we stand on the premise that nature can be completely dominated, we will go on being caught off guard again and again. Rather, does not true preparedness lie precisely within the wisdom of humbly accepting nature's ungovernability and living by coming to terms with it?","questions":[{"q":"「『想定』という言葉ほど、人間の傲慢を映し出すものはない」とあるが、その理由は何か。","q_en":"The text says no word reflects human arrogance more than \"assumption.\" Why?","options":["「想定」という言葉があまりに難解で、一般に理解されないから","想定の外にあるものへの目配りを怠ってきたことの証拠だから","想定は常に正確であり、外れることが決してないから","「想定」という言葉が自然の偉大さを賛美するものだから"],"answer":1},{"q":"筆者は「自然を制御しようとする努力」をどう捉えているか。","q_en":"How does the author regard \"efforts to control nature\"?","options":["多くの命を救った点は認めつつ、過信の危うさを指摘している","これまで何一つ成果を上げなかった無意味なものだと断じている","これからさらに強化し、自然を完全に封じ込めるべきだと説く","人々の自然への畏れをいっそう深めるものだったと評価している"],"answer":0},{"q":"筆者の考える「真の備え」とは何か。","q_en":"What is \"true preparedness\" as the author conceives it?","options":["より高い堤防を築き、河川を完全に整えきること","自然を余すところなく支配する技術を開発すること","御しがたさを受け入れ、自然と折り合いをつけて生きる知恵","想定を限りなく精密にし、被害を完全にゼロにすること"],"answer":2}]},{"id":"r-n1-9","title":"わかるということ（What It Means to Understand）","passage":"試験で高い点を取る生徒が、必ずしも物事を深く理解しているとは限らない。この一見奇妙な事実は、私たちが「わかる」という営みを、いかに浅く捉えてきたかを物語っている。与えられた問いに正しく答えられること、それはむろん一つの能力ではある。だが、真に理解するとは、答えを再生することではなく、なぜその答えに至るのかという道筋を、自らの言葉でたどり直せることであろう。既存の枠組みに疑いを差し挟むこともなく、ただ効率よく正解へ最短距離で駆け抜ける訓練を積み重ねたところで、そこに育つのは応用の利かない知識の断片にすぎない。問いを問いとして引き受け、たやすく答えの出ない状態に踏みとどまる——そうした忍耐の中でしか、真の理解は熟していかないのである。","passage_en":"A student who scores high on exams does not necessarily understand things deeply. This seemingly strange fact tells of how shallowly we have grasped the activity of \"understanding.\" Being able to answer a given question correctly is, to be sure, one kind of ability. But to truly understand is not to reproduce an answer, but rather, presumably, to be able to retrace in one's own words the path of why one arrives at that answer. No matter how much one piles up training to sprint efficiently by the shortest route to the correct answer, without ever inserting doubt into existing frameworks, what grows there is nothing more than fragments of knowledge that cannot be applied. To take on a question as a question, and to hold one's ground in a state where an answer does not readily emerge—only within such patience does true understanding ripen.","questions":[{"q":"筆者によれば「真に理解する」とはどういうことか。","q_en":"According to the author, what does it mean to \"truly understand\"?","options":["与えられた問いに対してできるだけ素早く正解すること","できるだけ多くの正解をあらかじめ記憶しておくこと","最短距離で正解にたどり着くための訓練を積むこと","答えに至る道筋を、自らの言葉でたどり直せること"],"answer":3},{"q":"「応用の利かない知識の断片」が生まれてしまうのはなぜか。","q_en":"Why do \"fragments of knowledge that cannot be applied\" come about?","options":["試験の点数というものをまったく軽視しているから","つねに自らの言葉で答えの筋道を説明しているから","既存の枠組みを疑わず、効率よく正解を求める訓練ばかりを重ねるから","答えの出ない問いに踏みとどまる忍耐を大切にしているから"],"answer":2},{"q":"筆者が最も重視しているのはどのような態度か。","q_en":"What kind of attitude does the author value most?","options":["たやすく答えの出ない状態に耐え、問いと向き合い続ける態度","とにかく効率よく正解へたどり着こうとする態度","試験でできるだけ高い点を取ろうとする態度","既存の枠組みを疑うことなく受け入れる態度"],"answer":0}]}]};
+window.READING_BANK = {
+  "N5": [
+    {
+      "id": "r-n5-1",
+      "title": "朝のスケジュール (A Morning Schedule)",
+      "passage": "わたしは まいあさ 六時に おきます。それから、あさごはんを たべます。七時半に うちを でて、電車で 学校に いきます。学校は 八時に はじまります。",
+      "passage_en": "I wake up at 6:00 every morning. After that, I eat breakfast. I leave home at 7:30 and go to school by train. School starts at 8:00.",
+      "questions": [
+        {
+          "q": "この人は 何時に おきますか。",
+          "q_en": "What time does this person wake up?",
+          "options": [
+            "六時",
+            "七時半",
+            "八時",
+            "九時"
+          ],
+          "answer": 0,
+          "q_te": "ఈ వ్యక్తి ఎన్ని గంటలకు నిద్రలేస్తారు?",
+          "q_hi": "यह व्यक्ति कितने बजे उठता है?",
+          "q_ta": "இந்த நபர் எத்தனை மணிக்கு எழுந்திருக்கிறார்?",
+          "q_ko": "이 사람은 몇 시에 일어납니까?",
+          "q_es": "¿A qué hora se despierta esta persona?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಎಷ್ಟು ಗಂಟೆಗೆ ಏಳುತ್ತಾರೆ?",
+          "q_ml": "ഈ വ്യക്തി എത്ര മണിക്കാണ് ഉണരുന്നത്?"
+        },
+        {
+          "q": "この人は どうやって 学校に いきますか。",
+          "q_en": "How does this person get to school?",
+          "options": [
+            "電車で",
+            "バスで",
+            "じてんしゃで",
+            "あるいて"
+          ],
+          "answer": 0,
+          "q_te": "ఈ వ్యక్తి పాఠశాలకు ఎలా వెళ్తారు?",
+          "q_hi": "यह व्यक्ति स्कूल कैसे जाता है?",
+          "q_ta": "இந்த நபர் பள்ளிக்கு எப்படி செல்கிறார்?",
+          "q_ko": "이 사람은 어떻게 학교에 갑니까?",
+          "q_es": "¿Cómo va esta persona a la escuela?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಶಾಲೆಗೆ ಹೇಗೆ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "ഈ വ്യക്തി സ്കൂളിലേക്ക് എങ്ങനെ പോകുന്നു?"
+        }
+      ],
+      "passage_te": "నేను ప్రతిరోజూ ఉదయం 6:00 గంటలకు నిద్రలేస్తాను. ఆ తర్వాత అల్పాహారం తింటాను. 7:30 గంటలకు ఇంటి నుండి బయలుదేరి రైలులో పాఠశాలకు వెళ్తాను. పాఠశాల 8:00 గంటలకు ప్రారంభమవుతుంది.",
+      "passage_hi": "मैं हर सुबह 6:00 बजे उठता हूँ। उसके बाद नाश्ता करता हूँ। 7:30 बजे घर से निकलकर ट्रेन से स्कूल जाता हूँ। स्कूल 8:00 बजे शुरू होता है।",
+      "passage_ta": "நான் தினமும் காலை 6:00 மணிக்கு எழுந்திருப்பேன். அதன் பிறகு காலை உணவு சாப்பிடுவேன். 7:30 மணிக்கு வீட்டை விட்டு புறப்பட்டு ரயிலில் பள்ளிக்கு செல்வேன். பள்ளி 8:00 மணிக்கு தொடங்குகிறது.",
+      "passage_ko": "저는 매일 아침 6시에 일어납니다. 그러고 나서 아침밥을 먹습니다. 7시 반에 집을 나서 전철로 학교에 갑니다. 학교는 8시에 시작합니다.",
+      "passage_es": "Me levanto a las 6:00 todas las mañanas. Después de eso, desayuno. Salgo de casa a las 7:30 y voy a la escuela en tren. La escuela empieza a las 8:00.",
+      "passage_kn": "ನಾನು ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ 6:00 ಗಂಟೆಗೆ ಏಳುತ್ತೇನೆ. ನಂತರ ಉಪಾಹಾರ ಸೇವಿಸುತ್ತೇನೆ. 7:30 ಕ್ಕೆ ಮನೆಯಿಂದ ಹೊರಟು ರೈಲಿನಲ್ಲಿ ಶಾಲೆಗೆ ಹೋಗುತ್ತೇನೆ. ಶಾಲೆ 8:00 ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "passage_ml": "ഞാൻ എല്ലാ ദിവസവും രാവിലെ 6:00 ന് ഉണരും. അതിനുശേഷം പ്രഭാതഭക്ഷണം കഴിക്കും. 7:30 ന് വീട്ടിൽ നിന്ന് ഇറങ്ങി ട്രെയിനിൽ സ്കൂളിൽ പോകും. സ്കൂൾ 8:00 ന് തുടങ്ങും."
+    },
+    {
+      "id": "r-n5-2",
+      "title": "わたしの あさ (My Morning)",
+      "passage": "わたしは やまだです。まいあさ 六時に おきます。パンを たべて、コーヒーを のみます。それから でんしゃで かいしゃへ いきます。",
+      "passage_en": "I am Yamada. Every morning I get up at six. I eat bread and drink coffee. After that, I go to the company by train.",
+      "questions": [
+        {
+          "q": "やまださんは なんじに おきますか。",
+          "q_en": "What time does Yamada get up?",
+          "options": [
+            "五時",
+            "六時",
+            "七時",
+            "八時"
+          ],
+          "answer": 1,
+          "q_te": "యమదా గారు ఎప్పుడు నిద్రలేస్తారు?",
+          "q_hi": "यामादा जी कितने बजे उठते हैं?",
+          "q_ta": "யமடா எத்தனை மணிக்கு எழுந்திருக்கிறார்?",
+          "q_ko": "야마다 씨는 몇 시에 일어납니까?",
+          "q_es": "¿A qué hora se despierta Yamada?",
+          "q_kn": "ಯಮದಾ ಎಷ್ಟು ಗಂಟೆಗೆ ಏಳುತ್ತಾರೆ?",
+          "q_ml": "യമദ എത്ര മണിക്കാണ് ഉണരുന്നത്?"
+        },
+        {
+          "q": "やまださんは あさ なにを のみますか。",
+          "q_en": "What does Yamada drink in the morning?",
+          "options": [
+            "おちゃ",
+            "みず",
+            "コーヒー",
+            "ぎゅうにゅう"
+          ],
+          "answer": 2,
+          "q_te": "యమదా గారు ఉదయం ఏమి తాగుతారు?",
+          "q_hi": "यामादा जी सुबह क्या पीते हैं?",
+          "q_ta": "யமடா காலையில் என்ன குடிக்கிறார்?",
+          "q_ko": "야마다 씨는 아침에 무엇을 마십니까?",
+          "q_es": "¿Qué bebe Yamada por la mañana?",
+          "q_kn": "ಯಮದಾ ಬೆಳಿಗ್ಗೆ ಏನು ಕುಡಿಯುತ್ತಾರೆ?",
+          "q_ml": "യമദ രാവിലെ എന്താണ് കുടിക്കുന്നത്?"
+        },
+        {
+          "q": "やまださんは なにで かいしゃへ いきますか。",
+          "q_en": "How does Yamada go to the company?",
+          "options": [
+            "でんしゃ",
+            "バス",
+            "くるま",
+            "じてんしゃ"
+          ],
+          "answer": 0,
+          "q_te": "యమదా గారు కంపెనీకి ఎలా వెళ్తారు?",
+          "q_hi": "यामादा जी कंपनी कैसे जाते हैं?",
+          "q_ta": "யமடா அலுவலகத்திற்கு எப்படி செல்கிறார்?",
+          "q_ko": "야마다 씨는 무엇으로 회사에 갑니까?",
+          "q_es": "¿Cómo va Yamada a la empresa?",
+          "q_kn": "ಯಮದಾ ಕಚೇರಿಗೆ ಹೇಗೆ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "യമദ കമ്പനിയിലേക്ക് എങ്ങനെ പോകുന്നു?"
+        }
+      ],
+      "passage_te": "నేను యమదాను. ప్రతిరోజూ ఉదయం 6:00 గంటలకు నిద్రలేస్తాను. రొట్టె తిని కాఫీ తాగుతాను. ఆ తర్వాత రైలులో కంపెనీకి వెళ్తాను.",
+      "passage_hi": "मैं यामादा हूँ। हर सुबह 6 बजे उठता हूँ। ब्रेड खाता हूँ और कॉफ़ी पीता हूँ। उसके बाद ट्रेन से कंपनी जाता हूँ।",
+      "passage_ta": "நான் யமடா. தினமும் காலை 6 மணிக்கு எழுந்திருப்பேன். ரொட்டி சாப்பிட்டு காபி குடிப்பேன். அதன் பிறகு ரயிலில் அலுவலகத்திற்கு செல்வேன்.",
+      "passage_ko": "저는 야마다입니다. 매일 아침 6시에 일어납니다. 빵을 먹고 커피를 마십니다. 그러고 나서 전철로 회사에 갑니다.",
+      "passage_es": "Soy Yamada. Me levanto a las seis todas las mañanas. Como pan y tomo café. Después de eso voy a la empresa en tren.",
+      "passage_kn": "ನಾನು ಯಮದಾ. ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ 6 ಗಂಟೆಗೆ ಏಳುತ್ತೇನೆ. ಬ್ರೆಡ್ ತಿಂದು ಕಾಫಿ ಕುಡಿಯುತ್ತೇನೆ. ನಂತರ ರೈಲಿನಲ್ಲಿ ಕಚೇರಿಗೆ ಹೋಗುತ್ತೇನೆ.",
+      "passage_ml": "ഞാൻ യമദയാണ്. എല്ലാ ദിവസവും രാവിലെ 6 മണിക്ക് ഉണരും. ബ്രെഡ് കഴിച്ച് കാപ്പി കുടിക്കും. അതിനുശേഷം ട്രെയിനിൽ കമ്പനിയിൽ പോകും."
+    },
+    {
+      "id": "r-n5-3",
+      "title": "スーパーで (At the Supermarket)",
+      "passage": "きのう スーパーへ いきました。りんごを 三つと たまごを かいました。ぜんぶで 五百円でした。くだものは やすかったです。",
+      "passage_en": "Yesterday I went to the supermarket. I bought three apples and some eggs. In total it was 500 yen. The fruit was cheap.",
+      "questions": [
+        {
+          "q": "いつ スーパーへ いきましたか。",
+          "q_en": "When did they go to the supermarket?",
+          "options": [
+            "きょう",
+            "きのう",
+            "あした",
+            "まいにち"
+          ],
+          "answer": 1,
+          "q_te": "సూపర్‌మార్కెట్‌కు ఎప్పుడు వెళ్లారు?",
+          "q_hi": "सुपरमार्केट कब गए?",
+          "q_ta": "பல்பொருள் அங்காடிக்கு எப்போது சென்றார்கள்?",
+          "q_ko": "언제 슈퍼마켓에 갔습니까?",
+          "q_es": "¿Cuándo fueron al supermercado?",
+          "q_kn": "ಸೂಪರ್‌ಮಾರ್ಕೆಟ್‌ಗೆ ಯಾವಾಗ ಹೋದರು?",
+          "q_ml": "സൂപ്പർമാർക്കറ്റിൽ എപ്പോഴാണ് പോയത്?"
+        },
+        {
+          "q": "りんごを いくつ かいましたか。",
+          "q_en": "How many apples did they buy?",
+          "options": [
+            "ひとつ",
+            "ふたつ",
+            "みっつ",
+            "よっつ"
+          ],
+          "answer": 2,
+          "q_te": "ఎన్ని యాపిల్స్ కొన్నారు?",
+          "q_hi": "कितने सेब खरीदे?",
+          "q_ta": "எத்தனை ஆப்பிள்கள் வாங்கினார்கள்?",
+          "q_ko": "사과를 몇 개 샀습니까?",
+          "q_es": "¿Cuántas manzanas compraron?",
+          "q_kn": "ಎಷ್ಟು ಸೇಬುಗಳನ್ನು ಖರೀದಿಸಿದರು?",
+          "q_ml": "ಎത്ര ആപ്പിൾ വാങ്ങി?"
+        },
+        {
+          "q": "ぜんぶで いくらでしたか。",
+          "q_en": "How much was it in total?",
+          "options": [
+            "百円",
+            "千円",
+            "五千円",
+            "五百円"
+          ],
+          "answer": 3,
+          "q_te": "మొత్తం ఎంత అయింది?",
+          "q_hi": "कुल मिलाकर कितना हुआ?",
+          "q_ta": "மொத்தம் எவ்வளவு ஆனது?",
+          "q_ko": "모두 얼마였습니까?",
+          "q_es": "¿Cuánto fue en total?",
+          "q_kn": "ಒಟ್ಟು ಎಷ್ಟು ಆಯಿತು?",
+          "q_ml": "ആകെ എത്രയായി?"
+        }
+      ],
+      "passage_te": "నిన్న నేను సూపర్‌మార్కెట్‌కు వెళ్లాను. మూడు యాపిల్స్ మరియు గుడ్లు కొన్నాను. మొత్తం 500 యెన్లు అయ్యాయి. పండ్లు చౌకగా ఉన్నాయి.",
+      "passage_hi": "कल मैं सुपरमार्केट गया था। मैंने तीन सेब और अंडे खरीदे। कुल मिलाकर 500 येन हुए। फल सस्ते थे।",
+      "passage_ta": "நேற்று நான் பல்பொருள் அங்காடிக்குச் சென்றேன். மூன்று ஆப்பிள்களும் முட்டைகளும் வாங்கினேன். மொத்தம் 500 யென் ஆனது. பழங்கள் மலிவாக இருந்தன.",
+      "passage_ko": "어제 슈퍼마켓에 갔습니다. 사과 세 개와 달걀을 샀습니다. 모두 500엔이었습니다. 과일은 쌌습니다.",
+      "passage_es": "Ayer fui al supermercado. Compré tres manzanas y huevos. En total fueron 500 yenes. La fruta estaba barata.",
+      "passage_kn": "ನಿನ್ನೆ ನಾನು ಸೂಪರ್‌ಮಾರ್ಕೆಟ್‌ಗೆ ಹೋಗಿದ್ದೆ. ಮೂರು ಸೇಬು ಮತ್ತು ಮೊಟ್ಟೆಗಳನ್ನು ಖರೀದಿಸಿದೆ. ಒಟ್ಟು 500 ಯೆನ್ ಆಯಿತು. ಹಣ್ಣುಗಳು ಅಗ್ಗವಾಗಿದ್ದವು.",
+      "passage_ml": "ഇന്നലെ ഞാൻ സൂപ്പർമാർക്കറ്റിൽ പോയി. മൂന്ന് ആപ്പിളും മുട്ടയും വാങ്ങി. ആകെ 500 യെൻ ആയിരുന്നു. പഴങ്ങൾക്ക് വില കുറവായിരുന്നു."
+    },
+    {
+      "id": "r-n5-4",
+      "title": "わたしの かぞく (My Family)",
+      "passage": "わたしの かぞくは 四人です。ちちと ははと あにが います。あには だいがくせいです。ちちは せんせいで、ははは いしゃです。",
+      "passage_en": "My family has four people. There are my father, my mother, and my older brother. My older brother is a university student. My father is a teacher, and my mother is a doctor.",
+      "questions": [
+        {
+          "q": "かぞくは なんにんですか。",
+          "q_en": "How many people are in the family?",
+          "options": [
+            "三人",
+            "四人",
+            "五人",
+            "六人"
+          ],
+          "answer": 1,
+          "q_te": "కుటుంబంలో ఎంతమంది ఉన్నారు?",
+          "q_hi": "परिवार में कितने लोग हैं?",
+          "q_ta": "குடும்பத்தில் எத்தனை பேர் உள்ளனர்?",
+          "q_ko": "가족은 몇 명입니까?",
+          "q_es": "¿Cuántas personas hay en la familia?",
+          "q_kn": "ಕುಟುಂಬದಲ್ಲಿ ಎಷ್ಟು ಜನರಿದ್ದಾರೆ?",
+          "q_ml": "കുടുംബത്തിൽ എത്ര പേരുണ്ട്?"
+        },
+        {
+          "q": "あには なにを していますか。",
+          "q_en": "What does the older brother do?",
+          "options": [
+            "せんせい",
+            "いしゃ",
+            "だいがくせい",
+            "かいしゃいん"
+          ],
+          "answer": 2,
+          "q_te": "అన్నయ్య ఏం చేస్తున్నాడు?",
+          "q_hi": "बड़े भाई क्या करते हैं?",
+          "q_ta": "அண்ணன் என்ன செய்கிறார்?",
+          "q_ko": "형은 무엇을 하고 있습니까?",
+          "q_es": "¿A qué se dedica el hermano mayor?",
+          "q_kn": "ಅಣ್ಣ ಏನು ಮಾಡುತ್ತಿದ್ದಾರೆ?",
+          "q_ml": "ചേട്ടൻ എന്താണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "ははの しごとは なんですか。",
+          "q_en": "What is the mother's job?",
+          "options": [
+            "せんせい",
+            "いしゃ",
+            "だいがくせい",
+            "しゅふ"
+          ],
+          "answer": 1,
+          "q_te": "అమ్మ వృత్తి ఏమిటి?",
+          "q_hi": "माताजी का पेशा क्या है?",
+          "q_ta": "அம்மாவின் தொழில் என்ன?",
+          "q_ko": "어머니의 직업은 무엇입니까?",
+          "q_es": "¿Cuál es la profesión de la madre?",
+          "q_kn": "ಅಮ್ಮನ ಉದ್ಯೋಗ ಏನು?",
+          "q_ml": "അമ്മയുടെ ജോലി എന്താണ്?"
+        }
+      ],
+      "passage_te": "మా కుటుంబంలో నలుగురు వ్యక్తులు ఉన్నారు. నాన్న, అమ్మ మరియు అన్నయ్య ఉన్నారు. అన్నయ్య యూనివర్సిటీ విద్యార్థి. నాన్న ఉపాధ్యాయుడు, అమ్మ వైద్యురాలు.",
+      "passage_hi": "मेरे परिवार में चार लोग हैं। पिताजी, माताजी और बड़े भाई हैं। बड़े भाई विश्वविद्यालय के छात्र हैं। पिताजी शिक्षक हैं और माताजी डॉक्टर हैं।",
+      "passage_ta": "என் குடும்பத்தில் நான்கு பேர் உள்ளனர். அப்பா, அம்மா மற்றும் அண்ணன் உள்ளனர். அண்ணன் பல்கலைக்கழக மாணவர். அப்பா ஆசிரியர், அம்மா மருத்துவர்.",
+      "passage_ko": "우리 가족은 네 명입니다. 아버지와 어머니, 형이 있습니다. 형은 대학생입니다. 아버지는 선생님이고 어머니는 의사입니다.",
+      "passage_es": "En mi familia somos cuatro personas. Están mi padre, mi madre y mi hermano mayor. Mi hermano mayor es estudiante universitario. Mi padre es profesor y mi madre es médica.",
+      "passage_kn": "ನಮ್ಮ ಕುಟುಂಬದಲ್ಲಿ ನಾಲ್ಕು ಜನರಿದ್ದಾರೆ. ಅಪ್ಪ, ಅಮ್ಮ ಮತ್ತು ಅಣ್ಣ ಇದ್ದಾರೆ. ಅಣ್ಣ ಕಾಲೇಜು ವಿದ್ಯಾರ್ಥಿ. ಅಪ್ಪ ಶಿಕ್ಷಕರು, ಅಮ್ಮ ವೈದ್ಯೆ.",
+      "passage_ml": "എന്റെ കുടുംബത്തിൽ നാല് പേരുണ്ട്. അച്ഛനും അമ്മയും ചേട്ടനും ഉണ്ട്. ചേട്ടൻ യൂണിവേഴ്സിറ്റി വിദ്യാർത്ഥിയാണ്. അച്ഛൻ അധ്യാപകനും അമ്മ ഡോക്ടറുമാണ്."
+    },
+    {
+      "id": "r-n5-5",
+      "title": "あたらしい かいしゃ (My New Company)",
+      "passage": "わたしは あたらしい かいしゃで はたらいて います。まいあさ 八時に かいしゃへ いきます。ひるは ともだちと ごはんを たべます。しごとは たのしいです。",
+      "passage_en": "I work at a new company. Every morning I go to the company at eight o'clock. At lunch I eat a meal with my friend. The work is fun.",
+      "questions": [
+        {
+          "q": "何時に かいしゃへ いきますか。",
+          "q_en": "What time does this person go to the company?",
+          "options": [
+            "七時",
+            "八時",
+            "九時",
+            "十時"
+          ],
+          "answer": 1,
+          "q_te": "గదిలో ఏమి ఉంది?",
+          "q_hi": "कमरे में क्या है?",
+          "q_ta": "அறையில் என்ன உள்ளது?",
+          "q_ko": "방에 무엇이 있습니까?",
+          "q_es": "¿Qué hay en la habitación?",
+          "q_kn": "ಕೋಣೆಯಲ್ಲಿ ಏನಿದೆ?",
+          "q_ml": "മുറിയിൽ എന്താണുള്ളത്?"
+        },
+        {
+          "q": "ひるは だれと ごはんを たべますか。",
+          "q_en": "Who does this person eat lunch with?",
+          "options": [
+            "かぞく",
+            "せんせい",
+            "ともだち",
+            "ひとり"
+          ],
+          "answer": 2,
+          "q_te": "పువ్వు ఎక్కడ ఉంది?",
+          "q_hi": "फूल कहाँ है?",
+          "q_ta": "மலர் எங்கு உள்ளது?",
+          "q_ko": "꽃은 어디에 있습니까?",
+          "q_es": "¿Dónde está la flor?",
+          "q_kn": "ಹೂವು ಎಲ್ಲಿದೆ?",
+          "q_ml": "പൂവ് എവിടെയാണ്?"
+        },
+        {
+          "q": "しごとは どうですか。",
+          "q_en": "How is the work?",
+          "options": [
+            "つまらないです",
+            "たのしいです",
+            "たかいです",
+            "むずかしいです"
+          ],
+          "answer": 1,
+          "q_te": "గది ఎలాంటిది?",
+          "q_hi": "कमरा कैसा है?",
+          "q_ta": "அறை எப்படிப்பட்டது?",
+          "q_ko": "방은 어떻습니까?",
+          "q_es": "¿Cómo es la habitación?",
+          "q_kn": "ಕೋಣೆ ಹೇಗಿದೆ?",
+          "q_ml": "മുറി എങ്ങനെയുള്ളതാണ്?"
+        }
+      ],
+      "passage_te": "నా గదిలో ఒక డెస్క్ మరియు మంచం ఉన్నాయి. కిటికీ పక్కన ఒక పువ్వు ఉంది. గది చాలా పెద్దది కాదు, కానీ చాలా ప్రశాంతంగా మరియు శుభ్రంగా ఉంటుంది.",
+      "passage_hi": "मेरे कमरे में एक मेज़ और एक बिस्तर है। खिड़की के पास एक फूल है। कमरा बहुत बड़ा नहीं है, लेकिन बहुत शांत और साफ है।",
+      "passage_ta": "என் அறையில் ஒரு மேசையும் படுக்கையும் உள்ளன. ஜன்னல் அருகில் ஒரு மலர் உள்ளது. அறை மிகவும் பெரியது அல்ல, ஆனால் மிகவும் அமைதியாகவும் சுத்தமாகவும் இருக்கிறது.",
+      "passage_ko": "제 방에는 책상과 침대가 있습니다. 창문 옆에는 꽃이 있습니다. 방은 그리 넓지 않지만, 매우 조용하고 깨끗합니다.",
+      "passage_es": "En mi habitación hay un escritorio y una cama. Al lado de la ventana hay una flor. La habitación no es muy grande, pero es muy tranquila y limpia.",
+      "passage_kn": "ನನ್ನ ಕೋಣೆಯಲ್ಲಿ ಒಂದು ಮೇಜು ಮತ್ತು ಹಾಸಿಗೆ ಇದೆ. ಕಿಟಕಿಯ ಪಕ್ಕದಲ್ಲಿ ಒಂದು ಹೂವಿದೆ. ಕೋಣೆ ತುಂಬಾ ದೊಡ್ಡದಲ್ಲ, ಆದರೆ ಶಾಂತ ಮತ್ತು ಸ್ವಚ್ಛವಾಗಿದೆ.",
+      "passage_ml": "എന്റെ മുറിയിൽ ഒരു മേശയും കട്ടിലും ഉണ്ട്. ജനലിനടുത്ത് ഒരു പൂവുണ്ട്. മുറി വളരെ വലുതല്ല, പക്ഷേ ശാന്തവും വൃത്തിയുള്ളതുമാണ്."
+    },
+    {
+      "id": "r-n5-6",
+      "title": "でんしゃで うみへ (To the Sea by Train)",
+      "passage": "きのう ともだちと でんしゃで うみへ いきました。えきから うみまで とおかったです。でも、うみは とても きれいでした。",
+      "passage_en": "Yesterday I went to the sea by train with a friend. It was far from the station to the sea. But the sea was very beautiful.",
+      "questions": [
+        {
+          "q": "きのう どこへ いきましたか。",
+          "q_en": "Where did this person go yesterday?",
+          "options": [
+            "やま",
+            "うみ",
+            "こうえん",
+            "がっこう"
+          ],
+          "answer": 1,
+          "q_te": "ఆదివారం ఎవరితో సినిమాకు వెళ్లారు?",
+          "q_hi": "रविवार को किसके साथ फ़िल्म देखने गए?",
+          "q_ta": "ஞாயிற்றுக்கிழமை யாருடன் திரைப்படத்திற்குச் சென்றார்கள்?",
+          "q_ko": "일요일에 누구와 영화를 보러 갔습니까?",
+          "q_es": "¿Con quién fue al cine el domingo?",
+          "q_kn": "ಭಾನುವಾರ ಯಾರೊಂದಿಗೆ ಸಿನೆಮಾ ನೋಡಲು ಹೋದರು?",
+          "q_ml": "ഞായറാഴ്ച ആരുടെ കൂടെയാണ് സിനിമയ്ക്ക് പോയത്?"
+        },
+        {
+          "q": "何で いきましたか。",
+          "q_en": "How did they get there?",
+          "options": [
+            "でんしゃ",
+            "バス",
+            "くるま",
+            "じてんしゃ"
+          ],
+          "answer": 0,
+          "q_te": "రెస్టారెంట్‌లో ఏమి తిన్నారు?",
+          "q_hi": "रेस्तरां में क्या खाया?",
+          "q_ta": "உணவகத்தில் என்ன சாப்பிட்டார்கள்?",
+          "q_ko": "레스토랑에서 무엇을 먹었습니까?",
+          "q_es": "¿Qué comieron en el restaurante?",
+          "q_kn": "ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ಏನು ತಿಂದರು?",
+          "q_ml": "റെസ്റ്റോറന്റിൽ നിന്ന് എന്ത് കഴിച്ചു?"
+        },
+        {
+          "q": "うみは どうでしたか。",
+          "q_en": "How was the sea?",
+          "options": [
+            "きたなかったです",
+            "きれいでした",
+            "さむかったです",
+            "ちいさかったです"
+          ],
+          "answer": 1,
+          "q_te": "రోజు ఎలా గడిచింది?",
+          "q_hi": "दिन कैसा बीता?",
+          "q_ta": "நாள் எப்படி இருந்தது?",
+          "q_ko": "하루는 어땠습니까?",
+          "q_es": "¿Cómo estuvo el día?",
+          "q_kn": "ದಿನ ಹೇಗಿತ್ತು?",
+          "q_ml": "ദിവസം എങ്ങനെയായിരുന്നു?"
+        }
+      ],
+      "passage_te": "ఆదివారం నాడు నా స్నేహితుడితో కలిసి సినిమాకు వెళ్లాను. ఆ తర్వాత రెస్టారెంట్‌లో పిజ్జా తిన్నాము. చాలా సరదాగా గడిచింది.",
+      "passage_hi": "रविवार को मैं अपने दोस्त के साथ फ़िल्म देखने गया। उसके बाद हमने रेस्तरां में पिज़्ज़ा खाया। बहुत मज़ा आया।",
+      "passage_ta": "ஞாயிற்றுக்கிழமை என் நண்பருடன் திரைப்படத்திற்குச் சென்றேன். பின்னர் உணவகத்தில் பீட்சா சாப்பிட்டோம். மிகவும் மகிழ்ச்சியாக இருந்தது.",
+      "passage_ko": "일요일에 친구와 함께 영화를 보러 갔습니다. 그 후 레스토랑에서 피자를 먹었습니다. 정말 즐거웠습니다.",
+      "passage_es": "El domingo fui al cine con mi amigo. Después comimos pizza en un restaurante. Fue muy divertido.",
+      "passage_kn": "ಭಾನುವಾರ ನಾನು ಸ್ನೇಹಿತನೊಂದಿಗೆ ಸಿನೆಮಾ ನೋಡಲು ಹೋಗಿದ್ದೆ. ನಂತರ ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ಪಿಜ್ಜಾ ತಿಂದೆವು. ತುಂಬಾ ಸಂತೋಷವಾಯಿತು.",
+      "passage_ml": "ഞായറാഴ്ച ഞാൻ സുഹൃത്തിനൊപ്പം സിനിമ കാണാൻ പോയി. പിന്നീട് റെസ്റ്റോറന്റിൽ നിന്ന് പിസ്സ കഴിച്ചു. വളരെ രസകരമായിരുന്നു."
+    },
+    {
+      "id": "r-n5-7",
+      "title": "あさごはん (Breakfast)",
+      "passage": "わたしは まいあさ パンと たまごを たべます。そして、コーヒーを のみます。やさいも たべます。あさごはんは からだに いいです。",
+      "passage_en": "Every morning I eat bread and eggs. And I drink coffee. I also eat vegetables. Breakfast is good for the body.",
+      "questions": [
+        {
+          "q": "まいあさ 何を のみますか。",
+          "q_en": "What does this person drink every morning?",
+          "options": [
+            "おちゃ",
+            "みず",
+            "コーヒー",
+            "ぎゅうにゅう"
+          ],
+          "answer": 2,
+          "q_te": "ప్రతిరోజూ ఉదయం ఏమి తింటారు?",
+          "q_hi": "हर सुबह क्या खाते हैं?",
+          "q_ta": "தினமும் காலையில் என்ன சாப்பிடுகிறார்கள்?",
+          "q_ko": "매일 아침 무엇을 먹습니까?",
+          "q_es": "¿Qué comen todas las mañanas?",
+          "q_kn": "ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ ಏನು ತಿನ್ನುತ್ತಾರೆ?",
+          "q_ml": "എല്ലാ ദിവസവും രാവിലെ എന്താണ് കഴിക്കുന്നത്?"
+        },
+        {
+          "q": "この 人は 何を たべますか。",
+          "q_en": "Which of these does this person eat?",
+          "options": [
+            "にく",
+            "さかな",
+            "たまご",
+            "くだもの"
+          ],
+          "answer": 2,
+          "q_te": "ఏమి తాగుతారు?",
+          "q_hi": "क्या पीते हैं?",
+          "q_ta": "என்ன குடிக்கிறார்கள்?",
+          "q_ko": "무엇을 마십니까?",
+          "q_es": "¿Qué beben?",
+          "q_kn": "ಏನು ಕುಡಿಯುತ್ತಾರೆ?",
+          "q_ml": "എന്താണ് കുടിക്കുന്നത്?"
+        },
+        {
+          "q": "あさごはんは からだに どうですか。",
+          "q_en": "How is breakfast for the body?",
+          "options": [
+            "わるいです",
+            "いいです",
+            "たかいです",
+            "おおいです"
+          ],
+          "answer": 1,
+          "q_te": "అల్పాహారం శరీరానికి ఎందుకు మంచిది?",
+          "q_hi": "नाश्ता शरीर के लिए अच्छा क्यों है?",
+          "q_ta": "காலை உணவு உடலுக்கு ஏன் நல்லது?",
+          "q_ko": "아침 식사는 왜 몸에 좋습니까?",
+          "q_es": "¿Por qué el desayuno es bueno para el cuerpo?",
+          "q_kn": "ಉಪಾಹಾರ ದೇಹಕ್ಕೆ ಏಕೆ ಒಳ್ಳೆಯದು?",
+          "q_ml": "പ്രഭാതഭക്ഷണം ശരീരത്തിന് എന്തുകൊണ്ട് നല്ലതാണ്?"
+        }
+      ],
+      "passage_te": "నేను ప్రతిరోజూ ఉదయం రొట్టె మరియు గుడ్లు తింటాను. కాఫీ తాగుతాను. కూరగాయలు కూడా తింటాను. అల్పాహారం శరీరానికి మంచిది.",
+      "passage_hi": "मैं हर सुबह ब्रेड और अंडे खाता हूँ। और कॉफ़ी पीता हूँ। सब्ज़ियाँ भी खाता हूँ। नाश्ता स्वास्थ्य के लिए अच्छा होता है।",
+      "passage_ta": "நான் தினமும் காலையில் ரொட்டியும் முட்டையும் சாப்பிடுகிறேன். காபியும் குடிக்கிறேன். காய்கறிகளையும் சாப்பிடுகிறேன். காலை உணவு உடலுக்கு நல்லது.",
+      "passage_ko": "저는 매일 아침 빵과 달걀을 먹습니다. 그리고 커피를 마십니다. 야채도 먹습니다. 아침 식사는 몸에 좋습니다.",
+      "passage_es": "Todas las mañanas como pan y huevos. Y tomo café. También como verduras. El desayuno es bueno para el cuerpo.",
+      "passage_kn": "ನಾನು ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ ಬ್ರೆಡ್ ಮತ್ತು ಮೊಟ್ಟೆ ತಿನ್ನುತ್ತೇನೆ. ಕಾಫಿ ಕುಡಿಯುತ್ತೇನೆ. ತರಕಾರಿಗಳನ್ನು ತಿನ್ನುತ್ತೇನೆ. ಉಪಾಹಾರ ಆರೋಗ್ಯಕ್ಕೆ ಒಳ್ಳೆಯದು.",
+      "passage_ml": "ഞാൻ എല്ലാ ദിവസവും രാവിലെ ബ്രെഡും മുട്ടയും കഴിക്കും. കാപ്പി കുടിക്കും. പച്ചക്കറികളും കഴിക്കും. പ്രഭാതഭക്ഷണം ആരോഗ്യത്തിന് നല്ലതാണ്."
+    },
+    {
+      "id": "r-n5-8",
+      "title": "あたらしい スマホ (My New Smartphone)",
+      "passage": "わたしは あたらしい スマホを かいました。この スマホで しゃしんを たくさん とります。よる、インターネットで えいがを 見ます。とても べんりです。",
+      "passage_en": "I bought a new smartphone. With this smartphone I take a lot of photos. At night, I watch movies on the internet. It is very convenient.",
+      "questions": [
+        {
+          "q": "何を かいましたか。",
+          "q_en": "What did this person buy?",
+          "options": [
+            "テレビ",
+            "スマホ",
+            "カメラ",
+            "パソコン"
+          ],
+          "answer": 1,
+          "q_te": "ఏమి కొన్నారు?",
+          "q_hi": "क्या खरीदा?",
+          "q_ta": "என்ன வாங்கினார்கள்?",
+          "q_ko": "무엇을 샀습니까?",
+          "q_es": "¿Qué compró?",
+          "q_kn": "ಏನನ್ನು ಖರೀದಿಸಿದರು?",
+          "q_ml": "എന്താണ് വാങ്ങിയത്?"
+        },
+        {
+          "q": "よる、インターネットで 何を 見ますか。",
+          "q_en": "What do they watch on the internet at night?",
+          "options": [
+            "ニュース",
+            "えいが",
+            "しゃしん",
+            "ドラマ"
+          ],
+          "answer": 1,
+          "q_te": "రాత్రి ఇంటర్నెట్‌లో ఏమి చూస్తారు?",
+          "q_hi": "रात में इंटरनेट पर क्या देखते हैं?",
+          "q_ta": "இரவில் இணையத்தில் என்ன பார்க்கிறார்கள்?",
+          "q_ko": "밤에 인터넷으로 무엇을 봅니까?",
+          "q_es": "¿Qué ve en internet por la noche?",
+          "q_kn": "ರಾತ್ರಿ ಇಂಟರ್ನೆಟ್‌ನಲ್ಲಿ ಏನು ನೋಡುತ್ತಾರೆ?",
+          "q_ml": "രാത്രി ഇന്റർനെറ്റിൽ എന്ത് കാണുന്നു?"
+        },
+        {
+          "q": "スマホは どうですか。",
+          "q_en": "How is the smartphone?",
+          "options": [
+            "べんりです",
+            "ふべんです",
+            "ふるいです",
+            "おもいです"
+          ],
+          "answer": 0,
+          "q_te": "స్మార్ట్‌ఫోన్ ఎలా ఉంది?",
+          "q_hi": "स्मार्टफोन कैसा है?",
+          "q_ta": "ஸ்மார்ட்போன் எப்படி உள்ளது?",
+          "q_ko": "스마트폰은 어떻습니까?",
+          "q_es": "¿Cómo es el teléfono inteligente?",
+          "q_kn": "ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಹೇಗಿದೆ?",
+          "q_ml": "സ്മാർട്ട്ഫോൺ എങ്ങനെയുണ്ട്?"
+        }
+      ],
+      "passage_te": "నేను ఒక కొత్త స్మార్ట్‌ఫోన్ కొన్నాను. ఈ స్మార్ట్‌ఫోన్‌తో చాలా ఫోటోలు తీస్తాను. రాత్రిపూట ఇంటర్నెట్‌లో సినిమాలు చూస్తాను. చాలా సౌకర్యవంతంగా ఉంది.",
+      "passage_hi": "मैंने एक नया स्मार्टफोन खरीदा। इस फोन से मैं बहुत सारी तस्वीरें लेता हूँ। रात में इंटरनेट पर फिल्में देखता हूँ। यह बहुत सुविधाजनक है।",
+      "passage_ta": "நான் ஒரு புதிய ஸ்மார்ட்போன் வாங்கினேன். இதில் நிறைய புகைப்படங்கள் எடுக்கிறேன். இரவில் இணையத்தில் திரைப்படம் பார்க்கிறேன். மிகவும் வசதியானது.",
+      "passage_ko": "저는 새 스마트폰을 샀습니다. 이 스마트폰으로 사진을 많이 찍습니다. 밤에는 인터넷으로 영화를 봅니다. 매우 편리합니다.",
+      "passage_es": "Compré un nuevo teléfono inteligente. Con él tomo muchas fotos. Por la noche veo películas en internet. Es muy conveniente.",
+      "passage_kn": "ನಾನು ಹೊಸ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಖರೀದಿಸಿದೆ. ಇದರಿಂದ ಸಾಕಷ್ಟು ಫೋಟೋ ತೆಗೆಯುತ್ತೇನೆ. ರಾತ್ರಿ ಇಂಟರ್ನೆಟ್‌ನಲ್ಲಿ ಸಿನಿಮಾ ನೋಡುತ್ತೇನೆ. ತುಂಬಾ ಅನುಕೂಲಕರವಾಗಿದೆ.",
+      "passage_ml": "ഞാൻ ഒരു പുതിയ സ്മാർട്ട്ഫോൺ വാങ്ങി. ധാരാളം ഫോട്ടോകൾ എടുക്കുന്നു. രാത്രി ഇന്റർനെറ്റിൽ സിനിമ കാണുന്നു. വളരെ സൗകര്യപ്രദമാണ്."
+    },
+    {
+      "id": "r-n5-9",
+      "title": "デパートで かいもの (Shopping at the Department Store)",
+      "passage": "どようびに デパートへ いきました。あかい くつを かいました。くつは 五千円でした。すこし たかかったですが、とても かわいいです。",
+      "passage_en": "On Saturday I went to the department store. I bought red shoes. The shoes were five thousand yen. They were a little expensive, but they are very cute.",
+      "questions": [
+        {
+          "q": "いつ デパートへ いきましたか。",
+          "q_en": "When did this person go to the department store?",
+          "options": [
+            "きんようび",
+            "どようび",
+            "にちようび",
+            "げつようび"
+          ],
+          "answer": 1,
+          "q_te": "డిపార్ట్‌మెంట్ స్టోర్‌కు ఎప్పుడు వెళ్లారు?",
+          "q_hi": "स्टोर कब गए?",
+          "q_ta": "கடைக்கு எப்போது சென்றார்கள்?",
+          "q_ko": "언제 백화점에 갔습니까?",
+          "q_es": "¿Cuándo fueron a la tienda?",
+          "q_kn": "ಸ್ಟೋರ್‌ಗೆ ಯಾವಾಗ ಹೋದರು?",
+          "q_ml": "സ്റ്റോറിൽ എപ്പോഴാണ് പോയത്?"
+        },
+        {
+          "q": "何を かいましたか。",
+          "q_en": "What did this person buy?",
+          "options": [
+            "あかい くつ",
+            "あおい くつ",
+            "しろい ぼうし",
+            "くろい かばん"
+          ],
+          "answer": 0,
+          "q_te": "ఏమి కొన్నారు?",
+          "q_hi": "क्या खरीदा?",
+          "q_ta": "என்ன வாங்கினார்கள்?",
+          "q_ko": "무엇을 샀습니까?",
+          "q_es": "¿Qué compró?",
+          "q_kn": "ಏನನ್ನು ಖರೀದಿಸಿದರು?",
+          "q_ml": "എന്താണ് വാങ്ങിയത്?"
+        },
+        {
+          "q": "くつは いくらでしたか。",
+          "q_en": "How much were the shoes?",
+          "options": [
+            "千円",
+            "三千円",
+            "五千円",
+            "一万円"
+          ],
+          "answer": 2,
+          "q_te": "బూట్లు ఎంత ఖరీదు?",
+          "q_hi": "जूते कितने के थे?",
+          "q_ta": "காலணிகளின் விலை எவ்வளவு?",
+          "q_ko": "구두는 얼마였습니까?",
+          "q_es": "¿Cuánto costaron los zapatos?",
+          "q_kn": "ಶೂ ಬೆಲೆ ಎಷ್ಟು?",
+          "q_ml": "ഷൂസിന് എത്ര രൂപയായി?"
+        }
+      ],
+      "passage_te": "శనివారం నేను డిపార్ట్‌మెంట్ స్టోర్‌కు వెళ్లాను. ఎర్రటి బూట్లు కొన్నాను. బూట్లు 5,000 యెన్లు అయ్యాయి. కాస్త ఖరీదైనవే అయినా చాలా ముద్దుగా ఉన్నాయి.",
+      "passage_hi": "शनिवार को मैं डिपार्टमेंटल स्टोर गया। मैंने लाल जूते खरीदे। जूते पांच हजार येन के थे। थोड़े महंगे थे पर बहुत प्यारे हैं।",
+      "passage_ta": "சனிக்கிழமை நான் டிபார்ட்மென்ட் கடைக்குச் சென்றேன். சிவப்பு காலணிகள் வாங்கினேன். விலை 5,000 யென். சற்று விலை உயர்ந்தது, ஆனால் அழகாக உள்ளது.",
+      "passage_ko": "토요일에 백화점에 갔습니다. 빨간 구두를 샀습니다. 구두는 5천 엔이었습니다. 조금 비쌌지만 아주 귀엽습니다.",
+      "passage_es": "El sábado fui a los grandes almacenes. Compré zapatos rojos. Costaron cinco mil yenes. Eran un poco caros, pero son muy bonitos.",
+      "passage_kn": "ಶನಿವಾರ ನಾನು ಡಿಪಾರ್ಟ್‌ಮೆಂಟ್ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಿದ್ದೆ. ಕೆಂಪು ಶೂ ಖರೀದಿಸಿದೆ. ಬೆಲೆ 5,000 ಯೆನ್. ಸ್ವಲ್ಪ ದುಬಾರಿಯಾದರೂ ತುಂಬಾ ಮುದ್ದಾಗಿದೆ.",
+      "passage_ml": "ശനിയാഴ്ച ഞാൻ മാളിൽ പോയി. ചുവന്ന ഷൂസ് വാങ്ങി. 5,000 യെൻ ആയിരുന്നു. അല്പം വിലകൂടിയതാണെങ്കിലും നല്ല ഭംഗിയുണ്ട്."
+    },
+    {
+      "id": "r-n5-10",
+      "title": "きょうの てんき (Today's Weather)",
+      "passage": "けさは あめでした。でも、ひるから はれました。そらが あおくて、とても きれいです。あした 山へ いきます。",
+      "passage_en": "This morning it was rainy. But from midday it cleared up. The sky is blue and very beautiful. Tomorrow I will go to the mountain.",
+      "questions": [
+        {
+          "q": "けさの てんきは どうでしたか。",
+          "q_en": "How was the weather this morning?",
+          "options": [
+            "ゆき",
+            "くもり",
+            "あめ",
+            "はれ"
+          ],
+          "answer": 2,
+          "q_te": "ఈ ఉదయం వాతావరణం ఎలా ఉంది?",
+          "q_hi": "सुबह का मौसम कैसा था?",
+          "q_ta": "காலை வானிலை எப்படி இருந்தது?",
+          "q_ko": "오늘 아침 날씨는 어땠습니까?",
+          "q_es": "¿Cómo estuvo el clima esta mañana?",
+          "q_kn": "ಬೆಳಗಿನ ಹವಾಮಾನ ಹೇಗಿತ್ತು?",
+          "q_ml": "രാവിലെ കാലാവസ്ഥ എങ്ങനെയായിരുന്നു?"
+        },
+        {
+          "q": "あした どこへ いきますか。",
+          "q_en": "Where will this person go tomorrow?",
+          "options": [
+            "山",
+            "うみ",
+            "まち",
+            "こうえん"
+          ],
+          "answer": 0,
+          "q_te": "రేపు ఎక్కడికి వెళ్తారు?",
+          "q_hi": "कल कहाँ जाएँगे?",
+          "q_ta": "நாளை எங்கு செல்வார்கள்?",
+          "q_ko": "내일 어디에 갑니까?",
+          "q_es": "¿A dónde irán mañana?",
+          "q_kn": "ನಾಳೆ ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "നാളെ എങ്ങോട്ടാണ് പോകുന്നത്?"
+        },
+        {
+          "q": "いま そらは どうですか。",
+          "q_en": "How is the sky now?",
+          "options": [
+            "くろいです",
+            "しろいです",
+            "あかいです",
+            "あおいです"
+          ],
+          "answer": 3,
+          "q_te": "ఇప్పుడు ఆకాశం ఎలా ఉంది?",
+          "q_hi": "अब आसमान कैसा है?",
+          "q_ta": "இப்போது வானம் எப்படி உள்ளது?",
+          "q_ko": "지금 하늘은 어떻습니까?",
+          "q_es": "¿Cómo está el cielo ahora?",
+          "q_kn": "ಈಗ ಆಕಾಶ ಹೇಗಿದೆ?",
+          "q_ml": "ഇപ്പോൾ ആകാശം എങ്ങനെയുണ്ട്?"
+        }
+      ],
+      "passage_te": "ఈ ఉదయం వర్షం పడింది. కానీ మధ్యాహ్నం నుండి ఎండ కాసింది. ఆకాశం నీలంగా చాలా అందంగా ఉంది. రేపు కొండకు వెళ్తాను.",
+      "passage_hi": "आज सुबह बारिश हो रही थी। लेकिन दोपहर से धूप खिल गई। आसमान नीला और सुंदर है। कल मैं पहाड़ पर जाऊँगा।",
+      "passage_ta": "இன்று காலை மழை பெய்தது. ஆனால் மதியத்திலிருந்து வெயில் அடித்தது. வானம் நீலமாகவும் அழகாகவும் உள்ளது. நாளை மலைக்குச் செல்வேன்.",
+      "passage_ko": "오늘 아침에는 비가 왔습니다. 하지만 낮부터 개었습니다. 하늘이 파랗고 매우 아름답습니다. 내일 산에 갑니다.",
+      "passage_es": "Esta mañana llovió. Pero desde el mediodía se despejó. El cielo está azul y muy hermoso. Mañana iré a la montaña.",
+      "passage_kn": "ಇಂದು ಬೆಳಿಗ್ಗೆ ಮಳೆಯಾಗಿತ್ತು. ಆದರೆ ಮಧ್ಯಾಹ್ನದಿಂದ ಬಿಸಿಲು ಬಂತು. ಆಕಾಶ ನೀಲಿಯಾಗಿ ಸುಂದರವಾಗಿದೆ. ನಾಳೆ ಬೆಟ್ಟಕ್ಕೆ ಹೋಗುತ್ತೇನೆ.",
+      "passage_ml": "ഇന്ന് രാവിലെ മഴയായിരുന്നു. എന്നാൽ ഉച്ചയ്ക്ക് ശേഷം വെയിൽ വന്നു. ആകാശം നീലനിറത്തിൽ മനോഹരമായിരിക്കുന്നു. നാളെ മലയിലേക്ക് പോകും."
+    },
+    {
+      "id": "r-n5-11",
+      "title": "公園の散歩 (A Walk in the Park)",
+      "passage": "日曜日、妹と近くの公園へ行きました。公園にはたくさんの花が咲いていました。池には白い鳥が五羽いました。私たちはベンチに座って、サンドイッチを食べました。とても気持ちがよかったです。",
+      "passage_en": "On Sunday, I went to a nearby park with my younger sister. Many flowers were blooming in the park. In the pond, there were five white birds. We sat on a bench and ate sandwiches. It felt very pleasant.",
+      "passage_te": "ఆదివారం, నేను నా చెల్లెలితో కలిసి దగ్గర్లోని పార్కుకు వెళ్లాను. పార్కులో చాలా పువ్వులు పూసి ఉన్నాయి. చెరువులో ఐదు తెల్లటి పక్షులు ఉన్నాయి. మేము బెంచీపై కూర్చుని శాండ్‌విచ్‌లు తిన్నాము. చాలా ఆహ్లాదకరంగా అనిపించింది.",
+      "passage_hi": "रविवार को, मैं अपनी छोटी बहन के साथ पास के पार्क में गया। पार्क में बहुत सारे फूल खिले हुए थे। तालाब में पाँच सफेद पक्षी थे। हम बेंच पर बैठे और सैंडविच खाए। बहुत अच्छा लगा।",
+      "passage_ta": "ஞாயிற்றுக்கிழமை, நான் என் தங்கையுடன் அருகிலுள்ள பூங்காவிற்கு சென்றேன். பூங்காவில் பல பூக்கள் மலர்ந்திருந்தன. குளத்தில் ஐந்து வெள்ளை பறவைகள் இருந்தன. நாங்கள் ஒரு பெஞ்சில் அமர்ந்து சாண்ட்விச்களை சாப்பிட்டோம். மிகவும் இனிமையாக இருந்தது.",
+      "passage_ko": "일요일에 여동생과 가까운 공원에 갔습니다. 공원에는 많은 꽃이 피어 있었습니다. 연못에는 하얀 새가 다섯 마리 있었습니다. 우리는 벤치에 앉아 샌드위치를 먹었습니다. 기분이 아주 좋았습니다.",
+      "passage_es": "El domingo fui a un parque cercano con mi hermana menor. Muchas flores florecían en el parque. En el estanque había cinco pájaros blancos. Nos sentamos en un banco y comimos sándwiches. Fue muy agradable.",
+      "passage_kn": "ಭಾನುವಾರ, ನಾನು ನನ್ನ ತಂಗಿಯೊಂದಿಗೆ ಹತ್ತಿರದ ಉದ್ಯಾನವನಕ್ಕೆ ಹೋದೆ. ಉದ್ಯಾನದಲ್ಲಿ ಅನೇಕ ಹೂವುಗಳು ಅರಳಿದ್ದವು. ಕೊಳದಲ್ಲಿ ಐದು ಬಿಳಿ ಹಕ್ಕಿಗಳಿದ್ದವು. ನಾವು ಬೆಂಚಿನ ಮೇಲೆ ಕುಳಿತು ಸ್ಯಾಂಡ್‌ವಿಚ್ ತಿಂದೆವು. ತುಂಬಾ ಆಹ್ಲಾದಕರವಾಗಿತ್ತು.",
+      "passage_ml": "ഞായറാഴ്ച ഞാൻ അനുജത്തിയോടൊപ്പം അടുത്തുള്ള പാർക്കിൽ പോയി. പാർക്കിൽ ധാരാളം പൂക്കൾ വിരിഞ്ഞു നിന്നിരുന്നു. കുളത്തിൽ അഞ്ച് വെളുത്ത പക്ഷികൾ ഉണ്ടായിരുന്നു. ഞങ്ങൾ ബെഞ്ചിലിരുന്ന് സാൻഡ്‌വിച്ച് കഴിച്ചു. വളരെ സന്തോഷം തോന്നി.",
+      "questions": [
+        {
+          "q": "だれと 公園へ 行きましたか。",
+          "q_en": "Who did they go to the park with?",
+          "q_te": "ఎవరితో కలిసి పార్కుకు వెళ్లారు?",
+          "q_hi": "किसके साथ पार्क गए?",
+          "q_ta": "யாருடன் பூங்காவிற்கு சென்றார்கள்?",
+          "q_ko": "누구와 공원에 갔습니까?",
+          "q_es": "¿Con quién fueron al parque?",
+          "q_kn": "ಯಾರೊಂದಿಗೆ ಉದ್ಯಾನಕ್ಕೆ ಹೋದರು?",
+          "q_ml": "ആരോടൊപ്പമാണ് പാർക്കിൽ പോയത്?",
+          "options": [
+            "妹",
+            "友だち",
+            "母",
+            "一人"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "池に 鳥が 何羽 いましたか。",
+          "q_en": "How many birds were in the pond?",
+          "q_te": "చెరువులో ఎన్ని పక్షులు ఉన్నాయి?",
+          "q_hi": "तालाब में कितने पक्षी थे?",
+          "q_ta": "குளத்தில் எத்தனை பறவைகள் இருந்தன?",
+          "q_ko": "연못에 새가 몇 마리 있었습니까?",
+          "q_es": "¿Cuántos pájaros había en el estanque?",
+          "q_kn": "ಕೊಳದಲ್ಲಿ ಎಷ್ಟು ಹಕ್ಕಿಗಳಿದ್ದವು?",
+          "q_ml": "കുളത്തിൽ എത്ര പക്ഷികൾ ഉണ്ടായിരുന്നു?",
+          "options": [
+            "三羽",
+            "四羽",
+            "五羽",
+            "六羽"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "r-n5-12",
+      "title": "日本の友だち (My Japanese Friend)",
+      "passage": "わたしには日本人の友だちがいます。名前はケンさんです。ケンさんは日本語を教えてくれます。わたしはケンさんに英語を教えます。毎週金曜日の夜、オンラインで話します。",
+      "passage_en": "I have a Japanese friend. His name is Ken. Ken teaches me Japanese. I teach Ken English. Every Friday evening, we talk online.",
+      "passage_te": "నాకు ఒక జపనీస్ స్నేహితుడు ఉన్నాడు. అతని పేరు కెన్. కెన్ నాకు జపనీస్ నేర్పిస్తాడు. నేను కెన్‌కు ఇంగ్లీష్ నేర్పిస్తాను. ప్రతి శుక్రవారం రాత్రి, మేము ఆన్‌లైన్‌లో మాట్లాడుకుంటాము.",
+      "passage_hi": "मेरा एक जापानी दोस्त है। उसका नाम केन है। केन मुझे जापानी सिखाता है। मैं केन को अंग्रेज़ी सिखाता हूँ। हर शुक्रवार की शाम, हम ऑनलाइन बात करते हैं।",
+      "passage_ta": "எனக்கு ஒரு ஜப்பானிய நண்பர் இருக்கிறார். அவர் பெயர் கென். கென் எனக்கு ஜப்பானிய மொழியைக் கற்பிக்கிறார். நான் கென்னுக்கு ஆங்கிலம் கற்பிக்கிறேன். ஒவ்வொரு வெள்ளிக்கிழமை இரவும் நாங்கள் ஆன்லைனில் பேசுகிறோம்.",
+      "passage_ko": "나에게는 일본인 친구가 있습니다. 이름은 켄입니다. 켄은 나에게 일본어를 가르쳐 줍니다. 나는 켄에게 영어를 가르칩니다. 매주 금요일 밤에 온라인으로 이야기합니다.",
+      "passage_es": "Tengo un amigo japonés. Su nombre es Ken. Ken me enseña japonés. Yo le enseño inglés a Ken. Todos los viernes por la noche, hablamos en línea.",
+      "passage_kn": "ನನಗೆ ಒಬ್ಬ ಜಪಾನಿ ಸ್ನೇಹಿತನಿದ್ದಾನೆ. ಅವನ ಹೆಸರು ಕೆನ್. ಕೆನ್ ನನಗೆ ಜಪಾನಿ ಕಲಿಸುತ್ತಾನೆ. ನಾನು ಕೆನ್‌ಗೆ ಇಂಗ್ಲಿಷ್ ಕಲಿಸುತ್ತೇನೆ. ಪ್ರತಿ ಶುಕ್ರವಾರ ರಾತ್ರಿ, ನಾವು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾತನಾಡುತ್ತೇವೆ.",
+      "passage_ml": "എനിക്ക് ഒരു ജാപ്പനീസ് സുഹൃത്തുണ്ട്. പേര് കെൻ. കെൻ എന്നെ ജാപ്പനീസ് പഠിപ്പിക്കുന്നു. ഞാൻ കെന്നിന് ഇംഗ്ലീഷ് പഠിപ്പിക്കുന്നു. എല്ലാ വെള്ളിയാഴ്ചയും രാത്രി ഞങ്ങൾ ഓൺലൈനിൽ സംസാരിക്കുന്നു.",
+      "questions": [
+        {
+          "q": "ケンさんは 何を 教えてくれますか。",
+          "q_en": "What does Ken teach?",
+          "q_te": "కెన్ ఏమి నేర్పిస్తాడు?",
+          "q_hi": "केन क्या सिखाता है?",
+          "q_ta": "கென் என்ன கற்பிக்கிறார்?",
+          "q_ko": "켄은 무엇을 가르쳐 줍니까?",
+          "q_es": "¿Qué enseña Ken?",
+          "q_kn": "ಕೆನ್ ಏನು ಕಲಿಸುತ್ತಾನೆ?",
+          "q_ml": "കെൻ എന്താണ് പഠിപ്പിക്കുന്നത്?",
+          "options": [
+            "英語",
+            "日本語",
+            "数学",
+            "音楽"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "二人は いつ 話しますか。",
+          "q_en": "When do the two talk?",
+          "q_te": "ఇద్దరూ ఎప్పుడు మాట్లాడుకుంటారు?",
+          "q_hi": "वे दोनों कब बात करते हैं?",
+          "q_ta": "இருவரும் எப்போது பேசுகிறார்கள்?",
+          "q_ko": "두 사람은 언제 이야기합니까?",
+          "q_es": "¿Cuándo hablan los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಯಾವಾಗ ಮಾತನಾಡುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എപ്പോഴാണ് സംസാരിക്കുന്നത്?",
+          "options": [
+            "毎週月曜日",
+            "毎週水曜日",
+            "毎週金曜日の夜",
+            "毎朝"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "r-n5-13",
+      "title": "あたらしい じてんしゃ (My New Bicycle)",
+      "passage": "たんじょうびに あおい じてんしゃを もらいました。ちちからの プレゼントです。この じてんしゃで えきまで いきます。あるくと 二十分ですが、じてんしゃなら 七分です。とても はやいです。",
+      "passage_en": "On my birthday, I received a blue bicycle. It is a present from my father. I go to the station with this bicycle. Walking takes 20 minutes, but by bicycle it is 7 minutes. It is very fast.",
+      "passage_te": "నా పుట్టినరోజున నాకు నీలిరంగు సైకిల్ బహుమతిగా వచ్చింది. ఇది నా నాన్నగారిచ్చిన బహుమతి. ఈ సైకిల్‌పై నేను స్టేషన్‌కు వెళ్తాను. నడిస్తే 20 నిమిషాలు పడుతుంది, కానీ సైకిల్‌పై కేవలం 7 నిమిషాలు. చాలా వేగంగా ఉంటుంది.",
+      "passage_hi": "मेरे जन्मदिन पर मुझे एक नीली साइकिल मिली। यह मेरे पिता की ओर से एक उपहार है। मैं इस साइकिल से स्टेशन जाता हूँ। पैदल चलने में 20 मिनट लगते हैं, लेकिन साइकिल से 7 मिनट लगते हैं। यह बहुत तेज़ है।",
+      "passage_ta": "என் பிறந்தநாளில் எனக்கு ஒரு நீல நிற மிதிவண்டி கிடைத்தது. இது என் தந்தையிடமிருந்து வந்த பரிசு. இந்த மிதிவண்டியில் நான் நிலையத்திற்குச் செல்கிறேன். நடந்தால் 20 நிமிடங்கள் ஆகும், ஆனால் மிதிவண்டியில் 7 நிமிடங்கள் மட்டுமே. மிகவும் வேகமானது.",
+      "passage_ko": "생일에 파란 자전거를 받았습니다. 아버지로부터의 선물입니다. 이 자전거로 역까지 갑니다. 걸으면 20분이지만, 자전거라면 7분입니다. 아주 빠릅니다.",
+      "passage_es": "En mi cumpleaños recibí una bicicleta azul. Es un regalo de mi padre. Voy a la estación con esta bicicleta. Caminando son 20 minutos, pero en bicicleta son 7 minutos. Es muy rápida.",
+      "passage_kn": "ನನ್ನ ಜನ್ಮದಿನದಂದು ನನಗೆ ನೀಲಿ ಸೈಕಲ್ ಸಿಕ್ಕಿತು. ಇದು ನನ್ನ ತಂದೆಯ ಉಡುಗೊರೆ. ಈ ಸೈಕಲ್‌ನಲ್ಲಿ ನಾನು ನಿಲ್ದಾಣಕ್ಕೆ ಹೋಗುತ್ತೇನೆ. ನಡೆದರೆ 20 ನಿಮಿಷ, ಸೈಕಲ್‌ನಲ್ಲಿ 7 ನಿಮಿಷ. ತುಂಬಾ ವೇಗವಾಗಿದೆ.",
+      "passage_ml": "എന്റെ ജന്മദിനത്തിൽ എനിക്ക് ഒരു നീല സൈക്കിൾ ലഭിച്ചു. അത് അച്ഛന്റെ സമ്മാനമാണ്. ഈ സൈക്കിളിലാണ് ഞാൻ സ്റ്റേഷനിലേക്ക് പോകുന്നത്. നടന്നാൽ 20 മിനിറ്റ്, സൈക്കിളിൽ 7 മിനിറ്റ്. വളരെ വേഗതയുണ്ട്.",
+      "questions": [
+        {
+          "q": "じてんしゃは だれからの プレゼントですか。",
+          "q_en": "Who was the bicycle a present from?",
+          "q_te": "సైకిల్ ఎవరిచ్చిన బహుమతి?",
+          "q_hi": "साइकिल किसकी ओर से उपहार थी?",
+          "q_ta": "மிதிவண்டி யாரிடமிருந்து வந்த பரிசு?",
+          "q_ko": "자전거는 누구로부터의 선물입니까?",
+          "q_es": "¿De quién fue el regalo de la bicicleta?",
+          "q_kn": "ಸೈಕಲ್ ಯಾರಿಂದ ಬಂದ ಉಡುಗೊರೆ?",
+          "q_ml": "സൈക്കിൾ ആരിൽ നിന്നുള്ള സമ്മാനമാണ്?",
+          "options": [
+            "はは",
+            "ちち",
+            "あに",
+            "ともだち"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "じてんしゃで えきまで なんぷん かかりますか。",
+          "q_en": "How many minutes does it take to the station by bicycle?",
+          "q_te": "సైకిల్‌పై స్టేషన్‌కు ఎన్ని నిమిషాలు పడుతుంది?",
+          "q_hi": "साइकिल से स्टेशन तक कितने मिनट लगते हैं?",
+          "q_ta": "மிதிவண்டியில் நிலையத்திற்கு எத்தனை நிமிடங்கள் ஆகும்?",
+          "q_ko": "자전거로 역까지 몇 분 걸립니까?",
+          "q_es": "¿Cuántos minutos toma ir a la estación en bicicleta?",
+          "q_kn": "ಸೈಕಲ್‌ನಲ್ಲಿ ನಿಲ್ದಾಣಕ್ಕೆ ಎಷ್ಟು ನಿಮಿಷ ತಗಲುತ್ತದೆ?",
+          "q_ml": "സൈക്കിളിൽ സ്റ്റേഷനിലേക്ക് എത്ര മിനിറ്റ് എടുക്കും?",
+          "options": [
+            "五分",
+            "七分",
+            "十分",
+            "二十分"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "r-n5-14",
+      "title": "りょこうの けいかく (Travel Plan)",
+      "passage": "らいげつ、京都へ いきます。しんかんせんで いきます。京都には ふるい おてらや じんじゃが たくさん あります。きものも 着てみたいです。写真も たくさん とります。",
+      "passage_en": "Next month, I am going to Kyoto. I will go by Shinkansen (bullet train). In Kyoto there are many old temples and shrines. I also want to try wearing a kimono. I will take lots of photos too.",
+      "passage_te": "వచ్చే నెల, నేను క్యోటోకు వెళ్తున్నాను. షింకన్‌సెన్ (బుల్లెట్ రైలు) లో వెళ్తాను. క్యోటోలో అనేక పురాతన దేవాలయాలు మరియు పుణ్యక్షేత్రాలు ఉన్నాయి. నేను కిమోనో కూడా ధరించి చూడాలనుకుంటున్నాను. చాలా ఫోటోలు కూడా తీస్తాను.",
+      "passage_hi": "अगले महीने, मैं क्योटो जा रहा हूँ। मैं शिंकानसेन (बुलेट ट्रेन) से जाऊँगा। क्योटो में कई पुराने मंदिर और तीर्थस्थल हैं। मैं किमोनो भी पहनकर देखना चाहता हूँ। बहुत सारी तस्वीरें भी खींचूँगा।",
+      "passage_ta": "அடுத்த மாதம், நான் கியோட்டோ செல்கிறேன். புல்லட் ரயிலில் செல்வேன். கியோட்டோவில் பல பழமையான கோயில்கள் உள்ளன. கிமோனோவையும் அணிந்து பார்க்க விரும்புகிறேன். நிறைய புகைப்படங்களையும் எடுப்பேன்.",
+      "passage_ko": "다음 달에 교토에 갑니다. 신칸센으로 갑니다. 교토에는 오래된 절과 신사가 많이 있습니다. 기모노도 입어보고 싶습니다. 사진도 많이 찍을 것입니다.",
+      "passage_es": "El próximo mes voy a Kioto. Iré en Shinkansen. En Kioto hay muchos templos antiguos y santuarios. También quiero probar ponerme un kimono. Tomaré muchas fotos.",
+      "passage_kn": "ಮುಂದಿನ ತಿಂಗಳು, ನಾನು ಕ್ಯೋಟೋಗೆ ಹೋಗುತ್ತಿದ್ದೇನೆ. ಶಿಂಕಾನ್‌ಸೆನ್‌ನಲ್ಲಿ ಹೋಗುತ್ತೇನೆ. ಕ್ಯೋಟೋದಲ್ಲಿ ಅನೇಕ ಹಳೆಯ ದೇವಾಲಯಗಳಿವೆ. ಕಿಮೋನೋ ಕೂಡ ಧರಿಸಲು ಬಯಸುತ್ತೇನೆ. ಸಾಕಷ್ಟು ಫೋಟೋಗಳನ್ನು ತೆಗೆಯುತ್ತೇನೆ.",
+      "passage_ml": "അടുത്ത മാസം ഞാൻ ക്യോട്ടോയിലേക്ക് പോകുന്നു. ബുള്ളറ്റ് ട്രെയിനിലാണ് പോകുന്നത്. ക്യോട്ടോയിൽ നിരവധി പുരാതന ക്ഷേത്രങ്ങളുണ്ട്. കിമോണോ ധരിച്ചുനോക്കാനും ആഗ്രഹമുണ്ട്. ധാരാളം ഫോട്ടോകളും എടുക്കും.",
+      "questions": [
+        {
+          "q": "何で 京都へ いきますか。",
+          "q_en": "How will they go to Kyoto?",
+          "q_te": "దేనిపై క్యోటోకు వెళ్తారు?",
+          "q_hi": "क्योटो कैसे जाएँगे?",
+          "q_ta": "எதில் கியோட்டோ செல்வார்கள்?",
+          "q_ko": "무엇으로 교토에 갑니까?",
+          "q_es": "¿Cómo irán a Kioto?",
+          "q_kn": "ಕ್ಯೋಟೋಗೆ ಯಾವುದರಲ್ಲಿ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "ക്യോട്ടോയിലേക്ക് എങ്ങനെയാണ് പോകുന്നത്?",
+          "options": [
+            "ひこうき",
+            "バス",
+            "しんかんせん",
+            "ふね"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "京都で 何を してみたいですか。",
+          "q_en": "What do they want to try doing in Kyoto?",
+          "q_te": "క్యోటోలో ఏమి చేయాలని అనుకుంటున్నారు?",
+          "q_hi": "क्योटो में क्या करके देखना चाहते हैं?",
+          "q_ta": "கியோட்டோவில் என்ன செய்ய விரும்புகிறார்கள்?",
+          "q_ko": "교토에서 무엇을 해보고 싶습니까?",
+          "q_es": "¿Qué quieren probar hacer en Kioto?",
+          "q_kn": "ಕ್ಯೋಟೋದಲ್ಲಿ ಏನು ಮಾಡಲು ಬಯಸುತ್ತಾರೆ?",
+          "q_ml": "ക്യോട്ടോയിൽ എന്ത് ചെയ്യാനാണ് ആഗ്രഹിക്കുന്നത്?",
+          "options": [
+            "きものを着る",
+            "スキーをする",
+            "魚をつる",
+            "車をかう"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n5-15",
+      "title": "ゆうびんきょくで (At the Post Office)",
+      "passage": "きのう ゆうびんきょくへ いきました。インドの かぞくに てがみを おくりました。きってを 三まい かいました。きっては 三百円でした。それから えき前の カフェで おちゃを のみました。",
+      "passage_en": "Yesterday I went to the post office. I sent a letter to my family in India. I bought three stamps. The stamps were 300 yen. After that, I drank tea at a cafe in front of the station.",
+      "passage_te": "నిన్న నేను పోస్టాఫీసుకు వెళ్లాను. భారతదేశంలోని నా కుటుంబానికి ఉత్తరం పంపాను. మూడు పోస్టల్ స్టాంపులు కొన్నాను. స్టాంపులు 300 యెన్లు. ఆ తర్వాత స్టేషన్ ఎదురుగా ఉన్న కేఫ్‌లో టీ తాగాను.",
+      "passage_hi": "कल मैं डाकघर गया था। मैंने भारत में अपने परिवार को एक पत्र भेजा। मैंने तीन डाक टिकट खरीदे। टिकट 300 येन के थे। उसके बाद मैंने स्टेशन के सामने वाले कैफे में चाय पी।",
+      "passage_ta": "நேற்று நான் தபால் நிலையத்திற்குச் சென்றேன். இந்தியாவில் உள்ள என் குடும்பத்திற்கு கடிதம் அனுப்பினேன். மூன்று தபால் தலைகளை வாங்கினேன். தபால் தலைகள் 300 யென். அதன் பிறகு நிலையத்திற்கு எதிரே உள்ள கஃபேயில் தேநீர் குடித்தேன்.",
+      "passage_ko": "어제 우체국에 갔습니다. 인도의 가족에게 편지를 보냈습니다. 우표를 세 장 샀습니다. 우표는 300엔이었습니다. 그러고 나서 역 앞 카페에서 차를 마셨습니다.",
+      "passage_es": "Ayer fui a la oficina de correos. Envié una carta a mi familia en la India. Compré tres sellos. Los sellos costaron 300 yenes. Después de eso, tomé té en una cafetería frente a la estación.",
+      "passage_kn": "ನಿನ್ನೆ ನಾನು ಅಂಚೆ ಕಚೇರಿಗೆ ಹೋಗಿದ್ದೆ. ಭಾರತದಲ್ಲಿರುವ ನನ್ನ ಕುಟುಂಬಕ್ಕೆ ಪತ್ರ ಕಳುಹಿಸಿದೆ. ಮೂರು ಅಂಚೆ ಚೀಟಿಗಳನ್ನು ಖರೀದಿಸಿದೆ. ಅಂಚೆ ಚೀಟಿಗಳು 300 ಯೆನ್ ಆಗಿದ್ದವು. ನಂತರ ನಿಲ್ದಾಣದ ಮುಂಭಾಗದ ಕೆಫೆಯಲ್ಲಿ ಚಹಾ ಕುಡಿದೆ.",
+      "passage_ml": "ഇന്നലെ ഞാൻ പോസ്റ്റ് ഓഫീസിൽ പോയി. ഇന്ത്യയിലെ കുടുംബത്തിന് ഒരു കത്തയച്ചു. മൂന്ന് സ്റ്റാമ്പുകൾ വാങ്ങി. സ്റ്റാമ്പുകൾക്ക് 300 യെൻ ആയിരുന്നു. അതിനുശേഷം സ്റ്റേഷന് മുന്നിലെ കഫേയിൽ നിന്ന് ചായ കുടിച്ചു.",
+      "questions": [
+        {
+          "q": "どこへ てがみを おくりましたか。",
+          "q_en": "Where did they send the letter to?",
+          "q_te": "ఉత్తరం ఎక్కడికి పంపారు?",
+          "q_hi": "पत्र कहाँ भेजा?",
+          "q_ta": "கடிதம் எங்கு அனுப்பப்பட்டது?",
+          "q_ko": "어디로 편지를 보냈습니까?",
+          "q_es": "¿A dónde enviaron la carta?",
+          "q_kn": "ಪತ್ರವನ್ನು ಎಲ್ಲಿಗೆ ಕಳುಹಿಸಿದರು?",
+          "q_ml": "കത്ത് എങ്ങോട്ടാണ് അയച്ചത്?",
+          "options": [
+            "アメリカ",
+            "インド",
+            "イギリス",
+            "フランス"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "きっては いくつ かいましたか。",
+          "q_en": "How many stamps did they buy?",
+          "q_te": "ఎన్ని స్టాంపులు కొన్నారు?",
+          "q_hi": "कितने टिकट खरीदे?",
+          "q_ta": "எத்தனை தபால் தலைகளை வாங்கினார்கள்?",
+          "q_ko": "우표를 몇 장 샀습니까?",
+          "q_es": "¿Cuántos sellos compraron?",
+          "q_kn": "ಎಷ್ಟು ಅಂಚೆ ಚೀಟಿಗಳನ್ನು ಖರೀದಿಸಿದರು?",
+          "q_ml": "എത്ര സ്റ്റാമ്പുകൾ വാങ്ങി?",
+          "options": [
+            "一枚",
+            "二枚",
+            "三枚",
+            "四枚"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ],
+  "N4": [
+    {
+      "id": "r-n4-1",
+      "title": "図書館へ行く (Going to the Library)",
+      "passage": "わたしは毎週土曜日に図書館へ行きます。先週、母がわたしに新しいかばんを買ってくれました。だから、そのかばんに本をたくさん入れて、図書館まで歩いて行きました。図書館では、日本語の本を三冊借りることができました。来週もまた行って、別の本を読みたいです。",
+      "passage_en": "Every Saturday I go to the library. Last week, my mother bought me a new bag. So I put a lot of books in that bag and walked to the library. At the library, I was able to borrow three Japanese books. Next week I want to go again and read some different books.",
+      "questions": [
+        {
+          "q": "だれが かばんを 買ってくれましたか。",
+          "q_en": "Who bought the bag (for the writer)?",
+          "options": [
+            "母",
+            "わたし",
+            "先生",
+            "友だち"
+          ],
+          "answer": 0,
+          "q_te": "వారు ఎక్కడ బార్బెక్యూ చేసారు?",
+          "q_hi": "उन्होंने बारबेक्यू कहाँ किया?",
+          "q_ta": "அவர்கள் எங்கு பார்பிகியூ செய்தனர்?",
+          "q_ko": "어디에서 바비큐를 했습니까?",
+          "q_es": "¿Dónde hicieron la barbacoa?",
+          "q_kn": "ಅವರು ಎಲ್ಲಿ ಬಾರ್ಬೆಕ್ಯೂ ಮಾಡಿದರು?",
+          "q_ml": "അവർ എവിടെയാണ് ബാർബിക്യു ചെയ്തത്?"
+        },
+        {
+          "q": "図書館で 本を 何冊 借りましたか。",
+          "q_en": "How many books did the writer borrow at the library?",
+          "options": [
+            "一冊",
+            "二冊",
+            "三冊",
+            "四冊"
+          ],
+          "answer": 2,
+          "q_te": "సాయంత్రం వారు ఎక్కడికి వెళ్లారు?",
+          "q_hi": "शाम को वे कहाँ गए?",
+          "q_ta": "மாலையில் அவர்கள் எங்கு சென்றார்கள்?",
+          "q_ko": "저녁에 어디로 갔습니까?",
+          "q_es": "¿A dónde fueron por la tarde?",
+          "q_kn": "ಸಂಜೆ ಅವರು ಎಲ್ಲಿಗೆ ಹೋದರು?",
+          "q_ml": "വൈകുന്നേരം അവർ എങ്ങോട്ടാണ് പോയത്?"
+        },
+        {
+          "q": "この人は 図書館まで どうやって 行きましたか。",
+          "q_en": "How did the writer get to the library?",
+          "options": [
+            "電車で",
+            "歩いて",
+            "自転車で",
+            "バスで"
+          ],
+          "answer": 1,
+          "q_te": "ఆ రోజు వాతావరణం ఎలా ఉంది?",
+          "q_hi": "उस दिन मौसम कैसा था?",
+          "q_ta": "அன்று வானிலை எப்படி இருந்தது?",
+          "q_ko": "그날 날씨는 어땠습니까?",
+          "q_es": "¿Cómo estuvo el clima ese día?",
+          "q_kn": "ಆ ದಿನ ಹವಾಮಾನ ಹೇಗಿತ್ತು?",
+          "q_ml": "അന്ന് കാലാവസ്ഥ എങ്ങനെയായിരുന്നു?"
+        }
+      ],
+      "passage_te": "శనివారం నేను స్నేహితులతో నది ఒడ్డున బార్బెక్యూ చేసాను. వాతావరణం చాలా బాగుంది, మాంసం మరియు కూరగాయలు రుచిగా ఉన్నాయి. సాయంత్రం మేము సమీపంలోని వేడినీటి బుగ్గలకు వెళ్లి చాలా విశ్రాంతి తీసుకున్నాము.",
+      "passage_hi": "शनिवार को मैंने दोस्तों के साथ नदी किनारे बारबेक्यू किया। मौसम बहुत अच्छा था, और मांस व सब्ज़ियाँ बहुत स्वादिष्ट थीं। शाम को हम पास के गरम पानी के झरने में गए और बहुत सुकून मिला।",
+      "passage_ta": "சனிக்கிழமை நான் நண்பர்களுடன் ஆற்றங்கரையில் பார்பிகியூ செய்தேன். வானிலை நன்றாக இருந்தது, உணவும் சுவையாக இருந்தது. மாலையில் அருகிலுள்ள வெந்நீர் ஊற்றுக்குச் சென்று நிம்மதியாக ஓய்வெடுத்தோம்.",
+      "passage_ko": "토요일에 친구들과 강가에서 바비큐를 했습니다. 날씨도 좋았고, 고기와 야채가 매우 맛있었습니다. 저녁에는 근처 온천에 가서 푹 쉬었습니다.",
+      "passage_es": "El sábado hice una barbacoa junto al río con mis amigos. Hizo buen tiempo y la carne y las verduras estaban deliciosas. Por la tarde fuimos a unas aguas termales cercanas y nos relajamos mucho.",
+      "passage_kn": "ಶನಿವಾರ ನಾನು ಸ್ನೇಹಿತರೊಂದಿಗೆ ನದಿಯ ದಂಡೆಯಲ್ಲಿ ಬಾರ್ಬೆಕ್ಯೂ ಮಾಡಿದೆ. ಹವಾಮಾನ ಚೆನ್ನಾಗಿತ್ತು, ಮಾಂಸ ಮತ್ತು ತರಕಾರಿಗಳು ರುಚಿಕರವಾಗಿದ್ದವು. ಸಂಜೆ ಹತ್ತಿರದ ಬಿಸಿನೀರಿನ ಬುಗ್ಗೆಗೆ ಹೋಗಿ ವಿಶ್ರಾಂತಿ ಪಡೆದೆವು.",
+      "passage_ml": "ശനിയാഴ്ച ഞാൻ സുഹൃത്തുക്കൾക്കൊപ്പം പുഴയോരത്ത് ബാർബിക്യു ചെയ്തു. കാലാവസ്ഥ നല്ലതായിരുന്നു, ഭക്ഷണവും രുചികരമായിരുന്നു. വൈകുന്നേരം അടുത്തുള്ള ചൂടുനീരുറവയിൽ പോയി നന്നായി വിശ്രമിച്ചു."
+    },
+    {
+      "id": "r-n4-2",
+      "title": "いっしょにカレーを作る (Making Curry Together)",
+      "passage": "きのう、友だちのアリさんがうちに来ました。アリさんはカレーの作り方を知っているので、いっしょにカレーを作りました。わたしは野菜を切って、アリさんは肉をいためました。カレーはとてもおいしくて、アリさんもたくさん食べました。今度はわたしがアリさんの家でケーキを作ってあげたいです。",
+      "passage_en": "Yesterday my friend Ali came to my house. Ali knows how to make curry, so we made curry together. I cut the vegetables, and Ali stir-fried the meat. The curry was very delicious, and Ali ate a lot too. Next time, I want to make a cake for Ali at Ali's house.",
+      "questions": [
+        {
+          "q": "だれが 肉を いためましたか。",
+          "q_en": "Who stir-fried the meat?",
+          "options": [
+            "わたし",
+            "アリさん",
+            "母",
+            "父"
+          ],
+          "answer": 1,
+          "q_te": "లైబ్రరీ ఎప్పుడు మూసివేయబడుతుంది?",
+          "q_hi": "पुस्तकालय कब बंद रहेगा?",
+          "q_ta": "நூலகம் எப்போது மூடப்பட்டிருக்கும்?",
+          "q_ko": "도서관은 언제 휴관합니까?",
+          "q_es": "¿Cuándo estará cerrada la biblioteca?",
+          "q_kn": "ಗ್ರಂಥಾಲಯ ಯಾವಾಗ ಮುಚ್ಚಿರುತ್ತದೆ?",
+          "q_ml": "ലൈബ്രറി എപ്പോഴാണ് അവധിയായിരിക്കുക?"
+        },
+        {
+          "q": "カレーの 作り方を 知っているのは だれですか。",
+          "q_en": "Who knows how to make curry?",
+          "options": [
+            "わたし",
+            "妹",
+            "アリさん",
+            "先生"
+          ],
+          "answer": 2,
+          "q_te": "పుస్తకాలను ఎలా వాపసు చేయాలి?",
+          "q_hi": "किताबें कैसे लौटानी हैं?",
+          "q_ta": "புத்தகங்களை எப்படி திருப்பித் தர வேண்டும்?",
+          "q_ko": "책은 어떻게 반납해야 합니까?",
+          "q_es": "¿Cómo se deben devolver los libros?",
+          "q_kn": "ಪುಸ್ತಕಗಳನ್ನು ಹೇಗೆ ಮರಳಿಸಬೇಕು?",
+          "q_ml": "പുസ്തകങ്ങൾ എങ്ങനെ തിരികെ നൽകണം?"
+        },
+        {
+          "q": "今度 わたしは 何を 作りたいですか。",
+          "q_en": "What does the writer want to make next time?",
+          "options": [
+            "ケーキ",
+            "カレー",
+            "パン",
+            "サラダ"
+          ],
+          "answer": 0,
+          "q_te": "మూసివేయడానికి గల కారణం ఏమిటి?",
+          "q_hi": "बंद रहने का क्या कारण है?",
+          "q_ta": "மூடுவதற்கு என்ன காரணம்?",
+          "q_ko": "휴관하는 이유는 무엇입니까?",
+          "q_es": "¿Por qué estará cerrada?",
+          "q_kn": "ಮುಚ್ಚಲು ಕಾರಣವೇನು?",
+          "q_ml": "അവധിയാകാൻ കാരണം എന്താണ്?"
+        }
+      ],
+      "passage_te": "లైబ్రరీ నుండి ప్రకటన: వచ్చే సోమవారం పరిశుభ్రత పనుల కారణంగా లైబ్రరీ మూసివేయబడుతుంది. పుస్తకాల వాపసు కోసం దయచేసి ప్రవేశ ద్వారం వద్ద ఉన్న రిటర్న్ బాక్స్‌ను ఉపయోగించండి.",
+      "passage_hi": "पुस्तकालय से सूचना: अगले सोमवार को सफाई कार्य के कारण पुस्तकालय बंद रहेगा। किताबें लौटाने के लिए कृपया प्रवेश द्वार पर लगे रिटर्न बॉक्स का उपयोग करें।",
+      "passage_ta": "நூலக அறிவிப்பு: அடுத்த திங்கட்கிழமை தூய்மைப் பணிகள் காரணமாக நூலகம் மூடப்பட்டிருக்கும். புத்தகங்களைத் திருப்பித் தர நுழைவாயிலில் உள்ள பெட்டியைப் பயன்படுத்தவும்.",
+      "passage_ko": "도서관 안내: 다음 주 월요일은 청소 작업으로 인해 휴관합니다. 도서 반납은 입구에 있는 반납함을 이용해 주시기 바랍니다.",
+      "passage_es": "Aviso de la biblioteca: El próximo lunes la biblioteca estará cerrada por labores de limpieza. Para devolver libros, por favor use el buzón de devolución de la entrada.",
+      "passage_kn": "ಗ್ರಂಥಾಲಯದ ಪ್ರಕಟಣೆ: ಮುಂದಿನ ಸೋಮವಾರ ಸ್ವಚ್ಛತಾ ಕಾರ್ಯದ ಕಾರಣ ಗ್ರಂಥಾಲಯ ಮುಚ್ಚಿರುತ್ತದೆ. ಪುಸ್ತಕಗಳನ್ನು ಮರಳಿಸಲು ಪ್ರವೇಶದ್ವಾರದಲ್ಲಿರುವ ಪೆಟ್ಟಿಗೆ ಬಳಸಿ.",
+      "passage_ml": "ലൈബ്രറി അറിയിപ്പ്: അടുത്ത തിങ്കളാഴ്ച ശുചീകരണ പ്രവർത്തനങ്ങൾക്കായി ലൈബ്രറി അവധിയായിരിക്കും. പുസ്തകങ്ങൾ തിരികെ നൽകാൻ കവാടത്തിലെ ബോക്സ് ഉപയോഗിക്കുക."
+    },
+    {
+      "id": "r-n4-3",
+      "title": "日曜日の予定 (Sunday Plans)",
+      "passage": "今週の日曜日に山へ登るつもりでした。でも、天気予報を見たら、雨が降ると言っていました。雨の日はあぶないから、山に登ることができません。だから、友だちと映画を見に行くことにしました。次の晴れた日に、また山に登りたいです。",
+      "passage_en": "I was planning to climb the mountain this Sunday. But when I checked the weather forecast, it said it would rain. Because it is dangerous on rainy days, I can't climb the mountain. So I decided to go see a movie with a friend instead. On the next sunny day, I want to climb the mountain again.",
+      "questions": [
+        {
+          "q": "日曜日に はじめは 何を する つもりでしたか。",
+          "q_en": "What did the writer originally plan to do on Sunday?",
+          "options": [
+            "映画を見る",
+            "山に登る",
+            "買い物する",
+            "泳ぐ"
+          ],
+          "answer": 1,
+          "q_te": "రైలు నుండి ఏమి కనిపించింది?",
+          "q_hi": "ट्रेन से क्या दिखाई दिया?",
+          "q_ta": "ரயிலிலிருந்து என்ன தெரிந்தது?",
+          "q_ko": "기차에서 무엇이 보였습니까?",
+          "q_es": "¿Qué se vio desde el tren?",
+          "q_kn": "ರೈಲಿನಿಂದ ಏನು ಕಂಡಿತು?",
+          "q_ml": "ട്രെയിനിൽ നിന്ന് എന്താണ് കണ്ടത്?"
+        },
+        {
+          "q": "なぜ 山に 登ることが できませんか。",
+          "q_en": "Why can't the writer climb the mountain?",
+          "options": [
+            "雨が降るから",
+            "時間がないから",
+            "お金がないから",
+            "友だちが来るから"
+          ],
+          "answer": 0,
+          "q_te": "పర్వత శిఖరం ఎలా ఉంది?",
+          "q_hi": "पहाड़ की चोटी कैसी थी?",
+          "q_ta": "மலையின் உச்சி எப்படி இருந்தது?",
+          "q_ko": "산꼭대기는 어떠했습니까?",
+          "q_es": "¿Cómo era la cima de la montaña?",
+          "q_kn": "ಪರ್ವತದ ತುದಿ ಹೇಗಿತ್ತು?",
+          "q_ml": "മലയുടെ മുകൾഭാഗം എങ്ങനെയുണ്ടായിരുന്നു?"
+        },
+        {
+          "q": "この人は 日曜日に 何を することに しましたか。",
+          "q_en": "What did the writer decide to do on Sunday instead?",
+          "options": [
+            "家で寝る",
+            "山に登る",
+            "映画を見に行く",
+            "勉強する"
+          ],
+          "answer": 2,
+          "q_te": "ఈ ప్రయాణంలో సమయం ఎలా గడిచింది?",
+          "q_hi": "यात्रा में समय कैसे बीता?",
+          "q_ta": "பயணத்தில் நேரம் எப்படி கழிந்தது?",
+          "q_ko": "기차 안에서 시간은 어떻게 흘렀습니까?",
+          "q_es": "¿Cómo pasó el tiempo en el tren?",
+          "q_kn": "ಪ್ರಯಾಣದಲ್ಲಿ ಸಮಯ ಹೇಗೆ ಕಳೆಯಿತು?",
+          "q_ml": "യാത്രയിൽ സമയം എങ്ങനെ പോയി?"
+        }
+      ],
+      "passage_te": "రైలులో ప్రయాణిస్తున్నప్పుడు అందమైన పర్వతం కనిపించింది. పైకప్పు మంచుతో తెల్లగా మెరిసిపోతోంది. కిటికీ నుండి బయట చూస్తున్నప్పుడు సమయం గడిచిపోయినట్లే తెలియలేదు.",
+      "passage_hi": "ट्रेन से यात्रा करते समय मुझे एक सुंदर पहाड़ दिखाई दिया। उसकी चोटी बर्फ से सफेद चमक रही थी। खिड़की से बाहर देखते-देखते समय का पता ही नहीं चला।",
+      "passage_ta": "ரயிலில் பயணம் செய்தபோது ஒரு அழகான மலை தெரிந்தது. அதன் உச்சி பனியால் வெண்மையாக மின்னியது. ஜன்னல் வழியே வெளியே பார்த்துக் கொண்டிருந்ததில் நேரம் போனதே தெரியவில்லை.",
+      "passage_ko": "기차를 타고 가는데 아름다운 산이 보였습니다. 꼭대기가 눈으로 하얗게 빛나고 있었습니다. 창밖을 바라보느라 시간 가는 줄 몰랐습니다.",
+      "passage_es": "Mientras viajaba en tren, vi una montaña hermosa. Su cima brillaba blanca por la nieve. Mirando por la ventana el tiempo pasó volando.",
+      "passage_kn": "ರೈಲಿನಲ್ಲಿ ಪ್ರಯಾಣಿಸುವಾಗ ಸುಂದರವಾದ ಪರ್ವತ ಕಂಡಿತು. ಅದರ ತುದಿ ಹಿಮದಿಂದ ಬೆಳ್ಳಗೆ ಹೊಳೆಯುತ್ತಿತ್ತು. ಕಿಟಕಿಯಿಂದ ಹೊರಗೆ ನೋಡುತ್ತಾ ಸಮಯ ಕಳೆದಿದ್ದೇ ತಿಳಿಯಲಿಲ್ಲ.",
+      "passage_ml": "ട്രെയിനിൽ യാത്ര ചെയ്യുമ്പോൾ മനോഹരമായ ഒരു മല കണ്ടു. അതിന്റെ മുകളിൽ മഞ്ഞ് മൂടി വെളുത്ത് തിളങ്ങുന്നുണ്ടായിരുന്നു. ജനലിലൂടെ പുറത്തേക്ക് നോക്കി സമയം പോയതറിഞ്ഞില്ല."
+    },
+    {
+      "id": "r-n4-4",
+      "title": "新しい仕事 (A New Job)",
+      "passage": "先月、駅の近くのパン屋で働き始めました。朝が早いので、毎日五時に起きなければなりません。店長はとても親切で、パンの作り方を丁寧に教えてくれます。まだ上手に作れませんが、お客さんに「おいしい」と言ってもらえると、とてもうれしいです。",
+      "passage_en": "Last month I started working at a bakery near the station. Because the mornings are early, I have to get up at five o'clock every day. The store manager is very kind and teaches me how to make bread carefully. I still can't make it well, but when customers tell me it's delicious, I'm very happy.",
+      "questions": [
+        {
+          "q": "この人はどうして五時に起きますか。",
+          "q_en": "Why does this person get up at five o'clock?",
+          "options": [
+            "駅が遠いから",
+            "パン屋の仕事は朝が早いから",
+            "店長に会いたいから",
+            "パンを買いに行くから"
+          ],
+          "answer": 1,
+          "q_te": "హనామి అంటే ఏమిటి?",
+          "q_hi": "हानामी क्या है?",
+          "q_ta": "ஹனாமி என்றால் என்ன?",
+          "q_ko": "하나미란 무엇입니까?",
+          "q_es": "¿Qué es el hanami?",
+          "q_kn": "ಹನಾಮಿ ಎಂದರೇನು?",
+          "q_ml": "ഹനാമി എന്നാൽ എന്താണ്?"
+        },
+        {
+          "q": "店長はどんな人ですか。",
+          "q_en": "What kind of person is the store manager?",
+          "options": [
+            "親切で、作り方を教えてくれる",
+            "こわくて、あまり話さない",
+            "朝はいつも遅く来る",
+            "パンが上手に作れない"
+          ],
+          "answer": 0,
+          "q_te": "చెర్రీ పువ్వులు ఏ కాలంలో వికసిస్తాయి?",
+          "q_hi": "चेरी के फूल किस मौसम में खिलते हैं?",
+          "q_ta": "செர்ரி மலர்கள் எந்த பருவத்தில் பூக்கின்றன?",
+          "q_ko": "벚꽃은 어느 계절에 핍니까?",
+          "q_es": "¿En qué estación florecen los cerezos?",
+          "q_kn": "ಚೆರ್ರಿ ಹೂಗಳು ಯಾವ ಕಾಲದಲ್ಲಿ ಅರಳುತ್ತವೆ?",
+          "q_ml": "ചെറിപ്പൂക്കൾ ഏത് കാലത്താണ് വിരിയുന്നത്?"
+        },
+        {
+          "q": "この人はどんな時にうれしくなりますか。",
+          "q_en": "When does this person become happy?",
+          "options": [
+            "五時に起きられた時",
+            "早く家に帰れる時",
+            "お客さんにおいしいと言ってもらえた時",
+            "店長にほめられた時"
+          ],
+          "answer": 2,
+          "q_te": "ప్రజలు పార్కులలో ఏమి చేస్తారు?",
+          "q_hi": "लोग पार्कों में क्या करते हैं?",
+          "q_ta": "மக்கள் பூங்காக்களில் என்ன செய்கிறார்கள்?",
+          "q_ko": "사람들은 공원에서 무엇을 합니까?",
+          "q_es": "¿Qué hace la gente en los parques?",
+          "q_kn": "ಜನರು ಉದ್ಯಾನವನದಲ್ಲಿ ಏನು ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "ആളുകൾ പാർക്കുകളിൽ എന്താണ് ചെയ്യുന്നത്?"
+        }
+      ],
+      "passage_te": "జపాన్‌లో వసంతకాలంలో చెర్రీ పువ్వులు వికసిస్తాయి. ప్రజలు పార్కులలో కూర్చుని పూలను చూస్తూ పిక్నిక్ చేసుకుంటారు. దీన్ని 'హనామి' అంటారు. ఇది చాలా ప్రాచీన సంస్కృతి.",
+      "passage_hi": "जापान में वसंत ऋतु में चेरी के फूल खिलते हैं। लोग पार्कों में बैठकर फूलों को देखते हुए पिकनिक मनाते हैं। इसे 'हानामी' कहा जाता है। यह एक बहुत पुरानी परंपरा है।",
+      "passage_ta": "ஜப்பானில் வசந்த காலத்தில் செர்ரி மலர்கள் பூக்கின்றன. மக்கள் பூங்காக்களில் அமர்ந்து மலர்களை ரசித்து பிக்னிக் கொண்டாடுகிறார்கள். இதை 'ஹனாமி' என்பர். இது மிகத் தொன்மையான பண்பாடு.",
+      "passage_ko": "일본에서는 봄에 벚꽃이 핍니다. 사람들은 공원에 모여 꽃을 보며 피크닉을 즐깁니다. 이것을 '하나미'라고 부르며 오랜 문화입니다.",
+      "passage_es": "En Japón, en primavera florecen los cerezos. La gente se reúne en los parques para contemplar las flores y hacer picnics. Esto se llama 'hanami' y es una tradición muy antigua.",
+      "passage_kn": "ಜಪಾನ್‌ನಲ್ಲಿ ವಸಂತ ಋತುವಿನಲ್ಲಿ ಚೆರ್ರಿ ಹೂವುಗಳು ಅರಳುತ್ತವೆ. ಜನರು ಉದ್ಯಾನವನಗಳಲ್ಲಿ ಕುಳಿತು ಹೂಗಳನ್ನು ನೋಡುತ್ತಾ ಪಿಕ್ನಿಕ್ ಮಾಡುತ್ತಾರೆ. ಇದನ್ನು 'ಹನಾಮಿ' ಎನ್ನುತ್ತಾರೆ.",
+      "passage_ml": "ജപ്പാനിൽ വസന്തകാലത്ത് ചെറിപ്പൂക്കൾ വിരിയുന്നു. ആളുകൾ പാർക്കുകളിൽ ഇരുന്ന് പൂക്കൾ കണ്ട് പിക്നിക് ആഘോഷിക്കുന്നു. ഇതിനെ 'ഹനാമി' എന്ന് വിളിക്കുന്നു. ഇതൊരു പുരാതന സംസ്കാരമാണ്."
+    },
+    {
+      "id": "r-n4-5",
+      "title": "電車の忘れ物 (Something Left on the Train)",
+      "passage": "きのう、電車の中に傘を忘れてしまいました。会社に着いてから気がついて、駅に電話をかけました。駅員さんが「青い傘なら届いています」と教えてくれたので、仕事のあとで取りに行きました。次からは、電車を降りる前に忘れ物がないか確認しようと思います。",
+      "passage_en": "Yesterday I ended up leaving my umbrella on the train. I noticed after arriving at the company, so I called the station. The station attendant told me \"If it's a blue umbrella, it's been turned in,\" so I went to pick it up after work. From next time, I plan to check whether I've left anything behind before getting off the train.",
+      "questions": [
+        {
+          "q": "この人は電車の中に何を忘れましたか。",
+          "q_en": "What did this person leave on the train?",
+          "options": [
+            "かばん",
+            "傘",
+            "電話",
+            "本"
+          ],
+          "answer": 1,
+          "q_te": "రచయిత వారాంతాల్లో ఏమి చేస్తారు?",
+          "q_hi": "लेखक सप्ताहांत में क्या करते हैं?",
+          "q_ta": "எழுத்தாளர் வார இறுதியில் என்ன செய்கிறார்?",
+          "q_ko": "글쓴이는 주말에 무엇을 합니까?",
+          "q_es": "¿Qué hace el autor los fines de semana?",
+          "q_kn": "ಲೇಖಕರು ವಾರಾಂತ್ಯದಲ್ಲಿ ಏನು ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "എഴുത്തുകാരൻ വാരാന്ത്യങ്ങളിൽ എന്താണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "この人はいつ傘を取りに行きましたか。",
+          "q_en": "When did this person go to pick up the umbrella?",
+          "options": [
+            "会社に着く前",
+            "電話をかける前",
+            "仕事のあと",
+            "次の日の朝"
+          ],
+          "answer": 2,
+          "q_te": "రచయితకు ఏమి కనుగొనడం ఇష్టం?",
+          "q_hi": "लेखक को क्या खोजना पसंद है?",
+          "q_ta": "எழுத்தாளருக்கு என்ன கண்டுபிடிக்க பிடிக்கும்?",
+          "q_ko": "글쓴이는 무엇을 발견하는 것을 좋아합니까?",
+          "q_es": "¿Qué le gusta descubrir al autor?",
+          "q_kn": "ಲೇಖಕರಿಗೆ ಏನನ್ನು ಹುಡುಕುವುದು ಇಷ್ಟ?",
+          "q_ml": "എഴുത്തുകാരന് എന്താണ് കണ്ടെത്താൻ ഇഷ്ടം?"
+        },
+        {
+          "q": "この人は次からどうしようと思っていますか。",
+          "q_en": "What does this person plan to do from next time?",
+          "options": [
+            "電車に乗らない",
+            "傘を持たない",
+            "降りる前に忘れ物を確認する",
+            "駅にすぐ電話する"
+          ],
+          "answer": 2,
+          "q_te": "సైకిల్ తొక్కడం వల్ల కలిగే ప్రయోజనం ఏమిటి?",
+          "q_hi": "साइकिल चलाने से क्या लाभ होता है?",
+          "q_ta": "சைக்கிள் ஓட்டுவதால் என்ன நன்மை?",
+          "q_ko": "자전거를 타면 어떤 점이 좋습니까?",
+          "q_es": "¿Qué beneficios tiene montar en bicicleta?",
+          "q_kn": "ಸೈಕಲ್ ಸವಾರಿಯಿಂದ ಏನು ಪ್ರಯೋಜನ?",
+          "q_ml": "സൈക്കിൾ ചവിട്ടുന്നത് കൊണ്ടുള്ള പ്രയോജനം എന്താണ്?"
+        }
+      ],
+      "passage_te": "నేను ప్రతి వారాంతంలో సైకిల్ తొక్కుతూ సమీపంలోని పట్టణాలను అన్వేషిస్తాను. కొత్త కేఫ్‌లను కనుగొనడం నాకు చాలా ఇష్టం. వ్యాయామంతో పాటు ఆహ్లాదంగా కూడా ఉంటుంది.",
+      "passage_hi": "मैं हर सप्ताहांत साइकिल चलाकर पास के कस्बों की सैर करता हूँ। नए कैफ़े खोजना मुझे बहुत पसंद है। यह व्यायाम के साथ-साथ ताज़गी भी देता है।",
+      "passage_ta": "நான் வாரந்தோறும் சைக்கிள் ஓட்டி அருகிலுள்ள ஊர்களை சுற்றிப் பார்க்கிறேன். புதிய கஃபேக்களைக் கண்டுபிடிப்பது எனக்கு மிகவும் பிடிக்கும். உடற்பயிற்சியோடு மனதுக்கும் புத்துணர்ச்சி கிடைக்கிறது.",
+      "passage_ko": "저는 주말마다 자전거를 타고 근처 동네를 둘러봅니다. 새로운 카페를 발견하는 것이 즐겁습니다. 운동도 되고 기분 전환도 됩니다.",
+      "passage_es": "Cada fin de semana monto en bicicleta para explorar los pueblos cercanos. Me encanta descubrir cafeterías nuevas. Es un buen ejercicio y resulta muy refrescante.",
+      "passage_kn": "ನಾನು ಪ್ರತಿ ವಾರಾಂತ್ಯದಲ್ಲಿ ಸೈಕಲ್ ಸವಾರಿ ಮಾಡುತ್ತಾ ಹತ್ತಿರದ ಊರುಗಳನ್ನು ಅನ್ವೇಷಿಸುತ್ತೇನೆ. ಹೊಸ ಕೆಫೆಗಳನ್ನು ಹುಡುಕುವುದು ನನಗೆ ಇಷ್ಟ. ವ್ಯಾಯಾಮದ ಜೊತೆಗೆ ಸಂತೋಷವೂ ಸಿಗುತ್ತದೆ.",
+      "passage_ml": "ഞാൻ എല്ലാ വാരാന്ത്യത്തിലും സൈക്കിൾ ചവിട്ടി അടുത്തുള്ള പ്രദേശങ്ങൾ കാണാൻ പോകും. പുതിയ കഫേകൾ കണ്ടെത്തുന്നത് എനിക്കിഷ്ടമാണ്. വ്യായാമത്തോടൊപ്പം ഉന്മേഷവും നൽകുന്നു."
+    },
+    {
+      "id": "r-n4-6",
+      "title": "かぜをひいた日 (The Day I Caught a Cold)",
+      "passage": "水曜日から少し熱があって、体の調子がよくありませんでした。病院へ行くと、医者に「三日間、ゆっくり休んでください」と言われました。母が作ってくれたおかゆを食べて、薬を飲んで、たくさん寝ました。今はもう元気になったので、あしたから学校に行けます。",
+      "passage_en": "From Wednesday I had a slight fever and my body wasn't feeling well. When I went to the hospital, the doctor told me \"Please rest for three days.\" I ate the rice porridge my mother made for me, took my medicine, and slept a lot. Now I've gotten better, so I can go to school from tomorrow.",
+      "questions": [
+        {
+          "q": "医者はこの人に何と言いましたか。",
+          "q_en": "What did the doctor say to this person?",
+          "options": [
+            "すぐ学校へ行ってください",
+            "三日間ゆっくり休んでください",
+            "薬を飲まないでください",
+            "水曜日に来てください"
+          ],
+          "answer": 1,
+          "q_te": "జపనీస్ వంటకాలలో ఏది ముఖ్యం?",
+          "q_hi": "जापानी व्यंजनों में क्या महत्वपूर्ण है?",
+          "q_ta": "ஜப்பானிய உணவில் எது முக்கியமானது?",
+          "q_ko": "일본 요리에서 중요한 것은 무엇입니까?",
+          "q_es": "¿Qué es importante en la cocina japonesa?",
+          "q_kn": "ಜಪಾನೀಸ್ ಅಡುಗೆಯಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ?",
+          "q_ml": "ജപ്പാനീസ് ഭക്ഷണത്തിൽ ഏതാണ് പ്രധാനം?"
+        },
+        {
+          "q": "おかゆはだれが作りましたか。",
+          "q_en": "Who made the rice porridge?",
+          "options": [
+            "この人",
+            "医者",
+            "母",
+            "友だち"
+          ],
+          "answer": 2,
+          "q_te": "ఎలాంటి పదార్థాలు ఉపయోగిస్తారు?",
+          "q_hi": "किस प्रकार की सामग्री का उपयोग किया जाता है?",
+          "q_ta": "எப்படிப்பட்ட பொருட்கள் பயன்படுத்தப்படுகின்றன?",
+          "q_ko": "어떤 재료가 사용됩니까?",
+          "q_es": "¿Qué tipo de ingredientes se utilizan?",
+          "q_kn": "ಯಾವ ರೀತಿಯ ಪದಾರ್ಥಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ?",
+          "q_ml": "എങ്ങനെയുള്ള ചേരുവകളാണ് ഉപയോഗിക്കുന്നത്?"
+        },
+        {
+          "q": "この人はあした何ができますか。",
+          "q_en": "What can this person do tomorrow?",
+          "options": [
+            "学校に行くこと",
+            "病院で働くこと",
+            "薬を作ること",
+            "熱を出すこと"
+          ],
+          "answer": 0,
+          "q_te": "ఈ వంటకాల ప్రత్యేకత ఏమిటి?",
+          "q_hi": "इन व्यंजनों की क्या विशेषता है?",
+          "q_ta": "இந்த உணவுகளின் சிறப்பு என்ன?",
+          "q_ko": "이 요리들의 특징은 무엇입니까?",
+          "q_es": "¿Cuál es la característica de estos platos?",
+          "q_kn": "ಈ ಖಾದ್ಯಗಳ ವಿಶೇಷತೆ ಏನು?",
+          "q_ml": "ഈ വിഭവങ്ങളുടെ പ്രത്യേകത എന്താണ്?"
+        }
+      ],
+      "passage_te": "జపనీస్ వంటకాలలో సీజనల్ పదార్థాలు చాలా ముఖ్యం. తాజా కూరగాయలు మరియు చేపలతో చేసే వంటకాలు ఆరోగ్యకరమైనవి మరియు సహజ రుచిని కలిగి ఉంటాయి.",
+      "passage_hi": "जापानी व्यंजनों में मौसमी सामग्री का बहुत महत्व है। ताज़ी सब्ज़ियों और मछलियों से बने व्यंजन स्वास्थ्यवर्धक होते हैं और प्राकृतिक स्वाद से भरपूर होते हैं।",
+      "passage_ta": "ஜப்பானிய உணவுகளில் பருவ கால உணவுகளுக்கு அதிக முக்கியத்துவம் உண்டு. புதிய காய்கறிகள் மற்றும் மீன்களால் செய்யப்படும் உணவுகள் ஆரோக்கியமானவை மற்றும் இயற்கையான சுவை கொண்டவை.",
+      "passage_ko": "일본 요리에서는 제철 재료가 매우 중요합니다. 신선한 채소와 생선으로 만든 요리는 건강에 좋고 자연의 맛을 살려줍니다.",
+      "passage_es": "En la cocina japonesa los ingredientes de temporada son muy importantes. Los platos elaborados con verduras frescas y pescado son saludables y conservan el sabor natural.",
+      "passage_kn": "ಜಪಾನೀಸ್ ಅಡುಗೆಯಲ್ಲಿ ಕಾಲೋಚಿತ ಪದಾರ್ಥಗಳು ಪ್ರಮುಖವಾಗಿವೆ. ತಾಜಾ ತರಕಾರಿಗಳು ಮತ್ತು ಮೀನುಗಳಿಂದ ತಯಾರಿಸಿದ ಖಾದ್ಯಗಳು ಆರೋಗ್ಯಕರ ಮತ್ತು ನೈಸರ್ಗಿಕ ರುಚಿಯನ್ನು ಹೊಂದಿರುತ್ತವೆ.",
+      "passage_ml": "ജപ്പാനീസ് ഭക്ഷണത്തിൽ ഓരോ കാലത്തെയും വിഭവങ്ങൾ വളരെ പ്രധാനമാണ്. പുതിയ പച്ചക്കറികളും മീനും ചേർത്തുള്ള വിഭവങ്ങൾ ആരോഗ്യത്തിനും സ്വാഭാവിക രുചിക്കും ഉത്തമമാണ്."
+    },
+    {
+      "id": "r-n4-7",
+      "title": "スマホの写真 (Photos on My Phone)",
+      "passage": "最近、スマートフォンの写真が多すぎて、新しい写真が撮れなくなりました。友だちに聞いたら、いらない写真を消せば、また撮れると教えてくれました。同じような写真がたくさんあったので、半分ぐらい消しました。これで旅行の時も、安心して写真が撮れると思います。",
+      "passage_en": "Recently there were too many photos on my smartphone, and I became unable to take new photos. When I asked a friend, they told me that if I delete unneeded photos, I can take them again. There were many similar photos, so I deleted about half. With this, I think I can take photos without worry during my trip too.",
+      "questions": [
+        {
+          "q": "どうして新しい写真が撮れなくなりましたか。",
+          "q_en": "Why did this person become unable to take new photos?",
+          "options": [
+            "スマホが古いから",
+            "写真が多すぎるから",
+            "旅行に行くから",
+            "友だちに借りたから"
+          ],
+          "answer": 1,
+          "q_te": "సమావేశంలో ఏమి చర్చించారు?",
+          "q_hi": "बैठक में किस पर चर्चा हुई?",
+          "q_ta": "கூட்டத்தில் என்ன விவாதிக்கப்பட்டது?",
+          "q_ko": "회의에서 무엇을 논의했습니까?",
+          "q_es": "¿Qué se discutió en la reunión?",
+          "q_kn": "ಸಭೆಯಲ್ಲಿ ಏನನ್ನು ಚರ್ಚಿಸಲಾಯಿತು?",
+          "q_ml": "യോഗത്തിൽ എന്താണ് ചർച്ച ചെയ്തത്?"
+        },
+        {
+          "q": "友だちは何を教えてくれましたか。",
+          "q_en": "What did the friend tell this person?",
+          "options": [
+            "新しいスマホを買うこと",
+            "写真をたくさん撮ること",
+            "いらない写真を消せばまた撮れること",
+            "旅行に行かないこと"
+          ],
+          "answer": 2,
+          "q_te": "ప్రాజెక్ట్ ఎప్పుడు మొదలవుతుంది?",
+          "q_hi": "प्रोजेक्ट कब शुरू होगा?",
+          "q_ta": "திட்டம் எப்போது தொடங்குகிறது?",
+          "q_ko": "프로젝트는 언제 시작됩니까?",
+          "q_es": "¿Cuándo comienza el proyecto?",
+          "q_kn": "ಯೋಜನೆ ಯಾವಾಗ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ?",
+          "q_ml": "പ്രോജക്റ്റ് എപ്പോഴാണ് തുടങ്ങുന്നത്?"
+        },
+        {
+          "q": "この人は写真をどうしましたか。",
+          "q_en": "What did this person do with the photos?",
+          "options": [
+            "全部消した",
+            "半分ぐらい消した",
+            "友だちにあげた",
+            "何もしなかった"
+          ],
+          "answer": 1,
+          "q_te": "సమావేశంలో పాల్గొన్నవారు ఏమి చేసారు?",
+          "q_hi": "बैठक में उपस्थित लोगों ने क्या किया?",
+          "q_ta": "கூட்டத்தில் கலந்து கொண்டவர்கள் என்ன செய்தனர்?",
+          "q_ko": "참석자들은 무엇을 했습니까?",
+          "q_es": "¿Qué hicieron los asistentes a la reunión?",
+          "q_kn": "ಸಭೆಯಲ್ಲಿ ಭಾಗವಹಿಸಿದವರು ಏನು ಮಾಡಿದರು?",
+          "q_ml": "യോഗത്തിൽ പങ്കെടുത്തവർ എന്താണ് ചെയ്തത്?"
+        }
+      ],
+      "passage_te": "నిన్న కంపెనీలో కొత్త ప్రాజెక్ట్ సమావేశం జరిగింది. అందరూ తమ ఆలోచనలను పంచుకున్నారు. వచ్చే వారం నుండి అసలు పని మొదలవుతుంది.",
+      "passage_hi": "कल कंपनी में नए प्रोजेक्ट की बैठक हुई। सभी ने अपने विचार साझा किए। अगले सप्ताह से मुख्य कार्य शुरू होगा।",
+      "passage_ta": "நேற்று நிறுவனத்தில் புதிய திட்டத்திற்கான கூட்டம் நடந்தது. அனைவரும் தங்கள் யோசனைகளைப் பகிர்ந்தனர். அடுத்த வாரத்திலிருந்து பணிகள் தொடங்கும்.",
+      "passage_ko": "어제 회사에서 새로운 프로젝트 회의가 있었습니다. 모두가 아이디어를 공유했습니다. 다음 주부터 본격적인 작업이 시작됩니다.",
+      "passage_es": "Ayer tuvimos una reunión en la empresa sobre el nuevo proyecto. Todos compartieron sus ideas. El trabajo principal comenzará la próxima semana.",
+      "passage_kn": "ನಿನ್ನೆ ಕಂಪನಿಯಲ್ಲಿ ಹೊಸ ಯೋಜನೆಯ ಸಭೆ ನಡೆಯಿತು. ಎಲ್ಲರೂ ತಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡರು. ಮುಂದಿನ ವಾರದಿಂದ ಮುಖ್ಯ ಕೆಲಸ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "passage_ml": "ഇന്നലെ കമ്പനിയിൽ പുതിയ പ്രോജക്റ്റ് മീറ്റിംഗ് നടന്നു. എല്ലാവരും തങ്ങളുടെ ആശയങ്ങൾ പങ്കുവെച്ചു. അടുത്ത ആഴ്ച മുതൽ യഥാർത്ഥ ജോലി ആരംഭിക്കും."
+    },
+    {
+      "id": "r-n4-8",
+      "title": "町のそうじ (Cleaning the Neighborhood)",
+      "passage": "毎月第一日曜日の朝、私の町ではみんなで公園をそうじします。今月は雨が降っていたので、中止になるかと思いましたが、九時ごろに晴れました。近所の人と一緒にごみを拾ったり、花に水をやったりしました。作業のあとで、隣のおばあさんが冷たいお茶を持ってきてくれて、みんなで飲みました。",
+      "passage_en": "On the morning of the first Sunday of every month, everyone in my town cleans the park together. This month it was raining, so I thought it might be canceled, but around nine o'clock it cleared up. Together with the neighbors, we picked up trash and watered the flowers. After the work, the old lady next door brought us cold tea, and we all drank it together.",
+      "questions": [
+        {
+          "q": "町の人はいつ公園をそうじしますか。",
+          "q_en": "When do the town's people clean the park?",
+          "options": [
+            "毎週日曜日",
+            "毎月第一日曜日の朝",
+            "雨の日の朝",
+            "毎月最後の土曜日"
+          ],
+          "answer": 1,
+          "q_te": "చెక్-ఇన్ సమయం ఎప్పుడు?",
+          "q_hi": "चेक-इन का समय कब है?",
+          "q_ta": "செக்-இன் நேரம் எப்போது?",
+          "q_ko": "체크인 시간은 언제입니까?",
+          "q_es": "¿A qué hora es el check-in?",
+          "q_kn": "ಚೆಕ್-ಇನ್ ಸಮಯ ಯಾವಾಗ?",
+          "q_ml": "ചെക്ക്-ഇൻ സമയം എപ്പോഴാണ്?"
+        },
+        {
+          "q": "今月、そうじはどうなりましたか。",
+          "q_en": "What happened with the cleaning this month?",
+          "options": [
+            "雨で中止になった",
+            "晴れたので行われた",
+            "夜に行われた",
+            "来月に変わった"
+          ],
+          "answer": 1,
+          "q_te": "చెక్-ఔట్ సమయం ఎప్పుడు?",
+          "q_hi": "चेक-आउट का समय कब है?",
+          "q_ta": "செக்-அவுட் நேரம் எப்போது?",
+          "q_ko": "체크아웃 시간은 언제입니까?",
+          "q_es": "¿A qué hora es el check-out?",
+          "q_kn": "ಚೆಕ್-ಔಟ್ ಸಮಯ ಯಾವಾಗ?",
+          "q_ml": "ചെക്ക്-ഔട്ട് സമയം എപ്പോഴാണ്?"
+        },
+        {
+          "q": "隣のおばあさんは何をしてくれましたか。",
+          "q_en": "What did the old lady next door do for them?",
+          "options": [
+            "ごみを拾ってくれた",
+            "花を持ってきてくれた",
+            "冷たいお茶を持ってきてくれた",
+            "公園をそうじしてくれた"
+          ],
+          "answer": 2,
+          "q_te": "అల్పాహారం ఎక్కడ లభిస్తుంది?",
+          "q_hi": "नाश्ता कहाँ मिलता है?",
+          "q_ta": "காலை உணவு எங்கு கிடைக்கும்?",
+          "q_ko": "조식은 어디에서 먹을 수 있습니까?",
+          "q_es": "¿Dónde se sirve el desayuno?",
+          "q_kn": "ಉಪಾಹಾರ ಎಲ್ಲಿ ಸಿಗುತ್ತದೆ?",
+          "q_ml": "പ്രഭാതഭക്ഷണം എവിടെയാണ് ലഭിക്കുന്നത്?"
+        }
+      ],
+      "passage_te": "హోటల్ బుకింగ్ వివరాలు: మీ గది రిజర్వేషన్ ఖరారైంది. చెక్-ఇన్ సమయం మధ్యాహ్నం 3 గంటలు, చెక్-ఔట్ ఉదయం 11 గంటలు. అల్పాహారం మొదటి అంతస్తులోని రెస్టారెంట్‌లో లభిస్తుంది.",
+      "passage_hi": "होटल बुकिंग विवरण: आपका कमरा आरक्षित हो चुका है। चेक-इन का समय दोपहर 3:00 बजे और चेक-आउट सुबह 11:00 बजे है। नाश्ता पहली मंजिल के रेस्तरां में उपलब्ध है।",
+      "passage_ta": "விடுதி முன்பதிவு விவரம்: உங்கள் அறை முன்பதிவு உறுதியானது. செக்-இன் நேரம் மதியம் 3:00 மணி, செக்-அவுட் காலை 11:00 மணி. முதல் தளத்தில் காலை உணவு கிடைக்கும்.",
+      "passage_ko": "호텔 예약 안내: 고객님의 객실 예약이 확정되었습니다. 체크인은 오후 3시, 체크아웃은 오전 11시입니다. 조식은 1층 식당에서 제공됩니다.",
+      "passage_es": "Detalles de reserva de hotel: Su habitación ha sido confirmada. El check-in es a las 15:00 y el check-out a las 11:00. El desayuno se sirve en el restaurante del primer piso.",
+      "passage_kn": "ಹೋಟೆಲ್ ಬುಕಿಂಗ್ ವಿವರ: ನಿಮ್ಮ ಕೊಠಡಿ ಕಾಯ್ದಿರಿಸುವಿಕೆ ಖಚಿತವಾಗಿದೆ. ಚೆಕ್-ಇನ್ ಮಧ್ಯಾಹ್ನ 3:00, ಚೆಕ್-ಔಟ್ ಬೆಳಿಗ್ಗೆ 11:00. ಮೊದಲ ಮಹಡಿಯ ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ಉಪಾಹಾರ ಲಭ್ಯವಿದೆ.",
+      "passage_ml": "ഹോട്ടൽ ബുക്കിംഗ് വിവരങ്ങൾ: നിങ്ങളുടെ റൂം റിസർവേഷൻ ഉറപ്പായിട്ടുണ്ട്. ചെക്ക്-ഇൻ സമയം ഉച്ചയ്ക്ക് 3:00, ചെക്ക്-ഔട്ട് രാവിലെ 11:00. പ്രഭാതഭക്ഷണം ഒന്നാം നിലയിലെ റെസ്റ്റോറന്റിൽ ലഭിക്കും."
+    },
+    {
+      "id": "r-n4-9",
+      "title": "初めてのマラソン (My First Marathon)",
+      "passage": "先週の日曜日、初めて町のマラソン大会に出ました。十キロも走ったことがなかったので、最後まで走れるか心配でした。でも、道の途中でたくさんの人が「がんばって」と応援してくれて、力が出ました。ゴールした時は足がとても痛かったですが、あきらめなくてよかったと思いました。",
+      "passage_en": "Last Sunday, I took part in the town marathon for the first time. I had never run even ten kilometers, so I was worried about whether I could run to the end. But along the way, many people cheered me on saying \"Do your best,\" and I found strength. When I reached the goal my legs hurt a lot, but I thought it was good that I didn't give up.",
+      "questions": [
+        {
+          "q": "この人はどうして心配でしたか。",
+          "q_en": "Why was this person worried?",
+          "options": [
+            "十キロ走ったことがなかったから",
+            "足が痛かったから",
+            "応援する人がいなかったから",
+            "日曜日に用事があったから"
+          ],
+          "answer": 0,
+          "q_te": "పుట్టినరోజు బహుమతిగా ఏమి ఇచ్చారు?",
+          "q_hi": "जन्मदिन के उपहार में क्या दिया?",
+          "q_ta": "பிறந்தநாள் பரிசாக என்ன கொடுத்தார்கள்?",
+          "q_ko": "생일 선물로 무엇을 주었습니까?",
+          "q_es": "¿Qué regalaron para el cumpleaños?",
+          "q_kn": "ಜನ್ಮದಿನದ ಉಡುಗೊರೆಯಾಗಿ ಏನನ್ನು ನೀಡಿದರು?",
+          "q_ml": "പിറന്നാൾ സമ്മാനമായി എന്താണ് നൽകിയത്?"
+        },
+        {
+          "q": "道の途中で何がありましたか。",
+          "q_en": "What happened along the way?",
+          "options": [
+            "雨が降ってきた",
+            "たくさんの人が応援してくれた",
+            "足が痛くて止まった",
+            "友だちに会った"
+          ],
+          "answer": 1,
+          "q_te": "స్నేహితుడు బహుమతి అందుకున్న తర్వాత ఏమి చేసాడు?",
+          "q_hi": "उपहार मिलने के बाद दोस्त ने क्या किया?",
+          "q_ta": "பரிசு பெற்ற பிறகு நண்பன் என்ன செய்தான்?",
+          "q_ko": "친구는 선물을 받고 무엇을 했습니까?",
+          "q_es": "¿Qué hizo el amigo después de recibir el regalo?",
+          "q_kn": "ಉಡುಗೊರೆ ಪಡೆದ ನಂತರ ಸ್ನೇಹಿತ ಏನು ಮಾಡಿದನು?",
+          "q_ml": "സമ്മാനം കിട്ടിയ ശേഷം സുഹൃത്ത് എന്താണ് ചെയ്തത്?"
+        },
+        {
+          "q": "ゴールしたあと、この人はどう思いましたか。",
+          "q_en": "After reaching the goal, how did this person feel?",
+          "options": [
+            "もう走りたくない",
+            "来年は出ない",
+            "あきらめなくてよかった",
+            "足が痛くて残念だ"
+          ],
+          "answer": 2,
+          "q_te": "స్నేహితుడి స్పందన ఎలా ఉంది?",
+          "q_hi": "दोस्त की प्रतिक्रिया कैसी थी?",
+          "q_ta": "நண்பனின் எதிர்வினை எப்படி இருந்தது?",
+          "q_ko": "친구의 반응은 어떠했습니까?",
+          "q_es": "¿Cómo reaccionó el amigo?",
+          "q_kn": "ಸ್ನೇಹಿತನ ಪ್ರತಿಕ್ರಿಯೆ ಹೇಗಿತ್ತು?",
+          "q_ml": "സുഹൃത്തിന്റെ പ്രതികരണം എങ്ങനെയുണ്ടായിരുന്നു?"
+        }
+      ],
+      "passage_te": "స్నేహితుడి పుట్టినరోజు కోసం నేను ఒక పుస్తకం మరియు పెన్ను బహుమతిగా ఇచ్చాను. అతను చాలా సంతోషించాడు మరియు వెంటనే ఆ పెన్నుతో డైరీ రాయడం ప్రారంభించాడు.",
+      "passage_hi": "दोस्त के जन्मदिन पर मैंने उसे एक किताब और कलम उपहार में दी। वह बहुत खुश हुआ और उसने तुरंत उस कलम से डायरी लिखना शुरू कर दिया।",
+      "passage_ta": "நண்பரின் பிறந்தநாளுக்கு ஒரு புத்தகமும் பேனாவும் பரிசளித்தேன். அவன் மிகவும் மகிழ்ந்து, உடனே அந்தப் பேனாவால் நாட்குறிப்பு எழுதத் தொடங்கினான்.",
+      "passage_ko": "친구 생일에 책과 펜을 선물했습니다. 친구는 매우 기뻐하며 바로 그 펜으로 일기를 쓰기 시작했습니다.",
+      "passage_es": "Para el cumpleaños de mi amigo le regalé un libro y una pluma. Se puso muy contento y enseguida empezó a escribir su diario con esa pluma.",
+      "passage_kn": "ಸ್ನೇಹಿತನ ಜನ್ಮದಿನಕ್ಕೆ ನಾನು ಒಂದು ಪುಸ್ತಕ ಮತ್ತು ಪೆನ್ ಉಡುಗೊರೆಯಾಗಿ ನೀಡಿದೆ. ಅವನು ತುಂಬಾ ಸಂತೋಷಪಟ್ಟು ತಕ್ಷಣ ಆ ಪೆನ್‌ನಿಂದ ದಿನಚರಿ ಬರೆಯಲು ಪ್ರಾರಂಭಿಸಿದನು.",
+      "passage_ml": "സുഹൃത്തിന്റെ പിറന്നാളിന് ഞാൻ ഒരു പുസ്തകവും പേനയും സമ്മാനമായി നൽകി. അവൻ വളരെ സന്തോഷിക്കുകയും ഉടൻ തന്നെ ആ പേന ഉപയോഗിച്ച് ഡയറി എഴുതാൻ തുടങ്ങുകയും ചെയ്തു."
+    },
+    {
+      "id": "r-n4-10",
+      "title": "桃太郎 (Momotaro - The Peach Boy)",
+      "passage": "むかしむかし、あるところに おじいさんと おばあさんが すんでいました。おじいさんは 山へ しばかりに、おばあさんは 川へ 洗濯に いきました。おばあさんが 川で 洗濯をしていると、大きな 桃が どんぶらこ、どんぶらこと 流れてきました。おばあさんが 桃を 家に もって帰って 切ろうとすると、中から 元気な 男の子が 生まれました。二人は 男の子を「桃太郎」と 名づけて、たいせつに 育てました。桃太郎は 大きくなって、鬼ヶ島へ 鬼退治に 行くことに なりました。おばあさんから きびだんごを もらい、犬、猿、キジを 仲間に して、みごとに 鬼を たおしました。",
+      "passage_en": "Long ago, an old man and an old woman lived together. The old man went to the mountains to cut firewood, and the old woman went to the river to wash clothes. While washing clothes, a giant peach came tumbling down the river. She took it home, and when they cut it open, a healthy baby boy was born. They named him 'Momotaro' (Peach Boy) and raised him with great love. When he grew up, Momotaro decided to go to Ogre Island to defeat the ogres. Receiving millet dumplings from the old woman, he befriended a dog, a monkey, and a pheasant, and successfully defeated the ogres.",
+      "passage_te": "పూర్వకాలంలో ఒక ఊరిలో ఒక తాతయ్య మరియు అవ్వ నివసించేవారు. తాతయ్య కట్టెల కోసం అడవికి, అవ్వ బట్టలు ఉతకడానికి నదికి వెళ్ళేవారు. అవ్వ నదిలో బట్టలు ఉతుకుతుండగా, ఒక పెద్ద దోసకాయంత గుండ్రటి బేరిపండు (పీచ్ పండు) తేలివచ్చింది. ఆమె దానిని ఇంటికి తెచ్చి కోయగా, లోపలి నుండి ఒక ఆరోగ్యకరమైన బాలుడు పుట్టాడు. వారు ఆ బాలుడికి 'మోమోతారో' అని పేరు పెట్టి అల్లారుముద్దుగా పెంచారు. మోమోతారో పెద్దయ్యాక, రాక్షసుల ద్వీపానికి వెళ్లి రాక్షసులను ఓడించాలని నిర్ణయించుకున్నాడు. అవ్వ ఇచ్చిన పిండివంటలు తింటూ, ఒక కుక్క, కోతి, మరియు పిట్టను స్నేహితులుగా చేసుకుని రాక్షసులను జయించాడు.",
+      "passage_hi": "बहुत पुरानी बात है, एक गाँव में एक बूढ़ा और एक बूढ़ी रहते थे। बूढ़ा पहाड़ पर लकड़ी काटने जाता था और बूढ़ी नदी पर कपड़े धोने जाती थी। जब बूढ़ी नदी पर कपड़े धो रही थी, तब एक बड़ा आड़ू बहता हुआ आया। वह उसे घर ले आई, और जब उसे काटा गया, तो उसमें से एक नन्हा बालक निकला। उन्होंने उसका नाम 'मोमोतारो' रखा। मोमोतारो बड़ा होकर राक्षसों को हराने के लिए निकला। उसने कुत्ते, बंदर और तीतर को अपना साथी बनाया और राक्षसों पर विजय प्राप्त की।",
+      "passage_ta": "முற்காலத்தில் ஒரு கிராமத்தில் ஒரு முதியவரும் மூதாட்டியும் வாழ்ந்து வந்தனர். முதியவர் விறகு வெட்ட மலைக்குச் சென்றார், மூதாட்டி துணி துவைக்க ஆற்றுக்குச் சென்றார். ஆற்றில் ஒரு பெரிய பீச் பழம் மிதந்து வந்தது. மூதாட்டி அதை வீட்டிற்கு எடுத்து வந்து நறுக்கியபோது, உள்ளிருந்து ஒரு அழகான ஆண் குழந்தை பிறந்தது. அவர்கள் அக்குழந்தைக்கு 'மோமோடாரோ' என்று பெயரிட்டு அன்புடன் வளர்த்தனர். பெரியவனான மோமோடாரோ அரக்கர்களை வெல்லச் சென்றான். நாய், குரங்கு, மற்றும் பறவையைத் தோழர்களாக்கிக் கொண்டு அரக்கர்களை வென்றான்.",
+      "passage_ko": "옛날 옛적에 할아버지와 할머니가 살고 있었습니다. 할아버지는 산에 나무를 하러 가고, 할머니는 강에 빨래를 하러 갔습니다. 할머니가 빨래를 하고 있을 때 커다란 복숭아가 둥실둥실 떠내려왔습니다. 복숭아를 잘라보니 건강한 사내아이가 태어났습니다. 두 사람은 아이를 '모모타로'라 부르며 정성껏 키웠습니다. 자란 모모타로는 도깨비 섬으로 도깨비 퇴치를 떠났습니다. 수수경단을 받아 개, 원숭이, 꿩을 동료로 삼아 도깨비를 무찔렀습니다.",
+      "passage_es": "Hace mucho tiempo, vivían un anciano y una anciana. El anciano fue a la montaña a recoger leña y la anciana fue al río a lavar ropa. Mientras lavaba, un melocotón gigante vino flotando por el río. Se lo llevó a casa, y al cortarlo, nació un niño fuerte y sano. Lo llamaron 'Momotaro' y lo criaron con amor. Al crecer, Momotaro fue a la isla de los ogros para derrotarlos. Con pasteles de mijo, se hizo amigo de un perro, un mono y un faisán, y derrotó a los ogros con éxito.",
+      "passage_kn": "ಹಿಂದೊಂದು ಕಾಲದಲ್ಲಿ ಒಬ್ಬ ತಾತ ಮತ್ತು ಅಜ್ಜಿ ವಾಸವಾಗಿದ್ದರು. ತಾತ ಕಟ್ಟಿಗೆ ತರಲು ಕಾಡಿಗೆ, ಅಜ್ಜಿ ಬಟ್ಟೆ ತೊಳೆಯಲು ನದಿಗೆ ಹೋಗುತ್ತಿದ್ದರು. ಅಜ್ಜಿ ನದಿಯಲ್ಲಿ ಬಟ್ಟೆ ತೊಳೆಯುತ್ತಿದ್ದಾಗ ದೊಡ್ಡ ಪೀಚ್ ಹಣ್ಣು ತೇಲಿಬಂದಿತು. ಅದನ್ನು ಮನೆಗೆ ತಂದು ಕೊಯ್ದಾಗ, ಒಳಗಿನಿಂದ ಆರೋಗ್ಯವಂತ ಗಂಡು ಮಗು ಹುಟ್ಟಿತು. ಅವರು ಆ ಮಗುವಿಗೆ 'ಮೊಮೊತಾರೊ' ಎಂದು ಹೆಸರಿಟ್ಟು ಪ್ರೀತಿಯಿಂದ ಬೆಳೆಸಿದರು. ಬೆಳೆದು ದೊಡ್ಡವನಾದ ಮೊಮೊತಾರೊ ರಾಕ್ಷಸರ ದ್ವೀಪಕ್ಕೆ ಹೋಗಿ, ನಾಯಿ, ಕೋತಿ ಮತ್ತು ಹಕ್ಕಿಯನ್ನು ಜೊತೆಮಾಡಿಕೊಂಡು ರಾಕ್ಷಸರನ್ನು ಸೋಲಿಸಿದನು.",
+      "passage_ml": "പണ്ട് പണ്ട് ഒരു വൃദ്ധനും വൃദ്ധയും താമസിച്ചിരുന്നു. വൃദ്ധൻ വിറക് ശേഖരിക്കാൻ മലയിലേക്കും വൃദ്ധ തുണി കഴുകാൻ പുഴയിലേക്കും പോയി. പുഴയിലൂടെ ഒരു വലിയ പീച്ച് പഴം ഒഴുകി വന്നു. അവർ അത് മുറിച്ചപ്പോൾ ഉള്ളിൽ നിന്ന് ഒരു ആൺകുഞ്ഞ് പുറത്തുവന്നു. അവർ അവന് 'മോമോതാരോ' എന്ന് പേരിട്ട് വളർത്തി. വലുതായപ്പോൾ അവൻ രാക്ഷസന്മാരെ തോൽപ്പിക്കാൻ പോയി. ഒരു നായയെയും കുരങ്ങനെയും പക്ഷിയെയും കൂടെ കൂട്ടി അവൻ രാക്ഷസന്മാരെ കീഴടക്കി.",
+      "questions": [
+        {
+          "q": "桃太郎は どこから 生まれましたか。",
+          "q_en": "Where was Momotaro born from?",
+          "q_te": "మోమోతారో ఎక్కడి నుండి పుట్టాడు?",
+          "q_hi": "मोमोतारो का जन्म कहाँ से हुआ?",
+          "q_ta": "மோமோடாரோ எதிலிருந்து பிறந்தான்?",
+          "q_ko": "모모타로는 어디에서 태어났습니까?",
+          "q_es": "¿De dónde nació Momotaro?",
+          "q_kn": "ಮೊಮೊತಾರೊ ಎಲ್ಲಿಂದ ಹುಟ್ಟಿದನು?",
+          "q_ml": "മോമോതാരോ എവിടെ നിന്നാണ് ജനിച്ചത്?",
+          "options": [
+            "大きな 桃の中から",
+            "川の 水の中から",
+            "山の 木の中から",
+            "おばあさんの かばんから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "桃太郎は だれを 仲間に しましたか。",
+          "q_en": "Who did Momotaro make his companions?",
+          "q_te": "మోమోతారో ఎవరిని స్నేహితులుగా చేసుకున్నాడు?",
+          "q_hi": "मोमोतारो ने किन्हें अपना साथी बनाया?",
+          "q_ta": "மோமோடாரோ யாரைத் தோழர்களாக்கினான்?",
+          "q_ko": "모모타로는 누구를 동료로 삼았습니까?",
+          "q_es": "¿A quiénes hizo Momotaro sus compañeros?",
+          "q_kn": "ಮೊಮೊತಾರೊ ಯಾರನ್ನು ಜೊತೆಗಾರರನ್ನಾಗಿ ಮಾಡಿಕೊಂಡನು?",
+          "q_ml": "മോമോതാരോ ആരെയാണ് കൂട്ടാളികളാക്കിയത്?",
+          "options": [
+            "犬、猿、キジ",
+            "猫、犬、鳥",
+            "牛、馬、羊",
+            "熊、鹿、兎"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "桃太郎は 何を たおすために 出かけましたか。",
+          "q_en": "What did Momotaro set out to defeat?",
+          "q_te": "మోమోతారో దేనిని ఓడించడానికి బయలుదేరాడు?",
+          "q_hi": "मोमोतारो किसे हराने के लिए निकला?",
+          "q_ta": "மோமோடாரோ எதை வெல்லப் புறப்பட்டான்?",
+          "q_ko": "모모타로는 무엇을 무찌르러 떠났습니까?",
+          "q_es": "¿A qué fue a derrotar Momotaro?",
+          "q_kn": "ಮೊಮೊತಾರೊ ಏನನ್ನು ಸೋಲಿಸಲು ಹೊರಟನು?",
+          "q_ml": "മോമോതാരോ എന്തിനെ തോൽപ്പിക്കാനാണ് പുറപ്പെട്ടത്?",
+          "options": [
+            "鬼ヶ島の 鬼",
+            "森の 熊",
+            "川の 魚",
+            "山の 盗賊"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n4-11",
+      "title": "鶴の恩返し (The Grateful Crane)",
+      "passage": "ある冬の 寒い日、心優しい 若者が 罠にかかって 苦しんでいる 一羽の 鶴を 見つけました。若者は かわいそうに 思って、罠を はずして 鶴を 助けてやりました。その夜、若者の 家に 美しい 娘が やってきて、「妻に してください」と 言いました。娘は 毎日、部屋に こもって 美しい 布を 織りました。「織っている間は、決して 部屋を のぞかないでください」と 約束しました。布は 町で とても 高く 売れました。しかし、若者は 好奇心に 負けて、部屋を のぞいてしまいました。そこには、自分の 羽を 抜いて 布を 織る 鶴の 姿が ありました。正体を 見られた 鶴は、悲しそうに 空へ 飛んでいってしまいました。",
+      "passage_en": "One cold winter day, a kind-hearted young man found a crane caught in a trap and suffering. Feeling pity, he released the crane and saved its life. That night, a beautiful young woman visited his home and asked to become his wife. Every day, she shut herself in a room and wove exquisite cloth. She made him promise: 'Please never look inside while I am weaving.' The cloth sold for a very high price in town. However, overcome by curiosity, the young man peeked into the room. There, he saw a crane plucking its own feathers to weave the cloth. Having had her true identity revealed, the crane flew sadly away into the sky.",
+      "passage_te": "ఒక చలికాలపు రోజున, దయగల యువకుడు ఒక కొంగ ఉచ్చులో చిక్కుకుని బాధపడటం చూశాడు. జాలితో ఆ ఉచ్చును విప్పి కొంగను రక్షించాడు. ఆ రాత్రి అతని ఇంటికి ఒక అందమైన యువతి వచ్చి తనను భార్యగా స్వీకరించమని కోరింది. ఆమె ప్రతిరోజూ గదిలో కూర్చుని అద్భుతమైన వస్త్రాన్ని నేసేది. 'నేను నేస్తున్నప్పుడు గదిలోకి తొంగి చూడవద్దు' అని వాగ్దానం తీసుకుంది. ఆ వస్త్రం నగరంలో చాలా ధరకు అమ్ముడైంది. కానీ ఆ యువకుడు ఆపుకోలేక తలుపు సందులోంచి చూశాడు. అక్కడ కొంగ తన స్వంత ఈకలను పీకి వస్త్రం నేస్తోంది. తన నిజస్వరూపం తెలిసిపోవడంతో ఆ కొంగ బాధతో ఆకాశంలోకి ఎగిరిపోయింది.",
+      "passage_hi": "सर्दियों के एक दिन एक दयालु युवक ने एक सारस को जाल में फँसा देखा। उसने दया करके उसे आज़ाद कर दिया। उसी रात उसके घर एक सुंदर युवती आई और उसने उसकी पत्नी बनने का निवेदन किया। वह रोज़ कमरे में बंद होकर सुंदर वस्त्र बुनती थी। उसने कहा था, 'जब मैं बुन रही होऊँ, तो अंदर मत देखना।' वह कपड़ा बाज़ार में बहुत महँगा बिका। लेकिन युवक उत्सुकता वश झाँक कर देखने लगा। अंदर सारस अपने ही पंख तोड़कर कपड़ा बुन रहा था। अपना रहस्य खुल जाने पर सारस दुखी होकर आकाश में उड़ गया।",
+      "passage_ta": "ஒரு குளிர்கால நாளில், ஒரு கருணை உள்ளம் கொண்ட இளைஞன் வலையில் சிக்கிய ஒரு கொக்கைக் காப்பாற்றினான். அன்று இரவு, ஒரு அழகான பெண் அவன் வீட்டிற்கு வந்து, 'என்னை மனைவியாக ஏற்றுக்கொள்ளுங்கள்' என்றாள். அவள் தினமும் ஒரு அறையில் அமர்ந்து அழகிய ஆடை நெய்தாள். 'நான் நெய்யும்போது பார்க்க வேண்டாம்' என்று கூறினாள். ஆனால் இளைஞன் ஆர்வத்தால் எட்டிப்பார்த்தான். அங்கே கொக்கு தன் இறகுகளைப் பறித்து ஆடை நெய்வதைக் கண்டான். உண்மை தெரிந்ததால் கொக்கு வருத்தத்துடன் வானில் பறந்துவிட்டது.",
+      "passage_ko": "어느 추운 겨울날, 마음 착한 청년이 덫에 걸린 학 한 마리를 구해 주었습니다. 그날 밤, 아름다운 여인이 찾아와 아내가 되게 해달라고 청했습니다. 여인은 매일 방에 틀어박혀 아름다운 천을 짰습니다. '짜는 동안 절대 방을 엿보지 마세요'라고 약속했습니다. 그러나 청년은 호기심을 이기지 못하고 엿보았습니다. 거기에는 자신의 깃털을 뽑아 천을 짜는 학의 모습이 있었습니다. 정체를 들킨 학은 슬프게 하늘로 날아갔습니다.",
+      "passage_es": "Un frío día de invierno, un joven bondadoso rescató a una grulla atrapada en una trampa. Esa noche, una hermosa joven llegó a su casa y le pidió ser su esposa. Cada día, ella se encerraba para tejer una tela maravillosa, pidiéndole: 'Por favor, nunca mire mientras tejo'. La tela se vendía muy cara. Pero el joven no pudo resistir la curiosidad y miró. Vio a una grulla arrancándose sus propias plumas para tejer. Al ser descubierta, la grulla se marchó volando tristemente.",
+      "passage_kn": "ಒಂದು ಚಳಿಗಾಲದ ದಿನ, ಕರುಣಾಮಯಿ ಯುವಕನೊಬ್ಬ ಬಲೆಗೆ ಬಿದ್ದಿದ್ದ ಕೊಕ್ಕರೆಯನ್ನು ರಕ್ಷಿಸಿದನು. ಅಂದು ರಾತ್ರಿ ಒಬ್ಬ ಸುಂದರ ಯುವತಿ ಬಂದು ಅವನ ಪತ್ನಿಯಾದಳು. ಅವಳು ಕೋಣೆಯಲ್ಲಿ ಕುಳಿತು ಸುಂದರ ಬಟ್ಟೆ ನೇಯುತ್ತಿದ್ದಳು. 'ನಾನು ನೇಯುವಾಗ ನೋಡಬೇಡಿ' ಎಂದು ಕೇಳಿಕೊಂಡಿದ್ದಳು. ಆದರೆ ಯುವಕ ಕುತೂಹಲದಿಂದ ಇಣುಕಿ ನೋಡಿದಾಗ, ಕೊಕ್ಕರೆ ತನ್ನ ಗರಿಗಳನ್ನು ಕಿತ್ತು ಬಟ್ಟೆ ನೇಯುತ್ತಿರುವುದು ಕಂಡಿತು. ರಹಸ್ಯ ಬಯಲಾದಾಗ ಕೊಕ್ಕರೆ ದುಃಖದಿಂದ ಆಕಾಶಕ್ಕೆ ಹಾರಿಹೋಯಿತು.",
+      "passage_ml": "ഒരു തണുപ്പുകാലത്ത് ദയാലുവായ ഒരു യുവാവ് വലയിൽ കുടുങ്ങിയ ഒരു കൊക്കിനെ രക്ഷിച്ചു. അന്ന് രാത്രി ഒരു സുന്ദരിയായ പെൺകുട്ടി വന്ന് അവന്റെ ഭാര്യയായി. അവൾ മുറിയിലിരുന്ന് മനോഹരമായ തുണി നെയ്തുണ്ടാക്കി. 'ഞാൻ നെയ്യുമ്പോൾ നോക്കരുത്' എന്ന് അവൾ പറഞ്ഞു. എന്നാൽ കൗതുകം കാരണം യുവാവ് നോക്കിയപ്പോൾ, കൊക്ക് സ്വന്തം തൂവലുകൾ ഉപയോഗിച്ച് തുണി നെയ്യുന്നത് കണ്ടു. രഹസ്യം പുറത്തായതോടെ കൊക്ക് ദുഃഖത്തോടെ പറന്നുപോയി.",
+      "questions": [
+        {
+          "q": "若者は どんな 動物を 助けましたか。",
+          "q_en": "What kind of animal did the young man save?",
+          "q_te": "యువకుడు ఏ జంతువును/పక్షిని రక్షించాడు?",
+          "q_hi": "युवक ने किस पक्षी की जान बचाई?",
+          "q_ta": "இளைஞன் எந்தப் பறவையைக் காப்பாற்றினான்?",
+          "q_ko": "청년은 어떤 동물을 구해 주었습니까?",
+          "q_es": "¿Qué animal salvó el joven?",
+          "q_kn": "ಯುವಕ ಯಾವ ಪ್ರಾಣಿ/ಪಕ್ಷಿಯನ್ನು ರಕ್ಷಿಸಿದನು?",
+          "q_ml": "യുവാവ് ഏത് പക്ഷിയെയാണ് രക്ഷിച്ചത്?",
+          "options": [
+            "鶴 (つる)",
+            "雀 (すずめ)",
+            "亀 (かめ)",
+            "キツネ"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "娘は 布を 織るとき、何を 約束させましたか。",
+          "q_en": "What did the young woman make him promise when weaving?",
+          "q_te": "వస్త్రం నేసేటప్పుడు ఆ యువతి ఏమి వాగ్దానం తీసుకుంది?",
+          "q_hi": "वस्त्र बुनते समय युवती ने क्या वचन लिया था?",
+          "q_ta": "ஆடை நெய்யும்போது பெண் என்ன வாக்குறுதி வாங்கினாள்?",
+          "q_ko": "여인은 천을 짤 때 무엇을 약속하게 했습니까?",
+          "q_es": "¿Qué promesa le pidió la joven mientras tejía?",
+          "q_kn": "ಬಟ್ಟೆ ನೇಯುವಾಗ ಯುವತಿ ಯಾವ ವಾಗ್ದಾನ ಪಡೆದಳು?",
+          "q_ml": "തുണി നെയ്യുമ്പോൾ പെൺകുട്ടി എന്ത് വാക്കാണ് വാങ്ങിയത്?",
+          "options": [
+            "決して 部屋を のぞかないこと",
+            "布を 安く 売らないこと",
+            "毎日 散歩に 行くこと",
+            "誰にも 話さないこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "鶴は どうして 飛んでいってしまいましたか。",
+          "q_en": "Why did the crane fly away?",
+          "q_te": "కొంగ ఎందుకు ఎగిరిపోయింది?",
+          "q_hi": "सारस क्यों उड़ गया?",
+          "q_ta": "கொக்கு ஏன் பறந்து சென்றது?",
+          "q_ko": "학은 왜 날아가 버렸습니까?",
+          "q_es": "¿Por qué se marchó volando la grulla?",
+          "q_kn": "ಕೊಕ್ಕರೆ ಏಕೆ ಹಾರಿಹೋಯಿತು?",
+          "q_ml": "കൊക്ക് എന്തുകൊണ്ടാണ് പറന്നുപോയത്?",
+          "options": [
+            "本当の 姿を 見られてしまったから",
+            "布が 全部 売れたから",
+            "冬が 終わったから",
+            "若者に 怒られたから"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n4-12",
+      "title": "浦島太郎 (Urashima Taro)",
+      "passage": "浦島太郎という 心優しい 漁師が いました。ある日、浜辺で 子どもたちに いじめられている 海亀を 見つけて 助けてやりました。数日後、海で 釣りを していると、助けた 亀が 現れて、「お礼に 竜宮城へ ご案内します」と 言いました。太郎が 亀の 背中に 乗って 海の 底へ 行くと、そこには 夢のように 美しい 竜宮城が ありました。乙姫様に 歓迎され、おいしい ごちそうと 楽しい 踊りで、太郎は 楽しい 日々を 過ごしました。しかし、故郷の 母のことが 心配になり、帰ることに しました。乙姫様は「決して 開けては なりません」と 言って『玉手箱』を 渡しました。村に 戻ると、知っている人は 誰も いませんでした。太郎が 寂しくなって 箱を 開けると、白い 煙が 出て、太郎は 一瞬で おじいさんに なってしまいました。",
+      "passage_en": "There lived a kind fisherman named Urashima Taro. One day, he rescued a sea turtle being bullied by children on the beach. A few days later, while fishing, the turtle reappeared and offered to take him to the Dragon Palace in gratitude. Riding on the turtle's back, Taro descended to the ocean floor, where a dreamy palace awaited. Welcomed by Princess Otohime with delicious feasts and dances, Taro enjoyed his stay. But soon he worried about his mother back home. Otohime gave him a treasure box (Tamatebako), warning: 'Never open this box.' When Taro returned, hundreds of years had passed and no one was left. In despair, he opened the box; white smoke billowed out, and he instantly turned into an old man.",
+      "passage_te": "ఉరాషిమా తారో అనే దయగల జాలరి ఉండేవాడు. ఒకరోజు బీచ్‌లో పిల్లలు వేధిస్తున్న తాబేలును కాపాడాడు. కొద్దిరోజుల తర్వాత, ఆ తాబేలు అతనికి కృతజ్ఞతగా సముద్రగర్భంలోని 'డ్రాగన్ ప్యాలెస్' (సముద్ర మహల్) కు తీసుకెళ్ళింది. అక్కడ ఒతోహిమే రాజకుమారి అతనికి రుచికరమైన విందులు మరియు నాట్యాలతో స్వాగతం పలికింది. కొన్నిరోజుల తర్వాత తారో తన తల్లిని చూడాలని ఇంటికి వెళ్లాలనుకున్నాడు. రాజకుమారి అతనికి ఒక పెట్టెను ఇచ్చి 'దీన్ని ఎప్పుడూ తెరవవద్దు' అని చెప్పింది. గ్రామానికి తిరిగి వచ్చేసరికి వందల ఏళ్ళు గడిచిపోయాయి. ఒంటరితనంతో తారో పెట్టెను తెరవగానే, తెల్లటి పొగ వచ్చి అతను క్షణాల్లో వృద్ధుడిగా మారిపోయాడు.",
+      "passage_hi": "उराशिमा तारो नाम का एक दयालु मछुआरा था। एक दिन उसने समुद्र तट पर बच्चों द्वारा सताए जा रहे एक कछुए को बचाया। कछुआ उसे धन्यवाद देने के लिए समुद्र के नीचे 'ड्रैगन पैलेस' ले गया। राजकुमारी ओतोहिमे ने उसका स्वागत किया। कुछ दिनों बाद तारो को अपने घर की याद आई। राजकुमारी ने उसे एक संदूक देकर कहा, 'इसे कभी मत खोलना।' जब वह गाँव लौटा तो सैकड़ों साल बीत चुके थे। उसने दुखी होकर संदूक खोल दिया, उसमें से धुआँ निकला और वह बूढ़ा हो गया।",
+      "passage_ta": "உராஷிமா தாரோ என்ற கருணையுள்ள மீனவன் இருந்தான். கடற்கரையில் துன்புறுத்தப்பட்ட ஆமையைக் காப்பாற்றினான். ஆமை அவனுக்கு நன்றி செலுத்த கடலுக்கு அடியில் இருந்த அரண்மனைக்கு அழைத்துச் சென்றது. இளவரசி அவனுக்கு விருந்தளித்தாள். அவன் ஊர் திரும்பியபோது, ஒரு பெட்டியைக் கொடுத்து 'இதைத் திறக்காதே' என்றாள். ஊருக்குத் திரும்பியபோது நூற்றுக்கணக்கான ஆண்டுகள் கழிந்திருந்தன. தாரோ பெட்டியைத் திறந்ததும் வெண்புகை வந்து அவன் முதியவனாக மாறினான்.",
+      "passage_ko": "우라시마 타로라는 마음 착한 어부가 있었습니다. 괴롭힘당하던 바다거북을 구해 준 타로는 용궁으로 초대를 받았습니다. 오토히메의 환대를 받으며 즐거운 시간을 보낸 후 고향으로 돌아가려 하자, 오토히메는 '절대 열지 마세요'라며 보물상자를 건넸습니다. 마을에 돌아오니 이미 수백 년이 흘러 아는 사람이 없었습니다. 슬퍼진 타로가 상자를 열자 하얀 연기가 피어오르며 순식간에 노인이 되어 버렸습니다.",
+      "passage_es": "Había una vez un pescador bondadoso llamado Urashima Taro. Un día rescató a una tortuga marina maltratada por unos niños. Como agradecimiento, la tortuga lo llevó al Palacio del Dragón bajo el mar. Tras disfrutar de banquetes con la princesa Otohime, Taro quiso regresar a casa. La princesa le dio una caja mágica y le advirtió: 'Nunca la abras'. Al volver a su pueblo, habían pasado siglos. Desesperado, abrió la caja; salió humo blanco y se transformó al instante en un anciano.",
+      "passage_kn": "ಉರಾಶಿಮಾ ತಾರೋ ಎಂಬ ಕರುಣಾಮಯಿ ಮೀನುಗಾರನಿದ್ದನು. ಅವನು ಸಮುದ್ರ ತೀರದಲ್ಲಿ ಹಿಂಸೆಗೆ ಒಳಗಾಗಿದ್ದ ಆಮೆಯನ್ನು ರಕ್ಷಿಸಿದನು. ಆಮೆ ಅವನನ್ನು ಸಮುದ್ರದ ಅರಮನೆಗೆ ಕರೆದೊಯ್ಯಿತು. ರಾಜಕುಮಾರಿ ಒತೊಹಿಮೆ ಅವನಿಗೆ ಆತಿಥ್ಯ ನೀಡಿದಳು. ಅವನು ಹಿಂದಿರುಗುವಾಗ 'ಇದನ್ನು ತೆರೆಯಬೇಡಿ' ಎಂದು ಒಂದು ಪೆಟ್ಟಿಗೆಯನ್ನು ನೀಡಿದಳು. ಅವನು ಊರಿಗೆ ಹಿಂದಿರುಗಿದಾಗ ನೂರಾರು ವರ್ಷಗಳು ಕಳೆದಿದ್ದವು. ದುಃಖದಿಂದ ಪೆಟ್ಟಿಗೆ ತೆರೆದಾಗ ಬಿಳಿ ಹೊಗೆ ಬಂದು ಅವನು ತಕ್ಷಣ ಮುದುಕನಾಗಿ ಬದಲಾದನು.",
+      "passage_ml": "ഉറാഷിമ താരോ എന്ന ദയാലുവായ ഒരു മുക്കുവനുണ്ടായിരുന്നു. അവൻ ഒരു കടലാമയെ രക്ഷിച്ചു. കടലാമ അവനെ കടലിനടിയിലെ കൊട്ടാരത്തിലേക്ക് കൊണ്ടുപോയി. രാജകുമാരി അവന് വിരുന്നൊരുക്കി. അവൻ തിരികെ പോകുമ്പോൾ 'ഇത് ഒരിക്കലും തുറക്കരുത്' എന്ന് പറഞ്ഞ് ഒരു പെട്ടി നൽകി. അവൻ നാട്ടിലെത്തിയപ്പോൾ നൂറുകണക്കിന് വർഷങ്ങൾ കഴിഞ്ഞിരുന്നു. സങ്കടത്തോടെ അവൻ പെട്ടി തുറന്നപ്പോൾ പുക ഉയരുകയും അവൻ ഒരു വൃദ്ധനായി മാറുകയും ചെയ്തു.",
+      "questions": [
+        {
+          "q": "浦島太郎は 亀を 助けて どこへ 行きましたか。",
+          "q_en": "Where did Urashima Taro go after saving the turtle?",
+          "q_te": "తాబేలును రక్షించిన తర్వాత తారో ఎక్కడికి వెళ్ళాడు?",
+          "q_hi": "कछुए को बचाने के बाद तारो कहाँ गया?",
+          "q_ta": "ஆமையைக் காப்பாற்றிய பின் தாரோ எங்கு சென்றான்?",
+          "q_ko": "우라시마 타로는 거북을 구하고 어디로 갔습니까?",
+          "q_es": "¿A dónde fue Urashima Taro tras salvar a la tortuga?",
+          "q_kn": "ಆಮೆಯನ್ನು ರಕ್ಷಿಸಿದ ನಂತರ ತಾರೋ ಎಲ್ಲಿಗೆ ಹೋದನು?",
+          "q_ml": "ആമയെ രക്ഷിച്ച ശേഷം താരോ എങ്ങോട്ടാണ് പോയത്?",
+          "options": [
+            "海の 底の 竜宮城",
+            "山の 上の お城",
+            "大きな 都会",
+            "外国の 島"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "乙姫様は 太郎に 何を 渡しましたか。",
+          "q_en": "What did Princess Otohime give to Taro?",
+          "q_te": "ఒతోహిమే రాజకుమారి తారోకు ఏమి ఇచ్చింది?",
+          "q_hi": "राजकुमारी ओतोहिमे ने तारो को क्या दिया?",
+          "q_ta": "இளவரசி தாரோவுக்கு என்ன கொடுத்தாள்?",
+          "q_ko": "오토히메는 타로에게 무엇을 주었습니까?",
+          "q_es": "¿Qué le dio la princesa Otohime a Taro?",
+          "q_kn": "ಒತೊಹಿಮೆ ತಾರೋಗೆ ಏನನ್ನು ನೀಡಿದಳು?",
+          "q_ml": "രാജകുമാരി താരോയ്ക്ക് എന്താണ് നൽകിയത്?",
+          "options": [
+            "玉手箱 (たまてばこ)",
+            "金の 魚",
+            "大きな 鏡",
+            "おいしい お菓子"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "箱を 開けると 太郎は どうなりましたか。",
+          "q_en": "What happened to Taro when he opened the box?",
+          "q_te": "పెట్టె తెరవగానే తారోకు ఏమి జరిగింది?",
+          "q_hi": "संदूक खोलने पर तारो के साथ क्या हुआ?",
+          "q_ta": "பெட்டியைத் திறந்ததும் தாரோவுக்கு என்ன நேர்ந்தது?",
+          "q_ko": "상자를 열자 타로는 어떻게 되었습니까?",
+          "q_es": "¿Qué le ocurrió a Taro al abrir la caja?",
+          "q_kn": "ಪೆಟ್ಟಿಗೆ ತೆರೆದಾಗ ತಾರೋಗೆ ಏನಾಯಿತು?",
+          "q_ml": "പെട്ടി തുറന്നപ്പോൾ താരോയ്ക്ക് എന്ത് സംഭവിച്ചു?",
+          "options": [
+            "おじいさんに なってしまった",
+            "魚に なってしまった",
+            "若者に もどった",
+            "大金持ちに なった"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n4-13",
+      "title": "おむすびころりん (The Rolling Rice Ball)",
+      "passage": "昔、心優しい おじいさんが 山へ 木を きりに いきました。お昼に なって、おばあさんが 作ってくれた おむすびを 食べようとすると、手が 滑って おむすびが 坂を コロコロと 転がっていきました。おむすびは 地面の 穴に すぽんと 落ちました。すると、穴の 中から「おむすび ころりん すっとんとん」と 可愛らしい 歌声が 聞こえてきました。おじいさんが 不思議に 思って 穴を のぞくと、足が 滑って 穴の中に 落ちてしまいました。そこは ネズミの 国でした。ネズミたちは「おいしい おむすびを ありがとう」と お礼を 言って、おじいさんに ごちそうを ふるまい、帰りには 小判が つまった つづらを くれました。",
+      "passage_en": "Once upon a time, a kind old man went to the mountain to cut wood. At lunchtime, as he was about to eat the rice ball his wife made, it slipped and rolled down the slope. The rice ball fell right into a hole in the ground. Then, from inside the hole, a lovely singing voice rang out: 'Omusubi kororin, suttonton!' Wondering what it was, the old man peeked in, slipped, and tumbled into the hole himself. It was a kingdom of mice! The mice thanked him for the delicious rice ball, treated him to a wonderful meal, and gave him a wicker basket filled with gold coins as a gift.",
+      "passage_te": "పూర్వం ఒక దయగల తాతయ్య కట్టెలు కొట్టడానికి అడవికి వెళ్ళాడు. మధ్యాహ్నం భోజన సమయంలో భార్య చేసిచ్చిన అన్నం ముద్దను (ఒముసుబి) తినబోతుండగా, అది జారి నేలపై దొర్లుకుంటూ వెళ్లి ఒక బొరియలో పడింది. అప్పుడు బొరియ లోపల నుండి 'ఒముసుబి కొరోరిన్ సుత్తోంతోన్' అనే అందమైన పాట వినిపించింది. తాతయ్య ఆశ్చర్యపోయి లోపలికి చూడగా, కాలు జారి బొరియలో పడిపోయాడు. అది ఎలుకల రాజ్యం! ఎలుకలు 'రుచికరమైన అన్నం ముద్ద ఇచ్చినందుకు ధన్యవాదాలు' అని చెప్పి, విందు ఇచ్చి, నిండుగా బంగారు నాణేలు ఉన్న పెట్టెను బహుమతిగా ఇచ్చాయి.",
+      "passage_hi": "एक बार एक दयालु बूढ़ा लकड़ी काटने जंगल गया। दोपहर में जब वह चावल का लड्डू खाने लगा, तो वह हाथ से छूटकर लुढ़कता हुआ ज़मीन के एक बिल में गिर गया। बिल के अंदर से सुंदर गाने की आवाज़ आई। बूढ़े ने उत्सुकता से झाँका तो उसका पैर फिसल गया और वह बिल में गिर गया। वह चूहों का संसार था! चूहों ने स्वादिष्ट चावल के लड्डू के लिए धन्यवाद दिया, दावत दी और सोने के सिक्कों से भरी टोकरी उपहार में दी।",
+      "passage_ta": "முற்காலத்தில் ஒரு முதியவர் விறகு வெட்டச் சென்றார். மதிய உணவாகக் கொண்டு வந்த சோற்று உருண்டை நழுவி நிலத்தில் இருந்த ஒரு வளைக்குள் விழுந்தது. வளைக்குள்ளிருந்து இனிய பாட்டு கேட்டது. முதியவர் எட்டிப்பார்த்தபோது வழுக்கி உள்ளே விழுந்தார். அது எலிகளின் உலகம்! எலிகள் 'சுவையான சோற்று உருண்டைக்கு நன்றி' கூறி விருந்தளித்து, தங்கக் காசுகள் நிறைந்த பெட்டியைப் பரிசளித்தன.",
+      "passage_ko": "옛날에 착한 할아버지가 산에 나무를 하러 갔습니다. 점심에 주먹밥을 먹으려다 손이 미끄러져 주먹밥이 굴러 구멍 속으로 쏙 들어갔습니다. 구멍 속에서 노랫소리가 들려 들여다보다가 할아버지도 구멍에 빠졌습니다. 그곳은 쥐들의 나라였습니다. 쥐들은 맛있는 주먹밥에 감사하며 잔치를 베풀고 금화가 가득 든 상자를 선물로 주었습니다.",
+      "passage_es": "Érase una vez un anciano bondadoso que fue al monte a cortar leña. Al mediodía, se le resbaló la bola de arroz que llevaba para almorzar y rodó colina abajo hasta caer en un agujero. Del fondo surgió una dulce cancioncilla. Al asomarse con curiosidad, el anciano resbaló y cayó dentro. ¡Era el país de los ratones! Los ratones le agradecieron la deliciosa comida, le ofrecieron un banquete y le regalaron una cesta llena de monedas de oro.",
+      "passage_kn": "ಹಿಂದೆ ಒಬ್ಬ ಕರುಣಾಮಯಿ ತಾತ ಕಾಡಿಗೆ ಹೋಗಿದ್ದನು. ಮಧ್ಯಾಹ್ನ ಊಟದ ಅನ್ನದ ಉಂಡೆ ಜಾರಿ ನೆಲದ ಬಿಲಕ್ಕೆ ಬಿತ್ತು. ಬಿಲದಿಂದ ಮುದ್ದಾದ ಹಾಡು ಕೇಳಿಸಿತು. ತಾತ ಇಣುಕಿ ನೋಡಿದಾಗ ಕಾಲು ಜಾರಿ ಬಿಲದೊಳಗೆ ಬಿದ್ದನು. ಅದು ಇಲಿಗಳ ರಾಜ್ಯವಾಗಿತ್ತು! ಇಲಿಗಳು ತಾತನಿಗೆ ಸತ್ಕಾರ ಮಾಡಿ, ಬಂಗಾರದ ನಾಣ್ಯಗಳಿದ್ದ ಬುಟ್ಟಿಯನ್ನು ಉಡುಗೊರೆಯಾಗಿ ನೀಡಿದವು.",
+      "passage_ml": "പണ്ട് ഒരു ദയാലുവായ വൃദ്ധൻ മലയിൽ പോയി. ഉച്ചയ്ക്ക് ചോറുരുള കഴിക്കാൻ തുടങ്ങിയപ്പോൾ അത് വഴുതി ഒരു മാളത്തിൽ വീണു. മാളത്തിൽ നിന്ന് പാട്ട് കേട്ട് നോക്കിയ വൃദ്ധൻ മാളത്തിലേക്ക് വീണു. അത് എലികളുടെ രാജ്യമായിരുന്നു! എലികൾ അദ്ദേഹത്തിന് വിരുന്ന് നൽകുകയും സ്വർണ്ണ നാണയങ്ങൾ നിറഞ്ഞ പെട്ടി സമ്മാനമായി നൽകുകയും ചെയ്തു.",
+      "questions": [
+        {
+          "q": "おむすびは どこへ 転がり落ちましたか。",
+          "q_en": "Where did the rice ball roll and fall into?",
+          "q_te": "అన్నం ముద్ద ఎక్కడికి దొర్లుకుంటూ పడింది?",
+          "q_hi": "चावल का लड्डू कहाँ गिरा?",
+          "q_ta": "சோற்று உருண்டை எங்கே உருண்டு விழுந்தது?",
+          "q_ko": "주먹밥은 어디로 굴러 떨어졌습니까?",
+          "q_es": "¿A dónde rodó y cayó la bola de arroz?",
+          "q_kn": "ಅನ್ನದ ಉಂಡೆ ಎಲ್ಲಿಗೆ ಬಿತ್ತು?",
+          "q_ml": "ചോറുരുള എങ്ങോട്ടാണ് ഉരുണ്ടു വീണത്?",
+          "options": [
+            "地面の 穴の中",
+            "川の 水の中",
+            "深い 谷の底",
+            "木の うろの中"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "穴の 中には だれが すんでいましたか。",
+          "q_en": "Who lived inside the hole?",
+          "q_te": "బొరియ లోపల ఎవరు నివసిస్తున్నారు?",
+          "q_hi": "बिल के अंदर कौन रहता था?",
+          "q_ta": "வளைக்குள் யார் வாழ்ந்தார்கள்?",
+          "q_ko": "구멍 속에는 누가 살고 있었습니까?",
+          "q_es": "¿Quiénes vivían dentro del agujero?",
+          "q_kn": "ಬಿಲದೊಳಗೆ ಯಾರು ವಾಸವಾಗಿದ್ದರು?",
+          "q_ml": "മാളത്തിനുള്ളിൽ ആരാണ് താമസിച്ചിരുന്നത്?",
+          "options": [
+            "ネズミたち",
+            "ウサギたち",
+            "小鳥たち",
+            "モグラたち"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "ネズミたちは おじいさんに 何を くれましたか。",
+          "q_en": "What did the mice give to the old man?",
+          "q_te": "ఎలుకలు తాతయ్యకు ఏమి బహుమతిగా ఇచ్చాయి?",
+          "q_hi": "चूहों ने बूढ़े को क्या उपहार दिया?",
+          "q_ta": "எலிகள் முதியவருக்கு என்ன கொடுத்தன?",
+          "q_ko": "쥐들은 할아버지에게 무엇을 선물했습니까?",
+          "q_es": "¿Qué le dieron los ratones al anciano?",
+          "q_kn": "ಇಲಿಗಳು ತಾತನಿಗೆ ಏನನ್ನು ನೀಡಿದವು?",
+          "q_ml": "എലികൾ വൃദ്ധന് എന്താണ് നൽകിയത്?",
+          "options": [
+            "小判が つまった つづら",
+            "おいしい チーズ",
+            "あたらしい 着物",
+            "きれいな 花"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n4-14",
+      "title": "花咲か爺さん (The Old Man Who Made Flowers Bloom)",
+      "passage": "昔、正直で 優しい おじいさんと おばあさんが 白い 犬を 飼っていました。ある日、犬が 畑で「ここ掘れ ワンワン」と ほえました。おじいさんが そこを 掘ってみると、大判小判が ざくざくと 出てきました。隣の 欲張りな 爺さんが それを 見て 犬を 借りていきましたが、ゴミしか 出ず、怒って 犬を 殺してしまいました。優しい おじいさんは 悲しみ、犬を 庭に 埋めて 木を 植えました。その木で うすを 作って 餅を つくと、餅が すべて 宝物に かわりました。欲張り爺さんが うすを 燃やしてしまいましたが、優しい おじいさんが その灰を 枯れ木に まくと、見事な 桜の 花が 満開に 咲き誇りました。通りかかった 殿様は 大変 喜び、たくさんの 褒美を 与えました。",
+      "passage_en": "Long ago, an honest, kind couple kept a white dog. One day, the dog barked in the field: 'Dig here, woof woof!' When the old man dug there, piles of gold coins emerged. A greedy neighbor saw this and borrowed the dog, but only trash came up, so he angrily killed the dog. Grief-stricken, the kind old man buried the dog and planted a tree. When he made a mortar from the tree to pound mochi, the mochi turned into treasures. The greedy neighbor burned the mortar, but when the kind old man scattered the ashes over withered trees, beautiful cherry blossoms bloomed in full glory. A passing lord was delighted and rewarded him richly.",
+      "passage_te": "పూర్వం ఒక మంచి వృద్ధ దంపతులు ఒక తెల్లని కుక్కను పెంచుకునేవారు. ఒకరోజు ఆ కుక్క తోటలో 'ఇక్కడ తవ్వు భౌ భౌ' అని మొరిగింది. తాతయ్య అక్కడ తవ్వగా కుప్పలు కుప్పలుగా బంగారు నాణేలు బయటపడ్డాయి. ఇది చూసిన దురాశపరుడైన పొరుగువాడు కుక్కను తీసుకెళ్ళాడు, కానీ చెత్త మాత్రమే రావడంతో కోపంతో కుక్కను చంపేశాడు. మంచి తాతయ్య బాధతో కుక్కను పాతిపెట్టి ఒక చెట్టు నాటాడు. ఆ చెక్కతో రోలు చేసి పిండి దంచగా అన్నీ రత్నాలుగా మారాయి. దురాశపరుడు ఆ రోలును కాల్చేయగా, ఆ బూడిదను మంచి తాతయ్య ఎండిన చెట్లపై చల్లినప్పుడు అందమైన చెర్రీ పువ్వులు వికసించాయి. అటుగా వెళ్తున్న రాజుగారు సంతోషించి ఎన్నో బహుమతులు ఇచ్చారు.",
+      "passage_hi": "एक बार एक भले बूढ़े-बूढ़ी ने एक सफेद कुत्ता पाला। एक दिन कुत्ते ने खेत में भौंक कर कहा 'यहाँ खोदो'। बूढ़े ने खोदा तो सोने के सिक्के निकले। लालची पड़ोसी ने कुत्ता उधार लिया, पर उसे केवल कचरा मिला तो उसने कुत्ते को मार डाला। भले बूढ़े ने कुत्ते की कब्र पर पेड़ लगाया और उससे ओखली बनाई, जिससे भी खज़ाना निकला। लालची पड़ोसी ने ओखली जला दी, लेकिन भले बूढ़े ने जब उस राख को सूखे पेड़ों पर छिड़का, तो वे सुंदर फूलों से लद गए। राजा ने प्रसन्न होकर उसे बहुत से पुरस्कार दिए।",
+      "passage_ta": "முற்காலத்தில் ஒரு நல்ல முதிய தம்பதியர் ஒரு வெள்ளை நாயை வளர்த்தனர். நாய் நிலத்தில் குரைத்துக் காட்டிய இடத்தில் தோண்டியபோது தங்கக் காசுகள் கிடைத்தன. பேராசை பிடித்த பக்கத்து வீட்டுக்காரன் நாயை எடுத்துச் சென்றான், ஆனால் குப்பை மட்டுமே வந்ததால் நாயைக் கொன்றான். நல்ல முதியவர் நாயை அடக்கம் செய்து மரம் நட்டார். பேராசைக்காரன் மரத்தை எரித்தாலும், அந்த சாம்பலை காய்ந்த மரங்களில் தூவியபோது அழகிய செர்ரி மலர்கள் பூத்துக் குலுங்கின. அரசர் மகிழ்ந்து பரிசுகள் வழங்கினார்.",
+      "passage_ko": "옛날에 마음씨 착한 노부부가 하얀 개를 기르고 있었습니다. 개가 밭에서 짖어 그곳을 파보니 금화가 쏟아져 나왔습니다. 욕심쟁이 이웃 노인이 개를 빌려 갔지만 쓰레기만 나오자 개를 죽였습니다. 착한 노인은 개를 묻고 나무를 심어 절구를 만들었습니다. 욕심쟁이가 절구를 태워버렸지만, 착한 노인이 그 재를 마른 나무에 뿌리자 벚꽃이 활짝 피어났습니다. 지나가던 영주가 기뻐하며 큰 상을 내렸습니다.",
+      "passage_es": "Una amable pareja de ancianos tenía un perro blanco. Un día, el perro ladró señalando un lugar del campo; al cavar, encontraron monedas de oro. Un vecino codicioso se llevó al perro, pero solo halló basura y lo mató enfurecido. El buen anciano enterró al perro y plantó un árbol con el que hizo un mortero que producía tesoros. El vecino quemó el mortero, pero el anciano esparció sus cenizas sobre árboles secos y florecieron hermosos cerezos. El señor feudal quedó maravillado y le colmó de recompensas.",
+      "passage_kn": "ಹಿಂದೊಂದು ಸಜ್ಜನ ವೃದ್ಧ ದಂಪತಿ ಬಿಳಿ ನಾಯಿಯನ್ನು ಸಾಕಿದ್ದರು. ನಾಯಿ ತೋರಿಸಿದ ಜಾಗವನ್ನು ಅಗೆದಾಗ ಬಂಗಾರದ ನಾಣ್ಯಗಳು ಸಿಕ್ಕಿದವು. ದುರಾಶೆಯ ನೆರೆಹೊರೆಯವನು ನಾಯಿಯನ್ನು ಕರೆದೊಯ್ದು, ಕಸ ಸಿಕ್ಕಿದ್ದಕ್ಕೆ ನಾಯಿಯನ್ನು ಕೊಂದನು. ಒಳ್ಳೆಯ ತಾತ ನಾಯಿಯನ್ನು ಹೂತು ಮರ ಬೆಳೆಸಿದನು. ದುರಾಶೆಯವನು ಆ ಮರವನ್ನು ಸುಟ್ಟುಹಾಕಿದಾಗ, ಆ ಬೂದಿಯನ್ನು ಒಣಗಿದ ಮರಗಳ ಮೇಲೆ ಚೆಲ್ಲಿದಾಗ ಸುಂದರ ಚೆರ್ರಿ ಹೂಗಳು ಅರಳಿದವು. ರಾಜನು ಸಂತೋಷಪಟ್ಟು ಉಡುಗೊರೆಗಳನ್ನು ನೀಡಿದನು.",
+      "passage_ml": "പണ്ട് ഒരു നല്ല വൃദ്ധ ദമ്പതികൾ ഒരു വെളുത്ത നായയെ വളർത്തിയിരുന്നു. നായ കാണിച്ച സ്ഥലത്ത് കുഴിച്ചപ്പോൾ സ്വർണ്ണ നാണയങ്ങൾ കിട്ടി. അത് കണ്ട് അസൂയ പൂണ്ട അയൽക്കാരൻ നായയെ കൊന്നു. നല്ല വൃദ്ധൻ നായയെ കുഴിച്ചിട്ട സ്ഥലത്ത് ഒരു മരം നട്ടു. പിന്നീട് ആ മരത്തിന്റെ ചാരം ഉണങ്ങിയ മരങ്ങളിൽ വിതറിയപ്പോൾ മനോഹരമായ പൂക്കൾ വിരിഞ്ഞു. രാജാവ് സന്തുഷ്ടനായി സമ്മാനങ്ങൾ നൽകി.",
+      "questions": [
+        {
+          "q": "犬が ほえた 場所を 掘ると 何が 出てきましたか。",
+          "q_en": "What came out when the old man dug where the dog barked?",
+          "q_te": "కుక్క మొరిగిన చోట తవ్వగా ఏమి బయటపడింది?",
+          "q_hi": "कुत्ते के भौंकने वाली जगह खोदने पर क्या निकला?",
+          "q_ta": "நாய் குரைத்த இடத்தைத் தோண்டியபோது என்ன கிடைத்தது?",
+          "q_ko": "개가 짖은 자리를 파자 무엇이 나왔습니까?",
+          "q_es": "¿Qué salió al cavar donde ladró el perro?",
+          "q_kn": "ನಾಯಿ ಬೊಗಳಿದ ಜಾಗವನ್ನು ಅಗೆದಾಗ ಏನು ಸಿಕ್ಕಿತು?",
+          "q_ml": "നായ കുരച്ച സ്ഥലം കുഴിച്ചപ്പോൾ എന്താണ് കിട്ടിയത്?",
+          "options": [
+            "大判小判 (金)",
+            "おいしい 食べ物",
+            "きれいな 宝石",
+            "古い 道具"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "灰を 枯れ木に まくと どうなりましたか。",
+          "q_en": "What happened when the ashes were scattered on withered trees?",
+          "q_te": "బూడిదను ఎండిన చెట్లపై చల్లినప్పుడు ఏమి జరిగింది?",
+          "q_hi": "सूखे पेड़ों पर राख छिड़कने पर क्या हुआ?",
+          "q_ta": "சாம்பலைக் காய்ந்த மரங்களில் தூவியபோது என்ன நடந்தது?",
+          "q_ko": "재를 마른 나무에 뿌리자 어떻게 되었습니까?",
+          "q_es": "¿Qué ocurrió al esparcir las cenizas sobre los árboles secos?",
+          "q_kn": "ಒಣಗಿದ ಮರಗಳ ಮೇಲೆ ಬೂದಿ ಚೆಲ್ಲಿದಾಗ ಏನಾಯಿತು?",
+          "q_ml": "ഉണങ്ങിയ മരങ്ങളിൽ ചാരം വിതറിയപ്പോൾ എന്ത് സംഭവിച്ചു?",
+          "options": [
+            "桜の花が 満開に 咲いた",
+            "大きな 木の実が できた",
+            "木が 燃え上がった",
+            "緑の 葉が 落ちた"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "通りかかった 殿様は 何を しましたか。",
+          "q_en": "What did the passing lord do?",
+          "q_te": "అటుగా వెళ్ళిన రాజుగారు ఏమి చేసారు?",
+          "q_hi": "वहाँ से गुज़रने वाले राजा ने क्या किया?",
+          "q_ta": "அவ்வழியே சென்ற அரசர் என்ன செய்தார்?",
+          "q_ko": "지나가던 영주는 무엇을 했습니까?",
+          "q_es": "¿Qué hizo el señor feudal que pasaba por allí?",
+          "q_kn": "ಅತ್ತ ಹೋದ ರಾಜನು ಏನು ಮಾಡಿದನು?",
+          "q_ml": "വഴിപോക്കനായ രാജാവ് എന്താണ് ചെയ്തത്?",
+          "options": [
+            "たくさんの 褒美を 与えた",
+            "おじいさんを 怒った",
+            "木を 切り倒した",
+            "城へ 帰ってしまった"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n4-15",
+      "title": "笠地蔵 (The Straw Hat Jizo)",
+      "passage": "昔、あるところに 貧しいけれど 心の優しい おじいさんと おばあさんが すんでいました。大晦日の日、おじいさんは お正月の お餅を 買うために、菅笠を 五つ 作って 町へ 売りに行きました。しかし、雪が 激しく 降る日だったので、笠は 一つも 売れませんでした。仕方がなく 家へ 帰る 途中で、道端に 六体の お地蔵様が 雪を かぶって 寒そうに 立っているのを 見つけました。おじいさんは「お地蔵様、寒かろう」と 言って、売れ残った 五つの 笠を かぶせてやりました。一つ 足りなかったので、自分の 手ぬぐいを 最後の一体に かけてあげました。その夜、ドサリと 重い音が して 戸を 開けると、米や 餅や 宝物が 山のように 置かれており、遠くに お地蔵様たちの 後ろ姿が 見えました。",
+      "passage_en": "Long ago, a poor but kind elderly couple lived together. On New Year's Eve, the old man made five straw hats and went to town to sell them so they could buy New Year rice cakes. However, with heavy snow falling, not a single hat sold. On his way home, he found six Jizo statues standing by the roadside, shivering under the falling snow. Feeling compassion, he put the five unsold hats on them. Finding himself one short, he took off his own headcloth and wrapped it around the last statue. That night, hearing a heavy thud, they opened the door to find mounds of rice, mochi, and treasures left for them, with the Jizo statues walking away in the distance.",
+      "passage_te": "పూర్వం ఒక పేద కానీ దయాగుణం గల వృద్ధ దంపతులు ఉండేవారు. సంక్రాంతి పండుగకు పిండివంటలు కొనేందుకు తాతయ్య ఐదు గడ్డి టోపీలు చేసి అమ్మడానికి నగరానికి వెళ్ళాడు. కానీ విపరీతమైన మంచు కురవడంతో ఒక్క టోపీ కూడా అమ్ముడుపోలేదు. నిరాశతో ఇంటికి తిరిగి వస్తుండగా, దారి పక్కన మంచులో గడ్డకట్టుకుపోతున్న ఆరు జీజో (బుద్ధుని రూపం) విగ్రహాలను చూశాడు. జాలితో ఆ ఐదు టోపీలను ఐదు విగ్రహాలకు తొడిగాడు. ఒకటి తక్కువ కావడంతో, తన తలకు ఉన్న గుడ్డను ఆరవ విగ్రహానికి చుట్టాడు. ఆ రాత్రి ఇంటి తలుపు దగ్గర పెద్ద శబ్దం వచ్చింది. తెరిచి చూడగా బియ్యం, పిండివంటలు మరియు బంగారు నాణేలు గుట్టలుగా పడి ఉన్నాయి, దూరంగా ఆ జీజో దేవతలు నడచి వెళ్తూ కనిపించారు.",
+      "passage_hi": "एक बार एक गरीब लेकिन दयालु बूढ़ा-बूढ़ी रहते थे। नए साल की पूर्व संध्या पर बूढ़ा पाँच घास की टोपियाँ बनाकर बेचने गया ताकि चावल के केक खरीद सके। पर भारी बर्फबारी के कारण एक भी टोपी नहीं बिकी। घर लौटते समय उसने रास्ते में बर्फ से ढकी छह जिज़ो (बुद्ध) मूर्तियाँ देखीं। उसने अपनी पाँचों टोपियाँ उन्हें पहना दीं और छठी मूर्ति पर अपना साफ़ा बाँध दिया। उसी रात उनके दरवाज़े पर भारी आवाज़ हुई। दरवाज़ा खोला तो देखा कि चावल, अनाज और खज़ाना पड़ा था और जिज़ो मूर्तियाँ दूर जा रही थीं।",
+      "passage_ta": "முற்காலத்தில் ஏழ்மையான ஆனால் நல்ல உள்ளம் கொண்ட முதிய தம்பதியர் வாழ்ந்தனர். புத்தாண்டுக்கு அப்பம் வாங்க ஐந்து புல் தொப்பிகளை விற்றுக் கொண்டுவர முதியவர் நகருக்குச் சென்றார். கடுமையான பனிப்பொழிவால் ஒரு தொப்பியும் விற்கவில்லை. திரும்பி வரும் வழியில் பனியில் நின்ற ஆறு ஜிஸோ சிலைகளைக் கண்டார். ஐந்து சிலைகளுக்கு தொப்பிகளை மாட்டிவிட்டு, ஆறாவது சிலைக்கு தன் தலைப்பாகையைக் கட்டினார். அன்று இரவு கதவைத் திறந்தபோது வாசலில் அரிசியும் இனிப்புகளும் பரிசுகளும் குவிந்திருந்தன.",
+      "passage_ko": "옛날에 가난하지만 착한 노부부가 살고 있었습니다. 섣달 그믐날 삿갓 다섯 개를 팔아 떡을 사려 했지만 눈이 많이 와 하나도 팔리지 않았습니다. 돌아오는 길에 눈을 맞고 서 있는 여섯 분의 지장보살님을 보았습니다. 노인은 삿갓 다섯 개를 씌워 드리고, 모자란 하나에는 자신의 수건을 씌워 드렸습니다. 그날 밤 쿵 하는 소리에 문을 열어보니 쌀과 떡, 보물이 가득 놓여 있었습니다.",
+      "passage_es": "Vivía una anciana pareja muy humilde pero bondadosa. En vísperas de Año Nuevo, el anciano fue al pueblo a vender cinco sombreros de paja para comprar comida. Por la intensa nieve, no vendió ninguno. Al regresar vio seis estatuas de Jizo cubiertas de nieve. Apiadándose, les puso los cinco sombreros y cubrió a la última con su propio pañuelo. Esa noche oyeron un ruido sordo; al abrir la puerta hallaron montones de arroz, pasteles y tesoros que los Jizo les habían dejado en agradecimiento.",
+      "passage_kn": "ಹಿಂದೊಬ್ಬ ಬಡ ಆದರೆ ಕರುಣಾಮಯಿ ವೃದ್ಧ ದಂಪತಿ ಇದ್ದರು. ಹೊಸ ವರ್ಷದ ಹಬ್ಬಕ್ಕೆ ಅಕ್ಕಿ ಕೊಳ್ಳಲು ತಾತ ಐದು ಹುಲ್ಲಿನ ಟೋಪಿಗಳನ್ನು ಮಾರಲು ಹೋದರು. ಮಂಜಿನ ಕಾರಣ ಒಂದೂ ಮಾರಾಟವಾಗಲಿಲ್ಲ. ಮರಳಿ ಬರುವಾಗ ಆರು ಜೀಜೋ ಮೂರ್ತಿಗಳು ಹಿಮದಲ್ಲಿ ನಡುಗುತ್ತಿರುವುದು ಕಂಡಿತು. ತಾತ ಐದು ಟೋಪಿಗಳನ್ನು ಅವುಗಳಿಗೆ ತೊಡಿಸಿ, ಆರನೆಯ ಮೂರ್ತಿಗೆ ತನ್ನ ಮುಂಡಾಸನ್ನು ಸುತ್ತಿದರು. ಅಂದು ರಾತ್ರಿ ಬಾಗಿಲು ತಟ್ಟಿದ ಸದ್ದು ಕೇಳಿ ತೆರೆದಾಗ ಅಪಾರ ಧಾನ್ಯ ಮತ್ತು ಚಿನ್ನದ ರಾಶಿ ಇತ್ತು.",
+      "passage_ml": "പണ്ട് ദരിദ്രരെങ്കിലും സന്മനസ്സുള്ള ഒരു വൃദ്ധ ദമ്പതികൾ ജീവിച്ചിരുന്നു. പുതുവത്സര വിഭവങ്ങൾ വാങ്ങാൻ വൃദ്ധൻ അഞ്ച് പുൽത്തൊപ്പികൾ വിൽക്കാൻ പോയി. കനത്ത മഞ്ഞിൽ ഒന്നും വിറ്റില്ല. മടങ്ങിവരുമ്പോൾ മഞ്ഞിൽ നിൽക്കുന്ന ആറ് പ്രതിമകൾ കണ്ടു. വൃദ്ധൻ അഞ്ച് തൊപ്പികൾ അവയ്ക്ക് ചാർത്തുകയും ആറാമത്തെ പ്രതിമയ്ക്ക് സ്വന്തം തലപ്പാവ് നൽകുകയും ചെയ്തു. അന്ന് രാത്രി വാതിൽക്കൽ ധാന്യങ്ങളും സമ്മാനങ്ങളും കുന്നുകൂടി കിടക്കുന്നതാണ് അവർ കണ്ടത്.",
+      "questions": [
+        {
+          "q": "おじいさんは なぜ 笠を 売ることが できませんでしたか。",
+          "q_en": "Why couldn't the old man sell the hats?",
+          "q_te": "తాతయ్య టోపీలను ఎందుకు అమ్మలేకపోయాడు?",
+          "q_hi": "बूढ़ा टोपियाँ क्यों नहीं बेच सका?",
+          "q_ta": "முதியவரால் ஏன் தொப்பிகளை விற்க முடியவில்லை?",
+          "q_ko": "할아버지는 왜 삿갓을 팔지 못했습니까?",
+          "q_es": "¿Por qué no pudo vender los sombreros el anciano?",
+          "q_kn": "ತಾತನಿಗೆ ಟೋಪಿಗಳನ್ನು ಮಾರಲು ಏಕೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ?",
+          "q_ml": "വൃദ്ധന് തൊപ്പികൾ വിൽക്കാൻ കഴിയാതെ പോയത് എന്തുകൊണ്ട്?",
+          "options": [
+            "雪が 激しく 降っていたから",
+            "笠が 破れていたから",
+            "町に 人が いなかったから",
+            "値段が 高すぎたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "最後の一体の お地蔵様には 何を かけてあげましたか。",
+          "q_en": "What did he put on the last Jizo statue?",
+          "q_te": "చివరి జీజో విగ్రహానికి ఏమి తొడిగాడు?",
+          "q_hi": "अंतिम जिज़ो मूर्ति को उन्होंने क्या पहनाया?",
+          "q_ta": "கடைசி சிலைக்கு என்ன போர்த்தினார்?",
+          "q_ko": "마지막 지장보살님께는 무엇을 씌워 드렸습니까?",
+          "q_es": "¿Qué le puso a la última estatua de Jizo?",
+          "q_kn": "ಕೊನೆಯ ಜೀಜೋ ಮೂರ್ತಿಗೆ ಏನನ್ನು ತೊಡಿಸಿದರು?",
+          "q_ml": "അവസാനത്തെ പ്രതിമയ്ക്ക് അദ്ദേഹം എന്താണ് നൽകിയത്?",
+          "options": [
+            "自分の 手ぬぐい",
+            "自分の 上着",
+            "おばあさんの 帯",
+            "温かい 毛布"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "その夜、家の 前に 何が 置かれていましたか。",
+          "q_en": "What was placed in front of the house that night?",
+          "q_te": "ఆ రాత్రి ఇంటి ముందు ఏమి ఉంచబడింది?",
+          "q_hi": "उस रात घर के सामने क्या रखा गया था?",
+          "q_ta": "அன்று இரவு வீட்டின் முன் என்ன வைக்கப்பட்டிருந்தது?",
+          "q_ko": "그날 밤 집 앞에는 무엇이 놓여 있었습니까?",
+          "q_es": "¿Qué dejaron frente a la casa esa noche?",
+          "q_kn": "ಆ ರಾತ್ರಿ ಮನೆಯ ಮುಂದೆ ಏನನ್ನು ಇಡಲಾಗಿತ್ತು?",
+          "q_ml": "അന്ന് രാത്രി വീടിന് മുന്നിൽ എന്താണ് വെച്ചിരുന്നത്?",
+          "options": [
+            "米や 餅や 宝物",
+            "新しい 菅笠",
+            "たくさんの 雪",
+            "手紙だけ"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N3": [
+    {
+      "id": "r-n3-1",
+      "title": "エレベーター点検のお知らせ (Notice of Elevator Inspection)",
+      "passage": "マンションにお住まいの皆様へ\n\nいつもご協力ありがとうございます。来週の水曜日、7月22日の午前9時から午後3時まで、エレベーターの定期点検が行われます。点検の間はエレベーターをご利用いただけませんので、階段をお使いください。お年寄りや小さいお子様がいるご家庭は、なるべく午前中に外出を済ませておくと便利だと思います。天気によっては、点検の日が変わることもあります。その場合は、前日までに掲示板でお知らせします。ご不便をおかけしますが、よろしくお願いいたします。\n\nさくら管理事務所",
+      "passage_en": "To all residents of the apartment building,\n\nThank you as always for your cooperation. Next Wednesday, July 22, from 9:00 a.m. to 3:00 p.m., a regular inspection of the elevator will be carried out. You will not be able to use the elevator during the inspection, so please use the stairs. For households with elderly people or small children, we think it would be convenient to finish any outings in the morning if possible. Depending on the weather, the inspection day may change. In that case, we will let you know on the notice board by the day before. We apologize for the inconvenience and thank you for your understanding.\n\nSakura Management Office",
+      "questions": [
+        {
+          "q": "点検の間、住民は何をしなければなりませんか。",
+          "q_en": "What must residents do during the inspection?",
+          "options": [
+            "エレベーターを午前中だけ使う",
+            "階段を使う",
+            "午前9時までに外出する",
+            "管理事務所で待つ"
+          ],
+          "answer": 1,
+          "q_te": "కార్యాలయంలో కొత్త ఆలోచనలు ఎలా పుడతాయి?",
+          "q_hi": "कार्यालय में नए विचार कैसे उत्पन्न होते हैं?",
+          "q_ta": "அலுவலகத்தில் புதிய யோசனைகள் எவ்வாறு பிறக்கின்றன?",
+          "q_ko": "사무실에서 새로운 아이디어는 어떻게 탄생합니까?",
+          "q_es": "¿Cómo surgen nuevas ideas en la oficina?",
+          "q_kn": "ಕಚೇರಿಯಲ್ಲಿ ಹೊಸ ಆಲೋಚನೆಗಳು ಹೇಗೆ ಮೂಡುತ್ತವೆ?",
+          "q_ml": "ഓഫീസിൽ പുതിയ ആശയങ്ങൾ എങ്ങനെയാണ് ഉണ്ടാകുന്നത്?"
+        },
+        {
+          "q": "点検の日が変わることがあるのは、どんな時ですか。",
+          "q_en": "In what situation might the inspection day change?",
+          "options": [
+            "お年寄りが多い時",
+            "住民が希望した時",
+            "天気が悪い時",
+            "エレベーターが壊れた時"
+          ],
+          "answer": 2,
+          "q_te": "అపార్థాలను నివారించడానికి ఏమి అవసరం?",
+          "q_hi": "गलतफहमियों से बचने के लिए क्या आवश्यक है?",
+          "q_ta": "தவறான புரிதல்களைத் தவிர்க்க என்ன தேவை?",
+          "q_ko": "오해를 방지하기 위해 무엇이 필요합니까?",
+          "q_es": "¿Qué se necesita para evitar malentendidos?",
+          "q_kn": "ತಪ್ಪುಗ್ರಹಿಕೆ ತಪ್ಪಿಸಲು ಏನು ಅಗತ್ಯ?",
+          "q_ml": "തെറ്റിദ്ധാരണകൾ ഒഴിവാക്കാൻ എന്താണ് ആവശ്യം?"
+        },
+        {
+          "q": "点検の日が変わる場合、どうやって知らせますか。",
+          "q_en": "If the inspection day changes, how will residents be informed?",
+          "options": [
+            "前日までに掲示板で知らせる",
+            "朝、電話で知らせる",
+            "メールで知らせる",
+            "各家を訪ねて知らせる"
+          ],
+          "answer": 0,
+          "q_te": "వసంతకాలంలో ఏమి జరుగుతుంది?",
+          "q_hi": "वसंत ऋतु में क्या होता है?",
+          "q_ta": "வசந்த காலத்தில் என்ன நடக்கிறது?",
+          "q_ko": "봄에는 어떤 일이 일어납니까?",
+          "q_es": "¿Qué sucede en primavera?",
+          "q_kn": "ವಸಂತ ಋತುವಿನಲ್ಲಿ ಏನು ನಡೆಯುತ್ತದೆ?",
+          "q_ml": "വസന്തകാലത്ത് എന്താണ് സംഭവിക്കുന്നത്?"
+        }
+      ],
+      "passage_te": "వసంతకాలం నాటికి కంపెనీలో కొత్త ఉద్యోగులు చేరుతున్నారు. కార్యాలయంలో వివిధ నేపథ్యాల నుండి వచ్చిన వ్యక్తులు కలిసి పనిచేయడం వల్ల కొత్త ఆలోచనలు పుడతాయి. అయితే సాంస్కృతిక భేదాల వల్ల తలెత్తే అపార్థాలను నివారించడానికి సున్నితమైన కమ్యూనికేషన్ అవసరం.",
+      "passage_hi": "वसंत ऋतु के साथ कंपनी में नए कर्मचारी शामिल हो रहे हैं। कार्यालय में विभिन्न पृष्ठभूमियों के लोगों के एक साथ काम करने से नए विचार उत्पन्न होते हैं। हालाँकि, सांस्कृतिक भिन्नताओं से होने वाली गलतफहमियों से बचने के लिए संवेदनशील संवाद आवश्यक है।",
+      "passage_ta": "வசந்த காலத்தில் நிறுவனத்தில் புதிய ஊழியர்கள் இணைகிறார்கள். வெவ்வேறு பின்னணியைச் சேர்ந்தவர்கள் ஒன்றாக வேலை செய்வதால் புதிய யோசனைகள் பிறக்கின்றன. இருப்பினும், கலாச்சார வேறுபாடுகளால் எழும் தவறான புரிதல்களைத் தவிர்க்க நுட்பமான தொடர்பு அவசியம்.",
+      "passage_ko": "봄을 맞아 회사에 신입 사원들이 입사하고 있습니다. 다양한 배경을 가진 사람들이 함께 일하면서 새로운 아이디어가 탄생합니다. 그러나 문화적 차이로 인한 오해를 방지하기 위해 세심한 소통이 필요합니다.",
+      "passage_es": "Con la llegada de la primavera, se incorporan nuevos empleados a la empresa. Trabajar junto a personas de diversos orígenes genera nuevas ideas. Sin embargo, para evitar malentendidos por diferencias culturales, es esencial una comunicación cuidadosa.",
+      "passage_kn": "ವಸಂತ ಋತುವಿನೊಂದಿಗೆ ಕಂಪನಿಗೆ ಹೊಸ ಉದ್ಯೋಗಿಗಳು ಸೇರ್ಪಡೆಗೊಳ್ಳುತ್ತಿದ್ದಾರೆ. ವಿವಿಧ ಹಿನ್ನೆಲೆಯ ಜನರು ಒಟ್ಟಿಗೆ ಕೆಲಸ ಮಾಡುವುದರಿಂದ ಹೊಸ ಆಲೋಚನೆಗಳು ಮೂಡುತ್ತವೆ. ಆದರೆ ಸಾಂಸ್ಕೃತಿಕ ಭಿನ್ನತೆಯಿಂದಾಗುವ ತಪ್ಪುಗ್ರಹಿಕೆ ತಪ್ಪಿಸಲು ಸೂಕ್ಷ್ಮ ಸಂವಹನ ಅಗತ್ಯ.",
+      "passage_ml": "വസന്തകാലത്തോടെ കമ്പനിയിൽ പുതിയ ജീവനക്കാർ എത്തുന്നു. പല പശ്ചാത്തലങ്ങളിൽ നിന്നുള്ള ആളുകൾ ഒരുമിച്ച് ജോലി ചെയ്യുമ്പോൾ പുതിയ ആശയങ്ങൾ ജനിക്കുന്നു. എന്നാൽ സാംസ്കാരിക വ്യത്യാസങ്ങൾ മൂലമുണ്ടാകുന്ന തെറ്റിദ്ധാരണകൾ ഒഴിവാക്കാൻ സൂക്ഷ്മമായ ആശയവിനിമയം അത്യാവശ്യമാണ്."
+    },
+    {
+      "id": "r-n3-2",
+      "title": "歓迎会のお誘い (Invitation to a Welcome Party)",
+      "passage": "田中さん\n\nお疲れ様です。営業部の山口です。\n今度、新しく入った鈴木さんの歓迎会を開くことになりました。日にちは来月の3日、金曜日の夜7時からで、場所は駅の近くの「海山亭」というお店です。\n\n鈴木さんは大学時代に3年間留学していたそうで、英語がとても上手だと聞きました。田中さんも英語を勉強しているので、きっと話が合うと思います。\n\n参加できるかどうか、今週の金曜日までに私に返事をいただけると助かります。もし来られない場合は、無理をなさらないでください。\n\nよろしくお願いします。\n山口",
+      "passage_en": "Tanaka-san,\n\nThank you for your hard work. This is Yamaguchi from the Sales Department.\nWe've decided to hold a welcome party for Suzuki-san, who recently joined us. The date is the 3rd of next month, a Friday, from 7:00 p.m., and the place is a restaurant near the station called \"Umiyama-tei.\"\n\nI hear that Suzuki-san studied abroad for three years during university, and that she is very good at English. Since you are also studying English, I'm sure the two of you will get along.\n\nIt would help me if you could reply by this Friday about whether you can attend. If you can't come, please don't push yourself.\n\nBest regards,\nYamaguchi",
+      "questions": [
+        {
+          "q": "このメールは、何のために書かれましたか。",
+          "q_en": "What was this email written for?",
+          "options": [
+            "新しいレストランを紹介するため",
+            "パーティーを中止するため",
+            "田中さんに英語を教えてもらうため",
+            "鈴木さんの歓迎会に誘うため"
+          ],
+          "answer": 3,
+          "q_te": "రీసైకిల్ దుకాణాల ప్రయోజనం ఏమిటి?",
+          "q_hi": "रीसायकल दुकानों का क्या लाभ है?",
+          "q_ta": "மறுசுழற்சி கடைகளின் நன்மை என்ன?",
+          "q_ko": "재활용 가게의 장점은 무엇입니까?",
+          "q_es": "¿Cuál es la ventaja de las tiendas de reciclaje?",
+          "q_kn": "ಮರುಬಳಕೆ ಅಂಗಡಿಗಳ ಪ್ರಯೋಜನವೇನು?",
+          "q_ml": "റീസൈക്കിൾ കടകളുടെ പ്രയോജനം എന്താണ്?"
+        },
+        {
+          "q": "鈴木さんについて、正しいものはどれですか。",
+          "q_en": "Which statement about Suzuki-san is correct?",
+          "options": [
+            "3年間留学していて、英語が上手だ",
+            "英語の先生をしている",
+            "パーティーが嫌いだ",
+            "営業部に長く勤めている"
+          ],
+          "answer": 0,
+          "q_te": "వస్తువులను పారవేయకుండా ఏమి చేయాలి?",
+          "q_hi": "वस्तुओं को फेंकने के बजाय क्या करना चाहिए?",
+          "q_ta": "பொருட்களை வீணாக்காமல் என்ன செய்ய வேண்டும்?",
+          "q_ko": "물건을 버리는 대신 어떻게 해야 합니까?",
+          "q_es": "¿Qué se debe hacer en lugar de tirar las cosas?",
+          "q_kn": "ವಸ್ತುಗಳನ್ನು ಎಸೆಯುವ ಬದಲು ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "സാധനങ്ങൾ വലിച്ചെറിയുന്നതിന് പകരം എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "山口さんは田中さんに何をお願いしていますか。",
+          "q_en": "What is Yamaguchi asking Tanaka to do?",
+          "options": [
+            "お店を予約すること",
+            "鈴木さんを店に連れて行くこと",
+            "今週の金曜日までに参加できるか返事をすること",
+            "パーティーの料金を払うこと"
+          ],
+          "answer": 2,
+          "q_te": "ఇది పర్యావరణానికి ఎలా మేలు చేస్తుంది?",
+          "q_hi": "यह पर्यावरण के लिए कैसे लाभदायक है?",
+          "q_ta": "இது சுற்றுச்சூழலுக்கு எவ்வாறு உதவுகிறது?",
+          "q_ko": "이것은 환경에 어떻게 도움이 됩니까?",
+          "q_es": "¿Cómo ayuda esto al medio ambiente?",
+          "q_kn": "ಇದು ಪರಿಸರಕ್ಕೆ ಹೇಗೆ ನೆರವಾಗುತ್ತದೆ?",
+          "q_ml": "ഇത് പരിസ്ഥിതിക്ക് എങ്ങനെയാണ് ഗുണം ചെയ്യുന്നത്?"
+        }
+      ],
+      "passage_te": "పునర్వినియోగ దుకాణాలను ఉపయోగించే వారి సంఖ్య పెరుగుతోంది. అవసరం లేని వస్తువులను పారవేయకుండా ఇతరులకు ఇవ్వడం పర్యావరణానికి మంచిది. ఇది ఆర్థికంగా కూడా ఉపయోగకరంగా ఉంటుంది.",
+      "passage_hi": "रीसायकल दुकानों का उपयोग करने वालों की संख्या बढ़ रही है। अनुपयोगी वस्तुओं को फेंकने के बजाय दूसरों को देना पर्यावरण के लिए अच्छा है। यह आर्थिक दृष्टि से भी लाभदायक है।",
+      "passage_ta": "மறுசுழற்சி கடைகளைப் பயன்படுத்துவோரின் எண்ணிக்கை அதிகரித்து வருகிறது. தேவையில்லாத பொருட்களை வீணாக்காமல் மற்றவர்களுக்கு வழங்குவது சுற்றுச்சூழலுக்கு நல்லது. இது பொருளாதார ரீதியாகவும் பயனுள்ளது.",
+      "passage_ko": "재활용 가게를 이용하는 사람들이 늘고 있습니다. 필요 없는 물건을 버리지 않고 다른 사람에게 넘기는 것은 환경에 좋습니다. 경제적으로도 이점이 많습니다.",
+      "passage_es": "El número de personas que utilizan tiendas de segunda mano va en aumento. En lugar de tirar cosas innecesarias, pasárselas a otros es bueno para el medio ambiente y también resulta económico.",
+      "passage_kn": "ಮರುಬಳಕೆ ಅಂಗಡಿಗಳನ್ನು ಬಳಸುವವರ ಸಂಖ್ಯೆ ಹೆಚ್ಚುತ್ತಿದೆ. ಅನಗತ್ಯ ವಸ್ತುಗಳನ್ನು ಎಸೆಯುವ ಬದಲು ಬೇರೆಯವರಿಗೆ ನೀಡುವುದು ಪರಿಸರಕ್ಕೆ ಒಳ್ಳೆಯದು. ಇದು ಆರ್ಥಿಕವಾಗಿಯೂ ಪ್ರಯೋಜನಕಾರಿ.",
+      "passage_ml": "റീസൈക്കിൾ കടകൾ ഉപയോഗിക്കുന്നവരുടെ എണ്ണം കൂടിവരികയാണ്. ആവശ്യമില്ലാത്ത സാധനങ്ങൾ വലിച്ചെറിയാതെ മറ്റുള്ളവർക്ക് നൽകുന്നത് പരിസ്ഥിതിക്ക് നല്ലതാണ്. ഇത് സാമ്പത്തികമായും പ്രയോജനകരമാണ്."
+    },
+    {
+      "id": "r-n3-3",
+      "title": "朝ごはんの習慣 (My Breakfast Habit)",
+      "passage": "私は去年まで、朝ごはんを食べない生活をしていました。時間がないと、つい食事を抜いてしまうのです。でも、健康診断で医者に「朝ごはんを食べないと、体に良くないですよ」と言われてから、少しずつ考えが変わりました。今では、毎朝早く起きて、簡単なものでも必ず食べるようになりました。おかげで、午前中も元気に働けるようになり、仕事も前より進むようになりました。友だちにこの話をしたら、彼女も朝ごはんを食べ始めたそうです。小さな習慣でも、続けると生活が変わるものだと感じています。",
+      "passage_en": "Until last year, I lived without eating breakfast. When I don't have time, I tend to end up skipping meals. But after a doctor told me at a health checkup, \"If you don't eat breakfast, it isn't good for your body,\" my thinking gradually changed. Now I get up early every morning and always eat something, even if it's simple. Thanks to that, I've become able to work energetically through the morning, and my work has come to progress better than before. When I told a friend about this, she apparently started eating breakfast too. I feel that even a small habit, if you keep it up, can change your life.",
+      "questions": [
+        {
+          "q": "この人は、どうして朝ごはんを食べるようになりましたか。",
+          "q_en": "Why did this person come to eat breakfast?",
+          "options": [
+            "友だちに勧められたから",
+            "医者に体に良くないと言われたから",
+            "朝、時間ができたから",
+            "太ってしまったから"
+          ],
+          "answer": 1,
+          "q_te": "నగర ఉద్యానవనాలు ప్రజలకు ఏమి అందిస్తాయి?",
+          "q_hi": "शहरी पार्क लोगों को क्या प्रदान करते हैं?",
+          "q_ta": "நகரப் பூங்காக்கள் மக்களுக்கு என்ன அளிக்கின்றன?",
+          "q_ko": "도시의 공원은 사람들에게 무엇을 줍니까?",
+          "q_es": "¿Qué aportan los parques urbanos a la gente?",
+          "q_kn": "ನಗರದ ಉದ್ಯಾನವನಗಳು ಜನರಿಗೆ ಏನನ್ನು ನೀಡುತ್ತವೆ?",
+          "q_ml": "നഗരത്തിലെ പാർക്കുകൾ ആളുകൾക്ക് എന്താണ് നൽകുന്നത്?"
+        },
+        {
+          "q": "朝ごはんを食べるようになって、どんな変化がありましたか。",
+          "q_en": "What change happened after this person started eating breakfast?",
+          "options": [
+            "長く寝るようになった",
+            "食欲がなくなった",
+            "仕事に行かなくなった",
+            "午前中も元気に働けて、仕事も進むようになった"
+          ],
+          "answer": 3,
+          "q_te": "దైనందిన ఒత్తిడిని ఏవి తగ్గిస్తాయి?",
+          "q_hi": "दैनिक तनाव को क्या कम करता है?",
+          "q_ta": "அன்றாட மன அழுத்தத்தை எது குறைக்கிறது?",
+          "q_ko": "일상의 스트레스를 줄여주는 것은 무엇입니까?",
+          "q_es": "¿Qué reduce el estrés diario?",
+          "q_kn": "ದೈನಂದಿನ ಒತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುವುದು ಯಾವುದು?",
+          "q_ml": "ദിവസേനയുള്ള മാനസിക സമ്മർദ്ദം കുറയ്ക്കുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "友だちについて、正しいものはどれですか。",
+          "q_en": "Which statement about the friend is correct?",
+          "options": [
+            "彼女も朝ごはんを食べ始めた",
+            "彼女は医者だ",
+            "彼女は朝ごはんを食べない",
+            "彼女がこの人に朝ごはんを勧めた"
+          ],
+          "answer": 0,
+          "q_te": "నగర ప్రణాళికలో దేనికి ప్రాధాన్యత ఇవ్వాలి?",
+          "q_hi": "नगर नियोजन में किसे प्राथमिकता दी जानी चाहिए?",
+          "q_ta": "நகரத் திட்டமிடலில் எதற்கு முன்னுரிமை வேண்டும்?",
+          "q_ko": "도시 계획에서 무엇을 우선시해야 합니까?",
+          "q_es": "¿Qué debe priorizarse en la planificación urbana?",
+          "q_kn": "ನಗರ ಯೋಜನೆಯಲ್ಲಿ ಯಾವುದಕ್ಕೆ ಆದ್ಯತೆ ನೀಡಬೇಕು?",
+          "q_ml": "നഗരാസൂത്രണത്തിൽ എന്തിനാണ് മുൻഗണന നൽകേണ്ടത്?"
+        }
+      ],
+      "passage_te": "నగరాల్లో ఉద్యానవనాలు ప్రజలకు మానసిక ప్రశాంతతను అందిస్తాయి. పచ్చని చెట్లు మరియు పక్షుల కిలకిలారావాలు దైనందిన ఒత్తిడిని తగ్గిస్తాయి. అందుకే నగర ప్రణాళికలో పచ్చదనానికి ప్రాధాన్యత ఇవ్వాలి.",
+      "passage_hi": "शहरों में पार्क लोगों को मानसिक शांति प्रदान करते हैं। हरे-भरे पेड़ और पक्षियों की चहचहाहट दैनिक तनाव को कम करती है। इसीलिए नगर नियोजन में हरियाली को प्राथमिकता दी जानी चाहिए।",
+      "passage_ta": "நகரங்களில் உள்ள பூங்காக்கள் மக்களுக்கு மன அமைதியை அளிக்கின்றன. பசுமையான மரங்களும் பறவைகளின் ஒலியும் அன்றாட மன அழுத்தத்தைக் குறைக்கின்றன. எனவே நகரத் திட்டமிடலில் பசுமைக்கு முன்னுரிமை அளிக்க வேண்டும்.",
+      "passage_ko": "도시의 공원은 사람들에게 마음의 평안을 줍니다. 푸른 나무와 새들의 지저귐은 일상의 스트레스를 줄여줍니다. 따라서 도시 계획에서 녹지 공간을 우선시해야 합니다.",
+      "passage_es": "Los parques urbanos brindan tranquilidad a los ciudadanos. Los árboles verdes y el canto de las aves reducen el estrés cotidiano. Por ello, la planificación urbana debe priorizar las zonas verdes.",
+      "passage_kn": "ನಗರಗಳಲ್ಲಿರುವ ಉದ್ಯಾನವನಗಳು ಜನರಿಗೆ ಮಾನಸಿಕ ಶಾಂತಿಯನ್ನು ನೀಡುತ್ತವೆ. ಹಸಿರು ಮರಗಳು ಮತ್ತು ಪಕ್ಷಿಗಳ ಚಿಲಿಪಿಲಿ ದೈನಂದಿನ ಒತ್ತಡವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತವೆ. ನಗರ ಯೋಜನೆಯಲ್ಲಿ ಹಸಿರಿಗೆ ಆದ್ಯತೆ ನೀಡಬೇಕು.",
+      "passage_ml": "നഗരങ്ങളിലെ പാർക്കുകൾ ആളുകൾക്ക് മാനസിക സമാധാനം നൽകുന്നു. പച്ചപ്പും പക്ഷികളുടെ കളകൂജനവും ദിവസേനയുള്ള സമ്മർദ്ദം കുറയ്ക്കുന്നു. അതിനാൽ നഗരാസൂത്രണത്തിൽ പാർക്കുകൾക്ക് പ്രാധാന്യം നൽകണം."
+    },
+    {
+      "id": "r-n3-4",
+      "title": "会議室変更のお知らせ (Notice: Meeting Room Change)",
+      "passage": "社員のみなさまへ\n\nあしたの営業部の会議ですが、いつも使っている三階の会議室がエアコンの工事のため、使えなくなりました。そのため、会議の場所は五階の第二会議室に変わります。時間はこれまでどおり午後二時からです。\n\nなお、資料は各自で印刷して持ってきてください。工事は午前中に終わる予定ですが、もし長引いた場合は、会議がオンラインに変更されることもあります。その時はメールでお知らせします。\n\n総務部",
+      "passage_en": "To all staff,\n\nRegarding tomorrow's Sales Department meeting: the third-floor meeting room we usually use has become unavailable due to air-conditioner construction work. For that reason, the meeting location will change to the second meeting room on the fifth floor. The time remains 2:00 p.m. as before.\n\nAlso, please print the materials yourself and bring them. The construction is scheduled to finish in the morning, but if it runs long, the meeting may be changed to online. In that case, we will inform you by email.\n\nGeneral Affairs Department",
+      "questions": [
+        {
+          "q": "会議の場所が変わったのはどうしてですか。",
+          "q_en": "Why did the meeting location change?",
+          "options": [
+            "五階の会議室がせまいから",
+            "いつもの会議室が工事で使えないから",
+            "営業部の人数が増えたから",
+            "エアコンがこわれて暑いから"
+          ],
+          "answer": 1,
+          "q_te": "సమావేశ స్థలం ఎందుకు మారింది?",
+          "q_hi": "बैठक का स्थान क्यों बदला?",
+          "q_ta": "கூட்டத்தின் இடம் ஏன் மாற்றப்பட்டது?",
+          "q_ko": "회의 장소가 왜 변경되었습니까?",
+          "q_es": "¿Por qué cambió el lugar de la reunión?",
+          "q_kn": "ಸಭೆಯ ಸ್ಥಳ ಏಕೆ ಬದಲಾಯಿತು?",
+          "q_ml": "മീറ്റിംഗിന്റെ സ്ഥലം എന്തുകൊണ്ടാണ് മാറിയത്?"
+        },
+        {
+          "q": "会議の時間について、正しいものはどれですか。",
+          "q_en": "Which is correct about the meeting time?",
+          "options": [
+            "午前中に始まる",
+            "一時間おそくなる",
+            "これまでと同じで午後二時からだ",
+            "工事が終わってから決める"
+          ],
+          "answer": 2,
+          "q_te": "సమావేశ సమయం గురించి ఏది సరైనది?",
+          "q_hi": "बैठक के समय के बारे में क्या सही है?",
+          "q_ta": "கூட்ட நேரம் குறித்து எது சரியானது?",
+          "q_ko": "회의 시간에 대해 올바른 것은 무엇입니까?",
+          "q_es": "¿Qué es correcto sobre la hora de la reunión?",
+          "q_kn": "ಸಭೆಯ ಸಮಯದ ಬಗ್ಗೆ ಯಾವುದು ಸರಿ?",
+          "q_ml": "മീറ്റിംഗ് സമയത്തെക്കുറിച്ച് ശരിയായത് ഏതാണ്?"
+        },
+        {
+          "q": "工事が長引いた場合、どうなる可能性がありますか。",
+          "q_en": "If the construction runs long, what might happen?",
+          "options": [
+            "会議が中止になる",
+            "会議がオンラインに変わる",
+            "会議が三階にもどる",
+            "資料が配られなくなる"
+          ],
+          "answer": 1,
+          "q_te": "మరమ్మతులు ఎక్కువ కాలం కొనసాగితే ఏమి జరగవచ్చు?",
+          "q_hi": "यदि मरम्मत लंबी चली तो क्या हो सकता है?",
+          "q_ta": "பழுதுநீக்கும் பணி நீண்டால் என்ன நடக்கும்?",
+          "q_ko": "공사가 길어지면 어떻게 될 수 있습니까?",
+          "q_es": "¿Qué podría pasar si las obras se alargan?",
+          "q_kn": "ದುರಸ್ತಿ ಕಾರ್ಯ ತಡವಾದರೆ ಏನಾಗಬಹುದು?",
+          "q_ml": "അറ്റകുറ്റപ്പണി നീണ്ടുപോയാൽ എന്ത് സംഭവിച്ചേക്കാം?"
+        }
+      ],
+      "passage_te": "రేపటి అమ్మకాల శాఖ సమావేశ స్థలంలో మార్పు జరిగింది. మూడవ అంతస్తు సమావేశ గది మరమ్మతులలో ఉన్నందున, సమావేశం ఐదవ అంతస్తులోని పెద్ద హాల్‌లో ఉదయం 10 గంటలకు జరుగుతుంది.",
+      "passage_hi": "कल की बिक्री विभाग की बैठक के स्थान में बदलाव हुआ है। तीसरी मंजिल का बैठक कक्ष मरम्मत के कारण बंद है, इसलिए बैठक पाँचवीं मंजिल के बड़े हॉल में सुबह 10 बजे होगी।",
+      "passage_ta": "நாளைய விற்பனைத் துறை கூட்டம் நடைபெறும் இடம் மாற்றப்பட்டுள்ளது. மூன்றாம் தள கூட்ட அறை பழுதுபார்க்கப்படுவதால், ஐந்தாம் தளத்தில் உள்ள பெரிய அரங்கில் காலை 10 மணிக்கு கூட்டம் நடைபெறும்.",
+      "passage_ko": "내일 영업부 회의 장소가 변경되었습니다. 3층 회의실 공사로 인해 5층 대회의실에서 오전 10시에 회의가 진행됩니다.",
+      "passage_es": "Se ha cambiado el lugar de la reunión de ventas de mañana. Debido a reparaciones en la sala del tercer piso, la reunión tendrá lugar en el gran salón del quinto piso a las 10:00.",
+      "passage_kn": "ನಾಳೆಯ ಮಾರಾಟ ವಿಭಾಗದ ಸಭೆಯ ಸ್ಥಳ ಬದಲಾಗಿದೆ. ಮೂರನೇ ಮಹಡಿಯ ಸಭಾಂಗಣ ದುರಸ್ತಿಯಲ್ಲಿರುವುದರಿಂದ, ಐದನೇ ಮಹಡಿಯ ದೊಡ್ಡ ಹಾಲ್‌ನಲ್ಲಿ ಬೆಳಿಗ್ಗೆ 10 ಗಂಟೆಗೆ ಸಭೆ ನಡೆಯಲಿದೆ.",
+      "passage_ml": "നാളത്തെ സെയിൽസ് വിഭാഗം മീറ്റിംഗിന്റെ സ്ഥലത്തിൽ മാറ്റമുണ്ട്. മൂന്നാം നിലയിലെ കോൺഫറൻസ് ഹാൾ അറ്റകുറ്റപ്പണിയിലായതിനാൽ, അഞ്ചാം നിലയിലെ വലിയ ഹാളിൽ രാവിലെ 10 മണിക്ക് മീറ്റിംഗ് നടക്കും."
+    },
+    {
+      "id": "r-n3-5",
+      "title": "バスの遅れについて (About the Bus Delay)",
+      "passage": "けさ、駅前から山下町へ行くバスに乗ろうとしたら、雪のためにバスがなかなか来なかった。三十分ぐらい待って、やっと来たバスはとても込んでいた。運転手さんが「道がすべりやすくなっていますので、ゆっくり走ります。到着がおくれるかもしれません」と言った。\n\nわたしは九時から会議があったので、少し心配になった。でも、会社に電話したら、部長も同じバスに乗っていたそうで、「気をつけて来なさい」と言われた。会議は十時に変えてもらえることになり、ほっとした。",
+      "passage_en": "This morning, when I tried to board the bus from in front of the station to Yamashita-cho, the bus wouldn't come for a long time because of the snow. After waiting about thirty minutes, the bus that finally came was very crowded. The driver said, \"The roads have become slippery, so I'll drive slowly. The arrival may be delayed.\"\n\nBecause I had a meeting from nine o'clock, I got a little worried. But when I called the company, I heard that the department head was on the same bus, and I was told, \"Come carefully.\" The meeting ended up being changed to ten o'clock, and I was relieved.",
+      "questions": [
+        {
+          "q": "バスがなかなか来なかったのはどうしてですか。",
+          "q_en": "Why wouldn't the bus come for a long time?",
+          "options": [
+            "雪がふっていたから",
+            "運転手が休んでいたから",
+            "道が工事中だったから",
+            "お客が多すぎたから"
+          ],
+          "answer": 0,
+          "q_te": "బస్సు ఎందుకు చాలా సేపు రాలేదు?",
+          "q_hi": "काफी देर तक बस क्यों नहीं आई?",
+          "q_ta": "நீண்ட நேரம் பேருந்து வராதது ஏன்?",
+          "q_ko": "버스는 왜 오랫동안 오지 않았습니까?",
+          "q_es": "¿Por qué tardó tanto el autobús en llegar?",
+          "q_kn": "ಬಸ್ಸು ಏಕೆ ತುಂಬಾ ಹೊತ್ತು ಬರಲಿಲ್ಲ?",
+          "q_ml": "ബസ്സ് എന്തുകൊണ്ടാണ് വരാൻ വൈകിയത്?"
+        },
+        {
+          "q": "「わたし」が会社に電話して分かったことは何ですか。",
+          "q_en": "What did the writer find out by calling the company?",
+          "options": [
+            "会議が中止になったこと",
+            "部長も同じバスに乗っていたこと",
+            "バスが来ないこと",
+            "部長がおこっていること"
+          ],
+          "answer": 1,
+          "q_te": "కంపెనీకి కాల్ చేయడం ద్వారా ఏమి తెలిసింది?",
+          "q_hi": "कंपनी में फोन करके क्या पता चला?",
+          "q_ta": "நிறுவனத்தை அழைத்ததன் மூலம் என்ன தெரிந்தது?",
+          "q_ko": "회사에 전화하여 무엇을 알게 되었습니까?",
+          "q_es": "¿Qué averiguó al llamar a la empresa?",
+          "q_kn": "ಕಂಪನಿಗೆ ಕರೆ ಮಾಡಿ ಏನನ್ನು ತಿಳಿದುಕೊಂಡರು?",
+          "q_ml": "കമ്പനിയിൽ വിളിച്ചപ്പോൾ എന്താണ് മനസ്സിലായത്?"
+        },
+        {
+          "q": "「わたし」が最後にほっとしたのはなぜですか。",
+          "q_en": "Why was the writer relieved in the end?",
+          "options": [
+            "バスがすいていたから",
+            "雪がやんだから",
+            "会議の時間を十時に変えてもらえたから",
+            "早く会社に着いたから"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత చివరకు ఎందుకు ఊపిరి పీల్చుకున్నారు?",
+          "q_hi": "लेखक ने अंततः राहत की सांस क्यों ली?",
+          "q_ta": "எழுத்தாளர் இறுதியில் ஏன் நிம்மதியடைந்தார்?",
+          "q_ko": "글쓴이는 결국 왜 안도했습니까?",
+          "q_es": "¿Por qué se sintió aliviado el autor al final?",
+          "q_kn": "ಲೇಖಕರು ಕೊನೆಗೆ ಏಕೆ ಸಮಾಧಾನಗೊಂಡರು?",
+          "q_ml": "എഴുത്തുകാരന് അവസാനം എന്തുകൊണ്ടാണ് ആശ്വാസം തോന്നിയത്?"
+        }
+      ],
+      "passage_te": "ఈ ఉదయం బస్సు చాలా సేపు రాలేదు. ట్రాఫిక్ జామ్ కారణంగా ఆలస్యమైందని కంపెనీకి ఫోన్ చేసి తెలుసుకున్నాను. చివరికి సమయానికి చేరుకోవడంతో ఊపిరి పీల్చుకున్నాను.",
+      "passage_hi": "आज सुबह काफी देर तक बस नहीं आई। कंपनी में फोन करने पर पता चला कि भारी ट्रैफिक जाम के कारण देरी हुई थी। अंततः समय पर पहुँचने पर मैंने राहत की सांस ली।",
+      "passage_ta": "இன்று காலை நீண்ட நேரம் பேருந்து வரவில்லை. போக்குவரத்து நெரிசல் காரணமாக தாமதம் ஏற்பட்டதாக அலுவலகத்திற்கு அழைத்துத் தெரிந்து கொண்டேன். இறுதியாக சரியான நேரத்திற்குச் சென்றடைந்ததால் நிம்மதியடைந்தேன்.",
+      "passage_ko": "오늘 아침 버스가 오랫동안 오지 않았습니다. 회사에 전화해 보니 극심한 교통 체증 때문이었습니다. 다행히 제시간에 도착하여 안도했습니다.",
+      "passage_es": "Esta mañana el autobús tardó mucho en llegar. Al llamar a la empresa supe que se debía a un atasco. Al final pude llegar a tiempo y me sentí aliviado.",
+      "passage_kn": "ಇಂದು ಬೆಳಿಗ್ಗೆ ಬಸ್ಸು ತುಂಬಾ ಹೊತ್ತು ಬರಲಿಲ್ಲ. ಟ್ರಾಫಿಕ್ ಜಾಮ್ ಕಾರಣದಿಂದ ವಿಳಂಬವಾಯಿತೆಂದು ಕಂಪನಿಗೆ ಕರೆ ಮಾಡಿ ತಿಳಿದುಕೊಂಡೆ. ಕೊನೆಗೆ ಸಮಯಕ್ಕೆ ತಲುಪಿದ್ದರಿಂದ ಸಮಾಧಾನವಾಯಿತು.",
+      "passage_ml": "ഇന്ന് രാവിലെ ബസ്സ് ഒരുപാട് നേരം വന്നില്ല. കനത്ത ഗതാഗതക്കുരുക്ക് കാരണമാണ് വൈകിയതെന്ന് കമ്പനിയിൽ വിളിച്ച് അറിഞ്ഞു. ഒടുവിൽ കൃത്യസമയത്ത് എത്താൻ കഴിഞ്ഞതിൽ ആശ്വാസം തോന്നി."
+    },
+    {
+      "id": "r-n3-6",
+      "title": "健康診断のお知らせ (Notice: Health Checkup)",
+      "passage": "山田様\n\nいつもみどり内科クリニックをご利用いただき、ありがとうございます。今年の健康診断のご予約についてご案内します。\n\n検査を受ける前の日は、夜九時までに食事を終わらせてください。それ以降は、水やお茶以外は飲まないようにお願いします。朝は何も食べずにおいでください。\n\nもし当日、熱があったり体の調子が悪かったりする場合は、無理をせず、前もってお電話ください。日を変えることができます。結果は二週間後にご自宅に郵送されます。\n\nみどり内科クリニック",
+      "passage_en": "Dear Mr. Yamada,\n\nThank you for always using Midori Internal Medicine Clinic. We would like to inform you about booking this year's health checkup.\n\nOn the day before the examination, please finish eating by 9:00 p.m. After that, please refrain from drinking anything other than water or tea. Please come in the morning without having eaten anything.\n\nIf on the day you have a fever or feel unwell, please do not push yourself and call us in advance. The date can be changed. The results will be mailed to your home two weeks later.\n\nMidori Internal Medicine Clinic",
+      "questions": [
+        {
+          "q": "検査の前の日の夜、してもよいことは何ですか。",
+          "q_en": "What is allowed on the night before the examination?",
+          "options": [
+            "九時すぎに食事をする",
+            "水やお茶を飲む",
+            "コーヒーを飲む",
+            "何も気にせず食べる"
+          ],
+          "answer": 1,
+          "q_te": "పరీక్షకు ముందు రాత్రి ఏమి అనుమతించబడుతుంది?",
+          "q_hi": "जाँच से पहले रात को क्या करने की अनुमति है?",
+          "q_ta": "பரிசோதனைக்கு முந்தைய இரவில் எது அனுமதிக்கப்படுகிறது?",
+          "q_ko": "검진 전날 밤에 허용되는 것은 무엇입니까?",
+          "q_es": "¿Qué está permitido la noche antes del examen?",
+          "q_kn": "ತಪಾಸಣೆಯ ಹಿಂದಿನ ರಾತ್ರಿ ಯಾವುದಕ್ಕೆ ಅನುಮತಿ ಇದೆ?",
+          "q_ml": "പരിശോധനയ്ക്ക് തലേദിവസം രാത്രി എന്തിനാണ് അനുവാദമുള്ളത്?"
+        },
+        {
+          "q": "検査の日の朝はどうすればいいですか。",
+          "q_en": "What should you do on the morning of the examination?",
+          "options": [
+            "軽く朝ごはんを食べる",
+            "何も食べずに来る",
+            "たくさん食べてくる",
+            "牛乳を飲んでくる"
+          ],
+          "answer": 1,
+          "q_te": "పరీక్ష రోజు ఉదయం ఏమి చేయాలి?",
+          "q_hi": "जाँच की सुबह क्या करना चाहिए?",
+          "q_ta": "பரிசோதனை நாள் காலையில் என்ன செய்ய வேண்டும்?",
+          "q_ko": "검진 당일 아침에는 어떻게 해야 합니까?",
+          "q_es": "¿Qué se debe hacer la mañana del examen?",
+          "q_kn": "ತಪಾಸಣೆಯ ದಿನ ಬೆಳಿಗ್ಗೆ ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "പരിശോധനാ ദിവസം രാവിലെ എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "当日、体の調子が悪いときはどうしますか。",
+          "q_en": "What should you do if you feel unwell on the day?",
+          "options": [
+            "無理をして検査を受ける",
+            "そのまま行かずに休む",
+            "前もって電話して日を変えてもらう",
+            "結果を待つ"
+          ],
+          "answer": 2,
+          "q_te": "ఆ రోజు అనారోగ్యంగా అనిపిస్తే ఏమి చేయాలి?",
+          "q_hi": "उस दिन तबीयत खराब लगे तो क्या करें?",
+          "q_ta": "அன்று உடல்நிலை சரியில்லை என்றால் என்ன செய்ய வேண்டும்?",
+          "q_ko": "당일 몸 상태가 좋지 않으면 어떻게 해야 합니까?",
+          "q_es": "¿Qué debe hacer si no se siente bien ese día?",
+          "q_kn": "ಆ ದಿನ ಆರೋಗ್ಯ ಸರಿಯಿಲ್ಲದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "അന്ന് സുഖമില്ലെന്ന് തോന്നിയാൽ എന്ത് ചെയ്യണം?"
+        }
+      ],
+      "passage_te": "ఆరోగ్య పరీక్షల సమాచారం: పరీక్షకు ముందు రాత్రి 9 గంటల తర్వాత ఆహారం తీసుకోకూడదు. నీరు మాత్రమే త్రాగవచ్చు. ఉదయం అల్పాహారం చేయకుండా ఖాళీ కడుపుతో రావాలి.",
+      "passage_hi": "स्वास्थ्य जाँच सूचना: जाँच से पहले रात 9 बजे के बाद भोजन न करें। केवल पानी पी सकते हैं। सुबह का नाश्ता किए बिना खाली पेट आएँ।",
+      "passage_ta": "உடல் பரிசோதனை தகவல்: பரிசோதனைக்கு முந்தைய இரவு 9 மணிக்கு மேல் உணவு உட்கொள்ளக் கூடாது. தண்ணீர் மட்டுமே அருந்தலாம். காலையில் உணவு உண்ணாமல் வெறும் வயிற்றில் வர வேண்டும்.",
+      "passage_ko": "건강검진 안내: 검진 전날 밤 9시 이후에는 음식물을 섭취하지 마십시오. 물만 마실 수 있습니다. 아침 식사는 거르고 공복으로 오시기 바랍니다.",
+      "passage_es": "Aviso de chequeo médico: No consuma alimentos después de las 21:00 de la noche anterior. Solo puede beber agua. Debe acudir en ayunas por la mañana.",
+      "passage_kn": "ಆರೋಗ್ಯ ತಪಾಸಣೆ ಮಾಹಿತಿ: ತಪಾಸಣೆಯ ಹಿಂದಿನ ರಾತ್ರಿ 9 ಗಂಟೆಯ ನಂತರ ಊಟ ಮಾಡಬಾರದು. ನೀರನ್ನು ಮಾತ್ರ ಕುಡಿಯಬಹುದು. ಬೆಳಿಗ್ಗೆ ಉಪಾಹಾರ ಸೇವಿಸದೆ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬರಬೇಕು.",
+      "passage_ml": "ആരോഗ്യ പരിശോധനാ അറിയിപ്പ്: പരിശോധനയ്ക്ക് തലേദിവസം രാത്രി 9 മണിക്ക് ശേഷം ഭക്ഷണം കഴിക്കരുത്. വെള്ളം മാത്രം കുടിക്കാം. രാവിലെ ഭക്ഷണം കഴിക്കാതെ വരണം."
+    },
+    {
+      "id": "r-n3-7",
+      "title": "アプリの更新について (About the App Update)",
+      "passage": "山川さんへ\n\nおつかれさまです。先週おすすめした家計簿アプリ、使ってみましたか。\n\nじつは、そのアプリが今週新しくなって、レシートを写真でとると、自動で金額が入力されるようになりました。前は自分で数字を打っていたので、とても便利になったと思います。\n\nただ、更新したあとで一度ログインし直さないと使えないので、気をつけてください。パスワードを忘れた場合は、登録したメールアドレスに新しいパスワードが送られてきます。\n\nもし使い方が分からなかったら、いつでも聞いてくださいね。\n\n田中",
+      "passage_en": "To Yamakawa-san,\n\nThanks for your hard work. Did you try the household-account-book app I recommended last week?\n\nActually, that app was renewed this week, and now when you take a photo of a receipt, the amount is entered automatically. Before, you had to type the numbers yourself, so I think it's become very convenient.\n\nHowever, please be careful, because after updating you have to log in again once, or you can't use it. If you forget your password, a new password will be sent to the email address you registered.\n\nIf you don't understand how to use it, please ask me anytime.\n\nTanaka",
+      "questions": [
+        {
+          "q": "アプリはどのように新しくなりましたか。",
+          "q_en": "How did the app become new?",
+          "options": [
+            "レシートの写真から自動で金額が入るようになった",
+            "無料で使えるようになった",
+            "数字を手で打つようになった",
+            "色が変わった"
+          ],
+          "answer": 0,
+          "q_te": "యాప్ ఎలా కొత్తగా మారింది?",
+          "q_hi": "ऐप में क्या नया हुआ है?",
+          "q_ta": "செயலியில் என்ன புதுமை செய்யப்பட்டுள்ளது?",
+          "q_ko": "앱은 어떻게 새로워졌습니까?",
+          "q_es": "¿De qué manera se ha renovado la app?",
+          "q_kn": "ಅಪ್ಲಿಕೇಶನ್ ಹೇಗೆ ಹೊಸತಾಗಿದೆ?",
+          "q_ml": "ആപ്പ് എങ്ങനെയാണ് പുതിയതായത്?"
+        },
+        {
+          "q": "更新したあとに気をつけることは何ですか。",
+          "q_en": "What should you be careful about after updating?",
+          "options": [
+            "新しいレシートを買うこと",
+            "もう一度ログインし直すこと",
+            "アプリを消すこと",
+            "田中さんに電話すること"
+          ],
+          "answer": 1,
+          "q_te": "నవీకరణ తర్వాత దేని గురించి జాగ్రత్తగా ఉండాలి?",
+          "q_hi": "अपडेट के बाद किस बात का ध्यान रखना चाहिए?",
+          "q_ta": "புதுப்பித்த பிறகு எதில் கவனமாக இருக்க வேண்டும்?",
+          "q_ko": "업데이트 후 주의해야 할 점은 무엇입니까?",
+          "q_es": "¿De qué se debe tener cuidado tras actualizar?",
+          "q_kn": "ಅಪ್‌ಡೇಟ್ ನಂತರ ಯಾವುದರ ಬಗ್ಗೆ ಎಚ್ಚರಿಕೆ ವಹಿಸಬೇಕು?",
+          "q_ml": "അപ്ഡേറ്റിന് ശേഷം എന്തിനെക്കുറിച്ചാണ് ശ്രദ്ധിക്കേണ്ടത്?"
+        },
+        {
+          "q": "パスワードを忘れたとき、どうなりますか。",
+          "q_en": "What happens if you forget your password?",
+          "options": [
+            "アプリが使えなくなる",
+            "お店に行かなければならない",
+            "登録したメールに新しいパスワードが送られてくる",
+            "田中さんが教えてくれる"
+          ],
+          "answer": 2,
+          "q_te": "పాస్‌వర్డ్ మర్చిపోతే ఏమి జరుగుతుంది?",
+          "q_hi": "पासवर्ड भूल जाने पर क्या होगा?",
+          "q_ta": "கடவுச்சொல்லை மறந்தால் என்ன நேரிடும்?",
+          "q_ko": "비밀번호를 잊어버리면 어떻게 됩니까?",
+          "q_es": "¿Qué sucede si olvida su contraseña?",
+          "q_kn": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆತರೆ ಏನಾಗುತ್ತದೆ?",
+          "q_ml": "പാസ്‌വേഡ് മറന്നുപോയാൽ എന്ത് സംഭവിക്കും?"
+        }
+      ],
+      "passage_te": "యాప్ నవీకరణ వివరాలు: సరికొత్త రూపకల్పనతో భద్రత మెరుగుపరచబడింది. నవీకరణ తర్వాత మొదటిసారి లాగిన్ అయ్యేటప్పుడు పాస్‌వర్డ్‌ను పునఃసమీక్షించుకోవాలి.",
+      "passage_hi": "ऐप अपडेट विवरण: नए डिज़ाइन के साथ सुरक्षा में सुधार किया गया है। अपडेट के बाद पहली बार लॉग इन करते समय पासवर्ड दोबारा जाँच लें।",
+      "passage_ta": "செயலி புதுப்பிப்பு விவரம்: புதிய வடிவமைப்புடன் பாதுகாப்பு மேம்படுத்தப்பட்டுள்ளது. புதுப்பித்த பின் முதல் முறை நுழையும்போது கடவுச்சொல்லை சரிபார்க்க வேண்டும்.",
+      "passage_ko": "앱 업데이트 안내: 새로운 디자인과 함께 보안이 강화되었습니다. 업데이트 후 처음 로그인할 때 비밀번호를 재확인해 주시기 바랍니다.",
+      "passage_es": "Detalles de la actualización de la app: Se ha renovado el diseño y mejorado la seguridad. Al iniciar sesión por primera vez tras la actualización, verifique su contraseña.",
+      "passage_kn": "ಅಪ್ಲಿಕೇಶನ್ ನವೀಕರಣ ವಿವರ: ಹೊಸ ವಿನ್ಯಾಸದೊಂದಿಗೆ ಭದ್ರತೆಯನ್ನು ಹೆಚ್ಚಿಸಲಾಗಿದೆ. ಅಪ್‌ಡೇಟ್ ನಂತರ ಮೊದಲ ಬಾರಿಗೆ ಲಾಗಿನ್ ಆಗುವಾಗ ಪಾಸ್‌ವರ್ಡ್ ಪರಿಶೀಲಿಸಿ.",
+      "passage_ml": "ആപ്പ് അപ്ഡേറ്റ് വിവരങ്ങൾ: പുതിയ രൂപകൽപ്പനയോടെ സുരക്ഷ വർദ്ധിപ്പിച്ചു. അപ്ഡേറ്റിന് ശേഷം ആദ്യമായി ലോഗിൻ ചെയ്യുമ്പോൾ പാസ്‌വേഡ് പരിശോധിക്കുക."
+    },
+    {
+      "id": "r-n3-8",
+      "title": "町内会のそうじについて (About the Neighborhood Cleanup)",
+      "passage": "みなみ町にお住まいのみなさまへ\n\n毎年恒例の公園そうじを、今週の日曜日の朝八時から行います。参加できる方は、軍手とタオルを持って、公園の入り口に集まってください。ほうきやごみ袋は町内会で用意します。\n\n去年は雨で中止になりましたが、今年は晴れそうなので、たくさんの方に手伝っていただけるとうれしいです。小さいお子さんといっしょの参加も大歓迎です。\n\nそうじのあとには、お茶とおかしが配られます。天気が悪くなりそうな場合は、前の日の夜に町内会のホームページでお知らせします。\n\nみなみ町内会",
+      "passage_en": "To everyone living in Minami-cho,\n\nWe will hold the annual park cleanup this Sunday from 8:00 a.m. Those who can participate, please gather at the park entrance with work gloves and a towel. Brooms and garbage bags will be prepared by the neighborhood association.\n\nLast year it was canceled due to rain, but this year it looks like it will be sunny, so we would be glad if many people could help. Participation together with small children is very welcome too.\n\nAfter the cleanup, tea and snacks will be handed out. If the weather looks like it will turn bad, we will announce it the night before on the neighborhood association's website.\n\nMinami Neighborhood Association",
+      "questions": [
+        {
+          "q": "そうじに参加する人が持っていくものは何ですか。",
+          "q_en": "What should people participating in the cleanup bring?",
+          "options": [
+            "ほうきとごみ袋",
+            "軍手とタオル",
+            "お茶とおかし",
+            "お金と地図"
+          ],
+          "answer": 1,
+          "q_te": "పారిశుధ్యంలో పాల్గొనేవారు ఏమి తీసుకురావాలి?",
+          "q_hi": "सफाई में भाग लेने वालों को क्या लाना चाहिए?",
+          "q_ta": "தூய்மைப் பணியில் பங்கேற்பவர்கள் என்ன கொண்டு வர வேண்டும்?",
+          "q_ko": "청소 참가자는 무엇을 지참해야 합니까?",
+          "q_es": "¿Qué deben traer los participantes de la limpieza?",
+          "q_kn": "ಸ್ವಚ್ಛತೆಯಲ್ಲಿ ಭಾಗವಹಿಸುವವರು ಏನನ್ನು ತರಬೇಕು?",
+          "q_ml": "ശുചീകരണത്തിൽ പങ്കെടുക്കുന്നവർ എന്ത് കൊണ്ടുവരണം?"
+        },
+        {
+          "q": "去年のそうじはどうなりましたか。",
+          "q_en": "What happened to last year's cleanup?",
+          "options": [
+            "雨で中止になった",
+            "人が来なかった",
+            "夜に行われた",
+            "予定どおり行われた"
+          ],
+          "answer": 0,
+          "q_te": "గతేడాది పారిశుధ్య కార్యక్రమానికి ఏమి జరిగింది?",
+          "q_hi": "पिछले साल के स्वच्छता कार्यक्रम में क्या हुआ था?",
+          "q_ta": "கடந்த ஆண்டின் தூய்மைப் பணிக்கு என்ன நேர்ந்தது?",
+          "q_ko": "작년 청소 활동은 어떻게 되었습니까?",
+          "q_es": "¿Qué ocurrió con la limpieza del año pasado?",
+          "q_kn": "ಹೋದ ವರ್ಷದ ಸ್ವಚ್ಛತಾ ಕಾರ್ಯಕ್ಕೆ ಏನಾಯಿತು?",
+          "q_ml": "കഴിഞ്ഞ വർഷത്തെ ശുചീകരണത്തിന് എന്ത് സംഭവിച്ചു?"
+        },
+        {
+          "q": "天気が悪くなりそうなとき、どうやって知らせますか。",
+          "q_en": "If the weather looks like it will turn bad, how will they announce it?",
+          "options": [
+            "当日の朝に電話で",
+            "公園の入り口ではり紙で",
+            "前の日の夜にホームページで",
+            "そうじのあとにメールで"
+          ],
+          "answer": 2,
+          "q_te": "వాతావరణం చెడిపోయేలా ఉంటే ఎలా ప్రకటిస్తారు?",
+          "q_hi": "मौसम खराब होने पर सूचना कैसे दी जाएगी?",
+          "q_ta": "வானிலை மோசமானால் எவ்வாறு அறிவிப்பார்கள்?",
+          "q_ko": "날씨가 나빠질 것 같으면 어떻게 공지합니까?",
+          "q_es": "¿Cómo anunciarán si el clima empeora?",
+          "q_kn": "ಹವಾಮಾನ ಹದಗೆಟ್ಟರೆ ಹೇಗೆ ತಿಳಿಸುತ್ತಾರೆ?",
+          "q_ml": "കാലാവസ്ഥ മോശമാവുകയാണെങ്കിൽ എങ്ങനെ അറിയിക്കും?"
+        }
+      ],
+      "passage_te": "కాలనీ పారిశుధ్య కార్యక్రమం: వచ్చే ఆదివారం పరిసరాల శుభ్రత కార్యక్రమం జరుగుతుంది. పాల్గొనేవారు సొంతంగా చీపుర్లు తీసుకురావాల్సిన అవసరం లేదు. వాతావరణం అనుకూలించకపోతే వెబ్‌సైట్‌లో ప్రకటిస్తారు.",
+      "passage_hi": "मोहल्ला स्वच्छता कार्यक्रम: अगले रविवार को सफाई अभियान चलाया जाएगा। प्रतिभागियों को झाड़ू लाने की ज़रूरत नहीं है। मौसम खराब होने पर वेबसाइट पर सूचना दी जाएगी।",
+      "passage_ta": "பகுதி தூய்மைப் பணி: அடுத்த ஞாயிறு தூய்மை இயக்கம் நடைபெறும். பங்கேற்பாளர்கள் துடைப்பம் கொண்டு வரத் தேவையில்லை. வானிலை மோசமானால் இணையதளத்தில் அறிவிக்கப்படும்.",
+      "passage_ko": "동네 청소 안내: 다음 주 일요일에 환경 미화 활동이 있습니다. 참가자는 빗자루를 지참할 필요가 없습니다. 우천 시에는 웹사이트에 공지합니다.",
+      "passage_es": "Limpieza del vecindario: El próximo domingo se llevará a cabo una jornada de limpieza. No es necesario traer escobas. En caso de mal tiempo, se anunciará en la web.",
+      "passage_kn": "ಬಡಾವಣೆ ಸ್ವಚ್ಛತಾ ಕಾರ್ಯಕ್ರಮ: ಮುಂದಿನ ಭಾನುವಾರ ಸ್ವಚ್ಛತಾ ಅಭಿಯಾನ ನಡೆಯಲಿದೆ. ಭಾಗವಹಿಸುವವರು ಪೊರಕೆ ತರುವ ಅಗತ್ಯವಿಲ್ಲ. ಹವಾಮಾನ ಕೆಟ್ಟದಾಗಿದ್ದರೆ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ತಿಳಿಸಲಾಗುವುದು.",
+      "passage_ml": "റസിഡന്റ്സ് അസോസിയേഷൻ ശുചീകരണം: അടുത്ത ഞായറാഴ്ച ശുചീകരണ പരിപാടി നടക്കും. പങ്കെടുക്കുന്നവർ ചൂൽ കൊണ്ടുവരേണ്ടതില്ല. കാലാവസ്ഥ മോശമായാൽ വെബ്സൈറ്റിൽ അറിയിക്കും."
+    },
+    {
+      "id": "r-n3-9",
+      "title": "テニス教室に通うようになって (Since I Started Going to Tennis Class)",
+      "passage": "去年の春から、家の近くのテニス教室に通うようになった。子どものころは運動が苦手で、体を動かすことがきらいだった。でも、友だちに「いっしょにやってみない?」とさそわれて、思いきって始めてみた。\n\n最初はボールがなかなか打てなくて、はずかしかった。しかし、先生がやさしく教えてくれたおかげで、少しずつ打てるようになった。今では毎週土曜日が楽しみで、しかたがない。\n\n運動を続けているうちに、前よりよく眠れるようになり、体の調子もよくなった。あのとき友だちにさそわれなかったら、今の楽しい生活はなかったと思う。",
+      "passage_en": "Since last spring, I started going to a tennis class near my house. When I was a child, I was bad at sports and hated moving my body. But a friend invited me, saying \"Won't you try it together?\", and I took the plunge and started.\n\nAt first I could hardly hit the ball, and I was embarrassed. However, thanks to the teacher kindly teaching me, I gradually became able to hit it. Now I can't help looking forward to every Saturday.\n\nWhile continuing to exercise, I became able to sleep better than before, and my physical condition improved too. If my friend hadn't invited me back then, I don't think I'd have the fun life I have now.",
+      "questions": [
+        {
+          "q": "「わたし」は子どものころ、運動についてどう思っていましたか。",
+          "q_en": "How did the writer feel about sports as a child?",
+          "options": [
+            "とても得意だった",
+            "苦手できらいだった",
+            "毎日していた",
+            "先生になりたかった"
+          ],
+          "answer": 1,
+          "q_te": "రచయిత చిన్నప్పుడు క్రీడల పట్ల ఎలా భావించారు?",
+          "q_hi": "लेखक बचपन में खेलों के बारे में कैसा महसूस करते थे?",
+          "q_ta": "எழுத்தாளர் சிறுவயதில் விளையாட்டைப் பற்றி என்ன நினைத்தார்?",
+          "q_ko": "글쓴이는 어릴 때 스포츠에 대해 어떻게 느꼈습니까?",
+          "q_es": "¿Qué sentía el autor por los deportes de niño?",
+          "q_kn": "ಲೇಖಕರು ಬಾಲ್ಯದಲ್ಲಿ ಕ್ರೀಡೆಗಳ ಬಗ್ಗೆ ಹೇಗೆ ಭಾವಿಸಿದ್ದರು?",
+          "q_ml": "എഴുത്തുകാരൻ കുട്ടിക്കാലത്ത് കായികവിനോദങ്ങളെ എങ്ങനെ കണ്ടു?"
+        },
+        {
+          "q": "「わたし」がテニスを始めたのはどうしてですか。",
+          "q_en": "Why did the writer start tennis?",
+          "options": [
+            "友だちにさそわれたから",
+            "先生にたのまれたから",
+            "家が近かったから",
+            "有名になりたかったから"
+          ],
+          "answer": 0,
+          "q_te": "రచయిత టెన్నిస్ ఎందుకు ప్రారంభించారు?",
+          "q_hi": "लेखक ने टेनिस क्यों शुरू किया?",
+          "q_ta": "எழுத்தாளர் டென்னிஸ் ஆடத் தொடங்கியது ஏன்?",
+          "q_ko": "글쓴이는 왜 테니스를 시작했습니까?",
+          "q_es": "¿Por qué empezó a jugar tenis el autor?",
+          "q_kn": "ಲೇಖಕರು ಟೆನ್ನಿಸ್ ಪ್ರಾರಂಭಿಸಿದ್ದು ಏಕೆ?",
+          "q_ml": "എഴുത്തുകാരൻ ടെന്നീസ് തുടങ്ങിയത് എന്തുകൊണ്ട്?"
+        },
+        {
+          "q": "テニスを続けて、「わたし」の体はどう変わりましたか。",
+          "q_en": "How did the writer's body change from continuing tennis?",
+          "options": [
+            "太ってしまった",
+            "けがをするようになった",
+            "前よりよく眠れて調子がよくなった",
+            "何も変わらなかった"
+          ],
+          "answer": 2,
+          "q_te": "టెన్నిస్ కొనసాగించడం వల్ల శరీరం ఎలా మారింది?",
+          "q_hi": "टेनिस जारी रखने से शरीर में क्या बदलाव आया?",
+          "q_ta": "டென்னிஸ் விளையாடுவதால் உடலில் என்ன மாற்றம் ஏற்பட்டது?",
+          "q_ko": "테니스를 계속하면서 몸은 어떻게 변했습니까?",
+          "q_es": "¿Cómo cambió el cuerpo del autor al continuar con el tenis?",
+          "q_kn": "ಟೆನ್ನಿಸ್ ಮುಂದುವರಿಸಿದ್ದರಿಂದ ದೇಹದಲ್ಲಿ ಯಾವ ಬದಲಾವಣೆ ಆಯಿತು?",
+          "q_ml": "ടെന്നീസ് തുടർച്ചയായി കളിച്ചപ്പോൾ ശരീരത്തിന് എന്ത് മാറ്റം വന്നു?"
+        }
+      ],
+      "passage_te": "టెన్నిస్ తరగతులకు వెళ్లడం ప్రారంభించినప్పటి నుండి నా ఆరోగ్యం చాలా మెరుగైంది. చిన్నప్పుడు క్రీడలంటే భయపడేవాడిని, కానీ క్రమం తప్పకుండా సాధన చేయడం వల్ల శరీరంలో చురుకుదనం పెరిగింది.",
+      "passage_hi": "टेनिस क्लास जाना शुरू करने के बाद से मेरी सेहत में बहुत सुधार हुआ है। बचपन में मैं खेलों से कतराता था, लेकिन नियमित अभ्यास से शरीर में फुर्ती और ऊर्जा आ गई है।",
+      "passage_ta": "டென்னிஸ் வகுப்புக்குச் செல்லத் தொடங்கியதிலிருந்து என் உடல்நலம் மிகவும் தேறியுள்ளது. சிறுவயதில் விளையாட்டுகளைத் தவிர்த்தேன், ஆனால் தொடர் பயிற்சியால் சுறுசுறுப்பு கூடியுள்ளது.",
+      "passage_ko": "테니스 교실에 다니기 시작한 이후로 건강이 많이 좋아졌습니다. 어릴 때는 운동을 기피했지만, 꾸준히 연습하면서 몸이 훨씬 활기차졌습니다.",
+      "passage_es": "Desde que empecé a ir a clases de tenis, mi salud ha mejorado notablemente. De niño evitaba los deportes, pero con la práctica regular he ganado agilidad y energía.",
+      "passage_kn": "ಟೆನ್ನಿಸ್ ತರಗತಿಗೆ ಹೋಗಲು ಪ್ರಾರಂಭಿಸಿದಾಗಿನಿಂದ ನನ್ನ ಆರೋಗ್ಯ ಗಣನೀಯವಾಗಿ ಸುಧಾರಿಸಿದೆ. ಬಾಲ್ಯದಲ್ಲಿ ಕ್ರೀಡೆಗಳಿಂದ ದೂರವಿರುತ್ತಿದ್ದೆ, ಆದರೆ ನಿರಂತರ ಅಭ್ಯಾಸದಿಂದ ಚುರುಕುತನ ಹೆಚ್ಚಿದೆ.",
+      "passage_ml": "ടെന്നീസ് ക്ലാസ്സിൽ പോകാൻ തുടങ്ങിയ ശേഷം എന്റെ ആരോഗ്യം വളരെയധികം മെച്ചപ്പെട്ടു. കുട്ടിക്കാലത്ത് കളികളിൽ നിന്ന് ഒഴിഞ്ഞുനിന്നിരുന്നു, എന്നാൽ കൃത്യമായ പരിശീലനം ഉന്മേഷം നൽകി."
+    },
+    {
+      "id": "r-n3-10",
+      "title": "竹取物語・かぐや姫 (The Tale of the Bamboo Cutter - Princess Kaguya)",
+      "passage": "今は昔、竹取の翁という者がおりました。ある日、野山に分け入って竹を取っていると、根元が光り輝く一本の竹を見つけました。不思議に思って近寄ってみると、竹の中に三寸ほどの可愛らしい女の子が座っていました。翁は家に連れて帰り、媼とともに大切に育てました。その子は「なよ竹のかぐや姫」と名づけられ、わずか三か月のうちにこの上なく美しい娘へと成長しました。その美しさは国中に知れ渡り、多くの貴公子たちが求婚に訪れましたが、かぐや姫はだれにも心を開きませんでした。やがて八月の満月の夜、かぐや姫は「自分は月の世界の人間であり、月へ帰らなければならない」と涙ながらに告げ、天人の迎えとともに月へと帰っていきました。",
+      "passage_en": "Long ago, there lived an old bamboo cutter. One day, while cutting bamboo in the hills, he discovered a bamboo stalk glowing brightly at its base. Puzzled, he drew near and found a tiny, charming girl about three inches tall sitting inside. He brought her home and raised her with his wife with utmost devotion. Named 'Kaguya-hime', she grew in just three months into a woman of peerless beauty. Her fame spread throughout the land, and many noble suitors came seeking her hand in marriage, yet she refused them all with impossible tasks. Eventually, on the night of the August full moon, she revealed in tears that she belonged to the Moon Kingdom and was compelled to return, ascending to heaven as celestial beings arrived to escort her home.",
+      "passage_te": "పూర్వం ఒక వెదురు నరికే వృద్ధుడు ఉండేవాడు. ఒకరోజు కొండలలో వెదురు నరుకుతుండగా, క్రింది భాగం ప్రకాశిస్తున్న ఒక వింత వెదురు గడను చూశాడు. దగ్గరకు వెళ్లి చూడగా, వెదురు లోపల మూడు అంగుళాల ముద్దుల పాప కూర్చుని ఉంది. అతను ఆమెను ఇంటికి తీసుకువెళ్ళి తన భార్యతో కలిసి అల్లారుముద్దుగా పెంచాడు. ఆమెకు 'కాగుయా-హిమే' అని పేరు పెట్టారు. మూడు నెలల్లోనే ఆమె సాటిలేని సౌందర్యవతిగా ఎదిగింది. ఆమె అందం దేశమంతా వ్యాపించడంతో ఎందరో రాజకుమారులు పెళ్ళి చేసుకోవడానికి వచ్చారు, కానీ ఆమె ఎవరినీ వివాహం చేసుకోలేదు. చివరికి శ్రావణ పౌర్ణమి రాత్రి, తాను చంద్రమండలానికి చెందిన దేవకన్యను అని, తిరిగి వెళ్ళక తప్పదని కన్నీటితో చెప్పి, దేవదూతలతో కలిసి చంద్రునిపైకి వెళ్లిపోయింది.",
+      "passage_hi": "बहुत पुरानी बात है, बाँस काटने वाला एक बूढ़ा रहता था। एक दिन जब वह बाँस काट रहा था, तो उसने देखा कि एक बाँस की जड़ दिव्य प्रकाश से चमक रही है। पास जाकर देखा तो अंदर तीन इंच की एक अत्यंत सुंदर नन्हीं बालिका बैठी थी। बूढ़ा उसे घर ले आया और बड़े प्रेम से पाला। उसका नाम 'कागुया-हिमे' रखा गया। वह केवल तीन महीनों में अप्रतिम सुंदरी बन गई। उसकी सुंदरता की ख्याति पूरे देश में फैल गई और कई राजकुमार विवाह का प्रस्ताव लेकर आए, पर उसने किसी का प्रस्ताव स्वीकार नहीं किया। अंततः पूर्णिमा की रात उसने रोते हुए बताया कि वह चंद्रमा के संसार की निवासी है और उसे लौटना होगा। दिव्य दूतों के साथ वह चंद्रमा पर वापस लौट गई।",
+      "passage_ta": "முற்காலத்தில் மூங்கில் வெட்டும் ஒரு முதியவர் வாழ்ந்தார். ஒருநாள் காட்டில் மூங்கில் வெட்டுகையில், ஒளிரும் ஒரு மூங்கிலைக் கண்டார். உள்ளே மூன்று அங்குல அளவில் ஒரு சிறு பெண் குழந்தை அமர்ந்திருந்தது. அவர் குழந்தையை வீட்டிற்கு எடுத்துச் சென்று மனைவியுடன் வளர்த்தார். அவளுக்கு 'காகுயா-ஹிமே' எனப் பெயரிட்டனர். மூன்று மாதங்களில் இணையற்ற அழகியாக வளர்ந்தாள். நாட்டின் பல இளவரசர்கள் மணம் பேச வந்தபோதும் அவள் ஏற்கவில்லை. இறுதியில் முழு நிலவு நாளில், தான் நிலவுலகைச் சேர்ந்தவள் என்றும் அங்கே திரும்ப வேண்டும் என்றும் கண்ணீருடன் கூறி, வானுலகத் தூதர்களுடன் நிலவிற்குத் திரும்பிச் சென்றாள்.",
+      "passage_ko": "옛날에 대나무를 베는 노인이 있었습니다. 어느 날 빛나는 대나무를 발견하여 다가가 보니, 그 안에 세 치 정도의 어여쁜 여자아이가 앉아 있었습니다. 노인은 집으로 데려와 아내와 함께 정성껏 길렀습니다. '카구야 공주'라 이름 지어진 아이는 석 달 만에 눈부신 미녀로 자라났습니다. 그 아름다움이 온 나라에 퍼져 귀공자들이 청혼하러 왔으나 공주는 모두 거절했습니다. 마침내 보름달이 뜨는 밤, 공주는 자신이 달의 사람이며 돌아가야 한다고 눈물로 고백하고는 천인들의 마중을 받으며 달로 돌아갔습니다.",
+      "passage_es": "Hace mucho tiempo vivía un viejo cortador de bambú. Un día, cortando cañas en el monte, halló un tallo resplandeciente. Al acercarse, vio en su interior a una diminuta niña de apenas tres pulgadas. Se la llevó a casa y la crió con devoción. La llamaron 'Kaguya-hime', y en tres meses creció hasta ser una doncella de inigualable belleza. Su fama atrajo a nobles pretendientes, pero ella rechazó a todos con pruebas imposibles. La noche de luna llena de agosto, confesó entre lágrimas que pertenecía al Reino de la Luna y debía regresar. Con la llegada de los emisarios celestiales, ascendió de vuelta a la luna.",
+      "passage_kn": "ಹಿಂದೊಬ್ಬ ಬಿದಿರು ಕಡಿಯುವ ವೃದ್ಧನಿದ್ದನು. ಒಂದು ದಿನ ಕಾಡಿನಲ್ಲಿ ಬೆಳಗುತ್ತಿದ್ದ ಬಿದಿರನ್ನು ಕಂಡು ಹತ್ತಿರ ಹೋದಾಗ, ಒಳಗೆ ಮೂರು ಇಂಚಿನ ಮುದ್ದಾದ ಹೆಣ್ಣು ಮಗು ಕುಳಿತಿರವುದು ಕಂಡಿತು. ಮನೆಗೆ ತಂದು 'ಕಾಗುಯಾ-ಹಿಮೆ' ಎಂದು ಹೆಸರಿಟ್ಟು ಸಾಕಿದರು. ಮೂರೇ ತಿಂಗಳಲ್ಲಿ ಅವಳು ಅದ್ಭುತ ಸುಂದರಿಯಾಗಿ ಬೆಳೆದಳು. ಅನೇಕ ರಾಜಕುಮಾರರು ಮದುವೆಯಾಗಲು ಬಂದರೂ ಅವಳು ಯಾರನ್ನೂ ಒಪ್ಪಲಿಲ್ಲ. ಕೊನೆಗೆ ಹುಣ್ಣಿಮೆಯ ರಾತ್ರಿ ತಾನು ಚಂದ್ರಲೋಕದವಳು ಎಂದು ಕಣ್ಣೀರಿನಿಂದ ಹೇಳಿ, ದೇವದೂತರ ಜೊತೆ ಚಂದ್ರಲೋಕಕ್ಕೆ ಹಿಂದಿರುಗಿದಳು.",
+      "passage_ml": "പണ്ട് മുള വെട്ടുന്ന ഒരു വൃദ്ധനുണ്ടായിരുന്നു. ഒരു ദിവസം പ്രകാശിക്കുന്ന ഒരു മുള കണ്ടു. നോക്കിയപ്പോൾ അതിനുള്ളിൽ മൂന്നിഞ്ചോളം വലിപ്പമുള്ള ഒരു സുന്ദരി പെൺകുഞ്ഞ് ഇരിക്കുന്നു. അദ്ദേഹം അവളെ വീട്ടിൽ കൊണ്ടുപോയി വളർത്തി. 'കാഗുയ-ഹിമെ' എന്ന് പേരിട്ടു. മൂന്ന് മാസം കൊണ്ട് അവൾ അത്യപൂർവ്വ സുന്ദരിയായി വളർന്നു. പല രാജകുമാരന്മാരും വിവാഹാഭ്യർത്ഥനയുമായി വന്നെങ്കിലും അവൾ നിരസിച്ചു. ഒടുവിൽ പൗർണ്ണമി രാത്രിയിൽ താൻ ചന്ദ്രന്റെ നാട്ടുകാരിയാണെന്നും അങ്ങോട്ട് മടങ്ങണമെന്നും പറഞ്ഞ് അവൾ യാത്രയായി.",
+      "questions": [
+        {
+          "q": "翁は どこで 女の子を 見つけましたか。",
+          "q_en": "Where did the old man find the girl?",
+          "q_te": "వృద్ధుడు ఆ బాలికను ఎక్కడ కనుగొన్నాడు?",
+          "q_hi": "बूढ़े को वह बालिका कहाँ मिली?",
+          "q_ta": "முதியவர் சிறுமியை எங்கே கண்டெடுத்தார்?",
+          "q_ko": "노인은 여자아이를 어디에서 발견했습니까?",
+          "q_es": "¿Dónde encontró el anciano a la niña?",
+          "q_kn": "ವೃದ್ಧನಿಗೆ ಆ ಹೆಣ್ಣುಮಗು ಎಲ್ಲಿ ಸಿಕ್ಕಿತು?",
+          "q_ml": "വൃദ്ധന് ആ പെൺകുട്ടിയെ എവിടെ നിന്നാണ് കിട്ടിയത്?",
+          "options": [
+            "光り輝く 竹の 中で",
+            "川の 岸辺で",
+            "神社の 境内で",
+            "深い 洞窟の 中で"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "かぐや姫は どのくらいの 期間で 美しい娘に 成長しましたか。",
+          "q_en": "In about how long did Kaguya-hime grow into a beautiful woman?",
+          "q_te": "కాగుయా-హిమే ఎంత కాలంలో అందమైన యువతిగా ఎదిగింది?",
+          "q_hi": "कागुया-हिमे कितने समय में युवती बनी?",
+          "q_ta": "காகுயா-ஹிமே எவ்வளவு காலத்தில் அழகிய பெண்ணாக வளர்ந்தாள்?",
+          "q_ko": "카구야 공주는 얼마 만에 아름다운 처녀로 성장했습니까?",
+          "q_es": "¿En cuánto tiempo creció Kaguya-hime hasta ser una hermosa joven?",
+          "q_kn": "ಕಾಗುಯಾ-ಹಿಮೆ ಎಷ್ಟು ದಿನಗಳಲ್ಲಿ ಸುಂದರಿಯಾಗಿ ಬೆಳೆದಳು?",
+          "q_ml": "എത്ര കാലം കൊണ്ടാണ് കാഗുയ-ഹിമെ വളർന്നത്?",
+          "options": [
+            "わずか 三か月",
+            "三年",
+            "十年",
+            "ひと晩"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "かぐや姫は 最後に どこへ 帰っていきましたか。",
+          "q_en": "Where did Kaguya-hime finally return to?",
+          "q_te": "చివరికి కాగుయా-హిమే ఎక్కడికి తిరిగి వెళ్ళింది?",
+          "q_hi": "अंत में कागुया-हिमे कहाँ लौट गई?",
+          "q_ta": "இறுதியில் காகுயா-ஹிமே எங்கு திரும்பிச் சென்றாள்?",
+          "q_ko": "카구야 공주는 마지막에 어디로 돌아갔습니까?",
+          "q_es": "¿A dónde regresó finalmente Kaguya-hime?",
+          "q_kn": "ಕೊನೆಗೆ ಕಾಗುಯಾ-ಹಿಮೆ ಎಲ್ಲಿಗೆ ಮರಳಿದಳು?",
+          "q_ml": "അവസാനം കാഗുയ-ഹിമെ എങ്ങോട്ടാണ് മടങ്ങിപ്പോയത്?",
+          "options": [
+            "月の 世界",
+            "海の 底",
+            "遠い 外国",
+            "山奥の 隠れ里"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n3-11",
+      "title": "ごんぎつね (Gon, the Little Fox - Niimi Nankichi)",
+      "passage": "これは、わたしが 小さいときに、村の 茂平という おじいさんから きいた お話です。むかし、中山の 城の 近くの 森に、ごんという 名前の いたずら好きな 小ぎつねが すんでいました。ごんは 畑の イモを 掘り散らかしたり、罠の 魚を 逃がしたりして 村人を 困らせていました。ある秋、ごんは 兵十という 男が 川で 捕った ウナギを いたずらで 盗んで逃げてしまいました。その後、兵十の 母親が 亡くなったことを 知った ごんは、あのウナギは 病気の 母親の ためのものだったのだと 気づき、深い 後悔に さいなまれました。罪滅ぼしに、ごんは 毎日 山で 拾った 栗や 松茸を こっそり 兵十の 家の 玄関に 届けるようになりました。しかし、兵十は それが ごんの 仕業だとは 知りませんでした。",
+      "passage_en": "This is a story I heard in my childhood from an old villager named Mohei. Once upon a time, near the castle woods of Nakayama, lived a mischievous little fox named Gon. Gon troubled the villagers by digging up potatoes and freeing fish from traps. One autumn day, he playfully stole an eel caught in the river by a villager named Hyoju. Later, upon learning that Hyoju's mother had died, Gon realized the eel was intended for the sick mother and was overcome with remorse. To atone for his deed, Gon began sneaking chestnuts and matsutake mushrooms gathered from the mountains onto Hyoju's doorstep every day. Yet Hyoju had no idea it was Gon.",
+      "passage_te": "ఇది నేను చిన్నప్పుడు మోహీ అనే వృద్ధుడి నుండి విన్న కథ. పూర్వం నకాయమ కోట అడవిలో 'గోన్' అనే చిలిపి నక్కపిల్ల ఉండేది. అది పొలాలను పాడుచేస్తూ, ఉచ్చులలో చిక్కిన చేపలను తప్పిస్తూ గ్రామస్తులను వేధించేది. ఒక శరదృతువు రోజున, హ్యోజూ అనే యువకుడు పట్టిన ఒక ఈల్ చేపను గోన్ అల్లరిగా ఎత్తుకెళ్ళిపోయింది. కొద్దిరోజులకు హ్యోజూ తల్లి చనిపోయిందని తెలిసింది. ఆ చేప అనారోగ్యంతో ఉన్న తల్లి కోసమేనని గ్రహించిన గోన్ పశ్చాత్తాపంతో కుమిలిపోయింది. తన తప్పును సరిదిద్దుకోవడానికి, కొండల నుండి సేకరించిన చెస్ట్‌నట్ గింజలు మరియు పుట్టగొడుగులను ప్రతిరోజూ రహస్యంగా హ్యోజూ ఇంటి గుమ్మం ముందు ఉంచడం ప్రారంభించింది. కానీ అది గోన్ పనేనని హ్యోజూకు తెలియదు.",
+      "passage_hi": "यह कहानी मैंने बचपन में मोहेई नाम के एक बूढ़े से सुनी थी। बहुत समय पहले जंगल में 'गोन' नाम का एक नटखट लोमड़ी का बच्चा रहता था। वह ग्रामीणों के खेतों को नुकसान पहुँचाता था। एक दिन उसने ह्योजू नाम के ग्रामीण द्वारा पकड़ी गई मछली चुरा ली। बाद में जब उसे पता चला कि ह्योजू की माँ चल बसीं और वह मछली बीमार माँ के लिए थी, तो गोन को गहरा पछतावा हुआ। प्रायश्चित के लिए वह रोज़ जंगल से चेस्टनट और मशरूम लाकर चुपके से ह्योजू के दरवाज़े पर रखने लगा। पर ह्योजू नहीं जानता था कि यह गोन का काम है।",
+      "passage_ta": "இது என் சிறுவயதில் மொஹெய் என்ற முதியவர் கூறிய கதை. நகாயாமா காட்டில் 'கோன்' என்ற குறும்புக்கார குள்ளநரி வாழ்ந்தது. அது கிராம மக்களைத் தொல்லை செய்தது. ஒருநாள் ஹ்யோஜூ பிடித்த ஈல் மீனை கோன் திருடிச் சென்றது. பின்னர் ஹ்யோஜூவின் தாய் இறந்ததை அறிந்து, அந்த மீன் நோய்வாய்ப்பட்ட தாய்க்கானது என உணர்ந்து வருந்தியது. தன் தவற்றை ஈடுசெய்ய, காட்டில் சேகரித்த கொட்டைகளையும் காளான்களையும் தினமும் இரகசியமாக ஹ்யோஜூவின் வீட்டு வாசலில் வைத்தது. ஆனால் அது கோன் தான் என ஹ்யோஜூவுக்குத் தெரியவில்லை.",
+      "passage_ko": "이것은 내가 어릴 때 모헤이라는 노인에게 들은 이야기입니다. 옛날 나카야마 숲에 곤이라는 장난꾸러기 여우가 살았습니다. 곤은 밭을 어지럽히고 물고기를 놓아주며 사람들을 괴롭혔습니다. 어느 가을, 효주가 잡은 장어를 장난으로 훔쳐 달아났습니다. 나중에 효주의 어머니가 돌아가셨다는 것을 안 곤은 그 장어가 아픈 어머니를 위한 것이었음을 깨닫고 깊이 뉘우쳤습니다. 곤은 죗값을 치르고자 매일 밤 산에서 주운 밤과 송이버섯을 몰래 효주의 집 문 앞에 놓아두었습니다. 하지만 효주는 그것이 곤의 짓인 줄 몰랐습니다.",
+      "passage_es": "Esta es una historia que escuché de niño al anciano Mohei. Antaño, en el bosque de Nakayama, vivía un zorrito travieso llamado Gon. Molestaba a los aldeanos estropeando cosechas y soltando peces de las trampas. Un otoño, le robó una anguila al pescador Hyoju. Al enterarse luego de que la anciana madre de Hyoju había fallecido y que la anguila era para aliviar su enfermedad, Gon sintió un profundo remordimiento. Para redimirse, comenzó a dejar a diario castañas y setas silvestres en la puerta de Hyoju en secreto, sin que este supiera quién era.",
+      "passage_kn": "ಇದು ಬಾಲ್ಯದಲ್ಲಿ ಮೊಹೇಯ್ ಎಂಬ ವೃದ್ಧರಿಂದ ಕೇಳಿದ ಕಥೆ. ನಕಾಯಾಮ ಕಾಡಿನಲ್ಲಿ 'ಗಾನ್' ಎಂಬ ತರಲೆ ನರಿಮರಿ ಇತ್ತು. ಅದು ಗ್ರಾಮಸ್ಥರಿಗೆ ತೊಂದರೆ ಕೊಡುತ್ತಿತ್ತು. ಒಂದು ದಿನ ಹ್ಯೋಜು ಹಿಡಿದ ಮೀನನ್ನು ಕದ್ದು ಓಡಿತು. ನಂತರ ಹ್ಯೋಜುವಿನ ತಾಯಿ ತೀರಿಕೊಂಡಾಗ, ಆ ಮೀನು ರೋಗಿ ತಾಯಿಗಾಗಿಯೇ ಇತ್ತು ಎಂದು ತಿಳಿದು ಗಾನ್ ಪಶ್ಚಾತ್ತಾಪಪಟ್ಟಿತು. ಪ್ರಾಯಶ್ಚಿತ್ತವಾಗಿ ಪ್ರತಿದಿನ ಕಾಡಿನ ಹಣ್ಣು ಮತ್ತು ಅಣಬೆಗಳನ್ನು ತಂದು ಹ್ಯೋಜುವಿನ ಮನೆಯ ಮುಂದೆ ಇಡಲಾರಂಭಿಸಿತು. ಆದರೆ ಹ್ಯೋಜುಗೆ ಇದು ಗಾನ್ ಮಾಡುತ್ತಿರುವುದು ತಿಳಿಯಲಿಲ್ಲ.",
+      "passage_ml": "കുട്ടിക്കാലത്ത് മൊഹെയ് എന്ന വൃദ്ധനിൽ നിന്ന് കേട്ട കഥയാണിത്. നകായാമ കാട്ടിൽ 'ഗോൺ' എന്നൊരു കുറുക്കൻ ജീവിച്ചിരുന്നു. അവൻ നാട്ടുകാരെ വല്ലാതെ ശല്യം ചെയ്തിരുന്നു. ഒരു ദിവസം അവൻ ഹ്യോജു പിടിച്ച മീൻ തട്ടിയെടുത്തു. പിന്നീട് ഹ്യോജുവിന്റെ അമ്മ മരിച്ചപ്പോൾ, ആ മീൻ രോഗിയായ അമ്മയ്ക്കുള്ളതായിരുന്നു എന്ന് മനസ്സിലാക്കി ഗോൺ പശ്ചാത്തപിച്ചു. പ്രായശ്ചിത്തമായി അവൻ ദിവസവും കാട്ടുപഴങ്ങളും കൂണുകളും കൊണ്ടുവന്ന് ഹ്യോജുവിന്റെ വാതിൽക്കൽ വെച്ചു. എന്നാൽ അത് ഗോൺ ആണെന്ന് ഹ്യോജു അറിഞ്ഞില്ല.",
+      "questions": [
+        {
+          "q": "ごんは どんな 動物でしたか。",
+          "q_en": "What kind of animal was Gon?",
+          "q_te": "గోన్ ఎలాంటి జంతువు?",
+          "q_hi": "गोन किस प्रकार का जानवर था?",
+          "q_ta": "கோன் என்ன விலங்கு?",
+          "q_ko": "곤은 어떤 동물이었습니까?",
+          "q_es": "¿Qué animal era Gon?",
+          "q_kn": "ಗಾನ್ ಯಾವ ಪ್ರಾಣಿಯಾಗಿತ್ತು?",
+          "q_ml": "ഗോൺ ഏത് മൃഗമായിരുന്നു?",
+          "options": [
+            "いたずら好きな 小ぎつね",
+            "おとなしい タヌキ",
+            "勇敢な オオカミ",
+            "すばやい リス"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "ごんは なぜ 深く 後悔しましたか。",
+          "q_en": "Why did Gon feel deep remorse?",
+          "q_te": "గోన్ ఎందుకు తీవ్రంగా పశ్చాత్తాపపడింది?",
+          "q_hi": "गोन को गहरा पछतावा क्यों हुआ?",
+          "q_ta": "கோன் ஏன் மிகவும் வருந்தியது?",
+          "q_ko": "곤은 왜 깊이 후회했습니까?",
+          "q_es": "¿Por qué sintió Gon un profundo remordimiento?",
+          "q_kn": "ಗಾನ್ ಏಕೆ ತೀವ್ರವಾಗಿ ಪಶ್ಚಾತ್ತಾಪಪಟ್ಟಿತು?",
+          "q_ml": "ഗോൺ എന്തുകൊണ്ടാണ് പശ്ചാത്തപിച്ചത്?",
+          "options": [
+            "盗んだ ウナギが 病気の 母親の ためのものだったから",
+            "兵十に 追いかけられたから",
+            "罠に かかって 怪我をしたから",
+            "村人たちに 怒られたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "ごんは 兵十の 家に 何を 届けましたか。",
+          "q_en": "What did Gon deliver to Hyoju's house?",
+          "q_te": "గోన్ హ్యోజూ ఇంటికి ఏమి తెచ్చి ఇచ్చింది?",
+          "q_hi": "गोन ने ह्योजू के घर क्या पहुँचाया?",
+          "q_ta": "கோன் ஹ்யோஜூவின் வீட்டிற்கு என்ன கொண்டு சென்றது?",
+          "q_ko": "곤은 효주의 집에 무엇을 가져다주었습니까?",
+          "q_es": "¿Qué llevaba Gon a la casa de Hyoju?",
+          "q_kn": "ಗಾನ್ ಹ್ಯೋಜುವಿನ ಮನೆಗೆ ಏನನ್ನು ತಲುಪಿಸಿತು?",
+          "q_ml": "ഗോൺ ഹ്യോജുവിന്റെ വീട്ടിൽ എന്താണ് എത്തിച്ചത്?",
+          "options": [
+            "栗や 松茸",
+            "魚や ウナギ",
+            "畑の イモ",
+            "新しい 着物"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n3-12",
+      "title": "手袋を買いに (Buying Mittens - Niimi Nankichi)",
+      "passage": "寒い冬が やってきて、森の 木々や 野原は すっかり 白い 雪で 覆われました。生まれて 初めて 雪を 見た 子ぎつねは、外で 夢中になって 駆け回っているうちに、手が 冷たくて 痛くなってしまいました。「お母ちゃん、手が 冷たいよ、ちんちんするよ」と 泣きつきました。母さんぎつねは、子ぎつねの かわいそうな 手を 温めながら、町へ 行って 毛糸の 手袋を 買ってやろうと 決心しました。しかし、母さんぎつねは 昔、町で 人間に 追われた 怖い 記憶が ありました。そこで、子ぎつねの 片方の 手に 呪文を かけて、人間の 子どもの 手に 変えてやりました。そして 白銅貨を 握らせ、「町へ 行ったら、木の 戸を トントンと たたいて、この 人間の 手のほうを 差し出して『手袋を ください』と 言うんだよ」と 言い聞かせました。",
+      "passage_en": "A cold winter arrived, cloaking the forest and fields in pure white snow. A little fox, seeing snow for the first time in his life, ran about excitedly until his little paws became freezing cold and painful. 'Mommy, my hands are so cold, they sting!' he whimpered. Warming his chilly paws, the mother fox decided to buy him a pair of woolen mittens in town. But she harbored terrifying memories of being chased by humans long ago. So, casting a magical charm on one of the little fox's paws, she turned it into a human child's hand. Giving him two copper coins, she instructed: 'When you reach town, knock on the wooden door, hold out this human hand, and ask: Please sell me some mittens.'",
+      "passage_te": "చలికాలం వచ్చింది, అడవి మరియు పొలాలు తెల్లని మంచుతో కప్పబడిపోయాయి. జీవితంలో మొదటిసారి మంచును చూసిన చిన్ని నక్కపిల్ల ఆనందంతో పరిగెత్తింది, కానీ కాసేపటికే దాని చేతులు చలికి గడ్డకట్టుకుపోయి నొప్పి పుట్టాయి. 'అమ్మా, నా చేతులు చలికి మండిపోతున్నాయి!' అని ఏడ్చింది. తల్లి నక్క ఆ చిన్ని చేతులను వెచ్చబెడుతూ, నగరానికి వెళ్లి ఉన్ని చేతి తొడుగులు (మిట్టెన్స్) కొనాలని నిర్ణయించుకుంది. కానీ గతంలో మానవులు తనను తరుముకున్న భయంకరమైన జ్ఞాపకం తల్లికి ఉంది. అందుచేత, నక్కపిల్ల ఒక చేతిపై మంత్రం వేసి దానిని మానవ బిడ్డ చేతిలా మార్చింది. రెండు నాణేలు చేతికిచ్చి, 'నగరంలో చెక్క తలుపు తట్టి, ఈ మానవ చేతిని మాత్రమే చూపిస్తూ చేతి తొడుగులు అడుగు' అని చెప్పి పంపింది.",
+      "passage_hi": "कड़ाके की ठंड आई और जंगल व खेत सफेद बर्फ से ढक गए। जीवन में पहली बार बर्फ देखने वाला नन्हा लोमड़ी का बच्चा खुशी से दौड़ा, पर जल्द ही उसके हाथ ठंड से सुन्न होकर दुखने लगे। 'माँ, मेरे हाथ बहुत ठंडे हो गए हैं!' वह रोया। माँ ने उसके हाथ गर्म करते हुए शहर जाकर ऊनी दस्ताने खरीदने का फैसला किया। पर माँ को इंसानों द्वारा खदेड़े जाने का पुराना डर था। इसलिए उसने बच्चे के एक हाथ पर जादू करके उसे इंसानी बच्चे का हाथ बना दिया। सिक्के थमाते हुए कहा, 'शहर जाकर दरवाज़ा खटखटाना और केवल इंसानी हाथ आगे करके दस्ताने माँगना।'",
+      "passage_ta": "குளிர்காலம் வந்து காடும் வயல்களும் வெண்பனியால் மூடப்பட்டன. முதன்முறையாக பனியைக் கண்ட குட்டி நரி துள்ளி விளையாடியதில் அதன் கைகள் மரத்துப் போய் வலித்தன. 'அம்மா, கை வலிக்கிறது!' என அழுதது. தாய் நரி நகருக்குச் சென்று கம்பளி கையுறை வாங்க நினைத்தது. ஆனால் மனிதர்களைப் பற்றிய பயம் இருந்தது. எனவே குட்டியின் ஒரு கையை மனிதக் குழந்தையின் கையாக மாற்றியது. காசுகளைக் கொடுத்து, 'நகரத்தில் மரக்கதவைத் தட்டி மனிதக் கையை மட்டும் நீட்டி கையுறை கேள்' எனக் கூறி அனுப்பியது.",
+      "passage_ko": "추운 겨울이 찾아와 숲과 들판이 하얀 눈으로 덮였습니다. 난생처음 눈을 본 아기 여우는 밖에서 뛰놀다 손이 시려 울먹였습니다. '엄마, 손이 너무 시려요.' 어미 여우는 장갑을 사주기로 결심했습니다. 하지만 인간에 대한 두려운 기억이 있었기에, 아기 여우의 한쪽 손을 요술로 사람 아이의 손으로 바꾸어 주었습니다. 그리고 동전을 쥐여주며 '문에 사람 손을 내밀고 장갑을 달라고 하렴' 하고 일렀습니다.",
+      "passage_es": "Llegó el crudo invierno y la nieve cubrió el bosque. Un zorrito que veía la nieve por primera vez corrió fascinado hasta que sus patitas se helaron de dolor. '¡Mamá, se me congelan las manos!', gimió. La madre zorro decidió comprarle unos guantes de lana en el pueblo. Como temía a los humanos por una mala experiencia pasada, transformó una de las patitas del zorrito en la mano de un niño humano con un hechizo, le dio unas monedas y le instruyó mostrar solo esa mano al comprar los guantes.",
+      "passage_kn": "ಚಳಿಗಾಲ ಬಂದು ಕಾಡು ಹಿಮದಿಂದ ಆವೃತವಾಯಿತು. ಮೊದಲ ಬಾರಿ ಹಿಮ ಕಂಡ ನರಿಮರಿ ಆಟವಾಡಿ ಕೈ ತಣ್ಣಗಾಗಿ ನೋವಾಯಿತು. 'ಅಮ್ಮಾ, ಕೈ ತಣ್ಣಗಾಗಿದೆ' ಎಂದು ಅತ್ತಿತು. ತಾಯಿ ನರಿ ನಗರಕ್ಕೆ ಹೋಗಿ ಉಣ್ಣೆಯ ಕೈಗವಸು ಕೊಳ್ಳಲು ನಿರ್ಧರಿಸಿತು. ಆದರೆ ಮಾನವರ ಭಯವಿದ್ದ ಕಾರಣ, ನರಿಮರಿಯ ಒಂದು ಕೈಯನ್ನು ಮಂತ್ರದಿಂದ ಮಾನವ ಮಗುವಿನ ಕೈಯಾಗಿ ಬದಲಿಸಿತು. ನಾಣ್ಯ ನೀಡಿ 'ಕದ ತಟ್ಟಿ ಮಾನವ ಕೈಯನ್ನೇ ತೋರಿಸಿ ಕೈಗವಸು ಕೇಳು' ಎಂದು ತಿಳಿಸಿತು.",
+      "passage_ml": "തണുപ്പുകാലത്ത് കാടും മലയും മഞ്ഞുമൂടി. ആദ്യമായി മഞ്ഞ് കണ്ട കുറുക്കൻകുഞ്ഞ് ഓടിക്കളിച്ചപ്പോൾ കൈ തണുത്തു മരവിച്ചു. 'അമ്മേ, കൈ വേദനിക്കുന്നു!' എന്ന് അവൻ കരഞ്ഞു. അമ്മ കുറുക്കൻ പട്ടണത്തിൽ പോയി കമ്പിളി കയ്യുറ വാങ്ങാൻ തീരുമാനിച്ചു. മനുഷ്യരെ പേടിയുള്ളതിനാൽ, അവൾ കുഞ്ഞിന്റെ ഒരു കൈ മാന്ത്രികവിദ്യയാൽ മനുഷ്യക്കുഞ്ഞിന്റെ കൈയാക്കി മാറ്റി. നാണയങ്ങൾ കൊടുത്ത് 'ഈ കൈ മാത്രം കാണിച്ച് കയ്യുറ ചോദിക്കണം' എന്ന് പറഞ്ഞു വിട്ടു.",
+      "questions": [
+        {
+          "q": "子ぎつねの 手は なぜ 冷たくなりましたか。",
+          "q_en": "Why did the little fox's paws become cold?",
+          "q_te": "నక్కపిల్ల చేతులు ఎందుకు చల్లబడ్డాయి?",
+          "q_hi": "नन्हे लोमड़ी के हाथ ठंडे क्यों हो गए?",
+          "q_ta": "குட்டி நரியின் கைகள் ஏன் குளிர்ந்தன?",
+          "q_ko": "아기 여우의 손은 왜 시려졌습니까?",
+          "q_es": "¿Por qué se le enfriaron las manos al zorrito?",
+          "q_kn": "ನರಿಮರಿಯ ಕೈಗಳು ಏಕೆ ತಣ್ಣಗಾದವು?",
+          "q_ml": "കുറുക്കൻകുഞ്ഞിന്റെ കൈ തണുത്തുപോയത് എന്തുകൊണ്ട്?",
+          "options": [
+            "雪の 中で 夢中になって 駆け回っていたから",
+            "冷たい 川に 落ちたから",
+            "氷を 食べたから",
+            "風が 強かったから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "母さんぎつねは 子ぎつねの 片手を 何に 変えましたか。",
+          "q_en": "What did the mother fox transform one of the little fox's paws into?",
+          "q_te": "తల్లి నక్క పిల్ల నక్క ఒక చేతిని దేనిగా మార్చింది?",
+          "q_hi": "माँ ने बच्चे के एक हाथ को किसमें बदल दिया?",
+          "q_ta": "தாய் நரி குட்டியின் ஒரு கையை எதாக மாற்றியது?",
+          "q_ko": "어미 여우는 아기 여우의 한쪽 손을 무엇으로 바꾸었습니까?",
+          "q_es": "¿En qué transformó la madre una de las patas del zorrito?",
+          "q_kn": "ತಾಯಿ ನರಿ ಮರಿಯ ಒಂದು ಕೈಯನ್ನು ಏನಾಗಿ ಬದಲಿಸಿತು?",
+          "q_ml": "അമ്മ കുറുക്കൻ കുഞ്ഞിന്റെ ഒരു കൈ എന്തിലേക്ക് മാറ്റി?",
+          "options": [
+            "人間の 子どもの 手",
+            "鳥の 羽",
+            "熊の 手",
+            "木の 枝"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "子ぎつねは 町へ 何を 買いに 行きましたか。",
+          "q_en": "What did the little fox go to town to buy?",
+          "q_te": "నక్కపిల్ల నగరానికి ఏమి కొనడానికి వెళ్ళింది?",
+          "q_hi": "नन्हा लोमड़ी शहर क्या खरीदने गया?",
+          "q_ta": "குட்டி நரி நகருக்கு என்ன வாங்கச் சென்றது?",
+          "q_ko": "아기 여우는 마을에 무엇을 사러 갔습니까?",
+          "q_es": "¿Qué fue a comprar el zorrito al pueblo?",
+          "q_kn": "ನರಿಮರಿ ನಗರಕ್ಕೆ ಏನನ್ನು ಕೊಳ್ಳಲು ಹೋಯಿತು?",
+          "q_ml": "കുറുക്കൻകുഞ്ഞ് പട്ടണത്തിൽ എന്ത് വാങ്ങാനാണ് പോയത്?",
+          "options": [
+            "毛糸の 手袋",
+            "温かい 帽子",
+            "おいしい パン",
+            "新しい 靴"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n3-13",
+      "title": "セロ弾きのゴーシュ (Gauche the Cellist - Miyazawa Kenji)",
+      "passage": "ゴーシュは 町の 活動写真館で セロを 弾く 係でした。けれども あまり 上手でないので、いつも 楽長に「ゴーシュ君、セロが 遅れているよ」「感情が こもっていない」と 厳しく 叱られてばかりいました。今度の 音楽会で 演奏する『第六交響曲』の 練習でも、ゴーシュの セロのせいで 全体の 音が 乱れてしまうのでした。毎晩、ゴーシュは 悔しくて、壊れかけの セロを 抱えて 粗末な 小屋で 一生懸命に 練習しました。すると 夜毎に、三毛猫や カッコウ、狸の子、野ねずみの 親子など、動物たちが 次々に 訪ねてきました。動物たちは めいめいに ゴーシュに 演奏を せがみ、ゴーシュは 怒りながらも セロを 弾き続けました。こうして 動物たちと 音楽を 交わすうちに、ゴーシュの 演奏は 見違えるほど 力強く、感情豊かなものへと 変わっていったのでした。",
+      "passage_en": "Gauche played the cello in a town movie theater orchestra. However, he wasn't very skilled, and the conductor constantly scolded him: 'Gauche, your cello is dragging!' or 'There is no heart in your playing!' During rehearsals for the upcoming concert's Sixth Symphony, Gauche's playing threw off the whole ensemble. Every night, filled with mortification, Gauche practiced relentlessly in his humble hut with his battered cello. Then, night after night, unexpected animal visitors arrived—a calico cat, a cuckoo bird, a young raccoon dog, and a family of field mice. Each requested songs, and although initially annoyed, Gauche kept playing for them. Through this interaction with nature, Gauche's music became wonderfully powerful and rich with emotion.",
+      "passage_te": "గోషు నగర సినిమా థియేటర్‌లో సెల్లో (సంగీత వాయిద్యం) వాయించేవాడు. కానీ అతను సరిగా వాయించలేకపోవడంతో, ఆర్కెస్ట్రా నాయకుడు ఎప్పుడూ 'గోషు, నీ శ్రుతి తప్పుతోంది', 'భావం లోపించింది' అని తిట్టేవాడు. రాబోయే సంగీత కచేరీలో ఆరవ సింఫనీ సాధన చేస్తున్నప్పుడు కూడా గోషు వల్లే అందరి శ్రుతి తప్పేది. ప్రతి రాత్రి గోషు అవమాన భారంతో తన చిన్న గుడిసెలో సెల్లోను పట్టుకుని కష్టపడి సాధన చేసేవాడు. అప్పుడు రాత్రిపూట ఒక పిల్లి, కోకిల, రకూన్ పిల్ల మరియు ఎలుక కుటుంబం వరుసగా అతని వద్దకు వచ్చాయి. ఆ జంతువులు పాటలు వాయించమని అడగడంతో, కోపంతోనే అయినా గోషు వాయించేవాడు. ఆ జంతువులతో సంగీతం పంచుకోవడం ద్వారా గోషు సంగీతంలో అద్భుతమైన భావోద్వేగం మరియు జీవం వచ్చాయి.",
+      "passage_hi": "गौश शहर के एक सिनेमा थियेटर में सेलो बजाता था। पर वह अच्छा नहीं बजा पाता था, इसलिए संगीत निर्देशक हमेशा डांटता था: 'गौश, तुम्हारी लय धीमी है!', 'कोई भावना नहीं है!' आगामी संगीत समारोह के अभ्यास में गौश के कारण पूरी धुन बिगड़ जाती थी। रोज़ रात को गौश अपनी झोपड़ी में घंटों मेहनत करता। तभी रातों में एक बिल्ली, एक कोयल, एक रैकून का बच्चा और चूहों का परिवार उसके पास आने लगे। वे सभी उससे संगीत बजाने का अनुरोध करते। चिढ़ते हुए भी गौश बजाता रहा। जानवरों के साथ इस अनुभव से गौश का संगीत जीवंत और भावपूर्ण हो गया।",
+      "passage_ta": "கோஷு நகரின் திரையரங்கில் செலோ வாசிப்பவன். ஆனால் சரியாக வாசிக்க முடியாததால், இசைக்குழுத் தலைவர் எப்போதும் 'கோஷு, உன் இசை பின்தங்குகிறது', 'உணர்ச்சியே இல்லை' எனக் கடிந்துகொள்வார். வரவிருக்கும் இசைநிகழ்ச்சிக்காக கோஷு இரவில் தன் குடிசையில் தீவிரமாகப் பயிற்சி செய்தான். அப்போது பூனை, குயில், ரக்கூன் குட்டி மற்றும் வயல் எலிகள் இரவில் ஒன்றன்பின் ஒன்றாக வந்தன. அவை இசைக்கக் கேட்டதால் கோஷு வாசித்துக் காட்டினான். விலங்குகளுடன் பழகியதன் மூலம் கோஷுவின் இசை ஆழமும் உணர்ச்சியும் கொண்டதாக மாறியது.",
+      "passage_ko": "고슈는 마을의 영화관에서 첼로를 켜는 악사였습니다. 하지만 서툴러서 언제나 악장에게 '고슈 군, 박자가 늦어!', '감정이 없어!'라며 꾸중을 들었습니다. 다가오는 음악회 연습에서도 늘 지적을 받았습니다. 매일 밤 분한 마음에 오두막에서 홀로 맹연습을 하던 고슈에게 밤마다 고양이, 뻐꾸기, 아기 너구리, 들쥐 모자 등 동물들이 찾아왔습니다. 동물들의 부탁으로 연주해 주는 사이, 고슈의 첼로 소리는 몰라보게 힘차고 감정이 풍부해졌습니다.",
+      "passage_es": "Gauche tocaba el violonchelo en el cine del pueblo. Como no era muy hábil, el director siempre le regañaba: '¡Gauche, vas a destiempo!', '¡No transmites ninguna emoción!'. Frustrado, Gauche practicaba sin descanso cada noche en su modesta choza. Fue entonces cuando empezaron a visitarle animales: un gato calicó, un cuco, un pequeño tanuki y una familia de ratones de campo. Todos le pedían que tocara. Aunque al principio se enfadaba, Gauche tocaba para ellos. A través de este contacto con la naturaleza, su música cobró una fuerza y una expresividad extraordinarias.",
+      "passage_kn": "ಗೋಷು ಚಿತ್ರಮಂದಿರದಲ್ಲಿ ಸೆಲ್ಲೋ ನುಡಿಸುತ್ತಿದ್ದನು. ಸರಿಯಾಗಿ ನುಡಿಸದ ಕಾರಣ ನಿರ್ದೇಶಕರು 'ಗೋಷು, ನಿನ್ನ ವಾದನದಲ್ಲಿ ಜೀವವಿಲ್ಲ' ಎಂದು ಬೈಯುತ್ತಿದ್ದರು. ಅವಮಾನದಿಂದ ಅವನು ತನ್ನ ಗುಡಿಸಲಿನಲ್ಲಿ ರಾತ್ರಿಪೂರ್ತಿ ಅಭ್ಯಾಸ ಮಾಡುತ್ತಿದ್ದನು. ಆಗ ಬೆಕ್ಕು, ಕೋಗಿಲೆ, ಪುಟ್ಟ ಪ್ರಾಣಿಗಳು ರಾತ್ರಿ ಅವನ ಬಳಿ ಬಂದು ಸಂಗೀತ ನುಡಿಸಲು ಕೇಳುತ್ತಿದ್ದವು. ಅವುಗಳಿಗೆ ನುಡಿಸುತ್ತಾ ನುಡಿಸುತ್ತಾ ಗೋಷುವಿನ ಸಂಗೀತದಲ್ಲಿ ಅದ್ಭುತ ಶಕ್ತಿ ಮತ್ತು ಭಾವನೆ ಮೂಡಿತು.",
+      "passage_ml": "ഗോഷ് ഒരു തിയേറ്ററിൽ സെല്ലോ വായിക്കുന്ന ആളായിരുന്നു. എന്നാൽ നന്നായി വായിക്കാൻ കഴിയാത്തതിനാൽ മാസ്റ്റർ എപ്പോഴും അവനെ വഴക്കുപറഞ്ഞു. അപമാനഭാരത്താൽ അവൻ കുടിലിലിരുന്ന് കഠിനമായി പരിശീലിച്ചു. ആ രാത്രികളിൽ പൂച്ചയും കുയിലും കാട്ടുജീവികളും അവന്റെ അടുത്ത് വന്നു സംഗീതം കേൾക്കാൻ ആവശ്യപ്പെട്ടു. അവർക്കായി വായിച്ചു നൽകിയതിലൂടെ ഗോഷിന്റെ സംഗീതം അത്ഭുതകരമാംവിധം ജീവസ്സുറ്റതായി മാറി.",
+      "questions": [
+        {
+          "q": "ゴーシュは 何という 楽器を 演奏していましたか。",
+          "q_en": "What musical instrument did Gauche play?",
+          "q_te": "గోషు ఏ వాయిద్యాన్ని వాయించేవాడు?",
+          "q_hi": "गौश कौन सा वाद्य यंत्र बजाता था?",
+          "q_ta": "கோஷு என்ன இசைக் கருவியை வாசித்தான்?",
+          "q_ko": "고슈는 어떤 악기를 연주했습니까?",
+          "q_es": "¿Qué instrumento tocaba Gauche?",
+          "q_kn": "ಗೋಷು ಯಾವ ವಾದ್ಯವನ್ನು ನುಡಿಸುತ್ತಿದ್ದನು?",
+          "q_ml": "ഗോഷ് ഏത് സംഗീതോപകരണമാണ് വായിച്ചിരുന്നത്?",
+          "options": [
+            "セロ (チェロ)",
+            "ピアノ",
+            "バイオリン",
+            "フルート"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "夜毎に ゴーシュの 小屋を 訪ねてきたのは だれですか。",
+          "q_en": "Who visited Gauche's hut night after night?",
+          "q_te": "ప్రతి రాత్రి గోషు గుడిసెకు ఎవరు వచ్చేవారు?",
+          "q_hi": "हर रात गौश की झोपड़ी में कौन आता था?",
+          "q_ta": "ஒவ்வொரு இரவும் கோஷுவின் குடிசைக்கு வந்தது யார்?",
+          "q_ko": "밤마다 고슈의 오두막을 찾아온 것은 누구입니까?",
+          "q_es": "¿Quiénes visitaban la choza de Gauche cada noche?",
+          "q_kn": "ಪ್ರತಿ ರಾತ್ರಿ ಗೋಷುವಿನ ಮನೆಗೆ ಯಾರು ಬರುತ್ತಿದ್ದರು?",
+          "q_ml": "ഓരോ രാത്രിയും ഗോഷിന്റെ കുടിലിൽ ആരാണ് വന്നത്?",
+          "options": [
+            "猫や カッコウなどの 動物たち",
+            "楽長と 楽団の 仲間たち",
+            "村の 子どもたち",
+            "映画館の お客さんたち"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "動物たちと 過ごすうちに ゴーシュの 演奏は どうなりましたか。",
+          "q_en": "How did Gauche's playing change after spending time with the animals?",
+          "q_te": "జంతువులతో గడిపిన తర్వాత గోషు వాయించే విధానం ఎలా మారింది?",
+          "q_hi": "जानवरों के साथ रहने से गौश के संगीत में क्या बदलाव आया?",
+          "q_ta": "விலங்குகளுடன் பழகியதால் கோஷுவின் இசை எப்படி மாறியது?",
+          "q_ko": "동물들과 시간을 보내면서 고슈의 연주는 어떻게 변했습니까?",
+          "q_es": "¿Cómo cambió la interpretación de Gauche tras tratar con los animales?",
+          "q_kn": "ಪ್ರಾಣಿಗಳ ಒಡನಾಟದಿಂದ ಗೋಷುವಿನ ವಾದನ ಹೇಗಾಯಿತು?",
+          "q_ml": "മൃഗങ്ങളുമായി ഇടപഴകിയതോടെ ഗോഷിന്റെ വായന എങ്ങനെയുള്ളതായി?",
+          "options": [
+            "力強く 感情豊かなものに なった",
+            "音が 出なくなった",
+            "以前よりも 下手になった",
+            "速く弾けることだけが 上達した"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n3-14",
+      "title": "注文の多い料理店 (The Restaurant of Many Orders - Kenji)",
+      "passage": "二人の 若い 紳士が、ぴかぴか光る 鉄砲を かつぎ、白熊のような 大きな 犬を 二匹 つれて、山奥へ 狩りに やってきました。しかし、山は 恐ろしく 深く、獲物は 一匹も 見つからず、犬も 途中で 倒れてしまいました。二人は お腹が すいて 途方に暮れていました。すると、深い 霧の 向こうに、立派な 洋館が 現れました。玄関には『山猫軒』という 札が かかっており、「どなたも どうか お入りください。決して ご遠慮は ありません」と 書かれていました。二人は 大喜びで 中へ 入りました。しかし、進むにつれて 扉が 次々と 現れ、「髪を とかしてください」「鉄砲と 弾を 置いてください」「香水を 体中に 塗ってください」「塩と 酢を 揉み込んでください」と 奇妙な 注文が 続きます。二人は ようやく、自分たちが 料理を 食べるのではなく、山猫の 化け物に 食べられようとしていることに 気づき、恐怖で 震え上がりました。",
+      "passage_en": "Two young gentlemen, carrying gleaming rifles and accompanied by two giant white hound dogs, ventured deep into the mountains to hunt. But the forest was dreadfully thick, not a single game was found, and their dogs collapsed. Ravenously hungry and lost, they suddenly spotted an exquisite Western-style house through the deep fog. The entrance sign read: 'Wildcat House: Please come in, anyone and everyone. Don't be shy.' Delighted, they entered. But as they walked through hallway after hallway, bizarre orders appeared on door after door: 'Please comb your hair,' 'Leave your guns and bullets,' 'Rub perfume all over your body,' 'Rub salt and vinegar thoroughly into your skin.' At last, they realized with terror that they were not guests about to eat a meal—they were about to be eaten by monstrous wildcats.",
+      "passage_te": "తుపాకులు పట్టుకుని ఇద్దరు యువకులు వేట కోసం దట్టమైన అడవిలోకి వెళ్లారు. కానీ ఏ జంతువూ దొరకలేదు, కుక్కలు కూడా అలసిపోయి పడిపోయాయి. తీవ్రమైన ఆకలితో దారితప్పిన వారికి పొగమంచులో ఒక అందమైన భవనం కనిపించింది. గుమ్మం వద్ద 'వైల్డ్‌క్యాట్ రెస్టారెంట్: ఎవరైనా నిస్సంకోచంగా లోపలికి రండి' అనే బోర్డు ఉంది. సంతోషంగా లోపలికి వెళ్లారు. కానీ లోపల తలుపుల మీద విచిత్రమైన ఆదేశాలు ఉన్నాయి: 'జుట్టు దువ్వుకోండి', 'తుపాకులు బయట ఉంచండి', 'శరీరమంతా సువాసన నూనె పూసుకోండి', 'ఉప్పు మరియు వెనిగర్ బాగా రుద్దుకోండి'. చివరకు తాము భోజనం చేయడానికి రాలేదని, అడవి పిల్లి రాక్షసుడికి తామే ఆహారంగా మారబోతున్నామని గ్రహించి భయంతో వణికిపోయారు.",
+      "passage_hi": "दो शिकारी युवक चमकती बंदूकें लेकर घने जंगल में शिकार करने गए। पर कोई शिकार नहीं मिला और वे रास्ता भटक गए। तभी कोहरे में एक सुंदर रेस्तरां दिखा। दरवाज़े पर लिखा था: 'जंगली बिल्ली रेस्तरां: किसी भी संकोच के बिना अंदर आइए।' वे खुश होकर अंदर गए। लेकिन अंदर अजीब निर्देश मिलते गए: 'बाल संवारें', 'बंदूकें बाहर रखें', 'शरीर पर इत्र मलें', 'नमक और सिरका लगाएँ'। अंत में उन्हें समझ आया कि वे खाना खाने नहीं, बल्कि जंगली बिल्लियों का भोजन बनने वाले हैं, और वे डर के मारे कांपने लगे।",
+      "passage_ta": "இரு இளைஞர்கள் துப்பாக்கியுடன் வேட்டையாட காட்டிற்குள் சென்றனர். ஆனால் விலங்குகள் கிடைக்காமல் பசியுடன் வழிதவறினர். அப்போது 'வைல்ட்கேட் உணவகம்: எவரும் தயங்காமல் உள்ளே வரலாம்' என்ற பலகை கொண்ட ஒரு மாளிகையைக் கண்டனர். உள்ளே சென்றதும் விசித்திரமான கட்டளைகள் வந்தன: 'தலை வாருங்கள்', 'துப்பாக்கியை வையுங்கள்', 'நறுமணத் தைலம் பூசுங்கள்', 'உப்பும் வினிகரும் உடலில் தேயுங்கள்'. முடிவில், தாங்கள் உணவு உண்ண வரவில்லை, காட்டுப்பூனை அரக்கனுக்கு உணவாகப் போகிறோம் என்பதை உணர்ந்து நடுங்கினர்.",
+      "passage_ko": "두 젊은 신사가 사냥을 하러 깊은 산속으로 들어갔습니다. 그러나 사냥감은 없고 길을 잃어 굶주리던 중 안개 속에서 '산고양이 찻집'이라는 서양식 건물을 발견했습니다. '누구든 환영합니다'라는 문구에 기뻐하며 들어갔으나, 문마다 '총을 내려놓으세요', '향수를 뿌리세요', '소금과 식초를 몸에 바르세요'라는 기괴한 주문이 이어졌습니다. 마침내 두 사람은 자신들이 음식을 먹으러 온 것이 아니라 산고양이 요괴에게 잡아먹히게 생겼다는 것을 깨닫고 공포에 떨었습니다.",
+      "passage_es": "Dos caballeros fueron a cazar a lo profundo del bosque con sus rifles. Hambrientos y perdidos en la niebla, toparon con una mansión que lucía un cartel: 'Restaurante El Gato Montés: Sean bienvenidos, pasen sin dudar'. Entraron felices, pero a cada puerta hallaban extrañas órdenes: 'Péinense', 'Dejen sus armas', 'Úntense perfume', 'Frótense sal y vinagre por todo el cuerpo'. Al fin comprendieron aterrorizados que no iban a comer, sino que ellos mismos eran el plato principal para unos monstruosos gatos monteses.",
+      "passage_kn": "ಇಬ್ಬರು ಯುವಕರು ಬೇಟೆಗೆ ಹೋಗಿ ಕಾಡಿನಲ್ಲಿ ದಾರಿ ತಪ್ಪಿದರು. ಹಸಿದಿದ್ದಾಗ ಒಂದು ಸುಂದರ ಭವನ ಕಂಡಿತು. 'ಯಾರಾದರೂ ಮುಕ್ತವಾಗಿ ಒಳಗೆ ಬನ್ನಿ' ಎಂದು ಬೋರ್ಡ್ ಇತ್ತು. ಒಳಗೆ ಹೋದಂತೆ विचित्र ಆದೇಶಗಳು ಬಂದವು: 'ಕೂದಲು ಬಾಚಿಕೊಳ್ಳಿ', 'ಬಂದೂಕು ಹೊರಗಿಡಿ', 'ಸುಗಂಧ ದ್ರವ್ಯ ಲೇಪಿಸಿಕೊಳ್ಳಿ', 'ಉಪ್ಪು ಹುಳಿ ಮೈಗೆ ಹಚ್ಚಿಕೊಳ್ಳಿ'. ಕೊನೆಗೆ ತಾವು ಊಟ ಮಾಡಲು ಬಂದಿಲ್ಲ, ಕಾಡುಬೆಕ್ಕಿನ ರಾಕ್ಷಸರಿಗೆ ಆಹಾರವಾಗುತ್ತಿದ್ದೇವೆ ಎಂದು ತಿಳಿದು ನಡುಗಿದರು.",
+      "passage_ml": "രണ്ട് ചെറുപ്പക്കാർ വേട്ടയ്ക്കായി കാട്ടിൽ പോയി വഴിതെറ്റി. വിശന്നു വലഞ്ഞപ്പോൾ മൂടൽമഞ്ഞിൽ ഒരു സുന്ദരമായ കെട്ടിടം കണ്ടു. 'ആർക്കും സ്വാഗതം' എന്ന് എഴുതിയിരുന്നു. ഉള്ളിൽ കയറിയപ്പോൾ വിചിത്രമായ നിർദ്ദേശങ്ങൾ കണ്ടു: 'മുടി ചീകുക', 'തോക്ക് പുറത്തുവെക്കുക', 'ശരീരത്തിൽ സുഗന്ധദ്രവ്യം പുരട്ടുക', 'ഉപ്പും വിനാഗിരിയും തേക്കുക'. ഒടുവിൽ തങ്ങൾ ഭക്ഷണം കഴിക്കാനല്ല, കാട്ടുപൂച്ച രാക്ഷസന്മാർക്ക് ഭക്ഷണമാകാനാണ് പോകുന്നത് എന്ന് മനസ്സിലാക്കി അവർ പേടിച്ചു വിറച്ചു.",
+      "questions": [
+        {
+          "q": "二人の 紳士が 見つけた 洋館の 名前は 何でしたか。",
+          "q_en": "What was the name of the Western-style house the two gentlemen found?",
+          "q_te": "ఇద్దరు యువకులు చూసిన ఆ భవనం పేరు ఏమిటి?",
+          "q_hi": "उन दोनों युवकों को जो रेस्तरां दिखा उसका क्या नाम था?",
+          "q_ta": "இளைஞர்கள் கண்ட அந்த மாளிகையின் பெயர் என்ன?",
+          "q_ko": "두 신사가 발견한 서양식 건물의 이름은 무엇이었습니까?",
+          "q_es": "¿Cómo se llamaba la mansión que encontraron los dos caballeros?",
+          "q_kn": "ಆ ಇಬ್ಬರು ಯುವಕರು ಕಂಡ ಭವನದ ಹೆಸರೇನು?",
+          "q_ml": "ആ ചെറുപ്പക്കാർ കണ്ട കെട്ടിടത്തിന്റെ പേരെന്തായിരുന്നു?",
+          "options": [
+            "山猫軒 (やまねこけん)",
+            "白熊亭",
+            "山の レストラン",
+            "森の 料理店"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "扉に 書かれていた「注文」の 本当の 目的は 何でしたか。",
+          "q_en": "What was the true purpose of the 'orders' written on the doors?",
+          "q_te": "తలుపులపై రాసి ఉన్న 'ఆదేశాల' అసలు ఉద్దేశం ఏమిటి?",
+          "q_hi": "दरवाज़ों पर लिखे निर्देशों का असली उद्देश्य क्या था?",
+          "q_ta": "கதவுகளில் எழுதப்பட்ட கட்டளைகளின் உண்மையான நோக்கம் என்ன?",
+          "q_ko": "문에 적혀 있던 '주문'의 진짜 목적은 무엇이었습니까?",
+          "q_es": "¿Cuál era el verdadero propósito de las 'órdenes' escritas en las puertas?",
+          "q_kn": "ಬಾಗಿಲುಗಳ ಮೇಲಿದ್ದ ಆದೇಶಗಳ ನಿಜವಾದ ಉದ್ದೇಶವೇನಾಗಿತ್ತು?",
+          "q_ml": "വാതിലിൽ എഴുതിയിരുന്ന നിർദ്ദേശങ്ങളുടെ യഥാർത്ഥ ഉദ്ദേശ്യം എന്തായിരുന്നു?",
+          "options": [
+            "二人を 料理して 食べるための 下準備",
+            "二人を もてなすための 歓迎",
+            "衛生上の ルール",
+            "ただの いたずら"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "二人は 最後に どうなりましたか。",
+          "q_en": "What happened to the two men in the end?",
+          "q_te": "చివరికి ఆ ఇద్దరికీ ఏమైంది?",
+          "q_hi": "अंत में उन दोनों के साथ क्या हुआ?",
+          "q_ta": "இறுதியில் அவ்விருவருக்கும் என்ன நேர்ந்தது?",
+          "q_ko": "두 사람은 마지막에 어떻게 되었습니까?",
+          "q_es": "¿Qué les ocurrió a los dos hombres al final?",
+          "q_kn": "ಕೊನೆಗೆ ಆ ಇಬ್ಬರಿಗೆ ಏನಾಯಿತು?",
+          "q_ml": "അവസാനം ആ രണ്ടുപേർക്കും എന്ത് സംഭവിച്ചു?",
+          "options": [
+            "恐怖で 震え上がった",
+            "おいしい 料理を 食べた",
+            "山猫を 退治した",
+            "お金を 払って 帰った"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n3-15",
+      "title": "雨ニモマケズ (Strong in the Rain - Miyazawa Kenji)",
+      "passage": "雨にも負けず、風にも負けず、雪にも夏の暑さにも負けぬ丈夫な体をもち、慾はなく、決して怒らず、いつも静かに笑っている。一日に玄米四合と味噌と少しの野菜を食べ、あらゆることを自分を勘定に入れずに、よく見聞きし分かり、そして忘れず。野原の松の林の陰の小さな茅葺きの小屋にいて、東に病気の子どもあれば行って看病してやり、西に疲れた母あれば行ってその稲の束を負い、南に死にそうな人あれば行ってこわがらなくてもいいと言い、北に喧嘩や訴訟があればつまらないからやめろと言い。日照りの時は涙を流し、寒さの夏はおろおろ歩き、みんなに木偶の坊と呼ばれ、褒められもせず、苦にもされず、そういうものに私はなりたい。",
+      "passage_en": "Unbeaten by rain, unbeaten by wind, unbeaten by snow or summer heat, possessing a strong body, free of desire, never losing temper, always smiling quietly. Eating four bowls of brown rice, miso, and a few vegetables a day, putting oneself aside in all matters, watching, listening, understanding, and never forgetting. Living in a small thatched hut beneath the shade of the pine woods in the field: going east to nurse a sick child, going west to carry sheaves of rice for an exhausted mother, going south to soothe someone dying, going north to stop useless quarrels. Crying during drought, pacing anxiously in cold summers, called a good-for-nothing by all, neither praised nor a burden—such is the person I wish to become.",
+      "passage_te": "వానకు వెరవక, గాలికి బెదరక, మంచుకు ఎండకు లొంగని బలమైన శరీరం కలిగి, స్వార్థం లేకుండా, ఎన్నడూ కోపగించక, నిత్యం ప్రశాంతంగా నవ్వుతూ ఉండాలి. రోజుకు కొద్దిగా ముడి బియ్యం, కూరగాయలతో తృప్తి చెంది, తన స్వార్థం చూసుకోకుండా లోకాన్ని పరిశీలిస్తూ ఉండాలి. అడవి చెట్ల నీడన చిన్న పూరి గుడిసెలో ఉంటూ, తూర్పున రోగిష్టి బిడ్డ ఉంటే సేవ చేస్తూ, పడమర అలసిన తల్లి ఉంటే ధాన్యపు మోపును మోస్తూ, దక్షిణాన మరణశయ్యపై ఉన్నవారికి ధైర్యం చెబుతూ, ఉత్తరాన తగాదాలు ఉంటే ఆపుతూ ఉండాలి. కరువు వస్తే కన్నీరు కారుస్తూ, అందరి చేత పిచ్చివాడని అనిపించుకున్నా, ప్రశంసలు ఆశించక జీవించే అలాంటి వ్యక్తిగా నేను మారాలని ఆశిస్తున్నాను.",
+      "passage_hi": "बारिश से न डरने वाला, हवा से न झुकने वाला, बर्फ और गर्मी को सहने वाले स्वस्थ शरीर वाला, इच्छाओं से रहित, कभी क्रोध न करने वाला और सदा मुस्कुराने वाला। दिन में थोड़ा सा भूरा चावल और सब्ज़ी खाकर, खुद का स्वार्थ छोड़ दूसरों की मदद करने वाला। चीड़ के जंगल में छोटी झोपड़ी में रहकर, पूर्व में बीमार बच्चे की सेवा करने, पश्चिम में थकी माँ का बोझ उठाने, दक्षिण में मरते हुए को ढाढ़स बंधाने और उत्तर में झगड़े सुलझाने वाला। किसी प्रशंसा की चाह न रखने वाला—मैं ऐसा ही व्यक्ति बनना चाहता हूँ।",
+      "passage_ta": "மழைக்கும் காற்றுக்கும் பனிக்கும் வெயிலுக்கும் அஞ்சாத வலிமையான உடல் கொண்டு, ஆசையின்றி, கோபமின்றி, அமைதியாக புன்னகைப்பவனாக இருக்க வேண்டும். எளிமையான உணவை உண்டு, தன்னலமின்றி பிறருக்கு உதவ வேண்டும். குடிசையில் வாழ்ந்து கொண்டு, கிழக்கே நோயுற்ற குழந்தையைக் காக்க ஓடி, மேற்கே சோர்ந்த தாயின் சுமையைச் சுமந்து, தெற்கே மரணப் படுக்கையில் உள்ளவருக்கு ஆறுதல் கூறி, வடக்கே சண்டைகளை விலக்க வேண்டும். எவரிடமும் பாராட்டை எதிர்பார்க்காமல் வாழும் அப்படிப்பட்ட மனிதனாக நான் மாற விரும்புகிறேன்.",
+      "passage_ko": "비에도 지지 않고, 바람에도 지지 않고, 눈과 여름 더위에도 지지 않는 튼튼한 몸을 지니고, 욕심 없이 결코 화내지 않으며 언제나 조용히 웃고 있다. 하루에 현미 네 홉과 된장, 채소를 조금 먹고, 동쪽에 아픈 아이가 있으면 가서 간호해 주고, 서쪽에 지친 어머니가 있으면 볏단을 져 나르고, 남쪽에 죽어가는 이가 있으면 두려워 말라 위로하고. 칭찬도 받지 않고 미움도 받지 않는 그런 사람이 나는 되고 싶다.",
+      "passage_es": "Sin dejarse vencer por la lluvia, ni por el viento, ni por la nieve ni el calor del verano, con un cuerpo fuerte, sin codicia, sin perder jamás la calma, sonriendo siempre. Comiendo arroz integral, miso y algunas verduras al día, olvidándose de sí mismo para comprender a los demás. Cuidando al niño enfermo en el este, cargando gavillas para la madre cansada en el oeste, consolando al moribundo en el sur y apaciguando disputas en el norte. Sin esperar alabanzas de nadie: en una persona así es en quien deseo convertirme.",
+      "passage_kn": "ಮಳೆ-ಗಾಳಿಗೆ ಹೆದರದೆ, ಚಳಿ-ಬಿಸಿಲಿಗೆ ಕುಗ್ಗದ ಆರೋಗ್ಯವಂತ ಶರೀರ ಹೊಂದಿ, ದುರಾಸೆಯಿಲ್ಲದೆ, ಕೋಪಗೊಳ್ಳದೆ, ಸದಾ ಶಾಂತವಾಗಿ ನಗುತ್ತಿರಬೇಕು. ಸರಳ ಊಟ ಮಾಡಿ, ತನಗಾಗಿ ಏನನ್ನೂ ಬಯಸದೆ, ರೋಗಿಗಳಿಗೆ ಶುಶ್ರೂಷೆ ಮಾಡುತ್ತಾ, ದುಡಿಯುವ ತಾಯಿಗೆ ನೆರವಾಗುತ್ತಾ, ಜಗಳಗಳನ್ನು ನಿಲ್ಲಿಸುತ್ತಾ, ಯಾರ ಮೆಚ್ಚುಗೆಯನ್ನೂ ಅಪೇಕ್ಷಿಸದೆ ಬದುಕುವ ಅಂತಹ ಮಾನವನಾಗಲು ನಾನು ಬಯಸುತ್ತೇನೆ.",
+      "passage_ml": "മഴയിലും കാറ്റിലും മഞ്ഞിലും തളരാത്ത ആരോഗ്യവാനായി, ആഗ്രഹങ്ങളില്ലാതെ, കോപമില്ലാതെ, ശാന്തമായി പുഞ്ചിരിക്കുന്നവനായിരിക്കണം. ലളിതമായ ഭക്ഷണം കഴിച്ച്, മറ്റുള്ളവർക്കായി ജീവിക്കണം. രോഗികളെ പരിചരിച്ചും, ഭാരം ചുമക്കാൻ സഹായിച്ചും, മരണഭയമുള്ളവർക്ക് ആശ്വാസമേകിയും ജീവിക്കണം. ആരുടെയും പ്രശംസ ആഗ്രഹിക്കാതെ ജീവിക്കുന്ന അങ്ങനെയൊരാളാകാൻ ഞാൻ ആഗ്രഹിക്കുന്നു.",
+      "questions": [
+        {
+          "q": "詩の中で 語り手が 理想とする 人物は どんな 性格ですか。",
+          "q_en": "What kind of personality does the ideal person in this poem possess?",
+          "q_te": "ఈ కవితలోని ఆదర్శ వ్యక్తి ఎలాంటి స్వభావం కలవాడు?",
+          "q_hi": "इस कविता में कवि कैसा व्यक्तित्व चाहता है?",
+          "q_ta": "இக்கவிதையில் குறிப்பிடப்படும் இலட்சிய மனிதனின் குணம் என்ன?",
+          "q_ko": "시에서 화자가 이상으로 삼는 인물은 어떤 성격입니까?",
+          "q_es": "¿Qué personalidad tiene la persona ideal descrita en el poema?",
+          "q_kn": "ಈ ಕವಿತೆಯಲ್ಲಿ ಆದರ್ಶ ವ್ಯಕ್ತಿಯ ಸ್ವಭಾವ ಹೇಗಿದೆ?",
+          "q_ml": "കവിതയിലെ ആദർശ വ്യക്തിയുടെ സ്വഭാവം എങ്ങനെയുള്ളതാണ്?",
+          "options": [
+            "慾がなく、決して怒らず、静かに笑っている",
+            "野心に満ち、勇敢でリーダーシップがある",
+            "誰よりもお金持ちで贅沢を好む",
+            "人を支配し、命令を下す"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "東に 病気の子どもが いれば 何を しますか。",
+          "q_en": "What does he do if there is a sick child in the east?",
+          "q_te": "తూర్పున రోగిష్టి బిడ్డ ఉంటే అతను ఏమి చేస్తాడు?",
+          "q_hi": "पूर्व में बीमार बच्चे के लिए वह क्या करता है?",
+          "q_ta": "கிழக்கே நோயுற்ற குழந்தை இருந்தால் என்ன செய்வான்?",
+          "q_ko": "동쪽에 아픈 아이가 있으면 무엇을 합니까?",
+          "q_es": "¿Qué hace si hay un niño enfermo en el este?",
+          "q_kn": "ಪೂರ್ವದಲ್ಲಿ ರೋಗಿ ಮಗುವಿದ್ದರೆ ಅವನು ಏನು ಮಾಡುತ್ತಾನೆ?",
+          "q_ml": "കിഴക്ക് രോഗിയായ കുട്ടിയുണ്ടെങ്കിൽ അവൻ എന്ത് ചെയ്യും?",
+          "options": [
+            "行って 看病してやる",
+            "薬だけ 送る",
+            "医者を 呼びに行く",
+            "遠くから 祈る"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この詩の 作者は だれですか。",
+          "q_en": "Who is the author of this poem?",
+          "q_te": "ఈ కవిత రచయిత ఎవరు?",
+          "q_hi": "इस कविता के रचयिता कौन हैं?",
+          "q_ta": "இக்கவிதையின் ஆசிரியர் யார்?",
+          "q_ko": "이 시의 작가는 누구입니까?",
+          "q_es": "¿Quién es el autor de este poema?",
+          "q_kn": "ಈ ಕವಿತೆಯ ಲೇಖಕರು ಯಾರು?",
+          "q_ml": "ഈ കവിതയുടെ കർത്താവ് ആരാണ്?",
+          "options": [
+            "宮沢賢治 (みやざわけんじ)",
+            "夏目漱石",
+            "芥川龍之介",
+            "太宰治"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N2": [
+    {
+      "id": "r-n2-1",
+      "title": "デジタル時代の「不便」の価値 (The value of \"inconvenience\" in the digital age)",
+      "passage": "近年、あらゆるものがボタン一つで手に入るようになった。しかし、便利さが増せば増すほど、人々の満足度も高まるかというと、必ずしもそうとは限らない。むしろ、手間をかけて何かを成し遂げたときにこそ、深い充実感が得られるものだ。たとえば、地図アプリに頼らず自分の足で道を探し当てたときの喜びは、目的地に着くという結果だけでは説明できない。効率ばかりを追い求めるあまり、私たちはそうした過程の楽しみを見失いつつあるのではないだろうか。不便であることは、決して悪いことばかりではないのである。",
+      "passage_en": "In recent years, virtually everything has become obtainable at the push of a button. However, whether people's satisfaction also rises as convenience increases is not necessarily the case. Rather, it is precisely when we accomplish something by putting in effort that we gain a deep sense of fulfillment. For example, the joy of finding one's own way on foot without relying on a map app cannot be explained by the mere result of reaching the destination. In our excessive pursuit of efficiency alone, aren't we losing sight of the enjoyment of such a process? Being inconvenient is by no means only a bad thing.",
+      "questions": [
+        {
+          "q": "便利さと満足度の関係について、筆者はどう述べているか。",
+          "q_en": "What does the author say about the relationship between convenience and satisfaction?",
+          "options": [
+            "便利になればなるほど、満足度は必ず高まる。",
+            "便利になっても、満足度が高まるとは限らない。",
+            "便利さと満足度には、まったく関係がない。",
+            "不便であるほうが、常に満足度は高くなる。"
+          ],
+          "answer": 1,
+          "q_te": "సౌలభ్యం మరియు సంతృప్తి మధ్య సంబంధం గురించి రచయిత ఏమి చెప్పారు?",
+          "q_hi": "सुविधा और संतुष्टि के संबंध में लेखक का क्या कहना है?",
+          "q_ta": "வசதிக்கும் திருப்திக்கும் இடையிலான தொடர்பு குறித்து ஆசிரியர் கூறுவது என்ன?",
+          "q_ko": "편리함과 만족감의 관계에 대해 글쓴이는 무엇이라 말합니까?",
+          "q_es": "¿Qué dice el autor sobre la relación entre conveniencia y satisfacción?",
+          "q_kn": "ಸೌಕರ್ಯ ಮತ್ತು ತೃಪ್ತಿಯ ಸಂಬಂಧದ ಬಗ್ಗೆ ಲೇಖಕರು ಏನು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "സൗകര്യവും സംതൃപ്തിയും തമ്മിലുള്ള ബന്ധത്തെക്കുറിച്ച് ലേഖകൻ പറയുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "地図アプリの例を通して、筆者が言いたいことは何か。",
+          "q_en": "What is the author trying to say through the example of the map app?",
+          "options": [
+            "地図アプリを使うと、かえって道に迷いやすい。",
+            "目的地に早く着くことが、何よりも重要である。",
+            "道を探し当てる過程そのものにも喜びがある。",
+            "自分の足で歩くのは疲れるので避けるべきだ。"
+          ],
+          "answer": 2,
+          "q_te": "మ్యాప్ యాప్ ఉదాహరణ ద్వారా రచయిత ఏమి చెప్పదలిచారు?",
+          "q_hi": "मानचित्र ऐप के उदाहरण से लेखक क्या समझाना चाहते हैं?",
+          "q_ta": "வரைபட செயலி மூலம் ஆசிரியர் என்ன சொல்ல வருகிறார்?",
+          "q_ko": "지도 앱 예시를 통해 필자가 전달하고자 하는 바는 무엇입니까?",
+          "q_es": "¿Qué intenta transmitir el autor a través del ejemplo de la app de mapas?",
+          "q_kn": "ನಕ್ಷೆ ಆ್ಯಪ್ ಉದಾಹರಣೆಯ ಮೂಲಕ ಲೇಖಕರು ಏನನ್ನು ವಿವರಿಸಿದ್ದಾರೆ?",
+          "q_ml": "മാപ്പ് ആപ്പ് ഉദാഹരണത്തിലൂടെ ലേഖകൻ എന്താണ് വ്യക്തമാക്കുന്നത്?"
+        },
+        {
+          "q": "この文章で筆者が最も伝えようとしていることは何か。",
+          "q_en": "What is the author most trying to convey in this passage?",
+          "options": [
+            "不便さにも価値があり、過程を楽しむことが大切だ。",
+            "効率を追求することこそ、現代人に課された使命だ。",
+            "デジタル技術は、そもそも使うべきではない。",
+            "便利な道具は、すべて手放したほうがよい。"
+          ],
+          "answer": 0,
+          "q_te": "ఈ భాగం ద్వారా రచయిత ముఖ్యంగా ఏ సందేశాన్ని ఇవ్వాలనుకుంటున్నారు?",
+          "q_hi": "इस परिच्छेद में लेखक का मुख्य संदेश क्या है?",
+          "q_ta": "இந்த பத்தியில் ஆசிரியரின் முதன்மை கருத்து என்ன?",
+          "q_ko": "이 글에서 필자가 가장 강조하고자 하는 핵심은 무엇입니까?",
+          "q_es": "¿Qué es lo que más desea transmitir el autor en este texto?",
+          "q_kn": "ಈ ಲೇಖನದ ಮುಖ್ಯ ಸಂದೇಶವೇನು?",
+          "q_ml": "ഈ ഭാഗത്തിലൂടെ ലേഖകൻ നൽകുന്ന പ്രധാന സന്ദേശം എന്താണ്?"
+        }
+      ],
+      "passage_te": "డిజిటల్ యుగంలో 'అసౌకర్యం' యొక్క విలువ: ఇటీవలి సంవత్సరాలలో సాంకేతిక పరిజ్ఞానం ద్వారా దాదాపు ప్రతిదీ సులభంగా పొందగలుగుతున్నాము. కానీ సౌలభ్యం పెరిగేకొద్దీ మనుషులలో సంతృప్తి స్థాయి నిజంగా పెరుగుతోందా? మ్యాప్ యాప్‌ను ఉదాహరణగా తీసుకుంటే, గమ్యస్థానానికి నేరుగా చేరుకోవడం కంటే, దారితప్పి కొత్త సందులను అన్వేషించడంలోనే అసలైన ఆనందం మరియు అనుభవం దాగి ఉంటుందని రచయిత వాదిస్తున్నారు.",
+      "passage_hi": "डिजिटल युग में 'असुविधा' का महत्व: हाल के वर्षों में तकनीक के माध्यम से लगभग सब कुछ आसानी से सुलभ हो गया है। लेकिन क्या सुविधा बढ़ने से संतुष्टि भी बढ़ी है? मानचित्र ऐप का उदाहरण देते हुए लेखक का तर्क है कि सीधे गंतव्य पर पहुँचने की तुलना में कभी-कभार भटकने और अनजाने रास्तों को खोजने में ही वास्तविक आनंद और गहरा अनुभव छिपा होता है।",
+      "passage_ta": "டிஜிட்டல் யுகத்தில் 'சிரமத்தின்' மதிப்பு: தொழில்நுட்ப வளர்ச்சியால் அனைத்தும் எளிதாகக் கிடைக்கிறது. ஆனால் வசதிகள் பெருகுவதால் உண்மையான மனநிறைவு கூடுகிறதா? வரைபடச் செயலியை உதாரணமாகக் கொண்டு, நேராக இலக்கை அடைவதை விட, வழியைத் தவறவிட்டு புதிய சந்துகளைக் கண்டறிவதிலேயே உண்மையான கற்றலும் அனுபவமும் உள்ளது என்று எழுத்தாளர் வாதிடுகிறார்.",
+      "passage_ko": "디지털 시대의 '불편'의 가치: 최근 기술의 발전으로 거의 모든 것을 편리하게 손에 넣을 수 있게 되었습니다. 그러나 편리함이 증대됨에 따라 만족감도 진정으로 높아졌을까요? 지도 앱의 예를 통해 글쓴이는 목적지에 곧장 도착하는 것보다 길을 헤매며 새로운 골목을 발견하는 과정에 진정한 배움과 깊은 경험이 존재한다고 역설합니다.",
+      "passage_es": "El valor del 'inconveniente' en la era digital: En años recientes la tecnología ha hecho casi todo accesible de forma instantánea. No obstante, ¿crece la satisfacción al mismo ritmo que la comodidad? Con el ejemplo de la app de mapas, el autor argumenta que desviarse y explorar callejones desconocidos encierra un aprendizaje y un gozo genuinos superiores al mero llegar directo a destino.",
+      "passage_kn": "ಡಿಜಿಟಲ್ ಯುಗದಲ್ಲಿ 'ಅನಾನುಕೂಲ'ದ ಮೌಲ್ಯ: ಇತ್ತೀಚಿನ ತಂತ್ರಜ್ಞಾನದಿಂದ ಎಲ್ಲವೂ ಸುಲಭವಾಗಿ ಲಭ್ಯವಾಗುತ್ತಿದೆ. ಆದರೆ ಸೌಕರ್ಯ ಹೆಚ್ಚಾದಂತೆ ತೃಪ್ತಿಯ ಮಟ್ಟ ನಿಜವಾಗಿಯೂ ಹೆಚ್ಚಿದೆಯೇ? ನಕ್ಷೆ ಅಪ್ಲಿಕೇಶನ್ ಉದಾಹರಣೆ ನೀಡಿ, ನೇರವಾಗಿ ಗಮ್ಯ ತಲುಪುವುದಕ್ಕಿಂತ ದಾರಿ ತಪ್ಪಿ ಹೊಸ ಓಣಿಗಳನ್ನು ಹುಡುಕುವುದರಲ್ಲೇ ನಿಜವಾದ ಆನಂದ ಮತ್ತು ಅನುಭವವಿದೆ ಎಂದು ಲೇಖಕರು ವಾದಿಸುತ್ತಾರೆ.",
+      "passage_ml": "ഡിജിറ്റൽ യുഗത്തിലെ 'അസൗകര്യങ്ങളുടെ' മൂല്യം: സാങ്കേതികവിദ്യയിലൂടെ എല്ലാം വിരൽത്തുമ്പിൽ എത്തുന്ന കാലമാണിത്. എന്നാൽ സൗകര്യങ്ങൾ കൂടുമ്പോൾ സംതൃപ്തി വർദ്ധിക്കുന്നുണ്ടോ? മാപ്പ് ആപ്പ് ഉദാഹരണമാക്കി, ലക്ഷ്യസ്ഥാനത്തേക്ക് നേരിട്ടെത്തുന്നതിനേക്കാൾ വഴിതെറ്റി പുതിയ വഴികൾ കണ്ടെത്തുന്നതിലാണ് യഥാർത്ഥ സന്തോഷവും അനുഭവവും എന്ന് ലേഖകൻ വാദിക്കുന്നു."
+    },
+    {
+      "id": "r-n2-2",
+      "title": "リモートワークとオフィスの意味 (Remote work and the meaning of the office)",
+      "passage": "感染症の流行をきっかけに在宅勤務が急速に広まり、通勤に費やしていた時間を有効に使えるようになったと歓迎する声は多い。その一方で、同じ職場の仲間と顔を合わせる機会が減ったことで、かえって孤独を感じる人も少なくないという。ある調査によれば、在宅勤務を経験した会社員の約六割が「雑談のような何気ないやりとりこそ、仕事を円滑に進める上で欠かせなかった」と答えている。効率の面ばかりが注目されがちだが、オフィスという場所は、単に作業をするためだけのものではなかったわけだ。働き方が多様化する今、企業には両者の利点をどう組み合わせるかが問われている。",
+      "passage_en": "With the outbreak of the epidemic as a trigger, working from home spread rapidly, and there are many voices welcoming the fact that people can now make effective use of the time they had spent commuting. On the other hand, it is said that quite a few people feel lonely instead, because their opportunities to meet colleagues from the same workplace face to face have decreased. According to one survey, about sixty percent of company employees who experienced working from home answered that \"casual exchanges such as small talk were exactly what was indispensable for carrying work forward smoothly.\" Although the aspect of efficiency tends to get all the attention, the office as a place was, after all, not merely something for doing work. Now that working styles are diversifying, companies are being asked how to combine the merits of both.",
+      "questions": [
+        {
+          "q": "在宅勤務が歓迎される理由として、本文で挙げられているのは何か。",
+          "q_en": "What is given in the passage as a reason working from home is welcomed?",
+          "options": [
+            "給料が以前より上がったから。",
+            "通勤に使っていた時間を有効に使えるようになったから。",
+            "同僚と顔を合わせる機会が増えたから。",
+            "任される仕事の量が減ったから。"
+          ],
+          "answer": 1,
+          "q_te": "ఇంటి నుండి పనిచేయడం ఆహ్వానించదగినదిగా మారడానికి కారణం ఏమిటి?",
+          "q_hi": "घर से काम करने का स्वागत किए जाने का क्या कारण बताया गया है?",
+          "q_ta": "வீட்டிலிருந்து வேலை செய்வது வரவேற்கப்படுவதற்கான காரணம் என்ன?",
+          "q_ko": "재택근무가 환영받는 이유로 본문에 언급된 것은 무엇입니까?",
+          "q_es": "¿Qué razón se da en el texto para la buena acogida del teletrabajo?",
+          "q_kn": "ಮನೆಯಿಂದ ಕೆಲಸ ಮಾಡುವುದನ್ನು ಸ್ವಾಗತಿಸಲು ಕಾರಣವೇನು?",
+          "q_ml": "വർക്ക് ഫ്രം ഹോം രീതി സ്വാഗതം ചെയ്യപ്പെടാൻ കാരണമെന്താണ്?"
+        },
+        {
+          "q": "調査の結果から分かることは何か。",
+          "q_en": "What can be understood from the results of the survey?",
+          "options": [
+            "多くの会社員が、雑談は仕事に不要だと考えている。",
+            "在宅勤務者の大半は、孤独をまったく感じていない。",
+            "何気ない会話が、仕事を円滑に進めるのに役立っていた。",
+            "六割の社員が、在宅勤務そのものに反対している。"
+          ],
+          "answer": 2,
+          "q_te": "సర్వే ఫలితాల నుండి ఏమి అర్థం చేసుకోవచ్చు?",
+          "q_hi": "सर्वेक्षण के परिणामों से क्या समझा जा सकता है?",
+          "q_ta": "கணக்கெடுப்பு முடிவுகளிலிருந்து என்ன புரிந்து கொள்ள முடிகிறது?",
+          "q_ko": "설문조사 결과로부터 무엇을 알 수 있습니까?",
+          "q_es": "¿Qué se deduce de los resultados de la encuesta?",
+          "q_kn": "ಸಮೀಕ್ಷೆಯ ಫಲಿತಾಂಶದಿಂದ ಏನು ತಿಳಿದುಬರುತ್ತದೆ?",
+          "q_ml": "സർവേ ഫലങ്ങളിൽ നിന്ന് എന്താണ് മനസ്സിലാക്കാൻ കഴിയുന്നത്?"
+        },
+        {
+          "q": "筆者の考えに合うものはどれか。",
+          "q_en": "Which option matches the author's view?",
+          "options": [
+            "オフィスは、作業をする以外の役割も担っていた。",
+            "在宅勤務は、あらゆる面でオフィス勤務より優れている。",
+            "企業は、オフィスを完全に廃止すべきである。",
+            "効率だけを重視すれば、問題はすべて解決する。"
+          ],
+          "answer": 0,
+          "q_te": "రచయిత దృక్పథానికి సరిపోయే ఎంపిక ఏది?",
+          "q_hi": "लेखक के दृष्टिकोण से कौन सा विकल्प मेल खाता है?",
+          "q_ta": "ஆசிரியரின் கருத்தோடு ஒத்துப்போகும் கருத்து எது?",
+          "q_ko": "필자의 견해와 일치하는 선택지는 어느 것입니까?",
+          "q_es": "¿Qué opción coincide con el punto de vista del autor?",
+          "q_kn": "ಲೇಖಕರ ದೃಷ್ಟಿಕೋನಕ್ಕೆ ಸರಿಹೊಂದುವ ಆಯ್ಕೆ ಯಾವುದು?",
+          "q_ml": "ലേഖകന്റെ വീക്ഷണത്തോട് യോജിക്കുന്ന പ്രസ്താവന ഏതാണ്?"
+        }
+      ],
+      "passage_te": "రిమోట్ వర్క్ మరియు ఆఫీస్ యొక్క అంతరార్థం: మహమ్మారి కారణంగా రిమోట్ వర్క్ వేగంగా విస్తరించింది. ప్రయాణ సమయం ఆదా కావడం ఉద్యోగులకు సౌకర్యంగా ఉన్నప్పటికీ, ముఖాముఖి సంభాషణలు తగ్గడం వల్ల సంస్థాగత బంధాలు బలహీనపడుతున్నాయని సర్వేలు సూచిస్తున్నాయి. అందుకే హైబ్రిడ్ పని విధానం భవిష్యత్తులో స్థిరపడుతుందని భావిస్తున్నారు.",
+      "passage_hi": "रिमोट वर्क और कार्यालय का अर्थ: महामारी के बाद घर से काम करने का चलन तेज़ी से बढ़ा। यात्रा का समय बचने से कर्मचारी खुश हैं, लेकिन आमने-सामने के संवाद में कमी से संगठनात्मक जुड़ाव कमज़ोर हो रहा है। इसलिए भविष्य में हाइब्रिड कार्यशैली ही सबसे उपयुक्त मानी जा रही है।",
+      "passage_ta": "தொலைதூரப் பணியும் அலுவலகத்தின் முக்கியத்துவமும்: பெருந்தொற்றைத் தொடர்ந்து வீட்டிலிருந்து வேலை செய்யும் முறை அதிகரித்தது. பயண நேரம் மிச்சமாவது வசதியாக இருந்தாலும், நேரடி உரையாடல்கள் குறைவதால் நிறுவனப் பிணைப்பு குறைகிறது. எனவே கலப்புப் பணி முறையே எதிர்காலத்திற்கான தீர்வாகக் கருதப்படுகிறது.",
+      "passage_ko": "원격 근무와 사무실의 의미: 팬데믹을 계기로 재택근무가 급속히 확산되었습니다. 통근 시간 절약으로 환영받았으나 대면 소통이 줄면서 조직의 유대감이 약화되고 있다는 설문 결과가 있습니다. 따라서 하이브리드 근무 형태가 미래의 표준이 될 것으로 보입니다.",
+      "passage_es": "El teletrabajo y el sentido de la oficina: A raíz de la pandemia, el trabajo remoto se expandió rápidamente. Aunque se valora el ahorro de desplazamientos, la reducción del contacto cara a cara debilita la cohesión organizativa. Por ello, el modelo híbrido se perfila como la solución de futuro.",
+      "passage_kn": "ರಿಮೋಟ್ ಕೆಲಸ ಮತ್ತು ಕಚೇರಿಯ ಮಹತ್ವ: ಸಾಂಕ್ರಾಮಿಕ ರೋಗದ ನಂತರ ಮನೆಯಿಂದ ಕೆಲಸ ಮಾಡುವ ಪದ್ಧತಿ ಹೆಚ್ಚಿತು. ಪ್ರಯಾಣದ ಸಮಯ ಉಳಿಯುವುದು ಅನುಕೂಲವಾದರೂ, ಮುಖಾಮುಖಿ ಸಂವಹನದ ಕೊರತೆಯಿಂದ ಕಚೇರಿಯ ಒಡನಾಟ ಕಡಿಮೆಯಾಗುತ್ತಿದೆ. ಆದ್ದರಿಂದ ಹೈಬ್ರಿಡ್ ಕೆಲಸದ ವಿಧಾನವೇ ಮುಂದಿನ ದಾರಿಯಾಗಿದೆ.",
+      "passage_ml": "റിമോട്ട് വർക്കും ഓഫീസിന്റെ പ്രാധാന്യവും: മഹാമാരിക്ക് ശേഷം വർക്ക് ഫ്രം ഹോം രീതി വ്യാപകമായി. യാത്ര ഒഴിവാകുന്നത് നല്ലതാണെങ്കിലും, നേരിട്ടുള്ള ആശയവിനിമയം കുറയുന്നത് കമ്പനിയുടെ ഐക്യത്തെ ബാധിക്കുന്നു. അതുകൊണ്ട് ഹൈബ്രിഡ് തൊഴിൽ രീതിയാണ് ഭാവിയുടെ മാതൃക."
+    },
+    {
+      "id": "r-n2-3",
+      "title": "若者の読書離れと図書館 (Young people's turn away from reading and the library)",
+      "passage": "「若者の活字離れ」ということばをよく耳にする。確かに、スマートフォンの普及によって、まとまった文章をじっくり読む時間は減っているのかもしれない。しかし、若者が文字を読まなくなったと結論づけるのは早計だろう。実際には、SNSやニュースサイトを通じて、以前より多くの情報に触れている面もあるからだ。問題は読む量そのものよりも、短い文章を次々と読み流す習慣が身につき、一つのテーマについて深く考える機会が失われつつあることにある。図書館が今、単に本を貸し出す場から、人々が落ち着いて思考を深められる場へと役割を変えようとしているのも、こうした背景があってのことなのである。",
+      "passage_en": "We often hear the phrase \"young people's turn away from the printed word.\" It is true that, with the spread of smartphones, the time to read substantial texts carefully may well be decreasing. However, it would be hasty to conclude that young people have stopped reading text. In reality, there is also the aspect that, through social media and news sites, they are exposed to more information than before. The problem lies not so much in the amount they read as in the fact that the habit of skimming through one short piece of text after another has taken hold, and opportunities to think deeply about a single theme are gradually being lost. It is precisely against such a background that libraries are now trying to shift their role from mere lenders of books to places where people can calmly deepen their thinking.",
+      "questions": [
+        {
+          "q": "「若者の活字離れ」について、筆者はどう考えているか。",
+          "q_en": "What does the author think about \"young people's turn away from the printed word\"?",
+          "options": [
+            "若者は、もう文字をまったく読まなくなった。",
+            "若者が文字を読まないと決めつけるのは早すぎる。",
+            "スマートフォンは、読書にとって有害なものだ。",
+            "若者は、昔よりも本をよく読むようになった。"
+          ],
+          "answer": 1,
+          "q_te": "పుస్తకాలకు దూరమవడం గురించి రచయిత అభిప్రాయం ఏమిటి?",
+          "q_hi": "मुद्रित शब्दों से युवाओं की दूरी पर लेखक का क्या विचार है?",
+          "q_ta": "நூல்களை வாசிப்பதில் இருந்து விலகுவது பற்றி ஆசிரியர் என்ன நினைக்கிறார்?",
+          "q_ko": "'활자 이탈'에 대해 필자는 어떻게 생각합니까?",
+          "q_es": "¿Qué opina el autor sobre el distanciamiento de la lectura en los jóvenes?",
+          "q_kn": "ಪುಸ್ತಕಗಳಿಂದ ದೂರವಾಗುವ ಬಗ್ಗೆ ಲೇಖಕರ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "വായനയിൽ നിന്ന് അകലുന്നതിനെക്കുറിച്ച് ലേഖകന്റെ അഭിപ്രായം എന്താണ്?"
+        },
+        {
+          "q": "筆者が最も問題だと考えていることは何か。",
+          "q_en": "What does the author consider the biggest problem?",
+          "options": [
+            "若者が触れる情報の量が、以前より減っていること。",
+            "図書館を利用する人の数が、年々減っていること。",
+            "SNSで得られる情報が、正確でない場合が多いこと。",
+            "短い文章を読み流し、深く考える機会が減っていること。"
+          ],
+          "answer": 3,
+          "q_te": "రచయిత దేనిని అతిపెద్ద సమస్యగా భావిస్తున్నారు?",
+          "q_hi": "लेखक सबसे बड़ी समस्या किसे मानते हैं?",
+          "q_ta": "ஆசிரியர் மிக முக்கியமான பிரச்சனையாக எதைக் கருதுகிறார்?",
+          "q_ko": "필자가 가장 큰 문제로 여기는 것은 무엇입니까?",
+          "q_es": "¿Qué considera el autor el mayor problema?",
+          "q_kn": "ಲೇಖಕರು ಯಾವುದನ್ನು ದೊಡ್ಡ ಸಮಸ್ಯೆಯಾಗಿ ಕಾಣುತ್ತಾರೆ?",
+          "q_ml": "ഏറ്റവും വലിയ പ്രശ്നമായി ലേഖകൻ കാണുന്നത് എന്തിനെയാണ്?"
+        },
+        {
+          "q": "図書館の役割の変化について、本文の内容に合うものはどれか。",
+          "q_en": "Which option matches the passage regarding the change in the library's role?",
+          "options": [
+            "本を貸し出すことを、これからはやめようとしている。",
+            "人々が落ち着いてじっくり考えられる場になろうとしている。",
+            "若者だけが利用できる特別な場に変わろうとしている。",
+            "SNSの利用を全面的に禁止する場になろうとしている。"
+          ],
+          "answer": 1,
+          "q_te": "గ్రంథాలయాల పాత్రలో మార్పు గురించి సరైనది ఏది?",
+          "q_hi": "पुस्तकालय की भूमिका में परिवर्तन के संबंध में क्या सही है?",
+          "q_ta": "நூலகத்தின் பங்கு மாறுவது தொடர்பாக எது சரியானது?",
+          "q_ko": "도서관의 역할 변화와 관련하여 본문과 일치하는 것은 무엇입니까?",
+          "q_es": "¿Qué coincide con el texto respecto al cambio de rol de las bibliotecas?",
+          "q_kn": "ಗ್ರಂಥಾಲಯಗಳ ಪಾತ್ರದ ಬದಲಾವಣೆಯ ಬಗ್ಗೆ ಯಾವುದು ಸರಿ?",
+          "q_ml": "ലൈബ്രറിയുടെ പങ്കിലുള്ള മാറ്റത്തെക്കുറിച്ച് ശരിയായത് ഏതാണ്?"
+        }
+      ],
+      "passage_te": "యువతలో పుస్తక పఠనం తగ్గడం మరియు గ్రంథాలయాల పాత్ర: యువత పుస్తకాలకు దూరమవుతోందనే ఆందోళన తరచుగా వినబడుతుంది. అయితే ఇంటర్నెట్ ద్వారా వారు నిరంతరం సమాచారాన్ని చదువుతూనే ఉన్నారు. సమస్య చదవడం కాకుండా, సుదీర్ఘమైన గ్రంథాలను లోతుగా ఆలోచిస్తూ చదివే ఏకాగ్రత కొరవడటమే. గ్రంథాలయాలు కేవలం పుస్తకాల గిడ్డంగులుగా కాక, మేధోమథన కేంద్రాలుగా మారాలి.",
+      "passage_hi": "युवाओं की पठन से दूरी और पुस्तकालय: यह अक्सर कहा जाता है कि युवा पुस्तकों से दूर हो रहे हैं। फिर भी वे इंटरनेट पर निरंतर सामग्री पढ़ते हैं। समस्या पढ़ने की नहीं, बल्कि लंबे ग्रंथों को गहराई से समझने की एकाग्रता की कमी है। पुस्तकालयों को ज्ञान और विमर्श के आधुनिक केंद्र बनना होगा।",
+      "passage_ta": "இளைஞர்களின் வாசிப்புக் குறைவும் நூலகங்களும்: இளைஞர்கள் புத்தகங்களை வாசிப்பதில்லை என்ற குற்றச்சாட்டு உள்ளது. ஆனால் இணையத்தில் தொடர்ந்து வாசிக்கின்றனர். பிரச்சனை வாசிப்பில் இல்லை, ஆழ்ந்து சிந்திக்கும் கவனக்குறைவிலேயே உள்ளது. நூலகங்கள் கலந்துரையாடல் மையங்களாக மாற வேண்டும்.",
+      "passage_ko": "청년층의 활자 이탈과 도서관: 젊은이들이 책을 읽지 않는다는 우려가 많지만, 그들은 인터넷으로 여전히 방대한 글을 읽고 있습니다. 문제는 글을 안 읽는 것이 아니라 긴 호흡의 텍스트를 깊이 사유하는 집중력의 상실입니다. 도서관은 단순한 보관소가 아닌 소통의 공간으로 변모해야 합니다.",
+      "passage_es": "El alejamiento de la lectura juvenil y las bibliotecas: A menudo se dice que los jóvenes no leen libros, aunque leen constantemente en internet. El verdadero problema no es la falta de lectura, sino la pérdida de concentración para asimilar textos largos y reflexivos. Las bibliotecas deben evolucionar hacia centros comunitarios de debate.",
+      "passage_kn": "ಯುವಜನರಲ್ಲಿ ಪುಸ್ತಕ ಓದುವಿಕೆ ಕುಂಠಿತ ಮತ್ತು ಗ್ರಂಥಾಲಯಗಳು: ಯುವಕರು ಪುಸ್ತಕಗಳಿಂದ ದೂರವಾಗುತ್ತಿದ್ದಾರೆ ಎಂದು ಹೇಳಲಾಗುತ್ತದೆ. ಆದರೆ ಅವರು ಅಂತರ್ಜಾಲದಲ್ಲಿ ಓದುತ್ತಲೇ ಇದ್ದಾರೆ. ಸಮಸ್ಯೆ ಓದುವುದಲ್ಲ, ಗಂಭೀರ ವಿಷಯಗಳನ್ನು ಆಳವಾಗಿ ಗ್ರಹಿಸುವ ಏಕಾಗ್ರತೆಯ ಕೊರತೆ. ಗ್ರಂಥಾಲಯಗಳು ಕೇವಲ ಸಂಗ್ರಹಾಲಯವಾಗದೆ ಚಿಂತನಾ ಕೇಂದ್ರಗಳಾಗಬೇಕು.",
+      "passage_ml": "യുവതലമുറയും വായനയും ലൈബ്രറിയുടെ പങ്കും: ഇന്നത്തെ തലമുറ പുസ്തകം വായിക്കുന്നില്ല എന്നൊരു ആക്ഷേപമുണ്ട്. എന്നാൽ അവർ ഇന്റർനെറ്റിൽ വായിക്കുന്നുണ്ട്. വലിയ പുസ്തകങ്ങൾ ആഴത്തിൽ വായിക്കാനുള്ള ശ്രദ്ധക്കുറവാണ് യഥാർത്ഥ പ്രശ്നം. ലൈബ്രറികൾ കേവലം പുസ്തകശാലകളാകാതെ സംവാദ കേന്ദ്രങ്ങളായി മാറണം."
+    },
+    {
+      "id": "r-n2-4",
+      "title": "テレワークがもたらしたもの (What remote work brought about)",
+      "passage": "新型の感染症をきっかけに急速に広まったテレワークは、単に働く場所を変えただけのものではない。通勤に費やしていた時間が減った分、家族と過ごす時間が増えたという声がある一方で、仕事と私生活の境界があいまいになり、かえって長時間労働につながっているという指摘も少なくない。会社にとっても、社員が顔を合わせる機会が減ったことで、これまで自然に共有されていた情報や技術が若手に伝わりにくくなったという。とはいえ、一度その便利さを知った以上、以前とまったく同じ働き方に戻すわけにはいかないだろう。今後は、出社と在宅をどう組み合わせるかが、それぞれの企業に問われることになる。",
+      "passage_en": "Telework, which spread rapidly in the wake of a new infectious disease, is not merely a matter of changing where people work. While some say that, because the time they used to spend commuting has decreased, they now have more time to spend with family, there are also no few observations that the boundary between work and private life has grown blurred, which has, on the contrary, led to longer working hours. For companies too, it is said that because employees now have fewer chances to meet face to face, information and skills that used to be shared naturally have become harder to pass on to younger workers. That said, now that people have come to know its convenience, it will probably be impossible to go back to exactly the same way of working as before. From now on, each company will be asked how to combine coming into the office with working from home.",
+      "questions": [
+        {
+          "q": "テレワークの問題点として、本文で述べられているものはどれか。",
+          "q_en": "Which of the following is mentioned in the text as a problem of telework?",
+          "options": [
+            "通勤時間が以前より長くなったこと",
+            "仕事と私生活の区別がつきにくくなったこと",
+            "家族と過ごす時間が必ず減ること",
+            "給料が下がってしまったこと"
+          ],
+          "answer": 1,
+          "q_te": "టెలివర్క్ సమస్యగా పేర్కొన్నది ఏది?",
+          "q_hi": "टेलीवर्क की समस्या के रूप में क्या उल्लेख किया गया है?",
+          "q_ta": "தொலைதூரப் பணியின் பிரச்சனையாகக் கூறப்படுவது எது?",
+          "q_ko": "텔레워크의 문제점으로 언급된 것은 무엇입니까?",
+          "q_es": "¿Qué se menciona en el texto como problema del teletrabajo?",
+          "q_kn": "ಟೆಲಿವರ್ಕ್‌ನ ಸಮಸ್ಯೆಯಾಗಿ ಏನನ್ನು ಉಲ್ಲೇಖಿಸಲಾಗಿದೆ?",
+          "q_ml": "ടെലിവർക്കിന്റെ പ്രശ്നമായി ചൂണ്ടിക്കാണിക്കുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "会社にとっての影響として、本文で挙げられているものはどれか。",
+          "q_en": "Which of the following is cited in the text as an effect on companies?",
+          "options": [
+            "情報や技術が若手に伝わりにくくなったこと",
+            "社員の数が急に増えたこと",
+            "オフィスの家賃が上がったこと",
+            "若手の給料が上がったこと"
+          ],
+          "answer": 0,
+          "q_te": "కంపెనీలపై పడే ప్రభావం ఏమిటి?",
+          "q_hi": "कंपनियों पर क्या प्रभाव पड़ता है?",
+          "q_ta": "நிறுவனங்களின் மீதான தாக்கம் என்ன?",
+          "q_ko": "기업에 미치는 영향으로 언급된 것은 무엇입니까?",
+          "q_es": "¿Qué efecto en las empresas se cita en el texto?",
+          "q_kn": "ಕಂಪನಿಗಳ ಮೇಲಾಗುವ ಪರಿಣಾಮವೇನು?",
+          "q_ml": "കമ്പനികൾക്കുണ്ടാകുന്ന ആഘാതം എന്താണ്?"
+        },
+        {
+          "q": "筆者は今後の働き方についてどう考えているか。",
+          "q_en": "What does the author think about future ways of working?",
+          "options": [
+            "以前とまったく同じ働き方に戻すべきだ",
+            "すべての仕事を在宅にするべきだ",
+            "出社と在宅をどう組み合わせるかが課題になる",
+            "テレワークはすぐになくなるだろう"
+          ],
+          "answer": 2,
+          "q_te": "భవిష్యత్ పనితీరుపై రచయిత అభిప్రాయం ఏమిటి?",
+          "q_hi": "भविष्य की कार्यशैली पर लेखक का क्या विचार है?",
+          "q_ta": "எதிர்கால பணிமுறை குறித்து ஆசிரியர் என்ன கருதுகிறார்?",
+          "q_ko": "향후 근무 형태에 대해 필자는 어떻게 생각합니까?",
+          "q_es": "¿Qué piensa el autor sobre las futuras formas de trabajar?",
+          "q_kn": "ಮುಂದಿನ ಕೆಲಸದ ಶೈಲಿಯ ಬಗ್ಗೆ ಲೇಖಕರ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "ഭാവിയിലെ തൊഴിൽ രീതികളെക്കുറിച്ച് ലേഖകൻ എന്താണ് കരുതുന്നത്?"
+        }
+      ],
+      "passage_te": "టెలివర్క్ తెచ్చిన మార్పులు: టెలివర్క్ శ్రామిక జీవనంలో వ్యక్తిగత స్వేచ్ఛను తెచ్చినప్పటికీ, పని మరియు వ్యక్తిగత జీవితం మధ్య సరిహద్దులను అస్పష్టం చేసింది. సహోద్యోగులతో అనధికారిక సంభాషణలు లోపించడం వల్ల కొత్త ఆవిష్కరణలకు అవకాశాలు తగ్గుతున్నాయని వ్యాపారవేత్తలు భావిస్తున్నారు.",
+      "passage_hi": "टेलीवर्क के परिणाम: टेलीवर्क ने कामकाजी जीवन में लचीलापन दिया, लेकिन कार्य और व्यक्तिगत जीवन के बीच की सीमा को धुंधला कर दिया। अनौपचारिक चर्चाओं की कमी के कारण नए नवाचारों की संभावनाएँ घट रही हैं।",
+      "passage_ta": "தொலைதூர வேலை தந்த விளைவுகள்: தொலைதூர வேலை வாழ்க்கையில் சுதந்திரத்தைத் தந்தாலும், வேலைக்கும் சொந்த வாழ்க்கைக்கும் இடையிலான எல்லையை மங்கச் செய்துள்ளது. சக ஊழியர்களுடனான இயல்பான உரையாடல்கள் இல்லாததால் புதிய கண்டுபிடிப்புகள் குறைகின்றன.",
+      "passage_ko": "텔레워크가 가져온 것: 텔레워크는 유연성을 부여했으나 공사의 경계를 모호하게 만들었습니다. 동료 간의 잡담과 비공식적 교류가 줄어들어 창의적인 혁신의 기회가 감소하고 있다는 지적이 나옵니다.",
+      "passage_es": "Lo que trajo el teletrabajo: Aunque aportó flexibilidad, desdibujó la frontera entre vida laboral y personal. La falta de charlas informales de pasillo entre colegas frena la chispa de la innovación.",
+      "passage_kn": "ಟೆಲಿವರ್ಕ್‌ನ ಪರಿಣಾಮಗಳು: ಮನೆಯಿಂದ ಕೆಲಸ ಮಾಡುವುದು ಸ್ವಾತಂತ್ರ್ಯ ನೀಡಿದರೂ, ಕಚೇರಿ ಕೆಲಸ ಮತ್ತು ವೈಯಕ್ತಿಕ ಜೀವನದ ಗಡಿಯನ್ನು ಅಳಿಸಿಹಾಕಿದೆ. ಸಹೋದ್ಯೋಗಿಗಳ ಜೊತೆ ಅನೌಪಚಾರಿಕ ಮಾತುಕತೆಯಿಲ್ಲದೆ ಹೊಸ ಆವಿಷ್ಕಾರಗಳು ಕಡಿಮೆಯಾಗುತ್ತಿವೆ.",
+      "passage_ml": "ടെലിവർക്ക് കൊണ്ടുവന്ന മാറ്റങ്ങൾ: ടെലിവർക്ക് കൂടുതൽ സ്വാതന്ത്ര്യം നൽകിയെങ്കിലും ജോലിയും കുടുംബജീവിതവും തമ്മിലുള്ള അതിർവരമ്പുകൾ മായ്ച്ചുകളഞ്ഞു. സഹപ്രവർത്തകരുമായുള്ള സൗഹൃദ സംഭാഷണങ്ങൾ ഇല്ലാത്തത് പുതിയ ആശയങ്ങളുടെ പിറവിയെ തടസ്സപ്പെടുത്തുന്നു."
+    },
+    {
+      "id": "r-n2-5",
+      "title": "ローカル線の岐路 (A local railway line at a crossroads)",
+      "passage": "地方を走るローカル線の多くが、存続の危機に立たされている。利用者が減り続け、運賃収入だけでは路線を維持できないというのがその理由である。もっとも、赤字だからといって、すぐに廃止してよいというものではない。通学する高校生や、車を運転できない高齢者にとって、鉄道は生活を支える大切な足だからだ。一方、バスに切り替えれば費用を抑えられるという意見もあり、地元の住民の間でも考え方が分かれている。鉄道会社と自治体、そして住民が、それぞれの立場を超えて話し合わない限り、この問題の解決は難しいと言わざるを得ない。",
+      "passage_en": "Many local railway lines running through rural areas are being placed in a crisis of survival. The reason is that, with the number of users continuing to fall, the lines cannot be maintained on fare revenue alone. That said, just because a line is running a deficit does not mean it may be abolished at once. For the high school students who commute to school and for the elderly who cannot drive, the railway is an important means of getting around that supports their lives. On the other hand, there is also the view that switching to buses would keep costs down, and even among local residents opinion is divided. Unless the railway companies, the local governments, and the residents talk things over, going beyond their respective positions, one cannot but say that solving this problem will be difficult.",
+      "questions": [
+        {
+          "q": "ローカル線が危機に立たされている理由は何か。",
+          "q_en": "Why are local railway lines being placed in crisis?",
+          "options": [
+            "運賃が高すぎて客が怒っているから",
+            "利用者が減り、運賃収入だけでは維持できないから",
+            "バスの方が速くて快適だから",
+            "運転手が足りなくなったから"
+          ],
+          "answer": 1,
+          "q_te": "గ్రామీణ రైల్వే లైన్లు ఎందుకు సంక్షోభంలో పడుతున్నాయి?",
+          "q_hi": "स्थानीय रेल लाइनें संकट में क्यों हैं?",
+          "q_ta": "கிராமப்புற ரயில் பாதைகள் ஏன் நெருக்கடியில் உள்ளன?",
+          "q_ko": "지방 철도 노선들이 위기에 처한 이유는 무엇입니까?",
+          "q_es": "¿Por qué están en crisis las líneas ferroviarias locales?",
+          "q_kn": "ಗ್ರಾಮೀಣ ರೈಲ್ವೆ ಮಾರ್ಗಗಳು ಬಿಕ್ಕಟ್ಟಿಗೆ ಸಿಲುಕಲು ಕಾರಣವೇನು?",
+          "q_ml": "ഗ്രാമ റെയിൽവേ പ്രതിസന്ധിയിലാകാൻ കാരണമെന്താണ്?"
+        },
+        {
+          "q": "赤字のローカル線について、筆者はどう考えているか。",
+          "q_en": "What does the author think about loss-making local lines?",
+          "options": [
+            "赤字でもすぐに廃止してよいとは限らない",
+            "赤字ならすぐに廃止するべきだ",
+            "鉄道はもう必要ないと考えている",
+            "高齢者は鉄道を使うべきではない"
+          ],
+          "answer": 0,
+          "q_te": "నష్టాల్లో ఉన్న రైల్వేల గురించి రచయిత అభిప్రాయం ఏమిటి?",
+          "q_hi": "घाटे में चल रही लाइनों पर लेखक की क्या राय है?",
+          "q_ta": "நஷ்டமடையும் ரயில்கள் பற்றி ஆசிரியர் என்ன நினைக்கிறார்?",
+          "q_ko": "적자 노선에 대해 필자는 어떻게 생각합니까?",
+          "q_es": "¿Qué opina el autor sobre las líneas deficitarias?",
+          "q_kn": "ನಷ್ಟದ ಮಾರ್ಗಗಳ ಬಗ್ಗೆ ಲೇಖಕರ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "നഷ്ടത്തിലുള്ള ലൈനുകളെക്കുറിച്ച് ലേഖകന്റെ നിലപാട് എന്താണ്?"
+        },
+        {
+          "q": "この問題を解決するために必要なことは何か。",
+          "q_en": "What is needed to solve this problem?",
+          "options": [
+            "鉄道会社だけで結論を出すこと",
+            "住民の意見を無視して決めること",
+            "関係者が立場を超えて話し合うこと",
+            "とにかくすぐにバスに切り替えること"
+          ],
+          "answer": 2,
+          "q_te": "ఈ సమస్యను పరిష్కరించడానికి ఏమి అవసరం?",
+          "q_hi": "इस समस्या के समाधान के लिए क्या आवश्यक है?",
+          "q_ta": "இப்பிரச்சனையைத் தீர்க்க என்ன தேவை?",
+          "q_ko": "이 문제를 해결하기 위해 필요한 것은 무엇입니까?",
+          "q_es": "¿Qué se necesita para resolver este problema?",
+          "q_kn": "ಈ ಸಮಸ್ಯೆಯ ಪರಿಹಾರಕ್ಕೆ ಏನು ಅಗತ್ಯ?",
+          "q_ml": "ഈ പ്രശ്നം പരിഹരിക്കാൻ എന്താണ് ആവശ്യം?"
+        }
+      ],
+      "passage_te": "గ్రామీణ రైల్వే మార్గాల సందిగ్ధత: గ్రామీణ ప్రాంతాలలో జనాభా తగ్గుముఖం పట్టడంతో చిన్న రైల్వే లైన్లు తీవ్ర నష్టాల్లో పడుతున్నాయి. రద్దు చేయాలనే ప్రతిపాదనలు వస్తున్నప్పటికీ, వృద్ధులు మరియు విద్యార్థుల రాకపోకలకు ఈ రైళ్లే జీవనాధారమని స్థానికులు వాదిస్తున్నారు.",
+      "passage_hi": "स्थानीय रेल लाइनों का संकट: ग्रामीण क्षेत्रों में घटती आबादी के कारण छोटी रेल लाइनें घाटे में चल रही हैं। इन्हें बंद करने के प्रस्ताव के सामने स्थानीय लोगों का कहना है कि बुजुर्गों और छात्रों के लिए ये जीवन रेखा हैं।",
+      "passage_ta": "கிராமப்புற ரயில் பாதைகளின் நெருக்கடி: மக்கள் தொகை குறைவதால் கிராமப்புற ரயில் சேவைகள் நஷ்டமடைகின்றன. அவற்றை மூடுவதற்கான கோரிக்கைகள் எழுந்தாலும், முதியவர்களுக்கும் மாணவர்களுக்கும் இந்த ரயில்களே வாழ்வாதாரமாகும்.",
+      "passage_ko": "지방 철도의 기로: 인구 감소로 인해 지방 노선들이 심각한 적자에 직면해 있습니다. 폐선 논의가 대두되지만, 고령자와 학생들에게는 유일한 이동 수단이라는 점에서 공공적 지원이 필요합니다.",
+      "passage_es": "Líneas ferroviarias locales en una encrucijada: La despoblación rural amenaza con el cierre de líneas deficitarias. No obstante, para ancianos y escolares constituyen un servicio público esencial insustituible.",
+      "passage_kn": "ಗ್ರಾಮೀಣ ರೈಲ್ವೆ ಮಾರ್ಗಗಳ ಬಿಕ್ಕಟ್ಟು: ಜನಸಂಖ್ಯೆ ಕಡಿಮೆಯಾಗುತ್ತಿರುವುದರಿಂದ ಹಳ್ಳಿಗಳ ರೈಲು ಮಾರ್ಗಗಳು ನಷ್ಟದಲ್ಲಿವೆ. ಆದರೆ ವೃದ್ಧರು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಈ ರೈಲುಗಳೇ ಆಸರೆಯಾಗಿರುವುದರಿಂದ ಇವುಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವುದು ಅತ್ಯಗತ್ಯ.",
+      "passage_ml": "ഗ്രാമ റെയിൽവേ നേരിടുന്ന പ്രതിസന്ധി: ഗ്രാമങ്ങളിൽ ജനസംഖ്യ കുറയുന്നതോടെ ചെറുകിട റെയിൽവേകൾ നഷ്ടത്തിലാണ്. എന്നാൽ വയോധികർക്കും വിദ്യാർത്ഥികൾക്കും യാത്രാസൗകര്യമൊരുക്കാൻ ഇത്തരം സർവീസുകൾ നിലനിർത്തേണ്ടതുണ്ട്."
+    },
+    {
+      "id": "r-n2-6",
+      "title": "朝食をめぐる意識の変化 (Changing attitudes toward breakfast)",
+      "passage": "「朝食は一日で最も大切な食事だ」とよく言われる。しかし、近年の忙しい生活の中で、朝食を抜く人が増えているのも事実である。時間がないから食べないという人もいれば、そもそも朝は食欲がわかないという人もいる。ある調査によれば、朝食を毎日とる人ほど、集中力が続き、午前中の仕事や勉強がはかどる傾向にあるという。とはいえ、無理に食べればよいというものでもない。大切なのは、量よりもむしろ、自分の体の調子に合ったものを選ぶことではないだろうか。忙しい朝だからこそ、何をどう食べるかを一度見直してみる価値はあるだろう。",
+      "passage_en": "It is often said that \"breakfast is the most important meal of the day.\" However, it is also a fact that, amid the busy lives of recent years, more and more people are skipping breakfast. Some say they don't eat because they have no time, while others say that they simply have no appetite in the morning to begin with. According to a certain survey, it is said that the more regularly a person eats breakfast every day, the more their concentration tends to last and the more efficiently they get through their morning work or study. That said, it is not as though forcing oneself to eat is good either. What matters is, rather than quantity, choosing something suited to one's own physical condition, is it not? Precisely because mornings are busy, there is surely value in taking a moment to rethink what and how one eats.",
+      "questions": [
+        {
+          "q": "朝食を抜く理由として、本文に挙げられているものはどれか。",
+          "q_en": "Which is given in the text as a reason for skipping breakfast?",
+          "options": [
+            "朝食が体に悪いと医者に言われたから",
+            "時間がない、または朝は食欲がわかないから",
+            "朝食が高くて買えないから",
+            "家族が朝食を作ってくれないから"
+          ],
+          "answer": 1,
+          "q_te": "అల్పాహారాన్ని దాటవేయడానికి కారణం ఏమిటి?",
+          "q_hi": "नाश्ता छोड़ने का क्या कारण दिया गया है?",
+          "q_ta": "காலை உணவைத் தவிர்ப்பதற்கான காரணம் என்ன?",
+          "q_ko": "아침을 거르는 이유로 제시된 것은 무엇입니까?",
+          "q_es": "¿Qué razón se da para saltarse el desayuno?",
+          "q_kn": "ಉಪಾಹಾರ ಬಿಡಲು ಕಾರಣವಾಗಿ ತಿಳಿಸಿರುವುದು ಯಾವುದು?",
+          "q_ml": "പ്രഭാതഭക്ഷണം ഒഴിവാക്കാൻ നൽകുന്ന കാരണമെന്താണ്?"
+        },
+        {
+          "q": "調査の結果として述べられていることはどれか。",
+          "q_en": "Which is stated as a result of the survey?",
+          "options": [
+            "朝食をとる人ほど午前中の仕事や勉強がはかどる傾向がある",
+            "朝食を抜く人ほど集中力が高い",
+            "朝食の量が多いほど健康になる",
+            "朝食と集中力にはまったく関係がない"
+          ],
+          "answer": 0,
+          "q_te": "సర్వే ఫలితంగా ఏమి పేర్కొనబడింది?",
+          "q_hi": "सर्वेक्षण के परिणाम के रूप में क्या कहा गया है?",
+          "q_ta": "கணக்கெடுப்பின் முடிவாகக் கூறப்படுவது எது?",
+          "q_ko": "조사 결과로 기술된 것은 무엇입니까?",
+          "q_es": "¿Qué se expone como resultado de la encuesta?",
+          "q_kn": "ಸಮೀಕ್ಷೆಯ ಫಲಿತಾಂಶವಾಗಿ ಏನು ಹೇಳಲಾಗಿದೆ?",
+          "q_ml": "സർവേ ഫലമായി പ്രസ്താവിച്ചിരിക്കുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "筆者が最も大切だと考えていることは何か。",
+          "q_en": "What does the author consider most important?",
+          "options": [
+            "できるだけ多くの量を食べること",
+            "毎朝かならず朝食を抜くこと",
+            "毎日決まった時間に食べること",
+            "自分の体の調子に合ったものを選ぶこと"
+          ],
+          "answer": 3,
+          "q_te": "రచయిత దేనిని అత్యంత ముఖ్యమైనదిగా భావిస్తున్నారు?",
+          "q_hi": "लेखक किसे सबसे महत्वपूर्ण मानते हैं?",
+          "q_ta": "ஆசிரியர் எதை மிக முக்கியமானதாகக் கருதுகிறார்?",
+          "q_ko": "필자가 가장 중요하다고 여기는 것은 무엇입니까?",
+          "q_es": "¿Qué considera el autor lo más importante?",
+          "q_kn": "ಲೇಖಕರು ಯಾವುದನ್ನು ಅತ್ಯಂತ ಮುಖ್ಯವೆಂದು ಭಾವಿಸುತ್ತಾರೆ?",
+          "q_ml": "ഏറ്റവും പ്രധാനപ്പെട്ടതായി ലേഖകൻ കരുതുന്നത് എന്തിനെയാണ്?"
+        }
+      ],
+      "passage_te": "అల్పాహారం గురించిన అవగాహన మార్పులు: రోజంతా చురుకుగా ఉండటానికి అల్పాహారం ఎంతో ముఖ్యం. అయితే ఆధునిక ఉరుకుల పరుగుల జీవితంలో ఉదయం భోజనాన్ని విస్మరించే వారి సంఖ్య పెరుగుతోంది. ఇది దీర్ఘకాలికంగా ఏకాగ్రత లోపానికి దారితీస్తుంది.",
+      "passage_hi": "नाश्ते को लेकर बदलती सोच: दिनभर ऊर्जावान रहने के लिए नाश्ता अति आवश्यक है। फिर भी आधुनिक व्यस्तता के चलते बहुत से लोग इसे छोड़ देते हैं, जिससे लंबे समय में स्वास्थ्य और एकाग्रता प्रभावित होती है।",
+      "passage_ta": "காலை உணவு பற்றிய விழிப்புணர்வு மாற்றங்கள்: நாள் முழுவதும் சுறுசுறுப்பாக இயங்க காலை உணவு மிக முக்கியம். ஆயினும் அவசர வாழ்க்கை முறையில் பலர் காலை உணவைத் தவிர்க்கின்றனர், இது கவனக்குறைவுக்கு வழிவகுக்கும்.",
+      "passage_ko": "아침 식사에 대한 인식 변화: 하루를 활기차게 시작하는 데 조식은 필수적입니다. 그러나 바쁜 현대인들 사이에서 결식률이 증가하고 있으며, 이는 장기적으로 집중력 저하와 건강 악화를 부릅니다.",
+      "passage_es": "Cambio de actitud ante el desayuno: Desayunar es clave para la energía diaria. Pese a ello, las prisas llevan a muchos a saltárselo, perjudicando su rendimiento y concentración a largo plazo.",
+      "passage_kn": "ಉಪಾಹಾರದ ಬಗೆಗಿನ ಮನೋಭಾವದ ಬದಲಾವಣೆ: ದಿನಪೂರ್ತಿ ಲವಲವಿಕೆಯಿಂದಿರಲು ಬೆಳಗಿನ ಉಪಾಹಾರ ಅಗತ್ಯ. ಆದರೆ ಇಂದಿನ ಅವಸರದ ಬದುಕಿನಲ್ಲಿ ಉಪಾಹಾರ ಬಿಡುವವರ ಸಂಖ್ಯೆ ಹೆಚ್ಚಿದ್ದು, ಇದು ದೀರ್ಘಕಾಲದಲ್ಲಿ ಏಕಾಗ್ರತೆ ಕುಗ್ಗಿಸುತ್ತದೆ.",
+      "passage_ml": "പ്രഭാതഭക്ഷണത്തെക്കുറിച്ചുള്ള മനോഭാവ മാറ്റം: ദിവസം മുഴുവൻ ഉന്മേഷത്തോടെയിരിക്കാൻ പ്രഭാതഭക്ഷണം അത്യന്താപേക്ഷിതമാണ്. എന്നാൽ തിരക്കുപിടിച്ച ജീവിതത്തിൽ ഇത് ഒഴിവാക്കുന്നത് ആരോഗ്യത്തെയും ശ്രദ്ധയെയും ബാധിക്കുന്നു."
+    },
+    {
+      "id": "r-n2-7",
+      "title": "キャッシュレス化の光と影 (The light and shadow of going cashless)",
+      "passage": "スマートフォン一つで支払いが済むキャッシュレス決済が、急速に普及している。財布を持ち歩かなくてもよいうえ、支払いの記録が自動的に残るため、家計の管理がしやすくなったという利点がある。その便利さゆえに、現金をほとんど使わなくなったという人も珍しくない。しかし、便利になった反面、お金を使っている実感が薄れ、つい使いすぎてしまうという問題も指摘されている。また、通信や電気が止まれば決済ができなくなるという弱点もある。技術がどれほど進もうと、それに頼りきってしまうのは考えものだ。現金とキャッシュレスをうまく使い分ける工夫が、これからますます求められていくにちがいない。",
+      "passage_en": "Cashless payment, whereby a purchase is settled with a single smartphone, is spreading rapidly. It has the advantage that not only do you not need to carry a wallet, but because a record of payments is kept automatically, managing household finances has become easier. Owing to that convenience, it is not unusual for people to say they have come to hardly use cash at all. However, on the flip side of becoming convenient, it has also been pointed out that the real feeling of spending money fades, so that one ends up overspending without meaning to. There is also the weakness that if communications or electricity go down, payment becomes impossible. No matter how far technology advances, relying on it completely is something to think twice about. There is no doubt that the ingenuity to use cash and cashless payment properly, each in its place, will increasingly be called for from now on.",
+      "questions": [
+        {
+          "q": "キャッシュレス決済の利点として、本文に述べられているものはどれか。",
+          "q_en": "Which is stated in the text as an advantage of cashless payment?",
+          "options": [
+            "支払いの記録が自動的に残り、家計の管理がしやすい",
+            "通信や電気が止まっても問題なく使える",
+            "現金で払うより必ず値段が安くなる",
+            "お金を使いすぎることが決してなくなる"
+          ],
+          "answer": 0,
+          "q_te": "క్యాష్‌లెస్‌ చెల్లింపుల ప్రయోజనం ఏమిటి?",
+          "q_hi": "कैशलेस भुगतान का क्या लाभ बताया गया है?",
+          "q_ta": "பணமில்லா பரிவர்த்தனையின் நன்மை என்ன?",
+          "q_ko": "캐시리스 결제의 장점으로 서술된 것은 무엇입니까?",
+          "q_es": "¿Qué ventaja del pago sin efectivo se menciona?",
+          "q_kn": "ಡಿಜಿಟಲ್ ಪಾವತಿಯ ಅನುಕೂಲವಾಗಿ ಏನು ಹೇಳಲಾಗಿದೆ?",
+          "q_ml": "ക്യാഷ്‌ലെസ്സ് ഇടപാടിന്റെ ഗുണമായി പറയുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "キャッシュレス決済の問題点として、本文で指摘されているものはどれか。",
+          "q_en": "Which is pointed out in the text as a problem of cashless payment?",
+          "options": [
+            "財布が重くなってしまうこと",
+            "使っている実感が薄れ、つい使いすぎてしまうこと",
+            "支払いの記録がまったく残らないこと",
+            "家計の管理が以前より難しくなること"
+          ],
+          "answer": 1,
+          "q_te": "క్యాష్‌లెస్‌ చెల్లింపుల సమస్యగా ఏమి ఎత్తిచూపబడింది?",
+          "q_hi": "कैशलेस भुगतान की क्या समस्या बताई गई है?",
+          "q_ta": "பணமில்லா பரிவர்த்தனையின் பிரச்சனையாகக் கூறப்படுவது எது?",
+          "q_ko": "캐시리스의 문제점으로 지적된 것은 무엇입니까?",
+          "q_es": "¿Qué inconveniente del pago sin efectivo se señala?",
+          "q_kn": "ಡಿಜಿಟಲ್ ಪಾವತಿಯ ಸಮಸ್ಯೆಯಾಗಿ ಏನನ್ನು ಬೆಟ್ಟುಮಾಡಲಾಗಿದೆ?",
+          "q_ml": "ക്യാഷ്‌ലെസ്സ് ഇടപാടിന്റെ പോരായ്മയായി ചൂണ്ടിക്കാട്ടുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "筆者が最も言いたいことは何か。",
+          "q_en": "What is the author's main point?",
+          "options": [
+            "現金はもう完全に必要ない",
+            "キャッシュレス決済は使うべきではない",
+            "現金とキャッシュレスをうまく使い分ける工夫が必要だ",
+            "技術の進歩そのものを止めるべきだ"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత ముఖ్య ఉద్దేశం ఏమిటి?",
+          "q_hi": "लेखक का मुख्य विचार क्या है?",
+          "q_ta": "ஆசிரியரின் முக்கியக் கருத்து என்ன?",
+          "q_ko": "필자의 핵심 요지는 무엇입니까?",
+          "q_es": "¿Cuál es el punto principal del autor?",
+          "q_kn": "ಲೇಖಕರ ಮುಖ್ಯ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "ലേഖകന്റെ പ്രധാന ആശയം എന്താണ്?"
+        }
+      ],
+      "passage_te": "క్యాష్‌లెస్‌ సమాజం వెలుగునీడలు: స్మార్ట్‌ఫోన్ చెల్లింపులు సౌకర్యాన్ని, వేగాన్ని తెచ్చాయి. అయితే వృద్ధులకు సాంకేతికతను అర్థం చేసుకోవడంలో ఇబ్బందులు, ఆర్థిక నిర్వహణలో అజాగ్రత్తగా మితిమీరిన ఖర్చు చేయడం వంటి సమస్యలు కూడా ఉత్పన్నమవుతున్నాయి.",
+      "passage_hi": "कैशलेस लेनदेन के लाभ और हानियाँ: डिजिटल भुगतान ने खरीदारी को बहुत तेज़ और सरल बनाया है। लेकिन बुजुर्गों के लिए कठिनाई और पैसे के अनियंत्रित खर्च जैसी समस्याएँ भी सामने आ रही हैं।",
+      "passage_ta": "பணமில்லா பரிவர்த்தனையின் சாதக பாதகங்கள்: டிஜிட்டல் பணப்பரிவர்த்தனை வசதியைத் தந்தாலும், முதியவர்கள் அதைப் பயன்படுத்த சிரமப்படுவதும், கட்டுபாடற்ற பணச்செலவும் கவலையளிக்கிறது.",
+      "passage_ko": "캐시리스화의 명과 암: 스마트폰 결제는 편리함과 속도를 가져왔지만, 고령층의 디지털 소외와 무분별한 과소비라는 부작용도 함께 낳고 있습니다.",
+      "passage_es": "Luces y sombras de la sociedad sin efectivo: El pago digital brinda rapidez y comodidad, pero genera exclusión entre personas mayores y propicia el gasto descontrolado.",
+      "passage_kn": "ಡಿಜಿಟಲ್ ಪಾವತಿಯ ಒಳಿತು ಕೆಡುಕುಗಳು: ಮೊಬೈಲ್ ಪಾವತಿ ವೇಗ ಮತ್ತು ಸೌಕರ್ಯ ತಂದಿದೆ. ಆದರೆ ವೃದ್ಧರಿಗೆ ಇದು ಕಷ್ಟಕರವಾಗಿದ್ದು, ಹಣದ ಅರಿವಿಲ್ಲದೆ ಅತಿಯಾದ ಖರ್ಚಿಗೆ ಕಾರಣವಾಗುತ್ತಿದೆ.",
+      "passage_ml": "ക്യാഷ്‌ലെസ്സ് സമ്പ്രദായത്തിന്റെ ഗുണദോഷങ്ങൾ: ഡിജിറ്റൽ ഇടപാടുകൾ ജീവിതം സുഗമമാക്കിയെങ്കിലും, പ്രായമായവർക്ക് സാങ്കേതികവിദ്യ വഴങ്ങാത്തതും അമിത ചെലവും വെല്ലുവിളിയാകുന്നു."
+    },
+    {
+      "id": "r-n2-8",
+      "title": "町内会は必要か (Are neighborhood associations necessary?)",
+      "passage": "かつては当たり前のように加入していた町内会だが、近年、参加をためらう人が増えている。仕事や子育てで忙しく、行事や会合に時間を割けないというのが主な理由である。役員が回ってくると負担が大きい、という声もあるだろう。しかし、災害が起きたときのことを考えれば、日ごろから近所の人と顔なじみになっておくことの意味は決して小さくない。実際、大きな地震の後、助け合ったのは遠くの親戚ではなく、隣近所の人々だったという例は数多い。町内会のあり方そのものを見直す必要はあるにせよ、地域のつながりを完全になくしてしまってよいわけではないだろう。",
+      "passage_en": "Neighborhood associations, which people once joined as a matter of course, have in recent years seen a growing number of people hesitant to take part. The main reason is that, being busy with work and child-rearing, people cannot spare time for events and meetings. There will also be voices saying that when the officer role comes around to you, the burden is heavy. However, if one thinks about when a disaster strikes, the significance of becoming familiar with one's neighbors on an everyday basis is by no means small. In fact, there are many examples where, after a major earthquake, it was not distant relatives but the people right next door and nearby who helped one another. Even granting that there is a need to reconsider the very form the neighborhood association takes, it does not follow that it is fine to do away with community ties entirely.",
+      "questions": [
+        {
+          "q": "町内会への参加をためらう主な理由は何か。",
+          "q_en": "What is the main reason people hesitate to join neighborhood associations?",
+          "options": [
+            "会費があまりに高すぎるから",
+            "仕事や子育てで忙しく、行事や会合に時間を割けないから",
+            "近所の人が気に入らないから",
+            "町内会そのものがなくなったから"
+          ],
+          "answer": 1,
+          "q_te": "కాలనీ సంఘాలలో చేరడానికి ప్రజలు ఎందుకు సంకోచిస్తారు?",
+          "q_hi": "लोग मोहल्ला समितियों में शामिल होने से क्यों कतराते हैं?",
+          "q_ta": "மக்கள் குடியிருப்பு சங்கங்களில் இணைய தயங்குவது ஏன்?",
+          "q_ko": "주민회 참여를 망설이는 주요 이유는 무엇입니까?",
+          "q_es": "¿Por qué vacila la gente a la hora de unirse a las asociaciones?",
+          "q_kn": "ಜನರು ಸಂಘಕ್ಕೆ ಸೇರಲು ಹಿಂಜರಿಯಲು ಕಾರಣವೇನು?",
+          "q_ml": "ആളുകൾ അസോസിയേഷനിൽ ചേരാൻ മടിക്കുന്നത് എന്തുകൊണ്ട്?"
+        },
+        {
+          "q": "大きな地震の後について、本文で述べられていることはどれか。",
+          "q_en": "What does the text say about the aftermath of a major earthquake?",
+          "options": [
+            "遠くの親戚が最も頼りになった",
+            "だれも互いに助け合おうとしなかった",
+            "助け合ったのは隣近所の人々だった",
+            "町内会は何の役にも立たなかった"
+          ],
+          "answer": 2,
+          "q_te": "భూకంపం తర్వాత పరిస్థితి గురించి ఏమి చెప్పారు?",
+          "q_hi": "भूकंप के बाद की स्थिति के बारे में क्या कहा गया है?",
+          "q_ta": "நிலநடுக்கத்திற்குப் பிந்தைய நிலைமை குறித்து என்ன கூறப்பட்டது?",
+          "q_ko": "대지진 이후의 상황에 대해 본문은 어떻게 서술합니까?",
+          "q_es": "¿Qué dice el texto sobre las secuelas de un gran terremoto?",
+          "q_kn": "ಭೂಕಂಪದ ನಂತರದ ಸ್ಥಿತಿಯ ಬಗ್ಗೆ ಏನು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "ഭൂകമ്പത്തിന് ശേഷമുള്ള അവസ്ഥയെക്കുറിച്ച് എന്താണ് പറയുന്നത്?"
+        },
+        {
+          "q": "筆者の考えに最も近いものはどれか。",
+          "q_en": "Which is closest to the author's view?",
+          "options": [
+            "地域のつながりは完全になくしてかまわない",
+            "町内会は昔のまま一切変えるべきではない",
+            "町内会には住民全員が必ず参加するべきだ",
+            "あり方は見直しつつ、地域のつながりは残すべきだ"
+          ],
+          "answer": 3,
+          "q_te": "రచయిత అభిప్రాయానికి అత్యంత దగ్గరగా ఉన్నది ఏది?",
+          "q_hi": "लेखक के दृष्टिकोण के सबसे निकट कौन सा विकल्प है?",
+          "q_ta": "ஆசிரியரின் பார்வைக்கு மிகவும் நெருக்கமானது எது?",
+          "q_ko": "필자의 견해와 가장 부합하는 것은 어느 것입니까?",
+          "q_es": "¿Cuál es la opción más cercana al punto de vista del autor?",
+          "q_kn": "ಲೇಖಕರ ನಿಲುವಿಗೆ ಹತ್ತಿರವಾದದ್ದು ಯಾವುದು?",
+          "q_ml": "ലേഖകന്റെ കാഴ്ചപ്പാടിനോട് ഏറ്റവും അടുത്തുനിൽക്കുന്നത് ഏതാണ്?"
+        }
+      ],
+      "passage_te": "కాలనీ సంఘాలు అవసరమా?: కాలనీ అసోసియేషన్లలో సభ్యత్వంపై యువత విముఖత చూపుతున్నారు. అయితే భూకంపం లేదా వరదలు వంటి విపత్తుల సమయంలో ఒకరికొకరు సహాయం చేసుకోవడానికి స్థానిక బంధాలే అసలైన రక్షణ కవచాలు.",
+      "passage_hi": "क्या मोहल्ला समितियाँ आवश्यक हैं?: आज के दौर में लोग रेजिडेंट्स वेलफेयर एसोसिएशन से कतराते हैं। परंतु भूकंप या प्राकृतिक आपदा के समय पड़ोसियों का आपसी सहयोग ही सबसे बड़ा सहारा बनता है।",
+      "passage_ta": "குடியிருப்பு நலச்சங்கங்கள் தேவையா?: இன்றைய இளைஞர்கள் குடியிருப்பு சங்கங்களில் ஈடுபட விரும்புவதில்லை. ஆனால் நிலநடுக்கம் போன்ற பேரிடர் காலங்களில் அண்டை வீட்டாரின் உதவியே பேருதவியாக இருக்கும்.",
+      "passage_ko": "동네 자치회는 필요한가: 주민회 가입을 꺼리는 풍조가 퍼지고 있으나, 대규모 재해 발생 시 이웃 간의 협력과 상부상조가 생존의 결정적 열쇠가 됩니다.",
+      "passage_es": "¿Son necesarias las asociaciones de vecinos?: Aunque muchos evitan participar por falta de tiempo, en situaciones de catástrofe natural la solidaridad comunitaria resulta vital.",
+      "passage_kn": "ಬಡಾವಣೆ ಕ್ಷೇಮಾಭಿವೃದ್ಧಿ ಸಂಘಗಳು ಬೇಕೇ?: ಇಂದಿನ ಜನ ಸಂಘಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಲು ಹಿಂಜರಿಯುತ್ತಾರೆ. ಆದರೆ ನೈಸರ್ಗಿಕ ವಿಕೋಪಗಳ ಸಂದರ್ಭದಲ್ಲಿ ನೆರೆಹೊರೆಯವರ ಸಹಕಾರವೇ ಅತ್ಯಂತ ದೊಡ್ಡ ಶಕ್ತಿ.",
+      "passage_ml": "റസിഡന്റ്സ് അസോസിയേഷൻ ആവശ്യമുണ്ടോ?: അസോസിയേഷൻ പ്രവർത്തനങ്ങളിൽ പലർക്കും മടിയാണ്. എന്നാൽ പ്രകൃതിദുരന്തങ്ങൾ ഉണ്ടാകുമ്പോൾ അയൽക്കാരുടെ കൂട്ടായ്മയാണ് ഏറ്റവും വലിയ തുണ."
+    },
+    {
+      "id": "r-n2-9",
+      "title": "都市の夏はなぜ暑いのか (Why are city summers so hot?)",
+      "passage": "近年、夏になると都市の気温が異常なほど高くなり、夜になっても気温が下がらない日が続くことがある。これには、地球全体の温暖化だけでなく、都市特有の事情も関係しているといわれる。アスファルトやコンクリートは日中の熱をため込みやすく、その熱を夜間にゆっくりと放出する。そのうえ、エアコンの室外機や自動車が絶えず熱を出しているのだから、気温が下がりにくいのも無理はない。緑地を増やしたり、風の通り道を確保したりする対策が各地で試みられているものの、効果が表れるまでには時間がかかる。便利で快適な都市生活を求めてきた結果が、こうした暑さとなって表れているとも言えるのではないだろうか。",
+      "passage_en": "In recent years, when summer comes, city temperatures climb to abnormally high levels, and there are stretches of days when the temperature does not fall even after night comes. This is said to be related not only to the warming of the earth as a whole, but also to circumstances peculiar to cities. Asphalt and concrete readily store up the daytime heat, and then release that heat slowly during the night. On top of that, since air-conditioner outdoor units and automobiles are constantly giving off heat, it is no wonder that the temperature is slow to fall. Although measures such as increasing green space and securing paths for the wind to pass through are being tried in various places, it takes time for their effects to appear. One might even say that the result of our having pursued a convenient and comfortable urban life is appearing in the very form of this heat.",
+      "questions": [
+        {
+          "q": "都市の気温が夜になっても下がりにくいのはなぜか。",
+          "q_en": "Why is the city temperature slow to fall even at night?",
+          "options": [
+            "夜も太陽が出て地面を照らしているから",
+            "アスファルトなどが夜に熱を放出し、室外機や車も熱を出すから",
+            "緑地が多すぎて風が通らないから",
+            "夜になると急に風が強くなるから"
+          ],
+          "answer": 1,
+          "q_te": "రాత్రిపూట కూడా నగర ఉష్ణోగ్రత ఎందుకు తగ్గదు?",
+          "q_hi": "शहरों का तापमान रात में भी धीरे-धीरे क्यों घटता है?",
+          "q_ta": "இரவிலும் நகர வெப்பநிலை குறையாமல் இருப்பது ஏன்?",
+          "q_ko": "도시의 기온이 밤에도 쉽게 내려가지 않는 이유는 무엇입니까?",
+          "q_es": "¿Por qué no desciende la temperatura urbana por la noche?",
+          "q_kn": "ರಾತ್ರಿಯಲ್ಲೂ ನಗರದ ಉಷ್ಣತೆ ಕಡಿಮೆಯಾಗದಿರಲು ಕಾರಣವೇನು?",
+          "q_ml": "രാത്രിയിലും നഗരത്തിലെ ചൂട് കുറയാത്തത് എന്തുകൊണ്ടാണ്?"
+        },
+        {
+          "q": "都市の暑さ対策について、本文で述べられていることはどれか。",
+          "q_en": "What does the text say about measures against city heat?",
+          "options": [
+            "対策はどこでもまったく行われていない",
+            "対策をすれば、その日のうちに効果が表れる",
+            "対策は試みられているが、効果が出るには時間がかかる",
+            "対策をしてもまったく意味がない"
+          ],
+          "answer": 2,
+          "q_te": "నగర ఉష్ణోగ్రత నివారణ చర్యల గురించి ఏమి చెప్పారు?",
+          "q_hi": "शहरी गर्मी के उपायों के बारे में क्या कहा गया है?",
+          "q_ta": "நகர வெப்பத்தைத் தணிக்கும் நடவடிக்கைகள் குறித்து என்ன கூறப்பட்டது?",
+          "q_ko": "도시 열기 대책에 대해 본문은 어떻게 언급하고 있습니까?",
+          "q_es": "¿Qué se dice sobre las medidas contra el calor urbano?",
+          "q_kn": "ನಗರದ ಬಿಸಿಲಿಗೆ ಪರಿಹಾರವಾಗಿ ಏನು ಹೇಳಲಾಗಿದೆ?",
+          "q_ml": "നഗരത്തിലെ ചൂട് തടയാൻ എന്തൊക്കെ നടപടികളാണ് പറയുന്നത്?"
+        },
+        {
+          "q": "都市の暑さについて、筆者はどのように考えているか。",
+          "q_en": "How does the author view the city's heat?",
+          "options": [
+            "便利で快適な都市生活を求めてきた結果とも言える",
+            "地球全体の温暖化とはまったく関係がない",
+            "都市特有の事情はほとんど関係していない",
+            "エアコンをもっと使えば根本的に解決する"
+          ],
+          "answer": 0,
+          "q_te": "నగర వేడిమిని రచయిత ఎలా విశ్లేషిస్తున్నారు?",
+          "q_hi": "लेखक शहरों की गर्मी को किस दृष्टि से देखते हैं?",
+          "q_ta": "நகர வெப்பத்தை ஆசிரியர் எவ்வாறு பார்க்கிறார்?",
+          "q_ko": "필자는 도시의 더위를 어떻게 바라보고 있습니까?",
+          "q_es": "¿Cómo contempla el autor el fenómeno del calor urbano?",
+          "q_kn": "ನಗರದ ಬಿಸಿಲನ್ನು ಲೇಖಕರು ಹೇಗೆ ವಿಶ್ಲೇಷಿಸುತ್ತಾರೆ?",
+          "q_ml": "നഗരത്തിലെ ചൂടിനെ ലേഖകൻ എങ്ങനെയാണ് വിലയിരുത്തുന്നത്?"
+        }
+      ],
+      "passage_te": "నగరాలలో వేడిమి ఎందుకు పెరుగుతోంది?: కాంక్రీట్ భవనాలు మరియు తారు రోడ్లు పగటి వేడిని పీల్చుకుని రాత్రిపూట విడుదల చేయడం వల్ల 'హీట్ ఐలాండ్' ప్రభావం ఏర్పడుతోంది. చెట్లను పెంచడం, ఆకుపచ్చని పైకప్పులను ఏర్పాటు చేయడం ద్వారానే ఈ సమస్యకు పరిష్కారం లభిస్తుంది.",
+      "passage_hi": "शहरों में अत्यधिक गर्मी का कारण: कंक्रीट की इमारतें और डामर की सड़कें दिन की धूप को सोखकर रात में छोड़ती हैं, जिससे 'हीट आइलैंड' प्रभाव बनता है। हरियाली और छतों पर बागवानी ही इसका निदान है।",
+      "passage_ta": "நகரங்களில் வெப்பம் அதிகரிப்பது ஏன்?: கான்கிரீட் கட்டிடங்களும் தார்ச் சாலைகளும் பகல் வெப்பத்தை உறிஞ்சி இரவில் உமிழ்வதால் 'வெப்பத் தீவு' விளைவு ஏற்படுகிறது. மரங்களை நடுவதன் மூலமே இதைத் தணிக்க முடியும்.",
+      "passage_ko": "도시의 여름이 유독 더운 이유: 아스팔트와 콘크리트가 낮의 열기를 흡수해 밤에 방출하는 열섬 현상이 주요 원인입니다. 녹지 확충과 옥상 녹화가 시급한 대책입니다.",
+      "passage_es": "¿Por qué hace tanto calor en las ciudades?: El asfalto y el hormigón retienen el calor diurno y lo liberan de noche (isla de calor). La única solución viable es multiplicar las áreas verdes.",
+      "passage_kn": "ನಗರಗಳಲ್ಲಿ ಸೆಕೆ ಹೆಚ್ಚಾಗುತ್ತಿರುವುದೇಕೆ?: ಕಾಂಕ್ರೀಟ್ ಕಟ್ಟಡಗಳು ಬಿಸಿಲನ್ನು ಹೀರಿಕೊಂಡು ರಾತ್ರಿ ಹೊರಹಾಕುವುದರಿಂದ 'ಹೀಟ್ ಐಲ್ಯಾಂಡ್' ಉಂಟಾಗುತ್ತದೆ. ಗಿಡಮರಗಳನ್ನು ಬೆಳೆಸುವುದೇ ಇದಕ್ಕೆ ಪರಿಹಾರ.",
+      "passage_ml": "നഗരങ്ങളിൽ ചൂട് കൂടുന്നത് എന്തുകൊണ്ട്?: കോൺക്രീറ്റ് കെട്ടിടങ്ങളും റോഡുകളും ചൂട് ആഗിരണം ചെയ്ത് രാത്രിയിൽ പുറത്തുവിടുന്ന 'ഹീറ്റ് ഐലൻഡ്' പ്രതിഭാസമാണ് കാരണം. മരങ്ങൾ വച്ചുപിടിപ്പിക്കുകയാണ് പോംവഴി."
+    },
+    {
+      "id": "r-n2-10",
+      "title": "蜘蛛の糸 (The Spider's Thread - Akutagawa Ryunosuke)",
+      "passage": "ある日の事でございます。御釈迦様は極楽の蓮池のふちを、独りでぶらぶら御歩きになっていらっしゃいました。池の中に咲いている蓮の花は、皆玉のようにまっ白で、極楽の朝の清らかな空気が漂っておりました。やがて御釈迦様は、池の底をご覧になりました。この蓮池の下は、ちょうど地獄の底に当たっております。覗き眼鏡を見るように、血の池の底で蠢いている罪人たちの姿が目にとまりました。その中に、犍陀多という悪党が一人おりました。人殺しや放火を重ねた大泥棒でしたが、生前、路傍を這っていた一匹の蜘蛛を踏み殺さず、「命あるものを無暗に殺すのは可哀想だ」と助けてやった善行がありました。御釈迦様はその功徳を思い出し、彼を地獄から救い出してやろうと、極楽の美しい蜘蛛の糸を一筋、まっすぐに地獄の底へと垂らし給いました。",
+      "passage_en": "It happened on a certain day. The Buddha was strolling alone along the edge of the lotus pond of Paradise. The lotus blossoms bloomed pure white like pearls, and the fragrant morning air of Paradise drifted all around. Presently, the Buddha gazed into the depths of the lotus pond. Directly beneath lay the lowest pit of Hell. As if gazing through a spyglass, His eyes fell upon the sinners squirming at the bottom of the Lake of Blood. Among them was Kandata, a notorious criminal. Though he had committed murder and arson, once in his life he had spared a tiny spider crawling by the roadside, thinking it cruel to take a life needlessly. Remembering this single act of mercy, the Buddha decided to offer him salvation, lowering a single strand of silver spider's thread straight down into the depths of Hell.",
+      "passage_te": "ఒకరోజు స్వర్గంలోని తామర కొలను ఒడ్డున బుద్ధ భగవానుడు ఒంటరిగా నడుస్తూ ఉన్నాడు. తెల్లటి తామర పువ్వుల నుండి పవిత్రమైన సువాసన వ్యాపిస్తోంది. బుద్ధుడు కొలను అడుగు భాగంలోకి చూశాడు. ఆ కొలను క్రింద నరకపు అగాధం ఉంది. రక్తపు నదిలో విలవిల్లాడుతున్న పాపుల మధ్య కాందాత అనే దుర్మార్గుడు కనిపించాడు. అతను ఎన్నో దొంగతనాలు, హత్యలు చేసిన ఘోర నేరస్థుడు. అయితే తన జీవితంలో ఒకసారి దారిలో వెళ్తున్న చిన్న సాలీడును చంపకుండా జాలితో కాపాడిన ఒకే ఒక్క పుణ్యకార్యం చేశాడు. ఆ దయను గుర్తుచేసుకున్న బుద్ధుడు అతన్ని నరకం నుండి రక్షించాలనుకుని, స్వర్గం నుండి ఒక సన్నని సాలీడు దారాన్ని నేరుగా నరకంలోకి జారవిడిచాడు.",
+      "passage_hi": "एक दिन भगवान बुद्ध स्वर्ग के कमल के तालाब के किनारे अकेले टहल रहे थे। श्वेत कमलों की सुगंध चारों ओर महक रही थी। बुद्ध ने तालाब के तल में देखा, जिसके नीचे सीधा नर्क का अगाध गर्त था। खून की नदी में तड़पते पापियों में उनकी दृष्टि 'कंदाता' नामक एक पापी पर पड़ी। यद्यपि उसने अनगिनत हत्याएं और लूटपाट की थी, परंतु अपने जीवन में एक बार उसने सड़क पर रेंगती एक छोटी मकड़ी को न मारते हुए जीवनदान दिया था। इस एकमात्र पुण्य को याद कर बुद्ध ने उसे नर्क से उबारने के लिए स्वर्ग की मकड़ी का एक चमकदार धागा सीधे नर्क की गहराई में उतारा।",
+      "passage_ta": "ஒரு நாள் புத்த பெருமான் சொர்க்கத்தின் தாமரைக் குளக்கரையில் தனியாக உலாவி வந்தார். வெண்தாமரைகளின் நறுமணம் எங்கும் பரவியிருந்தது. குளத்தின் ஆழத்தில் அவர் பார்த்தபோது, அதன் அடியில் நரகம் தெரிந்தது. இரத்த ஆற்றில் தவித்துக் கொண்டிருந்த பாவிகளில் 'கந்தாதா' என்பவன் தென்பட்டான். அவன் பெருங்கொலைகாரன் என்றாலும், வாழ்நாளில் ஒருமுறை வழியில் சென்ற சிலந்தியை மிதிக்காமல் கருணையோடு காப்பாற்றியிருந்தான். அந்த ஒற்றைப் புண்ணியத்தை நினைவுகூர்ந்த புத்தர், அவனுக்கு நற்கதி அளிக்க விரும்பி, சொர்க்கத்தின் ஒற்றைச் சிலந்தி நூலை நரகத்திற்கு இறக்கிவிட்டார்.",
+      "passage_ko": "어느 날 부처님께서는 극락의 연못가를 홀로 거닐고 계셨습니다. 하얀 연꽃들이 피어있고 아침 공기는 맑았습니다. 부처님께서 연못 바닥을 내려다보시니 그곳은 지옥의 밑바닥이었습니다. 피 연못에서 신음하는 죄인들 가운데 칸다타라는 악당이 눈에 띄었습니다. 수많은 악행을 저지른 도둑이었으나, 생전에 기어가던 거미 한 마리를 밟지 않고 살려준 단 하나의 선행이 있었습니다. 부처님께서는 그 공덕을 떠올리시고 그를 구하고자 극락의 은빛 거미줄을 지옥 바닥으로 드리우셨습니다.",
+      "passage_es": "Aconteció cierto día que el Buda paseaba solitario junto al estanque de lotos del Paraíso. Las flores resplandecían níveas como perlas y flotaba una fragancia purísima. El Buda miró hacia las profundidades del estanque, justo debajo del cual se hallaba el abismo del Infierno. Entre los condenados distinguió a Kandata, un temible criminal. Aunque había cometido asesinatos e incendios, en cierta ocasión perdonó la vida a una pequeña araña por compasión. Recordando aquella única buena acción, el Buda tomó un hilo de araña del Paraíso y lo descolgó directo hacia el fondo del averno.",
+      "passage_kn": "ಒಂದು ದಿನ ಗೌತಮ ಬುದ್ಧರು ಸ್ವರ್ಗದ ಕಮಲದ ಕೊಳದ ದಂಡೆಯಲ್ಲಿ ಏಕಾಂಗಿಯಾಗಿ ನಡೆದಾಡುತ್ತಿದ್ದರು. ಕೊಳದ ಅಡಿಯಲ್ಲಿ ನರಕದ ಕತ್ತಲೆ ಇತ್ತು. ರಕ್ತದ ನದಿಯಲ್ಲಿ ನರಳುತ್ತಿದ್ದ ಪಾಪಿಗಳ ನಡುವೆ 'ಕಾಂದಾತ' ಎಂಬ ದುರುಳ ಕಂಡನು. ಅವನು ಎಷ್ಟೇ ದುಷ್ಕರ್ಮಗಳನ್ನು ಮಾಡಿದ್ದರೂ, ಜೀವಿತಾವಧಿಯಲ್ಲಿ ಒಮ್ಮೆ ರಸ್ತೆಯಲ್ಲಿ ಹರಿದಾಡುತ್ತಿದ್ದ ಜೇಡವನ್ನು ಕೊಲ್ಲದೆ ಕರುಣೆ ತೋರಿದ್ದನು. ಈ ಏಕೈಕ ಪುಣ್ಯವನ್ನು ನೆನೆದು, ಬುದ್ಧರು ಅವನನ್ನು ರಕ್ಷಿಸಲು ಸ್ವರ್ಗದ ಸೂಕ್ಷ್ಮ ಜೇಡರ ದಾರವನ್ನು ನರಕದ ಅಧೋಲೋಕಕ್ಕೆ ಇಳಿಸಿದರು.",
+      "passage_ml": "ഒരു ദിവസം ഭഗവാൻ ബുദ്ധൻ സ്വർഗ്ഗത്തിലെ താമരപ്പൊയ്കയുടെ തീരത്ത് നടക്കുകയായിരുന്നു. പൊയ്കയുടെ അടിത്തട്ടിലൂടെ നോക്കിയപ്പോൾ അഗാധമായ നരകം കാണാമായിരുന്നു. ചോരപ്പുഴയിൽ കിടന്ന് കഷ്ടപ്പെടുന്ന പാപികളുടെ കൂട്ടത്തിൽ 'കന്ദാത്ത' എന്ന ക്രൂരനായ കള്ളനെ കണ്ടു. അവൻ ഒരുപാട് പാപങ്ങൾ ചെയ്തിട്ടുണ്ടെങ്കിലും, ഒരിക്കൽ വഴിയിൽ കണ്ട ഒരു ചിലന്തിയെ കൊല്ലാൻ മടിച്ച് രക്ഷിച്ചിരുന്നു. ആ പുണ്യത്തെ ഓർത്ത്, അവനെ രക്ഷിക്കാനായി ബുദ്ധൻ സ്വർഗ്ഗത്തിൽ നിന്ന് ഒരു ചിലന്തിനൂൽ താഴേക്ക് ഇറക്കി നൽകി.",
+      "questions": [
+        {
+          "q": "御釈迦様は どこから 地獄を ご覧になりましたか。",
+          "q_en": "From where did the Buddha gaze into Hell?",
+          "q_te": "బుద్ధ భగవానుడు ఎక్కడి నుండి నరకాన్ని చూశాడు?",
+          "q_hi": "बुद्ध ने नर्क की ओर कहाँ से देखा?",
+          "q_ta": "புத்தர் எங்கிருந்து நரகத்தைப் பார்த்தார்?",
+          "q_ko": "부처님께서는 어디에서 지옥을 내려다보셨습니까?",
+          "q_es": "¿Desde dónde miró el Buda hacia el Infierno?",
+          "q_kn": "ಬುದ್ಧರು ಎಲ್ಲಿಂದ ನರಕವನ್ನು ನೋಡಿದರು?",
+          "q_ml": "ബുദ്ധൻ എവിടെ നിന്നാണ് നരകത്തിലേക്ക് നോക്കിയത്?",
+          "options": [
+            "極楽の 蓮池の ふちから",
+            "高い 山の 頂上から",
+            "黄金の 寺院の 窓から",
+            "雲の 上の 宮殿から"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "犍陀多が 生前に 行った たった一つの 善行とは 何ですか。",
+          "q_en": "What was the single good deed Kandata performed during his lifetime?",
+          "q_te": "కాందాత బ్రతికి ఉన్నప్పుడు చేసిన ఏకైక మంచి పని ఏమిటి?",
+          "q_hi": "कंदाता ने जीवन में कौन सा एकमात्र पुण्य किया था?",
+          "q_ta": "கந்தாதா செய்த ஒரே ஒரு நற்செயல் என்ன?",
+          "q_ko": "칸다타가 생전에 행한 단 하나의 선행은 무엇입니까?",
+          "q_es": "¿Cuál fue la única buena acción que hizo Kandata en vida?",
+          "q_kn": "ಕಾಂದಾತ ತನ್ನ ಜೀವಿತಾವಧಿಯಲ್ಲಿ ಮಾಡಿದ ಏಕೈಕ ಪುಣ್ಯ ಯಾವುದು?",
+          "q_ml": "കന്ദാത്ത ജീവിതത്തിൽ ചെയ്ത ഒരേയൊരു നല്ല കാര്യം എന്തായിരുന്നു?",
+          "options": [
+            "一匹の 蜘蛛を 踏み殺さずに 助けたこと",
+            "貧しい 人に お金を 恵んだこと",
+            "寺院に 寄付を したこと",
+            "親を 大切に 世話したこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "御釈迦様は 犍陀多を 救うために 何を 垂らしましたか。",
+          "q_en": "What did the Buddha lower to save Kandata?",
+          "q_te": "కాందాతను రక్షించడానికి బుద్ధుడు దేనిని క్రిందికి జారవిడిచాడు?",
+          "q_hi": "बुद्ध ने कंदाता को बचाने के लिए क्या नीचे उतारा?",
+          "q_ta": "கந்தாதாவைக் காப்பாற்ற புத்தர் எதை இறக்கினார்?",
+          "q_ko": "부처님께서는 칸다타를 구하기 위해 무엇을 드리우셨습니까?",
+          "q_es": "¿Qué descolgó el Buda para salvar a Kandata?",
+          "q_kn": "ಕಾಂದಾತನನ್ನು ರಕ್ಷಿಸಲು ಬುದ್ಧರು ಏನನ್ನು ಇಳಿಸಿದರು?",
+          "q_ml": "കന്ദാത്തയെ രക്ഷിക്കാൻ ബുദ്ധൻ എന്താണ് താഴ്ത്തിക്കൊടുത്തത്?",
+          "options": [
+            "極楽の 蜘蛛の糸",
+            "頑丈な 綱",
+            "光り輝く 梯子",
+            "一本の 蓮の茎"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n2-11",
+      "title": "羅生門 (Rashomon - Akutagawa Ryunosuke)",
+      "passage": "ある日の暮れ方のことである。一人の下人が、羅生門の下で雨やみを待っていた。広い門の下には、この男のほかに誰もいない。ただ、所々丹塗りの剥げた大きな円柱に、蟋蟀が一匹とまっている。京都の町はここ数年、地震や辻風、火事や飢饉が打ち続き、非常な荒れようであった。下人は数日前に主人から解雇され、行くあてもなく途方に暮れていた。今夜の寝床を求めて門の上の楼閣に登ると、死体が幾つも転がっている暗闇の中で、一人の老婆が若い女の死体から髪の毛を一本一本引き抜いているのを目撃した。下人は激しい怒りを覚えたが、老婆は「この髪で鬘を作って売らねば飢え死にしてしまう。この死んだ女も生前、蛇を魚と偽って売って暮らしていたのだから、怨みはしまい」と平然と語った。それを聞いた下人は、善悪の迷いを捨て、「己も盗人をしなければ飢え死にする身だ」と言い放ち、老婆の着物を剥ぎ取って夜の闇へと消え去った。",
+      "passage_en": "It was at twilight one evening. A lowly servant stood under the Rashomon gate, waiting for the rain to cease. Beneath the vast gate there was no one else, save for a single cricket perched on a massive red-lacquered pillar with peeling paint. Kyoto had suffered successive disasters in recent years—earthquakes, typhoons, fires, and famines—leaving the city in utter ruin. Dismissed by his master days ago, the servant had nowhere to go. Seeking shelter, he climbed into the upper tower of the gate, only to find piles of abandoned corpses. In the gloom, an old hag was plucking hairs one by one from the head of a young dead woman. Enraged, the servant confronted her, but she calmly justified herself: 'If I don't make wigs from this hair to sell, I will starve. This woman too deceived people in life by selling dried snakes as fish, so she wouldn't hold a grudge.' Hearing this, the servant abandoned all moral hesitation: 'Then I too must become a thief, or starve!' He stripped the hag of her robe and vanished into the night.",
+      "passage_te": "ఒక సాయంత్రం వేళ, ఒక సేవకుడు రషోమోన్ ద్వారం క్రింద వర్షం ఆగే వరకు వేచి చూస్తున్నాడు. ఆ భారీ ద్వారం వద్ద అతను తప్ప ఎవరూ లేరు. క్యోటో నగరం వరుసగా భూకంపాలు, కరువులు, అగ్నిప్రమాదాల వల్ల సర్వనాశనమైంది. యజమాని పనిలోంచి తీసేయడంతో దిక్కుతోచని ఆ సేవకుడు రాత్రి తలదాచుకోవడానికి ద్వారం పై అంతస్తుకు ఎక్కాడు. అక్కడ శవాల కుప్పల మధ్య, ఒక వృద్ధురాలు శవం తల నుండి వెంట్రుకలను పీకుతూ కనిపించింది. సేవకుడికి తీవ్ర కోపం వచ్చింది. కానీ ఆ ముసలామె, 'ఈ వెంట్రుకలతో విగ్గులు చేసి అమ్మకపోతే నేను ఆకలితో చచ్చిపోతాను. ఈ చచ్చిన స్త్రీ కూడా బ్రతికి ఉన్నప్పుడు పాములను చేపలని అమ్మి బ్రతికింది, కాబట్టి నా మీద కోపపడదు' అని చెప్పింది. ఆ మాట విన్న సేవకుడు తన నైతిక సంకోచాలన్నీ వదిలేసి, 'నేను కూడా దొంగతనం చేయకపోతే ఆకలితో చస్తాను' అంటూ ఆ ముసలామె బట్టలను లాక్కొని చీకట్లోకి పారిపోయాడు.",
+      "passage_hi": "एक शाम रशोमोन दरवाज़े के नीचे एक सेवक बारिश रुकने की प्रतीक्षा कर रहा था। क्योटो शहर लगातार अकाल, आग और भूकंप से तबाह हो चुका था। मालिक द्वारा नौकरी से निकाले जाने के बाद वह बेघर था। रात बिताने के लिए वह दरवाज़े के ऊपर गया तो देखा कि कई लाशें पड़ी हैं और एक बुढ़िया एक शव के सिर से बाल नोच रही है। सेवक को अत्यंत क्रोध आया। बुढ़िया ने कहा, 'यदि मैं इन बालों से विग बनाकर न बेचूँ तो भूख से मर जाऊँगी। यह औरत भी जीवित रहते साँपों को मछली बताकर बेचती थी।' यह सुनकर सेवक ने अपने नैतिक द्वंद्व को त्याग दिया और कहा, 'तो फिर मैं भी चोरी न करूँ तो मर जाऊँगा!' उसने बुढ़िया के वस्त्र छीन लिए और रात के अंधेरे में भाग गया।",
+      "passage_ta": "ஒரு மாலை வேளையில் ரஷோமோன் கோபுர வாயிலில் ஒரு வேலைக்காரன் மழைக்காக ஒதுங்கினான். கியோட்டோ நகரம் நிலநடுக்கம், பஞ்சம் போன்றவற்றால் சீரழிந்திருந்தது. வேலை இழந்த அவன் தங்க இடம்தேடி கோபுரத்தின் மேல்தளத்திற்குச் சென்றான். அங்கே சடலங்களுக்கு நடுவே ஒரு கிழவி, இறந்த பெண்ணின் தலைமுடியைப் பிடுங்கிக் கொண்டிருந்தாள். சினமடைந்த அவனிடம் கிழவி, 'இந்த முடியை விற்றால்தான் பசிக்கு உணவு கிடைக்கும். இந்த பெண்ணும் பாம்புகளை மீன் என்று விற்றுதான் பிழைத்தாள்' என்றாள். இதைக் கேட்ட வேலைக்காரன் தன் தயக்கத்தை விட்டு, 'நானும் திருடாவிட்டால் பட்டினி கிடந்து சாக வேண்டும்' எனக் கூறி கிழவியின் ஆடையைப் பறித்துக்கொண்டு இரவில் தப்பியோடினான்.",
+      "passage_ko": "어느 날 해질 무렵의 일이다. 한 하인이 라쇼몽 아래에서 비가 그치기를 기다리고 있었다. 교토는 지진과 화재, 기근으로 황폐해져 있었고 하인은 며칠 전 쫓겨나 갈 곳이 없었다. 누각 위로 올라가 보니 시체더미 속에서 한 노파가 여자의 시체에서 머리카락을 뽑고 있었다. 하인이 분노하자 노파는 '가발을 만들어 팔지 않으면 굶어 죽는다. 이 여자도 뱀을 생선이라 속여 팔았으니 원망치 않을 것'이라 말했다. 이 말을 들은 하인은 도덕적 갈등을 버리고 '나 또한 도둑질을 하지 않으면 굶어 죽을 몸이다'라며 노파의 옷을 빼앗아 어둠 속으로 달아났다.",
+      "passage_es": "Aconteció al atardecer. Un sirviente esperaba bajo la puerta de Rashomon a que cesara la lluvia. Kioto estaba desolada por hambrunas, terremotos e incendios. Despedido por su amo, no tenía rumbo. Subió al piso superior en busca de refugio y halló montones de cadáveres; en la penumbra, una anciana arrancaba los cabellos de una difunta. El sirviente se indignó, pero ella se justificó: 'Si no vendo este pelo para pelucas moriré de hambre. Esta mujer vendía serpientes secas diciendo que eran peces, así que no tiene derecho a quejarse'. Al oírla, el sirviente abandonó sus dudas morales: '¡Entonces yo también me haré ladrón o moriré!', le despojó del kimono y huyó en la noche.",
+      "passage_kn": "ಒಂದು ಸಂಜೆ ಸೇವಕನೊಬ್ಬ ರಶೋಮೊನ್ ಬಾಗಿಲ ಬಳಿ ಮಳೆ ನಿಲ್ಲುವುದನ್ನು ಕಾಯುತ್ತಿದ್ದನು. ಕ್ಯೋಟೋ ನಗರವು ಕ್ಷಾಮ ಮತ್ತು ಭೂಕಂಪಗಳಿಂದ ನಾಶವಾಗಿತ್ತು. ಆತ ಆಶ್ರಯಕ್ಕಾಗಿ ಬಾಗಿಲಿನ ಮೇಲ್ಮಹಡಿಗೆ ಹೋದಾಗ, ಹೆಣಗಳ ಮಧ್ಯೆ ಒಬ್ಬ ಮುದುಕಿ ಶವದ ಕೂದಲನ್ನು ಕೀಳುತ್ತಿರುವುದು ಕಂಡಿತು. ಸೇವಕ ಕೋಪಗೊಂಡಾಗ ಆಕೆ, 'ಈ ಕೂದಲನ್ನು ಮಾರದಿದ್ದರೆ ಹಸಿವಿನಿಂದ ಸಾಯುತ್ತೇನೆ. ಈ ಸತ್ತ ಹೆಂಗಸೂ ಬದುಕಿದ್ದಾಗ ಹಾವನ್ನು ಮೀನೆಂದು ಮಾರಿ ಬದುಕಿದ್ದಳು' ಎಂದಳು. ಇದನ್ನು ಕೇಳಿದ ಸೇವಕ, 'ಹಾಗಾದರೆ ನಾನೂ ಕಳ್ಳತನ ಮಾಡದಿದ್ದರೆ ಸಾಯುತ್ತೇನೆ' ಎಂದು ಆ ಮುದುಕಿಯ ಬಟ್ಟೆಯನ್ನು ಕಿತ್ತುಕೊಂಡು ಕತ್ತಲಲ್ಲಿ ಮಾಯವಾದನು.",
+      "passage_ml": "ഒരു സായാഹ്നത്തിൽ രഷോമോൻ കവാടത്തിനടിയിൽ ഒരു വേലക്കാരൻ മഴ തോരാൻ കാത്തുനിൽക്കുകയായിരുന്നു. ദുരന്തങ്ങളാൽ തകർന്ന നഗരത്തിൽ വഴിയറിയാതെ അവൻ കവാടത്തിന് മുകളിലെ നിലയിലേക്ക് കയറി. അവിടെ ശവങ്ങൾക്കിടയിൽ ഒരു വൃദ്ധ ഒരു സ്ത്രീയുടെ ശവത്തിൽ നിന്ന് മുടി പിഴുതെടുക്കുന്നത് കണ്ടു. അവൻ ദേഷ്യപ്പെട്ടപ്പോൾ, 'ഇത് വിറ്റില്ലെങ്കിൽ ഞാൻ പട്ടിണി കിടന്നു മരിക്കും' എന്ന് അവൾ പറഞ്ഞു. ഇതുകേട്ട അവൻ നന്മതിന്മകളെല്ലാം മറന്ന്, 'ഞാനും മോഷ്ടിച്ചില്ലെങ്കിൽ പട്ടിണി കിടന്നു മരിക്കും' എന്ന് പറഞ്ഞ് അവളുടെ വസ്ത്രങ്ങൾ തട്ടിപ്പറിച്ച് ഇരുട്ടിലേക്ക് ഓടിപ്പോയി.",
+      "questions": [
+        {
+          "q": "下人は なぜ 羅生門の 下で 雨やみを 待っていましたか。",
+          "q_en": "Why was the servant waiting for the rain to cease under Rashomon?",
+          "q_te": "సేవకుడు రషోమోన్ ద్వారం క్రింద ఎందుకు వర్షం ఆగడానికి వేచి ఉన్నాడు?",
+          "q_hi": "सेवक रशोमोन के नीचे बारिश रुकने की प्रतीक्षा क्यों कर रहा था?",
+          "q_ta": "வேலைக்காரன் ஏன் ரஷோமோன் வாயிலில் ஒதுங்கினான்?",
+          "q_ko": "하인은 왜 라쇼몽 아래에서 비를 피하고 있었습니까?",
+          "q_es": "¿Por qué esperaba el sirviente bajo la puerta de Rashomon?",
+          "q_kn": "ಸೇವಕ ರಶೋಮೊನ್ ಬಾಗಿಲ ಬಳಿ ಮಳೆಯನ್ನು ಏಕೆ ಕಾಯುತ್ತಿದ್ದನು?",
+          "q_ml": "വേലക്കാരൻ എന്തിനാണ് രഷോമോൻ കവാടത്തിനടിയിൽ കാത്തുനിന്നത്?",
+          "options": [
+            "主人から 解雇され、行き場が なかったから",
+            "友人と 待ち合わせを していたから",
+            "盗みの 機会を うかがっていたから",
+            "門の 番人を していたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "老婆は 死体から 何を 引き抜いていましたか。",
+          "q_en": "What was the old woman pulling from the corpse?",
+          "q_te": "ముసలామె శవం నుండి దేనిని పీకుతోంది?",
+          "q_hi": "बुढ़िया शव से क्या खींच रही थी?",
+          "q_ta": "கிழவி சடலத்திலிருந்து எதைப் பிடுங்கிக் கொண்டிருந்தாள்?",
+          "q_ko": "노파는 시체에서 무엇을 뽑아내고 있었습니까?",
+          "q_es": "¿Qué le arrancaba la anciana al cadáver?",
+          "q_kn": "ಮುದುಕಿ ಶವದಿಂದ ಏನನ್ನು ಕೀಳುತ್ತಿದ್ದಳು?",
+          "q_ml": "വൃദ്ധ ശവത്തിൽ നിന്ന് എന്താണ് പിഴുതെടുത്തിരുന്നത്?",
+          "options": [
+            "髪の毛 (かみのけ)",
+            "金歯",
+            "指輪",
+            "衣服"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "下人は 最後に 老婆に 何を しましたか。",
+          "q_en": "What did the servant do to the old woman in the end?",
+          "q_te": "చివరికి సేవకుడు ఆ ముసలామెకు ఏమి చేశాడు?",
+          "q_hi": "अंत में सेवक ने बुढ़िया के साथ क्या किया?",
+          "q_ta": "இறுதியில் வேலைக்காரன் கிழவிக்கு என்ன செய்தான்?",
+          "q_ko": "하인은 마지막에 노파에게 어떤 짓을 저질렀습니까?",
+          "q_es": "¿Qué le hizo el sirviente a la anciana al final?",
+          "q_kn": "ಕೊನೆಗೆ ಸೇವಕ ಮುದುಕಿಗೆ ಏನು ಮಾಡಿದನು?",
+          "q_ml": "അവസാനം വേലക്കാരൻ വൃദ്ധയോട് എന്ത് ചെയ്തു?",
+          "options": [
+            "着物を 剥ぎ取って 逃げ去った",
+            "役人に 突き出した",
+            "金を与えて 助けた",
+            "一緒に 暮らすことにした"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n2-12",
+      "title": "坊っちゃん (Botchan - Natsume Soseki)",
+      "passage": "親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張ってもそこから飛び降りる事は出来まいと言ったからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして「二階ぐらいから飛び降りて腰を抜かす奴があるか」と言った。私は負けず嫌いであった。東京の物理学校を卒業した私は、校長から「四国の中学校で数学の教師口があるが、行かないか」と勧められた。私は二つ返事で「行きましょう」と答えた。こうして、江戸っ子の私は見知らぬ四国の城下町へと旅立つことになったのである。",
+      "passage_en": "Because of an inherited recklessness, I've done nothing but lose out ever since childhood. When I was in elementary school, I once jumped from the second floor of the schoolhouse and threw my lower back out for a week. Some might wonder why I did such a senseless thing. There was no profound reason: leaning out of the second floor of the newly built school, a classmate taunted me, saying that no matter how boastful I was, I'd never dare jump. When the janitor carried me home on his back, my father glared at me with wide eyes and said, 'What kind of fool throws out his back jumping from merely the second floor?' I simply hated to lose. After graduating from the Tokyo Physics Academy, the principal suggested: 'There's a math teaching post at a middle school in Shikoku; care to go?' I accepted without hesitation: 'I'll go.' And so, a born-and-bred Tokyoite, I embarked on a journey to an unfamiliar castle town in Shikoku.",
+      "passage_te": "తల్లిదండ్రుల నుండి సంక్రమించిన మొండితనం వల్ల నేను చిన్నప్పటి నుండి నష్టపోతూనే ఉన్నాను. ప్రాథమిక పాఠశాలలో ఉన్నప్పుడు బడి రెండో అంతస్తు నుండి దూకి వారం రోజుల పాటు నడుము పట్టేసి మంచాన పడ్డాను. ఎందుకు అంత పిచ్చి పని చేశావని ఎవరైనా అడగవచ్చు. పెద్ద కారణమేమీ లేదు. తరగతి స్నేహితుడు ఒకడు 'ఎంత విర్రవీగినా అక్కడి నుండి దూకలేవులే' అని ఎగతాళి చేయడంతో దూకేశాను. మా నాన్న 'కేవలం రెండో అంతస్తు నుండి దూకి నడుము విరగ్గొట్టుకుంటావా' అని కోప్పడ్డాడు. నాకు ఓడిపోవడమంటే గిట్టదు. టోక్యో సైన్స్ కళాశాలలో చదువు ముగిసిన తర్వాత, ప్రిన్సిపాల్ 'షికోకులోని ఒక పాఠశాలలో లెక్కల మాస్టారు ఉద్యోగం ఉంది, వెళ్తావా' అని అడిగారు. నేను ఏమాత్రం ఆలోచించకుండా 'వెళ్తాను' అని చెప్పాను. అలా పుట్టి పెరిగిన టోక్యోను వదిలి దూరపు ఊరికి బయలుదేరాను.",
+      "passage_hi": "जन्मजात उतावलेपन के कारण मैं बचपन से ही नुकसान उठाता रहा हूँ। प्राइमरी स्कूल के समय एक बार स्कूल की दूसरी मंजिल से कूद गया और हफ्ते भर कमर पकड़कर पड़ा रहा। ऐसा क्यों किया? कोई खास कारण नहीं था—सहपाठी ने चुनौती दी थी कि तुम कितनी भी डींगें हाँको, वहाँ से कूद नहीं सकते। हार मानना मुझे पसंद नहीं था। टोक्यो से पढ़ाई पूरी करने के बाद जब प्रिंसिपल ने पूछा, 'शिकोकू के एक स्कूल में गणित के शिक्षक की जगह है, जाओगे?' तो मैंने झट से कहा, 'हाँ, जाऊँगा।' इस प्रकार मैं एक अनजान कस्बे की ओर चल पड़ा।",
+      "passage_ta": "இயற்கையிலேயே பிடிவாதக் குணம் கொண்டதால் சிறுவயதிலிருந்தே பல இழப்புகளைச் சந்தித்துள்ளேன். தொடக்கப் பள்ளியில் படித்தபோது, பள்ளியின் இரண்டாம் தளத்திலிருந்து குதித்து ஒரு வாரம் இடுப்பு வலியால் அவதிப்பட்டேன். நண்பன் ஒருவன் 'உன்னால் இங்கிருந்து குதிக்க முடியாது' என்று சவால் விட்டதால் குதித்தேன். எனக்கு தோல்வியை ஏற்க முடியாது. டோக்கியோவில் படிப்பை முடித்ததும் தலைமை ஆசிரியர் 'ஷிகோகுவில் கணித ஆசிரியர் வேலை உள்ளது, போகிறாயா?' எனக் கேட்டார். உடனே 'போகிறேன்' என்று ஒப்புக்கொண்டு புறப்பட்டேன்.",
+      "passage_ko": "부모에게 물려받은 무모함 때문에 어릴 적부터 손해만 보고 살아왔다. 소학교 시절 학교 2층에서 뛰어내려 일주일 동안 허리를 쓰지 못한 적도 있다. 동급생이 '아무리 큰소리쳐도 거기서 뛰어내리진 못하겠지'라고 도발했기 때문이었다. 나는 지는 것을 죽기보다 싫어했다. 도쿄 물리학학교를 졸업한 후, 교장 선생님이 '시코쿠의 중학교에서 수학 교사를 구하는데 가보지 않겠나'라고 권했고, 나는 망설임 없이 '가겠습니다'라고 대답하여 머나먼 시코쿠로 떠나게 되었다.",
+      "passage_es": "Por culpa de una temeridad heredada, no he hecho más que sufrir percances desde niño. En la escuela primaria salté una vez desde el segundo piso y me lastimé la espalda durante una semana. No hubo mayor razón que la provocación de un compañero que dijo que no me atrevería. Odiaba perder. Al graduarme de la Escuela de Física de Tokio, el director me propuso: 'Hay una plaza de profesor de matemáticas en Shikoku, ¿quieres ir?'. Respondí al instante: 'Iré'. Así partí rumbo a una remota ciudad provincial.",
+      "passage_kn": "ಹುಟ್ಟಿನಿಂದಲೇ ಬಂದ ದುಡುಕುತನದಿಂದ ಬಾಲ್ಯದಿಂದಲೂ ಏಟು ತಿನ್ನುತ್ತಲೇ ಬಂದಿದ್ದೇನೆ. ಪ್ರಾಥಮಿಕ ಶಾಲೆಯಲ್ಲಿದ್ದಾಗ ಎರಡನೇ ಮಹಡಿಯಿಂದ ಜಿಗಿದು ಸೊಂಟ ನೋವು ಮಾಡಿಕೊಂಡಿದ್ದೆ. ಸ್ನೇಹಿತನೊಬ್ಬ ಸವಾಲು ಹಾಕಿದ್ದಕ್ಕೆ ಹಾಗೆ ಮಾಡಿದ್ದೆ. ಸೋಲನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುವುದು ನನಗೆ ಇಷ್ಟವಿರಲಿಲ್ಲ. ಟೋಕಿಯೋದಲ್ಲಿ ವಿದ್ಯಾಭ್ಯಾಸ ಮುಗಿದ ನಂತರ 'ಶಿಕೋಕು ಶಾಲೆಯಲ್ಲಿ ಗಣಿತ ಶಿಕ್ಷಕ ಹುದ್ದೆಯಿದೆ, ಹೋಗುತ್ತೀಯಾ?' ಎಂದು ಕೇಳಿದಾಗ ತಕ್ಷಣ 'ಹೋಗುತ್ತೇನೆ' ಎಂದು ಒಪ್ಪಿಕೊಂಡು ಹೊಸ ಊರಿಗೆ ಹೊರಟೆ.",
+      "passage_ml": "ജന്മനാ ഉള്ള എടുത്തുചാട്ടം കാരണം കുട്ടിക്കാലം മുതൽ ഞാൻ നഷ്ടങ്ങൾ മാത്രമേ ഉണ്ടാക്കിയിട്ടുള്ളൂ. പ്രൈമറി സ്കൂളിൽ പഠിക്കുമ്പോൾ രണ്ടാം നിലയിൽ നിന്ന് ചാടി നടുവിന് പരിക്കേറ്റിരുന്നു. കൂട്ടുകാരൻ വെല്ലുവിളിച്ചതുകൊണ്ട് മാത്രമാണ് അങ്ങനെ ചെയ്തത്. തോൽക്കുന്നത് എനിക്കിഷ്ടമല്ലായിരുന്നു. പഠനം കഴിഞ്ഞപ്പോൾ 'ഷിക്കോക്കുവിലെ സ്കൂളിൽ കണക്ക് അധ്യാപകന്റെ ഒഴിവുണ്ട്, പോകുന്നോ' എന്ന് പ്രിൻസിപ്പൽ ചോദിച്ചപ്പോൾ ഒട്ടും മടിക്കാതെ 'പോകാം' എന്ന് പറഞ്ഞ് ഞാൻ യാത്രതിരിച്ചു.",
+      "questions": [
+        {
+          "q": "主人公が 小学校の 二階から 飛び降りた 理由は 何ですか。",
+          "q_en": "What was the reason the protagonist jumped from the second floor of the elementary school?",
+          "q_te": "కథానాయకుడు పాఠశాల రెండో అంతస్తు నుండి ఎందుకు దూకాడు?",
+          "q_hi": "नायक के दूसरी मंजिल से कूदने का क्या कारण था?",
+          "q_ta": "கதைநாயகன் பள்ளியின் இரண்டாம் தளத்திலிருந்து குதித்த காரணம் என்ன?",
+          "q_ko": "주인공이 소학교 2층에서 뛰어내린 이유는 무엇입니까?",
+          "q_es": "¿Por qué saltó el protagonista desde el segundo piso de la escuela?",
+          "q_kn": "ನಾಯಕನು ಎರಡನೇ ಮಹಡಿಯಿಂದ ಏಕೆ ಜಿಗಿದನು?",
+          "q_ml": "കഥാനായകൻ സ്കൂളിന്റെ രണ്ടാം നിലയിൽ നിന്ന് ചാടാൻ കാരണം എന്തായിരുന്നു?",
+          "options": [
+            "同級生に 挑発されて 負けず嫌いだったから",
+            "火事から 逃げるため",
+            "先生に 怒られて 逃げたかったから",
+            "飛び降りの 訓練を していたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "主人公は 四国の中学校へ 何の 教師として 行くことになりましたか。",
+          "q_en": "As a teacher of what subject was the protagonist sent to the middle school in Shikoku?",
+          "q_te": "కథానాయకుడు ఏ సబ్జెక్ట్ టీచర్‌గా ఉద్యోగానికి వెళ్ళాడు?",
+          "q_hi": "नायक किस विषय के शिक्षक के रूप में शिकोकू गया?",
+          "q_ta": "நாயகன் எந்தப் பாட ஆசிரியராக வேலைக்குச் சென்றான்?",
+          "q_ko": "주인공은 시코쿠의 중학교에 어떤 과목의 교사로 가게 되었습니까?",
+          "q_es": "¿De qué asignatura fue a dar clase como profesor en Shikoku?",
+          "q_kn": "ನಾಯಕನು ಯಾವ ವಿಷಯದ ಶಿಕ್ಷಕನಾಗಿ ಶಾಲೆಗೆ ಹೋದನು?",
+          "q_ml": "ഏത് വിഷയത്തിന്റെ അധ്യാപകനായാണ് അവൻ പോയത്?",
+          "options": [
+            "数学 (すうがく)",
+            "国語 (日本語)",
+            "英語",
+            "理科 (物理)"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 小説の 題名は 何ですか。",
+          "q_en": "What is the title of this novel?",
+          "q_te": "ఈ నవల పేరు ఏమిటి?",
+          "q_hi": "इस उपन्यास का क्या नाम है?",
+          "q_ta": "இந்த நாவலின் தலைப்பு என்ன?",
+          "q_ko": "이 소설의 제목은 무엇입니까?",
+          "q_es": "¿Cuál es el título de esta novela?",
+          "q_kn": "ಈ ಕಾದಂಬರಿಯ ಹೆಸರೇನು?",
+          "q_ml": "ഈ നോവലിന്റെ പേരെന്താണ്?",
+          "options": [
+            "坊っちゃん (夏目漱石)",
+            "こころ",
+            "吾輩は猫である",
+            "三四郎"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n2-13",
+      "title": "山月記 (The Moon Over the Mountain - Nakajima Atsushi)",
+      "passage": "李徴は博学才穎、天宝の末年、若くして名を虎榜に連ね、江南尉に補せられたが、性、狷介、自ら恃むところ頗る厚く、賤吏に甘んずるを潔しとしなかった。いくばくもなく官を辞し、故山に帰臥して詩作に耽った。しかし文名は容易に揚がらず、生活は日を逐うて苦しくなる。妻子を養うため、彼は再び東へ下り、一地方官の職に就いたが、かつて自分より遥かに劣っていた同期生たちに命令される屈辱に耐えかね、ついには発狂して夜半に闇の中へと駆け去った。翌年、監察御史の袁傪が勅命を奉じて嶺南へ赴く途中、道で一頭の猛虎に襲われそうになった。虎は袁傪を見るなり草むらへ身を隠し、人間の声で「あぶないところだった」と叫んだ。その声は、袁傪の旧友である李徴の声であった。李徴は己の尊大な羞恥心と臆病な自尊心が自らを虎という獣に変えてしまったのだと涙ながらに友に告白した。",
+      "passage_en": "Li Zheng was brilliant and learned; in his youth he passed the imperial examinations with honors. But proud and unyielding, he despised being a petty official. Resigning his post, he retreated to his hometown to devote himself to poetry. Yet fame eluded him, and poverty closed in. To feed his family, he took a lowly provincial post, but unable to bear taking orders from former peers whom he once considered inferior, he lost his mind and vanished into the wilderness at midnight. The following year, his friend Yuan Can, traveling as an imperial inspector, was ambushed on a mountain path by a fierce tiger. Upon seeing Yuan Can, the beast retreated into the bushes and cried out in human speech: 'That was close!' It was the voice of Li Zheng. Weeping, Li Zheng confessed that his monstrous pride and cowardly vanity had literally transformed him into a wild beast.",
+      "passage_te": "లీ జెంగ్ అపారమైన ప్రతిభావంతుడు, చిన్న వయస్సులోనే అత్యున్నత పరీక్షలలో ఉత్తీర్ణుడయ్యాడు. కానీ గర్వం మరియు స్వాభిమానం ఎక్కువ కావడంతో చిన్న ఉద్యోగాలు చేయడం ఇష్టం లేక రాజీనామా చేసి కవిత్వ రచనలో మునిగిపోయాడు. అయితే కవిగా గుర్తింపు రాలేదు, పేదరికం చుట్టుముట్టింది. కుటుంబం కోసం మళ్ళీ చిన్న ఉద్యోగంలో చేరినప్పటికీ, తనకంటే తక్కువ స్థాయి గల పాత సహచరుల ఆజ్ఞలు పాటించలేక పిచ్చివాడై అర్ధరాత్రి అడవిలోకి పారిపోయాడు. మరుసటి సంవత్సరం, అతని స్నేహితుడు యువాన్ కాన్ ప్రయాణిస్తుండగా ఒక పులి దాడి చేయబోయింది. ఆ పులి మనిషి గొంతుతో మాట్లాడటం విని యువాన్ ఆశ్చర్యపోయాడు. అది లీ జెంగ్ గొంతు! తన విపరీతమైన అహంకారం, ఆత్మన్యూనతా భావమే తనను పులిగా మార్చేశాయని లీ జెంగ్ కన్నీటితో స్నేహితుడికి చెప్పుకున్నాడు.",
+      "passage_hi": "ली झेंग अत्यंत प्रतिभाशाली था और उसने युवावस्था में ही कठिन परीक्षा पास कर ली थी। पर घमंडी स्वभाव के कारण वह छोटी नौकरी नहीं करना चाहता था। उसने नौकरी छोड़ दी और कविताएँ लिखने लगा। पर न प्रसिद्धि मिली, न धन। परिवार के भरण-पोषण के लिए विवश होकर दोबारा नौकरी की, पर अपने से कम योग्य लोगों के अधीन काम करने का अपमान न सह सका और पागल होकर जंगल में भाग गया। अगले वर्ष उसके मित्र युआन त्सान पर जंगल में एक बाघ ने हमला किया, पर रुक गया और मनुष्य की आवाज़ में बोला। वह आवाज़ ली झेंग की थी! उसने रोते हुए स्वीकार किया कि उसके झूठे अहंकार ने ही उसे नरभक्षी बाघ बना दिया है।",
+      "passage_ta": "லீ ஜெங் பெரும் அறிவாளி, இளம் வயதிலேயே தேர்வில் வென்றவன். ஆனால் கர்வமும் பிடிவாதமும் கொண்ட அவனால் கீழ்நிலை வேலையைச் செய்ய முடியவில்லை. வேலையை விட்டுவிட்டு கவிதை எழுதத் தொடங்கினான். ஆனால் புகழும் கிடைக்கவில்லை, வறுமையும் வாட்டியது. குடும்பத்திற்காக மீண்டும் பணியில் சேர்ந்தாலும், தன்னைவிடத் திறமையற்றவர்களின் கீழ் வேலை செய்ய முடியாமல் பித்துப்பிடித்து நள்ளிரவில் காட்டில் ஓடி மறைந்தான். அடுத்த ஆண்டு அவனது நண்பன் யுவான் வழியில் ஒரு புலியால் தாக்கப்படவிருந்தான். புலி மனிதக் குரலில் பேசியது. அது லீ ஜெங்கின் குரல்! தன் அகந்தையே தன்னை ஒரு கொடிய புலியாக மாற்றியது என்று அழுது புலம்பினான்.",
+      "passage_ko": "이징은 재능이 뛰어났으나 자존심이 세고 거만하여 말단 관직에 만족하지 못했다. 관직을 버리고 시를 짓는 데 몰두했으나 명성을 얻지 못하고 생활은 궁핍해졌다. 처자식을 위해 다시 하급 관리가 되었으나 예전 동기들의 명령을 받는 굴욕을 견디지 못하고 발광하여 어둠 속으로 사라졌다. 이듬해 친구 원참이 길을 가다 호랑이의 습격을 받았는데, 호랑이가 풀숲에 숨어 사람의 목소리로 말을 건넸다. 바로 호랑이로 변해버린 이징이었다. 그는 자신의 거만한 수치심과 소심한 자존심이 자신을 맹수로 만들었다고 눈물로 고백했다.",
+      "passage_es": "Li Zheng era un hombre de talento deslumbrante, pero su orgullo indomable le impedía aceptar cargos modestos. Dejó su puesto para consagrarse a la poesía, mas la gloria no llegó y la miseria le asedió. Forzado a aceptar un empleo menor para alimentar a su familia, no soportó acatar órdenes de antiguos compañeros a quienes consideraba inferiores. Enloqueció y huyó al bosque. Al año siguiente, su amigo Yuan Can fue atacado por un tigre que, al reconocerle, se ocultó y habló con voz humana: era Li Zheng. Llorando, confesó que su arrogante vanidad le había transformado literalmente en una bestia.",
+      "passage_kn": "ಲೀ ಜೆಂಗ್ ಅಪಾರ ಪ್ರತಿಭಾವಂತನಾಗಿದ್ದರೂ ಅಹಂಕಾರ ಹೆಚ್ಚಿತ್ತು. ಸಣ್ಣ ಕೆಲಸ ಮಾಡಲು ಇಷ್ಟವಿಲ್ಲದೆ ಕವಿತೆ ಬರೆಯಲು ತೊಡಗಿದನು. ಆದರೆ ಪ್ರಸಿದ್ಧಿ ಸಿಗದೆ ಬಡತನ ಆವರಿಸಿತು. ಸಂಸಾರಕ್ಕಾಗಿ ಮತ್ತೆ ನೌಕರಿಗೆ ಸೇರಿದಾಗ, ತನಗಿಂತ ಕೀಳಾದವರ ಕೈಕೆಳಗೆ ಕೆಲಸ ಮಾಡಲಾಗದೆ ಹುಚ್ಚನಾಗಿ ಕಾಡಿಗೆ ಓಡಿಹೋದನು. ಮುಂದಿನ ವರ್ಷ ಅವನ ಮಿತ್ರ ಯುವಾನ್ ಮೇಲೆ ಹುಲಿಯೊಂದು ಎರಗಲು ಬಂದಾಗ, ಅದು ಮನುಷ್ಯನ ದನಿಯಲ್ಲಿ ಮಾತನಾಡಿತು. ಅದುವೇ ಹುಲಿಯಾಗಿ ಬದಲಾಗಿದ್ದ ಲೀ ಜೆಂಗ್! ತನ್ನ ಅತಿಯಾದ ಅಹಂಕಾರವೇ ತನ್ನನ್ನು ಮೃಗವನ್ನಾಗಿ ಮಾಡಿದೆ ಎಂದು ಕಣ್ಣೀರಿಟ್ಟನು.",
+      "passage_ml": "ലീ ഷെങ് അസാധാരണ ബുദ്ധിമാനായിരുന്നെങ്കിലും അഹങ്കാരിയായിരുന്നു. ചെറിയ ജോലി ചെയ്യാൻ മടിച്ച് അവൻ കവിതയെഴുത്തിൽ മുഴുകി. എന്നാൽ പ്രശസ്തി കിട്ടിയില്ല, ദാരിദ്ര്യം കൂടി. ഒടുവിൽ ഗതികെട്ട് വീണ്ടും ജോലിക്ക് കയറിയെങ്കിലും, തന്നേക്കാൾ വിവരമില്ലാത്തവരുടെ കീഴിൽ ജോലി ചെയ്യാൻ കഴിയാതെ ഭ്രാന്ത് പിടിച്ച് കാട്ടിലേക്ക് ഓടിപ്പോയി. അടുത്ത വർഷം അവന്റെ സുഹൃത്ത് യുവാൻ കാട്ടിലൂടെ പോകുമ്പോൾ ഒരു കടുവ ആക്രമിക്കാൻ വന്നു. എന്നാൽ മനുഷ്യശബ്ദത്തിൽ അത് സംസാരിച്ചു. കടുവയായി മാറിയ ലീ ഷെങ് ആയിരുന്നു അത്! തന്റെ അഹങ്കാരമാണ് തന്നെ ഒരു മൃഗമാക്കി മാറ്റിയതെന്ന് അവൻ കരഞ്ഞു പറഞ്ഞു.",
+      "questions": [
+        {
+          "q": "李徴が 官職を 辞めて 専念しようとしたことは 何ですか。",
+          "q_en": "What did Li Zheng resign his office to dedicate himself to?",
+          "q_te": "లీ జెంగ్ ఉద్యోగానికి రాజీనామా చేసి దేనిపై దృష్టి పెట్టాలనుకున్నాడు?",
+          "q_hi": "ली झेंग ने पद त्यागकर किसमें ध्यान लगाने का निर्णय लिया?",
+          "q_ta": "பதவியை விட்டுவிட்டு லீ ஜெங் எதில் கவனம் செலுத்த நினைத்தான்?",
+          "q_ko": "이징이 관직을 그만두고 전념하려 했던 것은 무엇입니까?",
+          "q_es": "¿A qué quiso dedicarse Li Zheng tras renunciar a su cargo?",
+          "q_kn": "ಲೀ ಜೆಂಗ್ ಕೆಲಸ ಬಿಟ್ಟು ಯಾವುದರಲ್ಲಿ ತೊಡಗಿಕೊಳ್ಳಲು ಬಯಸಿದನು?",
+          "q_ml": "ഉദ്യോഗം രാജിവെച്ച് ലീ ഷെങ് എന്തിനാണ് ശ്രദ്ധ കേന്ദ്രീകരിച്ചത്?",
+          "options": [
+            "詩作 (詩を 作ること)",
+            "商売",
+            "農業",
+            "武術の 修業"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "李徴は 最終的に どんな 姿に 変わり果てていましたか。",
+          "q_en": "What form had Li Zheng ultimately transformed into?",
+          "q_te": "లీ జెంగ్ చివరికి ఏ రూపంలోకి మారిపోయాడు?",
+          "q_hi": "अंत में ली झेंग किस रूप में बदल गया था?",
+          "q_ta": "இறுதியில் லீ ஜெங் என்னவாக மாறியிருந்தான்?",
+          "q_ko": "이징은 결국 어떤 모습으로 변해 있었습니까?",
+          "q_es": "¿En qué se había transformado finalmente Li Zheng?",
+          "q_kn": "ಲೀ ಜೆಂಗ್ ಕೊನೆಗೆ ಯಾವ ರೂಪಕ್ಕೆ ಬದಲಾಗಿದ್ದನು?",
+          "q_ml": "ലീ ഷെങ് ഒടുവിൽ ഏത് രൂപത്തിലേക്കാണ് മാറിയത്?",
+          "options": [
+            "猛虎 (虎)",
+            "大蛇",
+            "オオカミ",
+            "亡霊"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "李徴が 獣に 変わってしまった 原因として 告白したものは 何ですか。",
+          "q_en": "What did Li Zheng confess as the cause of his transformation into a beast?",
+          "q_te": "తాను మృగంగా మారడానికి గల కారణం ఏమిటని లీ జెంగ్ చెప్పాడు?",
+          "q_hi": "जानवर में बदलने का कारण ली झेंग ने क्या बताया?",
+          "q_ta": "மிருகமாக மாறியதற்கான காரணமாக லீ ஜெங் எதை ஒப்புக்கொண்டான்?",
+          "q_ko": "이징이 짐승으로 변해버린 원인으로 고백한 것은 무엇입니까?",
+          "q_es": "¿Qué confesó Li Zheng como causa de su transformación en bestia?",
+          "q_kn": "ಮೃಗವಾಗಿ ಬದಲಾಗಲು ಕಾರಣವೇನೆಂದು ಲೀ ಜೆಂಗ್ ಒಪ್ಪಿಕೊಂಡನು?",
+          "q_ml": "മൃഗമായി മാറാൻ കാരണമായി ലീ ഷെങ് പറഞ്ഞത് എന്താണ്?",
+          "options": [
+            "尊大な 羞恥心と 臆病な 自尊心",
+            "誰かから かけられた 呪い",
+            "重い 病気",
+            "貧困への 怒り"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n2-14",
+      "title": "杜子春 (Tu Tze-chun - Akutagawa Ryunosuke)",
+      "passage": "ある春の日暮れ、唐の都・洛陽の西の門の下に、ぼんやりと空を仰いで佇んでいる一人の若者がいた。名を杜子春という。かつては大金持ちの息子であったが、財産を使い果たし、今では着る物もみすぼらしく、今日食べる物にも困る有様であった。そこへ片目をすがめた不思議な老人が現れ、「この地面を掘ってみるがよい」と教えた。掘ってみると、荷車いっぱいの黄金が出てきた。杜子春は再び大富豪となったが、贅沢三昧の末、三年でまた一文無しになった。老人は再び彼を金持ちにしてやったが、それもまた使い果たした。三度目に老人に会った時、杜子春は「お金にはもう飽きました。どうかあなたの弟子にして仙術を教えてください」と頼んだ。老人は彼を峨眉山へ連れて行き、「何があっても決して声を出すな」と試練を与えた。神仏の責め苦にも耐えた杜子春だったが、地獄で馬に変えられた両親が鞭打たれるのを見て、思わず「お母さん！」と叫んでしまった。その瞬間、彼は洛陽の門の下に戻っていた。老人は「もし声を出さなかったら命を絶つところだった。人間らしい心を忘れるな」と微笑んで姿を消した。",
+      "passage_en": "One spring dusk beneath the west gate of Luoyang, capital of the Tang Dynasty, stood a young man named Tu Tze-chun, gazing blankly at the sky. Once the son of an affluent family, he had squandered his fortune and was now reduced to rags and starvation. A mysterious old man with a squint appeared and pointed to a spot on the ground: 'Dig here.' He dug up a cartload of gold. Tu Tze-chun became wealthy once more, but spent it all in luxury within three years. The old man made him rich a second time, but that too was squandered. Meeting the old man a third time, Tu Tze-chun said: 'I am sick of money. Please accept me as your disciple and teach me the secrets of the Immortals.' The old man took him to Mount Emei and gave him a single test: 'Whatever happens, do not utter a single sound.' Tu Tze-chun endured terrifying tortures, but when he saw his deceased parents turned into horses being whipped in Hell, he cried out uncontrollably: 'Mother!' Instantly, he found himself back at the gate of Luoyang. The old man smiled: 'Had you remained silent, I would have ended your life. Never lose your human heart,' and vanished.",
+      "passage_te": "టాంగ్ రాజధాని లోయాంగ్ పశ్చిమ ద్వారం వద్ద ఒక వసంత సాయంత్రం దు షిచున్ అనే యువకుడు ఆకలితో నిలబడి ఉన్నాడు. ధనవంతుడి కొడుకైన అతను ఆస్తినంతా తగలేసి కటిక దరిద్రుడయ్యాడు. ఒక వింత వృద్ధుడు వచ్చి నేలను తవ్వమని చెప్పగా, బండి నిండా బంగారం దొరికింది. మళ్ళీ ధనవంతుడైనా మూడేళ్ళలో అంతా ఖర్చు చేసేశాడు. వృద్ధుడు రెండోసారి కూడా ధనం ఇచ్చాడు, కానీ అదీ పోయింది. మూడోసారి కలిసినప్పుడు, 'డబ్బుపై విరక్తి కలిగింది, నాకు అమరత్వ విద్యలు నేర్పించండి' అని ఆ వృద్ధుడిని వేడుకున్నాడు. ఆ వృద్ధుడు అతన్ని పర్వతంపైకి తీసుకెళ్ళి, 'ఏమి జరిగినా ఒక్క మాట కూడా మాట్లాడవద్దు' అని పరీక్ష పెట్టాడు. రాక్షసుల చిత్రహింసలను భరించిన దు షిచున్, నరకంలో గుర్రాలుగా మారిన తన తల్లిదండ్రులను కొరడాలతో కొడుతుండటం చూసి ఆపుకోలేక 'అమ్మా!' అని అరిచాడు. క్షణంలో అతను మళ్ళీ పాత ద్వారం వద్దకు వచ్చాడు. ఆ వృద్ధుడు 'నువ్వు మాట్లాడకపోతే నీ ప్రాణం తీసేవాడిని, మానవత్వాన్ని ఎన్నడూ మరువకు' అని చిరునవ్వుతో మాయమయ్యాడు.",
+      "passage_hi": "चीन के तांग वंश की राजधानी लोयांग के दरवाज़े पर तू त्ज़े-चुन नाम का युवक भूखा-प्यासा खड़ा था। वह अमीर बाप का बेटा था पर सब उड़ा चुका था। एक रहस्यमयी बूढ़े ने उसे ज़मीन खोदने को कहा, जहाँ से गाड़ी भरकर सोना मिला। वह फिर अमीर बना, पर तीन साल में सब लुटा दिया। बूढ़े ने दोबारा धन दिया, वह भी खत्म हो गया। तीसरी बार युवक ने कहा, 'मुझे धन नहीं, अमरता की विद्या सिखाओ।' बूढ़ा उसे पर्वत पर ले गया और परीक्षा दी: 'कुछ भी हो जाए, आवाज़ मत निकालना।' युवक ने सभी यातनाएँ सहीं, पर जब नर्क में घोड़ों के रूप में अपने माता-पिता को पिटते देखा, तो चीख पड़ा: 'माँ!' उसी पल वह वापस दरवाज़े पर खड़ा था। बूढ़े ने कहा, 'यदि तुम चुप रहते तो मैं तुम्हें मार देता। मनुष्यता कभी मत भूलना।' और अंतर्ध्यान हो गया।",
+      "passage_ta": "டாங் வம்சத்தின் தலைநகரில் து சிசுன் என்ற இளைஞன் வறுமையில் நின்றான். ஒரு விசித்திர முதியவர் அவனுக்கு நிலத்தைத் தோண்டித் தங்கத்தை அள்ளிக் கொடுத்தார். மீண்டும் பணக்காரனான அவன் மூன்றே ஆண்டுகளில் அனைத்தையும் செலவழித்தான். மீண்டும் முதியவர் தங்கம் கொடுத்தார், அதுவும் தீர்ந்தது. மூன்றாம் முறை அவன், 'பணம் வேண்டாம், துறவு உபதேசம் செய்யுங்கள்' என்றான். முதியவர் மலைக்கு அழைத்துச் சென்று, 'என்ன நேர்ந்தாலும் வாயைத் திறக்காதே' என்றார். பல சித்திரவதைகளைத் தாங்கிய அவன், நரகத்தில் குதிரைகளாக மாற்றப்பட்ட தன் பெற்றோரை சாட்டையால் அடிப்பதைப் பார்த்ததும் 'அம்மா!' எனக் கத்தினான். அடுத்த கணம் அவன் பழைய இடத்தில் நின்றான். முதியவர், 'நீ பேசாமல் இருந்திருந்தால் கொன்றிருப்பேன். மனித நேயத்தை மறவாதே' எனக் கூறி மறைந்தார்.",
+      "passage_ko": "당나라 낙양의 서문 아래 두자춘이라는 청년이 서 있었다. 부잣집 아들이었으나 방탕하게 재산을 탕진하고 굶주리고 있었다. 한 노인이 나타나 땅을 파보라 일러주어 수레 가득 금을 얻었다. 그러나 3년 만에 다시 다 써버렸고, 노인이 두 번째로 준 재산도 탕진했다. 세 번째 만났을 때 두자춘은 '돈은 지긋지긋합니다. 신선술을 가르쳐 주십시오'라고 청했다. 노인은 그를 아미산으로 데려가 '어떤 일이 있어도 소리를 내지 마라'는 시험을 내렸다. 두자춘은 모든 고통을 참아냈으나, 지옥에서 말로 변한 부모가 채찍질당하는 것을 보고 '어머니!' 하고 비명을 질렀다. 그 순간 그는 낙양의 문 앞에 돌아와 있었고 노인은 '소리를 내지 않았다면 네 목숨을 끊었을 것이다. 인간의 마음을 잊지 마라'며 미소 짓고 사라졌다.",
+      "passage_es": "Al atardecer en Luoyang, el joven Tu Tze-chun contemplaba el cielo sin blanca tras dilapidar su fortuna. Un anciano le indicó cavar en la tierra y halló un carro de oro. Se enriqueció, pero lo gastó todo en tres años. El anciano volvió a enriquecerle y volvió a arruinarse. Al tercer encuentro, el joven rogó: 'Estoy harto del dinero; enséñeme las artes de los Inmortales'. El anciano le llevó al monte Emei y le impuso una prueba: 'Pase lo que pase, no emitas ningún sonido'. Tu Tze-chun resistió terribles tormentos, pero al ver en el Infierno a sus padres convertidos en caballos y azotados con látigos, gritó: '¡Madre!'. Al instante regresó a Luoyang. El anciano sonrió: 'Si no hubieras gritado te habría quitado la vida. Jamás pierdas tu corazón humano', y desapareció.",
+      "passage_kn": "ಟಾಂಗ್ ಸಾಮ್ರಾಜ್ಯದ ರಾಜಧಾನಿಯಲ್ಲಿ ದು ಷಿಚುನ್ ಎಂಬ ಯುವಕ ದಾರಿದ್ರ್ಯದಲ್ಲಿದ್ದನು. ಒಬ್ಬ ವೃದ್ಧ ಅವನಿಗೆ ನೆಲ ಅಗೆದು ಬಂಗಾರ ಪಡೆಯಲು ಸಹಾಯ ಮಾಡಿದನು. ಆದರೆ ಮೂರೇ ವರ್ಷದಲ್ಲಿ ಎಲ್ಲವನ್ನೂ ಪೋಲು ಮಾಡಿದನು. ಮೂರನೇ ಬಾರಿ ಆ ವೃದ್ಧನನ್ನು ಭೇಟಿಯಾದಾಗ, 'ನನಗೆ ಹಣ ಬೇಡ, ಸಿದ್ಧಿಗಳನ್ನು ಕಲಿಸಿ' ಎಂದು ಬೇಡಿದನು. ವೃದ್ಧ ಅವನಿಗೆ 'ಏನೇ ಆದರೂ ಬಾಯಿ ತೆರೆಯಬೇಡ' ಎಂದು ಪರೀಕ್ಷೆ ಒಡ್ಡಿದನು. ನರಕದಲ್ಲಿ ಕುದುರೆಗಳಾಗಿದ್ದ ತನ್ನ ತಂದೆ-ತಾಯಿಯನ್ನು ಹೊಡೆಯುವುದನ್ನು ನೋಡಿ 'ಅಮ್ಮಾ!' ಎಂದು ಕೂಗಿದನು. ತಕ್ಷಣ ಹಳೆಯ ಜಾಗಕ್ಕೆ ಮರಳಿದನು. ವೃದ್ಧ, 'ನೀನು ಕೂಗದಿದ್ದರೆ ನಿನ್ನನ್ನು ಕೊಲ್ಲುತ್ತಿದ್ದೆ, ಮಾನವೀಯತೆಯನ್ನು ಎಂದಿಗೂ ಮರೆಯಬೇಡ' ಎಂದು ಮಾಯವಾದನು.",
+      "passage_ml": "ലോയാങ് നഗരകവാടത്തിൽ ദു ഷിച്ചുൻ എന്ന യുവാവ് പട്ടിണിയിലായി നിൽക്കുകയായിരുന്നു. ഒരു വൃദ്ധൻ വന്ന് അവന് നിലം കുഴിച്ച് സ്വർണ്ണം നൽകി. എന്നാൽ മൂന്ന് വർഷം കൊണ്ട് അവൻ അതെല്ലാം ധൂർത്തടിച്ചു. മൂന്നാം തവണ കണ്ടപ്പോൾ, 'എനിക്ക് പണം വേണ്ട, താന്ത്രികവിദ്യകൾ പഠിപ്പിച്ചു തരൂ' എന്ന് അവൻ ആവശ്യപ്പെട്ടു. വൃദ്ധൻ അവനെ പർവ്വതത്തിലേക്ക് കൊണ്ടുപോയി, 'എന്ത് സംഭവിച്ചാലും മിണ്ടരുത്' എന്ന് പരീക്ഷിച്ചു. എല്ലാ യാതനകളും സഹിച്ച അവൻ, നരകത്തിൽ കുതിരകളായി മാറിയ മാതാപിതാക്കളെ ചാട്ടവാറുകൊണ്ട് അടിക്കുന്നത് കണ്ട് 'അമ്മേ!' എന്ന് നിലവിളിച്ചുപോയി. ആ നിമിഷം അവൻ നഗരത്തിൽ തിരിച്ചെത്തി. 'മനുഷ്യത്വം ഒരിക്കലും മറക്കരുത്' എന്ന് പറഞ്ഞ് വൃദ്ധൻ അപ്രത്യക്ഷനായി.",
+      "questions": [
+        {
+          "q": "杜子春が 三度目に 老人に 会ったとき、何を 願い出ましたか。",
+          "q_en": "What did Tu Tze-chun request when he met the old man for the third time?",
+          "q_te": "మూడవసారి వృద్ధుడిని కలిసినప్పుడు దు షిచున్ ఏమి కోరాడు?",
+          "q_hi": "तीसरी बार मिलने पर युवक ने बूढ़े से क्या माँगा?",
+          "q_ta": "மூன்றாம் முறை சந்தித்தபோது து சிசுன் என்ன வேண்டினான்?",
+          "q_ko": "두자춘이 세 번째로 노인을 만났을 때 간청한 것은 무엇입니까?",
+          "q_es": "¿Qué pidió Tu Tze-chun al encontrarse por tercera vez con el anciano?",
+          "q_kn": "ಮೂರನೇ ಬಾರಿ ಭೇಟಿಯಾದಾಗ ದು ಷಿಚುನ್ ಏನನ್ನು ಬೇಡಿದನು?",
+          "q_ml": "മൂന്നാമത്തെ തവണ കണ്ടപ്പോൾ അവൻ എന്താണ് ആവശ്യപ്പെട്ടത്?",
+          "options": [
+            "弟子にして 仙術を 教えてもらうこと",
+            "もっと 大量の 黄金を もらうこと",
+            "立派な 屋敷を もらうこと",
+            "都の 高い 官職に 就くこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "老人が 杜子春に 与えた 試練の ルールは 何でしたか。",
+          "q_en": "What was the rule of the trial the old man gave to Tu Tze-chun?",
+          "q_te": "వృద్ధుడు పెట్టిన పరీక్ష నియమం ఏమిటి?",
+          "q_hi": "बूढ़े द्वारा दी गई परीक्षा का नियम क्या था?",
+          "q_ta": "முதியவர் அளித்த சோதனையின் விதி என்ன?",
+          "q_ko": "노인이 두자춘에게 내린 시험의 규칙은 무엇이었습니까?",
+          "q_es": "¿Cuál era la regla de la prueba que le impuso el anciano?",
+          "q_kn": "ವೃದ್ಧನು ನೀಡಿದ ಪರೀಕ್ಷೆಯ ನಿಯಮವೇನಾಗಿತ್ತು?",
+          "q_ml": "പരീക്ഷയുടെ നിയമം എന്തായിരുന്നു?",
+          "options": [
+            "何が あっても 決して 声を 出さないこと",
+            "三日間 一睡も しないこと",
+            "険しい 山を 走って 登ること",
+            "敵と 戦って 倒すこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "杜子春が 思わず 声を 出してしまった 理由は 何ですか。",
+          "q_en": "Why did Tu Tze-chun involuntarily cry out?",
+          "q_te": "దు షిచున్ ఎందుకు ఆగలేక అరిచాడు?",
+          "q_hi": "युवक के मुँह से अचानक आवाज़ क्यों निकल गई?",
+          "q_ta": "து சிசுன் அறியாமல் கூக்குரலிட்ட காரணம் என்ன?",
+          "q_ko": "두자춘이 무심코 소리를 지르고 만 이유는 무엇입니까?",
+          "q_es": "¿Por qué gritó involuntariamente Tu Tze-chun?",
+          "q_kn": "ದು ಷಿಚುನ್ ಅರಿವಿಲ್ಲದೆ ಕೂಗಲು ಕಾರಣವೇನು?",
+          "q_ml": "അവൻ പെട്ടെന്ന് നിലവിളിച്ചുപോകാൻ കാരണം എന്തായിരുന്നു?",
+          "options": [
+            "馬に変えられた 両親が 鞭打たれるのを 見たから",
+            "自分が 炎に 焼かれたから",
+            "大蛇に 噛まれたから",
+            "恐ろしい 鬼に 脅されたから"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n2-15",
+      "title": "高瀬舟 (The Boat on the River Takase - Mori Ogai)",
+      "passage": "高瀬舟は、京都の高瀬川を上下する小舟である。徳川時代に京都で罪を犯した者が遠島を申し渡されると、この舟に乗せられて大阪へ送られた。護送を命じられた町奉行配下の同心・羽田庄兵衛は、弟殺しの罪で島流しとなる喜助という男を護送することになった。喜助は護送中、神妙な面持ちで静かに月を眺め、少しも悲嘆に暮れる様子がない。不審に思った庄兵衛が尋ねると、喜助は「これまで食べるや否やの極貧の中で暮らしてまいりましたが、お上からいただいた鳥目二百文というお金を今懐にしております。これほどのお金を自分のものとして手にしたのは生まれて初めてで、ありがたくてなりません」と答えた。庄兵衛は、己の足るを知る喜助の純粋な心に強い衝撃を受けた。さらに弟の死の真相について尋ねると、不治の病で苦しむ弟が自ら喉を剃刀で切って死のうとし、苦痛に耐えかねて「兄さん、剃刀を抜いて早く楽にしてくれ」と懇願したため、苦しみを救いたい一心で抜いてやったのだと語った。庄兵衛は、果たしてこれが殺罪に当たるのか、深い葛藤に包まれた。",
+      "passage_en": "The Takasebune was a small riverboat that plied the Takase River in Kyoto. During the Tokugawa shogunate, when criminals in Kyoto were sentenced to distant exile, they were transported on this boat down to Osaka. Haneda Shobe, a constable assigned to escort duty, was tasked with transporting Kisuke, a convict sentenced to island exile for murdering his younger brother. Onboard, Kisuke quietly gazed at the moon with a serene expression, showing not the slightest despair. Intrigued, Shobe questioned him. Kisuke replied that having lived in abject starvation all his life, the two hundred copper coins given to him by the authorities as travel funds felt like a colossal fortune—the first time he had ever possessed money of his own, for which he was profoundly grateful. Shobe was stunned by Kisuke's absolute contentment with so little. When asked about his brother's death, Kisuke revealed that his terminally ill brother had attempted suicide by slitting his throat; unable to endure the agony, the brother begged: 'Brother, please pull out the razor and end my misery.' Kisuke complied purely to spare him suffering. Hearing this, Shobe fell into deep moral turmoil over whether this truly constituted murder.",
+      "passage_te": "తకాసేబునే అనేది క్యోటోలోని తకాసే నదిలో ప్రయాణించే చిన్న పడవ. తోకుగావా కాలంలో దేశ బహిష్కరణ శిక్ష పడిన ఖైదీలను ఒసాకాకు పంపడానికి ఈ పడవను ఉపయోగించేవారు. హానేదా శోబే అనే పోలీసు అధికారి, తన తమ్ముడిని చంపిన నేరానికి బహిష్కరణకు గురైన కిసుకే అనే ఖైదీని తీసుకెళ్తున్నాడు. ప్రయాణంలో కిసుకే ఏమాత్రం బాధపడకుండా ప్రశాంతంగా చంద్రుడిని చూస్తూ ఉన్నాడు. ఆశ్చర్యపోయిన శోబే అడగగా, 'జీవితాంతం ఆకలితో అలమటించిన నాకు, ప్రభుత్వం ప్రయాణ ఖర్చుల కోసం ఇచ్చిన 200 రాగి నాణేలు నా జీవితంలోనే అతిపెద్ద సంపద. మొదటిసారి నా దగ్గర ఇంత డబ్బు ఉండటం ఎంతో కృతజ్ఞతగా ఉంది' అని చెప్పాడు. తృప్తి అనే గుణాన్ని చూసి శోబే నిశ్చేష్టుడయ్యాడు. తమ్ముడి మరణం గురించి అడగగా, నయం కాని వ్యాధితో బాధపడుతున్న తమ్ముడు ఆత్మహత్యకు గొంతు కోసుకుని బాధ భరించలేక 'అన్నా, ఆ బ్లేడును తీసి నన్ను త్వరగా బాధ నుండి విముక్తి చేయి' అని వేడుకోవడంతో, అతని బాధ చూడలేక తీశానని చెప్పాడు. ఇది నిజంగా హత్యేనా అని శోబే తీవ్ర అంతర్మథనంలో పడ్డాడు.",
+      "passage_hi": "तकासेबूने क्योटो की तकासे नदी पर चलने वाली एक छोटी नाव थी। तोकुगावा काल में देश निकाला पाए कैदियों को इसी नाव से ओसाका भेजा जाता था। सिपाही शोबेई को किसुके नाम के कैदी को ले जाने का काम मिला, जिस पर अपने छोटे भाई की हत्या का आरोप था। किसुके नाव में बिल्कुल शांत और प्रसन्न था। पूछने पर उसने कहा, 'जीवनभर भूखे रहने के बाद, सरकार से मिले 200 सिक्के मेरे जीवन की सबसे बड़ी पूँजी हैं।' उसकी संतोषी भावना ने शोबेई को हिला दिया। भाई की मौत का सच पूछने पर किसुके ने बताया कि असाध्य रोग से पीड़ित भाई ने आत्महत्या के लिए गला काट लिया था और असह्य दर्द में उसने प्रार्थना की: 'भैया, उस्तरा खींचकर मुझे मुक्ति दो।' तड़प न देखी जाने पर उसने उस्तरा निकाला। शोबेई इस धर्मसंकट में पड़ गया कि क्या यह वास्तव में हत्या थी?",
+      "passage_ta": "தகாசேபுனே என்பது கியோட்டோ நதியில் ஓடும் சிறிய படகு. நாடு கடத்தப்படும் கைதிகளை இதில் ஏற்றி அனுப்புவர். காவலர் ஷோபே, தம்பியைக் கொன்ற குற்றத்திற்காக நாடு கடத்தப்படும் கிசுகே என்ற கைதியை அழைத்துச் சென்றார். படகில் கிசுகே எவ்வித வருத்தமுமின்றி அமைதியாக நிலவை ரசித்தான். காரணம் கேட்டபோது, 'வாழ்நாள் முழுவதும் பட்டினியாய் கிடந்த எனக்கு, அரசு தந்த 200 காசுகள் பெரும் செல்வம்' என்றான். அவனது மனநிறைவைக் கண்டு காவலர் வியந்தார். தம்பியின் மரணம் பற்றிக் கேட்டபோது, தீராத நோயால் கழுத்தை அறுத்துக்கொண்டு துடித்த தம்பி, 'அண்ணா, கத்தியை உருவி என் உயிரை விடு' எனக் கெஞ்சியதால் அவனைக் காப்பாற்றவே கத்தியை எடுத்ததாகக் கூறினான். இது கொலையா என்ற பெருங்குழப்பத்தில் காவலர் ஆழ்ந்தார்.",
+      "passage_ko": "다카세부네는 교토의 다카세가와를 오르내리는 작은 배이다. 도쿠가와 시대에 유배형을 받은 죄인들을 오사카로 압송할 때 쓰였다. 포졸 하네다 쇼베에는 동생을 죽인 죄로 유배를 떠나는 기스케를 호송하게 되었다. 기스케는 달을 바라보며 지극히 온화한 표정을 짓고 있었다. 쇼베에가 의아해 묻자, 기스케는 평생 굶주리며 살았는데 나라에서 노잣돈으로 준 동전 이백 문이 생애 처음 만져보는 거금이라며 감사해했다. 쇼베에는 분수를 알고 만족하는 기스케의 마음에 충격을 받았다. 동생의 죽음에 대해 묻자, 불치병에 걸린 동생이 자살하려다 면도칼이 목에 걸려 고통스러워하며 제발 칼을 빼달라 애원하여 고통을 덜어주고자 뽑아주었을 뿐이라고 털어놓았다. 쇼베에는 이것이 진정 살인인가 깊은 고뇌에 빠졌다.",
+      "passage_es": "El Takasebune era una barca que surcaba el río Takase en Kioto para trasladar a los desterrados hacia Osaka. El guardia Shobe custodiaba a Kisuke, un reo condenado al destierro por haber matado a su hermano menor. A bordo, Kisuke contemplaba la luna en total serenidad. Extrañado, Shobe le interrogó. Kisuke explicó que, habiendo vivido siempre en la miseria extrema, las doscientas monedas de cobre que le entregó el gobierno como viático representaban una fortuna inaudita por la que se sentía agradecido. Shobe quedó atónito ante semejante resignación y satisfacción con tan poco. Al preguntarle por el crimen, Kisuke relató que su hermano, desahuciado por una enfermedad, intentó degollarse con una navaja y, en su agonía, le suplicó: 'Hermano, saca la navaja y acaba con mi sufrimiento'. Kisuke lo hizo por piedad. Shobe quedó sumido en un hondo dilema moral sobre si aquello era realmente un asesinato.",
+      "passage_kn": "ತಕಾಸೆಬೂನೆ ಕ್ಯೋಟೋದ ನದಿಯಲ್ಲಿ ಸಾಗುವ ಸಣ್ಣ ದೋಣಿ. ಗಡಿಪಾರು ಶಿಕ್ಷೆಗೊಳಗಾದ ಅಪರಾಧಿಗಳನ್ನು ಇದರಲ್ಲಿ ಕಳುಹಿಸಲಾಗುತ್ತಿತ್ತು. ಕಾವಲುಗಾರ ಶೋಬೆಯು ತನ್ನ ತಮ್ಮನನ್ನೇ ಕೊಂದ ಅಪರಾಧಿ ಕಿಸುಕೆಯನ್ನು ಕರೆದೊಯ್ಯುತ್ತಿದ್ದನು. ಕಿಸುಕೆ ದೋಣಿಯಲ್ಲಿ ಶಾಂತವಾಗಿ ಚಂದ್ರನನ್ನು ನೋಡುತ್ತಿದ್ದನು. ವಿಚಾರಿಸಿದಾಗ, 'ಬದುಕಿಡೀ ಹಸಿದಿದ್ದ ನನಗೆ ಸರಕಾರ ನೀಡಿದ 200 ನಾಣ್ಯಗಳೇ ಅಪಾರ ಸಂಪತ್ತು' ಎಂದು ತೃಪ್ತಿ ವ್ಯಕ್ತಪಡಿಸಿದನು. ತಮ್ಮನ ಸಾವಿನ ಬಗ್ಗೆ ಕೇಳಿದಾಗ, ಗುಣವಾಗದ ರೋಗದಿಂದ ಬಳಲುತ್ತಿದ್ದ ತಮ್ಮನು ಕುತ್ತಿಗೆ ಕೊಯ್ದುಕೊಂಡು ನರಳುತ್ತಾ 'ಅಣ್ಣಾ, ಚಾಕುವನ್ನು ತೆಗೆದು ನನ್ನ ಜೀವ ಕಾಪಾಡು/ಮುಕ್ತಿ ನೀಡು' ಎಂದು ಬೇಡಿಕೊಂಡಿದ್ದಕ್ಕೆ ಚಾಕು ತೆಗೆದೆನೆಂದು ವಿವರಿಸಿದನು. ಇದು ಕೊಲೆಯೋ ಅಲ್ಲವೋ ಎಂಬ ಧರ್ಮಸಂಕಟದಲ್ಲಿ ಶೋಬೆ ಬಿದ್ದನು.",
+      "passage_ml": "തകാസെബൂനെ എന്നത് ക്യോട്ടോയിലെ നദിയിലൂടെ പോകുന്ന ഒരു ചെറിയ വള്ളമാണ്. നാടുകടത്തപ്പെട്ട കുറ്റവാളികളെ ഇതിലാണ് കൊണ്ടുപോയിരുന്നത്. അനിയനെ കൊന്ന കുറ്റത്തിന് നാടുകടത്തപ്പെട്ട കിസുകെ എന്ന തടവുകാരനെ കൊണ്ടുപോകുകയായിരുന്നു കാവൽക്കാരനായ ശോബെ. കിസുകെ ഒട്ടും സങ്കടമില്ലാതെ ശാന്തനായി നിലാവ് ആസ്വദിക്കുന്നത് കണ്ട് ശോബെ കാര്യം തിരക്കി. 'ജീവിതകാലം മുഴുവൻ പട്ടിണി കിടന്ന എനിക്ക് സർക്കാർ തന്ന 200 തുട്ടുകൾ വലിയ സമ്പാദ്യമാണ്' എന്ന് അവൻ പറഞ്ഞു. അനിയന്റെ മരണത്തെക്കുറിച്ച് ചോദിച്ചപ്പോൾ, മാരകരോഗം ബാധിച്ച അനിയൻ ആത്മഹത്യ ചെയ്യാൻ ശ്രമിച്ച് വേദന സഹിക്കവെയ്യാതെ അപേക്ഷിച്ചപ്പോൾ വേദനയിൽ നിന്ന് രക്ഷിക്കാൻ കത്തി ഊരിയെടുത്തതാണെന്ന് അവൻ പറഞ്ഞു. ഇത് യഥാർത്ഥത്തിൽ കൊലപാതകമാണോ എന്ന് ശോബെ ചിന്താക്കുഴപ്പത്തിലായി.",
+      "questions": [
+        {
+          "q": "喜助は なぜ 護送されている最中も 晴れやかな 表情を していましたか。",
+          "q_en": "Why did Kisuke wear a cheerful and serene expression even while being escorted into exile?",
+          "q_te": "శిక్ష అనుభవిస్తూ తీసుకెళ్ళబడుతున్నప్పుడు కూడా కిసుకే ఎందుకు ప్రశాంతంగా ఉన్నాడు?",
+          "q_hi": "निर्वासन पर ले जाते समय भी किसुके शांत और प्रसन्न क्यों था?",
+          "q_ta": "நாடு கடத்தப்படும் போதும் கிசுகே ஏன் மகிழ்ச்சியாக இருந்தான்?",
+          "q_ko": "기스케는 호송되는 와중에도 왜 밝고 온화한 표정을 짓고 있었습니까?",
+          "q_es": "¿Por qué Kisuke mostraba una expresión serena y alegre aun siendo escoltado al destierro?",
+          "q_kn": "ಗಡಿಪಾರಾಗುತ್ತಿದ್ದರೂ ಕಿಸುಕೆ ಏಕೆ ಪ್ರಶಾಂತವಾಗಿದ್ದನು?",
+          "q_ml": "നാടുകടത്തപ്പെടുമ്പോഴും കിസുകെ സന്തോഷവാനായിരുന്നത് എന്തുകൊണ്ടാണ്?",
+          "options": [
+            "お上から もらった 鳥二百文を 懐にして 満足していたから",
+            "島流し先で 贅沢できると 思ったから",
+            "舟遊びが 大好きだったから",
+            "弟の 財産を 手に入れたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "喜助が 弟の 喉から 剃刀を 抜いた 本当の 理由は 何ですか。",
+          "q_en": "What was the real reason Kisuke pulled the razor from his brother's throat?",
+          "q_te": "కిసుకే తన తమ్ముడి గొంతు నుండి బ్లేడును తీయడానికి అసలు కారణం ఏమిటి?",
+          "q_hi": "किसुके द्वारा भाई के गले से उस्तरा निकालने का असली कारण क्या था?",
+          "q_ta": "கிசுகே தம்பியின் கழுத்திலிருந்து கத்தியை உருவியதன் உண்மையான காரணம் என்ன?",
+          "q_ko": "기스케가 동생의 목에서 면도칼을 뽑아낸 진짜 이유는 무엇입니까?",
+          "q_es": "¿Cuál fue el verdadero motivo por el que Kisuke extrajo la navaja del cuello de su hermano?",
+          "q_kn": "ಕಿಸುಕೆ ತನ್ನ ತಮ್ಮನ ಕುತ್ತಿಗೆಯಿಂದ ಚಾಕುವನ್ನು ತೆಗೆಯಲು ನಿಜವಾದ ಕಾರಣವೇನು?",
+          "q_ml": "അനിയന്റെ കഴുത്തിൽ നിന്ന് കിസുകെ കത്തി മാറ്റിയതിന്റെ യഥാർത്ഥ കാരണം എന്താണ്?",
+          "options": [
+            "苦しむ弟に 懇願され、苦痛を 終わらせて 楽にしてやりたかったから",
+            "弟を 憎んでいたから",
+            "剃刀を 盗みたかったから",
+            "傷を 手当てしようとしたから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 小説が 問いかけている 現代にも 通じる 重大な テーマは 何ですか。",
+          "q_en": "What profound theme, relevant even today, is explored in this novel?",
+          "q_te": "ఈ నవల నేటి సమాజానికి కూడా వర్తించే ఏ కీలక అంశాన్ని చర్చిస్తుంది?",
+          "q_hi": "यह उपन्यास किस गंभीर विषय पर विचार करता है जो आज भी प्रासंगिक है?",
+          "q_ta": "இக்கதை எழுப்பும் முக்கியமான சமகாலப் பிரச்சனை என்ன?",
+          "q_ko": "이 소설이 던지는, 현대에도 통하는 중대한 주제는 무엇입니까?",
+          "q_es": "¿Qué tema profundo y de plena actualidad plantea esta novela?",
+          "q_kn": "ಈ ಕಾದಂಬರಿ ಇಂದಿಗೂ ಪ್ರಸ್ತುತವಾಗಿರುವ ಯಾವ ಗಂಭೀರ ವಿಷಯವನ್ನು ಚರ್ಚಿಸುತ್ತದೆ?",
+          "q_ml": "ഈ നോവൽ ചർച്ച ചെയ്യുന്ന ഗൗരവകരമായ വിഷയം എന്താണ്?",
+          "options": [
+            "安楽死 (尊厳死) と 足るを知る心",
+            "身分制度の 矛盾",
+            "環境破壊の 問題",
+            "戦争の 悲惨さ"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N1": [
+    {
+      "id": "r-n1-1",
+      "title": "利便性の逆説 (The Paradox of Convenience)",
+      "passage": "利便性の追求は、しばしば人間の能力を拡張するものと見なされてきた。だが、その恩恵の陰で、私たちが手放しているものの大きさに、どれほど自覚的であろうか。かつては記憶に頼らざるを得なかった無数の情報が、今や端末の内に格納され、必要に応じて瞬時に引き出せる。この変化は、確かに労力の軽減をもたらした。しかし、記憶するという行為そのものが、単なる情報の保存ではなく、対象を反芻し、他の知識と結びつけ、自らの思考の一部として血肉化する過程であったことを想起するならば、外部化された記憶が、その過程まで肩代わりしてくれるわけではないことに気づかされる。便利さとは、目的地までの距離を縮める代わりに、その道中で得られたはずの発見を奪い去るものでもあるのだ。問題は技術そのものにあるのではない。むしろ、道具に委ねてよいものと、なお自らの内に留めおくべきものとを見極める判断を、私たちが怠りがちであることにこそある。",
+      "passage_en": "The pursuit of convenience has often been regarded as something that extends human capabilities. Yet how conscious are we of the magnitude of what we relinquish in the shadow of its benefits? Countless pieces of information that once had to be committed to memory are now stored within our devices and can be retrieved instantly whenever needed. This change has certainly reduced our labor. However, if we recall that the act of remembering was not merely the storage of information but a process of turning something over in the mind, connecting it with other knowledge, and making it flesh and blood as part of one's own thinking, we come to realize that externalized memory does not take over that process for us as well. Convenience, in shortening the distance to one's destination, is also something that robs us of the discoveries we might have made along the way. The problem does not lie in technology itself. Rather, it lies precisely in our tendency to neglect the judgment of discerning what may be entrusted to tools and what should still be kept within ourselves.",
+      "questions": [
+        {
+          "q": "筆者は「記憶するという行為」をどのようなものだと述べているか。",
+          "q_en": "How does the author describe the act of remembering?",
+          "options": [
+            "情報を端末に保存することと本質的に同じものである。",
+            "対象を反芻し、他の知識と結びつけて思考の一部にする過程である。",
+            "労力がかかるため、できる限り避けるべきものである。",
+            "外部化された記憶によって完全に肩代わりされたものである。"
+          ],
+          "answer": 1,
+          "q_te": "రచయిత జ్ఞాపకం ఉంచుకునే ప్రక్రియను ఎలా వర్ణించారు?",
+          "q_hi": "लेखक स्मरण करने की क्रिया का वर्णन कैसे करते हैं?",
+          "q_ta": "நினைவில் வைத்தலை ஆசிரியர் எவ்வாறு விவரிக்கிறார்?",
+          "q_ko": "필자는 기억하는 행위를 어떻게 묘사합니까?",
+          "q_es": "¿Cómo describe el autor el acto de recordar?",
+          "q_kn": "ನೆನಪಿನಲ್ಲಿಟ್ಟುಕೊಳ್ಳುವ ಕ್ರಿಯೆಯನ್ನು ಲೇಖಕರು ಹೇಗೆ ವಿವರಿಸಿದ್ದಾರೆ?",
+          "q_ml": "ഓർമ്മിച്ചു വെക്കുക എന്ന പ്രക്രിയയെ ലേഖകൻ എങ്ങനെയാണ് വിവരിക്കുന്നത്?"
+        },
+        {
+          "q": "筆者が最も問題視しているのはどのようなことか。",
+          "q_en": "What does the author regard as the greatest problem?",
+          "options": [
+            "技術そのものが人間に害をもたらしていること。",
+            "端末の記憶容量が情報量に対して不足していること。",
+            "道具に委ねてよいものと自らに留めるべきものとを見極める判断を怠ること。",
+            "情報を瞬時に引き出せるようになったこと。"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత దేనిని అతిపెద్ద సమస్యగా భావిస్తున్నారు?",
+          "q_hi": "लेखक सबसे बड़ी समस्या किसे मानते हैं?",
+          "q_ta": "ஆசிரியர் எதை மிகப்பெரிய பிரச்சனையாகக் கருதுகிறார்?",
+          "q_ko": "필자가 가장 큰 문제로 여기는 것은 무엇입니까?",
+          "q_es": "¿Qué considera el autor el mayor problema?",
+          "q_kn": "ಲೇಖಕರು ಯಾವುದನ್ನು ದೊಡ್ಡ ಸಮಸ್ಯೆಯಾಗಿ ಕಾಣುತ್ತಾರೆ?",
+          "q_ml": "ഏറ്റവും വലിയ പ്രശ്നമായി ലേഖകൻ കാണുന്നത് എന്തിനെയാണ്?"
+        },
+        {
+          "q": "本文における「便利さ」の捉え方として最も適切なものはどれか。",
+          "q_en": "Which best captures how convenience is characterized in the passage?",
+          "options": [
+            "目的地までの距離を縮めるため、常に望ましいものである。",
+            "道中で得られたはずの発見を奪い去る側面も併せ持つ。",
+            "人間の能力を無条件に拡張する働きしか持たない。",
+            "記憶の過程そのものを完全に代替してくれるものである。"
+          ],
+          "answer": 1,
+          "q_te": "ఈ భాగంలో సౌలభ్యం ఎలా వర్ణించబడింది?",
+          "q_hi": "सुविधा को इस परिच्छेद में कैसे चित्रित किया गया है?",
+          "q_ta": "இப்பத்தியில் வசதி எவ்வாறு சித்தரிக்கப்படுகிறது?",
+          "q_ko": "본문에서 편리함은 어떻게 특징지어집니까?",
+          "q_es": "¿Cómo se caracteriza la conveniencia en el texto?",
+          "q_kn": "ಈ ಲೇಖನದಲ್ಲಿ ಸೌಕರ್ಯವನ್ನು ಹೇಗೆ ಬಿಂಬಿಸಲಾಗಿದೆ?",
+          "q_ml": "സൗകര്യത്തെ ഈ ഭാഗത്ത് എങ്ങനെയാണ് ചിത്രീകരിച്ചിരിക്കുന്നത്?"
+        }
+      ],
+      "passage_te": "సౌలభ్యం యొక్క వైరుధ్యం: ఆధునిక సమాజం సౌలభ్యాన్ని నిరంతరం వెంబడిస్తోంది. కానీ ఒక పనిని శ్రమ లేకుండా సాధించినప్పుడు, దాని ద్వారా లభించే లోతైన అనుభవం, జ్ఞాపకశక్తి తగ్గిపోతాయి. విషయాలను గుర్తుపెట్టుకునే ప్రక్రియ కేవలం సమాచార నిల్వ మాత్రమే కాదు; అది మానవ ఆలోచనా పరిపక్వతకు పునాది అని రచయిత స్పష్టం చేస్తున్నారు.",
+      "passage_hi": "सुविधा का विरोधाभास: आधुनिक समाज सुविधा की अंधी दौड़ में लगा है। परंतु जब किसी कार्य को बिना प्रयास के प्राप्त कर लिया जाता है, तो उससे मिलने वाला गहरा अनुभव और स्मृति क्षीण हो जाती है। स्मरण रखने की क्रिया केवल डेटा संचय नहीं, बल्कि मानवीय परिपक्वता का आधार है।",
+      "passage_ta": "வசதியின் முரண்பாடு: நவீன சமூகம் வசதியை மட்டுமே நாடுகிறது. ஆனால் கடின உழைப்பின்றி ஒரு காரியம் நடக்கும்போது, அதிலிருந்து கிடைக்கும் அனுபவமும் நினைவாற்றலும் குறைகிறது. நினைவில் வைத்தல் என்பது தகவல் சேமிப்பு மட்டுமல்ல; அது மனித சிந்தனை முதிர்ச்சியின் அடித்தளம்.",
+      "passage_ko": "편리성의 역설: 현대 사회는 끊임없이 편리함을 추구합니다. 그러나 수고로움 없이 손에 넣은 것은 깊은 경험과 기억을 앗아갑니다. 기억하는 행위는 단순한 정보 저장이 아니라 인간의 사유를 심화시키는 지적 성숙의 토대입니다.",
+      "passage_es": "La paradoja de la conveniencia: La búsqueda obsesiva de la comodidad despoja a la experiencia de su profundidad. El esfuerzo de recordar no es mero almacenamiento de datos, sino el cimiento sobre el que madura el intelecto y la reflexión humana.",
+      "passage_kn": "ಸೌಕರ್ಯದ ವಿರೋಧಾಭಾಸ: ಆಧುನಿಕ ಸಮಾಜ ಸೌಕರ್ಯದ ಬೆನ್ನುಬಿದ್ದಿದೆ. ಆದರೆ ಶ್ರಮವಿಲ್ಲದೆ ಸಿಕ್ಕ ಫಲವು ಅನುಭವವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ. ನೆನಪಿನಲ್ಲಿಟ್ಟುಕೊಳ್ಳುವುದು ಕೇವಲ ದತ್ತಾಂಶ ಸಂಗ್ರಹವಲ್ಲ, ಮಾನವನ ಬೌದ್ಧಿಕ ಬೆಳವಣಿಗೆಯ ಅಡಿಪಾಯ.",
+      "passage_ml": "സൗകര്യങ്ങളുടെ വൈരുദ്ധ്യം: ആധുനിക സമൂഹം എപ്പോഴും എളുപ്പവഴികൾ തേടുന്നു. എന്നാൽ അദ്ധ്വാനമില്ലാതെ കിട്ടുന്ന കാര്യങ്ങൾക്ക് അനുഭവത്തിന്റെ ആഴം കുറവായിരിക്കും. കാര്യങ്ങൾ ഓർത്തുസൂക്ഷിക്കുന്നത് കേവലം വിവരശേഖരണമല്ല, മനുഷ്യന്റെ ബുദ്ധിപരമായ വികാസത്തിന്റെ അടിസ്ഥാനമാണ്."
+    },
+    {
+      "id": "r-n1-2",
+      "title": "翻訳の不可能性をめぐって (On the So-Called Impossibility of Translation)",
+      "passage": "翻訳とは、ある言語で書かれた内容を、別の言語へと過不足なく移し替える作業だと、素朴には考えられている。しかし、言葉が単に事物を指し示す記号にとどまらず、その語が用いられてきた歴史や、話者の集団が共有する感覚の網の目のなかに置かれてはじめて意味をなすものだとすれば、ある語をそっくりそのまま別の語に置き換えるという発想自体が、はじめから成り立ちにくい。原文のもつ響きや含みは、しばしば訳語の選択の過程でこぼれ落ちる。とはいえ、このことをもって翻訳は不可能だと断ずるのは早計であろう。むしろ注目すべきは、翻訳者が二つの言語のあいだの埋めがたい隔たりを前にして、なお最も近い表現を探し当てようと苦闘する、その営みそのものである。完全な等価が原理的に得られないからこそ、訳文には訳者の解釈と選択が刻み込まれる。翻訳が創造的な行為でありうるのは、まさにこの不完全さゆえなのだ。",
+      "passage_en": "Translation is naively thought of as the work of transferring, without excess or deficiency, content written in one language into another. However, if words are not merely signs that point to things but come to mean something only when placed within the history in which they have been used and within the web of sensibilities shared by the community of speakers, then the very notion of replacing one word intact with another becomes difficult to sustain from the outset. The resonance and connotations of the original text often fall away in the process of choosing the translated words. Even so, it would be hasty to conclude from this that translation is impossible. What deserves attention, rather, is the very endeavor in which the translator, faced with the unbridgeable gap between two languages, nonetheless struggles to find the closest possible expression. Precisely because complete equivalence cannot in principle be obtained, the translator's interpretation and choices are inscribed in the translated text. It is exactly because of this imperfection that translation can be a creative act.",
+      "questions": [
+        {
+          "q": "「ある語をそっくりそのまま別の語に置き換える」という発想が成り立ちにくいのは、なぜだと筆者は述べているか。",
+          "q_en": "Why, according to the author, is the idea of swapping one word intact for another hard to sustain?",
+          "options": [
+            "翻訳者の語学的な能力が一般に不足しているから。",
+            "言葉は歴史や、話者が共有する感覚の網の目のなかで初めて意味をなすから。",
+            "対応する語を載せた辞書がまだ存在しないから。",
+            "二つの言語が互いに全く同じ構造を持っているから。"
+          ],
+          "answer": 1,
+          "q_te": "పదాలను నేరుగా మార్చడం ఎందుకు సాధ్యం కాదు?",
+          "q_hi": "शब्दों का सीधा आदान-प्रदान असंभव क्यों है?",
+          "q_ta": "சொற்களை அப்படியே மாற்றுவது ஏன் சாத்தியமில்லை?",
+          "q_ko": "단어를 그대로 맞바꾸는 번역이 불가능한 이유는 무엇입니까?",
+          "q_es": "¿Por qué es insostenible la idea de sustituir palabras intactas?",
+          "q_kn": "ಪದಗಳನ್ನು ಯಥಾವತ್ತಾಗಿ ಬದಲಾಯಿಸುವುದು ಏಕೆ ಅಸಾಧ್ಯ?",
+          "q_ml": "വാക്കുകൾ അതേപടി മാറ്റാൻ കഴിയില്ല എന്ന് പറയുന്നത് എന്തുകൊണ്ടാണ്?"
+        },
+        {
+          "q": "「翻訳は不可能だ」という考えに対する筆者の立場はどれか。",
+          "q_en": "What is the author's stance on the claim that translation is impossible?",
+          "options": [
+            "その結論に全面的に同意している。",
+            "そう断ずるのは早計だとして退けている。",
+            "翻訳者の苦闘は無意味だと考えている。",
+            "完全な等価は容易に得られると主張している。"
+          ],
+          "answer": 1,
+          "q_te": "అనువాదం అసాధ్యమనే వాదనపై రచయిత వైఖరి ఏమిటి?",
+          "q_hi": "अनुवाद असंभव है, इस दावे पर लेखक का क्या रुख है?",
+          "q_ta": "மொழிபெயர்ப்பு சாத்தியமற்றது என்ற கூற்றில் ஆசிரியரின் நிலைப்பாடு என்ன?",
+          "q_ko": "번역이 불가능하다는 주장에 대한 필자의 입장은 무엇입니까?",
+          "q_es": "¿Cuál es la postura del autor ante la imposibilidad de la traducción?",
+          "q_kn": "ಅನುವಾದ ಅಸಾಧ್ಯವೆಂಬ ವಾದದ ಬಗ್ಗೆ ಲೇಖಕರ ನಿಲುವೇನು?",
+          "q_ml": "വിവർത്തനം അസാധ്യമാണെന്ന വാദത്തോട് ലേഖകന്റെ നിലപാട് എന്താണ്?"
+        },
+        {
+          "q": "翻訳が創造的な行為でありうる理由として、本文で述べられているものはどれか。",
+          "q_en": "For what reason, stated in the passage, can translation be a creative act?",
+          "options": [
+            "完全な等価が容易に得られるから。",
+            "訳者の解釈や選択を訳文から排除できるから。",
+            "完全な等価が得られない不完全さゆえに、訳者の解釈と選択が刻み込まれるから。",
+            "原文の響きや含みが訳文に一切失われずに残るから。"
+          ],
+          "answer": 2,
+          "q_te": "అనువాదం ఎందుకు సృజనాత్మక చర్య అవుతుంది?",
+          "q_hi": "अनुवाद एक सृजनात्मक कार्य क्यों है?",
+          "q_ta": "மொழிபெயர்ப்பு ஏன் ஒரு படைப்புச் செயலாகக் கருதப்படுகிறது?",
+          "q_ko": "번역이 창조적 행위가 될 수 있는 이유는 무엇입니까?",
+          "q_es": "¿Por qué razón puede la traducción ser un acto creativo?",
+          "q_kn": "ಅನುವಾದವೇಕೆ ಸೃಜನಶೀಲ ಕ್ರಿಯೆಯಾಗಬಲ್ಲದು?",
+          "q_ml": "വിവർത്തനം ഒരു സർഗ്ഗാത്മക പ്രവർത്തനമാകുന്നത് എന്തുകൊണ്ടാണ്?"
+        }
+      ],
+      "passage_te": "అనువాదం యొక్క అసాధ్యతపై చర్చ: ఒక భాషలోని పదాన్ని మరొక భాషలోకి మార్చడమనేది కేవలం యాంత్రిక ప్రక్రియ కాదు. ప్రతి భాష వెనుక దాని సంస్కృతి, చరిత్ర, సూక్ష్మ భావోద్వేగాలు దాగి ఉంటాయి. అందువల్ల ఖచ్చితమైన అనువాదం అసాధ్యమైనప్పటికీ, అది రెండు విభిన్న ప్రపంచాల మధ్య జరిగే ఒక సృజనాత్మక సంభాషణగా నిలుస్తుంది.",
+      "passage_hi": "अनुवाद की तथाकथित असंभाव्यता: एक भाषा के शब्द को दूसरी भाषा में बदलना केवल यांत्रिक कार्य नहीं है। प्रत्येक भाषा में उसकी संस्कृति, इतिहास और सूक्ष्म संवेदनाएँ अंतर्निहित होती हैं। पूर्ण अनुवाद भले ही असंभव हो, परंतु यह दो भिन्न संस्कृतियों के मध्य एक सृजनात्मक सेतु है।",
+      "passage_ta": "மொழிபெயர்ப்பின் சாத்தியமற்ற தன்மை: ஒரு மொழியை இன்னொன்றாக மாற்றுவது இயந்திரத்தனமான செயல் அல்ல. ஒவ்வொரு சொல்லின் பின்னாலும் ஒரு பண்பாடும் வரலாறும் உள்ளது. முழுமையான மொழிபெயர்ப்பு இயலாது எனினும், அது இரு உலகங்களை இணைக்கும் ஆக்கப்பூர்வமான உரையாடல்.",
+      "passage_ko": "번역의 불가능성을 둘러싸고: 언어를 치환하는 것은 기계적 작업이 아닙니다. 언어마다 고유한 문화와 정서가 깃들어 있기 때문입니다. 완전한 번역이란 불가능할지라도, 번역은 두 세계를 잇는 고도의 창조적 행위입니다.",
+      "passage_es": "Sobre la supuesta imposibilidad de la traducción: Traducir no es un mero canje mecánico de vocablos. Cada lengua porta una cosmovisión e historia intraducibles. Aunque la equivalencia absoluta sea utópica, la traducción se erige como un diálogo profundamente creativo.",
+      "passage_kn": "ಅನುವಾದದ ಅಸಾಧ್ಯತೆ: ಭಾಷಾಂತರವು ಕೇವಲ ಯಾಂತ್ರಿಕ ಪ್ರಕ್ರಿಯೆಯಲ್ಲ. ಪ್ರತಿಯೊಂದು ಭಾಷೆಯ ಹಿಂದೆ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಇತಿಹಾಸವಿದೆ. ಪರಿಪೂರ್ಣ ಅನುವಾದ ಅಸಾಧ್ಯವಾದರೂ, ಇದು ಎರಡು ಜಗತ್ತುಗಳ ನಡುವಿನ ಸೃಜನಶೀಲ ಸಂವಾದವಾಗಿದೆ.",
+      "passage_ml": "വിവർത്തനത്തിന്റെ അസാധ്യതയെക്കുറിച്ച്: ഒരു ഭാഷയിലെ വാക്കുകൾ മറ്റൊരു ഭാഷയിലേക്ക് മാറ്റുന്നത് ഒരു യാന്ത്രിക പ്രക്രിയയല്ല. ഓരോ ഭാഷയ്ക്കും അതിന്റേതായ സംസ്കാരവും ചരിത്രവുമുണ്ട്. പൂർണ്ണമായ വിവർത്തനം അസാധ്യമാണെങ്കിലും, ഇതൊരു സർഗ്ഗാത്മകമായ ആശയവിനിമയമാണ്."
+    },
+    {
+      "id": "r-n1-3",
+      "title": "街の記憶 (The Memory of a Town)",
+      "passage": "久しぶりに訪れた故郷の駅前は、私の知る風景をほとんど留めていなかった。見慣れた商店の連なりは真新しい複合施設に取って代わられ、狭く入り組んだ路地は、広々とした歩道へと姿を変えていた。整備された街並みは、確かに以前より清潔で歩きやすい。それを進歩と呼ぶことに、あえて異を唱えるつもりはない。ただ、かつてその路地の角にあった古書店で、時の経つのも忘れて棚を眺めた午後や、軒先の看板が雨に濡れて光っていた夕暮れの記憶が、拠り所を失って宙に浮いてしまったように感じられたのである。場所とは、単なる物理的な空間ではない。そこで過ごした時間の堆積が、目に見えぬ層をなして染み込んでいる。建物が取り壊されるとき、失われるのは古びた木材や漆喰だけではなく、それに結びついていた無数の人々の記憶の手がかりでもある。新しさを一概に否定はできぬにせよ、私たちが「便利さ」や「効率」の名のもとに手放しているものの中には、二度と取り戻せぬものが含まれているのかもしれない。",
+      "passage_en": "The area in front of my hometown station, which I visited after a long absence, retained almost none of the scenery I knew. The familiar row of shops had been replaced by a brand-new complex, and the narrow, winding alleys had transformed into spacious sidewalks. The well-maintained townscape is certainly cleaner and easier to walk than before. I have no intention of deliberately objecting to calling that progress. And yet, the memory of an afternoon spent gazing at the shelves of the secondhand bookshop that used to stand on the corner of that alley, losing all track of time, and of a dusk when the signboard beneath the eaves glistened wet with rain, felt as though it had lost its anchor and been left floating in midair. A place is not merely a physical space. The accumulation of the time spent there permeates it, forming invisible layers. When a building is torn down, what is lost is not only the aged timber and plaster, but also the clues to the memories of countless people that were bound to it. While one cannot dismiss newness out of hand, among the things we relinquish in the name of 'convenience' and 'efficiency,' there may be included things that can never be recovered.",
+      "questions": [
+        {
+          "q": "整備された故郷の街並みについて、筆者はどのように述べているか。",
+          "q_en": "How does the author describe the renovated townscape of the hometown?",
+          "options": [
+            "以前より清潔で歩きやすくなったことは認めている。",
+            "何の価値もないものだとして全面的に否定している。",
+            "以前の路地よりかえって不便になったと述べている。",
+            "それを進歩と呼ぶことに強く反対している。"
+          ],
+          "answer": 0,
+          "q_te": "స్వస్థలపు కొత్త రూపాన్ని రచయిత ఎలా వర్ణించారు?",
+          "q_hi": "गृहनगर के नए रूप का वर्णन लेखक कैसे करते हैं?",
+          "q_ta": "சொந்த ஊரின் புதிய தோற்றத்தை ஆசிரியர் எவ்வாறு விவரிக்கிறார்?",
+          "q_ko": "필자는 고향의 변화된 풍경을 어떻게 묘사합니까?",
+          "q_es": "¿Cómo describe el autor el paisaje urbano renovado de su ciudad?",
+          "q_kn": "ಸ್ವಂತ ಊರಿನ ಹೊಸ ನೋಟವನ್ನು ಲೇಖಕರು ಹೇಗೆ ವಿವರಿಸಿದ್ದಾರೆ?",
+          "q_ml": "സ്വന്തം നാടിന്റെ പുതിയ മാറ്റങ്ങളെ ലേഖകൻ എങ്ങനെയാണ് വിവരിക്കുന്നത്?"
+        },
+        {
+          "q": "「場所」について、筆者の考えに最も近いものはどれか。",
+          "q_en": "Which is closest to the author's view of what a 'place' is?",
+          "options": [
+            "そこで過ごした時間とは無関係な、単なる物理的空間にすぎない。",
+            "そこで過ごした時間の堆積が、目に見えぬ層をなして染み込んだものである。",
+            "新しく整備されたものほど価値が高いものである。",
+            "記憶とは切り離して捉えるべきものである。"
+          ],
+          "answer": 1,
+          "q_te": "'స్థలం' గురించి రచయిత అభిప్రాయానికి దగ్గరగా ఉన్నది ఏది?",
+          "q_hi": "'स्थान' के बारे में लेखक के दृष्टिकोण के सबसे निकट कौन सा विकल्प है?",
+          "q_ta": "'இடம்' என்பது பற்றி ஆசிரியரின் கருத்துக்கு நெருக்கமானது எது?",
+          "q_ko": "'장소'에 대한 필자의 견해에 가장 가까운 것은 무엇입니까?",
+          "q_es": "¿Qué opción se acerca más a la visión del autor sobre lo que es un 'lugar'?",
+          "q_kn": "'ಸ್ಥಳ'ದ ಬಗೆಗಿನ ಲೇಖಕರ ದೃಷ್ಟಿಕೋನಕ್ಕೆ ಹತ್ತಿರವಾದದ್ದು ಯಾವುದು?",
+          "q_ml": "'സ്ഥലം' എന്നതിനെക്കുറിച്ചുള്ള ലേഖകന്റെ കാഴ്ചപ്പാട് എന്താണ്?"
+        },
+        {
+          "q": "建物が取り壊されるとき失われるものとして、筆者が挙げているものはどれか。",
+          "q_en": "What does the author name as being lost when a building is torn down?",
+          "options": [
+            "古びた木材や漆喰といった物質だけである。",
+            "それに結びついていた人々の記憶の手がかりも含まれる。",
+            "清潔さと歩きやすさである。",
+            "実際には何も失われはしない。"
+          ],
+          "answer": 1,
+          "q_te": "భవనం కూల్చివేసినప్పుడు ఏమి కోల్పోతుందని రచయిత చెప్పారు?",
+          "q_hi": "इमारत तोड़े जाने पर क्या खो जाता है?",
+          "q_ta": "கட்டிடம் இடிக்கப்படும்போது என்ன இழக்கப்படுகிறது?",
+          "q_ko": "건물이 헐릴 때 상실되는 것으로 필자가 지목한 것은 무엇입니까?",
+          "q_es": "¿Qué señala el autor que se pierde cuando se derriba un edificio?",
+          "q_kn": "ಕಟ್ಟಡವನ್ನು ಕೆಡವಿದಾಗ ಏನನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತೇವೆ ಎಂದು ಲೇಖಕರು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "കെട്ടിടം പൊളിച്ചുമാറ്റുമ്പോൾ എന്താണ് നഷ്ടപ്പെടുന്നത്?"
+        }
+      ],
+      "passage_te": "నగరం యొక్క జ్ఞాపకాలు: పునరుద్ధరించబడిన తన స్వస్థలపు స్టేషన్ ముఖద్వారాన్ని చూసిన రచయితకు గతంలోని పాత భవనాలు, మనుషుల జీవన చిహ్నాలు కనుమరుగైనందుకు బాధ కలిగింది. భవనాలు కేవలం రాళ్ళు, కాంక్రీట్ మాత్రమే కావు; అవి ఆ ప్రదేశంలో జీవించిన తరాల జ్ఞాపకాలను, గుర్తింపును మోసే సజీవ సాక్ష్యాలు.",
+      "passage_hi": "शहर की स्मृतियाँ: अपने गृहनगर के आधुनिक रूप को देखकर लेखक को पुरानी इमारतों और मानवीय पदचिह्नों के लुप्त होने पर दुख हुआ। इमारतें केवल ईंट-पत्थर नहीं होतीं, वे उस स्थान पर रहने वाले लोगों की पहचान और सामूहिक स्मृतियों की धरोहर होती हैं।",
+      "passage_ta": "ஒரு நகரத்தின் நினைவுகள்: புதுப்பிக்கப்பட்ட சொந்த ஊரைக் கண்ட எழுத்தாளருக்கு பழைய கட்டிடங்களும் வாழ்வியல் தடங்களும் அழிந்தது வேதனை தந்தது. கட்டிடங்கள் வெறும் கற்கள் அல்ல; அவை ஒரு சமூகத்தின் கூட்டு நினைவுகளையும் அடையாளத்தையும் சுமந்து நிற்பவை.",
+      "passage_ko": "도시의 기억: 현대적으로 재개발된 고향 역을 바라보며 저자는 옛 건물과 사람들의 삶의 흔적이 사라진 것에 상실감을 느낍니다. 건물이란 단순한 물리적 구조물이 아니라, 그곳을 거쳐 간 세대들의 삶과 정체성이 축적된 기억의 장소입니다.",
+      "passage_es": "La memoria de una ciudad: Al contemplar la renovada estación de su ciudad natal, el autor lamenta la pérdida de los viejos edificios. Las edificaciones no son mero hormigón, sino depositarias vivas de la identidad y la memoria colectiva de las generaciones.",
+      "passage_kn": "ನಗರದ ನೆನಪುಗಳು: ಆಧುನಿಕಗೊಂಡ ತನ್ನ ಊರನ್ನು ನೋಡಿದಾಗ ಹಳೆಯ ಕಟ್ಟಡಗಳು ಮಾಯವಾಗಿರುವುದಕ್ಕೆ ಲೇಖಕರಿಗೆ ನೋವಾಯಿತು. ಕಟ್ಟಡಗಳು ಕೇವಲ ಇಟ್ಟಿಗೆ ಕಲ್ಲುಗಳಲ್ಲ, ಅವು ಜನರ ಬದುಕು ಮತ್ತು ನೆನಪುಗಳ ಜೀವಂತ ಸಾಕ್ಷಿಗಳು.",
+      "passage_ml": "നഗരത്തിന്റെ ഓർമ്മകൾ: നവീകരിച്ച ജന്മനാട്ടിലെ സ്റ്റേഷൻ കണ്ടപ്പോൾ പഴയ കെട്ടിടങ്ങൾ ഇല്ലാതായതിൽ എഴുത്തുകാരന് വിഷമം തോന്നി. കെട്ടിടങ്ങൾ കേവലം കോൺക്രീറ്റ് അല്ല, അവ തലമുറകളുടെ ഓർമ്മകളെയാണ് പേറുന്നത്."
+    },
+    {
+      "id": "r-n1-4",
+      "title": "効率化の逆説（The Paradox of Efficiency）",
+      "passage": "近年、多くの企業が業務の効率化を旗印に掲げ、会議の削減や書類の電子化を推し進めてきた。だが、効率という言葉が一人歩きするあまり、本来効率化が奉仕すべきはずの目的——すなわち、より質の高い仕事を生み出すこと——が、いつしか後景に退いてしまったきらいはないだろうか。無駄を省くという発想それ自体に異を唱えるつもりはない。しかし、一見無駄に見える雑談や、結論の出ない議論の往復こそが、後になって思わぬ発想の苗床となることも少なくない。目に見える成果を性急に求めるあまり、測りがたい価値を切り捨ててしまうとすれば、それはもはや効率化の名に値しない。真に問われるべきは、何を省くかではなく、何のために省くのかという一点にほかならない。",
+      "passage_en": "In recent years many companies have raised the banner of operational efficiency, pressing ahead with cutting meetings and digitizing paperwork. But hasn't the word \"efficiency\" taken on a life of its own to the point that the very purpose it was supposed to serve—namely, producing higher-quality work—has, before anyone noticed, receded into the background? I have no intention of objecting to the idea of eliminating waste itself. Yet it is not rare that precisely the seemingly wasteful chatter, or the back-and-forth of inconclusive debate, later becomes an unexpected seedbed for ideas. If, in impatiently chasing visible results, we cast aside values that are hard to measure, then that no longer deserves the name of efficiency. What should truly be asked is nothing other than this single point: not what to eliminate, but for what purpose we eliminate it.",
+      "questions": [
+        {
+          "q": "筆者が効率化について懸念していることは何か。",
+          "q_en": "What is the author concerned about regarding efficiency?",
+          "options": [
+            "会議の削減や書類の電子化が一向に進んでいないこと",
+            "無駄を省くという発想そのものが根本的に誤っていること",
+            "効率化が目的化し、本来の目的が見失われがちなこと",
+            "企業が効率化を旗印に掲げようとしないこと"
+          ],
+          "answer": 2,
+          "q_te": "సామర్థ్య వృద్ధి గురించి రచయిత ఆందోళన ఏమిటి?",
+          "q_hi": "दक्षता को लेकर लेखक की क्या चिंता है?",
+          "q_ta": "செயல்திறன் தொடர்பாக ஆசிரியரின் கவலை என்ன?",
+          "q_ko": "효율화와 관련하여 필자가 우려하는 바는 무엇입니까?",
+          "q_es": "¿Qué le preocupa al autor respecto a la eficiencia?",
+          "q_kn": "ದಕ್ಷತೆಯ ಬಗ್ಗೆ ಲೇಖಕರ ಆತಂಕವೇನು?",
+          "q_ml": "കാര്യക്ഷമതയെക്കുറിച്ച് ലേഖകന്റെ ആശങ്ക എന്താണ്?"
+        },
+        {
+          "q": "「一見無駄に見える雑談」について、筆者はどう述べているか。",
+          "q_en": "What does the author say about \"seemingly wasteful chatter\"?",
+          "options": [
+            "直ちに目に見える成果へと結びつくものである",
+            "後になって思わぬ発想の源となることがある",
+            "効率化のために真っ先に省くべきものである",
+            "質の高い仕事を妨げる有害なものである"
+          ],
+          "answer": 1,
+          "q_te": "'అనవసరమైన ముచ్చట్లు' గురించి రచయిత ఏమి చెప్పారు?",
+          "q_hi": "अनौपचारिक बातचीत के बारे में लेखक का क्या कहना है?",
+          "q_ta": "இயல்பான உரையாடல்கள் பற்றி ஆசிரியர் கூறுவது என்ன?",
+          "q_ko": "'쓸데없어 보이는 잡담'에 대해 필자는 어떻게 말합니까?",
+          "q_es": "¿Qué dice el autor sobre las 'charlas aparentemente inútiles'?",
+          "q_kn": "'ಅನಗತ್ಯ ಮಾತುಕತೆ'ಗಳ ಬಗ್ಗೆ ಲೇಖಕರು ಏನು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "'അനാവശ്യ വർത്തമാനങ്ങൾ' എന്ന് കരുതുന്നതിനെക്കുറിച്ച് ലേഖകൻ പറയുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "筆者が最も重要だと考えているのはどれか。",
+          "q_en": "What does the author consider most important?",
+          "options": [
+            "何を省くべきかを迅速に判断すること",
+            "目に見える成果をできるだけ早く得ること",
+            "何のために省くのかを問うこと",
+            "測りがたい価値をすべて数値に置き換えること"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత దేనిని అత్యంత ముఖ్యమైనదిగా భావిస్తున్నారు?",
+          "q_hi": "लेखक किसे सर्वाधिक महत्वपूर्ण मानते हैं?",
+          "q_ta": "ஆசிரியர் எதை மிக முக்கியமானதாகக் கருதுகிறார்?",
+          "q_ko": "필자가 가장 중요하게 여기는 것은 무엇입니까?",
+          "q_es": "¿Qué considera el autor lo más importante?",
+          "q_kn": "ಲೇಖಕರು ಯಾವುದನ್ನು ಅತ್ಯಂತ ಮುಖ್ಯವೆಂದು ಭಾವಿಸುತ್ತಾರೆ?",
+          "q_ml": "ഏറ്റവും പ്രധാനപ്പെട്ടതായി ലേഖകൻ കരുതുന്നത് എന്തിനെയാണ്?"
+        }
+      ],
+      "passage_te": "సామర్థ్య వృద్ధి యొక్క వైరుధ్యం: వ్యాపారాలలో సామర్థ్యం మరియు ఉత్పాదకత పెంపు పేరిట పని ప్రదేశాల్లో జరిగే 'అనవసరమైన' సంభాషణలను తొలగిస్తున్నారు. కానీ అలాంటి అనధికారిక, స్వేచ్ఛాయుత ముచ్చట్లలోనే అసలైన సృజనాత్మకత మరియు నమ్మకం వికసిస్తాయని రచయిత హెచ్చరిస్తున్నారు.",
+      "passage_hi": "दक्षता का विरोधाभास: कंपनियों में कार्यकुशलता के नाम पर अनौपचारिक बातचीत को समाप्त किया जा रहा है। लेखक आगाह करते हैं कि बिना किसी पूर्व योजना के होने वाली गपशप ही नवाचार और आपसी विश्वास की जन्मदाता होती है।",
+      "passage_ta": "செயல்திறனின் முரண்பாடு: நிறுவனங்களில் உற்பத்தித் திறனை அதிகரிக்க ஊழியர்களின் இயல்பான உரையாடல்கள் கட்டுப்படுத்தப்படுகின்றன. ஆனால் அத்தகைய தற்செயலான உரையாடல்களிலேயே புதிய சிந்தனைகளும் நம்பிக்கையும் மலர்கின்றன.",
+      "passage_ko": "효율화의 역설: 기업들이 효율성을 앞세워 사소한 잡담마저 낭비로 치부하고 있습니다. 그러나 필자는 무목적적인 대화 속에서야말로 창의적인 발상과 인간적인 신뢰가 싹튼다고 경고합니다.",
+      "passage_es": "La paradoja de la eficiencia: La obsesión corporativa por optimizar cada segundo elimina las charlas informales. El autor advierte que es en esas conversaciones espontáneas donde nacen la creatividad y la confianza mutua.",
+      "passage_kn": "ದಕ್ಷತೆಯ ವಿರೋಧಾಭಾಸ: ಕಂಪನಿಗಳಲ್ಲಿ ದಕ್ಷತೆಯ ಹೆಸರಿನಲ್ಲಿ ನೌಕರರ ಅನೌಪಚಾರಿಕ ಮಾತುಕತೆಯನ್ನು ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತಿದೆ. ಆದರೆ ಅಂತಹ ಮಾತುಕತೆಗಳಲ್ಲೇ ಹೊಸ ಆವಿಷ್ಕಾರ ಮತ್ತು ನಂಬಿಕೆ ಹುಟ್ಟುತ್ತದೆ.",
+      "passage_ml": "കാര്യക്ഷമതയുടെ വൈരുദ്ധ്യം: കാര്യക്ഷമത കൂട്ടാനെന്ന പേരിൽ ഓഫീസുകളിലെ സൗഹൃദ സംഭാഷണങ്ങൾ ഒഴിവാക്കപ്പെടുന്നു. എന്നാൽ ഇത്തരം അവിചാരിത ചർച്ചകളിലാണ് പുതിയ ആശയങ്ങളും പരസ്പര വിശ്വാസവും വളരുന്നത്."
+    },
+    {
+      "id": "r-n1-5",
+      "title": "選択の自由という幻影（The Illusion of Freedom of Choice）",
+      "passage": "情報技術の発達は、私たちにかつてない選択肢の広がりをもたらしたと喧伝されている。確かに、指先一つで無数の商品や記事にたどり着ける現代において、選択の自由は飛躍的に拡大したかに見える。しかし、その自由なるものが、あらかじめ推薦アルゴリズムによって選り分けられた枠組みの内側でのみ許されているのだとすれば、話は別である。私たちは自らの意思で選んでいるつもりでいて、その実、過去の履歴から推し量られた「好むであろうもの」を差し出されているにすぎない。選ばされていることに気づかぬまま選ぶ——これを果たして自由と呼べるだろうか。真の自律とは、与えられた選択肢の中から選ぶ能力ではなく、選択肢の枠組みそのものを問い直す姿勢のうちにこそ宿るのである。",
+      "passage_en": "It is trumpeted that the development of information technology has brought us an unprecedented expansion of choices. Certainly, in an age where one can reach countless products and articles with a single fingertip, freedom of choice appears to have expanded dramatically. However, if that so-called freedom is permitted only within a framework already sorted out in advance by recommendation algorithms, then that is another matter entirely. We suppose we are choosing by our own will, when in reality we are merely being handed \"what we would presumably like,\" inferred from our past history. To choose without noticing that we are being made to choose—can this truly be called freedom? True autonomy dwells not in the ability to choose from among the options given, but precisely in the attitude of questioning the very framework of the options themselves.",
+      "questions": [
+        {
+          "q": "筆者は「選択の自由」の拡大についてどう考えているか。",
+          "q_en": "What does the author think about the expansion of \"freedom of choice\"?",
+          "options": [
+            "見かけ上は拡大したが、実際には枠組みに制約されていると考えている",
+            "情報技術の発達によって無条件に拡大したと考えている",
+            "選択肢が減ったことで自由もまた失われたと考えている",
+            "商品や記事が増えたことは自由とはまったく無関係だと考えている"
+          ],
+          "answer": 0,
+          "q_te": "ఎంపికల విస్తరణ గురించి రచయిత అభిప్రాయం ఏమిటి?",
+          "q_hi": "विकल्पों के विस्तार पर लेखक का क्या विचार है?",
+          "q_ta": "தேர்வுகளின் விரிவாக்கம் குறித்து ஆசிரியர் என்ன நினைக்கிறார்?",
+          "q_ko": "'선택의 자유'의 확대에 대해 필자는 어떻게 생각합니까?",
+          "q_es": "¿Qué opina el autor sobre la expansión de la 'libertad de elección'?",
+          "q_kn": "ಆಯ್ಕೆಗಳ ಸ್ವಾತಂತ್ರ್ಯ ವಿಸ್ತರಣೆಯ ಬಗ್ಗೆ ಲೇಖಕರ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "തിരഞ്ഞെടുപ്പുകൾ കൂടുന്നതിനെക്കുറിച്ച് ലേഖകന്റെ അഭിപ്രായം എന്താണ്?"
+        },
+        {
+          "q": "「選ばされていることに気づかぬまま選ぶ」とはどういうことか。",
+          "q_en": "What does \"to choose without noticing that we are being made to choose\" mean?",
+          "options": [
+            "自分で選んだ結果に対して責任を負おうとしないこと",
+            "アルゴリズムが提示したものを、自らの意思だと思い込んで選ぶこと",
+            "過去の履歴を意図的に無視したうえで選ぶこと",
+            "無数の選択肢を一つ一つ慎重に吟味して選ぶこと"
+          ],
+          "answer": 1,
+          "q_te": "'ఎంపిక చేయబడుతున్నామని తెలియకుండానే ఎంచుకోవడం' అంటే ఏమిటి?",
+          "q_hi": "'चुने जाने का अहसास किए बिना चुनना' का क्या अर्थ है?",
+          "q_ta": "'நாமே தேர்ந்தெடுக்கிறோம் என நினைத்து ஆளப்படுவது' என்றால் என்ன?",
+          "q_ko": "'선택하게 만들어지고 있음을 깨닫지 못한 채 선택한다'는 것은 무슨 뜻입니까?",
+          "q_es": "¿Qué significa 'elegir sin advertir que nos inducen a elegir'?",
+          "q_kn": "'ನಾವೇ ಆರಿಸುತ್ತಿದ್ದೇವೆ ಎಂದು ತಿಳಿಯದೆ ಆಯ್ಕೆ ಮಾಡುವುದು' ಎಂದರೇನು?",
+          "q_ml": "'നമ്മളെക്കൊണ്ട് തിരഞ്ഞെടുപ്പിക്കുകയാണെന്ന് അറിയാതെ തിരഞ്ഞെടുക്കുക' എന്നാൽ എന്താണ്?"
+        },
+        {
+          "q": "筆者の考える「真の自律」とは何か。",
+          "q_en": "What is \"true autonomy\" as the author conceives it?",
+          "options": [
+            "与えられた選択肢の中から最善のものを選び取る能力",
+            "推薦アルゴリズムの判断を全面的に信頼すること",
+            "選択肢の枠組みそのものを問い直す姿勢",
+            "できるだけ多くの選択肢を手元に集めること"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత ప్రకారం నిజమైన స్వయంప్రతిపత్తి అంటే ఏమిటి?",
+          "q_hi": "लेखक के अनुसार सच्ची स्वायत्तता क्या है?",
+          "q_ta": "ஆசிரியரின் பார்வையில் உண்மையான தன்னாட்சி எது?",
+          "q_ko": "필자가 생각하는 '진정한 자율성'이란 무엇입니까?",
+          "q_es": "¿Qué es la 'verdadera autonomía' tal como la concibe el autor?",
+          "q_kn": "ಲೇಖಕರ ಪ್ರಕಾರ ನಿಜವಾದ ಸ್ವಾಯತ್ತತೆ ಎಂದರೇನು?",
+          "q_ml": "ലേഖകന്റെ വീക്ഷണത്തിൽ യഥാർത്ഥ സ്വയംഭരണം എന്താണ്?"
+        }
+      ],
+      "passage_te": "ఎంపిక స్వేచ్ఛ అనే భ్రాంతి: సమాచార సాంకేతికత పెరిగిన కొద్దీ మనకు అపరిమితమైన ఎంపికలు లభించినట్లు కనిపిస్తుంది. కానీ వాస్తవానికి అల్గారిథమ్‌లు మన ప్రాధాన్యతలను ముందే నిర్ణయిస్తూ, మనం ఎంచుకుంటున్నామనే భ్రమను కలిగిస్తున్నాయి. నిజమైన స్వయంప్రతిపత్తి అనేది ఈ అదృశ్య ప్రభావాన్ని గుర్తించడంలోనే ఉంది.",
+      "passage_hi": "चयन की स्वतंत्रता का भ्रम: सूचना क्रांति से लगता है कि हमारे पास विकल्पों की भरमार है। परंतु परदे के पीछे एल्गोरिदम हमारी पसंद तय करते हैं। वास्तविक स्वतंत्रता यह पहचानने में है कि हम बिना जाने कैसे नियंत्रित हो रहे हैं।",
+      "passage_ta": "தேர்வு சுதந்திரம் என்ற மாயை: தொழில்நுட்பத்தால் நமக்கு எண்ணற்ற தேர்வுகள் இருப்பதாகத் தோன்றுகிறது. ஆனால் படிமுறைத் திட்டங்கள் (அல்காரிதம்கள்) நம் தேர்வுகளைத் தீர்மானிக்கின்றன. இந்த மறைமுகத் தாக்கத்தை உணர்வதே உண்மையான சுதந்திரம்.",
+      "passage_ko": "선택의 자유라는 환상: 넘쳐나는 정보 속에서 우리는 무한한 선택권을 가진 듯 착각하지만, 실상은 알고리즘에 의해 선택을 유도당하고 있습니다. 진정한 자율성은 이러한 보이지 않는 통제를 자각하는 데서 출발합니다.",
+      "passage_es": "La ilusión de la libertad de elección: Creemos gozar de infinitas opciones, pero los algoritmos perfilan nuestras decisiones en la sombra. La auténtica autonomía reside en cobrar conciencia de cómo somos condicionados.",
+      "passage_kn": "ಆಯ್ಕೆಯ ಸ್ವಾತಂತ್ರ್ಯ ಎಂಬ ಭ್ರಮೆ: ತಂತ್ರಜ್ಞಾನದಿಂದ ನಮಗೆ ಅಪಾರ ಆಯ್ಕೆಗಳಿವೆ ಎಂದು ತೋರುತ್ತದೆ. ಆದರೆ ವಾಸ್ತವದಲ್ಲಿ ಅಲ್ಗಾರಿದಮ್‌ಗಳು ನಮ್ಮ ಆಯ್ಕೆಯನ್ನು ನಿರ್ಧರಿಸುತ್ತಿವೆ. ಇದನ್ನು ಗ್ರಹಿಸುವುದೇ ನಿಜವಾದ ಸ್ವಾತಂತ್ರ್ಯ.",
+      "passage_ml": "തിരഞ്ഞെടുക്കാനുള്ള സ്വാതന്ത്ര്യം എന്ന മിഥ്യ: വിവരസാങ്കേതികവിദ്യ വഴി നമുക്ക് ധാരാളം ചോയ്‌സുകൾ ഉണ്ടെന്ന് തോന്നുമെങ്കിലും, അൽഗോരിതങ്ങളാണ് കാര്യങ്ങൾ തീരുമാനിക്കുന്നത്. ഈ സ്വാധീനത്തെ തിരിച്ചറിയുന്നതാണ് യഥാർത്ഥ സ്വാതന്ത്ര്യം."
+    },
+    {
+      "id": "r-n1-6",
+      "title": "健康という強迫（The Compulsion of Health）",
+      "passage": "何を食べるべきか、何を避けるべきか——健康をめぐる言説は、日々おびただしい量で私たちに降り注ぐ。ある食品が体に良いと持ち上げられたかと思えば、翌年には一転して警戒すべき対象とされる。こうした情報の揺れ動きに翻弄されるうちに、食卓はいつしか栄養素の計算の場と化し、食べる喜びそのものが痩せ細っていく。もとより、栄養に関する知見が健康の維持に資することを否定はしない。だが、一片の数値に一喜一憂し、口にするものすべてを損得勘定で測るようになれば、それは健康を追い求めているのか、それとも健康という観念に囚われているのか、判然としなくなる。健やかであろうとすることが、かえって心を蝕むとすれば、これほどの皮肉もあるまい。",
+      "passage_en": "What should we eat, what should we avoid—discourse about health rains down on us in prodigious quantities day after day. No sooner is a certain food lauded as good for the body than, the very next year, it is abruptly recast as something to be wary of. As we are tossed about by these fluctuations of information, the dining table imperceptibly turns into a site for calculating nutrients, and the very joy of eating grows emaciated. I do not, of course, deny that knowledge about nutrition contributes to maintaining health. But if we come to rejoice and despair over a single figure, and to measure everything we put in our mouths by a calculus of gain and loss, then it becomes unclear whether we are pursuing health or being held captive by the notion of health. If striving to be healthy instead corrodes the mind, there could hardly be an irony greater than this.",
+      "questions": [
+        {
+          "q": "「食卓はいつしか栄養素の計算の場と化し」とあるが、それはなぜか。",
+          "q_en": "The text says the dining table \"imperceptibly turns into a site for calculating nutrients.\" Why?",
+          "options": [
+            "栄養に関する知見が健康の維持にまったく役立たないから",
+            "健康をめぐる情報に振り回され、数値ばかりを気にするようになるから",
+            "食べる喜びを何よりも重視する人が増えてきたから",
+            "食品そのものの値段が年々大きく変動するから"
+          ],
+          "answer": 1,
+          "q_te": "భోజన బల్ల ప్రయోగశాలగా ఎందుకు మారింది?",
+          "q_hi": "खाने की मेज़ प्रयोगशाला क्यों बन गई है?",
+          "q_ta": "உணவு மேசை ஆய்வகமாக மாறியது ஏன்?",
+          "q_ko": "식탁이 '영양소를 계산하는 장'으로 변한 이유는 무엇입니까?",
+          "q_es": "¿Por qué se convierte la mesa en un 'lugar de cálculo nutricional'?",
+          "q_kn": "ಊಟದ ಮೇಜು ಪ್ರಯೋಗಾಲಯವಾದದ್ದು ಏಕೆ?",
+          "q_ml": "ഭക്ഷണമേശ ഒരു പരീക്ഷണശാലയായി മാറിയത് എന്തുകൊണ്ടാണ്?"
+        },
+        {
+          "q": "筆者が指摘する「皮肉」とは何か。",
+          "q_en": "What is the \"irony\" the author points to?",
+          "options": [
+            "体に良いとされた食品が翌年には避けるべきものとされること",
+            "栄養に関する知識が健康の維持に確かに役立つこと",
+            "健康であろうとするあまり、かえって心が損なわれること",
+            "食べる喜びの感じ方が人によって異なるということ"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత ఎత్తిచూపిన వైరుధ్యం ఏమిటి?",
+          "q_hi": "लेखक ने किस विडंबना की ओर संकेत किया है?",
+          "q_ta": "ஆசிரியர் சுட்டிக்காட்டும் முரண்பாடு என்ன?",
+          "q_ko": "필자가 지적하는 '아이러니'는 무엇입니까?",
+          "q_es": "¿A qué 'ironía' apunta el autor?",
+          "q_kn": "ಲೇಖಕರು ಎತ್ತಿಹಿಡಿದ ವಿಪರ್ಯಾಸವೇನು?",
+          "q_ml": "ലേഖകൻ ചൂണ്ടിക്കാണിക്കുന്ന വൈരുദ്ധ്യം എന്താണ്?"
+        },
+        {
+          "q": "この文章で筆者が最も言いたいことは何か。",
+          "q_en": "What is the author's main point in this passage?",
+          "options": [
+            "栄養に関する情報は一切信用すべきではない",
+            "健康のためには食べる喜びを完全に捨てるべきだ",
+            "数値にとらわれず、食べることとの向き合い方を見直すべきだ",
+            "食品の安全性をこれまで以上に厳しく監視すべきだ"
+          ],
+          "answer": 2,
+          "q_te": "ఈ భాగం యొక్క ముఖ్య సందేశం ఏమిటి?",
+          "q_hi": "इस परिच्छेद का मुख्य विचार क्या है?",
+          "q_ta": "இப்பத்தியின் முதன்மைக் கருத்து என்ன?",
+          "q_ko": "이 글에서 필자의 핵심 주장은 무엇입니까?",
+          "q_es": "¿Cuál es el punto central del autor en este pasaje?",
+          "q_kn": "ಈ ಲೇಖನದ ಮುಖ್ಯ ಆಶಯವೇನು?",
+          "q_ml": "ഈ ഭാഗത്തിന്റെ പ്രധാന ഉദ്ദേശ്യം എന്താണ്?"
+        }
+      ],
+      "passage_te": "ఆరోగ్యం అనే మితిమీరిన ఆందోళన: సమతుల్య ఆహారం మరియు పోషకాల లెక్కింపు సమాజంలో ఎంతగా పెరిగిపోయిందంటే, భోజన బల్ల ఒక పోషక లెక్కింపు ప్రయోగశాలగా మారిపోయింది. ఆహారం యొక్క అసలైన ఆనందం, రుచి, పంచుకునే సంబరం అదృశ్యమైపోవడం విచారకరమని రచయిత ఎత్తిచూపుతున్నారు.",
+      "passage_hi": "स्वास्थ्य की सनक: क्या खाएँ और क्या न खाएँ—स्वास्थ्य चर्चाओं ने खाने की मेज़ को प्रयोगशाला बना दिया है। भोजन का वास्तविक आनंद, स्वाद और मिल-बाँटकर खाने का उल्लास इस गणना में खोता जा रहा है।",
+      "passage_ta": "ஆரோக்கியம் என்ற கட்டாயம்: எதை உண்பது என்ற கணக்கீடுகள் உணவருந்தும் மேசையை ஊட்டச்சத்து ஆய்வகமாக மாற்றிவிட்டன. உணவின் உண்மையான சுவையும், பகிர்ந்தளிக்கும் மகிழ்ச்சியும் மறைந்துபோவது முரண்பாடானது.",
+      "passage_ko": "건강이라는 강박: 영양소 계산에 얽매여 식탁이 분석의 장으로 전락했습니다. 식사의 본래 목적인 즐거움과 소통이 사라지고 건강이 하나의 강박적 의무가 되어버린 세태를 비판합니다.",
+      "passage_es": "La compulsión de la salud: El cálculo obsesivo de calorías y nutrientes ha transformado la mesa en un laboratorio. Se pierde así la dimensión placentera y comunitaria del comer, reducida a una disciplina médica.",
+      "passage_kn": "ಆರೋಗ್ಯದ ಬಗೆಗಿನ ಅತಿಯಾದ ಆತಂಕ: ಪೌಷ್ಟಿಕಾಂಶಗಳ ಲೆಕ್ಕಾಚಾರದಿಂದ ಊಟದ ಮೇಜು ಪ್ರಯೋಗಾಲಯದಂತಾಗಿದೆ. ಊಟದ ರುಚಿ ಮತ್ತು ಜೊತೆಯಾಗಿ ತಿನ್ನುವ ಆನಂದವೇ ಮರೆಯಾಗುತ್ತಿರುವುದು ವಿಪರ್ಯಾಸ.",
+      "passage_ml": "ആരോഗ്യം എന്ന നിർബന്ധിത ചിന്ത: പോഷകങ്ങൾ അളന്നുതിട്ടപ്പെടുത്തി കഴിക്കുന്നത് ഭക്ഷണത്തിന്റെ സ്വാഭാവിക രുചിയും ഒരുമിച്ചിരുന്ന് കഴിക്കുന്ന സന്തോഷവും ഇല്ലാതാക്കുന്നുവെന്ന് ലേഖകൻ ചൂണ്ടിക്കാട്ടുന്നു."
+    },
+    {
+      "id": "r-n1-7",
+      "title": "隣人との距離（The Distance from One's Neighbor）",
+      "passage": "都市化の進展とともに、隣に誰が住んでいるのかさえ知らないという暮らしが、もはや珍しくなくなった。干渉を嫌い、互いに立ち入らないことを美徳とする風潮は、確かに個々人の自由を守る上で一定の役割を果たしてきた。とはいえ、災害が起きたその時、真っ先に手を差し伸べうるのは、遠方の親族でも行政でもなく、ほかならぬ隣人であるという事実を、私たちはともすれば忘れがちである。日頃の何気ない挨拶の積み重ねが、いざという場面で命綱にもなりうる。近すぎず遠すぎず、適度な距離を保ちながらも緩やかに結ばれていること——そうした関係のありようを、煩わしいものとして退けてしまってよいものだろうか。便利さと引き換えに、私たちは何を手放しつつあるのか、いま一度立ち止まって考えてみる必要があろう。",
+      "passage_en": "With the advance of urbanization, a way of life in which one does not even know who lives next door has become no longer unusual. The trend of disliking interference and treating non-intrusion into one another's affairs as a virtue has certainly played a certain role in protecting individual freedom. That said, we are apt to forget the fact that when a disaster strikes, the one who can extend a hand first is neither a distant relative nor the authorities, but none other than one's neighbor. The accumulation of casual everyday greetings can, at a critical moment, become a lifeline. To remain loosely bound while keeping an appropriate distance—neither too close nor too far—is it really acceptable to dismiss such a form of relationship as a mere nuisance? We ought to pause once more and consider what, in exchange for convenience, we are in the process of letting go.",
+      "questions": [
+        {
+          "q": "筆者は「互いに立ち入らないことを美徳とする風潮」をどう評価しているか。",
+          "q_en": "How does the author assess \"the trend of treating non-intrusion as a virtue\"?",
+          "options": [
+            "有害無益であるとして、全面的に否定している",
+            "個人の自由を守る面は認めつつ、失われるものもあると指摘している",
+            "都市化を進めるうえで不可欠なものだと称賛している",
+            "災害時にこそ最も役立つ心構えだと評価している"
+          ],
+          "answer": 1,
+          "q_te": "'జోక్యం చేసుకోకపోవడం సంస్కారం' అనే ధోరణిని రచయిత ఎలా విశ్లేషించారు?",
+          "q_hi": "'दखल न देने को शिष्टाचार मानना' लेखक की दृष्टि में कैसा है?",
+          "q_ta": "'தலையிடாதிருத்தலை நாகரிகமாகக் கருதுவது' பற்றி ஆசிரியர் என்ன கருதுகிறார்?",
+          "q_ko": "'불간섭을 미덕으로 여기는 풍조'를 필자는 어떻게 평가합니까?",
+          "q_es": "¿Cómo evalúa el autor la tendencia de tratar la no intromisión como una virtud?",
+          "q_kn": "'ಮಧ್ಯಪ್ರವೇಶಿಸದಿರುವುದೇ ಸದ್ಗುಣ' ಎಂಬ ಭಾವನೆಯನ್ನು ಲೇಖಕರು ಹೇಗೆ ವಿಶ್ಲೇಷಿಸಿದ್ದಾರೆ?",
+          "q_ml": "'ഇടപെടാതിരിക്കുന്നത് നല്ല ശീലമായി കാണുന്നതിനെ' ലേഖകൻ എങ്ങനെയാണ് വിലയിരുത്തുന്നത്?"
+        },
+        {
+          "q": "災害が起きた時について、筆者はどう述べているか。",
+          "q_en": "What does the author say about when a disaster strikes?",
+          "options": [
+            "行政の対応こそが最も頼りになる",
+            "遠方の親族が真っ先に助けに駆けつける",
+            "ほかならぬ隣人が最初に助けの手を差し伸べうる",
+            "日頃の挨拶などは何の役にも立たない"
+          ],
+          "answer": 2,
+          "q_te": "విపత్తుల సమయంలో పరిస్థితి ఎలా ఉంటుందని చెప్పారు?",
+          "q_hi": "आपदा के समय की स्थिति पर क्या कहा गया है?",
+          "q_ta": "பேரிடர் காலங்களில் என்ன நடக்கும் என்று கூறப்படுகிறது?",
+          "q_ko": "재난이 닥쳤을 때에 대해 필자는 무엇이라 말합니까?",
+          "q_es": "¿Qué dice el autor sobre el momento en que azota una catástrofe?",
+          "q_kn": "ವಿಪತ್ತಿನ ಸಮಯದಲ್ಲಿ ಪರಿಸ್ಥಿತಿ ಹೇಗಿರುತ್ತದೆ ಎಂದು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "ദുരന്തമുണ്ടാകുമ്പോൾ എന്ത് സംഭവിക്കും എന്നാണ് പറയുന്നത്?"
+        },
+        {
+          "q": "この文章で筆者が読者に問いかけていることは何か。",
+          "q_en": "What is the author asking the reader to consider?",
+          "options": [
+            "どうすれば都市化そのものを止められるか",
+            "便利さと引き換えに失われつつあるものは何か",
+            "隣人との関係をいかにして断ち切るか",
+            "行政サービスをいかにして充実させるか"
+          ],
+          "answer": 1,
+          "q_te": "పాఠకులను దేని గురించి ఆలోచించమని రచయిత కోరుతున్నారు?",
+          "q_hi": "लेखक पाठक से किस पर विचार करने का आग्रह कर रहे हैं?",
+          "q_ta": "வாசகரை எதைப்பற்றி சிந்திக்க வைக்க ஆசிரியர் விரும்புகிறார்?",
+          "q_ko": "필자가 독자에게 재고를 촉구하는 점은 무엇입니까?",
+          "q_es": "¿Qué le pide el autor al lector que considere?",
+          "q_kn": "ಲೇಖಕರು ಓದುಗರಿಂದ ಏನನ್ನು ನಿರೀಕ್ಷಿಸುತ್ತಾರೆ?",
+          "q_ml": "വായനക്കാരോട് എന്തിനെക്കുറിച്ച് ചിന്തിക്കാനാണ് ലേഖകൻ ആവശ്യപ്പെടുന്നത്?"
+        }
+      ],
+      "passage_te": "పొరుగువారితో దూరం: పట్టణీకరణ వల్ల ఒకరి వ్యక్తిగత జీవితంలో మరొకరు జోక్యం చేసుకోకపోవడం సంస్కారంగా భావించబడుతోంది. కానీ ప్రమాదాలు, విపత్తులు సంభవించినప్పుడు ఈ పరస్పర దూరమే మానవ సమాజాన్ని నిస్సహాయంగా మారుస్తుందని రచయిత హెచ్చరిస్తున్నారు.",
+      "passage_hi": "पड़ोसियों से बढ़ती दूरी: शहरीकरण ने एक-दूसरे के जीवन में हस्तक्षेप न करने को शिष्टाचार बना दिया है। परंतु संकट के समय यही दूरी हमें अकेला और असहाय बना देती है।",
+      "passage_ta": "அண்டை வீட்டாருடன் இடைவெளி: அடுத்தவர் வாழ்க்கையில் தலையிடாமல் இருப்பதே நாகரிகம் என நகரங்கள் கருதுகின்றன. ஆனால் பேரிடர் வரும்போது இந்த அந்நியமாதல் நம்மைப் பாதுகாப்பற்றவர்களாக ஆக்குகிறது.",
+      "passage_ko": "이웃과의 거리: 불간섭을 미덕으로 여기는 도시 문화가 확산되었지만, 재난과 위기 상황에서 이러한 무관심은 치명적인 취약점으로 작용합니다. 유대감의 회복이 시급합니다.",
+      "passage_es": "La distancia con el prójimo: La urbanización erigió la no intromisión en virtud cívica. No obstante, ante catástrofes o crisis, ese distanciamiento engendra una desoladora vulnerabilidad comunitaria.",
+      "passage_kn": "ನೆರೆಹೊರೆಯವರ ನಡುವಿನ ಅಂತರ: ನಗರೀಕರಣದಿಂದ ಪರಸ್ಪರ ಹಸ್ತಕ್ಷೇಪ ಮಾಡದಿರುವುದೇ ಒಳ್ಳೆಯದೆಂದು ಭಾವಿಸಲಾಗಿದೆ. ಆದರೆ ಆಪತ್ತಿನ ಸಮಯದಲ್ಲಿ ಈ ಅಂತರವೇ ನಮ್ಮನ್ನು ಅಸಹಾಯಕರನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "passage_ml": "അയൽക്കാരുമായുള്ള അകലം: മറ്റുള്ളവരുടെ കാര്യത്തിൽ ഇടപെടാതിരിക്കുന്നതാണ് നല്ലതെന്ന് നഗരജീവിതം പഠിപ്പിക്കുന്നു. എന്നാൽ ആപത്തുണ്ടാകുമ്പോൾ ഈ അകൽച്ച വലിയൊരു വീഴ്ചയായി മാറുന്നു."
+    },
+    {
+      "id": "r-n1-8",
+      "title": "自然を御するという傲り（The Arrogance of Governing Nature）",
+      "passage": "堤防を高くし、河川を整え、私たちは長きにわたって自然を意のままに制御しようと努めてきた。その努力が数多の命を救ってきたことは、疑いようもない。しかし、技術によって自然を封じ込めうるという確信が肥大するにつれ、私たちはいつしか、自然とは本来御しがたいものであるという素朴な畏れを手放してしまったのではないか。「想定」という言葉ほど、人間の傲慢を映し出すものはない。それは裏を返せば、想定の外にあるものへの目配りを怠ってきたことの証左にほかならないからだ。自然を完全に支配できるという前提に立つ限り、私たちは繰り返し不意を突かれ続けるだろう。むしろ、御しがたさを謙虚に受け入れ、それと折り合いをつけて生きる知恵の中にこそ、真の備えは存するのではあるまいか。",
+      "passage_en": "By raising embankments and regulating rivers, we have long striven to control nature at will. There is no doubting that these efforts have saved countless lives. However, as the conviction that technology can contain nature has swelled, have we not, before we knew it, let go of the simple awe that nature is by its very nature difficult to govern? No word reflects human arrogance more than \"assumption.\" For, conversely, it is nothing other than proof that we have neglected to keep an eye on what lies outside our assumptions. So long as we stand on the premise that nature can be completely dominated, we will go on being caught off guard again and again. Rather, does not true preparedness lie precisely within the wisdom of humbly accepting nature's ungovernability and living by coming to terms with it?",
+      "questions": [
+        {
+          "q": "「『想定』という言葉ほど、人間の傲慢を映し出すものはない」とあるが、その理由は何か。",
+          "q_en": "The text says no word reflects human arrogance more than \"assumption.\" Why?",
+          "options": [
+            "「想定」という言葉があまりに難解で、一般に理解されないから",
+            "想定の外にあるものへの目配りを怠ってきたことの証拠だから",
+            "想定は常に正確であり、外れることが決してないから",
+            "「想定」という言葉が自然の偉大さを賛美するものだから"
+          ],
+          "answer": 1,
+          "q_te": "'ఊహ' అనే పదం మానవ అహంకారాన్ని ఎలా ప్రతిబింబిస్తుంది?",
+          "q_hi": "'अनुमान' शब्द मानव अहंकार को कैसे दर्शाता है?",
+          "q_ta": "'ஊகம்' என்ற சொல் மனித அகந்தையை எவ்வாறு வெளிப்படுத்துகிறது?",
+          "q_ko": "'상정(가정)'이라는 말이 인간의 오만을 가장 잘 드러낸다는 이유는 무엇입니까?",
+          "q_es": "¿Por qué ninguna palabra refleja más la arrogancia humana que 'suposición'?",
+          "q_kn": "'ಊಹೆ' ಎಂಬ ಪದ ಮಾನವನ ಅಹಂಕಾರವನ್ನು ಹೇಗೆ ಬಿಂಬಿಸುತ್ತದೆ?",
+          "q_ml": "'ധാരണ' എന്ന വാക്ക് മനുഷ്യന്റെ അഹങ്കാരത്തെ വെളിപ്പെടുത്തുന്നത് എങ്ങനെയാണ്?"
+        },
+        {
+          "q": "筆者は「自然を制御しようとする努力」をどう捉えているか。",
+          "q_en": "How does the author regard \"efforts to control nature\"?",
+          "options": [
+            "多くの命を救った点は認めつつ、過信の危うさを指摘している",
+            "これまで何一つ成果を上げなかった無意味なものだと断じている",
+            "これからさらに強化し、自然を完全に封じ込めるべきだと説く",
+            "人々の自然への畏れをいっそう深めるものだったと評価している"
+          ],
+          "answer": 0,
+          "q_te": "ప్రకృతిని నియంత్రించే ప్రయత్నాలపై రచయిత దృక్పథం ఏమిటి?",
+          "q_hi": "प्रकृति को नियंत्रित करने के प्रयासों पर लेखक का क्या दृष्टिकोण है?",
+          "q_ta": "இயற்கையைக் கட்டுப்படுத்தும் முயற்சிகள் குறித்து ஆசிரியரின் பார்வை என்ன?",
+          "q_ko": "'자연을 통제하려는 노력'을 필자는 어떻게 바라봅니까?",
+          "q_es": "¿Cómo contempla el autor los esfuerzos por controlar la naturaleza?",
+          "q_kn": "ಪ್ರಕೃತಿಯನ್ನು ಹತೋಟಿಯಲ್ಲಿಡುವ ಪ್ರಯತ್ನಗಳ ಬಗ್ಗೆ ಲೇಖಕರ ನಿಲುವೇನು?",
+          "q_ml": "പ്രകൃതിയെ നിയന്ത്രിക്കാനുള്ള ശ്രമങ്ങളെ ലേഖകൻ എങ്ങനെയാണ് കാണുന്നത്?"
+        },
+        {
+          "q": "筆者の考える「真の備え」とは何か。",
+          "q_en": "What is \"true preparedness\" as the author conceives it?",
+          "options": [
+            "より高い堤防を築き、河川を完全に整えきること",
+            "自然を余すところなく支配する技術を開発すること",
+            "御しがたさを受け入れ、自然と折り合いをつけて生きる知恵",
+            "想定を限りなく精密にし、被害を完全にゼロにすること"
+          ],
+          "answer": 2,
+          "q_te": "రచయిత ప్రకారం నిజమైన సన్నద్ధత అంటే ఏమిటి?",
+          "q_hi": "लेखक के अनुसार सच्ची तैयारी क्या है?",
+          "q_ta": "ஆசிரியரின் பார்வையில் உண்மையான தயார்நிலை எது?",
+          "q_ko": "필자가 생각하는 '진정한 방재(대비)'란 무엇입니까?",
+          "q_es": "¿Qué es la 'verdadera preparación' según el autor?",
+          "q_kn": "ಲೇಖಕರ ಪ್ರಕಾರ ನಿಜವಾದ ಸಿದ್ಧತೆ ಎಂದರೇನು?",
+          "q_ml": "ലേഖകന്റെ അഭിപ്രായത്തിൽ യഥാർത്ഥ തയ്യാറെടുപ്പ് എന്താണ്?"
+        }
+      ],
+      "passage_te": "ప్రకృతిని శాసించవచ్చనే అహంకారం: ఆనకట్టలు నిర్మించి నదులను నియంత్రించడం ద్వారా మానవుడు ప్రకృతిని జయించామని విర్రవీగుతున్నాడు. కానీ ఊహించని తుఫానులు, వరదలు వచ్చినప్పుడు మన అంచనాలన్నీ తలకిందులవుతాయి. నిజమైన సన్నద్ధత అనేది ప్రకృతితో సామరస్యంగా జీవించడంలోనే ఉంది.",
+      "passage_hi": "प्रकृति पर विजय का दंभ: बाँध बनाकर नदियों को बाँधने से मनुष्य समझता है कि उसने प्रकृति को जीत लिया। पर अप्रत्याशित आपदाएँ हमारी सभी धारणाओं को ध्वस्त कर देती हैं। प्रकृति के साथ सह-अस्तित्व ही वास्तविक सुरक्षा है।",
+      "passage_ta": "இயற்கையை அடக்கும் அகந்தை: அணைகளைக் கட்டி நதிகளைக் கட்டுப்படுத்துவதால் இயற்கையை வென்றுவிட்டதாக மனிதன் எண்ணுகிறான். ஆனால் பெருவெள்ளம் வரும்போது இந்த அகந்தை அழிகிறது. இயற்கையோடு இயைந்து வாழ்வதே வழி.",
+      "passage_ko": "자연을 통제하려는 오만: 제방을 쌓아 자연을 정복했다는 인간의 오만은 기상이변 앞에서 여지없이 무너집니다. 진정한 방재는 통제가 아닌 공존의 지혜에서 나옵니다.",
+      "passage_es": "La arrogancia de dominar la naturaleza: Diques y represas alimentan la ilusión humana de control sobre la naturaleza. Pero las catástrofes desbordan toda previsión. La verdadera prevención exige humildad y convivencia.",
+      "passage_kn": "ಪ್ರಕೃತಿಯನ್ನು ನಿಯಂತ್ರಿಸುವ ಅಹಂಕಾರ: ನದಿಗಳಿಗೆ ಅಣೆಕಟ್ಟು ಕಟ್ಟಿ ಪ್ರಕೃತಿಯನ್ನು ಗೆದ್ದಿದ್ದೇವೆ ಎಂಬ ಮಾನವನ ಅಹಂಕಾರ ಪ್ರವಾಹದ ಮುಂದೆ ಮಣ್ಣಾಗುತ್ತದೆ. ಪ್ರಕೃತಿಯ ಜೊತೆ ಹೊಂದಿಕೊಂಡು ಬದುಕುವುದೇ ಜಾಣತನ.",
+      "passage_ml": "പ്രകൃതിയെ വരുതിയിലാക്കാനുള്ള അഹങ്കാരം: അണക്കെട്ടുകൾ പണിത് നദികളെ നിയന്ത്രിക്കാമെന്ന മനുഷ്യന്റെ അഹങ്കാരം പ്രകൃതിക്ഷോഭങ്ങൾക്ക് മുന്നിൽ തകർന്നടിയുന്നു. പ്രകൃതിയോട് ഇണങ്ങി ജീവിക്കുകയാണ് വേണ്ടത്."
+    },
+    {
+      "id": "r-n1-9",
+      "title": "わかるということ（What It Means to Understand）",
+      "passage": "試験で高い点を取る生徒が、必ずしも物事を深く理解しているとは限らない。この一見奇妙な事実は、私たちが「わかる」という営みを、いかに浅く捉えてきたかを物語っている。与えられた問いに正しく答えられること、それはむろん一つの能力ではある。だが、真に理解するとは、答えを再生することではなく、なぜその答えに至るのかという道筋を、自らの言葉でたどり直せることであろう。既存の枠組みに疑いを差し挟むこともなく、ただ効率よく正解へ最短距離で駆け抜ける訓練を積み重ねたところで、そこに育つのは応用の利かない知識の断片にすぎない。問いを問いとして引き受け、たやすく答えの出ない状態に踏みとどまる——そうした忍耐の中でしか、真の理解は熟していかないのである。",
+      "passage_en": "A student who scores high on exams does not necessarily understand things deeply. This seemingly strange fact tells of how shallowly we have grasped the activity of \"understanding.\" Being able to answer a given question correctly is, to be sure, one kind of ability. But to truly understand is not to reproduce an answer, but rather, presumably, to be able to retrace in one's own words the path of why one arrives at that answer. No matter how much one piles up training to sprint efficiently by the shortest route to the correct answer, without ever inserting doubt into existing frameworks, what grows there is nothing more than fragments of knowledge that cannot be applied. To take on a question as a question, and to hold one's ground in a state where an answer does not readily emerge—only within such patience does true understanding ripen.",
+      "questions": [
+        {
+          "q": "筆者によれば「真に理解する」とはどういうことか。",
+          "q_en": "According to the author, what does it mean to \"truly understand\"?",
+          "options": [
+            "与えられた問いに対してできるだけ素早く正解すること",
+            "できるだけ多くの正解をあらかじめ記憶しておくこと",
+            "最短距離で正解にたどり着くための訓練を積むこと",
+            "答えに至る道筋を、自らの言葉でたどり直せること"
+          ],
+          "answer": 3,
+          "q_te": "నిజంగా అర్థం చేసుకోవడం అంటే ఏమిటి?",
+          "q_hi": "वास्तव में समझने का क्या अर्थ है?",
+          "q_ta": "உண்மையில் புரிந்துகொள்ளுதல் என்றால் என்ன?",
+          "q_ko": "필자에 따르면 '진정으로 이해한다'는 것은 무엇을 의미합니까?",
+          "q_es": "¿Qué significa 'comprender verdaderamente' según el autor?",
+          "q_kn": "ನಿಜವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು ಎಂದರೇನು?",
+          "q_ml": "യഥാർത്ഥത്തിൽ മനസ്സിലാക്കുക എന്നാൽ എന്താണ് അർത്ഥമാക്കുന്നത്?"
+        },
+        {
+          "q": "「応用の利かない知識の断片」が生まれてしまうのはなぜか。",
+          "q_en": "Why do \"fragments of knowledge that cannot be applied\" come about?",
+          "options": [
+            "試験の点数というものをまったく軽視しているから",
+            "つねに自らの言葉で答えの筋道を説明しているから",
+            "既存の枠組みを疑わず、効率よく正解を求める訓練ばかりを重ねるから",
+            "答えの出ない問いに踏みとどまる忍耐を大切にしているから"
+          ],
+          "answer": 2,
+          "q_te": "ఆచరణకు రాని జ్ఞానపు ముక్కలు ఎందుకు ఏర్పడతాయి?",
+          "q_hi": "अनुपयोगी ज्ञान के टुकड़े क्यों बनते हैं?",
+          "q_ta": "பயன்படாத அறிவின் துண்டுகள் உருவாகக் காரணம் என்ன?",
+          "q_ko": "'응용되지 못하는 지식의 파편'은 왜 발생합니까?",
+          "q_es": "¿Por qué surgen fragmentos de conocimiento que no pueden aplicarse?",
+          "q_kn": "ಬಳಕೆಗೆ ಬಾರದ ಜ್ಞಾನದ ತುಣುಕುಗಳು ಏಕೆ ಉಂಟಾಗುತ್ತವೆ?",
+          "q_ml": "പ്രയോജനമില്ലാത്ത അറിവുകൾ ഉണ്ടാകാൻ കാരണമെന്താണ്?"
+        },
+        {
+          "q": "筆者が最も重視しているのはどのような態度か。",
+          "q_en": "What kind of attitude does the author value most?",
+          "options": [
+            "たやすく答えの出ない状態に耐え、問いと向き合い続ける態度",
+            "とにかく効率よく正解へたどり着こうとする態度",
+            "試験でできるだけ高い点を取ろうとする態度",
+            "既存の枠組みを疑うことなく受け入れる態度"
+          ],
+          "answer": 0,
+          "q_te": "రచయిత ఏ వైఖరిని అత్యంత విలువైనదిగా భావిస్తున్నారు?",
+          "q_hi": "लेखक किस दृष्टिकोण को सर्वाधिक महत्व देते हैं?",
+          "q_ta": "ஆசிரியர் எந்த அணுகுமுறையை மிக உயர்வாகக் கருதுகிறார்?",
+          "q_ko": "필자가 가장 높이 평가하는 태도는 어떤 것입니까?",
+          "q_es": "¿Qué actitud valora más el autor?",
+          "q_kn": "ಲೇಖಕರು ಯಾವ ಮನೋಭಾವವನ್ನು ಅತ್ಯಂತ ಮೌಲ್ಯಯುತವೆಂದು ಕಾಣುತ್ತಾರೆ?",
+          "q_ml": "ഏത് മനോഭാവത്തിനാണ് ലേഖകൻ കൂടുതൽ വില കൽപ്പിക്കുന്നത്?"
+        }
+      ],
+      "passage_te": "అవగాహన చేసుకోవడం అంటే ఏమిటి?: పరీక్షలలో మంచి మార్కులు సాధించినంత మాత్రాన ఒక విషయాన్ని నిజంగా అర్థం చేసుకున్నట్లు కాదు. కేవలం బట్టీ పట్టిన జ్ఞానం ఆచరణకు పనికిరాదు. సందేహించడం, స్వయంగా పరిశోధించడం, లోతైన ప్రశ్నలు వేయడమే నిజమైన జ్ఞానసముపార్జన.",
+      "passage_hi": "समझने का वास्तविक अर्थ: परीक्षा में उच्च अंक प्राप्त करना वास्तविक समझ का प्रमाण नहीं है। रटा हुआ ज्ञान अनुपयोगी सिद्ध होता है। निरंतर प्रश्न पूछना और सत्य की खोज करना ही सच्ची समझ है।",
+      "passage_ta": "புரிதல் என்பதன் மெய்ப்பொருள்: தேர்வில் அதிக மதிப்பெண் பெறுவது உண்மையான அறிவாகாது. மனப்பாடம் செய்த அறிவு பயன்படாது. கேள்வி கேட்டு ஆழ்ந்து சிந்திப்பதே உண்மையான புரிதலாகும்.",
+      "passage_ko": "진정으로 이해한다는 것: 시험 점수가 높다고 본질을 이해한 것은 아닙니다. 맥락 없는 지식의 파편은 응용되지 못합니다. 끊임없이 질문하고 탐구하는 태도만이 진정한 앎에 도달하게 합니다.",
+      "passage_es": "Qué significa comprender de verdad: Sacar buenas notas no equivale a una comprensión profunda. El conocimiento memorizado sin asimilar resulta estéril. Comprender exige cuestionar, indagar y contrastar.",
+      "passage_kn": "ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು ಎಂದರೇನು?: ಪರೀಕ್ಷೆಯಲ್ಲಿ ಹೆಚ್ಚು ಅಂಕ ಪಡೆದ ತಕ್ಷಣ ಜ್ಞಾನವಂತನಾಗುವುದಿಲ್ಲ. ಕಂಠಪಾಠ ಮಾಡಿದ ಜ್ಞಾನ ಉಪಯೋಗಕ್ಕೆ ಬರುವುದಿಲ್ಲ. ಪ್ರಶ್ನಿಸುವ ಮತ್ತು ಹುಡುಕುವ ಮನೋಭಾವವೇ ನಿಜವಾದ ತಿಳುವಳಿಕೆ.",
+      "passage_ml": "കാര്യങ്ങൾ മനസ്സിലാക്കുക എന്നാൽ എന്താണ്?: പരീക്ഷയിൽ ഉയർന്ന മാർക്ക് വാങ്ങിയതുകൊണ്ട് കാര്യമില്ല. കാണാതെ പഠിക്കുന്ന അറിവ് പ്രയോജനപ്പെടില്ല. ചോദ്യങ്ങൾ ചോദിക്കാനും ചിന്തിക്കാനുമുള്ള മനസ്സാണ് പ്രധാനം."
+    },
+    {
+      "id": "r-n1-10",
+      "title": "走れメロス (Run, Melos! - Dazai Osamu)",
+      "passage": "メロスは激怒した。必ず、かの邪智暴虐の王を除かなければならぬと決意した。メロスには政治がわからぬ。メロスは、村の牧人である。笛を吹き、羊と遊んで暮らしてきた。けれども、邪悪に対しては、人一倍に敏感であった。きょう未明メロスは村を出発し、野を越え山越え、十里はなれた此のシラクスの市にやって来た。メロスには父も、母も無い。女房も無い。十六の、内気な妹と二人暮しであった。シラクスの町に入ると、人通りが無く、ひっそりとしていた。尋ねると、人間不信に陥ったディオニス王が、臣下や市民を次々に処刑しているという。メロスは憤激して王城に乗り込み、王を暗殺しようとして捕らえられた。メロスは妹の結婚式を挙げるため三日間の猶予を請い、親友の石工セリヌンティウスを身代わりに置いた。もし三日目の日没までに帰らなければ、親友が代わりに磔にされる。大雨の濁流、山賊の襲撃、激しい疲労に倒れそうになりながらも、メロスは信実を証明するため、夕陽の沈む処刑場へと必死に走り続けた。",
+      "passage_en": "Melos was enraged. He resolved that he must rid the land of that wicked and tyrannical king. Melos knew nothing of politics; he was a simple shepherd who played the flute and tended sheep. Yet to villainy he was more sensitive than any man. Before dawn, Melos had left his village and walked ten leagues over hills and valleys to the city of Syracuse. He had neither father nor mother, nor wife; he lived with his timid sixteen-year-old sister. In Syracuse, the streets were deserted. Asking around, he learned that King Dionys, consumed by paranoia, was executing ministers and citizens daily. Melos stormed the palace in outrage, attempted to assassinate the tyrant, and was captured. Condemned to die, Melos begged for three days' reprieve to marry off his sister, offering his dear friend Selinuntius, a stonecutter, as hostage. If Melos did not return by sunset on the third day, Selinuntius would be crucified in his stead. Battling raging flash floods, bandits, and debilitating exhaustion, Melos ran desperately toward the setting sun to prove that truth and trust exist among men.",
+      "passage_te": "మెలోస్ తీవ్ర ఆగ్రహానికి లోనయ్యాడు. ఆ దుర్మార్గ, క్రూర రాజును అంతమొందించాలని నిశ్చయించుకున్నాడు. మెలోస్‌కు రాజకీయాలు తెలియవు; అతను గొర్రెలను కాస్తూ వేణువు ఊదే ఒక సాధారణ గొర్రెల కాపరి. కానీ అన్యాయాన్ని చూస్తే సహించలేడు. తన గ్రామం నుండి పది మైళ్ళు నడిచి సిరక్యూస్ నగరానికి వచ్చాడు. నగరంలో ఎవరూ తిరగడం లేదు. విచారించగా, ప్రజలపై అనుమానంతో డియోనిస్ రాజు అందరినీ ఉరితీయిస్తున్నాడని తెలిసింది. మెలోస్ కోపంతో కోటలోకి చొరబడి రాజును చంపబోయి పట్టుబడ్డాడు. తన చెల్లెలి పెళ్ళి చేయడానికి మూడు రోజుల గడువు కోరి, తన ప్రాణ స్నేహితుడైన శిల్పి సెలినుంటియస్‌ను పూచీకత్తుగా ఉంచాడు. మూడో రోజు సూర్యాస్తమయానికి రాకపోతే స్నేహితుడిని సిలువ వేస్తారు. ఉప్పొంగిన వరదలు, దొంగల దాడి, భరించలేని అలసటను అధిగమిస్తూ, స్నేహపు నమ్మకాన్ని నిరూపించడానికి మెలోస్ సూర్యుడు అస్తమించేలోపు ఉరికంబం వైపు ప్రాణాలను పణంగా పెట్టి పరుగెత్తాడు.",
+      "passage_hi": "मेलोश अत्यधिक क्रोधित था। उसने उस अत्याचारी राजा का अंत करने की ठान ली। वह एक सीधा-सादा गड़रिया था, जिसे राजनीति का कोई ज्ञान न था, पर अन्याय वह बर्दाश्त नहीं कर सकता था। सिराक्यूस नगर पहुँचने पर उसे पता चला कि वहमी राजा अपने ही नागरिकों को मौत के घाट उतार रहा है। मेलोश महल में घुस गया पर पकड़ा गया। अपनी बहन के विवाह के लिए उसने तीन दिन की मोहलत माँगी और अपने घनिष्ठ मित्र सेलिनुंतियस को बंधक के रूप में छोड़ दिया। यदि वह तीसरे दिन सूर्यास्त तक न लौटा, तो उसके मित्र को सूली पर चढ़ा दिया जाएगा। भयंकर बाढ़, डाकुओं के हमले और प्राणलेवा थकान से जूझते हुए मेलोश ने मनुष्य के विश्वास की रक्षा के लिए अपनी पूरी शक्ति से दौड़ लगाई।",
+      "passage_ta": "மெலோஸ் பெருங்கோபம் கொண்டான். கொடிய கொடுங்கோல் மன்னனை ஒழிக்கத் துணிந்தான். அவன் ஆடு மேய்க்கும் எளிய கிராமத்தான்; ஆயினும் அநீதியைக் கண்டால் கொதித்தெழும் இயல்புடையவன். மன்னன் மக்களைக் கொன்று குவிப்பதைக் கண்டு அரண்மனைக்குள் புகுந்து கொல்ல முயன்று பிடிபட்டான். தன் தங்கையின் திருமணத்தை நடத்த மூன்று நாள் அவகாசம் கேட்டு, தன் ஆருயிர் நண்பன் செலினுண்டியசை பணயமாக வைத்தான். மூன்றாம் நாள் அந்திமறைவுக்குள் திரும்பாவிட்டால் நண்பன் சிலுவையில் அறையப்படுவான். வெள்ளப் பெருக்கு, கொள்ளையர் தாக்குதல், கொடிய சோர்வு அனைத்தையும் கடந்து, மனித நம்பிக்கையை நிலைநாட்ட அவன் சூரியன் மறையும் முன் ஓடினான்.",
+      "passage_ko": "멜로스는 격노했다. 반드시 그 사악하고 잔학한 왕을 없애야겠다고 결심했다. 멜로스는 정치를 모르는 양치기였으나 불의에는 누구보다 민감했다. 시라쿠스 시에 들어서자 의심에 눈이 먼 디오니스 왕이 무고한 사람들을 처형하고 있었다. 분노한 멜로스는 왕을 암살하려다 붙잡혔다. 여동생의 결혼식을 위해 사흘의 말미를 청하며 절친한 석공 셀리눈티우스를 인질로 맡겼다. 사흘째 일몰까지 돌아오지 않으면 친구가 십자가에 매달린다. 거센 탁류와 산적의 습격, 탈진을 극복하며 멜로스는 인간의 신의를 증명하기 위해 석양 속 처형장으로 필사적으로 달렸다.",
+      "passage_es": "Melos estaba enfurecido. Juró librar al país del tirano Dionisio. Melos era un humilde pastor que no entendía de política, pero la injusticia le resultaba insoportable. Al llegar a Siracusa vio que el rey, preso de paranoia, ejecutaba a sus súbditos. Melos intentó matarle y fue apresado. Condenado a muerte, pidió tres días para casar a su hermana, dejando a su querido amigo Selinuntio como rehén. Si no regresaba antes del ocaso del tercer día, su amigo sería crucificado. Superando riadas torrenciales, bandidos y un agotamiento mortal, Melos corrió con el alma en vilo hacia el patíbulo para demostrar que la lealtad y la confianza entre los hombres existen.",
+      "passage_kn": "ಮೆಲೋಸ್ ಕ್ರುದ್ಧನಾದನು. ಆ ಕ್ರೂರ ರಾಜನನ್ನು ಕೊಲ್ಲಲು ನಿರ್ಧರಿಸಿದನು. ಆತ ರಾಜಕೀಯ ತಿಳಿಯದ ಕುರುಬ, ಆದರೆ ಅನ್ಯಾಯವನ್ನು ಸಹಿಸಲಾರ. ರಾಜನು ಅಮಾಯಕರನ್ನು ಕೊಲ್ಲುತ್ತಿದ್ದನ್ನು ಕಂಡು ಆತನ ಮೇಲೆ ದಾಳಿ ಮಾಡಿ ಸೆರೆಯಾದನು. ತಂಗಿಯ ಮದುವೆಗಾಗಿ ಮೂರು ದಿನಗಳ ಕಾಲಾವಕಾಶ ಕೇಳಿ, ತನ್ನ ಆಪ್ತ ಮಿತ್ರ ಸೆಲಿನುಂಟಿಯಸ್‌ನನ್ನು ಒತ್ತೆಯಾಳಾಗಿ ಇರಿಸಿದನು. ಮೂರನೇ ದಿನ ಸೂರ್ಯ ಮುಳುಗುವ ಮುನ್ನ ಬರದಿದ್ದರೆ ಮಿತ್ರನನ್ನು ಗಲ್ಲಿಗೇರಿಸಲಾಗುವುದು. ಭೀಕರ ಪ್ರವಾಹ, ಕಳ್ಳರ ದಾಳಿ ಮತ್ತು ತೀವ್ರ ಆಯಾಸವನ್ನು ಮೆಟ್ಟಿನಿಂತು, ವಿಶ್ವಾಸವನ್ನು ಉಳಿಸಲು ಮೆಲೋಸ್ ಗಲ್ಲುಗಂಬದ ಕಡೆಗೆ ಧಾವಿಸಿದನು.",
+      "passage_ml": "മെലോസ് ക്രുദ്ധനായി. ആ ക്രൂരനായ രാജാവിനെ വധിക്കാൻ അവൻ തീരുമാനിച്ചു. അവൻ ആടുകളെ മേയ്ക്കുന്ന സാധാരണക്കാരനായിരുന്നു, എങ്കിലും അനീതി കണ്ടാൽ സഹിക്കില്ല. സിറാക്കൂസ് നഗരത്തിലെത്തിയ അവൻ രാജാവിന്റെ ക്രൂരതകൾക്കെതിരെ പ്രതികരിക്കാൻ ചെന്ന് പിടിയിലായി. പെങ്ങളുടെ കല്യാണം നടത്താൻ മൂന്ന് ദിവസത്തെ സാവകാശം ചോദിച്ച അവൻ സുഹൃത്തായ സെലിനുന്റിയസിനെ പകരം തടവിലാക്കി. മൂന്നാം ദിവസം സൂര്യാസ്തമയത്തിന് മുൻപ് വന്നില്ലെങ്കിൽ സുഹൃത്ത് തൂക്കിലേറ്റപ്പെടും. വൻവെള്ളപ്പൊക്കവും കൊള്ളക്കാരെയും തളർച്ചയെയും അതിജീവിച്ച് അവൻ ഓടിയെത്തി.",
+      "questions": [
+        {
+          "q": "メロスが 王宮に 乗り込んで 捕らえられた 理由は 何ですか。",
+          "q_en": "What was the reason Melos stormed the palace and was captured?",
+          "q_te": "మెలోస్ కోటలోకి ప్రవేశించి ఎందుకు బంధించబడ్డాడు?",
+          "q_hi": "मेलोश राजमहल में क्यों घुसा और कैसे पकड़ा गया?",
+          "q_ta": "மெலோஸ் அரண்மனைக்குள் நுழைந்து பிடிபட்ட காரணம் என்ன?",
+          "q_ko": "멜로스가 왕궁에 침입했다가 붙잡힌 이유는 무엇입니까?",
+          "q_es": "¿Por qué asaltó Melos el palacio y fue apresado?",
+          "q_kn": "ಮೆಲೋಸ್ ಅರಮನೆಗೆ ನುಗ್ಗಿ ಸೆರೆಯಾಗಲು ಕಾರಣವೇನು?",
+          "q_ml": "മെലോസ് കൊട്ടാരത്തിലേക്ക് ഇരച്ചുകയറാനും പിടിയിലാകാനും കാരണമെന്താണ്?",
+          "options": [
+            "暴虐な ディオニス王を 暗殺しようとしたから",
+            "妹の 結婚資金を 盗もうとしたから",
+            "親友を 助け出すため",
+            "羊を 王に 献上するため"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "メロスの 身代わりに 人質となった 親友の 名前は 何ですか。",
+          "q_en": "What was the name of the dear friend who became a hostage in Melos's place?",
+          "q_te": "మెలోస్ స్థానంలో పూచీకత్తుగా ఉన్న స్నేహితుడి పేరు ఏమిటి?",
+          "q_hi": "मेलोश के स्थान पर बंधक बने मित्र का क्या नाम था?",
+          "q_ta": "மெலோசுக்குப் பதிலாக பணயக் கைதியாக நின்ற நண்பனின் பெயர் என்ன?",
+          "q_ko": "멜로스를 대신하여 인질이 된 친구의 이름은 무엇입니까?",
+          "q_es": "¿Cómo se llamaba el amigo que quedó como rehén en lugar de Melos?",
+          "q_kn": "ಮೆಲೋಸ್ ಬದಲಿಗೆ ಒತ್ತೆಯಾಳಾಗಿದ್ದ ಮಿತ್ರನ ಹೆಸರೇನು?",
+          "q_ml": "മെലോസിന് പകരം തടവുകാരനായ സുഹൃത്തിന്റെ പേരെന്താണ്?",
+          "options": [
+            "セリヌンティウス",
+            "ディオニス",
+            "フィロストラトス",
+            "アレクサンダー"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "メロスが 処刑場へ 走る タイムリミットは いつでしたか。",
+          "q_en": "When was the deadline for Melos to reach the execution ground?",
+          "q_te": "ఉరిశిక్ష అమలు స్థలానికి మెలోస్ చేరుకోవాల్సిన గడువు ఎప్పుడు?",
+          "q_hi": "मेलोश के पहुँचने की अंतिम समय सीमा क्या थी?",
+          "q_ta": "மெலோஸ் வந்து சேர வேண்டிய காலக்கெடு எது?",
+          "q_ko": "멜로스가 처형장으로 달려가야 하는 시한은 언제까지였습니까?",
+          "q_es": "¿Cuál era el plazo límite para que Melos llegara al patíbulo?",
+          "q_kn": "ಮೆಲೋಸ್ ತಲುಪಬೇಕಾಗಿದ್ದ ಅಂತಿಮ ಗಡುವು ಯಾವಾಗ?",
+          "q_ml": "മെലോസ് എത്തിച്ചേരേണ്ട സമയപരിധി എപ്പോഴായിരുന്നു?",
+          "options": [
+            "三日目の 日没まで",
+            "三日目の 正午まで",
+            "二日目の 夜明けまで",
+            "一週間後の 日没まで"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n1-11",
+      "title": "こころ (Kokoro - Natsume Soseki)",
+      "passage": "私はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執っても心持は同じ事である。よそよそしい頭文字などはとても使う気にならない。私が先生と知り合ったのは鎌倉であった。その時私はまだ若々しい書生であった。暑中休暇を利用して海山へ遊びに行った友達から泳ぎに来いという端書を受け取ったので、私は多少の金を工面して出掛ける事にした。海岸で西洋人を連れた先生を見かけたのが最初の出会いであった。先生はどこか世を捨てたような、人を寄せ付けない寂しさを漂わせていた。のちに東京で先生の家を訪ねるようになった私は、先生が毎月、雑司ヶ谷の墓地へ親友「K」の墓参りに通っていることを知る。やがて先生から遺書として託された長い手紙によって、かつて親友を裏切り自殺に追い込んだ先生の暗い過去と、良心の呵責に苛まれ続けた魂の苦悩が明かされることになる。",
+      "passage_en": "I always called that man 'Sensei'. Therefore, here too I shall simply write 'Sensei' without disclosing his real name. This is not out of deference to society, but because it feels far more natural to me. Whenever I recall his memory, I immediately want to say 'Sensei'. My feeling remains the same when I take up the pen; I could never bring myself to use distant initials. It was in Kamakura that I first met him. At that time I was still a youthful student. Having received a postcard from a friend vacationing at the shore inviting me to swim, I scraped together some money and set out. Catching sight of Sensei on the beach accompanied by a Westerner was our first encounter. Sensei radiated an aloof, unapproachable loneliness, as if he had renounced the world. Later, visiting his Tokyo home, I learned he made a monthly pilgrimage to Zoshigaya Cemetery to visit the grave of his friend 'K'. Ultimately, through a lengthy letter entrusted to me as a testament, the dark past wherein Sensei betrayed his best friend and drove him to suicide—and the agony of a soul tormented by guilt—was laid bare.",
+      "passage_te": "నేను ఆయన్ను ఎప్పుడూ 'మాస్టారు' (సెన్సెయి) అని పిలిచేవాడిని. ఇక్కడ కూడా ఆయన అసలు పేరును బహిర్గతం చేయకుండా కేవలం 'మాస్టారు' అని మాత్రమే రాస్తాను. ఆయన జ్ఞాపకం రాగానే నాకు ఆ పిలుపే సహజంగా అనిపిస్తుంది. నేను ఆయన్ను మొదట కామాకురా సముద్ర తీరంలో కలిశాను. అప్పుడు నేను కేవలం విద్యార్థిని. మాస్టారు లోకాన్ని విడిచిపెట్టిన ఒంటరితనం, గంభీరమైన నిశ్శబ్దాన్ని మోస్తూ కనిపించేవారు. టోక్యోలో ఆయన ఇంటికి వెళ్ళినప్పుడు, ఆయన ప్రతి నెలా జోషిగాయ శ్మశానవాటికలో తన ప్రాణ స్నేహితుడు 'కె' సమాధిని దర్శిస్తారని తెలిసింది. తరువాత ఆయన నాకు వీలునామాగా రాసిన సుదీర్ఘ ఉత్తరం ద్వారా, గతంలో ప్రేమ వ్యవహారంలో ప్రాణ స్నేహితుడికి వెన్నుపోటు పొడిచి ఆత్మహత్యకు పురికొల్పిన చీకటి గతం, ఆ అపరాధ భావంతో దశాబ్దాలుగా నరకయాతన అనుభవించిన ఆయన అంతరాత్మ వేదన బట్టబయలయ్యాయి.",
+      "passage_hi": "मैं उन्हें सदा 'शिक्षक' (सेंसेई) कहकर पुकारता था। यहाँ भी उनका असली नाम न लिखकर केवल 'सेंसेई' लिखूँगा क्योंकि यही मुझे स्वाभाविक लगता है। उनसे मेरी पहली भेंट कामाकुरा के समुद्र तट पर हुई थी, जब मैं एक युवा छात्र था। सेंसेई के व्यक्तित्व में एक अजीब सा अकेलापन और संसार से विरक्ति झलकती थी। बाद में टोक्यो में उनके घर जाते हुए मुझे पता चला कि वे हर महीने अपने मित्र 'के' की कब्र पर जाते हैं। अंत में उनके द्वारा छोड़े गए एक लंबे पत्र से उस काले अतीत का रहस्योद्घाटन हुआ, जहाँ उन्होंने अपने सबसे अच्छे मित्र को धोखा देकर आत्महत्या के लिए विवश किया था और जीवन भर पश्चाताप की अग्नि में जलते रहे।",
+      "passage_ta": "நான் அவரை எப்போதும் 'சென்செய்' (ஆசிரியர்) என்றே அழைப்பேன். நிஜப் பெயரை மறைத்து இங்கேயும் அவ்வாறே குறிப்பிடுகிறேன். காமாகுரா கடற்கரையில் மாணவனாக இருந்தபோது அவரைச் சந்தித்தேன். அவரிடம் உலகை வெறுத்த தனிமை இருந்தது. டோக்கியோவில் பழகியபோது, அவர் மாதாந்திரம் 'கே' என்ற நண்பனின் கல்லறைக்குச் செல்வதை அறிந்தேன். இறுதியில் அவர் எனக்கு எழுதிய மரணக் கடிதம் மூலம், காதலில் ஆருயிர் நண்பனுக்கு துரோகம் இழைத்து அவனைத் தற்கொலைக்குத் தூண்டிய இருண்ட கடந்த காலமும், மனசாட்சியின் உறுத்தலால் வாழ்நாள் முழுவதும் அவர் அனுபவித்த நரக வேதனையும் தெரியவந்தது.",
+      "passage_ko": "나는 그 사람을 늘 '선생님'이라 불렀다. 그러므로 여기서도 본명을 밝히지 않고 그저 선생님이라 쓴다. 내가 선생님을 알게 된 것은 가마쿠라의 해변에서였다. 당시 나는 젊은 서생이었다. 선생님에게는 세상을 등진 듯한 범접할 수 없는 쓸쓸함이 감돌고 있었다. 도쿄에서 왕래하게 되면서 선생님이 매달 조시가야 묘지의 친구 'K'의 묘를 찾는다는 것을 알게 되었다. 훗날 유서로 남겨진 긴 편지를 통해, 과거 연정을 위해 친구를 배신하고 자살로 몰아넣었던 어두운 과거와 죄책감에 평생을 괴로워했던 고뇌의 진실이 밝혀진다.",
+      "passage_es": "Siempre le llamé 'Sensei'. Por eso aquí también escribiré simplemente 'Sensei' sin revelar su verdadero nombre. Le conocí en la playa de Kamakura cuando yo era un bisoño estudiante. Sensei desprendía una soledad inaccesible, como si hubiese renunciado al mundo. Con el tiempo, visitándole en Tokio, descubrí que peregrinaba mensualmente al cementerio de Zoshigaya ante la tumba de su amigo 'K'. Finalmente, a través de una extensa carta-testamento, se reveló el oscuro pasado en el que Sensei traicionó a su mejor amigo empujándole al suicidio, y el tormento de culpa que devoró su alma desde entonces.",
+      "passage_kn": "ನಾನು ಅವರನ್ನು ಸದಾ 'ಗುರುಗಳು' (ಸೆನ್ಸೆಯ್) ಎಂದೇ ಕರೆಯುತ್ತಿದ್ದೆ. ಕಾಮಾಕುರಾದ ಕಡಲತೀರದಲ್ಲಿ ನಾನಿನ್ನೂ ವಿದ್ಯಾರ್ಥಿಯಾಗಿದ್ದಾಗ ಅವರ ಭೇಟಿಯಾಯಿತು. ಅವರಲ್ಲಿ ಪ್ರಪಂಚವನ್ನೇ ತ್ಯಜಿಸಿದ ಗಂಭೀರ ಏಕಾಂಗಿತನವಿತ್ತು. ನಂತರ ಅವರ ಮನೆಗೆ ಹೋಗುತ್ತಿದ್ದಾಗ, ಅವರು ಪ್ರತಿ ತಿಂಗಳು ಮಿತ್ರ 'ಕೆ' ಸಮಾಧಿಗೆ ಭೇಟಿ ನೀಡುವುದನ್ನು ಕಂಡುಕೊಂಡೆ. ಕೊನೆಗೆ ಅವರು ಬರೆದಿಟ್ಟ ಸುದೀರ್ಘ ಪತ್ರದಲ್ಲಿ, ಪ್ರೀತಿಗಾಗಿ ಆಪ್ತಮಿತ್ರನಿಗೆ ದ್ರೋಹ ಬಗೆದು ಆತ ಆತ್ಮಹತ್ಯೆ ಮಾಡಿಕೊಳ್ಳಲು ಕಾರಣವಾದ ಕಹಿ ಸತ್ಯ ಮತ್ತು ಅಪರಾಧಿಪ್ರಜ್ಞೆಯ ನರಳಾಟ ಬಯಲಾಯಿತು.",
+      "passage_ml": "ഞാൻ അദ്ദേഹത്തെ എപ്പോഴും 'ഗുരു' (സെൻസെയ്) എന്നാണ് വിളിച്ചിരുന്നത്. കാമാകുര കടൽത്തീരത്ത് വെച്ചാണ് ഞാൻ അദ്ദേഹത്തെ ആദ്യം കാണുന്നത്. ലോകത്തോട് വിരക്തിയുള്ള ഒരു ഏകാന്തത അദ്ദേഹത്തിൽ നിഴലിച്ചിരുന്നു. ടോക്കിയോയിൽ വെച്ച് കണ്ടുമുട്ടുമ്പോൾ അദ്ദേഹം എല്ലാ മാസവും സുഹൃത്ത് 'കെ' യുടെ കല്ലറ സന്ദർശിക്കാറുണ്ടെന്ന് ഞാൻ അറിഞ്ഞു. ഒടുവിൽ അദ്ദേഹം എനിക്ക് നൽകിയ കത്തിലൂടെ, പ്രണയത്തിനായി ആത്മസുഹൃത്തിനെ വഞ്ചിച്ചതും അവൻ ആത്മഹത്യ ചെയ്തതും ജീവിതാവസാനം വരെ ആ കുറ്റബോധം അദ്ദേഹത്തെ വേട്ടയാടിയതുമായ കഥ വെളിപ്പെട്ടു.",
+      "questions": [
+        {
+          "q": "語り手が「先生」と 初めて 出会った 場所は どこですか。",
+          "q_en": "Where was the place the narrator first met 'Sensei'?",
+          "q_te": "రచయిత 'మాస్టారిని' మొదటిసారి ఎక్కడ కలిశాడు?",
+          "q_hi": "लेखक की 'सेंसेई' से पहली भेंट कहाँ हुई थी?",
+          "q_ta": "கதைசொல்லி 'சென்செய்'-ஐ முதன்முதலில் சந்தித்த இடம் எது?",
+          "q_ko": "화자가 '선생님'과 처음 만난 장소는 어디입니까?",
+          "q_es": "¿Dónde conoció el narrador a 'Sensei' por primera vez?",
+          "q_kn": "ಲೇಖಕರು 'ಗುರುಗಳನ್ನು' ಮೊದಲು ಭೇಟಿಯಾದ ಸ್ಥಳ ಯಾವುದು?",
+          "q_ml": "കഥാകാരൻ 'സെൻസെ'യെ ആദ്യമായി കണ്ടുമുട്ടിയ സ്ഥലം എവിടെയാണ്?",
+          "options": [
+            "鎌倉 (かまくら) の 海岸",
+            "東京の 雑司ヶ谷 墓地",
+            "京都の 古い 寺院",
+            "大学の 図書館"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "先生が 毎月 墓参りに 通っていた 相手は だれですか。",
+          "q_en": "Who was the person whose grave Sensei visited every month?",
+          "q_te": "మాస్టారు ప్రతి నెలా ఎవరి సమాధిని దర్శించేవారు?",
+          "q_hi": "सेंसेई हर महीने किसकी कब्र पर जाते थे?",
+          "q_ta": "சென்செய் மாதாந்திரம் யாருடைய கல்லறைக்குச் சென்றார்?",
+          "q_ko": "선생님이 매달 성묘를 다녔던 대상은 누구입니까?",
+          "q_es": "¿A quién pertenecía la tumba que Sensei visitaba cada mes?",
+          "q_kn": "ಗುರುಗಳು ಪ್ರತಿ ತಿಂಗಳು ಯಾರ ಸಮಾಧಿಗೆ ಹೋಗುತ್ತಿದ್ದರು?",
+          "q_ml": "സെൻസെ എല്ലാ മാസവും ആരുടെ കല്ലറയിലാണ് പോയിരുന്നത്?",
+          "options": [
+            "かつての 親友「K」",
+            "実の 両親",
+            "亡くなった 妻",
+            "大学時代の 恩師"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 小説の 著者である 明治・大正期の 文豪は だれですか。",
+          "q_en": "Who is the literary master of the Meiji and Taisho eras who authored this novel?",
+          "q_te": "ఈ నవల రచయిత అయిన ప్రసిద్ధ జపనీస్ రచయిత ఎవరు?",
+          "q_hi": "इस प्रसिद्ध उपन्यास के रचयिता कौन हैं?",
+          "q_ta": "இந்த நாவலின் ஆசிரியர் யார்?",
+          "q_ko": "이 소설을 집필한 일본 근대문학의 문호는 누구입니까?",
+          "q_es": "¿Quién es el autor, gran maestro literario de las eras Meiji y Taisho?",
+          "q_kn": "ಈ ಶ್ರೇಷ್ಠ ಕಾದಂಬರಿಯ ಲೇಖಕರು ಯಾರು?",
+          "q_ml": "ഈ നോവലിന്റെ കർത്താവ് ആരാണ്?",
+          "options": [
+            "夏目漱石 (なつめそうせき)",
+            "森鴎外",
+            "芥川龍之介",
+            "谷崎潤一郎"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n1-12",
+      "title": "舞姫 (The Dancing Girl - Mori Ogai)",
+      "passage": "石炭をば早やすみはてつ。中等室の卓のあたりはいと静にて、熾熱燈の光の晴れがましきも徒なり。今宵は夜毎にこゝに集ひ来る骨牌仲間も「ホテル」に宿りて、舟に残れるは余一人のみなれば。余は覚えず筆を執りて、ベルリンの追憶を記しぬ。官命を奉じてドイツ・ベルリンへ留学した太田豊太郎は、エリート官僚としての順風満帆な将来を約束されていた。しかし、ベルリンの薄暗いクロステル街の教会前で、父を亡くして葬儀の費用にも事欠き、涙に暮れる美しい踊り子の少女・エリスと出会う。豊太郎は彼女を援助し、やがて二人は恋に落ち、貧しくも甘美な共同生活を始める。しかし、この関係が公私混同と見なされ、豊太郎は免官処分となり地位を失う。その後、友人の相沢謙吉の周旋により復官の好機を得るが、それは身重のエリスを異国に残して単身帰国することを意味していた。愛と立身出世の板挟みに苦悩した豊太郎は発熱して倒れ、その間に事情を知ったエリスは発狂してしまう。豊太郎は狂えるエリスを後に、断腸の思いで帰国の途に就くのであった。",
+      "passage_en": "The coaling was already completed. The table in the second-class salon was exceedingly quiet, its brilliant incandescent light glowing in vain. The card-playing companions who gathered here nightly had retired to hotels ashore, leaving me the sole occupant aboard. Almost unconsciously, I took up my pen to set down my memories of Berlin. Ota Toyotaro, sent to study in Berlin on government orders, seemed destined for a stellar career as an elite bureaucrat. However, in front of a church on Berlin's Klosterstrasse, he encountered Elise, a destitute and beautiful young dancing girl weeping over her inability to afford her deceased father's funeral. Toyotaro helped her, and before long, the two fell in love and began a humble, sweet life together. Yet this liaison was judged inappropriate, costing Toyotaro his official post. Later, his friend Aizawa Kenkichi arranged an opportunity for reinstatement, but it required abandoning the pregnant Elise and returning alone to Japan. Tormented between love and worldly ambition, Toyotaro collapsed with fever; upon learning the truth, Elise went mad. Leaving the deranged Elise behind, Toyotaro boarded the ship home in agonizing grief.",
+      "passage_te": "బొగ్గు నింపడం పూర్తయింది. రెండో తరగతి క్యాబిన్‌లో నిశ్శబ్దం అలముకుంది. బెర్లిన్ జ్ఞాపకాలను రాయడానికి నేను కలం చేతపట్టాను. ప్రభుత్వ స్కాలర్‌షిప్‌పై జర్మనీలోని బెర్లిన్‌కు వెళ్ళిన ఒటా తోయోతారోకు ఉజ్వల భవిష్యత్తు ఉండేది. కానీ చర్చి ముందు తండ్రి అంత్యక్రియలకు డబ్బుల్లేక ఏడుస్తున్న ఎలిస్ అనే అందమైన నర్తకిని చూసి ప్రేమలో పడ్డాడు. వీరి ప్రేమ వ్యవహారం నచ్చని అధికారులు అతన్ని ఉద్యోగం నుండి తొలగించారు. కొన్నాళ్ళ తర్వాత స్నేహితుడు ఐజావా సహాయంతో తిరిగి ఉద్యోగం వచ్చే అవకాశం లభించింది, కానీ గర్భవతి అయిన ఎలిస్‌ను వదిలి జపాన్ వెళ్ళాలనే నిబంధన ఎదురైంది. ప్రేమ మరియు అధికార కాంక్షల మధ్య నలిగిపోయి తోయోతారో జ్వరంతో పడిపోయాడు. నిజం తెలుసుకున్న ఎలిస్ పిచ్చిదైపోయింది. పిచ్చిదైన ఎలిస్‌ను అక్కడే వదిలేసి తోయోతారో గుండె పగిలే బాధతో స్వదేశానికి ప్రయాణమయ్యాడు.",
+      "passage_hi": "कोयला भरने का काम पूरा हो चुका था। जहाज के केबिन में सन्नाटा था। मैं बर्लिन की यादें लिखने लगा। सरकारी खर्चे पर बर्लिन पढ़ने गए ओता तोयोतारो का भविष्य उज्ज्वल था। परंतु चर्च के सामने पिता के अंतिम संस्कार के लिए रोती हुई सुंदर नर्तकी एलिस से मिलकर वह उसके प्रेम में पड़ गया। इस प्रेम संबंध के कारण उसकी सरकारी नौकरी छीन ली गई। बाद में मित्र आइज़ावा की मदद से उसे पुनः पद पाने का अवसर मिला, परंतु शर्त यह थी कि गर्भवती एलिस को छोड़कर अकेले जापान लौटना होगा। प्रेम और पद-प्रतिष्ठा के द्वंद्व में वह बीमार पड़ गया। सच्चाई जानकर एलिस पागल हो गई। वह पागल एलिस को वहीं छोड़कर भारी मन से वतन लौट आया।",
+      "passage_ta": "நிலக்கரி ஏற்றும் பணி முடிந்தது. அறையில் அமைதி நிலவியது. பெர்லின் நினைவுகளை எழுதத் தொடங்கினேன். அரசுப் பணியில் ஜெர்மனி சென்ற தோயோதாரோவிற்கு சிறந்த எதிர்காலம் இருந்தது. ஆனால் தேவாலயத்தின் முன் இறந்த தந்தையின் ஈமச்சடங்கிற்குப் பணமின்றி அழுத எலிஸ் என்ற நடனப் பெண்ணை காதலித்தான். இதனால் வேலையிழந்தான். பின்னர் நண்பன் ஐசாவாவின் உதவியால் மீண்டும் வேலை கிடைக்க வாய்ப்பு வந்தது, ஆனால் கர்ப்பிணியான எலிஸை விட்டுவிட்டு தாயகம் திரும்ப வேண்டும். காதலா பதவியா என்ற தவிப்பில் அவன் நோய்வாய்ப்பட, உண்மையை அறிந்த எலிஸ் பைத்தியமானாள். அவளை அங்கேயே விட்டுவிட்டு பாரமான இதயத்துடன் அவன் நாடு திரும்பினான்.",
+      "passage_ko": "석탄 싣는 일은 이미 끝났다. 2등 선실의 식탁 주위는 몹시 고요했다. 나는 베를린의 회한을 적기 시작했다. 관비 유학생으로 베를린에 간 오타 토요타로는 전도유망한 관료였다. 그러나 가난한 무용수 엘리스를 만나 사랑에 빠지면서 면직 처분을 받는다. 친구 아이자와의 주선으로 복직의 기회를 얻지만, 그것은 임신한 엘리스를 두고 홀로 귀국해야 함을 의미했다. 입신출세와 사랑 사이에서 번민하다 쓰러진 사이, 진실을 안 엘리스는 미쳐버리고 만다. 토요타로는 미쳐버린 그녀를 뒤로한 채 비통한 심정으로 귀국길에 오른다.",
+      "passage_es": "La carga de carbón había concluido. El salón de segunda clase estaba en silencio y tomé la pluma para evocar mis recuerdos de Berlín. Ota Toyotaro, becado por el gobierno en Berlín, gozaba de un futuro brillante. Sin embargo, conoció a Elise, una hermosa bailarina que lloraba sin medios para enterrar a su padre. Se enamoraron y convivieron, pero la relación le costó su cargo oficial. Su amigo Aizawa le brindó la oportunidad de rehabilitarse políticamente, a condición de regresar a Japón abandonando a Elise, que esperaba un hijo suyo. Debatiéndose entre el amor y la ambición, enfermó de fiebre; al saberlo, Elise perdió la razón. Toyotaro zarpó de vuelta con el corazón destrozado.",
+      "passage_kn": "ಕಲ್ಲಿದ್ದಲು ತುಂಬುವ ಕೆಲಸ ಮುಗಿದಿತ್ತು. ಕೋಣೆಯಲ್ಲಿ ನಿಶ್ಶಬ್ದ ಆವರಿಸಿತ್ತು. ಬರ್ಲಿನ್ ನೆನಪುಗಳನ್ನು ಬರೆಯಲು ಪ್ರಾರಂಭಿಸಿದೆ. ವಿದ್ಯಾಭ್ಯಾಸಕ್ಕೆ ಬರ್ಲಿನ್‌ಗೆ ಹೋಗಿದ್ದ ಒತಾ ತೊಯೊತಾರೊಗೆ ಉನ್ನತ ಅಧಿಕಾರ ಸಿಗುವಂತಿತ್ತು. ಆದರೆ ಚರ್ಚ್ ಮುಂದೆ ಅಳುತ್ತಿದ್ದ ಎಲಿಸ್ ಎಂಬ ನರ್ತಕಿಯನ್ನು ಪ್ರೀತಿಸಿ ನೌಕರಿ ಕಳೆದುಕೊಂಡನು. ನಂತರ ಮಿತ್ರ ಐಜಾವಾ ನೆರವಿನಿಂದ ಮರಳಿ ನೌಕರಿ ಸಿಗುವಂತಾಯಿತು, ಆದರೆ ಗರ್ಭಿಣಿ ಎಲಿಸ್‌ಳನ್ನು ಬಿಟ್ಟು ಬರಬೇಕಿತ್ತು. ಪ್ರೀತಿ ಮತ್ತು ಅಧಿಕಾರದ ನಡುವೆ ಸಿಲುಕಿ ಆತ ಕಾಯಿಲೆಬಿದ್ದಾಗ, ಸತ್ಯ ತಿಳಿದ ಎಲಿಸ್ ಹುಚ್ಚಿಯಾದಳು. ಆಕೆಯನ್ನು ಅಲ್ಲಿಯೇ ಬಿಟ್ಟು ಆತ ನೊಂದ ಹೃದಯದಿಂದ ತಾಯ್ನಾಡಿಗೆ ಮರಳಿದನು.",
+      "passage_ml": "കൽക്കരി നിറയ്ക്കൽ പൂർത്തിയായി. ക്യാബിനിൽ മൂകത പടർന്നു. ബെർലിൻ ഓർമ്മകൾ ഞാൻ കുറിക്കാൻ തുടങ്ങി. ഉപരിപഠനത്തിന് ബെർലിനിലെത്തിയ തൊയോതാരോയ്ക്ക് ശോഭനമായ ഭാവിയുണ്ടായിരുന്നു. എന്നാൽ പാവപ്പെട്ട നർത്തകിയായ എലിസുമായി പ്രണയത്തിലായതോടെ ജോലി നഷ്ടപ്പെട്ടു. പിന്നീട് സുഹൃത്ത് ഐസാവ മുഖേന ജോലി തിരികെ കിട്ടാൻ വഴിയൊരുങ്ങിയെങ്കിലും, ഗർഭിണിയായ എലിസിനെ ഉപേക്ഷിച്ച് നാട്ടിലേക്ക് മടങ്ങണമായിരുന്നു. പ്രണയത്തിനും പദവിക്കുമിടയിൽ അവൻ തളർന്നു വീണപ്പോൾ, സത്യമറിഞ്ഞ എലിസിന് ഭ്രാന്ത് പിടിച്ചു. അവളെ അവിടെ ഉപേക്ഷിച്ച് അവൻ കണ്ണീരോടെ മടങ്ങി.",
+      "questions": [
+        {
+          "q": "主人公・太田豊太郎が ドイツ・ベルリンで 出会った 少女の 職業は 何ですか。",
+          "q_en": "What was the profession of the young girl the protagonist Ota Toyotaro met in Berlin?",
+          "q_te": "తోయోతారో బెర్లిన్‌లో కలిసిన బాలిక వృత్తి ఏమిటి?",
+          "q_hi": "तोयोतारो को बर्लिन में मिली युवती का क्या पेशा था?",
+          "q_ta": "பெர்லினில் சந்தித்த இளம் பெண்ணின் தொழில் என்ன?",
+          "q_ko": "주인공 오타 토요타로가 베를린에서 만난 소녀의 직업은 무엇입니까?",
+          "q_es": "¿Cuál era la profesión de la joven que conoció Toyotaro en Berlín?",
+          "q_kn": "ತೊಯೊತಾರೊ ಬರ್ಲಿನ್‌ನಲ್ಲಿ ಭೇಟಿಯಾದ ಹುಡುಗಿಯ ವೃತ್ತಿ ಯಾವುದು?",
+          "q_ml": "തൊയോതാരോ ബെർലിനിൽ കണ്ടുമുട്ടിയ പെൺകുട്ടിയുടെ തൊഴിൽ എന്തായിരുന്നു?",
+          "options": [
+            "踊り子 (舞姫)",
+            "看護師",
+            "歌手",
+            "画家"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "豊太郎が 日本への 帰国と 引き換えに 直面した 悲劇は 何ですか。",
+          "q_en": "What tragedy did Toyotaro face in exchange for his return to Japan?",
+          "q_te": "జపాన్ తిరిగి వెళ్ళే క్రమంలో తోయోతారో ఎదుర్కొన్న విషాదం ఏమిటి?",
+          "q_hi": "जापान लौटने के बदले तोयोतारो को किस त्रासदी का सामना करना पड़ा?",
+          "q_ta": "தாயகம் திரும்புவதற்கு ஈடாகத் தோயோதாரோ சந்தித்த துயரம் என்ன?",
+          "q_ko": "토요타로가 일본 귀국과 맞바꾸어 직면한 비극은 무엇입니까?",
+          "q_es": "¿Qué tragedia enfrentó Toyotaro a cambio de su regreso a Japón?",
+          "q_kn": "ತಾಯ್ನಾಡಿಗೆ ಮರಳುವ ಸಂದರ್ಭದಲ್ಲಿ ಆತ ಅನುಭವಿಸಿದ ದುರಂತವೇನು?",
+          "q_ml": "നാട്ടിലേക്ക് മടങ്ങുന്നതിന് പകരമായി അവൻ നേരിട്ട ദുരന്തം എന്തായിരുന്നു?",
+          "options": [
+            "妊娠していた エリスが 精神を病み 発狂してしまったこと",
+            "エリスが 他の男と 結婚したこと",
+            "親友の 相沢が 亡くなったこと",
+            "ドイツの 警察に 逮捕されたこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 小説の 著者である、軍医でもあった 明治の 文豪は だれですか。",
+          "q_en": "Who is the Meiji-era literary giant and army physician who authored this novel?",
+          "q_te": "సైనిక వైద్యుడిగా కూడా పనిచేసిన ఈ నవలా రచయిత ఎవరు?",
+          "q_hi": "इस उपन्यास के रचयिता कौन हैं जो सैन्य चिकित्सक भी थे?",
+          "q_ta": "இராணுவ மருத்துவராகவும் இருந்த இந்நோവலின் ஆசிரியர் யார்?",
+          "q_ko": "군의관 출신으로 이 소설을 집필한 메이지 시대의 문호는 누구입니까?",
+          "q_es": "¿Quién es el autor de esta novela, insigne escritor y médico militar de la era Meiji?",
+          "q_kn": "ಸೇನಾ ವೈದ್ಯರೂ ಆಗಿದ್ದ ಈ ಕಾದಂಬರಿಯ ಲೇಖಕರು ಯಾರು?",
+          "q_ml": "സൈനിക ഡോക്ടർ കൂടിയായിരുന്ന ഈ നോവലിന്റെ രചയിതാവ് ആരാണ്?",
+          "options": [
+            "森鴎外 (もりおうがい)",
+            "夏目漱石",
+            "芥川龍之介",
+            "樋口一葉"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n1-13",
+      "title": "檸檬 (Lemon - Kajii Motojiro)",
+      "passage": "えたいの知れない不吉な塊が私の心を始終圧えつけていた。焦躁と言おうか、嫌悪と言おうか――酒を飲んだあとに宿酔があるように、酒を毎日飲んでいると宿酔に相当した時期がやって来る。それが来たのだ。肺尖カタルや神経衰弱、背を焼くような借金。かつて私を喜ばせた丸善の画集や音楽も、今ではただ重苦しい憂鬱の種にすぎなかった。ある日、私は果物屋の店先で、冷たく引き締まった一個の「檸檬」に出会った。その鮮やかな紡錘形の黄色、手のひらに載せたときの冷徹な重み、鼻をくすぐる純粋な芳香。私はその果実の美しさに魂を奪われた。私はそれを懐にしのばせ、かつて愛した書店の丸善へと足を踏み入れた。画本を何冊も積み上げ、城郭のように築いたその頂点に、私はそっとその檸檬を据え置いた。そして、心の中で呟いたのだ。「この檸檬が、もし黄金の大爆弾となって、この丸善を木っ端微塵に吹き飛ばしたら、どんなに痛快だろう」。私は奇妙な誇らしさと晴れやかな解放感を胸に、すたすたと京極の通りへと歩み去った。",
+      "passage_en": "An inexplicable, ominous mass weighed constantly upon my heart. Call it anxiety, call it disgust—just as a hangover follows wine, drinking every day brings on a period equivalent to a chronic hangover. That time had arrived. Tormented by lung disease, nervous debility, and crushing debts, the art books and music at Maruzen bookstore that once delighted me now brought only oppressive melancholy. One day, at a fruit shop, I encountered a single, chilled, firm lemon. Its vivid spindle-shaped yellow, its cool weight resting in my palm, its pure, sharp fragrance—its sheer aesthetic beauty captured my soul. Concealing it in my jacket, I stepped into Maruzen. Piling up art albums into a precarious castle, I gently perched the lemon at its pinnacle. Then I whispered to myself: 'What magnificent exhilaration if this lemon were a golden bomb that blew this stuffy Maruzen to smithereens!' With a strange sense of triumph and radiant liberation, I strode away into the bustling streets of Kyogoku.",
+      "passage_te": "గుర్తు తెలియని అశుభ భారమొకటి నా హృదయాన్ని నిరంతరం నలిపివేస్తోంది. ఊపిరితిత్తుల క్షయవ్యాధి, నరాల బలహీనత, తీర్చలేని అప్పులు నన్ను కుంగదీస్తున్నాయి. ఒకప్పుడు నన్ను ఆనందపరిచిన మారుజెన్ పుస్తకాల షాపులోని చిత్రకళా గ్రంథాలు కూడా ఇప్పుడు విసుగు పుట్టిస్తున్నాయి. ఒకరోజు పండ్ల దుకాణంలో చల్లటి, గట్టిగా ఉన్న ఒక నిమ్మకాయ నా కంటపడింది. దాని పసుపు పచ్చని రంగు, అరచేతిలో ఉంచినప్పుడు తగిలిన చల్లని బరువు, స్వచ్ఛమైన సువాసన నా ప్రాణాన్ని ఉత్తేజపరిచాయి. దానిని జేబులో పెట్టుకుని మారుజెన్ పుస్తక దుకాణంలోకి వెళ్ళాను. కళా పుస్తకాలను ఒక కోటలా పేర్చి, దాని శిఖరాన ఆ నిమ్మకాయను సున్నితంగా ఉంచాను. 'ఈ నిమ్మకాయ బంగారు బాంబుగా మారి ఈ పెద్ద దుకాణాన్ని ముక్కలు ముక్కలుగా పేల్చేస్తే ఎంత అద్భుతంగా ఉంటుంది!' అని మనసులో అనుకున్నాను. ఒక విచిత్రమైన స్వేచ్ఛా భావంతో, గర్వంగా వీధిలోకి అడుగులు వేశాను.",
+      "passage_hi": "एक अज्ञात, मनहूस बोझ निरंतर मेरे दिल को दबाए रहता था। फेफड़ों की बीमारी, मानसिक अवसाद और असह्य कर्ज़ ने मुझे घेर रखा था। मारुज़ेन बुकस्टोर की कला पुस्तकें जो कभी मुझे आनंद देती थीं, अब भारी उदासी का कारण बन चुकी थीं। एक दिन फल की दुकान पर मुझे एक ठंडा, ठोस 'नींबू' दिखा। उसका पीला रंग, हथेली पर उसका भार और ताज़ा सुगंध मेरे मन को छू गई। मैंने उसे जेब में रखा और मारुज़ेन में प्रवेश किया। कला की भारी किताबों की मीनार बनाकर मैंने उस नींबू को सबसे ऊपर रख दिया। मैंने सोचा: 'कितना रोमांचक होगा यदि यह नींबू एक सुनहरा बम बनकर इस दुकान को उड़ा दे!' एक विचित्र मुक्ति और आनंद के साथ मैं बाहर निकल आया।",
+      "passage_ta": "இனந்தெரியாத ஒரு பாரம் என் இதயத்தை அழுத்திக் கொண்டிருந்தது. நுரையீரல் நோய், நரம்புத் தளர்ச்சி, கடன்கள் என்னை வாட்டின. முன்பு மகிழ்ச்சியளித்த புத்தகக் கடையும் கலை நூல்களும் கூட இப்போது சலிப்பைத் தந்தன. ஒரு நாள் பழக்கடையில் குளிர்ந்த, உறுதியான எலுமிச்சம்பழத்தைக் கண்டேன். அதன் மஞ்சள் நிறமும் நறுமணமும் என் மனதை ஈர்த்தன. அதை எடுத்துக்கொண்டு புத்தகக் கடைக்குள் சென்றேன். கலைப் புத்தகங்களை அடுக்கி கோபுரம் போலச் செய்து அதன் உச்சியில் அந்த எலுமிச்சையை வைத்தேன். 'இந்த எலுமிச்சை தங்க வெடிகுண்டாக மாறி இக்கடையைத் தகர்த்தெறிந்தால் எவ்வளவு நன்றாக இருக்கும்!' என நினைத்தபடி விசித்திரமான சுதந்திர உணர்வுடன் தெருவில் நடந்தேன்.",
+      "passage_ko": "형언할 수 없는 불길한 덩어리가 늘 내 마음을 짓누르고 있었다. 폐 질환과 신경쇠약, 빚더미 속에서 한때 나를 기쁘게 했던 서점 마루젠의 화집과 음악도 우울의 씨앗에 불과했다. 어느 날 과일가게에서 차갑고 단단한 한 개의 '레몬'을 만났다. 선명한 방추형의 노란빛과 손바닥에 얹었을 때의 서늘한 무게감, 상쾌한 향기에 넋을 빼앗겼다. 나는 그것을 품에 넣고 마루젠으로 향했다. 화집을 높이 쌓아 성채를 만들고 그 정점에 레몬을 얹어 놓았다. '이 레몬이 황금빛 폭탄이 되어 마루젠을 산산조각 낸다면 얼마나 통쾌할까.' 기묘한 해방감 속에 나는 활기찬 거리로 걸어 나갔다.",
+      "passage_es": "Una masa oscura e inexplicable oprimía sin cesar mi corazón. Asediado por la enfermedad pulmonar, la neurastenia y las deudas, los libros de arte de Maruzen que otrora me fascinaban solo me causaban tedio. Un día hallé en una frutería un limón frío y terso. Su color amarillo, su peso en la palma y su aroma puro cautivaron mis sentidos. Lo guardé en mi abrigo y entré en Maruzen. Apilé libros de arte formando una almena y coroné la cúspide con el limón. Me susurré: '¡Qué delicia si este limón fuera una bomba dorada que hiciera saltar por los aires todo esto!'. Embriagado de un insólito júbilo y liberación, salí a la calle.",
+      "passage_kn": "ಅರ್ಥವಾಗದ ಒಂದು ಅಶುಭ ಕತ್ತಲೆ ನನ್ನ ಹೃದಯವನ್ನು ಒತ್ತಿ ಹಿಡಿದಿತ್ತು. ಶ್ವಾಸಕೋಶದ ಕಾಯಿಲೆ ಮತ್ತು ಸಾಲದ ಹೊರೆ ಕಾಡುತ್ತಿತ್ತು. ಮಾರ್ವೆಲ್ ಪುಸ್ತಕದಂಗಡಿಯ ಕಲಾ ಪುಸ್ತಕಗಳು ಬೇಸರ ತರಿಸುತ್ತಿದ್ದವು. ಒಂದು ದಿನ ಹಣ್ಣಿನಂಗಡಿಯಲ್ಲಿ ತಣ್ಣನೆಯ, ಗಟ್ಟಿಯಾದ ಒಂದು ನಿಂಬೆಹಣ್ಣು ಕಂಡಿತು. ಅದರ ಹಳದಿ ಬಣ್ಣ, ಪರಿಮಳ ನನ್ನನ್ನು ಸೆಳೆಯಿತು. ಅದನ್ನು ಜೇಬಿನಲ್ಲಿಟ್ಟುಕೊಂಡು ಪುಸ್ತಕದಂಗಡಿಗೆ ಹೋದೆ. ಕಲಾ ಪುಸ್ತಕಗಳನ್ನು ಗೋಪುರದಂತೆ ಜೋಡಿಸಿ ಅದರ ತುದಿಯಲ್ಲಿ ಆ ನಿಂಬೆಹಣ್ಣನ್ನು ಇರಿಸಿದೆ. 'ಈ ನಿಂಬೆಹಣ್ಣು ಚಿನ್ನದ ಬಾಂಬಾಗಿ ಈ ಇಡೀ ಅಂಗಡಿಯನ್ನು ಸ್ಫೋಟಿಸಿದರೆ ಎಷ್ಟು ರೋಮಾಂಚನ!' ಎಂದುಕೊಳ್ಳುತ್ತಾ ವಿಚಿತ್ರ ಆನಂದದೊಂದಿಗೆ ಹೊರಬಂದೆ.",
+      "passage_ml": "വിവരിക്കാനാവാത്ത ഒരു ഭാരം എന്റെ ഹൃദയത്തെ അലട്ടിക്കൊണ്ടിരുന്നു. ശ്വാസകോശ രോഗവും കടങ്ങളും എന്നെ തളർത്തി. ഒരു കാലത്ത് സന്തോഷം തന്നിരുന്ന പുസ്തകങ്ങൾ ഇപ്പോൾ മടുപ്പായി തോന്നി. ഒരു ദിവസം പഴക്കടയിൽ നിന്ന് കിട്ടിയ തണുത്ത നാരങ്ങ എന്നെ ആകർഷിച്ചു. അതിന്റെ മഞ്ഞനിറവും സുഗന്ധവും മനസ്സിന് ഉന്മേഷം നൽകി. ഞാനതുമായി പുസ്തകശാലയിൽ കയറി പുസ്തകങ്ങൾ ഒന്നിനുമീതെ ഒന്നായി അടുക്കിവെച്ച് അതിന്റെ മുകളിൽ ആ നാരങ്ങ പ്രതിഷ്ഠിച്ചു. 'ഈ നാരങ്ങ ഒരു സ്വർണ്ണ ബോംബായി പൊട്ടിത്തെറിച്ചാൽ എത്ര രസമായിരിക്കും' എന്ന് ചിന്തിച്ച് ഞാൻ പുറത്തേക്ക് നടന്നു.",
+      "questions": [
+        {
+          "q": "主人公の 鬱屈した 心を 捉えた 果物は 何ですか。",
+          "q_en": "What was the fruit that captivated the protagonist's depressed heart?",
+          "q_te": "రచయిత విచారకరమైన మనస్సును ఆకర్షించిన పండు ఏది?",
+          "q_hi": "नायक के उदास मन को किस फल ने आकर्षित किया?",
+          "q_ta": "கதைநாயகனின் மனதை ஈர்த்த பழம் எது?",
+          "q_ko": "주인공의 울적한 마음을 사로잡은 과일은 무엇입니까?",
+          "q_es": "¿Qué fruta cautivó el deprimido corazón del protagonista?",
+          "q_kn": "ನಾಯಕನ ಮನಸ್ಸನ್ನು ಸೆಳೆದ ಹಣ್ಣು ಯಾವುದು?",
+          "q_ml": "കഥാനായകന്റെ മനസ്സിനെ ആകർഷിച്ച പഴം ഏതാണ്?",
+          "options": [
+            "檸檬 (レモン)",
+            "林檎 (リンゴ)",
+            "蜜柑 (ミカン)",
+            "葡萄 (ブドウ)"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "主人公は 書店「丸善」の 積み上げた 画本の上に 檸檬を 置いて 何を 想像しましたか。",
+          "q_en": "What did the protagonist imagine after placing the lemon atop the piled art books in Maruzen?",
+          "q_te": "పుస్తకాలపై నిమ్మకాయను ఉంచిన తర్వాత రచయిత ఏమి ఊహించుకున్నాడు?",
+          "q_hi": "किताबों पर नींबू रखकर उसने क्या कल्पना की?",
+          "q_ta": "புத்தகங்களின் மேல் எலுமிச்சையை வைத்த பின் அவன் என்ன கற்பனை செய்தான்?",
+          "q_ko": "마루젠의 화집 위에 레몬을 올려두고 주인공은 무엇을 상상했습니까?",
+          "q_es": "¿Qué imaginó el protagonista tras colocar el limón sobre los libros en Maruzen?",
+          "q_kn": "ಪುಸ್ತಕಗಳ ಮೇಲೆ ನಿಂಬೆಹಣ್ಣನ್ನು ಇರಿಸಿ ಆತ ಏನನ್ನು ಕಲ್ಪಿಸಿಕೊಂಡನು?",
+          "q_ml": "പുസ്തകങ്ങൾക്ക് മുകളിൽ നാരങ്ങ വെച്ച ശേഷം അവൻ എന്താണ് സങ്കൽപ്പിച്ചത്?",
+          "options": [
+            "檸檬が 黄金の 大爆弾となって 丸善を 爆破すること",
+            "檸檬が 宝石に 変わること",
+            "店員に 見つかって 褒められること",
+            "本が すべて 黄金に 変わること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 短編小説の 著者は だれですか。",
+          "q_en": "Who is the author of this short story?",
+          "q_te": "ఈ కథ రచయిత ఎవరు?",
+          "q_hi": "इस लघु कथा के लेखक कौन हैं?",
+          "q_ta": "இச்சிறுகதையின் ஆசிரியர் யார்?",
+          "q_ko": "이 단편소설의 작가는 누구입니까?",
+          "q_es": "¿Quién es el autor de este relato breve?",
+          "q_kn": "ಈ ಸಣ್ಣ ಕಥೆಯ ಲೇಖಕರು ಯಾರು?",
+          "q_ml": "ഈ ചെറുകഥയുടെ രചയിതാവ് ആരാണ്?",
+          "options": [
+            "梶井基次郎 (かじいもとじろう)",
+            "芥川龍之介",
+            "太宰治",
+            "三島由紀夫"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n1-14",
+      "title": "人間失格 (No Longer Human - Dazai Osamu)",
+      "passage": "恥の多い生涯を送って来ました。自分には、人間の生活というものが、見当がつかないのです。自分は東北の田舎に生れましたので、汽車をはじめて見たのは、よほど大きくなってからでした。自分は子供の頃から、周囲の人間たちが何を考えて生きているのか、苦しみや怒り、偽善といった人間の本性が恐ろしくて仕方がありませんでした。人間に対する最後の求愛として、自分が見出した唯一の手段は『道化』でした。おどけて人を笑わせることで、自分に対する警戒を解き、破滅的な恐怖から身を守ろうとしたのです。しかし、学校の同級生・竹一に「ワザ、ワザ」とその道化を見破られたとき、世界が地獄の業火に包まれるような戦慄を覚えました。上京して高等学校に入っても、酒や煙草、女、そして非合法運動へと身を投じ、道化の仮面の下で精神は急速に崩壊していきました。やがてモルヒネ中毒に溺れ、精神病院へと隔離された私は、二十七歳にして白髪となり、もはや人間としての資格を完全に喪失した廃人と化してしまったのでした。",
+      "passage_en": "Mine has been a life of much shame. I cannot even guess what it must be like to live the life of a human being. Born in the countryside of the Tohoku region, it was only when I was quite grown that I first saw a train. Ever since childhood, the thoughts, griefs, rages, and hypocrisies of the people around me filled me with dread. My final bid for human warmth, the only defense I discovered, was 'clowning'. By playing the fool and making others laugh, I disarmed their suspicion and shielded myself from existential terror. Yet when a schoolmate, Takeichi, saw right through me and whispered, 'You did that on purpose,' my world seemed engulfed in infernal flames. Moving to Tokyo, I plunged into drinking, smoking, women, and illegal political movements; beneath the clown's mask, my psyche disintegrated. Eventually succumbing to morphine addiction and committed to an asylum, I became at twenty-seven a white-haired ruin—no longer human.",
+      "passage_te": "అవమానభారంతో కూడిన జీవితాన్ని గడిపాను. అసలు మనిషిగా జీవించడం అంటే ఏమిటో నాకు ఇప్పటికీ అర్థం కాదు. చిన్నప్పటి నుండి నా చుట్టూ ఉన్న మనుషుల ద్వంద్వ నీతి, కోపం, కపటత్వాన్ని చూసి భయంతో వణికిపోయేవాడిని. సమాజం నుండి తప్పించుకోవడానికి నేను ఎంచుకున్న ఏకైక మార్గం 'విదూషకుడి వేషం' (జోకర్ కావడం). ఇతరులను నవ్విస్తూ జోకులు వేయడం ద్వారా నా భయాన్ని దాచుకునేవాడిని. కానీ నా తోటి విద్యార్థి తకేయిచి 'నువ్వు కావాలనే నటిస్తున్నావు' అని నా నిజస్వరూపం కనిపెట్టినప్పుడు నా ప్రపంచం కూలిపోయింది. టోక్యోకు వచ్చిన తర్వాత మద్యపానం, వ్యసనాలలో మునిగిపోయాను. చివరకు మార్ఫిన్ వ్యసనానికి బానిసై మానసిక ఆసుపత్రిలో చేరిన నేను, 27 ఏళ్లకే తెల్ల జుట్టుతో మనిషిగా బ్రతికే అర్హతను పూర్తిగా కోల్పోయాను.",
+      "passage_hi": "मेरा जीवन अत्यंत लज्जास्पद रहा है। मुझे कभी समझ नहीं आया कि एक मनुष्य के रूप में कैसे जिया जाता है। बचपन से ही मैं लोगों के क्रोध, पाखंड और पीड़ा से अत्यधिक डरता था। समाज से बचने के लिए मैंने 'विदूषक' (जोकर) बनने का मुखौटा चुना। लोगों को हँसाकर मैं अपना डर छिपाता था। परंतु जब एक सहपाठी ने मेरा यह नाटक पकड़ लिया, तो मेरे पैरों तले ज़मीन खिसक गई। टोक्यो आकर मैं शराब, व्यसनों और अवैध गतिविधियों में डूब गया। अंततः मॉर्फिन की लत और पागलखाने में बंद होकर 27 वर्ष की आयु में ही मैं बाल सफेद कर चुका था—अब मैं मनुष्य कहलाने के योग्य भी न रहा था।",
+      "passage_ta": "வெட்கக்கேடான ஒரு வாழ்க்கையை வாழ்ந்துவிட்டேன். மனிதனாக வாழ்வது என்றால் என்னவென்றே எனக்குப் புரியவில்லை. மனிதர்களின் கோபம், பாசாங்கு கண்டு சிறுவயதிலிருந்தே அஞ்சினேன். தப்பிக்க நான் கண்ட ஒரே வழி 'கோமாளித்தனம்'. பிறரை சிரிக்க வைத்து என் அச்சத்தை மறைத்தேன். ஆனால் ஒரு நண்பன் அதை வேண்டுமென்றே செய்கிறாய் எனக் கண்டுபிடித்தபோது நடுங்கிப் போனேன். டோக்கியோ வந்து போதை, மதுவில் மூழ்கி மனநலக் காப்பகத்தில் அடைக்கப்பட்டேன். 27 வயதிலேயே நரைத்த தலையுடன் மனிதனாய் வாழும் தகுதியை முற்றிலும் இழந்தேன்.",
+      "passage_ko": "부끄럼 많은 생애를 보냈습니다. 제게는 인간의 삶이라는 것이 도무지 이해되지 않았습니다. 어릴 적부터 인간의 위선과 분노가 두려웠던 저는 마지막 구애로 '어릿광대' 짓을 택했습니다. 익살을 떨어 사람들을 웃김으로써 공포에서 벗어나려 했습니다. 그러나 동급생 다케이치에게 그 광대짓을 간파당했을 때 지옥의 공포를 맛보았습니다. 상경 후 술과 약물, 파멸적인 생활에 빠져들었고 결국 정신병원에 수용되어 스물일곱에 백발이 된 채, 더 이상 인간이 아닌 폐인으로 전락했습니다.",
+      "passage_es": "He llevado una vida colmada de vergüenza. Me resulta incomprensible la vida de los seres humanos. Desde niño, la hipocresía y crueldad ajenas me aterrorizaban. Mi única tabla de salvación fue actuar como un 'bufón'. Haciendo reír a los demás desarmaba su hostilidad. Pero cuando un compañero de escuela descubrió mi farsa fingida, sentí el fuego del infierno. En Tokio me hundí en el alcohol, el vicio y la adicción a la morfina. Confinado en un manicomio, a los veintisiete años y encanecido, dejé de ser un ser humano.",
+      "passage_kn": "ನಾಚಿಕೆಗೇಡಿನ ಬದುಕನ್ನು ಸವೆಸಿದ್ದೇನೆ. ಮನುಷ್ಯನಾಗಿ ಬದುಕುವುದು ಹೇಗೆಂಬುದೇ ನನಗೆ ಅರ್ಥವಾಗಿಲ್ಲ. ಜನರ ಕಪಟತನಕ್ಕೆ ಹೆದರಿ ನಾನು ಕಂಡುಕೊಂಡ ಏಕೈಕ ರಕ್ಷಣೆ 'ವಿದೂಷಕ'ನಾಗುವುದು. ಎಲ್ಲರನ್ನೂ ನಗಿಸುತ್ತಾ ನನ್ನ ಭಯವನ್ನು ಮರೆಮಾಚಿದೆ. ಆದರೆ ಸಹಪಾಠಿಯೊಬ್ಬ ನನ್ನ ನಾಟಕವನ್ನು ಬಯಲುಮಾಡಿದಾಗ ಬೆಚ್ಚಿಬಿದ್ದೆ. ನಂತರ ದುಶ್ಚಟಗಳಿಗೆ ದಾಸನಾಗಿ ಹುಚ್ಚಾಸ್ಪತ್ರೆ ಸೇರಿದ ನಾನು, 27 ನೇ ವಯಸ್ಸಿಗೆ ನೆರೆತ ಕೂದಲಿನೊಂದಿಗೆ ಮನುಷ್ಯನಾಗಿ ಬದುಕುವ ಅರ್ಹತೆಯನ್ನೇ ಕಳೆದುಕೊಂಡೆ.",
+      "passage_ml": "ലജ്ജാകരമായ ഒരു ജീവിതമാണ് ഞാൻ നയിച്ചത്. മനുഷ്യനായി ജീവിക്കുക എന്നാൽ എന്താണെന്ന് എനിക്ക് ഇനിയും മനസ്സിലായിട്ടില്ല. ആളുകളുടെ കാപട്യത്തെ ഭയന്ന് ഞാൻ കണ്ടെത്തിയ ഏക വഴി ഒരു 'കോമാളി'യാവുക എന്നതായിരുന്നു. മറ്റുള്ളവരെ ചിരിപ്പിച്ച് ഞാൻ എന്റെ ഭയം മറച്ചുവെച്ചു. എന്നാൽ ഒരു കൂട്ടുകാരൻ ആ കള്ളത്തരം കണ്ടുപിടിച്ചപ്പോൾ ഞാൻ ഭയന്നുപോയി. പിന്നീട് ലഹരിക്ക് അടിമപ്പെട്ട് മാനസികാശുപത്രിയിലായ ഞാൻ, 27-ാം വയസ്സിൽ നരച്ച തലമുടിയോടെ മനുഷ്യനായി ജീവിക്കാനുള്ള യോഗ്യത പോലും നഷ്ടപ്പെട്ടവനായി മാറി.",
+      "questions": [
+        {
+          "q": "主人公が 人間に対する 恐怖から 身を守るために 見出した 手段は 何でしたか。",
+          "q_en": "What was the means the protagonist discovered to protect himself from his terror of human beings?",
+          "q_te": "మనుషుల పట్ల భయం నుండి తనను తాను రక్షించుకోవడానికి రచయిత ఎంచుకున్న మార్గం ఏమిటి?",
+          "q_hi": "मनुष्यों के भय से बचने के लिए नायक ने क्या उपाय खोजा था?",
+          "q_ta": "மனிதர்கள் மீதான பயத்திலிருந்து தப்பிக்க அவன் கண்ட வழி என்ன?",
+          "q_ko": "주인공이 인간에 대한 공포로부터 자신을 지키기 위해 찾아낸 수단은 무엇이었습니까?",
+          "q_es": "¿Qué método halló el protagonista para protegerse de su terror hacia los humanos?",
+          "q_kn": "ಜನರ ಭಯದಿಂದ ರಕ್ಷಿಸಿಕೊಳ್ಳಲು ಆತ ಕಂಡುಕೊಂಡ ಮಾರ್ಗ ಯಾವುದು?",
+          "q_ml": "മനുഷ്യരെക്കുറിച്ചുള്ള ഭയത്തിൽ നിന്ന് രക്ഷപ്പെടാൻ അവൻ കണ്ടെത്തിയ വഴി എന്തായിരുന്നു?",
+          "options": [
+            "道化 (おどけて 人を 笑わせること)",
+            "暴力を 振るうこと",
+            "完全に 部屋に 閉じこもること",
+            "勉強に 没頭すること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "主人公の「道化」を 最初に見破った 同級生の名前は だれですか。",
+          "q_en": "What was the name of the schoolmate who first saw through the protagonist's clowning?",
+          "q_te": "రచయిత నటనను మొదట పసిగట్టిన తోటి విద్యార్థి పేరు ఏమిటి?",
+          "q_hi": "नायक के जोकर बनने के नाटक को किसने पकड़ा था?",
+          "q_ta": "அவனது கோமாளித்தனத்தை முதலில் கண்டறிந்த நண்பன் யார்?",
+          "q_ko": "주인공의 '광대짓'을 최초로 간파한 동급생의 이름은 무엇입니까?",
+          "q_es": "¿Cómo se llamaba el compañero que descubrió por primera vez su farsa?",
+          "q_kn": "ಆತನ ನಕಲಿ ನಟನೆಯನ್ನು ಮೊದಲು ಪತ್ತೆಹಚ್ಚಿದ ಸಹಪಾಠಿಯ ಹೆಸರೇನು?",
+          "q_ml": "അവന്റെ കോമാളിത്തം ആദ്യം തിരിച്ചറിഞ്ഞ കൂട്ടുകാരൻ ആരാണ്?",
+          "options": [
+            "竹一 (たけいち)",
+            "堀木 (ほりき)",
+            "平目 (ひらめ)",
+            "ツネ子"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "この 自伝的 小説の 題名は 何ですか。",
+          "q_en": "What is the title of this autobiographical novel?",
+          "q_te": "ఈ ఆత్మకథాత్మక నవల పేరు ఏమిటి?",
+          "q_hi": "इस आत्मकथात्मक उपन्यास का क्या नाम है?",
+          "q_ta": "இந்த நாவலின் தலைப்பு என்ன?",
+          "q_ko": "이 자전적 소설의 제목은 무엇입니까?",
+          "q_es": "¿Cuál es el título de esta novela autobiográfica?",
+          "q_kn": "ಈ ಕಾದಂಬರಿಯ ಹೆಸರೇನು?",
+          "q_ml": "ഈ നോവലിന്റെ പേരെന്താണ്?",
+          "options": [
+            "人間失格 (太宰治)",
+            "斜陽",
+            "走れメロス",
+            "津軽"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r-n1-15",
+      "title": "銀河鉄道の夜 (Night on the Galactic Railroad - Kenji)",
+      "passage": "「ではみなさんは、そういうふうに川だと云われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか」先生は黒板に吊した大きな天の川の図を指しながら生徒たちに尋ねました。ジョバンニは手を挙げようとしましたが、すぐやめました。毎晩の活版所でのアルバイトと病気の母の看病で疲れ果て、学校ではいつも居眠りばかりして級友からからかわれていたからです。星祭りの夜、丘の上に寝転んで星空を見上げていたジョバンニは、いつの間にか「銀河ステーション、銀河ステーション」という不思議な声を聞き、親友のカムパネルラとともに夜空を走る銀河鉄道の列車に乗っていました。列車は青白い天の川の岸辺を走り、白鳥の停車場、りんごの香るプレシオサ海岸、サザンクロスへと旅を続けます。旅路で出会う人々との対話を通じ、二人は「ほんとうのさいわいとは何か」を探求します。しかし、カムパネルラは川で溺れた友人を救おうとして命を落とし、この列車に乗っていたのでした。ジョバンニは友の死を知り、涙を流しながらも、友の志を継ぎ「みんなの本当の幸せのために生きる」ことを誓うのでした。",
+      "passage_en": "'Now, do you all know what this hazy white band—spoken of as a river or as spilt milk—truly is?' the teacher asked, pointing to a large constellation chart of the Milky Way hanging on the blackboard. Giovanni started to raise his hand, but hesitated. Exhausted from working at a printing shop every night and caring for his sick mother, he was constantly dozing off in class and mocked by classmates. On the night of the Star Festival, lying atop a grassy hill gazing into the night sky, Giovanni suddenly heard an ethereal voice announcing: 'Milky Way Station, Milky Way Station!' In the blink of an eye, he found himself aboard a magical train traversing the cosmos alongside his best friend, Campanella. The train traversed the luminous banks of the celestial river, visiting the Swan Station, the fragrant shores of Pliocene Coast, and the Southern Cross. Through encounters with fellow passengers, the two boys pondered: 'What is true happiness?' But Campanella had boarded this train after drowning while saving a friend in the river. Learning of his friend's sacrifice, Giovanni wept bitterly, yet resolved to honor Campanella's spirit by dedicating his life to seeking true happiness for all.",
+      "passage_te": "'ఆకాశంలో తెల్లగా నదిలా లేదా పాలధారలా కనిపించే ఈ పాలపుంత అసలు ఏమిటో మీలో ఎవరికైనా తెలుసా?' అని ఉపాధ్యాయుడు నక్షత్రాల పటాన్ని చూపిస్తూ అడిగాడు. జియోవన్నీ చేయి ఎత్తబోయి ఆగిపోయాడు. అనారోగ్యంతో ఉన్న తల్లిని చూసుకుంటూ ప్రింటింగ్ ప్రెస్‌లో రాత్రిపూట పనిచేసి అలసిపోవడం వల్ల తరగతిలో నిద్రపోతూ అందరి ఎగతాళికి గురయ్యేవాడు. నక్షత్రాల పండుగ రాత్రి, కొండపై పడుకుని ఆకాశాన్ని చూస్తుండగా 'గెలాక్సీ స్టేషన్!' అనే వింత స్వరం వినిపించింది. కళ్ళు తెరిచేసరికి తన ప్రాణ స్నేహితుడు కాంపానెల్లాతో కలిసి నక్షత్రాల రైలులో ప్రయాణిస్తున్నాడు. ఆ రైలు దివ్య నక్షత్ర మండలాలు, సదరన్ క్రాస్ వైపు సాగింది. నిజమైన ఆనందం అంటే ఏమిటో వారు అన్వేషించారు. అయితే నదిలో మునిగిపోతున్న స్నేహితుడిని కాపాడబోయి ప్రాణాలు కోల్పోయినందుకే కాంపానెల్లా ఆ రైలు ఎక్కాడని తెలిసింది. స్నేహితుడి మరణానికి కన్నీరు కారుస్తూనే, అందరి నిజమైన సంతోషం కోసం జీవిస్తానని జియోవన్నీ ప్రతిజ్ఞ చేశాడు.",
+      "passage_hi": "शिक्षक ने श्यामपट्ट पर लटके आकाशगंगा के मानचित्र की ओर इशारा करते हुए पूछा: 'क्या आप जानते हैं कि यह सफेद दूधिया नदी वास्तव में क्या है?' जियोवानी हाथ उठाने ही वाला था कि रुक गया। बीमार माँ की देखभाल और रात में छपाईखाने में काम करने के कारण वह हमेशा थका रहता था। नक्षत्र उत्सव की रात पहाड़ी पर लेटे-लेटे उसे एक आवाज़ सुनाई दी: 'आकाशगंगा स्टेशन!' उसने खुद को अपने मित्र कांपेनेला के साथ तारों के बीच दौड़ती रेलगाड़ी में पाया। इस दिव्य यात्रा में उन्होंने जाना कि 'सच्चा सुख क्या है'। परंतु कांपेनेला नदी में डूबते मित्र को बचाते हुए अपनी जान गँवा चुका था। मित्र के बलिदान पर आँसू बहाते हुए जियोवानी ने सबके सच्चे सुख के लिए जीने का संकल्प लिया।",
+      "passage_ta": "ஆசிரியர் கரும்பலகையில் உள்ள விண்மீன் வரைபடத்தைக் காட்டி, 'வெண்ணிற ஆறாகத் தெரியும் இது என்னவென்று தெரியுமா?' எனக் கேட்டார். ஜியோவானி கையை உயர்த்தத் தயங்கினான். நோய்வாய்ப்பட்ட தாயைக் காக்க இரவில் அச்சகத்தில் வேலை செய்து களைத்திருந்தான். நட்சத்திர விழாவன்று மலையில் படுத்து வானைப் பார்த்தபோது 'விண்மீன் நிலையம்!' என்ற குரல் கேட்டது. கண்மூடித் திறப்பதற்குள் நண்பன் காம்பனெல்லாவுடன் விண்வெளி ரயிலில் பயணித்தான். 'உண்மையான மகிழ்ச்சி எது' என்பதைப் பயணித்தவாறே தேடினர். ஆற்றில் மூழ்கிய நண்பனைக் காப்பாற்றப் போய் காம்பனெல்லா உயிரிழந்ததால் தான் இந்த ரயிலில் வந்தான் என்பதை அறிந்து ஜியோவானி அழுதான். அனைவரின் உண்மை மகிழ்ச்சிக்காக வாழ்வேன் என உறுதியேற்றான்.",
+      "passage_ko": "은하수를 가리키며 '이 하얗게 빛나는 강이 실은 무엇인지 아는 사람 있나요?'라고 선생님이 물었습니다. 조반니는 손을 들려다 망설였습니다. 인쇄소 아르바이트와 앓아누운 어머니 간병으로 지쳐 늘 놀림을 받았기 때문입니다. 은하 축제의 밤, 언덕에 누워 밤하늘을 보던 조반니는 '은하 정거장'이라는 소리와 함께 친구 캄파넬라와 은하철도에 오르게 됩니다. 백조 정거장, 남십자성을 지나며 두 소년은 '진정한 행복이란 무엇인가'를 사유합니다. 그러나 캄파넬라는 강에 빠진 친구를 구하려다 익사하여 이 열차를 탄 것이었습니다. 친구의 죽음을 알게 된 조반니는 오열하면서도, 모든 이의 진정한 행복을 위해 살아가겠다고 다짐합니다.",
+      "passage_es": "'¿Saben qué es realmente esa franja blanca que parece un río de leche?', preguntó el maestro señalando el mapa de la Vía Láctea. Giovanni quiso levantar la mano pero dudó; exhausto de trabajar en la imprenta para cuidar a su madre enferma, siempre cabeceaba en clase. La noche de la Fiesta de las Estrellas, tumbado en una colina, oyó una voz: '¡Estación Galáctica!'. Al instante viajaba con su amigo Campanella en un tren celestial. Cruzando la Cruz del Sur reflexionaron sobre qué es la verdadera felicidad. Pero Campanella estaba allí porque había muerto ahogado al salvar a un amigo. Llorando su pérdida, Giovanni juró dedicar su vida a buscar la felicidad de todos.",
+      "passage_kn": "ಕಪ್ಪು ಹಲಗೆಯ ಮೇಲಿನ ಆಕಾಶಗಂಗೆಯ ಚಿತ್ರವನ್ನು ತೋರಿಸುತ್ತಾ 'ಈ ಬೆಳ್ಳನೆಯ ನದಿ ನಿಜವಾಗಿ ಏನೂ ಎಂದು ತಿಳಿದಿದೆಯೇ?' ಎಂದು ಶಿಕ್ಷಕರು ಕೇಳಿದರು. ಜಿಯೋವಾನ್ನಿ ಕೈಯೆತ್ತಲು ಹಿಂಜರಿದನು; ಮುದ್ರಣಾಲಯದ ಕೆಲಸ ಮತ್ತು ರೋಗಿ ತಾಯಿಯ ಸೇವೆಯಿಂದ ಆಯಾಸಗೊಂಡಿದ್ದನು. ನಕ್ಷತ್ರಗಳ ಹಬ್ಬದ ರಾತ್ರಿ ಬೆಟ್ಟದ ಮೇಲೆ ಮಲಗಿದ್ದಾಗ 'ಗ್ಯಾಲಕ್ಸಿ ನಿಲ್ದಾಣ' ಎಂಬ ಧ್ವನಿ ಕೇಳಿಸಿತು. ಮಿತ್ರ ಕಂಪನೆಲ್ಲಾನ ಜೊತೆ ನಕ್ಷತ್ರಗಳ ರೈಲಿನಲ್ಲಿ ಪ್ರಯಾಣಿಸಿದನು. 'ನಿಜವಾದ ಸಂತೋಷ ಎಂದರೇನು' ಎಂದು ಅನ್ವೇಷಿಸಿದರು. ನದಿಯಲ್ಲಿ ಮುಳುಗುತ್ತಿದ್ದ ಮಿತ್ರನನ್ನು ರಕ್ಷಿಸಲು ಕಂಪನೆಲ್ಲಾ ಪ್ರಾಣ ಬಿಟ್ಟಿದ್ದನೆಂದು ತಿಳಿದು ಜಿಯೋವಾನ್ನಿ ಕಣ್ಣೀರಿಟ್ಟನು ಮತ್ತು ಎಲ್ಲರ ಸಂತೋಷಕ್ಕಾಗಿ ಬದುಕಲು ಪ್ರತಿಜ್ಞೆ ಮಾಡಿದನು.",
+      "passage_ml": "ആകാശഗംഗയുടെ ചിത്രം കാണിച്ച് 'ഈ വെളുത്ത പാത എന്താണെന്ന് അറിയാമോ' എന്ന് അധ്യാപകൻ ചോദിച്ചു. രോഗിയായ അമ്മയെ നോക്കാനും പ്രസ്സിൽ ജോലി ചെയ്യാനും പോയി തളർന്ന ജിയോവാനി മിണ്ടിയില്ല. നക്ഷത്രോത്സവ രാത്രിയിൽ കുന്നിൻമുകളിൽ കിടന്ന അവൻ അത്ഭുത ട്രെയിനിൽ സുഹൃത്ത് കമ്പനെല്ലയ്ക്കൊപ്പം ആകാശയാത്ര നടത്തി. 'യഥാർത്ഥ സന്തോഷം എന്താണ്' എന്ന് അവർ അന്വേഷിച്ചു. പുഴയിൽ വീണ കൂട്ടുകാരനെ രക്ഷിക്കാൻ ശ്രമിച്ച് മരണപ്പെട്ടതുകൊണ്ടാണ് കമ്പനെല്ല ആ ട്രെയിനിലുണ്ടായിരുന്നതെന്ന് അവൻ അറിഞ്ഞു. എല്ലാവരുടെയും സന്തോഷത്തിനായി ജീവിക്കുമെന്ന് അവൻ പ്രതിജ്ഞ ചെയ്തു.",
+      "questions": [
+        {
+          "q": "ジョバンニが カムパネルラと ともに乗った 乗り物は 何ですか。",
+          "q_en": "What vehicle did Giovanni board together with Campanella?",
+          "q_te": "కాంపానెల్లాతో కలిసి జియోవన్నీ ఎక్కిన వాహనం ఏమిటి?",
+          "q_hi": "जियोवानी ने कांपेनेला के साथ किस वाहन की यात्रा की?",
+          "q_ta": "ஜியோவானி காம்பனெல்லாவுடன் ஏறிய வாகனம் எது?",
+          "q_ko": "조반니가 캄파넬라와 함께 탄 탑승물은 무엇입니까?",
+          "q_es": "¿Qué vehículo abordó Giovanni junto a Campanella?",
+          "q_kn": "ಜಿಯೋವಾನ್ನಿ ಕಂಪನೆಲ್ಲಾನೊಂದಿಗೆ ಹತ್ತಿದ ವಾಹನ ಯಾವುದು?",
+          "q_ml": "കമ്പനെല്ലയ്ക്കൊപ്പം ജിയോവാനി കയറിയ വാഹനം ഏതാണ്?",
+          "options": [
+            "銀河鉄道の 列車",
+            "空飛ぶ 船",
+            "光の 馬車",
+            "大きな 熱気球"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "カムパネルラが この列車に 乗っていた 本当の 理由は 何ですか。",
+          "q_en": "What was the real reason Campanella was aboard this train?",
+          "q_te": "కాంపానెల్లా ఆ రైలులో ఉండటానికి గల అసలు కారణం ఏమిటి?",
+          "q_hi": "कांपेनेला के उस ट्रेन में होने का असली कारण क्या था?",
+          "q_ta": "காம்பனெல்லா அந்த ரயிலில் இருந்ததன் உண்மையான காரணம் என்ன?",
+          "q_ko": "캄파넬라가 이 열차에 타고 있었던 진짜 이유는 무엇입니까?",
+          "q_es": "¿Cuál era la verdadera razón por la que Campanella viajaba en ese tren?",
+          "q_kn": "ಕಂಪನೆಲ್ಲಾ ಆ ರೈಲಿನಲ್ಲಿದ್ದ ನಿಜವಾದ ಕಾರಣವೇನು?",
+          "q_ml": "കമ്പനെല്ല ആ ട്രെയിനിൽ ഉണ്ടാവാനുള്ള യഥാർത്ഥ കാരണം എന്തായിരുന്നു?",
+          "options": [
+            "川で 溺れた 友人を 救おうとして 命を落としたから",
+            "切符を 買って 旅行していたから",
+            "車掌として 働いていたから",
+            "夢を 見ていただけだったから"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "二人が 旅の途中で 追い求めた 根本的な 問いは 何ですか。",
+          "q_en": "What fundamental question did the two pursue during their journey?",
+          "q_te": "ప్రయాణంలో వారిద్దరూ అన్వేషించిన మూల ప్రశ్న ఏమిటి?",
+          "q_hi": "यात्रा के दौरान दोनों किस मूल प्रश्न की तलाश कर रहे थे?",
+          "q_ta": "பயணத்தின் போது இருவரும் தேடிய அடிப்படை வினா எது?",
+          "q_ko": "두 소년이 여행 중에 끊임없이 추구한 근본적인 물음은 무엇입니까?",
+          "q_es": "¿Qué pregunta fundamental perseguían los dos durante el viaje?",
+          "q_kn": "ಪ್ರಯಾಣದ ಸಮಯದಲ್ಲಿ ಇಬ್ಬರೂ ಹುಡುಕಿದ ಮೂಲಭೂತ ಪ್ರಶ್ನೆ ಯಾವುದು?",
+          "q_ml": "യാത്രയിലുടനീളം അവർ അന്വേഷിച്ച അടിസ്ഥാനപരമായ ചോദ്യം എന്തായിരുന്നു?",
+          "options": [
+            "ほんとうの さいわい（幸せ）とは 何か",
+            "どうすれば お金持ちに なれるか",
+            "宇宙の 果てには 何が あるか",
+            "いつ 地球へ 帰れるか"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+};
