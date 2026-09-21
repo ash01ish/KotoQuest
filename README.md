@@ -2,10 +2,11 @@
 ### Gamified multilingual Japanese academy, JLPT N5 to N1 (offline-first)
 
 > Learn Japanese through your own language's grammar instead of fighting it.
-> A free, open-source JLPT N5 → N1 study app: a full grammar curriculum taught in your own language, reading/listening/mock-exam practice, an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, and a native SOV grammar bridge.
+> A free, open-source JLPT N5 → N1 study app: a full grammar curriculum taught in your own language, reading/listening/mock-exam practice, an offline 8,129-word dictionary, an RPG battle loop, SRS flashcards, a native SOV grammar bridge, a Japanese Knowledge Hub, role-play dialogues, pitch accent ear-training, and Kanji mnemonics.
 
 [![JLPT Coverage](https://img.shields.io/badge/JLPT-N5%20%E2%86%92%20N1%20%288%2C129%20Words%29-ff6b8b?style=for-the-badge&logo=japanese&logoColor=white)](js/vocab_db.js)
 [![Offline First](https://img.shields.io/badge/Offline--First-100%25%20Browser%20Native-2ed573?style=for-the-badge&logo=html5&logoColor=white)](index.html)
+[![Languages](https://img.shields.io/badge/Languages-8%20Native%20Tongues-3867d6?style=for-the-badge&logo=googletranslate&logoColor=white)](js/lang/ui.js)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ffa502?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-a55eea?style=for-the-badge&logo=github)](CONTRIBUTING.md)
 
@@ -15,108 +16,140 @@
 
 Most Japanese apps teach every student as if they think in English. KotoQuest doesn't.
 
-A large share of the world speaks a Subject-Object-Verb (SOV) language: Telugu, Hindi, Bengali, Korean, Tamil, Turkish, and many more. Those languages already share Japanese's basic machinery:
+A large share of the world speaks a Subject-Object-Verb (SOV) language: Telugu, Hindi, Korean, Tamil, Kannada, Malayalam, and many more. Those languages already share Japanese's basic grammatical machinery:
 
-- The same word order: Subject → Object → Verb
-- Postpositional particles that line up almost one-to-one (Telugu *vibhaktulu*, Hindi postpositions, Korean *조사*, Japanese *助詞*)
-- Descriptive clauses that sit *before* the noun, not after
+- **The same natural word order**: Subject → Object → Verb
+- **Postpositional particles** that line up almost one-to-one (Telugu *vibhaktulu*, Hindi postpositions, Korean *조사*, Tamil case markers, Kannada *vibhakti*, Malayalam *prathyayam*, Japanese *助詞*)
+- **Descriptive clauses** that sit *before* the noun, not after
 
-So if you already think in one of those languages, a lot of Japanese grammar is stuff you do without noticing. KotoQuest leans on that instead of routing everything through English.
+If you already think in one of those languages, a lot of Japanese grammar is intuitive. KotoQuest leans into that linguistic synergy instead of routing everything through English.
 
 ---
 
-## Supported native languages
+## Supported native languages (8-Language Parity)
 
 | Language | Native Script | Word Order | Particle Bridge | Example Formula |
 | :--- | :--- | :---: | :--- | :--- |
 | **Telugu** | తెలుగు | **SOV** | Vibhaktulu (ను/ని, కి/కు, లో, తో) | నేను **సుశిని** తింటాను |
 | **Hindi** | हिन्दी | **SOV** | Postpositions (को, में, से, का) | मैं **सुशी को** खाता हूँ |
-| **Korean** | 한국어 | **SOV** | Josa (을/를, 에, 에서, 의) | 나는 **스시를** 먹습니다 |
 | **Tamil** | தமிழ் | **SOV** | Case Suffixes (ஐ, க்கு, இல், ஆல்) | நான் **சுஷி** சாப்பிடுகிறேன் |
+| **Kannada** | ಕನ್ನಡ | **SOV** | Vibhakti (ಅನ್ನು, ಗೆ, ಅಲ್ಲಿ, ಇಂದ) | ನಾನು **ಸುಶಿಯನ್ನು** ತಿನ್ನುತ್ತೇನೆ |
+| **Malayalam** | മലയാളം | **SOV** | Prathyayam (എ, ക്ക്, ൽ, ഓട്) | ഞാൻ **സുഷി** കഴിക്കുന്നു |
+| **Korean** | 한국어 | **SOV** | Josa (을/를, 에, 에서, 의) | 나는 **스시를** 먹습니다 |
 | **Spanish** | Español | SVO | Prepositions (a, en, con, de) | Yo como **sushi** |
 | **English** | English | SVO | Structural reference | I eat **sushi** |
 
 ---
 
-## Features
+## Features & Learning Modules
 
-### Full N5 → N1 curriculum, in your language
-- 35 structured grammar lessons, from kana all the way to N1 keigo and literary patterns.
-- Every lesson's actual teaching — not just word meanings — is translated into **Telugu, Hindi, Tamil, Korean, and Spanish**, so you can study the grammar itself in your own language rather than through English.
-- One-tap **Show English** reveals the English version alongside for cross-reference. Japanese examples, romaji, and audio stay intact in every version.
+### 💡 Dedicated Japanese Knowledge Hub (日本語の知恵)
+A central reference desk for everyday Japanese life, fluency, and travel:
+- **🗣️ Survival Japanese**: High-frequency phrases for daily greetings, dining/izakaya, shopping/konbini, train travel, and emergencies. Each phrase includes Kanji/Kana, Romaji, 8-language translations, cultural usage notes, and one-tap Web Speech pronunciation.
+- **🔢 Essential Counters & Interactive Calculator**: Demystifies tricky counters (`つ`, `本`, `枚`, `匹`, `杯`, `冊`, `台`, `人`). Pick any quantity (1–10) to hear authentic audio and observe phonetic shifts (*ippon*, *sanbon*, *roppon*) in real time.
+- **🍜 Life in Japan Simulator (4 Branching Roleplay Scenarios)**:
+  - *Ramen Shop & Izakaya*: Ordering noodle firmness (*katame*), requesting toppings, calling staff for the bill (*o-kaikei*).
+  - *7-Eleven & Konbini*: Bento heating requests, bag selection (*reji-bukuro*), and payment methods.
+  - *Train Station & Yamanote Line*: Finding platforms, verifying train stops, and resolving IC card gate errors (*norikoshi seisanki*).
+  - *Traditional Ryokan Check-in*: Reservation check-in using humble speech (*Sumisu to moushimasu*), footwear etiquette at the *genkan*, and onsen hours.
+  - Includes NPC audio speech, 3 response tiers (Recommended, Casual, Mistake), and cultural nuance feedback cards.
+- **⚡ Anime vs. Real-Life Japanese & Slang Guide**:
+  - Dramatic anime tropes (`Omae`/`Kisama`, `Kore wa nan da?!`, `Iku ze!`, `Dattebayo`) contrasted with natural, polite Japanese with audio.
+  - Conversational contractions (`〜ちゃう`, `〜とく`, `〜なきゃ`, `〜てる`).
+  - Youth & internet slang (*Yabai*, *Maji de*, *Gachi*, *Egui*, *Kusa/w*, *Ryo*, *Wanchan*, *Otsu*).
+  - Sentence-ending particles (*ze*, *zo*, *wa*, *sa*, *ne*, *yo*, *kashira*, *kana*).
+- **🎵 Pitch Accent & Ear-Training**:
+  - Visual guides for Tokyo's 4 pitch patterns (*Heiban*, *Atamadaka*, *Nakadaka*, *Odaka*).
+  - Interactive minimal-pair audio cards (`雨` vs `飴`, `箸` vs `橋` vs `端`, `牡蠣` vs `柿`, short vs long vowels, double consonants).
+- **📐 Grammar Formulas & Cultural Etiquette**:
+  - Core particles breakdown and verb conjugation matrix (Godan, Ichidan, Irregular).
+  - Practical etiquette guides for bowing angles, chopstick taboos, Onsen bathing rituals, and train manners.
+- **👔 Keigo Demystified**:
+  - Explains *Teineigo*, *Sonkeigo*, and *Kenjougo* with high-frequency verb conversion tables.
 
-### Reading, listening & mock exams
-The back half of the study loop — **Learn → Drill → Read → Listen → Test** — without leaving the app:
-- **Reading:** original JLPT-style passages with comprehension questions and an English-translation toggle, across every level.
-- **Listening:** short dialogues read aloud by the browser's Japanese voice at Slow / Normal / Fast; the script and translation stay hidden until you answer.
-- **Mock Exam:** a timed, three-section test (Language Knowledge / Reading / Listening) scored with real JLPT gating — you pass only with **100/180 overall and at least 19/60 in every section**. Practice material, not official JLPT content.
+---
 
-### RPG quest arena and shop
-- Turn-based battles across five JLPT tiers:
-  - N5: Hiragana Slime (beginner)
-  - N4: Conjugation Warrior (apprentice)
-  - N3: Kanji Shogun (intermediate)
-  - N2: Advanced Ninja
-  - N1: Master Dragon (native)
-- Dictionary-driven quizzes: pulls from the 8,129-word dictionary to generate fresh multiple-choice and spelling questions with plausible wrong answers.
-- Shop: spend the gold you win on healing potions, grammar shields (soak one wrong-answer hit), and hint scrolls (remove a wrong choice).
-- Category stats: tracks your accuracy by question type — particles, kanji, verbs, phrases, readings.
+### 📖 Educational Reading, Listening & Mock Exams
+- **Passage Read-Aloud Audio (朗読)**: Listen to full reading passages read aloud with adjustable speeds (`0.6x`, `0.9x`, `1.1x`).
+- **Pre-Reading Key Vocabulary Drawer**: Kanji, readings, Romaji, and native translations before tackling comprehension questions.
+- **Instant Answer Explanation Cards (解説)**: Every question in Reading and Listening immediately provides an explanation citing text evidence and grammatical rationale.
+- **Authentic Japanese Storybook Library**: Folklore and literature from Aozora Bunko (*Momotaro*, *The Grateful Crane*, *The Rolling Rice Ball*, *Urashima Taro*, *Princess Kaguya*, *Gon the Fox*, *The Spider's Thread*, *Run, Melos!*).
+- **JLPT Mock Exams**: Timed, three-section tests (Language Knowledge, Reading, Listening) scored with official JLPT gating (**100/180 overall and ≥19/60 in every section**).
 
-### Grammar bridge and N1 planner
-- Particle calculator: pick any particle (は, を, に, で, の, と, から, まで) and see its equivalent in Telugu, Hindi, Korean, Tamil, Spanish, and English, side by side.
-- 24-month N1 study plan: a four-phase roadmap aimed at SOV speakers.
+---
 
-### SRS flashcards and dictionary
-- Anki-style spaced repetition: rate a card Again (1m), Hard (12h), Good (3d), or Easy (7d).
-- "Due only" filter to review just what's scheduled.
-- Browse the full N5–N1 vocabulary plus kana, numbers, survival phrases, verbs, and adjectives.
-- Audio through the browser's Web Speech API (`ja-JP`).
+### 🥋 Kanji Dojo, Radicals & Memory Mnemonics
+- Complete Kanji database with stroke orders, Onyomi & Kunyomi readings, native translations, and Jukugo compounds.
+- **Radical Building Blocks**: Integrated dictionary of over 100 common radicals.
+- **Vivid Memory Stories**: Every kanji card includes a dedicated **Radical & Memory Mnemonic (部首と記憶のヒント)** drawer with a vivid visual story connecting its radicals to its meaning.
+- Direct link to the **Canvas Writer** for interactive handwriting tracing.
 
-### Sentence builder
-- Drag or click word chips into the right order (Subject → Topic → Object → Object particle → Verb).
-- Prompts show up in all six supported languages.
+---
 
-### Kana canvas
-- An HTML5 canvas for practicing Hiragana and Katakana strokes, with guide lines and audio.
+### 🎯 Today's Samurai Training (Daily Missions & Sensei Companion)
+- Prominently featured on the main dashboard right below the HUD.
+- **Sensei's Daily Wisdom**: Rotating inspirational quote from the Samurai Sensei.
+- **3 Daily Missions**:
+  1. 📖 **Read & Listen**: Read 1 storybook chapter or JLPT passage.
+  2. 🎴 **Dojo Review**: Win 1 Arena battle or review 5 flashcards.
+  3. 💡 **Knowledge Discovery**: Explore 1 topic or scenario in the Knowledge Hub.
+- **Claim Daily Reward**: Awards **+50 XP and +20 Gold** with celebration audio when all 3 missions are completed.
 
-### PWA and offline
-- Installable to a phone home screen or the desktop (`manifest.json` + `sw.js`).
-- Tracks your study streak by calendar day.
-- Keyboard shortcuts: `1`–`4` to answer in battle, `Space` to flip a card, `←` / `→` to move between cards.
-- Everything (level, HP/XP, gold, inventory, SRS intervals, stats) is saved to `localStorage` — no account, no server.
+---
+
+### ⚔️ RPG Quest Arena and Merchant Shop
+- Turn-based battles across 5 JLPT tiers:
+  - **N5**: Hiragana Slime (beginner)
+  - **N4**: Conjugation Warrior (apprentice)
+  - **N3**: Kanji Shogun (intermediate)
+  - **N2**: Advanced Ninja
+  - **N1**: Master Dragon (native)
+- Procedural quizzes generating questions from the 8,129-word dictionary.
+- Samurai Merchant Shop: spend gold on Healing Potions (restore 40 HP), Grammar Shields (block 1 incorrect answer), and Hint Scrolls (eliminate a wrong choice).
+
+---
+
+### 🎴 SRS Flashcards & Particle Sentence Builder
+- **Spaced Repetition System (SRS)**: Anki-style scheduling — Again (1m), Hard (12h), Good (3d), or Easy (7d) with a "Due Only" filter.
+- **Sentence Builder**: Drag and drop word chips into the correct Japanese syntactic order with prompts in all 8 supported languages.
+- **Writing Canvas**: HTML5 canvas for practicing Hiragana, Katakana, and Kanji strokes with guide lines and native voice pronunciation.
+
+---
+
+### 📱 PWA & 100% Offline Support
+- Installable as a Progressive Web App (`manifest.json` + Service Worker `kotoquest-v8`).
+- All assets, dictionaries, audio synthesizers, and knowledge bases are precached for 100% offline functionality.
+- Preserves your study streak and progress safely in `localStorage` without accounts or tracking.
 
 ---
 
 ## Built with
 
-- Vanilla JavaScript (ES6+), HTML5, CSS3. No framework, no build step.
-- Audio: HTML5 SpeechSynthesis (`ja-JP`).
-- UI: CSS custom properties, a dark neon glass look, HTML5 Canvas.
-- Data: `js/vocab_db.js`, 8,129 curated JLPT entries drawn from the Tanos/Anki datasets.
-- Hosting: static files, so it runs on Cloudflare Pages, GitHub Pages, Netlify, or straight off your disk.
+- **Vanilla JavaScript (ES6+), HTML5, CSS3**: Zero frameworks, zero dependencies, zero build steps.
+- **Web Speech API (`ja-JP`)**: Native browser speech synthesis for passages, phrases, and audio drills.
+- **Dark Glassmorphism UI**: Custom CSS variables, smooth transitions, and responsive mobile-first design.
+- **Curated Data**: Over 8,129 JLPT entries, authentic Aozora Bunko folklore corpus, and cultural knowledge base.
+- **Hosting**: Pure static files — deployable to Cloudflare Pages, GitHub Pages, Netlify, or directly from disk.
 
 ---
 
 ## Run it locally
 
-Open `index.html` in any modern browser. No `npm install`, no server, no build.
+Clone the repository and open `index.html` in any modern browser:
 
 ```bash
 git clone https://github.com/ash01ish/KotoQuest.git
 cd KotoQuest
 open index.html   # macOS
+# or start a simple static server:
+python3 -m http.server 8000
 ```
 
 ---
 
 ## Contributing
 
-Pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good places to add things:
-- New reading/listening practice in `js/data/reading.js` and `js/data/listening.js`
-- New lessons in `index.html` (`.day-pane` blocks) and their translations in `js/lang/lessons-html-*.js`
-- New quiz questions in `QUEST_DATABASE`
-- New particle mappings in `PARTICLE_CALC_DATA`
-- New sentence challenges in `SENTENCE_LEVELS`
+Pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
