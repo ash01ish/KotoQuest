@@ -85,7 +85,7 @@
 
     // Render MC questions into `container`. `answer` is the index of the correct
     // option. Calls onDone(correctCount) once every question is answered.
-    function renderQuestions(container, questions, onDone) {
+    function renderQuestions(container, questions, onDone, parentItem) {
         let answered = 0, correct = 0;
         questions.forEach((qq, qi) => {
             const card = document.createElement('div');
@@ -105,6 +105,11 @@
             const opts = document.createElement('div');
             opts.className = 'practice-opts';
             let locked = false;
+
+            const explBox = document.createElement('div');
+            explBox.className = 'practice-explanation';
+            explBox.style.display = 'none';
+
             qq.options.forEach((opt, oi) => {
                 const ob = document.createElement('button');
                 ob.type = 'button';
@@ -114,14 +119,39 @@
                     if (locked) return;
                     locked = true;
                     answered++;
-                    if (oi === qq.answer) correct++;
+                    const isRight = (oi === qq.answer);
+                    if (isRight) correct++;
                     else ob.classList.add('wrong');
                     opts.children[qq.answer].classList.add('right');
+
+                    // Show Explanation Card
+                    explBox.style.display = 'block';
+                    explBox.style.marginTop = '12px';
+                    explBox.style.padding = '12px 14px';
+                    explBox.style.borderRadius = '8px';
+                    explBox.style.fontSize = '0.85rem';
+                    explBox.style.lineHeight = '1.45';
+                    explBox.style.border = isRight ? '1px solid rgba(32,191,107,0.3)' : '1px solid rgba(255,118,117,0.3)';
+                    explBox.style.background = isRight ? 'rgba(32,191,107,0.08)' : 'rgba(255,118,117,0.08)';
+
+                    const correctOptText = qq.options[qq.answer];
+                    const explText = (code && qq['explanation_' + code]) || qq.explanation_en || qq.explanation ||
+                        `Correct answer: "${correctOptText}". This option directly matches the authentic details in the passage.`;
+
+                    explBox.innerHTML = `
+                        <div style="font-weight: 700; color: ${isRight ? 'var(--accent-teal, #20bf6b)' : 'var(--accent-pink, #ff7675)'}; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                            <i class="fa-solid ${isRight ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
+                            <span>${isRight ? (t('p.correct') || 'Correct! (正解)') : (t('p.incorrect') || 'Incorrect')}</span>
+                        </div>
+                        <div style="color: #ddd;">${explText}</div>
+                    `;
+
                     if (answered === questions.length && onDone) onDone(correct);
                 };
                 opts.appendChild(ob);
             });
             card.appendChild(opts);
+            card.appendChild(explBox);
             container.appendChild(card);
         });
     }
@@ -194,6 +224,7 @@
     }
 
     function openReading(item, lv, backToList) {
+        if (typeof window.markDailyMission === 'function') window.markDailyMission('read');
         const root = document.getElementById('reading');
         root.innerHTML = '';
         const card = document.createElement('div');
@@ -204,6 +235,36 @@
         title.textContent = item.title;
         card.appendChild(title);
 
+        // Listen to Passage Audio Controls
+        const audioBar = document.createElement('div');
+        audioBar.className = 'reading-audio-bar';
+        audioBar.style.cssText = 'display: flex; align-items: center; gap: 8px; margin: 10px 0 14px 0; padding: 8px 12px; border-radius: 8px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08);';
+        
+        let rate = 0.9;
+        const playBtn = document.createElement('button');
+        playBtn.type = 'button';
+        playBtn.className = 'btn listening-play';
+        playBtn.style.cssText = 'padding: 6px 14px; font-size: 0.85rem; font-weight: 600; border-radius: 20px;';
+        playBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i> Listen to Passage (朗読)';
+        playBtn.onclick = () => {
+            if (typeof speakJapanese === 'function') speakJapanese(item.passage, rate);
+        };
+        audioBar.appendChild(playBtn);
+
+        [[t('p.slow') || 'Slow', 0.6], [t('p.normal') || 'Normal', 0.9], [t('p.fast') || 'Fast', 1.1]].forEach(([lab, r]) => {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'listening-speed' + (r === rate ? ' active' : '');
+            b.textContent = lab;
+            b.onclick = () => {
+                rate = r;
+                audioBar.querySelectorAll('.listening-speed').forEach(x => x.classList.remove('active'));
+                b.classList.add('active');
+            };
+            audioBar.appendChild(b);
+        });
+        card.appendChild(audioBar);
+
         const passage = document.createElement('div');
         passage.className = 'reading-passage';
         passage.textContent = item.passage;
@@ -212,6 +273,26 @@
         const nativePassage = (code && item['passage_' + code]) || item.passage_en;
         const toggleLabel = (code && code !== 'en') ? (t('p.showTranslation') || 'Show translation') : t('p.showEn');
         if (nativePassage) card.appendChild(detailsBlock(toggleLabel, nativePassage));
+
+        // Key Vocabulary / Educational Helpers
+        if (item.vocab && item.vocab.length) {
+            const vBlock = document.createElement('details');
+            vBlock.className = 'practice-details';
+            vBlock.style.marginTop = '10px';
+            const vSummary = document.createElement('summary');
+            vSummary.innerHTML = '<i class="fa-solid fa-book-bookmark" style="color:var(--accent-gold);"></i> Key Vocabulary & Readings (語彙)';
+            vBlock.appendChild(vSummary);
+            const vBody = document.createElement('div');
+            vBody.className = 'practice-details-body';
+            vBody.innerHTML = item.vocab.map(v => `
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <span style="font-weight: 700; color: #fff;">${v.ja} (${v.reading})</span>
+                    <span style="color: #bbb;">${v[code] || v.en}</span>
+                </div>
+            `).join('');
+            vBlock.appendChild(vBody);
+            card.appendChild(vBlock);
+        }
 
         const qWrap = document.createElement('div');
         qWrap.className = 'practice-questions';
@@ -223,7 +304,7 @@
             award(10 + correct * 3, correct * 2);
             result.className = 'practice-result';
             result.textContent = t('p.result', { c: correct, t: total }) + '  +' + (10 + correct * 3) + ' XP';
-        });
+        }, item);
         root.appendChild(card);
     }
 
@@ -273,6 +354,7 @@
     }
 
     function openListening(item) {
+        if (typeof window.markDailyMission === 'function') window.markDailyMission('read');
         const root = document.getElementById('listening');
         root.innerHTML = '';
         const card = document.createElement('div');
@@ -328,7 +410,7 @@
             const nativeTranscript = (code && item['transcript_' + code]) || item.transcript_en;
             const toggleLabel = (code && code !== 'en') ? (t('p.showTranslation') || 'Show translation') : t('p.showEn');
             if (nativeTranscript) after.appendChild(detailsBlock(toggleLabel, nativeTranscript));
-        });
+        }, item);
         root.appendChild(card);
     }
 

@@ -1,3 +1,4541 @@
-// LISTENING_BANK — original JLPT-style practice content with multilingual translations.
+// LISTENING_BANK — original JLPT-style listening scripts with multilingual transcripts.
 // Practice material, not official exam content.
-window.LISTENING_BANK = {"N5":[{"id":"l-n5-1","title":"カフェで (At a Café)","script":"すみません、コーヒーを ひとつ ください。それから、ケーキも おねがいします。ぜんぶで いくらですか。","transcript_en":"Excuse me, one coffee please. And a cake as well, please. How much is it all together?","questions":[{"q":"この人は なにを ちゅうもんしましたか。","q_en":"What did this person order?","options":["コーヒーと ケーキ","おちゃと パン","コーヒーだけ","ケーキだけ"],"answer":0},{"q":"この人は さいごに なにを ききましたか。","q_en":"What did this person ask at the end?","options":["ねだん (price)","じかん (time)","みち (directions)","なまえ (name)"],"answer":0}]},{"id":"l-n5-2","title":"じこしょうかい (Self-introduction)","script":"はじめまして。わたしは たなか ゆいです。だいがくせいです。まいにち でんしゃで がっこうへ いきます。すきな たべものは すしです。どうぞ よろしく おねがいします。","transcript_en":"Nice to meet you. I am Tanaka Yui. I am a university student. Every day I go to school by train. My favorite food is sushi. It's a pleasure to meet you.","questions":[{"q":"たなかさんは なにを して いますか。","q_en":"What does Tanaka do?","options":["だいがくせい (university student)","せんせい (teacher)","いしゃ (doctor)","かいしゃいん (office worker)"],"answer":0},{"q":"たなかさんは なにで がっこうへ いきますか。","q_en":"How does Tanaka go to school?","options":["バス (bus)","でんしゃ (train)","くるま (car)","じてんしゃ (bicycle)"],"answer":1},{"q":"たなかさんの すきな たべものは なんですか。","q_en":"What is Tanaka's favorite food?","options":["ラーメン (ramen)","パン (bread)","すし (sushi)","カレー (curry)"],"answer":2}]},{"id":"l-n5-3","title":"くだものやで (At the fruit shop)","script":"みせのひと: いらっしゃいませ。\nおきゃく: すみません、りんごは いくらですか。\nみせのひと: ひとつ 150えんです。\nおきゃく: じゃあ、みっつ ください。\nみせのひと: ありがとうございます。ぜんぶで 450えんです。","transcript_en":"Shopkeeper: Welcome.\nCustomer: Excuse me, how much are the apples?\nShopkeeper: They are 150 yen each.\nCustomer: Then, please give me three.\nShopkeeper: Thank you. That will be 450 yen in total.","questions":[{"q":"おきゃくさんは なにを かいますか。","q_en":"What does the customer buy?","options":["みかん (mandarin)","りんご (apple)","バナナ (banana)","いちご (strawberry)"],"answer":1},{"q":"りんごを いくつ かいますか。","q_en":"How many apples does the customer buy?","options":["ひとつ (one)","ふたつ (two)","みっつ (three)","よっつ (four)"],"answer":2},{"q":"ぜんぶで いくらですか。","q_en":"How much is it in total?","options":["450えん (450 yen)","150えん (150 yen)","300えん (300 yen)","600えん (600 yen)"],"answer":0}]},{"id":"l-n5-4","title":"にちようびの あさ (Sunday morning)","script":"わたしの かぞくは よにんです。ちちと ははと いもうとが います。にちようびは かぞくで こうえんへ いきます。あさ 9じに うちを でます。とても たのしいです。","transcript_en":"My family has four people. I have a father, a mother, and a younger sister. On Sundays, my family goes to the park. We leave home at 9 in the morning. It is a lot of fun.","questions":[{"q":"この ひとの かぞくは なんにんですか。","q_en":"How many people are in this person's family?","options":["さんにん (three)","よにん (four)","ごにん (five)","ふたり (two)"],"answer":1},{"q":"にちようびに どこへ いきますか。","q_en":"Where do they go on Sunday?","options":["がっこう (school)","スーパー (supermarket)","こうえん (park)","びょういん (hospital)"],"answer":2},{"q":"なんじに うちを でますか。","q_en":"What time do they leave home?","options":["9じ (9:00)","8じ (8:00)","10じ (10:00)","7じ (7:00)"],"answer":0}]},{"id":"l-n5-5","title":"コンビニで (At the Convenience Store)","script":"店員：いらっしゃいませ。\nお客：すみません、お弁当をあたためてください。\n店員：はい。お飲み物はいりますか。\nお客：じゃあ、お茶を一本ください。","transcript_en":"Clerk: Welcome.\nCustomer: Excuse me, please heat up the bento.\nClerk: Yes. Would you like a drink?\nCustomer: Then, one bottle of tea, please.","questions":[{"q":"お客は何をあたためてもらいますか。","q_en":"What does the customer have heated up?","options":["お茶","お弁当","パン","コーヒー"],"answer":1},{"q":"お客は飲み物を何本買いますか。","q_en":"How many bottles of the drink does the customer buy?","options":["一本","二本","三本","買いません"],"answer":0},{"q":"お客は何の飲み物を買いますか。","q_en":"What drink does the customer buy?","options":["水","コーヒー","お茶","ジュース"],"answer":2}]},{"id":"l-n5-6","title":"駅で (At the Station)","script":"男の人：すみません、東京行きの電車は何番線ですか。\n駅員：三番線です。\n男の人：次の電車は何時に出ますか。\n駅員：九時十五分に出ますよ。","transcript_en":"Man: Excuse me, which platform is the train bound for Tokyo?\nStation staff: Platform 3.\nMan: What time does the next train leave?\nStation staff: It leaves at 9:15.","questions":[{"q":"東京行きの電車は何番線ですか。","q_en":"Which platform is the Tokyo-bound train?","options":["一番線","二番線","三番線","四番線"],"answer":2},{"q":"次の電車は何時に出ますか。","q_en":"What time does the next train leave?","options":["九時十五分","九時五十分","十時十五分","八時十五分"],"answer":0},{"q":"男の人はどこへ行きますか。","q_en":"Where is the man going?","options":["大阪","京都","東京","名古屋"],"answer":2}]},{"id":"l-n5-7","title":"レストランで (At the Restaurant)","script":"店員：ご注文はお決まりですか。\n女の人：はい。カレーとサラダをお願いします。\n店員：お飲み物は。\n女の人：冷たい水をお願いします。あ、カレーは辛くしないでください。","transcript_en":"Waiter: Have you decided on your order?\nWoman: Yes. Curry and a salad, please.\nWaiter: And to drink?\nWoman: Cold water, please. Oh, please don't make the curry spicy.","questions":[{"q":"女の人は何を食べますか。","q_en":"What will the woman eat?","options":["ラーメンとサラダ","カレーとサラダ","カレーとパン","サラダだけ"],"answer":1},{"q":"女の人は何を飲みますか。","q_en":"What will the woman drink?","options":["温かいお茶","ジュース","冷たい水","コーヒー"],"answer":2},{"q":"女の人はカレーをどうしてほしいですか。","q_en":"How does the woman want the curry?","options":["辛くしてほしい","辛くしないでほしい","甘くしてほしい","大きくしてほしい"],"answer":1}]},{"id":"l-n5-8","title":"あしたの天気 (Tomorrow's Weather)","script":"あしたの天気をお伝えします。あしたの朝は雨が降ります。でも、昼から晴れます。かさを持って出かけてください。","transcript_en":"Here is tomorrow's weather. Tomorrow morning it will rain. But from noon it will be sunny. Please take an umbrella when you go out.","questions":[{"q":"あしたの朝の天気はどうですか。","q_en":"What is the weather like tomorrow morning?","options":["晴れです","雨です","雪です","くもりです"],"answer":1},{"q":"昼から天気はどうなりますか。","q_en":"What does the weather become from noon?","options":["雨になります","雪になります","晴れます","かぜが強くなります"],"answer":2},{"q":"出かけるとき、何を持っていきますか。","q_en":"What should you take when going out?","options":["ぼうし","かさ","かばん","くつ"],"answer":1}]},{"id":"l-n5-9","title":"図書館で (At the Library)","script":"学生：すみません、この本を借りたいです。\n図書館の人：はい、学生証はありますか。\n学生：はい、あります。いつまでに返しますか。\n図書館の人：来週の月曜日までに返してください。","transcript_en":"Student: Excuse me, I'd like to borrow this book.\nLibrarian: Yes, do you have your student ID?\nStudent: Yes, I do. By when do I return it?\nLibrarian: Please return it by next Monday.","questions":[{"q":"学生は図書館で何をしますか。","q_en":"What does the student do at the library?","options":["本を返します","本を借ります","本を読みます","本を買います"],"answer":1},{"q":"図書館の人は何を見せてほしいと言いましたか。","q_en":"What did the librarian ask to be shown?","options":["パスポート","お金","学生証","電話番号"],"answer":2},{"q":"いつまでに本を返しますか。","q_en":"By when should the book be returned?","options":["あしたまでに","来週の月曜日までに","来月までに","今日までに"],"answer":1}]},{"id":"l-n5-10","title":"しゅうまつの予定 (Weekend Plans)","script":"男の人：土曜日、いっしょにサッカーをしませんか。\n女の人：土曜日はちょっと…。日曜日はどうですか。\n男の人：いいですね。じゃあ、日曜日の午後、公園で会いましょう。","transcript_en":"Man: Won't you play soccer together on Saturday?\nWoman: Saturday is a little... How about Sunday?\nMan: Sounds good. Then let's meet at the park on Sunday afternoon.","questions":[{"q":"二人は何をしますか。","q_en":"What will the two of them do?","options":["テニスをします","サッカーをします","えいがを見ます","かいものをします"],"answer":1},{"q":"二人はいつ会いますか。","q_en":"When will the two of them meet?","options":["土曜日","日曜日","月曜日","金曜日"],"answer":1},{"q":"二人はどこで会いますか。","q_en":"Where will the two of them meet?","options":["公園","えき","学校","レストラン"],"answer":0}]},{"id":"l-n5-11","title":"パンやで (At the Bakery)","script":"おきゃく: すみません、この メロンパンを ふたつ ください。\nみせのひと: はい、かしこまりました。ほかには いかがですか。\nおきゃく: じゃあ、この サンドイッチも ひとつ おねがいします。\nみせのひと: ぜんぶで 600えんです。","transcript_en":"Customer: Excuse me, two of these melon pans, please.\nClerk: Yes, certainly. Would you like anything else?\nCustomer: Then, one of these sandwiches too, please.\nClerk: That will be 600 yen in total.","transcript_te":"కస్టమర్: క్షమించండి, ఈ మెలోన్ పాన్ రెండు ఇవ్వండి.\nదుకాణదారు: తప్పకుండా అండీ. ఇంకా ఏమైనా కావాలా?\nకస్టమర్: అయితే, ఈ శాండ్‌విచ్ కూడా ఒకటి ఇవ్వండి.\nదుకాణదారు: మొత్తం 600 యెన్లు అవుతుంది.","transcript_hi":"ग्राहक: सुनिए, कृपया दो तरबूज बन (मेलन पैन) दीजिए।\nदुकानदार: जी बिल्कुल। और कुछ चाहिए?\nग्राहक: तो फिर, यह एक सैंडविच भी दे दीजिए।\nदुकानदार: कुल मिलाकर 600 येन हुए।","transcript_ta":"வாடிக்கையாளர்: மன்னிக்கவும், இந்த மெலன் பான் இரண்டு கொடுங்கள்.\nகடைக்காரர்: நிச்சயமாக. வேறு ஏதேனும் வேண்டுமா?\nவாடிக்கையாளர்: அப்படியானால், இந்த சாண்ட்விச்சும் ஒன்று கொடுங்கள்.\nகடைக்காரர்: மொத்தம் 600 யென்.","transcript_ko":"손님: 실례합니다, 이 멜론빵 두 개 주세요.\n점원: 네, 알겠습니다. 다른 것은 어떠세요?\n손님: 그럼, 이 샌드위치도 하나 부탁합니다.\n점원: 모두 600엔입니다.","transcript_es":"Cliente: Disculpe, dos de estos panes de melón, por favor.\nEmpleado: Sí, con gusto. ¿Desea algo más?\nCliente: Entonces, también uno de estos sándwiches, por favor.\nEmpleado: Son 600 yenes en total.","transcript_kn":"ಗ್ರಾಹಕ: ಕ್ಷಮಿಸಿ, ಈ ಮೆಲನ್ ಬನ್ ಎರಡು ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಖಂಡಿತ. ಬೇರೆ ಏನಾದರೂ ಬೇಕೇ?\nಗ್ರಾಹಕ: ಹಾಗಾದರೆ, ಈ ಸ್ಯಾಂಡ್‌ವಿಚ್ ಕೂಡ ಒಂದು ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಒಟ್ಟು 600 ಯೆನ್ ಆಗಿದೆ.","transcript_ml":"ഉപഭോക്താവ്: ക്ഷമിക്കണം, ഈ മെലൻ പാൻ രണ്ടെണ്ണം തരൂ.\nകടക്കാരൻ: തീർച്ചയായും. വേറെ എന്തെങ്കിലും വേണമോ?\nഉപഭോക്താവ്: എന്നാൽ, ഈ സാൻഡ്‌വിച്ചും ഒരെണ്ണം തരൂ.\nകടക്കാരൻ: ആകെ 600 യെൻ.","questions":[{"q":"おきゃくは メロンパンを いくつ かいましたか。","q_en":"How many melon pans did the customer buy?","q_te":"కస్టమర్ ఎన్ని మెలోన్ పాన్ కొన్నారు?","q_hi":"ग्राहक ने कितने मेलन पैन खरीदे?","q_ta":"வாடிக்கையாளர் எத்தனை மெலன் பான் வாங்கினார்?","q_ko":"손님은 멜론빵을 몇 개 샀습니까?","q_es":"¿Cuántos panes de melón compró el cliente?","q_kn":"ಗ್ರಾಹಕ ಎಷ್ಟು ಮೆಲನ್ ಬನ್‌ಗಳನ್ನು ಖರೀದಿಸಿದನು?","q_ml":"ഉപഭോക്താവ് എത്ര മെലൻ പാൻ വാങ്ങി?","options":["ひとつ (one)","ふたつ (two)","みっつ (three)","よっつ (four)"],"answer":1},{"q":"ぜんぶで いくらでしたか。","q_en":"How much was it in total?","q_te":"మొత్తం ఎంత అయింది?","q_hi":"कुल कितने हुए?","q_ta":"மொத்தம் எவ்வளவு?","q_ko":"모두 얼마였습니까?","q_es":"¿Cuánto fue en total?","q_kn":"ಒಟ್ಟು ಎಷ್ಟಾಯಿತು?","q_ml":"ആകെ എത്രയായി?","options":["500えん","600えん","700えん","400えん"],"answer":1}]},{"id":"l-n5-12","title":"えきのアナウンス (Station Announcement)","script":"まもなく 2ばんせんに でんしゃが まいります。あぶないですから、きいろい せんの うちがわまで おさがりください。この でんしゃは とうきょういきです。","transcript_en":"A train will shortly arrive on track 2. Because it is dangerous, please stand behind the yellow line. This train is bound for Tokyo.","transcript_te":"త్వరలో 2వ నంబర్ ట్రాక్‌పై రైలు రానుంది. ప్రమాదకరం కాబట్టి, పసుపు గీత వెనుక వేచి ఉండండి. ఈ రైలు టోక్యో వెళ్తుంది.","transcript_hi":"शीघ्र ही प्लेटफार्म नंबर 2 पर ट्रेन आ रही है। खतरा होने के कारण, कृपया पीली रेखा के पीछे खड़े रहें। यह ट्रेन टोक्यो जा रही है।","transcript_ta":"சிறிது நேரத்தில் தடம் எண் 2ல் ரயில் வரவிருக்கிறது. ஆபத்தானது என்பதால், மஞ்சள் கோட்டிற்குப் பின்னால் நிற்குமாறு கேட்டுக்கொள்ளப்படுகிறீர்கள். இந்த ரயில் டோக்கியோ செல்கிறது.","transcript_ko":"잠시 후 2번선에 열차가 들어옵니다. 위험하오니 노란 선 안쪽으로 물러서 주십시오. 이 열차는 도쿄행입니다.","transcript_es":"En breve llegará un tren a la vía 2. Por razones de seguridad, permanezca detrás de la línea amarilla. Este tren va con destino a Tokio.","transcript_kn":"ಸ್ವಲ್ಪ ಸಮಯದಲ್ಲಿ 2ನೇ ಟ್ರ್ಯಾಕ್‌ನಲ್ಲಿ ರೈಲು ಬರಲಿದೆ. ಅಪಾಯಕಾರಿಯಾಗಿರುವುದರಿಂದ, ಹಳದಿ ರೇಖೆಯ ಹಿಂದೆ ನಿಲ್ಲಿ. ಈ ರೈಲು ಟೋಕಿಯೋಗೆ ಹೋಗುತ್ತದೆ.","transcript_ml":"ഉടൻ തന്നെ പ്ലാറ്റ്‌ഫോം നമ്പർ 2-ൽ ട്രെയിൻ എത്തും. അപകടസാധ്യതയുള്ളതിനാൽ ദയവായി മഞ്ഞ വരയ്ക്ക് പിന്നിൽ നിൽക്കുക. ഈ ട്രെയിൻ ടോക്കിയോയിലേക്കാണ്.","questions":[{"q":"でんしゃは なんばんせんに きますか。","q_en":"Which platform is the train arriving on?","q_te":"రైలు ఏ ప్లాట్‌ఫారమ్‌కు వస్తుంది?","q_hi":"ट्रेन किस प्लेटफार्म पर आ रही है?","q_ta":"ரயில் எந்த நடைமேடைக்கு வருகிறது?","q_ko":"열차는 몇 번선에 옵니까?","q_es":"¿En qué vía llega el tren?","q_kn":"ರೈಲು ಎಷ್ಟನೇ ಟ್ರ್ಯಾಕ್‌ಗೆ ಬರುತ್ತದೆ?","q_ml":"ട്രെയിൻ ഏത് പ്ലാറ്റ്‌ഫോമിലാണ് വരുന്നത്?","options":["1ばんせん","2ばんせん","3ばんせん","4ばんせん"],"answer":1},{"q":"この でんしゃは どこへ いきますか。","q_en":"Where is this train going?","q_te":"ఈ రైలు ఎక్కడికి వెళ్తుంది?","q_hi":"यह ट्रेन कहाँ जा रही है?","q_ta":"இந்த ரயில் எங்கு செல்கிறது?","q_ko":"이 열차는 어디로 갑니까?","q_es":"¿A dónde va este tren?","q_kn":"ಈ ರೈಲು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತದೆ?","q_ml":"ഈ ട്രെയിൻ എങ്ങോട്ടാണ് പോകുന്നത്?","options":["おおさか","とうきょう","きょうと","なごや"],"answer":1}]},{"id":"l-n5-13","title":"でんわで (On the Phone)","script":"A: もしもし、田中さんですか。\nB: はい、田中です。\nA: 今日、いっしょに 晩ご飯を 食べませんか。\nB: いいですね。何時に 会いましょうか。\nA: 7時は どうですか。\nB: はい、7時に 駅の前で 会いましょう。","transcript_en":"A: Hello, is this Tanaka-san?\nB: Yes, this is Tanaka.\nA: Would you like to have dinner together today?\nB: Sounds good! What time shall we meet?\nA: How about 7:00?\nB: Yes, let's meet in front of the station at 7:00.","transcript_te":"A: హలో, తనాకా గారా?\nB: అవును, తనాకాని మాట్లాడుతున్నాను.\nA: ఈ రోజు సాయంత్రం కలిసి భోజనం చేద్దామా?\nB: మంచి ఆలోచన! ఎన్ని గంటలకు కలుద్దాం?\nA: 7 గంటలైతే ఎలా ఉంటుంది?\nB: సరే, 7 గంటలకు స్టేషన్ ముందు కలుద్దాం.","transcript_hi":"A: हैलो, क्या आप तनाका जी हैं?\nB: हाँ, मैं तनाका बोल रहा हूँ।\nA: क्या आज साथ में रात का खाना खाएँगे?\nB: बहुत अच्छा रहेगा! कितने बजे मिलें?\nA: 7 बजे कैसा रहेगा?\nB: ठीक है, 7 बजे स्टेशन के सामने मिलते हैं।","transcript_ta":"A: ஹலோ, தனாக்கா அவர்களா?\nB: ஆம், தனாக்கா பேசுகிறேன்.\nA: இன்று இரவு ஒன்றாக சாப்பிடலாமா?\nB: நல்ல யோசனை! எத்தனை மணிக்கு சந்திப்போம்?\nA: 7 மணி பரவாயில்லையா?\nB: சரி, 7 மணிக்கு ரயில் நிலையத்தின் முன் சந்திப்போம்.","transcript_ko":"A: 여보세요, 다나카 씨입니까?\nB: 네, 다나카입니다.\nA: 오늘 같이 저녁을 먹지 않겠습니까?\nB: 좋네요! 몇 시에 만날까요?\nA: 7시는 어때요?\nB: 네, 7시에 역 앞에서 만납시다.","transcript_es":"A: Hola, ¿es Tanaka-san?\nB: Sí, habla Tanaka.\nA: ¿Te gustaría cenar juntos hoy?\nB: ¡Me parece genial! ¿A qué hora nos vemos?\nA: ¿Qué tal a las 7:00?\nB: Sí, veámonos frente a la estación a las 7:00.","transcript_kn":"A: ಹಲೋ, ತನಾಕಾ ಅವರೇ?\nB: ಹೌದು, ತನಾಕಾ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ.\nA: ಇಂದು ಒಟ್ಟಿಗೆ ಊಟ ಮಾಡೋಣವೇ?\nB: ಒಳ್ಳೆಯದು! ಎಷ್ಟು ಗಂಟೆಗೆ ಭೇಟಿಯಾಗೋಣ?\nA: 7 ಗಂಟೆ ಹೇಗಿದೆ?\nB: ಸರಿ, 7 ಗಂಟೆಗೆ ನಿಲ್ದಾಣದ ಮುಂದೆ ಭೇಟಿಯಾಗೋಣ.","transcript_ml":"A: ഹലോ, തനാക്കയാണോ?\nB: അതെ, തനാക്കയാണ് സംസാരിക്കുന്നത്.\nA: ഇന്ന് രാത്രി ഒന്നിച്ച് ഭക്ഷണം കഴിച്ചാലോ?\nB: നല്ല ആശയം! എത്ര മണിക്ക് കാണാം?\nA: 7 മണി എങ്ങനെയുണ്ട്?\nB: ശരി, 7 മണിക്ക് സ്റ്റേഷന് മുന്നിൽ കാണാം.","questions":[{"q":"二人は 何時に 会いますか。","q_en":"What time will the two meet?","q_te":"ఇద్దరూ ఎన్ని గంటలకు కలుస్తారు?","q_hi":"दोनों कितने बजे मिलेंगे?","q_ta":"இருவரும் எத்தனை மணிக்கு சந்திப்பார்கள்?","q_ko":"두 사람은 몇 시에 만납니까?","q_es":"¿A qué hora se verán los dos?","q_kn":"ಇಬ್ಬರೂ ಎಷ್ಟು ಗಂಟೆಗೆ ಭೇಟಿಯಾಗುತ್ತಾರೆ?","q_ml":"രണ്ടുപേരും എത്ര മണിക്ക് കാണും?","options":["6時","7時","8時","9時"],"answer":1},{"q":"二人は どこで 会いますか。","q_en":"Where will the two meet?","q_te":"ఇద్దరూ ఎక్కడ కలుస్తారు?","q_hi":"दोनों कहाँ मिलेंगे?","q_ta":"இருவரும் எங்கு சந்திப்பார்கள்?","q_ko":"두 사람은 어디서 만납니까?","q_es":"¿Dónde se encontrarán los dos?","q_kn":"ಇಬ್ಬರೂ ಎಲ್ಲಿ ಭೇಟಿಯಾಗುತ್ತಾರೆ?","q_ml":"രണ്ടുപേരും എവിടെയാണ് കാണുന്നത്?","options":["駅の前","レストランの中","会社","家"],"answer":0}]},{"id":"l-n5-14","title":"としょかんで (At the Library)","script":"がくせい: すみません、この 本を 借りたいです。\nかかりのひと: はい、としょかんカードは ありますか。\nがくせい: はい、これです。\nかかりのひと: ありがとうございます。二週間 借りられますよ。","transcript_en":"Student: Excuse me, I want to borrow this book.\nStaff: Yes, do you have a library card?\nStudent: Yes, here it is.\nStaff: Thank you. You can borrow it for two weeks.","transcript_te":"విద్యార్థి: క్షమించండి, నేను ఈ పుస్తకం తీసుకోవాలనుకుంటున్నాను.\nసిబ్బంది: సరే, లైబ్రరీ కార్డు ఉందా?\nవిద్యార్థి: అవును, ఇదిగోండి.\nసిబ్బంది: ధన్యవాదాలు. మీరు రెండు వారాల పాటు తీసుకోవచ్చు.","transcript_hi":"छात्र: सुनिए, मैं यह किताब लेना चाहता हूँ।\nकर्मचारी: हाँ, क्या आपके पास लाइब्रेरी कार्ड है?\nछात्र: हाँ, यह रहा।\nकर्मचारी: धन्यवाद। आप इसे दो सप्ताह के लिए ले सकते हैं।","transcript_ta":"மாணவர்: மன்னிக்கவும், நான் இந்த புத்தகத்தை கடன் வாங்க விரும்புகிறேன்.\nஊழியர்: சரி, உங்களிடம் நூலக அட்டை உள்ளதா?\nமாணவர்: ஆம், இதோ இருக்கிறது.\nஊழியர்: நன்றி. இரண்டு வாரங்களுக்கு கடன் வாங்கலாம்.","transcript_ko":"학생: 실례합니다, 이 책을 빌리고 싶습니다.\n직원: 네, 도서관 카드가 있습니까?\n학생: 네, 여기 있습니다.\n직원: 감사합니다. 2주일 동안 빌릴 수 있습니다.","transcript_es":"Estudiante: Disculpe, quiero pedir prestado este libro.\nBibliotecario: Sí, ¿tiene su tarjeta de biblioteca?\nEstudiante: Sí, aquí tiene.\nBibliotecario: Gracias. Puede pedirlo prestado por dos semanas.","transcript_kn":"ವಿದ್ಯಾರ್ಥಿ: ಕ್ಷಮಿಸಿ, ನಾನು ಈ ಪುಸ್ತಕವನ್ನು ಎರವಲು ಪಡೆಯಲು ಬಯಸುತ್ತೇನೆ.\nಸಿಬ್ಬಂದಿ: ಹೌದು, ಲೈಬ್ರರಿ ಕಾರ್ಡ್ ಇದೆಯೇ?\nವಿದ್ಯಾರ್ಥಿ: ಹೌದು, ಇಲ್ಲಿದೆ.\nಸಿಬ್ಬಂದಿ: ಧನ್ಯವಾದಗಳು. ನೀವು ಎರಡು ವಾರಗಳವರೆಗೆ ಎರವಲು ಪಡೆಯಬಹುದು.","transcript_ml":"വിദ്യാർത്ഥി: ക്ഷമിക്കണം, എനിക്ക് ഈ പുസ്തകം കടം വേണം.\nജീവനക്കാരൻ: ശരി, ലൈബ്രറി കാർഡുണ്ടോ?\nവിദ്യാർത്ഥി: അതെ, ഇതാ.\nജീവനക്കാരൻ: നന്ദി. രണ്ടാഴ്ചത്തേക്ക് കടമെടുക്കാം.","questions":[{"q":"本を 何週間 借りられますか。","q_en":"How many weeks can the book be borrowed for?","q_te":"పుస్తకాన్ని ఎన్ని వారాల పాటు తీసుకోవచ్చు?","q_hi":"किताब कितने सप्ताह के लिए ली जा सकती है?","q_ta":"புத்தகத்தை எத்தனை வாரங்கள் கடன் வாங்கலாம்?","q_ko":"책을 몇 주일 동안 빌릴 수 있습니까?","q_es":"¿Por cuántas semanas se puede pedir prestado el libro?","q_kn":"ಪುಸ್ತಕವನ್ನು ಎಷ್ಟು ವಾರಗಳವರೆಗೆ ಎರವಲು ಪಡೆಯಬಹುದು?","q_ml":"പുസ്തകം എത്ര ആഴ്ചത്തേക്ക് കടമെടുക്കാം?","options":["一週間","二週間","三週間","一ヶ月"],"answer":1}]},{"id":"l-n5-15","title":"びょういんで (At the Clinic)","script":"いしゃ: どうしましたか。\nかんじゃ: きのうから あたまが いたくて、ねつも あります。\nいしゃ: そうですか。かぜですね。この くすりを 一日 三回、食後に のんでください。そして 今日は 早く ねてくださいね。\nかんじゃ: わかりました。ありがとうございました。","transcript_en":"Doctor: What seems to be the problem?\nPatient: Since yesterday I have had a headache and also a fever.\nDoctor: I see. It is a cold. Please take this medicine three times a day after meals. And please go to sleep early today.\nPatient: I understand. Thank you very much.","transcript_te":"వైద్యుడు: ఏమైంది?\nరోగి: నిన్నటి నుండి తలనొప్పిగా ఉంది, మరియు జ్వరం కూడా ఉంది.\nవైద్యుడు: అలాగే. జలుబు చేసింది. ఈ మందును రోజుకు మూడుసార్లు భోజనం తర్వాత వేసుకోండి. మరియు ఈ రోజు త్వరగా పడుకోండి.\nరోగి: అర్థమైంది. చాలా ధన్యవాదాలు.","transcript_hi":"डॉक्टर: क्या समस्या है?\nमरीज: कल से सिरदर्द है और बुखार भी है।\nडॉक्टर: अच्छा। यह सर्दी-जुकाम है। इस दवा को दिन में तीन बार भोजन के बाद लें। और आज जल्दी सो जाएँ।\nमरीज: समझ गया। बहुत-बहुत धन्यवाद।","transcript_ta":"மருத்துவர்: என்ன பிரச்சனை?\nநோயாளி: நேற்றிலிருந்து தலைவலியும் காய்ச்சலும் இருக்கிறது.\nமருத்துவர்: அப்படியா. சளி பிடித்துள்ளது. இந்த மருந்தை ஒரு நாளைக்கு மூன்று முறை உணவுக்குப் பிறகு உட்கொள்ளவும். இன்று சீக்கிரம் தூங்குங்கள்.\nநோயாளி: புரிந்தது. மிக்க நன்றி.","transcript_ko":"의사: 어떻게 오셨습니까?\n환자: 어제부터 머리가 아프고 열도 있습니다.\n의사: 그렇군요. 감기네요. 이 약을 하루에 세 번, 식후에 드세요. 그리고 오늘은 일찍 주무세요.\n환자: 알겠습니다. 감사합니다.","transcript_es":"Doctor: ¿Qué le ocurre?\nPaciente: Desde ayer tengo dolor de cabeza y también fiebre.\nDoctor: Ya veo. Es un resfriado. Tome este medicamento tres veces al día después de las comidas. Y hoy acuéstese temprano.\nPaciente: Entendido. Muchas gracias.","transcript_kn":"ವೈದ್ಯರು: ಏನಾಯಿತು?\nರೋಗಿ: ನಿನ್ನೆಯಿಂದ ತಲೆನೋವು ಮತ್ತು ಜ್ವರವೂ ಇದೆ.\nವೈದ್ಯರು: ಹೌದಾ. ಇದು ನೆಗಡಿ. ಈ ಔಷಧಿಯನ್ನು ದಿನಕ್ಕೆ ಮೂರು ಬಾರಿ ಊಟದ ನಂತರ ತೆಗೆದುಕೊಳ್ಳಿ. ಮತ್ತು ಇಂದು ಬೇಗ ಮಲಗಿ.\nರೋಗಿ: ಅರ್ಥವಾಯಿತು. ತುಂಬಾ ಧನ್ಯವಾದಗಳು.","transcript_ml":"ഡോക്ടർ: എന്താണ് പ്രശ്നം?\nരോഗി: ഇന്നലെ മുതൽ തലവേദനയും പനിയുമുണ്ട്.\nഡോക്ടർ: മനസ്സിലായി. ജലദോഷമാണ്. ഈ മരുന്ന് ദിവസവും മൂന്ന് നേരം ഭക്ഷണത്തിന് ശേഷം കഴിക്കുക. ഇന്ന് നേരത്തെ ഉറങ്ങുക.\nരോഗി: മനസ്സിലായി. വളരെ നന്ദി.","questions":[{"q":"くすりは 一日 何回 のみますか。","q_en":"How many times a day should the medicine be taken?","q_te":"మందును రోజుకు ఎన్నిసార్లు వేసుకోవాలి?","q_hi":"दवा दिन में कितनी बार लेनी है?","q_ta":"மருந்தை ஒரு நாளைக்கு எத்தனை முறை உட்கொள்ள வேண்டும்?","q_ko":"약은 하루에 몇 번 먹습니까?","q_es":"¿Cuántas veces al día debe tomarse el medicamento?","q_kn":"ಔಷಧಿಯನ್ನು ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕು?","q_ml":"മരുന്ന് ദിവസത്തിൽ എത്ര തവണ കഴിക്കണം?","options":["一回","二回","三回","四回"],"answer":2},{"q":"患者は どんな 症状がありますか。","q_en":"What symptoms does the patient have?","q_te":"రోగికి ఎలాంటి లక్షణాలు ఉన్నాయి?","q_hi":"मरीज को क्या लक्षण हैं?","q_ta":"நோயாளிக்கு என்ன அறிகுறிகள் உள்ளன?","q_ko":"환자는 어떤 증상이 있습니까?","q_es":"¿Qué síntomas tiene el paciente?","q_kn":"ರೋಗಿಗೆ ಯಾವ ಲಕ್ಷಣಗಳಿವೆ?","q_ml":"രോഗിക്ക് എന്തൊക്കെ ലക്ഷണങ്ങളുണ്ട്?","options":["頭痛と熱","お腹の痛み","足の怪我","歯の痛み"],"answer":0}]}],"N4":[{"id":"l-n4-1","title":"傘を貸してくれた友だち (The friend who lent me an umbrella)","script":"昨日、駅で急に雨が降ってきました。傘を持っていなかったので、困っていたら、友だちの田中さんが傘を貸してくれました。おかげで、ぬれないで家に帰ることができました。今度、お礼にコーヒーをおごりたいと思います。","transcript_en":"Yesterday, it suddenly started raining at the station. I didn't have an umbrella, so while I was troubled, my friend Tanaka lent me an umbrella. Thanks to that, I was able to get home without getting wet. Next time, I want to treat him to a coffee as a thank-you.","questions":[{"q":"昨日、駅で何がありましたか。","q_en":"What happened at the station yesterday?","options":["急に雨が降ってきた","急に雪が降ってきた","とても暑くなった","電車が止まった"],"answer":0},{"q":"話している人は、これから何をしたいと言っていますか。","q_en":"What does the speaker say they want to do from now?","options":["新しい傘を買いたい","田中さんにコーヒーをおごりたい","田中さんに傘を返したくない","田中さんと旅行に行きたい"],"answer":1},{"q":"話している人は、どうやって家に帰りましたか。","q_en":"How did the speaker get home?","options":["雨にぬれて帰った","タクシーで帰った","ぬれないで帰った","駅で雨がやむまで待った"],"answer":2}]},{"id":"l-n4-2","title":"映画のさそい (An invitation to a movie)","script":"A：もしもし、山田さん？今週の土曜日、いっしょに映画を見に行かない？\nB：いいね。でも、土曜日は用事があるんだ。日曜日はどう？\nA：日曜日なら大丈夫だよ。じゃあ、駅の前で十一時に会おう。\nB：うん、わかった。楽しみにしてるね。","transcript_en":"A: Hello, Yamada? Do you want to go see a movie together this Saturday?\nB: Sounds good. But I have something to do on Saturday. How about Sunday?\nA: Sunday is fine. Then let's meet in front of the station at eleven.\nB: Yeah, got it. I'm looking forward to it.","questions":[{"q":"二人はいつ映画を見に行きますか。","q_en":"When will the two of them go to see the movie?","options":["土曜日","日曜日","金曜日","月曜日"],"answer":1},{"q":"どうして土曜日に行きませんか。","q_en":"Why won't they go on Saturday?","options":["山田さんに用事があるから","映画がつまらないから","天気が悪いから","映画館が休みだから"],"answer":0},{"q":"二人はどこで会いますか。","q_en":"Where will the two of them meet?","options":["映画館の中で","山田さんの家で","レストランで","駅の前で"],"answer":3}]},{"id":"l-n4-3","title":"料理が作れるようになった (I became able to cook)","script":"私は去年から料理を習っています。最初はたまごも上手に焼けませんでしたが、毎日練習して、今はいろいろな料理が作れるようになりました。先週は、母に手料理を作ってあげました。母が「おいしい」と言ってくれて、とてもうれしかったです。","transcript_en":"I have been learning to cook since last year. At first I couldn't even fry an egg well, but I practiced every day, and now I've become able to make all sorts of dishes. Last week, I cooked a home-made meal for my mother. My mother said it was delicious, and I was very happy.","questions":[{"q":"この人はいつから料理を習っていますか。","q_en":"Since when has this person been learning to cook?","options":["先週から","去年から","子どものときから","今月から"],"answer":1},{"q":"先週、この人は何をしましたか。","q_en":"What did this person do last week?","options":["レストランで食事をした","母に料理を習った","母に料理を作ってあげた","料理の本を買った"],"answer":2},{"q":"この人はどうしてうれしかったですか。","q_en":"Why was this person happy?","options":["新しいレストランが開いたから","たまごが上手に焼けなかったから","料理の本をもらったから","母がおいしいと言ってくれたから"],"answer":3}]},{"id":"l-n4-4","title":"店長からのお願い (A request from the store manager)","script":"みなさん、おはようございます。今日は午後から雨が降るそうです。それで、お店の外に出してあるかさを、三時までに中に入れてください。それから、レジが新しくなったので、使い方がわからない人は私に聞いてくださいね。","transcript_en":"Good morning, everyone. They say it's going to rain from the afternoon today. So, please bring the umbrellas that are set out in front of the store inside by three o'clock. Also, the register has been replaced with a new one, so if there's anyone who doesn't know how to use it, please ask me.","questions":[{"q":"何時までにかさを中に入れますか。","q_en":"By what time should the umbrellas be brought inside?","options":["午前中に","三時までに","雨がやんでから","店を閉めるとき"],"answer":1},{"q":"使い方がわからないとき、だれに聞きますか。","q_en":"Who should you ask when you don't know how to use it?","options":["ほかの店員","店長","お客さん","だれにも聞かない"],"answer":1},{"q":"新しくなったものは何ですか。","q_en":"What is the thing that has been made new?","options":["レジ","かさ","ドア","電話"],"answer":0}]},{"id":"l-n4-5","title":"駅のアナウンス (An announcement at the station)","script":"お客様にお知らせします。ただいま、事故のため、みどり線は電車が止まっています。あと二十分ぐらいで動くと思います。お急ぎの方は、バスもご利用いただけます。バス乗り場は、南口を出て右にあります。","transcript_en":"Attention, passengers. Right now, due to an accident, the trains on the Midori Line have stopped. We think they will start moving again in about twenty minutes. Those who are in a hurry can also use the bus. The bus stop is to the right after you exit the south exit.","questions":[{"q":"電車はどうして止まっていますか。","q_en":"Why have the trains stopped?","options":["雨のため","事故のため","電気が消えたため","お客さんが多いため"],"answer":1},{"q":"急いでいる人はどうしたらいいですか。","q_en":"What should people who are in a hurry do?","options":["二十分待つ","バスに乗る","タクシーを呼ぶ","歩いて行く"],"answer":1},{"q":"バス乗り場はどこにありますか。","q_en":"Where is the bus stop?","options":["南口を出て右","南口を出て左","北口の前","駅の中"],"answer":0}]},{"id":"l-n4-6","title":"お医者さんのアドバイス (The doctor's advice)","script":"かぜですね。熱は高くないので、心配しなくても大丈夫ですよ。この薬を、一日三回、食事のあとに飲んでください。それから、今日はおふろに入らないで、早く寝てくださいね。三日たっても、よくならなかったら、また来てください。","transcript_en":"It's a cold. Your fever isn't high, so you don't need to worry. Please take this medicine three times a day, after meals. Also, don't take a bath today, and go to bed early. If you don't get better even after three days, please come again.","questions":[{"q":"薬はいつ飲みますか。","q_en":"When should the medicine be taken?","options":["寝る前に","食事のあとに","おふろのあとに","朝だけ"],"answer":1},{"q":"お医者さんは今日、何をしないように言いましたか。","q_en":"What did the doctor say not to do today?","options":["食事をする","おふろに入る","水を飲む","散歩する"],"answer":1},{"q":"三日たってもよくならなかったら、どうしますか。","q_en":"What should you do if you're not better even after three days?","options":["薬をやめる","また病院に来る","電話する","おふろに入る"],"answer":1}]},{"id":"l-n4-7","title":"友だちへのメッセージ (A message to a friend)","script":"もしもし、田中です。さっき送ってくれた写真、ありがとう。でも、ファイルが大きすぎて、私のスマホでは開けなかったんだ。悪いけど、もう一度、小さくして送ってもらえる?今夜は家にいるから、いつでも大丈夫だよ。","transcript_en":"Hello, it's Tanaka. Thanks for the photos you sent me earlier. But the file was too big, so I couldn't open it on my phone. Sorry, but could you make it smaller and send it once more? I'll be home tonight, so anytime is fine.","questions":[{"q":"田中さんはどうして写真が見られませんでしたか。","q_en":"Why couldn't Tanaka see the photos?","options":["ファイルが大きすぎたから","スマホがこわれたから","写真が来なかったから","時間がなかったから"],"answer":0},{"q":"田中さんは相手に何をたのみましたか。","q_en":"What did Tanaka ask the other person to do?","options":["写真をもう一度とる","小さくして送る","家に来る","電話する"],"answer":1},{"q":"田中さんは今夜どこにいますか。","q_en":"Where will Tanaka be tonight?","options":["会社","家","友だちの家","駅"],"answer":1}]},{"id":"l-n4-8","title":"町内会のお知らせ (A neighborhood association notice)","script":"ご近所のみなさん、こんにちは。来週の日曜日の朝、公園のそうじをします。みんなでごみを拾ったり、草を取ったりします。手ぶらで来てもいいですが、軍手があれば持ってきてください。そうじのあとで、あたたかいお茶を用意しています。","transcript_en":"Hello, neighbors. Next Sunday morning, we'll clean the park. Everyone will pick up trash and pull weeds together. It's fine to come empty-handed, but if you have work gloves, please bring them. After the cleaning, we'll have warm tea ready.","questions":[{"q":"来週の日曜日に何をしますか。","q_en":"What will they do next Sunday?","options":["公園でパーティーをする","公園をそうじする","木を植える","スポーツをする"],"answer":1},{"q":"できれば何を持ってきますか。","q_en":"What should you bring if possible?","options":["軍手","お弁当","いす","飲み物"],"answer":0},{"q":"そうじのあとで何がありますか。","q_en":"What will there be after the cleaning?","options":["映画","あたたかいお茶","プレゼント","写真"],"answer":1}]},{"id":"l-n4-9","title":"テニス教室で (At a tennis class)","script":"はい、みなさん、集まってください。今日は初めての人が多いですね。まず、けがをしないように、体をよく動かしましょう。ラケットは、そこの箱から自由に使ってください。ボールはまだ投げないで、私の話を聞いてから始めましょうね。","transcript_en":"Okay everyone, please gather around. There are a lot of first-timers today, aren't there. First, so that we don't get injured, let's move our bodies well. Please feel free to use a racket from the box over there. Don't throw the balls yet — let's start after listening to what I have to say.","questions":[{"q":"どうして先に体を動かしますか。","q_en":"Why do they move their bodies first?","options":["けがをしないため","体を大きくするため","時間があるため","ゲームに勝つため"],"answer":0},{"q":"ラケットはどうしますか。","q_en":"What should be done about the rackets?","options":["先生からもらう","箱から自由に使う","家から持ってくる","買う"],"answer":1},{"q":"いつボールを始めますか。","q_en":"When do they start with the balls?","options":["今すぐ","先生の話を聞いてから","体を動かす前に","次の週から"],"answer":1}]}],"N3":[{"id":"l-n3-1","title":"デパートの店内放送 (In-store announcement at a department store)","script":"ご来店のお客様にお知らせいたします。本日は雨の中、当店にお越しいただき、ありがとうございます。ただいま二階の催事場では、北海道の物産展を行っております。新鮮な海の幸や、人気のスイーツをたくさんご用意しております。なお、本日は駐車場が大変混み合っているそうですので、お車でお越しのお客様は、少々お待ちいただくことがあるかもしれません。皆様のご協力をお願いいたします。","transcript_en":"An announcement for our customers. Thank you for coming to our store today despite the rain. Right now, in the second-floor event space, we are holding a Hokkaido regional products fair. We have prepared plenty of fresh seafood and popular sweets. Also, we hear the parking lot is very crowded today, so customers arriving by car may have to wait a little while. We ask for everyone's cooperation.","questions":[{"q":"二階の催事場では、今何をしていますか。","q_en":"What is being held in the second-floor event space right now?","options":["北海道の物産展","本のセール","スイーツ作り教室","駐車場の工事"],"answer":0},{"q":"駐車場について、何と言っていますか。","q_en":"What does the announcement say about the parking lot?","options":["今は空いている","使えなくなった","とても混んでいるそうだ","無料になった"],"answer":2},{"q":"今日の天気はどうですか。","q_en":"What is the weather like today?","options":["晴れ","雨","雪","強い風"],"answer":1}]},{"id":"l-n3-2","title":"毎朝のランニング (Running every morning)","script":"田中さん、最近元気そうだね。何かいいことでもあった？\nうん、実はね、先月から毎朝走るようになったんだ。\nへえ、すごい。前は運動が苦手だって言ってたのに。\nそうなんだよ。でも、お医者さんに少し運動したほうがいいって言われてね。始めてみたら、意外と気持ちよくて。\nそれで続いてるんだ。朝、早く起きるのは大変じゃない？\n最初はつらかったけど、慣れたら平気になったよ。夜も早く寝られるようになったし。\nいいなあ。私も今度、一緒に走らせてもらってもいい？\nもちろん。じゃあ、明日の朝、駅の前で待ち合わせしよう。","transcript_en":"\"Tanaka, you've seemed full of energy lately. Did something good happen?\"\n\"Yeah, actually, since last month I've started running every morning.\"\n\"Wow, that's great. And you used to say you were bad at exercise.\"\n\"That's right. But my doctor told me I should get a little exercise. When I tried it, it felt surprisingly good.\"\n\"So that's why you've kept it up. Isn't getting up early in the morning hard?\"\n\"It was tough at first, but once I got used to it, it became no problem. And I've become able to sleep earlier at night, too.\"\n\"Nice. Could you let me run with you sometime?\"\n\"Of course. Then let's meet in front of the station tomorrow morning.\"","questions":[{"q":"田中さんは先月から何をするようになりましたか。","q_en":"What has Tanaka started doing since last month?","options":["毎朝走ること","料理をすること","早く会社に行くこと","病院で働くこと"],"answer":0},{"q":"田中さんが運動を始めたのはどうしてですか。","q_en":"Why did Tanaka start exercising?","options":["友達に誘われたから","医者に勧められたから","運動が好きだから","会社に言われたから"],"answer":1},{"q":"女の人はこのあと何をするつもりですか。","q_en":"What does the woman plan to do next?","options":["一人で走る","走るのをやめる","田中さんと一緒に走る","病院に行く"],"answer":2}]},{"id":"l-n3-3","title":"会議の変更の伝言 (A voicemail about a meeting change)","script":"もしもし、営業部の山田です。お疲れさまです。明日の会議のことでご連絡しました。実は、部長の都合が悪くなったそうで、会議の時間が午後2時から午後4時に変更になりました。場所はいつもと同じ、第一会議室です。それから、資料は私が用意しますので、佐藤さんは準備しなくても大丈夫です。もし何か質問があれば、私の携帯に電話してください。よろしくお願いします。","transcript_en":"Hello, this is Yamada from the sales department. Thanks for your hard work. I'm calling about tomorrow's meeting. Actually, I hear the manager became unavailable, so the meeting time has been changed from 2 p.m. to 4 p.m. The place is the same as usual, Meeting Room 1. Also, I'll prepare the materials, so Sato, you don't need to prepare anything. If you have any questions, please call my cell phone. Thank you.","questions":[{"q":"会議の時間はどうなりましたか。","q_en":"What happened to the meeting time?","options":["午前中に早まった","午後2時から午後4時に変わった","会議は中止になった","時間は変わっていない"],"answer":1},{"q":"会議の場所について、正しいものはどれですか。","q_en":"Which is correct about the meeting place?","options":["いつもと同じ第一会議室","第二会議室に変わった","まだ決まっていない","別のビルになった"],"answer":0},{"q":"佐藤さんは資料について何をしますか。","q_en":"What does Sato do about the materials?","options":["部長に渡す","自分で印刷する","何も準備しなくてよい","会議室に持っていく"],"answer":2}]},{"id":"l-n3-4","title":"残業のお願い (A request to work overtime)","script":"部長: 田中さん、ちょっといいですか。実は、来週の月曜日までに出さなければならない資料があって、もし今日時間があれば、少し手伝ってもらえませんか。\n田中: すみません、今日は子どもを迎えに行かなければならないんです。明日の午前中なら大丈夫ですが。\n部長: そうですか。じゃあ、無理をさせるわけにはいきませんね。明日の朝、お願いできますか。\n田中: はい、承知しました。明日、早めに来てやります。","transcript_en":"Manager: Tanaka, do you have a moment? Actually, there's a document I have to submit by next Monday, and if you have some time today, could you help me a little?\nTanaka: I'm sorry, I have to go pick up my child today. Tomorrow morning would be fine, though.\nManager: I see. Well, I can't make you overdo it. Could I ask you tomorrow morning, then?\nTanaka: Yes, understood. I'll come in a bit early tomorrow and do it.","questions":[{"q":"部長は田中さんに何を頼みましたか。","q_en":"What did the manager ask Tanaka to do?","options":["資料作りを手伝うこと (help prepare a document)","子どもを迎えに行くこと (pick up a child)","会議に出ること (attend a meeting)","早く帰ること (leave early)"],"answer":0},{"q":"田中さんはいつ手伝いますか。","q_en":"When will Tanaka help?","options":["今日の午後 (this afternoon)","明日の朝 (tomorrow morning)","来週の月曜日 (next Monday)","今夜 (tonight)"],"answer":1},{"q":"田中さんが今日手伝えないのはどうしてですか。","q_en":"Why can't Tanaka help today?","options":["子どもを迎えに行くから (has to pick up a child)","病気だから (is sick)","ほかの会議があるから (has another meeting)","資料がないから (has no documents)"],"answer":0}]},{"id":"l-n3-5","title":"駅のアナウンス (A station announcement)","script":"ご案内いたします。ただいま、大雨の影響で、あおば線は上下線とも運転を見合わせております。復旧のめどは立っておりません。お急ぎのお客様は、地下鉄みどり線をご利用ください。なお、振り替え輸送を行っておりますので、切符をお持ちのまま改札口へお越しください。ご迷惑をおかけして申し訳ございません。","transcript_en":"This is an announcement. Due to heavy rain, the Aoba Line is currently suspended in both directions. There is no estimate for when service will resume. Passengers in a hurry, please use the Midori Subway Line. Also, we are providing substitute transport, so please come to the ticket gate with your ticket in hand. We apologize for the inconvenience.","questions":[{"q":"あおば線はどうして止まっていますか。","q_en":"Why is the Aoba Line stopped?","options":["大雨のため (because of heavy rain)","事故のため (because of an accident)","工事のため (because of construction)","車両の故障のため (because of a vehicle breakdown)"],"answer":0},{"q":"急いでいる人はどうすればいいですか。","q_en":"What should people who are in a hurry do?","options":["バスに乗る (take a bus)","地下鉄みどり線を使う (use the Midori Subway Line)","タクシーを使う (take a taxi)","復旧を待つ (wait for service to resume)"],"answer":1},{"q":"改札口へ行くとき、何が必要ですか。","q_en":"What is needed when going to the ticket gate?","options":["切符 (a ticket)","お金 (money)","身分証明書 (an ID card)","予約票 (a reservation slip)"],"answer":0}]},{"id":"l-n3-6","title":"自炊を始めて (Since I started cooking for myself)","script":"去年まで、私はほとんど外食ばかりで、料理なんて全然できませんでした。でも、健康のことを考えて、自分で作るようになりました。最初は野菜を切るのも下手でしたが、毎日続けているうちに、簡単なものなら短い時間で作れるようになりました。外食が減ったので、体の調子もよくなったし、お金も前より貯まるようになりました。今では、料理をするのが楽しみです。","transcript_en":"Until last year, I ate out almost all the time and couldn't cook at all. But thinking about my health, I started cooking for myself. At first I was even bad at cutting vegetables, but as I kept it up every day, I became able to make simple things in a short time. Because I eat out less, my physical condition has gotten better, and I've come to save more money than before too. Now, cooking is something I look forward to.","questions":[{"q":"この人は去年まで、食事をどうしていましたか。","q_en":"How did this person handle meals until last year?","options":["自分で作っていた (cooked for themselves)","外食が多かった (ate out a lot)","何も食べなかった (didn't eat anything)","家族が作っていた (family cooked)"],"answer":1},{"q":"自分で料理を作るようになって、どう変わりましたか。","q_en":"How did things change after this person started cooking?","options":["体の調子がよくなった (physical condition improved)","体調が悪くなった (physical condition got worse)","お金が減った (had less money)","料理が嫌いになった (came to dislike cooking)"],"answer":0},{"q":"この人が料理を始めた理由は何ですか。","q_en":"Why did this person start cooking?","options":["健康のため (for their health)","お金がなかったため (because they had no money)","時間があったため (because they had free time)","家族に頼まれたため (because family asked them)"],"answer":0}]},{"id":"l-n3-7","title":"アプリのメンテナンスのお知らせ (Notice of app maintenance)","script":"いつも「みんなの家計簿」アプリをご利用いただき、ありがとうございます。システム改善のため、今週の土曜日の午後十一時から日曜日の午前三時まで、メンテナンスを行います。この時間は、アプリにログインできなくなりますので、ご注意ください。なお、メンテナンスのあとは、新しい機能が使えるようになります。入力されたデータが消えることはありませんので、ご安心ください。","transcript_en":"Thank you for always using the \"Everyone's Household Budget\" app. To improve our system, we will carry out maintenance from 11:00 p.m. this Saturday until 3:00 a.m. Sunday. During this time you will not be able to log in to the app, so please be careful. Also, after the maintenance, new features will become available. The data you have entered will not be lost, so please rest assured.","questions":[{"q":"メンテナンスは何のために行われますか。","q_en":"What is the maintenance being done for?","options":["システムを改善するため (to improve the system)","アプリを削除するため (to delete the app)","料金を上げるため (to raise the price)","会社を移すため (to relocate the company)"],"answer":0},{"q":"メンテナンス中、利用者は何ができなくなりますか。","q_en":"What will users be unable to do during the maintenance?","options":["電話すること (make phone calls)","お金を払うこと (pay money)","ログインすること (log in)","データを消すこと (delete data)"],"answer":2},{"q":"メンテナンスのあと、どうなりますか。","q_en":"What happens after the maintenance?","options":["料金がかかるようになる (it starts costing money)","新しい機能が使えるようになる (new features become usable)","データが全部消える (all data is erased)","アプリが使えなくなる (the app becomes unusable)"],"answer":1}]},{"id":"l-n3-8","title":"町内会からのお知らせ (Notice from the neighborhood association)","script":"みどり町にお住まいの皆様にお知らせします。来月から、ごみの出し方のルールが変わります。これまで、燃えるごみは週に三回集められていましたが、来月からは週に二回になります。また、ペットボトルは、必ずラベルをはがしてから出すようにお願いします。ルールが守られないと、ごみが集められないことがありますので、ご協力をお願いいたします。ご質問がある方は、町内会の事務所までご連絡ください。","transcript_en":"This is an announcement for everyone living in Midori Town. Starting next month, the rules for putting out garbage will change. Until now, burnable garbage was collected three times a week, but from next month it will be twice a week. Also, for plastic bottles, please be sure to remove the label before putting them out. If the rules are not followed, the garbage may not be collected, so we ask for your cooperation. If you have any questions, please contact the neighborhood association office.","questions":[{"q":"来月から、燃えるごみの収集は週に何回になりますか。","q_en":"From next month, how many times a week will burnable garbage be collected?","options":["一回 (once)","二回 (twice)","三回 (three times)","四回 (four times)"],"answer":1},{"q":"ペットボトルを出すとき、何をしなければなりませんか。","q_en":"What must you do when putting out plastic bottles?","options":["ラベルをはがす (remove the label)","水で洗う (wash with water)","袋に入れる (put them in a bag)","名前を書く (write your name)"],"answer":0},{"q":"ルールが守られないと、どうなることがありますか。","q_en":"What can happen if the rules are not followed?","options":["お金を払う (you pay money)","引っ越さなければならない (you must move away)","名前を呼ばれる (your name is called out)","ごみが集められない (the garbage is not collected)"],"answer":3}]},{"id":"l-n3-9","title":"友だちの活躍 (A friend's success)","script":"A: ねえ、聞いた？サッカー部の山田くん、この前の大会で活躍したらしいよ。\nB: うん、聞いたよ。決勝でゴールを決めて、チームが優勝したんだって。\nA: すごいね。それで、来月の全国大会の代表にも選ばれたそうだよ。\nB: へえ、そうなんだ。彼、毎日誰よりも早く来て練習していたもんね。\nA: うん。あんなに頑張っていたんだから、選ばれて当然だよね。\nB: 今度、応援に行こうよ。","transcript_en":"A: Hey, did you hear? They say Yamada from the soccer club did great at the tournament the other day.\nB: Yeah, I heard. Apparently he scored a goal in the final and the team won the championship.\nA: Amazing. And I hear he was also chosen as a representative for next month's national tournament.\nB: Wow, really. Well, he did come earlier than anyone every day to practice.\nA: Yeah. After working that hard, it's only natural he was chosen.\nB: Let's go cheer him on next time.","questions":[{"q":"山田くんは大会で何をしましたか。","q_en":"What did Yamada do at the tournament?","options":["ゴールを決めた (scored a goal)","けがをした (got injured)","試合に負けた (lost the match)","応援をした (cheered from the sidelines)"],"answer":0},{"q":"山田くんは来月、何をしますか。","q_en":"What will Yamada do next month?","options":["部活をやめる (quit the club)","全国大会に代表として出る (compete in the national tournament as a representative)","外国へ引っ越す (move abroad)","サッカーをやめる (stop playing soccer)"],"answer":1},{"q":"山田くんはどんな選手ですか。","q_en":"What kind of player is Yamada?","options":["あまり練習しなかった (didn't practice much)","試合に出たことがない (has never played in a match)","毎日誰よりも早く来て練習していた (came earlier than anyone to practice every day)","最近サッカーを始めたばかり (only started soccer recently)"],"answer":2}]}],"N2":[{"id":"l-n2-1","title":"独立系書店が増えるわけ（Why Independent Bookstores Are Growing）","script":"近年、大型書店の閉店が相次いでいる一方で、個人が営む小さな「独立系書店」が各地で少しずつ増えているという。ネットで本が買える時代に、なぜわざわざ実店舗を、と思う方もいるかもしれない。しかし、これらの店の多くは、単に本を売ることだけを目的にしているわけではない。店主が自ら選んだ本だけを並べ、来た人と言葉を交わす。つまり、本を通じて人と人とがつながる場所をつくろうとしているのだ。売り上げだけを見れば、決して楽な商売とは言えない。とはいえ、こうした店に足を運ぶ客が着実に増えているのも事実である。効率や便利さでは測れない価値を求める人が、それだけ多くなってきたということなのだろう。","transcript_en":"In recent years, while large bookstores have been closing one after another, small \"independent bookstores\" run by individuals are said to be gradually increasing in number in various regions. In an age when you can buy books online, some may wonder why anyone would go to the trouble of opening a physical shop. However, many of these stores do not aim merely to sell books. The owner lines up only the books they themselves have chosen and exchanges words with those who come in. In other words, they are trying to create a place where people connect with one another through books. Judging by sales alone, it can hardly be called an easy business. That said, it is also a fact that the number of customers visiting such shops is steadily increasing. It probably means that there are now that many more people seeking a value that cannot be measured by efficiency or convenience.","questions":[{"q":"独立系書店が増えている理由として、この話で述べられているのは何か。","q_en":"According to this talk, what is a reason independent bookstores are increasing?","options":["大型書店より本の値段が安いから","本を売ること以外に、人がつながる場をつくろうとしているから","ネットで本が買えなくなったから","店主が本を選ぶ手間を省いているから"],"answer":1},{"q":"独立系書店の経営について、話し手はどう述べているか。","q_en":"What does the speaker say about the management of independent bookstores?","options":["大型書店より必ず利益が大きい","誰でも楽に儲かる商売である","決して楽な商売ではないが、客は着実に増えている","客がまったく増えていない"],"answer":2},{"q":"話し手は、こうした店に人が集まる背景に何があると考えているか。","q_en":"What does the speaker think lies behind people gathering at such shops?","options":["効率や便利さでは測れない価値を求める人が増えたこと","本の種類が大型書店より多いこと","ネット書店がいっせいに値上げしたこと","店が駅の近くに多いこと"],"answer":0}]},{"id":"l-n2-2","title":"食品ロスを考える（Thinking About Food Loss）","script":"まだ食べられるのに捨てられてしまう食品、いわゆる「食品ロス」が、近年あらためて問題視されている。国内で一年間に捨てられる食品の量は、世界中で行われている食料支援の総量を上回るとも言われており、決して見過ごせる数字ではない。もっとも、その原因は消費者の食べ残しだけにあるわけではない。製造や流通の過程で、期限にまだ余裕があるにもかかわらず、わずかな包装の傷などを理由に廃棄されるものも少なくないのだ。こうした無駄をなくすには、企業の取り組みはもちろん、私たち一人ひとりが必要な分だけを買うという意識を持つことが欠かせない。便利さを求めるあまり、食べ物を粗末にしてはいないか、今一度考えてみる必要があるだろう。","transcript_en":"Food that is still edible yet ends up being thrown away — so-called \"food loss\" — has once again come to be seen as a problem in recent years. The amount of food discarded within the country in a single year is said to exceed even the total volume of food aid carried out around the world, and it is by no means a figure that can be overlooked. That said, the cause does not lie solely in consumers' leftovers. In the manufacturing and distribution process, there are quite a few items discarded over slight damage to their packaging and the like, even though there is still plenty of time before their expiration date. To eliminate such waste, it is essential not only that companies take action, of course, but also that each of us be conscious of buying only as much as we need. In our pursuit of convenience, aren't we treating food carelessly? It is probably necessary to stop and think about this once more.","questions":[{"q":"「食品ロス」とは、ここでは何を指すか。","q_en":"What does \"food loss\" refer to here?","options":["まだ食べられるのに捨てられてしまう食品","賞味期限が切れて食べられなくなった食品","世界の食料支援に送られる食品","消費者が買いすぎた食品すべて"],"answer":0},{"q":"食品ロスの原因について、話し手はどう述べているか。","q_en":"What does the speaker say about the causes of food loss?","options":["消費者の食べ残しだけが原因である","消費者の食べ残しだけでなく、製造や流通の段階でも生じている","もっぱら企業の取り組み不足が唯一の原因だ","原因はまだまったくわかっていない"],"answer":1},{"q":"話し手が私たち消費者に求めていることは何か。","q_en":"What does the speaker ask of us consumers?","options":["できるだけ安い食品を選んで買うこと","余った食品を食料支援に寄付すること","必要な分だけを買うという意識を持つこと","包装の傷んだ食品を進んで買うこと"],"answer":2}]},{"id":"l-n2-3","title":"家を買うべきか（Should We Buy a House?）","script":"夫「ねえ、この間話してた郊外の家、やっぱり買おうかどうか迷ってるんだよね。」妻「今のマンションの家賃も安くはないものね。でも、買うとなると簡単には引っ越せなくなるわよ。」夫「それはそうなんだけど、家賃を払い続けても手元に何も残らないわけだから、いっそ買ったほうがいいのかなって。」妻「気持ちはわかるけど、駅から遠いのが引っかかるのよね。今は車があるとはいえ、歳をとってからのことを考えるとね。」夫「確かに。安いには安いなりの理由がある、ってことか。」妻「そういうこと。目の前の値段だけで決めるものじゃないと思うわ。もう少しゆっくり考えましょうよ。」","transcript_en":"Husband: \"Hey, that house in the suburbs we were talking about the other day — I'm still torn over whether to buy it after all.\" Wife: \"The rent on our current apartment isn't cheap either. But if we buy, we won't be able to move so easily, you know.\" Husband: \"That's true, but since we'll have nothing to show for it even if we keep paying rent, I wonder if it'd just be better to buy.\" Wife: \"I understand how you feel, but the fact that it's far from the station bothers me. We do have a car now, sure, but when I think about after we've gotten older...\" Husband: \"True. So there's a reason cheap things are cheap, huh.\" Wife: \"Exactly. It's not something to decide on price alone. Let's take a little more time to think it over.\"","questions":[{"q":"夫が家を買おうと考えている理由は何か。","q_en":"Why is the husband thinking of buying a house?","options":["郊外のほうが交通が便利だから","家賃を払い続けても手元に何も残らないから","その家が駅からとても近いから","妻が買うことを強く勧めているから"],"answer":1},{"q":"妻が家を買うことに慎重なのはなぜか。","q_en":"Why is the wife cautious about buying the house?","options":["今のマンションのほうがずっと広いから","車をまだ持っていないから","夫の給料が下がってしまったから","駅から遠く、歳をとってからの生活が心配だから"],"answer":3},{"q":"「安いには安いなりの理由がある」という夫の言葉は、どういう意味か。","q_en":"What does the husband mean by \"there's a reason cheap things are cheap\"?","options":["安いものには必ず思わぬ長所がある","値段が安いのには、それに応じた（駅から遠いなどの）事情があるということ","安いものは絶対に買うべきではない","家の値段はこれからもっと安くなるはずだ"],"answer":1}]},{"id":"l-n2-4","title":"在宅勤務のこれから（The Future of Working from Home）","script":"最近、在宅勤務を導入する企業が増えているものの、必ずしもすべての社員が満足しているわけではないようです。通勤時間がなくなった分、自由に使える時間が増えたと喜ぶ人がいる一方で、仕事とプライベートの区別がつきにくくなり、かえって長時間働いてしまうという声も少なくありません。とはいえ、週に何日かは会社に出て同僚と直接顔を合わせることで、オンラインだけでは伝わりにくい細かなニュアンスも共有できるため、多くの企業が在宅と出社を組み合わせた働き方へと移行しつつあります。","transcript_en":"Although a growing number of companies are adopting work-from-home arrangements, it seems that not all employees are necessarily satisfied. While some are pleased that the disappearance of their commute has given them more free time to use as they like, there are also more than a few voices saying that the line between work and private life has become harder to draw, and that they end up working even longer hours instead. That said, by coming into the office a few days a week and meeting colleagues face to face, workers can share the subtle nuances that are hard to convey through online contact alone, so many companies are shifting toward a way of working that combines home and office work.","questions":[{"q":"この話によると、在宅勤務についてどんな声があると言っていますか。","q_en":"According to this talk, what kind of comment is said to exist about working from home?","options":["仕事とプライベートの区別がつきにくく、かえって長時間働いてしまうという声","通勤時間がかえって増えてしまったという声","同僚と全く連絡が取れなくなったという声","給料が大きく下がってしまったという声"],"answer":0},{"q":"多くの企業は、これからどのような働き方に移りつつあると言っていますか。","q_en":"What kind of working style does it say many companies are shifting toward?","options":["すべての社員を完全に在宅勤務にする","週末もすべて出社させる","在宅勤務を完全にやめて元に戻す","在宅勤務と出社を組み合わせる"],"answer":3}]},{"id":"l-n2-5","title":"ローカル線を守る工夫（Efforts to Save a Local Railway Line）","script":"ご利用のみなさまにお知らせいたします。この地域を走るローカル線は、利用者の減少が続いており、このままでは路線の維持が難しくなるおそれがあります。そこで鉄道会社では、沿線の観光地と協力し、車内で地元の特産品を販売したり、季節ごとに特別な車両を走らせたりするなど、乗ること自体を楽しんでいただく工夫を始めました。単なる移動の手段としてだけでなく、旅の目的地となるような路線を目指しているというわけです。地元の方はもちろん、遠くからお越しの方にも、ぜひ一度ご乗車いただければ幸いです。","transcript_en":"An announcement for all passengers. The local line that runs through this area continues to see a decline in riders, and if things go on this way, there is a risk that maintaining the line will become difficult. And so, the railway company has teamed up with tourist spots along the line and begun devising ways to let people enjoy the act of riding itself—selling local specialty products on board and running special train cars for each season, among other things. In other words, we are aiming to make this line not merely a means of transportation, but a destination for travel in its own right. We would be delighted if local residents, and of course those coming from far away, would ride with us at least once.","questions":[{"q":"このローカル線が抱えている問題は何ですか。","q_en":"What problem is this local railway line facing?","options":["運賃が高すぎること","事故が続いていること","利用者が減り続けていること","駅員が足りないこと"],"answer":2},{"q":"鉄道会社が始めた工夫はどれですか。","q_en":"Which is one of the efforts the railway company has begun?","options":["車内で特産品を売るなど、乗ること自体を楽しんでもらうこと","運賃を大幅に値上げすること","駅の数を減らすこと","電車の速度を上げること"],"answer":0}]},{"id":"l-n2-6","title":"発酵食品と健康（Fermented Foods and Health）","script":"みそやしょうゆ、納豆といった発酵食品は、古くから日本人の食卓に欠かせないものとして親しまれてきました。近年の研究では、こうした食品に含まれる微生物が腸の働きを整え、体全体の健康にもよい影響を与える可能性があることが分かってきています。ただ、体によいからといって、一度にたくさん食べればいいというものではありません。塩分を多く含むものもあるため、量に気をつけながら、毎日少しずつ続けることが大切だと言われています。","transcript_en":"Fermented foods such as miso, soy sauce, and natto have long been cherished as indispensable items on the Japanese table. Recent research has begun to reveal that the microorganisms contained in these foods may regulate the workings of the gut and have a good influence on the health of the whole body. However, just because something is good for you does not mean that eating a lot of it at once is best. Since some of these foods contain a great deal of salt, it is said to be important to watch the amount and to keep eating a little each day.","questions":[{"q":"発酵食品について、近年の研究で分かってきたことは何ですか。","q_en":"What has recent research begun to reveal about fermented foods?","options":["若い人には向いていないこと","塩分が全く含まれていないこと","栄養がほとんどないこと","腸の働きを整え、健康によい影響を与える可能性があること"],"answer":3},{"q":"発酵食品の食べ方について、話し手は何と言っていますか。","q_en":"What does the speaker say about how to eat fermented foods?","options":["体によいので一度にたくさん食べるとよい","量に気をつけて、毎日少しずつ続けるとよい","塩分が多いので全く食べないほうがよい","朝だけ食べるとよい"],"answer":1}]},{"id":"l-n2-7","title":"キャッシュレス決済の広がり（The Spread of Cashless Payment）","script":"ここ数年で、現金を使わずにスマートフォンやカードで支払う、いわゆるキャッシュレス決済が急速に広がってきました。財布を持ち歩かなくても買い物ができるうえ、支払いの記録が自動的に残るので、家計の管理がしやすくなったという人も多いようです。その反面、目に見えないお金だけに、つい使いすぎてしまうという問題も指摘されています。便利であればあるほど、自分がいくら使っているのかを意識することが、これまで以上に求められていると言えるでしょう。","transcript_en":"Over the past few years, so-called cashless payment—paying by smartphone or card without using cash—has spread rapidly. Not only can you shop without carrying a wallet, but a record of your payments is automatically kept, so it seems many people find it has become easier to manage their household finances. On the other hand, precisely because the money is invisible, the problem of unintentionally overspending has also been pointed out. The more convenient it is, the more we are being asked—more than ever before—to stay aware of just how much we are spending.","questions":[{"q":"キャッシュレス決済の利点として挙げられているのは何ですか。","q_en":"What is given as an advantage of cashless payment?","options":["現金より商品が安く買えること","支払いの記録が自動的に残り、家計の管理がしやすいこと","電池が要らないこと","どんな店でも必ず使えること"],"answer":1},{"q":"キャッシュレス決済の問題点として指摘されているのは何ですか。","q_en":"What is pointed out as a problem with cashless payment?","options":["支払いの記録が全く残らないこと","現金より手数料が高いこと","目に見えないため、つい使いすぎてしまうこと","支払いに時間がかかること"],"answer":2},{"q":"話し手は、これまで以上に何が求められると言っていますか。","q_en":"What does the speaker say is being asked of us more than ever?","options":["自分がいくら使っているのかを意識すること","現金を一切使わないようにすること","カードをできるだけ多く持つこと","買い物の回数を減らすこと"],"answer":0}]},{"id":"l-n2-8","title":"町内会の防災訓練（The Neighborhood Disaster Drill）","script":"来月、私たちの町内会では、地震を想定した防災訓練を行うことになりました。これまでは参加者が高齢の方に偏りがちで、若い世代や小さなお子さんのいる家庭には、なかなか関心を持ってもらえませんでした。しかし、いざ災害が起きたとき、近所の人同士が助け合えるかどうかが、生死を分けることもあります。そこで今回は、消火器の使い方を体験できるコーナーや、非常食を実際に食べてみる催しなど、家族みんなで楽しみながら学べる内容を用意しました。お忙しいとは思いますが、一人でも多くの方にご参加いただきたいと思います。","transcript_en":"Next month, our neighborhood association has decided to hold a disaster drill on the assumption of an earthquake. Up to now, participants have tended to be skewed toward elderly residents, and it has been hard to get the younger generation and households with small children to take an interest. However, when a disaster actually strikes, whether or not neighbors can help one another can sometimes mean the difference between life and death. So this time, we have prepared content that the whole family can learn from while having fun, such as a corner where you can try using a fire extinguisher and an event where you actually taste emergency food. We know you are busy, but we would like as many of you as possible to take part.","questions":[{"q":"これまでの防災訓練には、どんな問題がありましたか。","q_en":"What problem has there been with the disaster drills up to now?","options":["訓練の回数が多すぎたこと","費用がかかりすぎたこと","場所が遠くて通いにくかったこと","参加者が高齢の方に偏りがちだったこと"],"answer":3},{"q":"今回の訓練で新しく用意された内容はどれですか。","q_en":"Which is part of the content newly prepared for this drill?","options":["高齢者だけが入れる特別な席","消火器の使い方を体験したり、非常食を食べたりできる催し","お金を配るコーナー","講演を静かに聞くだけの時間"],"answer":1}]},{"id":"l-n2-9","title":"都市の暑さと緑（Urban Heat and Greenery）","script":"夏になると、都市の中心部では郊外に比べて気温が高くなる現象が見られます。これは、アスファルトやコンクリートが日中の熱をため込み、夜になってもなかなか気温が下がらないことが主な原因だと考えられています。こうした問題に対して、建物の屋上に植物を植えたり、道路の脇に木を増やしたりする取り組みが各地で進められています。緑を増やすことは、気温を下げるだけでなく、街の景観をよくしたり、住む人の心を落ち着かせたりする効果も期待できます。一本の木を植えるだけでは大きな変化は望めないかもしれませんが、こうした小さな積み重ねこそが、住みやすい街づくりにつながっていくのではないでしょうか。","transcript_en":"When summer comes, a phenomenon can be seen in which the temperature in city centers rises higher than in the suburbs. This is thought to be mainly because asphalt and concrete store up the daytime heat, so that the temperature does not easily fall even after night comes. In response to this problem, efforts such as planting vegetation on the rooftops of buildings and increasing the number of trees along the sides of roads are being carried out in many places. Increasing greenery can be expected to have effects beyond just lowering the temperature—it can also improve the townscape and calm the minds of those who live there. Planting a single tree alone may not bring about a big change, but it may well be precisely this accumulation of small steps that leads to building a town that is easy to live in.","questions":[{"q":"都市の中心部で気温が高くなる主な原因は何だと言っていますか。","q_en":"What does it say is the main cause of higher temperatures in city centers?","options":["海から遠く離れていること","木が多すぎること","アスファルトやコンクリートが熱をため込むこと","人口が減っていること"],"answer":2},{"q":"緑を増やすことの効果として、話し手が挙げていないものはどれですか。","q_en":"Which is NOT mentioned by the speaker as an effect of increasing greenery?","options":["気温を下げること","街の景観をよくすること","住む人の心を落ち着かせること","電気代を安くすること"],"answer":3}]}],"N1":[{"id":"l-n1-1","title":"利便性という名の負債（The Debt Called Convenience）","script":"皆さんは、日々の暮らしがかつてないほど便利になったと感じておられるでしょう。ボタン一つで買い物が済み、行き先を告げれば車が動く。しかし、私がここで問いたいのは、その利便性が果たしてただで手に入っているのか、ということです。便利さというものは、一見すると私たちの負担を軽くしてくれるように見えますが、その裏では、私たち自身が本来担っていたはずの判断や手間が、目に見えない形でどこかへ肩代わりされている。たとえば、道順を考えるという営みを機械に委ねた結果、私たちは地図を頭の中に描く力を、少しずつ手放しつつあるのではないでしょうか。むろん、私は便利さそのものを否定したいわけではありません。ただ、得たものの大きさばかりに目を奪われ、その陰で静かに失われていくものへの想像力を欠いたまま、なし崩し的にすべてを機械に明け渡してしまうことには、慎重であるべきだと申し上げたいのです。利便性とは、いわば後払いの負債のようなものであり、その請求書は、忘れた頃に、思いがけない形で私たちのもとへ届くのかもしれません。","transcript_en":"You probably feel that daily life has become more convenient than ever before. Shopping is done at the touch of a button; tell it your destination and the car drives itself. But what I want to ask here is whether that convenience has truly been obtained for free. Convenience, at first glance, appears to lighten our burdens, but behind it, the judgments and effort that we ourselves were originally supposed to bear are, in an invisible form, being handed off somewhere else. For example, as a result of entrusting the act of working out a route to a machine, aren't we, little by little, letting go of the very power to draw a map inside our own heads? Of course, I do not wish to deny convenience itself. I simply want to say that we should be cautious about surrendering everything to machines in a piecemeal fashion, with our eyes stolen away only by the magnitude of what we have gained, while lacking any imagination for what is quietly being lost in its shadow. Convenience is, so to speak, like a deferred debt, and its invoice may arrive at our door in an unexpected form, at a time when we have long since forgotten about it.","questions":[{"q":"話し手が最も懸念しているのは何か。","q_en":"What is the speaker most concerned about?","options":["便利な機械が高価で、手に入れにくくなっていること","便利さと引き換えに、気づかぬうちに人間の判断力や能力が失われていくこと","機械が人間の仕事を奪い、失業者が増えていること","便利な生活によって人々が怠惰になり、健康を損なうこと"],"answer":1},{"q":"話し手は「便利さそのもの」についてどのような立場をとっているか。","q_en":"What stance does the speaker take on convenience itself?","options":["便利さは全面的に否定すべき害悪だと考えている","便利さは無条件に称賛されるべきだと考えている","便利さを否定はしないが、失われるものへの想像力を持つべきだと考えている","便利さについては特に自分の意見を持っていない"],"answer":2},{"q":"話し手は利便性を何にたとえているか。","q_en":"What does the speaker compare convenience to?","options":["忘れた頃に請求書が届く、後払いの負債","誰にでも平等に配られる贈り物","使えば使うほど価値が増していく財産","すぐに使い切ってしまう消耗品"],"answer":0}]},{"id":"l-n1-2","title":"修復をめぐる対話（A Dialogue on Restoration）","script":"男：今回の壁画の修復方針なんだけど、やはり制作当初の鮮やかな色彩を、できる限り再現する方向で進めたいと考えているんだ。\n女：その気持ちは分かるわ。でも、私はむしろ慎重になるべきだと思うの。何世紀もの間、その絵が浴びてきた時間そのものが、もはや作品の一部になっているんじゃないかしら。\n男：とはいえ、色褪せてしまった状態を「本来の姿」と呼んでいいものだろうか。作者が意図したのは、あくまで描いた瞬間の色合いのはずだ。\n女：確かにそうかもしれない。ただ、私たちが手を加えた瞬間、それはもう作者の絵であると同時に、現代の私たちの解釈が塗り重ねられた絵になってしまう。どこまでが復元で、どこからが創作なのか、その線引きは思いのほか曖昧なのよ。\n男：つまり君は、修復とは過去を忠実に取り戻す作業ではなく、現在の価値観を過去に投影する行為にほかならない、と言いたいわけだね。\n女：ええ。だからこそ、私は「元通りにする」という言葉を、そう軽々しくは使えないと思っているの。むしろ、朽ちていく過程に手をどう添えるか、そこにこそ修復家の見識が問われるのではないかしら。","transcript_en":"Man: About the restoration policy for this mural — I'm still thinking we should proceed in the direction of reproducing, as much as we can, the vivid colors of when it was first created.\nWoman: I understand that feeling. But I actually think we ought to be more cautious. The very time that the painting has bathed in over so many centuries has, by now, become a part of the work itself, hasn't it?\nMan: Even so, can we really call the faded state its \"original form\"? What the artist intended was surely the coloring of the very moment they painted it.\nWoman: That may well be true. But the moment we lay our hands on it, it becomes — at the same time as being the artist's painting — a painting over which our modern interpretation has been layered. How much is restoration, and from where does it become creation? That line is more ambiguous than one might think.\nMan: In other words, you want to say that restoration is not the work of faithfully recovering the past, but nothing other than the act of projecting present-day values onto the past.\nWoman: Yes. That's precisely why I feel I can't use the words \"return it to how it was\" so lightly. Rather, how one lends one's hand to the process of decay — isn't that exactly where a restorer's discernment is put to the test?","questions":[{"q":"女性の立場はどれか。","q_en":"Which describes the woman's position?","options":["制作当初の色彩を完全に再現することを最優先すべきだ","時間の経過も作品の一部であり、修復には慎重であるべきだ","壁画には一切手を加えず、そのまま朽ちるにまかせるべきだ","作者の意図は無視し、修復家が自由に描き直してよい"],"answer":1},{"q":"男性が最初に示した修復方針はどれか。","q_en":"What restoration policy did the man first propose?","options":["絵に一切手を加えず、現状のまま保存する","現代的な解釈を大胆に加えて描き直す","制作当初の鮮やかな色彩を、できる限り再現する","修復はせず、壁画を別の場所へ移設する"],"answer":2},{"q":"女性が「曖昧だ」と指摘したのは、何についてか。","q_en":"What did the woman point out as being ambiguous?","options":["どこまでが復元で、どこからが創作なのかという境界","壁画を実際に描いた作者が誰であるかという点","修復にかかる費用と期間の見積もり","壁画が描かれた正確な年代"],"answer":0}]},{"id":"l-n1-3","title":"再読という愉しみ（The Pleasure of Rereading）","script":"一度読んだ本を、なぜまた手に取るのか。あらすじも結末も分かっているのに、と訝しむ向きもあるでしょう。けれども、再読という行為の妙味は、まさにその「分かっている」という前提にこそ潜んでいるのです。初めて読むとき、私たちはどうしても物語の先を追うことに気を取られ、一文一文の呼吸や、さりげなく置かれた伏線の手触りを、つい取りこぼしてしまう。ところが二度目、三度目となると、結末を知っているがゆえに、かえって細部にゆっくりと目を凝らす余裕が生まれる。同じ文章のはずなのに、以前は素通りしていた一節が、不意に私を立ち止まらせる。それはおそらく、本が変わったからではなく、その間に、読み手である私自身が変わったからにほかなりません。歳月を経て再び同じ物語に向き合うとき、私たちはその作品を読み返していると同時に、かつてその本を読んだ頃の自分自身をも、静かに読み返しているのです。だとすれば、一冊の本は、読むたびに新しく生まれ変わる、汲めども尽きぬ泉のようなものなのかもしれません。","transcript_en":"Why do we pick up once more a book we have already read? Some may wonder at it — even though we already know the plot and the ending. And yet, the exquisite charm of the act of rereading lurks precisely in that premise of \"already knowing.\" When reading for the first time, we inevitably get caught up in chasing what comes next in the story, and end up letting slip the breathing of each sentence, the texture of the foreshadowing casually laid here and there. But by the second or third time, precisely because we know the ending, we conversely gain the composure to fix our eyes slowly on the details. Though it ought to be the very same text, a passage we once passed right by suddenly makes us halt. That is likely not because the book has changed, but simply because I myself, the reader, have changed in the meantime. When, after the passage of years, we face the same story once again, we are — at the same time as rereading that work — also quietly rereading our very own selves from the days when we first read it. If so, then a single book may be like an inexhaustible spring, born anew each time it is read.","questions":[{"q":"話し手によれば、再読の醍醐味はどこにあるか。","q_en":"According to the speaker, where does the real charm of rereading lie?","options":["結末を知らないまま、物語の先を追える点","結末を知っているからこそ、細部にじっくり目を向けられる点","一度目よりも速く読み終えられる点","あらすじを他人に説明できるようになる点"],"answer":1},{"q":"以前は素通りしていた一節が心に留まるようになるのは、なぜだと話し手は述べているか。","q_en":"Why, according to the speaker, does a passage once overlooked come to stay with us?","options":["本の内容そのものが書き換えられたから","出版社が新しい注釈を加えたから","読み手である自分自身が変わったから","以前より翻訳が良くなったから"],"answer":2},{"q":"話し手は一冊の本を、最終的に何にたとえているか。","q_en":"In the end, what does the speaker compare a single book to?","options":["誰も解くことのできない永遠の謎","一度使えばなくなってしまう道具","時とともに色褪せていく古い写真","読むたびに生まれ変わる、汲めども尽きぬ泉"],"answer":3}]},{"id":"l-n1-4","title":"「成果」を測るということ（On Measuring \"Results\"）","script":"どんな仕事にも数値目標を掲げ、その達成度で人を評価する。近ごろ、そうした流儀があらゆる職場に浸透しつつあります。無駄を省き、成果を目に見える形にする——聞こえはいい。しかし、私が長年この業界に身を置いて痛感するのは、本当に価値のある仕事ほど、数字には収まりきらないという事実です。たとえば、若い同僚の悩みにそっと耳を傾ける時間。あるいは、すぐには実を結ばないと分かっていながら、あえて遠回りを選ぶという判断。こうした営みは、その月の売上にも、こなした件数にも、一切現れません。ところが、測れるものだけを評価の物差しにしてしまうと、人はいつしか、測られる行動ばかりを優先するようになる。測れないがゆえに切り捨てられていくもの、そこにこそ、組織を長い目で支えてきた土台があったのではないでしょうか。効率を追い求めるあまり、効率という尺度そのものが取りこぼしているものへの想像力を、私たちは失ってはならない。数字は現実の一面を照らす光ではあっても、現実そのものではないのですから。","transcript_en":"In any job, set numerical targets and evaluate people by how well they meet them. Lately, that way of doing things has been permeating every workplace. Cut out waste, put results into visible form — it sounds fine. But what I have keenly felt over my long years in this field is the fact that the truly valuable work is precisely what cannot be fully contained in numbers. For example, the time spent quietly lending an ear to a young colleague's troubles. Or the decision to deliberately take a roundabout path, even while knowing it won't bear fruit right away. Such acts appear nowhere — neither in that month's sales, nor in the number of cases handled. And yet, once we make only what is measurable the yardstick of evaluation, people come, before they know it, to prioritize only the behavior that gets measured. The things cut away precisely because they cannot be measured — wasn't it there that the very foundation supporting the organization over the long term lay? In our eagerness to pursue efficiency, we must not lose our imagination for what the very measure of efficiency itself is letting slip. For numbers, though they are a light that illuminates one facet of reality, are not reality itself.","questions":[{"q":"話し手が最も問題だと考えているのは何か。","q_en":"What does the speaker consider the biggest problem?","options":["数値目標を掲げる職場が減っていること","測れる成果だけを評価すると、測れない価値ある仕事が切り捨てられること","若い社員が仕事の悩みを相談しなくなったこと","売上の数字がなかなか伸びないこと"],"answer":1},{"q":"数字に表れない仕事の例として挙げられているのはどれか。","q_en":"Which is given as an example of work that does not show up in numbers?","options":["その月の売上を細かく記録すること","こなした件数を増やすこと","高い数値目標を設定すること","若い同僚の悩みにそっと耳を傾ける時間"],"answer":3},{"q":"話し手は「数字」を最終的にどのようなものだと述べているか。","q_en":"In the end, how does the speaker describe \"numbers\"?","options":["現実の一面を照らす光ではあっても、現実そのものではない","現実を完全に映し出す鏡","まったく信用できない虚構","努力次第でいくらでも操作できる道具"],"answer":0}]},{"id":"l-n1-5","title":"ローカル線の存廃（Whether to Keep the Local Line）","script":"男：この赤字続きのローカル線、いよいよ廃止もやむを得ない、という声が強まっているね。\n女：数字だけを見れば、そう結論づけたくなるのも分かるわ。でも、私はそう単純には割り切れないと思うの。\n男：とはいえ、一日の利用客が数えるほどしかない路線を、多額の税金で支え続けるのが、本当に公平と言えるだろうか。\n女：もちろん、採算を度外視していいとは言わない。ただ、この線がなくなったとき、真っ先に困るのは、車を持たないお年寄りや、通学の高校生でしょう。彼らにとっては、あの一本の列車が、社会とつながる唯一の糸なのよ。\n男：確かに、便利さや効率だけでは測れない役割があるのは、否定できないな。\n女：そう。鉄道を単なる移動の手段としてだけ捉えるなら、廃止は合理的な判断かもしれない。でも、地域そのものを生かすか見捨てるか、という問いとして考えれば、話はまるで違ってくる。目先の赤字を消すことが、長い目で見れば、その土地の未来まで細らせてしまう——そういうこともあるんじゃないかしら。","transcript_en":"Man: This local line that keeps running deficits — voices saying its abolition is now unavoidable are growing stronger.\nWoman: Looking at the numbers alone, I understand the urge to conclude that. But I don't think it can be settled so simply.\nMan: Even so, can it really be called fair to keep propping up, with large amounts of tax money, a line whose daily riders you can count on one hand?\nWoman: Of course, I'm not saying we can disregard profitability. But when this line disappears, the first to be troubled will be the elderly who don't own cars and the high-school students commuting to school. For them, that single train is the only thread connecting them to society.\nMan: True, there's no denying it plays a role that can't be measured by convenience or efficiency alone.\nWoman: Right. If you grasp the railway merely as a means of transport, abolition may be a rational judgment. But if you consider it as the question of whether to keep the region itself alive or abandon it, the story changes entirely. Erasing the immediate deficit can, in the long run, end up thinning out even the future of that land — such things do happen, don't they?","questions":[{"q":"男性が当初示していた考えはどれか。","q_en":"What view did the man initially express?","options":["ローカル線をもっと増やすべきだ","赤字が続く以上、路線の廃止もやむを得ない","税金を使ってでも路線を必ず守るべきだ","鉄道より飛行機を優先すべきだ"],"answer":1},{"q":"女性は、路線がなくなると誰が最も困ると述べているか。","q_en":"According to the woman, who would be most troubled if the line disappeared?","options":["車を持たない高齢者や、通学の高校生","鉄道会社の株主","都会から来る観光客","沿線に住む若い会社員"],"answer":0},{"q":"女性の主張の要点はどれか。","q_en":"What is the main point of the woman's argument?","options":["鉄道は移動手段にすぎないので、赤字ならすぐ廃止すべきだ","採算はまったく気にしなくてよい","目先の赤字を消すことが、かえって地域の未来を細らせることもある","高校生には別の交通手段を用意すればそれでよい"],"answer":2}]},{"id":"l-n1-6","title":"睡眠負債という考え方（The Idea of \"Sleep Debt\"）","script":"「眠る間も惜しんで働く」という言葉が、かつては美徳のように語られてきました。睡眠を削ってでも何かを成し遂げる姿は、勤勉さの証と見なされてきたのです。しかし、近年の研究が明らかにしつつあるのは、それとはおよそ正反対の事実です。日々のわずかな寝不足は、その場で解消されずに、まるで借金のように少しずつ積み重なっていく。「睡眠負債」と呼ばれるこの状態は、自覚のないまま判断力や集中力をむしばみ、やがて心身の健康そのものを脅かすといいます。厄介なのは、当人がその影響にほとんど気づけない、という点です。慢性的な寝不足に慣れてしまった人は、自分は十分に働けていると思い込みがちですが、実際には、酒に酔ったのと変わらぬほど能率が落ちている、という報告さえある。つまり、睡眠を削って稼いだつもりの時間は、翌日の生産性の低下という形で、利子までつけて返済させられているわけです。休むことを怠惰と履き違える、その発想こそ、いま改められるべきではないでしょうか。","transcript_en":"\"Working without even sparing time to sleep\" — such words were once spoken of almost as a virtue. The figure of accomplishing something even by cutting into one's sleep was regarded as proof of diligence. But what recent research is coming to reveal is a fact roughly the very opposite. Each day's slight lack of sleep, rather than being cleared away on the spot, piles up little by little, just like a debt. This state, called \"sleep debt,\" is said to erode one's judgment and concentration without one's awareness, and eventually to threaten one's very physical and mental health. What is troublesome is that the person themselves can hardly notice its effects. People who have grown accustomed to chronic sleep deprivation tend to convince themselves that they are working just fine, but there are even reports that their efficiency has in fact dropped to no different from being drunk on alcohol. In other words, the time one thought one had earned by cutting into sleep is being repaid — with interest added — in the form of the next day's decline in productivity. Isn't it precisely that mindset, which mistakes resting for laziness, that ought now to be corrected?","questions":[{"q":"「睡眠負債」とはどのような状態か。","q_en":"What kind of state is \"sleep debt\"?","options":["一晩徹夜すると、すぐに大きな病気になる状態","日々のわずかな寝不足が、借金のように少しずつ積み重なっていく状態","眠りすぎて、かえって体調を崩してしまう状態","睡眠時間を記録して管理する新しい健康法"],"answer":1},{"q":"睡眠負債の「厄介な」点として述べられているのは何か。","q_en":"What is described as the \"troublesome\" aspect of sleep debt?","options":["治すのに高額な費用がかかること","若い人にはまったく起こらないこと","当人が、自分への影響にほとんど気づけないこと","一度なると二度と回復しないこと"],"answer":2},{"q":"話し手が最も訴えたいことはどれか。","q_en":"What does the speaker most want to argue?","options":["休むことを怠惰と取り違える考え方を、改めるべきだ","睡眠時間はできるだけ削って働くべきだ","睡眠より食事のほうが健康に重要だ","寝不足でも酒を飲めば能率が上がる"],"answer":0}]},{"id":"l-n1-7","title":"匿名性をめぐって（On Anonymity）","script":"男：ネット上の誹謗中傷がこれだけ深刻になると、いっそ匿名での投稿は全面的に禁止すべきだ、という議論まで出てきているね。\n女：気持ちは分かるわ。名前を隠しているからこそ、人は平気で他人を傷つけられるのだ、というのは一理ある。でも、匿名だからこそ言える声もある、という側面を忘れてはいけないと思うの。\n男：というと？\n女：たとえば、職場の不正を告発したい人や、社会の少数派として声を上げたい人。実名を明かせば不利益を被りかねない立場の人にとって、匿名という盾は、時に唯一の発言の手段になるのよ。\n男：なるほど。匿名性を奪えば、悪意ある投稿だけでなく、本来守られるべき弱い立場の声まで封じてしまいかねない、というわけか。\n女：そういうこと。問題の根は、匿名性そのものにあるのではなく、その陰に隠れて他人を攻撃する、一部の人間の振る舞いにあるはずよ。道具を一律に取り上げるのではなく、その使い方の責任をどう問うか——考えるべきは、そこではないかしら。","transcript_en":"Man: With online slander and abuse having become this serious, an argument is even emerging that anonymous posting should just be banned entirely.\nWoman: I understand the feeling. There's something to the idea that it's precisely because people hide their names that they can hurt others without a second thought. But I think we mustn't forget the aspect that there are also voices that can only be raised precisely because of anonymity.\nMan: Meaning?\nWoman: For instance, someone who wants to blow the whistle on wrongdoing at their workplace, or someone who wants to speak up as a social minority. For people in positions where revealing their real name could bring them disadvantage, the shield of anonymity is at times the only means of speaking.\nMan: I see. So stripping away anonymity could, along with malicious posts, end up silencing even the voices of the weak that ought properly to be protected.\nWoman: Exactly. The root of the problem shouldn't lie in anonymity itself, but in the conduct of a portion of people who hide in its shadow and attack others. Rather than uniformly confiscating the tool, how to hold people accountable for the way they use it — isn't that where we should be thinking?","questions":[{"q":"男性が最初に紹介した議論はどれか。","q_en":"What argument did the man first introduce?","options":["匿名での投稿を全面的に禁止すべきだという議論","ネットの利用料金を上げるべきだという議論","実名での投稿を禁止すべきだという議論","誹謗中傷は放置してかまわないという議論"],"answer":0},{"q":"女性が挙げた「匿名だからこそ言える声」の例はどれか。","q_en":"Which is the example the woman gave of \"voices that can only be raised because of anonymity\"?","options":["有名人の私生活を暴露したい人の声","職場の不正を告発したい人や、社会の少数派の声","商品を宣伝したい企業の声","匿名で悪口を言いたいだけの人の声"],"answer":1},{"q":"女性は、問題の根がどこにあると考えているか。","q_en":"Where does the woman think the root of the problem lies?","options":["匿名という仕組みそのもの","インターネットの通信速度","実名を公開している人々","匿名性の陰に隠れて他人を攻撃する、一部の人間の振る舞い"],"answer":3}]},{"id":"l-n1-8","title":"手つかずの自然という幻想（The Illusion of Untouched Nature）","script":"手つかずの自然こそが最も豊かである——私たちはついそう思い込みがちです。人の手が加わらない原生の森を理想とし、そこに本来の自然の姿を見ようとする。けれども、日本の里山を見わたすとき、その通念はいささか揺らがざるを得ません。人里に近い雑木林や、水を張った田んぼ、ため池といった環境は、決して人の営みと無縁に成り立ってきたわけではないのです。定期的に木を切り、下草を刈り、田を耕す——そうした地道な働きかけがあってはじめて、多様な生き物が息づく空間が保たれてきた。ところが、農村の過疎化とともに、こうした手入れが途絶えると、藪は荒れ、かつてそこを住処としていた昆虫や小動物は、次第に姿を消していく。皮肉なことに、人が手を引いたとたん、守られるはずだった自然のほうが痩せ細っていくのです。自然と人間を、まるで対立するもののように切り分ける発想では、もはやこの問題の本質は捉えきれない。人の手が育んできた自然もまた、確かに存在するのだということを、私たちは思い起こすべきなのかもしれません。","transcript_en":"Untouched nature is what is richest — we tend to just assume so. We idealize the primeval forest, untouched by human hands, and try to see in it the original form of nature. However, when we look out over Japan's satoyama, that common belief cannot help but waver somewhat. Environments such as the groves near human settlements, the water-filled rice paddies, and the reservoir ponds have by no means come into being unrelated to human activity. Regularly cutting trees, mowing the undergrowth, tilling the fields — only when there is such steady, humble work has a space where diverse creatures live and breathe been maintained. Yet when, along with the depopulation of farming villages, such upkeep ceases, the thickets grow wild, and the insects and small animals that once made their homes there gradually vanish. Ironically, the very moment people withdraw their hands, the nature that was supposed to be protected is the one that grows thin and wastes away. With a way of thinking that carves nature and humanity apart as if they were opposing things, the essence of this problem can no longer be fully grasped. Perhaps we ought to recall that nature nurtured by human hands, too, certainly does exist.","questions":[{"q":"話し手が「揺らがざるを得ない」と述べている通念とはどれか。","q_en":"Which is the common belief the speaker says \"cannot help but waver\"?","options":["手つかずの自然こそが最も豊かだ、という考え","里山には生き物がほとんどいない、という考え","人間は自然を破壊してばかりだ、という考え","農村の過疎化は避けられない、という考え"],"answer":0},{"q":"里山の多様な生き物が保たれてきたのは、なぜだと述べているか。","q_en":"Why, according to the speaker, have the satoyama's diverse creatures been sustained?","options":["人がいっさい立ち入らなかったから","木を切り、下草を刈るなど、人が定期的に手を入れてきたから","気候が年々暖かくなってきたから","外国から新しい生き物が持ち込まれたから"],"answer":1},{"q":"「皮肉なことに」以下で述べられているのは、どのような事態か。","q_en":"What situation is described in the part beginning \"ironically\"?","options":["人が手を入れたために、自然が破壊されてしまう事態","都市化が進んで、里山が宅地に変わってしまう事態","人が手を引いたとたん、守られるはずの自然が痩せ細っていく事態","生き物が増えすぎて、農作物が荒らされてしまう事態"],"answer":2}]},{"id":"l-n1-9","title":"祭りが途絶えるとき（When a Festival Dies Out）","script":"かつて、どの町にも、その土地に根ざした祭りがありました。神輿を担ぐ掛け声が路地に響き、ふだんは顔を合わせることのない世代が、同じ汗を流す。祭りとは、単なる年に一度の賑わいではなかったのです。それは、地域の人々を目に見えない糸で結び直し、共同体としての一体感を確かめ合う、いわば装置のような役割を担ってきました。ところが、担い手の高齢化と、若い世代の流出により、その多くが、いま静かに姿を消しつつあります。祭りが一つ途絶えるということは、単に一つの行事が失われる、ということにとどまりません。それまで祭りを通じてかろうじて保たれてきた、隣人どうしの結びつきそのものが、そこでほどけてしまう。もっとも、昔ながらの形をそのまま守り抜くことだけが答えだとは、私も思いません。時代に合わせて姿を変えていくのは、むしろ自然なことでしょう。ただ、効率や採算とは別の論理で人と人とをつないできた、こうした営みを、単なる時代遅れの慣習として片づけてしまってよいものか。失ってはじめてその重みに気づく、ということのないよう、いま一度、立ち止まって考えてみたいのです。","transcript_en":"Once, every town had a festival rooted in its own land. The chanting of those carrying the portable shrine echoed through the alleys, and generations who normally never crossed paths shed the same sweat together. A festival was not merely a once-a-year bustle. It bore the role of, so to speak, a device — re-tying the people of the region with invisible threads, and letting them confirm to one another their sense of unity as a community. But with the aging of those who carry them on and the outflow of the younger generation, many of them are now quietly disappearing. That one festival dies out does not stop at merely one event being lost. The very bonds between neighbors, which until then had barely been held together through the festival, come unraveled right there. That said, I too do not think that stubbornly preserving the old form exactly as it was is the only answer. Changing shape to suit the times is, if anything, only natural. Still, is it really all right to dismiss such an endeavor — which has tied person to person by a logic apart from efficiency or profit — as merely an outdated custom? So that we do not end up realizing its weight only after we have lost it, I would like, once more, to stop and think.","questions":[{"q":"話し手によれば、祭りはどのような役割を担ってきたか。","q_en":"According to the speaker, what role has the festival played?","options":["観光客を集め、地域にお金を落とさせる役割","地域の人々を結び直し、共同体の一体感を確かめ合う役割","若い世代を都会へ送り出す役割","神社の建物を修理するための役割"],"answer":1},{"q":"多くの祭りが姿を消しつつある原因として挙げられているのはどれか。","q_en":"Which is given as a cause of many festivals disappearing?","options":["参加費が高くなりすぎたこと","天候が不順になったこと","担い手の高齢化と、若い世代の流出","法律で祭りが禁止されたこと"],"answer":2},{"q":"昔ながらの祭りの形をそのまま守ることについて、話し手はどう考えているか。","q_en":"What does the speaker think about preserving the old form of the festival exactly as it was?","options":["それだけが唯一の正しい答えだ","伝統は何があっても一切変えてはならない","祭りは時代遅れなので、完全になくすべきだ","時代に合わせて姿を変えていくのは、むしろ自然なことだ"],"answer":3}]}]};
+window.LISTENING_BANK = {
+  "N5": [
+    {
+      "id": "l-n5-1",
+      "title": "カフェで (At a Café)",
+      "script": "すみません、コーヒーを ひとつ ください。それから、ケーキも おねがいします。ぜんぶで いくらですか。",
+      "transcript_en": "Excuse me, one coffee please. And a cake as well, please. How much is it all together?",
+      "questions": [
+        {
+          "q": "この人は なにを ちゅうもんしましたか。",
+          "q_en": "What did this person order?",
+          "options": [
+            "コーヒーと ケーキ",
+            "おちゃと パン",
+            "コーヒーだけ",
+            "ケーキだけ"
+          ],
+          "answer": 0,
+          "q_te": "ఈ వ్యక్తి ఏమి ఆర్డర్ చేశారు?",
+          "q_hi": "इस व्यक्ति ने क्या ऑर्डर किया?",
+          "q_ta": "இந்த நபர் என்ன ஆர்டர் செய்தார்?",
+          "q_ko": "이 사람은 무엇을 주문했습니까?",
+          "q_es": "¿Qué ordenó esta persona?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಏನನ್ನು ಆರ್ಡರ್ ಮಾಡಿದರು?",
+          "q_ml": "ഈ വ്യക്തി എന്താണ് ഓർഡർ ചെയ്തത്?"
+        },
+        {
+          "q": "この人は さいごに なにを ききましたか。",
+          "q_en": "What did this person ask at the end?",
+          "options": [
+            "ねだん (price)",
+            "じかん (time)",
+            "みち (directions)",
+            "なまえ (name)"
+          ],
+          "answer": 0,
+          "q_te": "ఈ వ్యక్తి చివరగా ఏమి అడిగారు?",
+          "q_hi": "इस व्यक्ति ने अंत में क्या पूछा?",
+          "q_ta": "இந்த நபர் கடைசியாக என்ன கேட்டார்?",
+          "q_ko": "이 사람은 마지막에 무엇을 물었습니까?",
+          "q_es": "¿Qué preguntó esta persona al final?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಕೊನೆಯಲ್ಲಿ ಏನು ಕೇಳಿದರು?",
+          "q_ml": "ഈ വ്യക്തി അവസാനം എന്താണ് ചോദിച്ചത്?"
+        }
+      ],
+      "transcript_te": "క్షమించండి, ఒక కాఫీ ఇవ్వండి. ఇంకా, కేకు కూడా దయచేసి. మొత్తం ఎంత?",
+      "transcript_hi": "माफ़ कीजिए, एक कॉफ़ी दीजिए। और साथ ही एक केक भी दीजिए। कुल मिलाकर कितना हुआ?",
+      "transcript_ta": "மன்னிக்கவும், ஒரு காபி கொடுங்கள். மற்றும் ஒரு கேக்கும் கொடுங்கள். மொத்தம் எவ்வளவு?",
+      "transcript_ko": "실례합니다, 커피 한 잔 주세요. 그리고 케이크도 부탁합니다. 모두 얼마인가요?",
+      "transcript_es": "Disculpe, un café por favor. Y un pastel también, por favor. ¿Cuánto es todo?",
+      "transcript_kn": "ಕ್ಷಮಿಸಿ, ಒಂದು ಕಾಫಿ ಕೊಡಿ. ಜೊತೆಗೆ ಒಂದು ಕೇಕ್ ಕೂಡ ಕೊಡಿ. ಒಟ್ಟು ಎಷ್ಟು?",
+      "transcript_ml": "ക്ഷമിക്കണം, ഒരു കാപ്പി തരൂ. കൂടാതെ ഒരു കേക്കും തരൂ. ആകെ എത്രയായി?"
+    },
+    {
+      "id": "l-n5-2",
+      "title": "じこしょうかい (Self-introduction)",
+      "script": "はじめまして。わたしは たなか ゆいです。だいがくせいです。まいにち でんしゃで がっこうへ いきます。すきな たべものは すしです。どうぞ よろしく おねがいします。",
+      "transcript_en": "Nice to meet you. I am Tanaka Yui. I am a university student. Every day I go to school by train. My favorite food is sushi. It's a pleasure to meet you.",
+      "questions": [
+        {
+          "q": "たなかさんは なにを して いますか。",
+          "q_en": "What does Tanaka do?",
+          "options": [
+            "だいがくせい (university student)",
+            "せんせい (teacher)",
+            "いしゃ (doctor)",
+            "かいしゃいん (office worker)"
+          ],
+          "answer": 0,
+          "q_te": "తనాకా గారు ఏమి చేస్తుంటారు?",
+          "q_hi": "तानाका जी क्या करती हैं?",
+          "q_ta": "தனகா என்ன செய்கிறார்?",
+          "q_ko": "다나카 씨는 무엇을 하고 있습니까?",
+          "q_es": "¿A qué se dedica Tanaka?",
+          "q_kn": "ತನಾಕಾ ಏನು ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "തനാക്ക എന്താണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "たなかさんは なにで がっこうへ いきますか。",
+          "q_en": "How does Tanaka go to school?",
+          "options": [
+            "バス (bus)",
+            "でんしゃ (train)",
+            "くるま (car)",
+            "じてんしゃ (bicycle)"
+          ],
+          "answer": 1,
+          "q_te": "తనాకా గారు దేనిలో పాఠశాలకు వెళ్తారు?",
+          "q_hi": "तानाका जी स्कूल कैसे जाती हैं?",
+          "q_ta": "தனகா எதில் பள்ளிக்கு செல்கிறார்?",
+          "q_ko": "다나카 씨는 무엇으로 학교에 갑니까?",
+          "q_es": "¿Cómo va Tanaka a la escuela?",
+          "q_kn": "ತನಾಕಾ ಯಾವುದರಲ್ಲಿ ಶಾಲೆಗೆ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "തനാക്ക എന്തിലാണ് സ്കൂളിൽ പോകുന്നത്?"
+        },
+        {
+          "q": "たなかさんの すきな たべものは なんですか。",
+          "q_en": "What is Tanaka's favorite food?",
+          "options": [
+            "ラーメン (ramen)",
+            "パン (bread)",
+            "すし (sushi)",
+            "カレー (curry)"
+          ],
+          "answer": 2,
+          "q_te": "తనాకా గారికి ఇష్టమైన ఆహారం ఏమిటి?",
+          "q_hi": "तानाका जी का पसंदीदा खाना क्या है?",
+          "q_ta": "தனகாவுக்கு பிடித்த உணவு என்ன?",
+          "q_ko": "다나카 씨가 좋아하는 음식은 무엇입니까?",
+          "q_es": "¿Cuál es la comida favorita de Tanaka?",
+          "q_kn": "ತನಾಕಾಗೆ ಇಷ್ಟವಾದ ಆಹಾರ ಯಾವುದು?",
+          "q_ml": "തനാക്കയ്ക്ക് ഏറ്റവും ഇഷ്ടപ്പെട്ട ഭക്ഷണം എന്താണ്?"
+        }
+      ],
+      "transcript_te": "నమస్కారం (మొదటి పరిచయం). నా పేరు తనాకా యుయి. నేను విశ్వవిద్యాలయ విద్యార్థిని. ప్రతిరోజూ రైలులో కళాశాలకు వెళ్తాను. నాకు ఇష్టమైన ఆహారం సుషీ. మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది.",
+      "transcript_hi": "नमस्ते (आपसे मिलकर खुशी हुई)। मैं तानाका युई हूँ। मैं एक विश्वविद्यालय की छात्रा हूँ। मैं रोज़ाना ट्रेन से स्कूल जाती हूँ। मेरा पसंदीदा खाना सुशी है। आपसे मिलकर बहुत अच्छा लगा।",
+      "transcript_ta": "வணக்கம் (முதல் சந்திப்பு). நான் தனகா யுய். நான் ஒரு பல்கலைக்கழக மாணவி. தினமும் ரயிலில் பள்ளிக்கு செல்கிறேன். எனக்கு பிடித்த உணவு சுஷி. உங்களை சந்தித்ததில் மகிழ்ச்சி.",
+      "transcript_ko": "처음 뵙겠습니다. 저는 다나카 유이입니다. 대학생입니다. 매일 전철로 학교에 갑니다. 좋아하는 음식은 초밥입니다. 잘 부탁드립니다.",
+      "transcript_es": "Mucho gusto. Soy Yui Tanaka. Soy estudiante universitaria. Todos los días voy a la escuela en tren. Mi comida favorita es el sushi. Encantada de conocerte.",
+      "transcript_kn": "ನಮಸ್ಕಾರ (ಮೊದಲ ಭೇಟಿ). ನಾನು ತನಾಕಾ ಯುಯಿ. ನಾನು ವಿಶ್ವವಿದ್ಯಾಲಯದ ವಿದ್ಯಾರ್ಥಿನಿ. ಪ್ರತಿದಿನ ರೈಲಿನಲ್ಲಿ ಶಾಲೆಗೆ ಹೋಗುತ್ತೇನೆ. ನನಗೆ ಇಷ್ಟವಾದ ಆಹಾರ ಸುಶಿ. ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿದ್ದಕ್ಕೆ ಸಂತೋಷ.",
+      "transcript_ml": "കണ്ടുമുട്ടിയതിൽ സന്തോഷം. ഞാൻ തനാക്ക യുയി. ഞാൻ ഒരു സർവകലാശാലാ വിദ്യാർത്ഥിയാണ്. എല്ലാ ദിവസവും ട്രെയിനിൽ സ്കൂളിൽ പോകുന്നു. എനിക്ക് ഏറ്റവും ഇഷ്ടപ്പെട്ട ഭക്ഷണം സുഷിയാണ്. നിങ്ങളെ പരിചയപ്പെട്ടതിൽ സന്തോഷം."
+    },
+    {
+      "id": "l-n5-3",
+      "title": "くだものやで (At the fruit shop)",
+      "script": "みせのひと: いらっしゃいませ。\nおきゃく: すみません、りんごは いくらですか。\nみせのひと: ひとつ 150えんです。\nおきゃく: じゃあ、みっつ ください。\nみせのひと: ありがとうございます。ぜんぶで 450えんです。",
+      "transcript_en": "Shopkeeper: Welcome.\nCustomer: Excuse me, how much are the apples?\nShopkeeper: They are 150 yen each.\nCustomer: Then, please give me three.\nShopkeeper: Thank you. That will be 450 yen in total.",
+      "questions": [
+        {
+          "q": "おきゃくさんは なにを かいますか。",
+          "q_en": "What does the customer buy?",
+          "options": [
+            "みかん (mandarin)",
+            "りんご (apple)",
+            "バナナ (banana)",
+            "いちご (strawberry)"
+          ],
+          "answer": 1,
+          "q_te": "కస్టమర్ ఏమి కొంటున్నారు?",
+          "q_hi": "ग्राहक क्या खरीदता है?",
+          "q_ta": "வாடிக்கையாளர் என்ன வாங்குகிறார்?",
+          "q_ko": "손님은 무엇을 삽니까?",
+          "q_es": "¿Qué compra el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಏನನ್ನು ಖರೀದಿಸುತ್ತಾನೆ?",
+          "q_ml": "ഉപഭോക്താവ് എന്താണ് വാങ്ങുന്നത്?"
+        },
+        {
+          "q": "りんごを いくつ かいますか。",
+          "q_en": "How many apples does the customer buy?",
+          "options": [
+            "ひとつ (one)",
+            "ふたつ (two)",
+            "みっつ (three)",
+            "よっつ (four)"
+          ],
+          "answer": 2,
+          "q_te": "యాపిల్స్ ఎన్ని కొంటున్నారు?",
+          "q_hi": "कितने सेब खरीदते हैं?",
+          "q_ta": "ஆப்பிள்களை எத்தனை வாங்குகிறார்?",
+          "q_ko": "사과를 몇 개 삽니까?",
+          "q_es": "¿Cuántas manzanas compra?",
+          "q_kn": "ಸೇಬುಗಳನ್ನು ಎಷ್ಟು ಖರೀದಿಸುತ್ತಾನೆ?",
+          "q_ml": "എത്ര ആപ്പിളുകളാണ് വാങ്ങുന്നത്?"
+        },
+        {
+          "q": "ぜんぶで いくらですか。",
+          "q_en": "How much is it in total?",
+          "options": [
+            "450えん (450 yen)",
+            "150えん (150 yen)",
+            "300えん (300 yen)",
+            "600えん (600 yen)"
+          ],
+          "answer": 0,
+          "q_te": "మొత్తం ఎంత అయింది?",
+          "q_hi": "कुल मिलाकर कितना हुआ?",
+          "q_ta": "மொத்தம் எவ்வளவு?",
+          "q_ko": "모두 얼마입니까?",
+          "q_es": "¿Cuánto es en total?",
+          "q_kn": "ಒಟ್ಟು ಎಷ್ಟು?",
+          "q_ml": "ആകെ എത്രയായി?"
+        }
+      ],
+      "transcript_te": "దుకాణదారు: స్వాగతం.\nకస్టమర్: క్షమించండి, యాపిల్స్ ఎంత?\nదుకాణదారు: ఒక్కొక్కటి 150 యెన్లు.\nకస్టమర్: అయితే, మూడు ఇవ్వండి.\nదుకాణదారు: ధన్యవాదాలు. మొత్తం 450 యెన్లు అవుతుంది.",
+      "transcript_hi": "दुकानदार: स्वागत है।\nग्राहक: सुनिए, सेब कितने का है?\nदुकानदार: एक 150 येन का है।\nग्राहक: तो फिर, तीन दे दीजिए।\nदुकानदार: धन्यवाद। कुल 450 येन हुए।",
+      "transcript_ta": "கடைக்காரர்: வருக.\nவாடிக்கையாளர்: மன்னிக்கவும், ஆப்பிள் எவ்வளவு?\nகடைக்காரர்: ஒன்று 150 யென்.\nவாடிக்கையாளர்: அப்படியானால், மூன்று கொடுங்கள்.\nகடைக்காரர்: நன்றி. மொத்தம் 450 யென்.",
+      "transcript_ko": "가게 주인: 어서 오세요.\n손님: 실례합니다, 사과는 얼마인가요?\n가게 주인: 하나에 150엔입니다.\n손님: 그럼, 세 개 주세요.\n가게 주인: 감사합니다. 모두 450엔입니다.",
+      "transcript_es": "Vendedor: Bienvenido.\nCliente: Disculpe, ¿cuánto cuestan las manzanas?\nVendedor: Cuestan 150 yenes cada una.\nCliente: Entonces, déme tres, por favor.\nVendedor: Gracias. Son 450 yenes en total.",
+      "transcript_kn": "ಅಂಗಡಿಯವ: ಸುಸ್ವಾಗತ.\nಗ್ರಾಹಕ: ಕ್ಷಮಿಸಿ, ಸೇಬು ಎಷ್ಟು?\nಅಂಗಡಿಯವ: ಒಂದಕ್ಕೆ 150 ಯೆನ್.\nಗ್ರಾಹಕ: ಹಾಗಾದರೆ, ಮೂರು ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಧನ್ಯವಾದಗಳು. ಒಟ್ಟು 450 ಯೆನ್ ಆಗಿದೆ.",
+      "transcript_ml": "കടക്കാരൻ: സ്വാഗതം.\nഉപഭോക്താവ്: ക്ഷമിക്കണം, ആപ്പിളിന് എത്രയാണ്?\nകടക്കാരൻ: ഒരെണ്ണത്തിന് 150 യೆൻ.\nഉപഭോക്താവ്: എങ്കിൽ, മൂന്നെണ്ണം തരൂ.\nകടക്കാരൻ: നന്ദി. ആകെ 450 യെൻ."
+    },
+    {
+      "id": "l-n5-4",
+      "title": "にちようびの あさ (Sunday morning)",
+      "script": "わたしの かぞくは よにんです。ちちと ははと いもうとが います。にちようびは かぞくで こうえんへ いきます。あさ 9じに うちを でます。とても たのしいです。",
+      "transcript_en": "My family has four people. I have a father, a mother, and a younger sister. On Sundays, my family goes to the park. We leave home at 9 in the morning. It is a lot of fun.",
+      "questions": [
+        {
+          "q": "この ひとの かぞくは なんにんですか。",
+          "q_en": "How many people are in this person's family?",
+          "options": [
+            "さんにん (three)",
+            "よにん (four)",
+            "ごにん (five)",
+            "ふたり (two)"
+          ],
+          "answer": 1,
+          "q_te": "ఈ వ్యక్తి కుటుంబంలో ఎంతమంది ఉన్నారు?",
+          "q_hi": "इस व्यक्ति के परिवार में कितने लोग हैं?",
+          "q_ta": "இந்த நபரின் குடும்பத்தில் எத்தனை பேர் உள்ளனர்?",
+          "q_ko": "이 사람의 가족은 몇 명입니까?",
+          "q_es": "¿Cuántas personas hay en la familia de esta persona?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿಯ ಕುಟುಂಬದಲ್ಲಿ ಎಷ್ಟು ಜನರಿದ್ದಾರೆ?",
+          "q_ml": "ഈ ആളുടെ കുടുംബത്തിൽ എത്ര പേരുണ്ട്?"
+        },
+        {
+          "q": "にちようびに どこへ いきますか。",
+          "q_en": "Where do they go on Sunday?",
+          "options": [
+            "がっこう (school)",
+            "スーパー (supermarket)",
+            "こうえん (park)",
+            "びょういん (hospital)"
+          ],
+          "answer": 2,
+          "q_te": "ఆదివారం ఎక్కడికి వెళ్తారు?",
+          "q_hi": "रविवार को कहाँ जाते हैं?",
+          "q_ta": "ஞாயிற்றுக்கிழமை எங்கு செல்கிறார்கள்?",
+          "q_ko": "일요일에 어디에 갑니까?",
+          "q_es": "¿A dónde van el domingo?",
+          "q_kn": "ಭಾನುವಾರ ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "ഞായറാഴ്ച എങ്ങോട്ടാണ് പോകുന്നത്?"
+        },
+        {
+          "q": "なんじに うちを でますか。",
+          "q_en": "What time do they leave home?",
+          "options": [
+            "9じ (9:00)",
+            "8じ (8:00)",
+            "10じ (10:00)",
+            "7じ (7:00)"
+          ],
+          "answer": 0,
+          "q_te": "ఎన్ని గంటలకు ఇంటి నుండి బయలుదేరతారు?",
+          "q_hi": "कितने बजे घर से निकलते हैं?",
+          "q_ta": "எத்தனை மணிக்கு வீட்டை விட்டு புறப்படுகிறார்கள்?",
+          "q_ko": "몇 시에 집을 나섭니까?",
+          "q_es": "¿A qué hora salen de casa?",
+          "q_kn": "ಎಷ್ಟು ಗಂಟೆಗೆ ಮನೆಯಿಂದ ಹೊರಡುತ್ತಾರೆ?",
+          "q_ml": "എത്ര മണിക്കാണ് വീട്ടിൽ നിന്ന് ഇറങ്ങുന്നത്?"
+        }
+      ],
+      "transcript_te": "మా కుటుంబంలో నలుగురు వ్యక్తులు ఉన్నారు. నాన్న, అమ్మ మరియు చెల్లెలు ఉన్నారు. ఆదివారం కుటుంబమంతా కలిసి పార్కుకు వెళ్తాము. ఉదయం 9 గంటలకు ఇంటి నుండి బయలుదేరతాము. చాలా సరదాగా ఉంటుంది.",
+      "transcript_hi": "मेरे परिवार में चार लोग हैं। पिताजी, माताजी और छोटी बहन हैं। रविवार को परिवार के साथ पार्क जाते हैं। सुबह 9 बजे घर से निकलते हैं। बहुत मज़ा आता है।",
+      "transcript_ta": "என் குடும்பத்தில் நான்கு பேர் உள்ளனர். அப்பா, அம்மா மற்றும் தங்கை உள்ளனர். ஞாயிற்றுக்கிழமை குடும்பத்துடன் பூங்காவிற்கு செல்கிறோம். காலை 9 மணிக்கு வீட்டை விட்டு புறப்படுகிறோம். மிகவும் மகிழ்ச்சியாக இருக்கும்.",
+      "transcript_ko": "우리 가족은 네 명입니다. 아버지와 어머니, 여동생이 있습니다. 일요일에는 가족과 함께 공원에 갑니다. 아침 9시에 집을 나섭니다. 정말 즐겁습니다.",
+      "transcript_es": "Mi familia tiene cuatro personas. Están mi padre, mi madre y mi hermana menor. Los domingos vamos al parque en familia. Salimos de casa a las 9 de la mañana. Es muy divertido.",
+      "transcript_kn": "ನನ್ನ ಕುಟುಂಬದಲ್ಲಿ ನಾಲ್ಕು ಜನರಿದ್ದಾರೆ. ಅಪ್ಪ, ಅಮ್ಮ ಮತ್ತು ತಂಗಿ ಇದ್ದಾರೆ. ಭಾನುವಾರ ಕುಟುಂಬದೊಂದಿಗೆ ಪಾರ್ಕ್‌ಗೆ ಹೋಗುತ್ತೇವೆ. ಬೆಳಿಗ್ಗೆ 9 ಗಂಟೆಗೆ ಮನೆಯಿಂದ ಹೊರಡುತ್ತೇವೆ. ತುಂಬಾ ಸಂತೋಷವಾಗಿರುತ್ತದೆ.",
+      "transcript_ml": "എന്റെ കുടുംബത്തിൽ നാല് പേരുണ്ട്. അച്ഛനും അമ്മയും അനുജത്തിയും ഉണ്ട്. ഞായറാഴ്ചകളിൽ കുടുംബത്തോടൊപ്പം പാർക്കിൽ പോകും. രാവിലെ 9 മണിക്ക് വീട്ടിൽ നിന്ന് ഇറങ്ങും. വളരെ സന്തോഷകരമാണ്."
+    },
+    {
+      "id": "l-n5-5",
+      "title": "コンビニで (At the Convenience Store)",
+      "script": "店員：いらっしゃいませ。\nお客：すみません、お弁当をあたためてください。\n店員：はい。お飲み物はいりますか。\nお客：じゃあ、お茶を一本ください。",
+      "transcript_en": "Clerk: Welcome.\nCustomer: Excuse me, please heat up the bento.\nClerk: Yes. Would you like a drink?\nCustomer: Then, one bottle of tea, please.",
+      "questions": [
+        {
+          "q": "お客は何をあたためてもらいますか。",
+          "q_en": "What does the customer have heated up?",
+          "options": [
+            "お茶",
+            "お弁当",
+            "パン",
+            "コーヒー"
+          ],
+          "answer": 1,
+          "q_te": "కస్టమర్ దేనిని వేడి చేయిస్తున్నారు?",
+          "q_hi": "ग्राहक क्या गरम करवाता है?",
+          "q_ta": "வாடிக்கையாளர் எதை சூடாக்கச் சொல்கிறார்?",
+          "q_ko": "손님은 무엇을 데워 달라고 합니까?",
+          "q_es": "¿Qué pide el cliente que le calienten?",
+          "q_kn": "ಗ್ರಾಹಕ ಏನನ್ನು ಬಿಸಿ ಮಾಡಿಸುತ್ತಾನೆ?",
+          "q_ml": "ഉപഭോക്താവ് എന്താണ് ചൂടാക്കാൻ ആവശ്യപ്പെടുന്നത്?"
+        },
+        {
+          "q": "お客は飲み物を何本買いますか。",
+          "q_en": "How many bottles of the drink does the customer buy?",
+          "options": [
+            "一本",
+            "二本",
+            "三本",
+            "買いません"
+          ],
+          "answer": 0,
+          "q_te": "కస్టమర్ ఎన్ని బాటిళ్ల డ్రింక్ కొంటున్నారు?",
+          "q_hi": "ग्राहक पेय की कितनी बोतलें खरीदता है?",
+          "q_ta": "வாடிக்கையாளர் எத்தனை பாட்டில் பானம் வாங்குகிறார்?",
+          "q_ko": "손님은 음료를 몇 병 삽니까?",
+          "q_es": "¿Cuántas botellas de bebida compra el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಎಷ್ಟು ಬಾಟಲ್ ಪಾನೀಯ ಖರೀದಿಸುತ್ತಾನೆ?",
+          "q_ml": "ഉപഭോക്താവ് എത്ര കുപ്പി പാനീയം വാങ്ങുന്നു?"
+        },
+        {
+          "q": "お客は何の飲み物を買いますか。",
+          "q_en": "What drink does the customer buy?",
+          "options": [
+            "水",
+            "コーヒー",
+            "お茶",
+            "ジュース"
+          ],
+          "answer": 2,
+          "q_te": "కస్టమర్ ఏ డ్రింక్ కొంటున్నారు?",
+          "q_hi": "ग्राहक कौन सा पेय खरीदता है?",
+          "q_ta": "வாடிக்கையாளர் என்ன பானம் வாங்குகிறார்?",
+          "q_ko": "손님은 무슨 음료를 삽니까?",
+          "q_es": "¿Qué bebida compra el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಯಾವ ಪಾನೀಯ ಖರೀದಿಸುತ್ತಾನೆ?",
+          "q_ml": "ഉപഭോക്താവ് ഏത് പാനീയമാണ് വാങ്ങുന്നത്?"
+        }
+      ],
+      "transcript_te": "దుకాణదారు: స్వాగతం.\nకస్టమర్: క్షమించండి, బెంటో (లంచ్ బాక్స్) వేడి చేయండి.\nదుకాణదారు: సరే. డ్రింక్ ఏదైనా కావాలా?\nకస్టమర్: అయితే, ఒక టీ బాటిల్ ఇవ్వండి.",
+      "transcript_hi": "दुकानदार: स्वागत है।\nग्राहक: सुनिए, कृपया बेंटो (लंच बॉक्स) गरम कर दीजिए।\nदुकानदार: जी। क्या कोई पेय चाहिए?\nग्राहक: तो फिर, एक बोतल चाय दे दीजिए।",
+      "transcript_ta": "கடைக்காரர்: வருக.\nவாடிக்கையாளர்: மன்னிக்கவும், பெண்டோவை (உணவுப் பெட்டி) சூடாக்கித் தாருங்கள்.\nகடைக்காரர்: சரி. பானம் ஏதேனும் வேண்டுமா?\nவாடிக்கையாளர்: அப்படியானால், ஒரு பாட்டில் தேநீர் கொடுங்கள்.",
+      "transcript_ko": "점원: 어서 오세요.\n손님: 실례합니다, 도시락 좀 데워 주세요.\n점원: 네. 마실 것은 필요 없으신가요?\n손님: 그럼, 차 한 병 주세요.",
+      "transcript_es": "Empleado: Bienvenido.\nCliente: Disculpe, ¿puede calentar el bento?\nEmpleado: Sí. ¿Desea alguna bebida?\nCliente: Entonces, una botella de té, por favor.",
+      "transcript_kn": "ಅಂಗಡಿಯವ: ಸುಸ್ವಾಗತ.\nಗ್ರಾಹಕ: ಕ್ಷಮಿಸಿ, ಬೆಂಟೋ (ಊಟದ ಡಬ್ಬಿ) ಬಿಸಿ ಮಾಡಿ ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಸರಿ. ಕುಡಿಯಲು ಏನಾದರೂ ಬೇಕೇ?\nಗ್ರಾಹಕ: ಹಾಗಾದರೆ, ಒಂದು ಬಾಟಲ್ ಟೀ ಕೊಡಿ.",
+      "transcript_ml": "കടക്കാരൻ: സ്വാഗതം.\nഉപഭോക്താവ്: ക്ഷമിക്കണം, ബെന്റോ (ഭക്ഷണപ്പൊതി) ഒന്ന് ചൂടാക്കി തരൂ.\nകടക്കാരൻ: ശരി. കുടിക്കാൻ എന്തെങ്കിലും വേണമോ?\nഉപഭോക്താവ്: എങ്കിൽ, ഒരു കുപ്പി ചായ തരൂ."
+    },
+    {
+      "id": "l-n5-6",
+      "title": "駅で (At the Station)",
+      "script": "男の人：すみません、東京行きの電車は何番線ですか。\n駅員：三番線です。\n男の人：次の電車は何時に出ますか。\n駅員：九時十五分に出ますよ。",
+      "transcript_en": "Man: Excuse me, which platform is the train bound for Tokyo?\nStation staff: Platform 3.\nMan: What time does the next train leave?\nStation staff: It leaves at 9:15.",
+      "questions": [
+        {
+          "q": "東京行きの電車は何番線ですか。",
+          "q_en": "Which platform is the Tokyo-bound train?",
+          "options": [
+            "一番線",
+            "二番線",
+            "三番線",
+            "四番線"
+          ],
+          "answer": 2,
+          "q_te": "టోక్యో వెళ్లే రైలు ఎన్నవ ప్లాట్‌ఫారమ్?",
+          "q_hi": "टोक्यो जाने वाली ट्रेन कौन से प्लेटफार्म पर है?",
+          "q_ta": "டோக்கியோ செல்லும் ரயில் எந்த நடைமேடை?",
+          "q_ko": "도쿄행 전철은 몇 번 홈입니까?",
+          "q_es": "¿En qué andén está el tren que va a Tokio?",
+          "q_kn": "ಟೋಕಿಯೋಗೆ ಹೋಗುವ ರೈಲು ಎಷ್ಟನೇ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್?",
+          "q_ml": "ടോക്കിയോയിലേക്കുള്ള ട്രെയിൻ ഏത് പ്ലാറ്റ്‌ഫോമിലാണ്?"
+        },
+        {
+          "q": "次の電車は何時に出ますか。",
+          "q_en": "What time does the next train leave?",
+          "options": [
+            "九時十五分",
+            "九時五十分",
+            "十時十五分",
+            "八時十五分"
+          ],
+          "answer": 0,
+          "q_te": "తర్వాతి రైలు ఎన్ని గంటలకు బయలుదేరుతుంది?",
+          "q_hi": "अगली ट्रेन कितने बजे निकलेगी?",
+          "q_ta": "அடுத்த ரயில் எத்தனை மணிக்கு புறப்படும்?",
+          "q_ko": "다음 전철은 몇 시에 출발합니까?",
+          "q_es": "¿A qué hora sale el próximo tren?",
+          "q_kn": "ಮುಂದಿನ ರೈಲು ಎಷ್ಟು ಗಂಟೆಗೆ ಹೊರಡುತ್ತದೆ?",
+          "q_ml": "അടുത്ത ട്രെയിൻ എത്ര മണിക്ക് പുറപ്പെടും?"
+        },
+        {
+          "q": "男の人はどこへ行きますか。",
+          "q_en": "Where is the man going?",
+          "options": [
+            "大阪",
+            "京都",
+            "東京",
+            "名古屋"
+          ],
+          "answer": 2,
+          "q_te": "ఆ పురుషుడు ఎక్కడికి వెళ్తున్నాడు?",
+          "q_hi": "पुरुष कहाँ जा रहा है?",
+          "q_ta": "ஆண் எங்கு செல்கிறார்?",
+          "q_ko": "남자는 어디에 갑니까?",
+          "q_es": "¿A dónde va el hombre?",
+          "q_kn": "ಪುರುಷ ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದಾನೆ?",
+          "q_ml": "പുരുഷൻ എങ്ങോട്ടാണ് പോകുന്നത്?"
+        }
+      ],
+      "transcript_te": "పురుషుడు: క్షమించండి, టోక్యో వెళ్లే రైలు ఏ ప్లాట్‌ఫారమ్‌కు వస్తుంది?\nస్టేషన్ సిబ్బంది: 3వ ప్లాట్‌ఫారమ్.\nపురుషుడు: తర్వాతి రైలు ఎన్ని గంటలకు బయలుదేరుతుంది?\nస్టేషన్ సిబ్బంది: 9:15 గంటలకు బయలుదేరుతుంది.",
+      "transcript_hi": "पुरुष: सुनिए, टोक्यो जाने वाली ट्रेन किस प्लेटफार्म पर आती है?\nस्टेशन कर्मचारी: 3 नंबर प्लेटफार्म पर।\nपुरुष: अगली ट्रेन कितने बजे रवाना होगी?\nस्टेशन कर्मचारी: 9 बजकर 15 मिनट पर छूटेगी।",
+      "transcript_ta": "ஆண்: மன்னிக்கவும், டோக்கியோ செல்லும் ரயில் எந்த நடைமேடையில் வரும்?\nநிலைய ஊழியர்: நடைமேடை 3.\nஆண்: அடுத்த ரயில் எத்தனை மணிக்கு புறப்படும்?\nநிலைய ஊழியர்: 9 மணி 15 நிமிடத்திற்கு புறப்படும்.",
+      "transcript_ko": "남자: 실례합니다, 도쿄행 전철은 몇 번 홈인가요?\n역무원: 3번 홈입니다.\n남자: 다음 전철은 몇 시에 출발합니까?\n역무원: 9시 15분에 출발합니다.",
+      "transcript_es": "Hombre: Disculpe, ¿en qué andén está el tren con destino a Tokio?\nEmpleado: En el andén 3.\nHombre: ¿A qué hora sale el próximo tren?\nEmpleado: Sale a las 9:15.",
+      "transcript_kn": "ಪುರುಷ: ಕ್ಷಮಿಸಿ, ಟೋಕಿಯೋಗೆ ಹೋಗುವ ರೈಲು ಯಾವ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗೆ ಬರುತ್ತದೆ?\nನಿಲ್ದಾಣ ಸಿಬ್ಬಂದಿ: 3ನೇ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್.\nಪುರುಷ: ಮುಂದಿನ ರೈಲು ಎಷ್ಟು ಗಂಟೆಗೆ ಹೊರಡುತ್ತದೆ?\nನಿಲ್ದಾಣ ಸಿಬ್ಬಂದಿ: 9 ಗಂಟೆ 15 ನಿಮಿಷಕ್ಕೆ ಹೊರಡುತ್ತದೆ.",
+      "transcript_ml": "പുരുഷൻ: ക്ഷമിക്കണം, ടോക്കിയോയിലേക്കുള്ള ട്രെയിൻ ഏത് പ്ലാറ്റ്‌ഫോമിലാണ് വരുന്നത്?\nസ്റ്റേഷൻ ജീവനക്കാരൻ: പ്ലാറ്റ്‌ഫോം 3.\nപുരുഷൻ: അടുത്ത ട്രെയിൻ എത്ര മണിക്ക് പുറപ്പെടും?\nസ്റ്റേഷൻ ജീവനക്കാരൻ: 9:15-ന് പുറപ്പെടും."
+    },
+    {
+      "id": "l-n5-7",
+      "title": "レストランで (At the Restaurant)",
+      "script": "店員：ご注文はお決まりですか。\n女の人：はい。カレーとサラダをお願いします。\n店員：お飲み物は。\n女の人：冷たい水をお願いします。あ、カレーは辛くしないでください。",
+      "transcript_en": "Waiter: Have you decided on your order?\nWoman: Yes. Curry and a salad, please.\nWaiter: And to drink?\nWoman: Cold water, please. Oh, please don't make the curry spicy.",
+      "questions": [
+        {
+          "q": "女の人は何を食べますか。",
+          "q_en": "What will the woman eat?",
+          "options": [
+            "ラーメンとサラダ",
+            "カレーとサラダ",
+            "カレーとパン",
+            "サラダだけ"
+          ],
+          "answer": 1,
+          "q_te": "ఆ మహిళ ఏమి తింటుంది?",
+          "q_hi": "महिला क्या खाएगी?",
+          "q_ta": "பெண் என்ன சாப்பிடுவார்?",
+          "q_ko": "여자는 무엇을 먹습니까?",
+          "q_es": "¿Qué comerá la mujer?",
+          "q_kn": "ಮಹಿಳೆ ಏನನ್ನು ತಿನ್ನುತ್ತಾಳೆ?",
+          "q_ml": "സ്ത്രീ എന്താണ് കഴിക്കുന്നത്?"
+        },
+        {
+          "q": "女の人は何を飲みますか。",
+          "q_en": "What will the woman drink?",
+          "options": [
+            "温かいお茶",
+            "ジュース",
+            "冷たい水",
+            "コーヒー"
+          ],
+          "answer": 2,
+          "q_te": "ఆ మహిళ ఏమి తాగుతుంది?",
+          "q_hi": "महिला क्या पिएगी?",
+          "q_ta": "பெண் என்ன குடிப்பார்?",
+          "q_ko": "여자는 무엇을 마십니까?",
+          "q_es": "¿Qué beberá la mujer?",
+          "q_kn": "ಮಹಿಳೆ ಏನನ್ನು ಕುಡಿಯುತ್ತಾಳೆ?",
+          "q_ml": "സ്ത്രീ എന്താണ് കുടിക്കുന്നത്?"
+        },
+        {
+          "q": "女の人はカレーをどうしてほしいですか。",
+          "q_en": "How does the woman want the curry?",
+          "options": [
+            "辛くしてほしい",
+            "辛くしないでほしい",
+            "甘くしてほしい",
+            "大きくしてほしい"
+          ],
+          "answer": 1,
+          "q_te": "ఆ మహిళ కర్రీని ఎలా ఉండాలని కోరుకుంది?",
+          "q_hi": "महिला करी को कैसा चाहती है?",
+          "q_ta": "பெண் கறியை எப்படி இருக்க விரும்புகிறார்?",
+          "q_ko": "여자는 카레를 어떻게 해 주길 원합니까?",
+          "q_es": "¿Cómo quiere la mujer el curry?",
+          "q_kn": "ಮಹಿಳೆ ಕರಿ ಹೇಗಿರಬೇಕೆಂದು ಬಯಸುತ್ತಾಳೆ?",
+          "q_ml": "കറി എങ്ങനെയായിരിക്കണമെന്നാണ് സ്ത്രീ ആഗ്രഹിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "వెయిటర్: మీ ఆర్డర్ ఖరారైందా?\nమహిళ: అవును. కర్రీ మరియు సలాడ్ దయచేసి.\nవెయిటర్: డ్రింక్ ఏమి తీసుకుంటారు?\nమహిళ: చల్లటి నీళ్లు ఇవ్వండి. ఆ, కర్రీని కారంగా చేయకండి.",
+      "transcript_hi": "वेटर: क्या आपने अपना ऑर्डर तय कर लिया है?\nमहिला: जी हाँ। करी और सलाद दीजिए।\nवेटर: और पीने के लिए?\nमहिला: ठंडा पानी दीजिए। अरे हाँ, करी तीखी मत बनाइएगा।",
+      "transcript_ta": "பணியாளர்: உங்கள் ஆர்டர் முடிவாகிவிட்டதா?\nபெண்: ஆம். கறியும் சாலட்டும் கொடுங்கள்.\nபணியாளர்: குடிப்பதற்கு என்ன வேண்டும்?\nபெண்: குளிர்ந்த நீர் கொடுங்கள். அப்புறம், கறியை காரமாக செய்யாதீர்கள்.",
+      "transcript_ko": "점원: 주문 결정하셨습니까?\n여자: 네. 카레와 샐러드 부탁합니다.\n점원: 마실 것은요?\n여자: 찬물 부탁합니다. 아, 카레는 맵지 않게 해 주세요.",
+      "transcript_es": "Mesero: ¿Ya decidió su orden?\nMujer: Sí. Curry y ensalada, por favor.\nMesero: ¿Y de beber?\nMujer: Agua fría, por favor. Ah, por favor no haga el curry picante.",
+      "transcript_kn": "ವೇಟರ್: ನಿಮ್ಮ ಆರ್ಡರ್ ನಿರ್ಧಾರವಾಯಿತೇ?\nಮಹಿಳೆ: ಹೌದು. ಕರಿ ಮತ್ತು ಸಲಾಡ್ ಕೊಡಿ.\nವೇಟರ್: ಕುಡಿಯಲು ಏನು ಬೇಕು?\nಮಹಿಳೆ: ತಣ್ಣನೆಯ ನೀರು ಕೊಡಿ. ಆ, ಕರಿಯನ್ನು ಖಾರವಾಗಿ ಮಾಡಬೇಡಿ.",
+      "transcript_ml": "വെയിറ്റർ: എന്താണ് ഓർഡർ ചെയ്യേണ്ടതെന്ന് തീരുമാനിച്ചോ?\nസ്ത്രീ: അതെ. കറിയും സലാഡും തരൂ.\nവെയിറ്റർ: കുടിക്കാൻ എന്താണ് വേണ്ടത്?\nസ്ത്രീ: തണുത്ത വെള്ളം തരൂ. ആ, കറി എരിവുള്ളതാക്കരുത്."
+    },
+    {
+      "id": "l-n5-8",
+      "title": "あしたの天気 (Tomorrow's Weather)",
+      "script": "あしたの天気をお伝えします。あしたの朝は雨が降ります。でも、昼から晴れます。かさを持って出かけてください。",
+      "transcript_en": "Here is tomorrow's weather. Tomorrow morning it will rain. But from noon it will be sunny. Please take an umbrella when you go out.",
+      "questions": [
+        {
+          "q": "あしたの朝の天気はどうですか。",
+          "q_en": "What is the weather like tomorrow morning?",
+          "options": [
+            "晴れです",
+            "雨です",
+            "雪です",
+            "くもりです"
+          ],
+          "answer": 1,
+          "q_te": "రేపు ఉదయం వాతావరణం ఎలా ఉంటుంది?",
+          "q_hi": "कल सुबह का मौसम कैसा रहेगा?",
+          "q_ta": "நாளை காலை வானிலை எப்படி இருக்கும்?",
+          "q_ko": "내일 아침 날씨는 어떻습니까?",
+          "q_es": "¿Cómo estará el clima mañana por la mañana?",
+          "q_kn": "ನಾಳೆ ಬೆಳಗಿನ ಹವಾಮಾನ ಹೇಗಿರುತ್ತದೆ?",
+          "q_ml": "നാളെ രാവിലെ കാലാവസ്ഥ എങ്ങനെയായിരിക്കും?"
+        },
+        {
+          "q": "昼から天気はどうなりますか。",
+          "q_en": "What does the weather become from noon?",
+          "options": [
+            "雨になります",
+            "雪になります",
+            "晴れます",
+            "かぜが強くなります"
+          ],
+          "answer": 2,
+          "q_te": "మధ్యాహ్నం నుండి వాతావరణం ఎలా మారుతుంది?",
+          "q_hi": "दोपहर से मौसम कैसा हो जाएगा?",
+          "q_ta": "மதியத்திலிருந்து வானிலை எப்படி மாறும்?",
+          "q_ko": "낮부터 날씨는 어떻게 됩니까?",
+          "q_es": "¿Cómo cambiará el clima a partir del mediodía?",
+          "q_kn": "ಮಧ್ಯಾಹ್ನದಿಂದ ಹವಾಮಾನ ಹೇಗಾಗುತ್ತದೆ?",
+          "q_ml": "ഉച്ചയ്ക്ക് ശേഷം കാലാവസ്ഥ എന്താകും?"
+        },
+        {
+          "q": "出かけるとき、何を持っていきますか。",
+          "q_en": "What should you take when going out?",
+          "options": [
+            "ぼうし",
+            "かさ",
+            "かばん",
+            "くつ"
+          ],
+          "answer": 1,
+          "q_te": "బయటకు వెళ్ళేటప్పుడు ఏమి తీసుకెళ్లాలి?",
+          "q_hi": "बाहर जाते समय क्या साथ ले जाना चाहिए?",
+          "q_ta": "வெளியே செல்லும்போது என்ன எடுத்துச் செல்ல வேண்டும்?",
+          "q_ko": "외출할 때 무엇을 가지고 갑니까?",
+          "q_es": "¿Qué se debe llevar al salir?",
+          "q_kn": "ಹೊರಗೆ ಹೋಗುವಾಗ ಏನನ್ನು ತೆಗೆದುಕೊಂಡು ಹೋಗಬೇಕು?",
+          "q_ml": "പുറത്തിറങ്ങുമ്പോൾ എന്താണ് കയ്യിൽ കരുതേണ്ടത്?"
+        }
+      ],
+      "transcript_te": "రేపటి వాతావరణ సమాచారం. రేపు ఉదయం వర్షం పడుతుంది. కానీ మధ్యాహ్నం నుండి ఎండ కాస్తుంది. బయటకు వెళ్ళేటప్పుడు గొడుగు తీసుకెళ్లండి.",
+      "transcript_hi": "कल का मौसम का हाल। कल सुबह बारिश होगी। लेकिन दोपहर से धूप खिल जाएगी। बाहर जाते समय छाता साथ रखें।",
+      "transcript_ta": "நாளைய வானிலை அறிக்கை. நாளை காலை மழை பெய்யும். ஆனால் மதியத்திலிருந்து வெயில் அடிக்கும். வெளியே செல்லும்போது குடை எடுத்துச் செல்லுங்கள்.",
+      "transcript_ko": "내일 날씨를 전해드립니다. 내일 아침에는 비가 내립니다. 하지만 낮부터는 맑겠습니다. 우산을 챙겨서 외출하세요.",
+      "transcript_es": "Les presentamos el pronóstico del tiempo para mañana. Mañana por la mañana lloverá. Pero a partir del mediodía estará soleado. Lleve un paraguas al salir.",
+      "transcript_kn": "ನಾಳೆಯ ಹವಾಮಾನ ವರದಿ. ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಮಳೆಯಾಗಲಿದೆ. ಆದರೆ ಮಧ್ಯಾಹ್ನದಿಂದ ಬಿಸಿಲಿರುತ್ತದೆ. ಹೊರಗೆ ಹೋಗುವಾಗ ಛತ್ರಿ ತೆಗೆದುಕೊಂಡು ಹೋಗಿ.",
+      "transcript_ml": "നാളത്തെ കാലാവസ്ഥാ വിവരങ്ങൾ. നാളെ രാവിലെ മഴ പെയ്യും. എന്നാൽ ഉച്ചയ്ക്ക് ശേഷം വെയിലായിരിക്കും. പുറത്തിറങ്ങുമ്പോൾ കുട കരുതുക."
+    },
+    {
+      "id": "l-n5-9",
+      "title": "図書館で (At the Library)",
+      "script": "学生：すみません、この本を借りたいです。\n図書館の人：はい、学生証はありますか。\n学生：はい、あります。いつまでに返しますか。\n図書館の人：来週の月曜日までに返してください。",
+      "transcript_en": "Student: Excuse me, I'd like to borrow this book.\nLibrarian: Yes, do you have your student ID?\nStudent: Yes, I do. By when do I return it?\nLibrarian: Please return it by next Monday.",
+      "questions": [
+        {
+          "q": "学生は図書館で何をしますか。",
+          "q_en": "What does the student do at the library?",
+          "options": [
+            "本を返します",
+            "本を借ります",
+            "本を読みます",
+            "本を買います"
+          ],
+          "answer": 1,
+          "q_te": "విద్యార్థి లైబ్రరీలో ఏమి చేస్తున్నాడు?",
+          "q_hi": "छात्र पुस्तकालय में क्या करता है?",
+          "q_ta": "மாணவர் நூலகத்தில் என்ன செய்கிறார்?",
+          "q_ko": "학생은 도서관에서 무엇을 합니까?",
+          "q_es": "¿Qué hace el estudiante en la biblioteca?",
+          "q_kn": "ವಿದ್ಯಾರ್ಥಿ ಗ್ರಂಥಾಲಯದಲ್ಲಿ ಏನು ಮಾಡುತ್ತಾನೆ?",
+          "q_ml": "വിദ്യാർത്ഥി ലൈബ്രറിയിൽ എന്താണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "図書館の人は何を見せてほしいと言いましたか。",
+          "q_en": "What did the librarian ask to be shown?",
+          "options": [
+            "パスポート",
+            "お金",
+            "学生証",
+            "電話番号"
+          ],
+          "answer": 2,
+          "q_te": "లైబ్రేరియన్ దేనిని చూపించమని అడిగారు?",
+          "q_hi": "लाइब्रेरियन ने क्या दिखाने के लिए कहा?",
+          "q_ta": "நூலகர் எதைக் காட்டச் சொன்னார்?",
+          "q_ko": "도서관 직원은 무엇을 보여 달라고 했습니까?",
+          "q_es": "¿Qué pidió ver el bibliotecario?",
+          "q_kn": "ಗ್ರಂಥಪಾಲಕ ಏನನ್ನು ತೋರಿಸಲು ಕೇಳಿದರು?",
+          "q_ml": "ലൈബ്രേറിയൻ എന്താണ് കാണിക്കാൻ ആവശ്യപ്പെട്ടത്?"
+        },
+        {
+          "q": "いつまでに本を返しますか。",
+          "q_en": "By when should the book be returned?",
+          "options": [
+            "あしたまでに",
+            "来週の月曜日までに",
+            "来月までに",
+            "今日までに"
+          ],
+          "answer": 1,
+          "q_te": "పుస్తకాన్ని ఎప్పటిలోగా తిరిగి ఇవ్వాలి?",
+          "q_hi": "किताब कब तक वापस करनी है?",
+          "q_ta": "புத்தகத்தை எப்போது திருப்பித் தர வேண்டும்?",
+          "q_ko": "언제까지 책을 반납해야 합니까?",
+          "q_es": "¿Para cuándo se debe devolver el libro?",
+          "q_kn": "ಪುಸ್ತಕವನ್ನು ಯಾವಾಗ ವಾಪಸ್ ಮಾಡಬೇಕು?",
+          "q_ml": "പുസ്തകം എപ്പോഴേക്കും തിരികെ നൽകണം?"
+        }
+      ],
+      "transcript_te": "విద్యార్థి: క్షమించండి, నేను ఈ పుస్తకం తీసుకోవాలనుకుంటున్నాను.\nలైబ్రేరియన్: సరే, మీ విద్యార్థి గుర్తింపు కార్డు (స్టూడెంట్ ఐడీ) ఉందా?\nవిద్యార్థి: అవును, ఉంది. ఎప్పటిలోగా తిరిగి ఇవ్వాలి?\nలైబ్రేరియన్: వచ్చే సోమవారం లోగా తిరిగి ఇవ్వండి.",
+      "transcript_hi": "छात्र: सुनिए, मैं यह किताब उधार लेना चाहता हूँ।\nलाइब्रेरियन: जी, क्या आपके पास छात्र पहचान पत्र है?\nछात्र: हाँ, है। कब तक वापस करनी है?\nलाइब्रेरियन: कृपया अगले सोमवार तक वापस कर दें।",
+      "transcript_ta": "மாணவர்: மன்னிக்கவும், நான் இந்த புத்தகத்தை கடன் வாங்க விரும்புகிறேன்.\nநூலகர்: சரி, மாணவர் அடையாள அட்டை உள்ளதா?\nமாணவர்: ஆம், உள்ளது. எப்போது திருப்பித் தர வேண்டும்?\nநூலகர்: அடுத்த திங்கட்கிழமைக்குள் திருப்பித் தரவும்.",
+      "transcript_ko": "학생: 실례합니다, 이 책을 빌리고 싶습니다.\n사서: 네, 학생증 있으신가요?\n학생: 네, 있습니다. 언제까지 반납해야 하나요?\n사서: 다음 주 월요일까지 반납해 주세요.",
+      "transcript_es": "Estudiante: Disculpe, quisiera pedir prestado este libro.\nBibliotecario: Sí, ¿tiene su carné de estudiante?\nEstudiante: Sí, aquí está. ¿Para cuándo debo devolverlo?\nBibliotecario: Por favor, devuélvalo antes del próximo lunes.",
+      "transcript_kn": "ವಿದ್ಯಾರ್ಥಿ: ಕ್ಷಮಿಸಿ, ನಾನು ಈ ಪುಸ್ತಕವನ್ನು ಎರವಲು ಪಡೆಯಲು ಬಯಸುತ್ತೇನೆ.\nಗ್ರಂಥಪಾಲಕ: ಸರಿ, ವಿದ್ಯಾರ್ಥಿ ಗುರುತಿನ ಚೀಟಿ ಇದೆಯೇ?\nವಿದ್ಯಾರ್ಥಿ: ಹೌದು, ಇದೆ. ಯಾವಾಗ ವಾಪಸ್ ಮಾಡಬೇಕು?\nಗ್ರಂಥಪಾಲಕ: ಮುಂದಿನ ಸೋಮವಾರದೊಳಗೆ ವಾಪಸ್ ಮಾಡಿ.",
+      "transcript_ml": "വിദ്യാർത്ഥി: ക്ഷമിക്കണം, എനിക്ക് ഈ പുസ്തകം കടം വേണം.\nലൈബ്രേറിയൻ: ശരി, സ്റ്റുഡന്റ് ഐഡി കാർഡുണ്ടോ?\nവിദ്യാർത്ഥി: അതെ, ഉണ്ട്. എപ്പോഴാണ് തിരികെ നൽകേണ്ടത്?\nലൈബ്രേറിയൻ: അടുത്ത തിങ്കളാഴ്ചയ്ക്കുള്ളിൽ തിരികെ നൽകുക."
+    },
+    {
+      "id": "l-n5-10",
+      "title": "しゅうまつの予定 (Weekend Plans)",
+      "script": "男の人：土曜日、いっしょにサッカーをしませんか。\n女の人：土曜日はちょっと…。日曜日はどうですか。\n男の人：いいですね。じゃあ、日曜日の午後、公園で会いましょう。",
+      "transcript_en": "Man: Won't you play soccer together on Saturday?\nWoman: Saturday is a little... How about Sunday?\nMan: Sounds good. Then let's meet at the park on Sunday afternoon.",
+      "questions": [
+        {
+          "q": "二人は何をしますか。",
+          "q_en": "What will the two of them do?",
+          "options": [
+            "テニスをします",
+            "サッカーをします",
+            "えいがを見ます",
+            "かいものをします"
+          ],
+          "answer": 1,
+          "q_te": "వారిద్దరూ ఏమి చేయబోతున్నారు?",
+          "q_hi": "वे दोनों क्या करेंगे?",
+          "q_ta": "இருவரும் என்ன செய்வார்கள்?",
+          "q_ko": "두 사람은 무엇을 합니까?",
+          "q_es": "¿Qué harán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಏನು ಮಾಡಲಿದ್ದಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എന്താണ് ചെയ്യാൻ പോകുന്നത്?"
+        },
+        {
+          "q": "二人はいつ会いますか。",
+          "q_en": "When will the two of them meet?",
+          "options": [
+            "土曜日",
+            "日曜日",
+            "月曜日",
+            "金曜日"
+          ],
+          "answer": 1,
+          "q_te": "వారిద్దరూ ఎప్పుడు కలుస్తారు?",
+          "q_hi": "वे दोनों कब मिलेंगे?",
+          "q_ta": "இருவரும் எப்போது சந்திப்பார்கள்?",
+          "q_ko": "두 사람은 언제 만납니까?",
+          "q_es": "¿Cuándo se encontrarán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಯಾವಾಗ ಭೇಟಿಯಾಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എപ്പോഴാണ് കാണുന്നത്?"
+        },
+        {
+          "q": "二人はどこで会いますか。",
+          "q_en": "Where will the two of them meet?",
+          "options": [
+            "公園",
+            "えき",
+            "学校",
+            "レストラン"
+          ],
+          "answer": 0,
+          "q_te": "వారిద్దరూ ఎక్కడ కలుస్తారు?",
+          "q_hi": "वे दोनों कहाँ मिलेंगे?",
+          "q_ta": "இருவரும் எங்கு சந்திப்பார்கள்?",
+          "q_ko": "두 사람은 어디서 만납니까?",
+          "q_es": "¿Dónde se encontrarán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಎಲ್ಲಿ ಭೇಟಿಯಾಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എവിടെയാണ് കാണുന്നത്?"
+        }
+      ],
+      "transcript_te": "పురుషుడు: శనివారం కలిసి ఫుట్‌బాల్ ఆడదామా?\nమహిళ: శనివారం కాస్త కుదరదు... ఆదివారం అయితే ఎలా ఉంటుంది?\nపురుషుడు: మంచి ఆలోచన. అయితే ఆదివారం మధ్యాహ్నం పార్కులో కలుద్దాం.",
+      "transcript_hi": "पुरुष: शनिवार को साथ में फुटबॉल खेलेंगे?\nमहिला: शनिवार को थोड़ा मुश्किल है... रविवार कैसा रहेगा?\nपुरुष: बहुत बढ़िया। तो रविवार दोपहर को पार्क में मिलते हैं।",
+      "transcript_ta": "ஆண்: சனிக்கிழமை ஒன்றாக கால்பந்து விளையாடலாமா?\nபெண்: சனிக்கிழமை கொஞ்சம் கடினம்... ஞாயிற்றுக்கிழமை எப்படி?\nஆண்: நல்ல யோசனை. அப்படியானால் ஞாயிறு மதியம் பூங்காவில் சந்திப்போம்.",
+      "transcript_ko": "남자: 토요일에 같이 축구하지 않을래요?\n여자: 토요일은 좀... 일요일은 어때요?\n남자: 좋네요. 그럼 일요일 오후에 공원에서 만나요.",
+      "transcript_es": "Hombre: ¿Jugamos fútbol juntos el sábado?\nMujer: El sábado me resulta difícil... ¿Qué tal el domingo?\nHombre: Me parece bien. Entonces encontrémonos en el parque el domingo por la tarde.",
+      "transcript_kn": "ಪುರುಷ: ಶನಿವಾರ ಒಟ್ಟಿಗೆ ಫುಟ್‌ಬಾಲ್ ಆಡೋಣವೇ?\nಮಹಿಳೆ: ಶನಿವಾರ ಸ್ವಲ್ಪ ಕಷ್ಟ... ಭಾನುವಾರ ಹೇಗಿದೆ?\nಪುರುಷ: ಒಳ್ಳೆಯದು. ಹಾಗಾದರೆ ಭಾನುವಾರ ಮಧ್ಯಾಹ್ನ ಪಾರ್ಕ್‌ನಲ್ಲಿ ಭೇಟಿಯಾಗೋಣ.",
+      "transcript_ml": "പുരുഷൻ: ശനിയാഴ്ച ഒന്നിച്ച് ഫുട്ബോൾ കളിച്ചാലോ?\nസ്ത്രീ: ശനിയാഴ്ച കുറച്ച് ബുദ്ധിമുട്ടാണ്... ഞായറാഴ്ച എങ്ങനെയുണ്ട്?\nപുരുഷൻ: കൊള്ളാം. എങ്കിൽ ഞായറാഴ്ച ഉച്ചയ്ക്ക് ശേഷം പാർക്കിൽ കാണാം."
+    },
+    {
+      "id": "l-n5-11",
+      "title": "パンやで (At the Bakery)",
+      "script": "おきゃく: すみません、この メロンパンを ふたつ ください。\nみせのひと: はい、かしこまりました。ほかには いかがですか。\nおきゃく: じゃあ、この サンドイッチも ひとつ おねがいします。\nみせのひと: ぜんぶで 600えんです。",
+      "transcript_en": "Customer: Excuse me, two of these melon pans, please.\nClerk: Yes, certainly. Would you like anything else?\nCustomer: Then, one of these sandwiches too, please.\nClerk: That will be 600 yen in total.",
+      "transcript_te": "కస్టమర్: క్షమించండి, ఈ మెలోన్ పాన్ రెండు ఇవ్వండి.\nదుకాణదారు: తప్పకుండా అండీ. ఇంకా ఏమైనా కావాలా?\nకస్టమర్: అయితే, ఈ శాండ్‌విచ్ కూడా ఒకటి ఇవ్వండి.\nదుకాణదారు: మొత్తం 600 యెన్లు అవుతుంది.",
+      "transcript_hi": "ग्राहक: सुनिए, कृपया दो तरबूज बन (मेलन पैन) दीजिए।\nदुकानदार: जी बिल्कुल। और कुछ चाहिए?\nग्राहक: तो फिर, यह एक सैंडविच भी दे दीजिए।\nदुकानदार: कुल मिलाकर 600 येन हुए।",
+      "transcript_ta": "வாடிக்கையாளர்: மன்னிக்கவும், இந்த மெலன் பான் இரண்டு கொடுங்கள்.\nகடைக்காரர்: நிச்சயமாக. வேறு ஏதேனும் வேண்டுமா?\nவாடிக்கையாளர்: அப்படியானால், இந்த சாண்ட்விச்சும் ஒன்று கொடுங்கள்.\nகடைக்காரர்: மொத்தம் 600 யென்.",
+      "transcript_ko": "손님: 실례합니다, 이 멜론빵 두 개 주세요.\n점원: 네, 알겠습니다. 다른 것은 어떠세요?\n손님: 그럼, 이 샌드위치도 하나 부탁합니다.\n점원: 모두 600엔입니다.",
+      "transcript_es": "Cliente: Disculpe, dos de estos panes de melón, por favor.\nEmpleado: Sí, con gusto. ¿Desea algo más?\nCliente: Entonces, también uno de estos sándwiches, por favor.\nEmpleado: Son 600 yenes en total.",
+      "transcript_kn": "ಗ್ರಾಹಕ: ಕ್ಷಮಿಸಿ, ಈ ಮೆಲನ್ ಬನ್ ಎರಡು ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಖಂಡಿತ. ಬೇರೆ ಏನಾದರೂ ಬೇಕೇ?\nಗ್ರಾಹಕ: ಹಾಗಾದರೆ, ಈ ಸ್ಯಾಂಡ್‌ವಿಚ್ ಕೂಡ ಒಂದು ಕೊಡಿ.\nಅಂಗಡಿಯವ: ಒಟ್ಟು 600 ಯೆನ್ ಆಗಿದೆ.",
+      "transcript_ml": "ഉപഭോക്താവ്: ക്ഷമിക്കണം, ഈ മെലൻ പാൻ രണ്ടെണ്ണം തരൂ.\nകടക്കാരൻ: തീർച്ചയായും. വേറെ എന്തെങ്കിലും വേണമോ?\nഉപഭോക്താവ്: എന്നാൽ, ഈ സാൻഡ്‌വിച്ചും ഒരെണ്ണം തരൂ.\nകടക്കാരൻ: ആകെ 600 യെൻ.",
+      "questions": [
+        {
+          "q": "おきゃくは メロンパンを いくつ かいましたか。",
+          "q_en": "How many melon pans did the customer buy?",
+          "q_te": "కస్టమర్ ఎన్ని మెలోన్ పాన్ కొన్నారు?",
+          "q_hi": "ग्राहक ने कितने मेलन पैन खरीदे?",
+          "q_ta": "வாடிக்கையாளர் எத்தனை மெலன் பான் வாங்கினார்?",
+          "q_ko": "손님은 멜론빵을 몇 개 샀습니까?",
+          "q_es": "¿Cuántos panes de melón compró el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಎಷ್ಟು ಮೆಲನ್ ಬನ್‌ಗಳನ್ನು ಖರೀದಿಸಿದನು?",
+          "q_ml": "ഉപഭോക്താവ് എത്ര മെലൻ പാൻ വാങ്ങി?",
+          "options": [
+            "ひとつ (one)",
+            "ふたつ (two)",
+            "みっつ (three)",
+            "よっつ (four)"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "ぜんぶで いくらでしたか。",
+          "q_en": "How much was it in total?",
+          "q_te": "మొత్తం ఎంత అయింది?",
+          "q_hi": "कुल कितने हुए?",
+          "q_ta": "மொத்தம் எவ்வளவு?",
+          "q_ko": "모두 얼마였습니까?",
+          "q_es": "¿Cuánto fue en total?",
+          "q_kn": "ಒಟ್ಟು ಎಷ್ಟಾಯಿತು?",
+          "q_ml": "ആകെ എത്രയായി?",
+          "options": [
+            "500えん",
+            "600えん",
+            "700えん",
+            "400えん"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "l-n5-12",
+      "title": "えきのアナウンス (Station Announcement)",
+      "script": "まもなく 2ばんせんに でんしゃが まいります。あぶないですから、きいろい せんの うちがわまで おさがりください。この でんしゃは とうきょういきです。",
+      "transcript_en": "A train will shortly arrive on track 2. Because it is dangerous, please stand behind the yellow line. This train is bound for Tokyo.",
+      "transcript_te": "త్వరలో 2వ నంబర్ ట్రాక్‌పై రైలు రానుంది. ప్రమాదకరం కాబట్టి, పసుపు గీత వెనుక వేచి ఉండండి. ఈ రైలు టోక్యో వెళ్తుంది.",
+      "transcript_hi": "शीघ्र ही प्लेटफार्म नंबर 2 पर ट्रेन आ रही है। खतरा होने के कारण, कृपया पीली रेखा के पीछे खड़े रहें। यह ट्रेन टोक्यो जा रही है।",
+      "transcript_ta": "சிறிது நேரத்தில் தடம் எண் 2ல் ரயில் வரவிருக்கிறது. ஆபத்தானது என்பதால், மஞ்சள் கோட்டிற்குப் பின்னால் நிற்குமாறு கேட்டுக்கொள்ளப்படுகிறீர்கள். இந்த ரயில் டோக்கியோ செல்கிறது.",
+      "transcript_ko": "잠시 후 2번선에 열차가 들어옵니다. 위험하오니 노란 선 안쪽으로 물러서 주십시오. 이 열차는 도쿄행입니다.",
+      "transcript_es": "En breve llegará un tren a la vía 2. Por razones de seguridad, permanezca detrás de la línea amarilla. Este tren va con destino a Tokio.",
+      "transcript_kn": "ಸ್ವಲ್ಪ ಸಮಯದಲ್ಲಿ 2ನೇ ಟ್ರ್ಯಾಕ್‌ನಲ್ಲಿ ರೈಲು ಬರಲಿದೆ. ಅಪಾಯಕಾರಿಯಾಗಿರುವುದರಿಂದ, ಹಳದಿ ರೇಖೆಯ ಹಿಂದೆ ನಿಲ್ಲಿ. ಈ ರೈಲು ಟೋಕಿಯೋಗೆ ಹೋಗುತ್ತದೆ.",
+      "transcript_ml": "ഉടൻ തന്നെ പ്ലാറ്റ്‌ഫോം നമ്പർ 2-ൽ ട്രെയിൻ എത്തും. അപകടസാധ്യതയുള്ളതിനാൽ ദയവായി മഞ്ഞ വരയ്ക്ക് പിന്നിൽ നിൽക്കുക. ഈ ട്രെയിൻ ടോക്കിയോയിലേക്കാണ്.",
+      "questions": [
+        {
+          "q": "でんしゃは なんばんせんに きますか。",
+          "q_en": "Which platform is the train arriving on?",
+          "q_te": "రైలు ఏ ప్లాట్‌ఫారమ్‌కు వస్తుంది?",
+          "q_hi": "ट्रेन किस प्लेटफार्म पर आ रही है?",
+          "q_ta": "ரயில் எந்த நடைமேடைக்கு வருகிறது?",
+          "q_ko": "열차는 몇 번선에 옵니까?",
+          "q_es": "¿En qué vía llega el tren?",
+          "q_kn": "ರೈಲು ಎಷ್ಟನೇ ಟ್ರ್ಯಾಕ್‌ಗೆ ಬರುತ್ತದೆ?",
+          "q_ml": "ട്രെയിൻ ഏത് പ്ലാറ്റ്‌ഫോമിലാണ് വരുന്നത്?",
+          "options": [
+            "1ばんせん",
+            "2ばんせん",
+            "3ばんせん",
+            "4ばんせん"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "この でんしゃは どこへ いきますか。",
+          "q_en": "Where is this train going?",
+          "q_te": "ఈ రైలు ఎక్కడికి వెళ్తుంది?",
+          "q_hi": "यह ट्रेन कहाँ जा रही है?",
+          "q_ta": "இந்த ரயில் எங்கு செல்கிறது?",
+          "q_ko": "이 열차는 어디로 갑니까?",
+          "q_es": "¿A dónde va este tren?",
+          "q_kn": "ಈ ರೈಲು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತದೆ?",
+          "q_ml": "ഈ ട്രെയിൻ എങ്ങോട്ടാണ് പോകുന്നത്?",
+          "options": [
+            "おおさか",
+            "とうきょう",
+            "きょうと",
+            "なごや"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "l-n5-13",
+      "title": "でんわで (On the Phone)",
+      "script": "A: もしもし、田中さんですか。\nB: はい、田中です。\nA: 今日、いっしょに 晩ご飯を 食べませんか。\nB: いいですね。何時に 会いましょうか。\nA: 7時は どうですか。\nB: はい、7時に 駅の前で 会いましょう。",
+      "transcript_en": "A: Hello, is this Tanaka-san?\nB: Yes, this is Tanaka.\nA: Would you like to have dinner together today?\nB: Sounds good! What time shall we meet?\nA: How about 7:00?\nB: Yes, let's meet in front of the station at 7:00.",
+      "transcript_te": "A: హలో, తనాకా గారా?\nB: అవును, తనాకాని మాట్లాడుతున్నాను.\nA: ఈ రోజు సాయంత్రం కలిసి భోజనం చేద్దామా?\nB: మంచి ఆలోచన! ఎన్ని గంటలకు కలుద్దాం?\nA: 7 గంటలైతే ఎలా ఉంటుంది?\nB: సరే, 7 గంటలకు స్టేషన్ ముందు కలుద్దాం.",
+      "transcript_hi": "A: हैलो, क्या आप तनाका जी हैं?\nB: हाँ, मैं तनाका बोल रहा हूँ।\nA: क्या आज साथ में रात का खाना खाएँगे?\nB: बहुत अच्छा रहेगा! कितने बजे मिलें?\nA: 7 बजे कैसा रहेगा?\nB: ठीक है, 7 बजे स्टेशन के सामने मिलते हैं।",
+      "transcript_ta": "A: ஹலோ, தனாக்கா அவர்களா?\nB: ஆம், தனாக்கா பேசுகிறேன்.\nA: இன்று இரவு ஒன்றாக சாப்பிடலாமா?\nB: நல்ல யோசனை! எத்தனை மணிக்கு சந்திப்போம்?\nA: 7 மணி பரவாயில்லையா?\nB: சரி, 7 மணிக்கு ரயில் நிலையத்தின் முன் சந்திப்போம்.",
+      "transcript_ko": "A: 여보세요, 다나카 씨입니까?\nB: 네, 다나카입니다.\nA: 오늘 같이 저녁을 먹지 않겠습니까?\nB: 좋네요! 몇 시에 만날까요?\nA: 7시는 어때요?\nB: 네, 7시에 역 앞에서 만납시다.",
+      "transcript_es": "A: Hola, ¿es Tanaka-san?\nB: Sí, habla Tanaka.\nA: ¿Te gustaría cenar juntos hoy?\nB: ¡Me parece genial! ¿A qué hora nos vemos?\nA: ¿Qué tal a las 7:00?\nB: Sí, veámonos frente a la estación a las 7:00.",
+      "transcript_kn": "A: ಹಲೋ, ತನಾಕಾ ಅವರೇ?\nB: ಹೌದು, ತನಾಕಾ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ.\nA: ಇಂದು ಒಟ್ಟಿಗೆ ಊಟ ಮಾಡೋಣವೇ?\nB: ಒಳ್ಳೆಯದು! ಎಷ್ಟು ಗಂಟೆಗೆ ಭೇಟಿಯಾಗೋಣ?\nA: 7 ಗಂಟೆ ಹೇಗಿದೆ?\nB: ಸರಿ, 7 ಗಂಟೆಗೆ ನಿಲ್ದಾಣದ ಮುಂದೆ ಭೇಟಿಯಾಗೋಣ.",
+      "transcript_ml": "A: ഹലോ, തനാക്കയാണോ?\nB: അതെ, തനാക്കയാണ് സംസാരിക്കുന്നത്.\nA: ഇന്ന് രാത്രി ഒന്നിച്ച് ഭക്ഷണം കഴിച്ചാലോ?\nB: നല്ല ആശയം! എത്ര മണിക്ക് കാണാം?\nA: 7 മണി എങ്ങനെയുണ്ട്?\nB: ശരി, 7 മണിക്ക് സ്റ്റേഷന് മുന്നിൽ കാണാം.",
+      "questions": [
+        {
+          "q": "二人は 何時に 会いますか。",
+          "q_en": "What time will the two meet?",
+          "q_te": "ఇద్దరూ ఎన్ని గంటలకు కలుస్తారు?",
+          "q_hi": "दोनों कितने बजे मिलेंगे?",
+          "q_ta": "இருவரும் எத்தனை மணிக்கு சந்திப்பார்கள்?",
+          "q_ko": "두 사람은 몇 시에 만납니까?",
+          "q_es": "¿A qué hora se verán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಎಷ್ಟು ಗಂಟೆಗೆ ಭೇಟಿಯಾಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എത്ര മണിക്ക് കാണും?",
+          "options": [
+            "6時",
+            "7時",
+            "8時",
+            "9時"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "二人は どこで 会いますか。",
+          "q_en": "Where will the two meet?",
+          "q_te": "ఇద్దరూ ఎక్కడ కలుస్తారు?",
+          "q_hi": "दोनों कहाँ मिलेंगे?",
+          "q_ta": "இருவரும் எங்கு சந்திப்பார்கள்?",
+          "q_ko": "두 사람은 어디서 만납니까?",
+          "q_es": "¿Dónde se encontrarán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಎಲ್ಲಿ ಭೇಟಿಯಾಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എവിടെയാണ് കാണുന്നത്?",
+          "options": [
+            "駅の前",
+            "レストランの中",
+            "会社",
+            "家"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n5-14",
+      "title": "としょかんで (At the Library)",
+      "script": "がくせい: すみません、この 本を 借りたいです。\nかかりのひと: はい、としょかんカードは ありますか。\nがくせい: はい、これです。\nかかりのひと: ありがとうございます。二週間 借りられますよ。",
+      "transcript_en": "Student: Excuse me, I want to borrow this book.\nStaff: Yes, do you have a library card?\nStudent: Yes, here it is.\nStaff: Thank you. You can borrow it for two weeks.",
+      "transcript_te": "విద్యార్థి: క్షమించండి, నేను ఈ పుస్తకం తీసుకోవాలనుకుంటున్నాను.\nసిబ్బంది: సరే, లైబ్రరీ కార్డు ఉందా?\nవిద్యార్థి: అవును, ఇదిగోండి.\nసిబ్బంది: ధన్యవాదాలు. మీరు రెండు వారాల పాటు తీసుకోవచ్చు.",
+      "transcript_hi": "छात्र: सुनिए, मैं यह किताब लेना चाहता हूँ।\nकर्मचारी: हाँ, क्या आपके पास लाइब्रेरी कार्ड है?\nछात्र: हाँ, यह रहा।\nकर्मचारी: धन्यवाद। आप इसे दो सप्ताह के लिए ले सकते हैं।",
+      "transcript_ta": "மாணவர்: மன்னிக்கவும், நான் இந்த புத்தகத்தை கடன் வாங்க விரும்புகிறேன்.\nஊழியர்: சரி, உங்களிடம் நூலக அட்டை உள்ளதா?\nமாணவர்: ஆம், இதோ இருக்கிறது.\nஊழியர்: நன்றி. இரண்டு வாரங்களுக்கு கடன் வாங்கலாம்.",
+      "transcript_ko": "학생: 실례합니다, 이 책을 빌리고 싶습니다.\n직원: 네, 도서관 카드가 있습니까?\n학생: 네, 여기 있습니다.\n직원: 감사합니다. 2주일 동안 빌릴 수 있습니다.",
+      "transcript_es": "Estudiante: Disculpe, quiero pedir prestado este libro.\nBibliotecario: Sí, ¿tiene su tarjeta de biblioteca?\nEstudiante: Sí, aquí tiene.\nBibliotecario: Gracias. Puede pedirlo prestado por dos semanas.",
+      "transcript_kn": "ವಿದ್ಯಾರ್ಥಿ: ಕ್ಷಮಿಸಿ, ನಾನು ಈ ಪುಸ್ತಕವನ್ನು ಎರವಲು ಪಡೆಯಲು ಬಯಸುತ್ತೇನೆ.\nಸಿಬ್ಬಂದಿ: ಹೌದು, ಲೈಬ್ರರಿ ಕಾರ್ಡ್ ಇದೆಯೇ?\nವಿದ್ಯಾರ್ಥಿ: ಹೌದು, ಇಲ್ಲಿದೆ.\nಸಿಬ್ಬಂದಿ: ಧನ್ಯವಾದಗಳು. ನೀವು ಎರಡು ವಾರಗಳವರೆಗೆ ಎರವಲು ಪಡೆಯಬಹುದು.",
+      "transcript_ml": "വിദ്യാർത്ഥി: ക്ഷമിക്കണം, എനിക്ക് ഈ പുസ്തകം കടം വേണം.\nജീവനക്കാരൻ: ശരി, ലൈബ്രറി കാർഡുണ്ടോ?\nവിദ്യാർത്ഥി: അതെ, ഇതാ.\nജീവനക്കാരൻ: നന്ദി. രണ്ടാഴ്ചത്തേക്ക് കടമെടുക്കാം.",
+      "questions": [
+        {
+          "q": "本を 何週間 借りられますか。",
+          "q_en": "How many weeks can the book be borrowed for?",
+          "q_te": "పుస్తకాన్ని ఎన్ని వారాల పాటు తీసుకోవచ్చు?",
+          "q_hi": "किताब कितने सप्ताह के लिए ली जा सकती है?",
+          "q_ta": "புத்தகத்தை எத்தனை வாரங்கள் கடன் வாங்கலாம்?",
+          "q_ko": "책을 몇 주일 동안 빌릴 수 있습니까?",
+          "q_es": "¿Por cuántas semanas se puede pedir prestado el libro?",
+          "q_kn": "ಪುಸ್ತಕವನ್ನು ಎಷ್ಟು ವಾರಗಳವರೆಗೆ ಎರವಲು ಪಡೆಯಬಹುದು?",
+          "q_ml": "പുസ്തകം എത്ര ആഴ്ചത്തേക്ക് കടമെടുക്കാം?",
+          "options": [
+            "一週間",
+            "二週間",
+            "三週間",
+            "一ヶ月"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "l-n5-15",
+      "title": "びょういんで (At the Clinic)",
+      "script": "いしゃ: どうしましたか。\nかんじゃ: きのうから あたまが いたくて、ねつも あります。\nいしゃ: そうですか。かぜですね。この くすりを 一日 三回、食後に のんでください。そして 今日は 早く ねてくださいね。\nかんじゃ: わかりました。ありがとうございました。",
+      "transcript_en": "Doctor: What seems to be the problem?\nPatient: Since yesterday I have had a headache and also a fever.\nDoctor: I see. It is a cold. Please take this medicine three times a day after meals. And please go to sleep early today.\nPatient: I understand. Thank you very much.",
+      "transcript_te": "వైద్యుడు: ఏమైంది?\nరోగి: నిన్నటి నుండి తలనొప్పిగా ఉంది, మరియు జ్వరం కూడా ఉంది.\nవైద్యుడు: అలాగే. జలుబు చేసింది. ఈ మందును రోజుకు మూడుసార్లు భోజనం తర్వాత వేసుకోండి. మరియు ఈ రోజు త్వరగా పడుకోండి.\nరోగి: అర్థమైంది. చాలా ధన్యవాదాలు.",
+      "transcript_hi": "डॉक्टर: क्या समस्या है?\nमरीज: कल से सिरदर्द है और बुखार भी है।\nडॉक्टर: अच्छा। यह सर्दी-जुकाम है। इस दवा को दिन में तीन बार भोजन के बाद लें। और आज जल्दी सो जाएँ।\nमरीज: समझ गया। बहुत-बहुत धन्यवाद।",
+      "transcript_ta": "மருத்துவர்: என்ன பிரச்சனை?\nநோயாளி: நேற்றிலிருந்து தலைவலியும் காய்ச்சலும் இருக்கிறது.\nமருத்துவர்: அப்படியா. சளி பிடித்துள்ளது. இந்த மருந்தை ஒரு நாளைக்கு மூன்று முறை உணவுக்குப் பிறகு உட்கொள்ளவும். இன்று சீக்கிரம் தூங்குங்கள்.\nநோயாளி: புரிந்தது. மிக்க நன்றி.",
+      "transcript_ko": "의사: 어떻게 오셨습니까?\n환자: 어제부터 머리가 아프고 열도 있습니다.\n의사: 그렇군요. 감기네요. 이 약을 하루에 세 번, 식후에 드세요. 그리고 오늘은 일찍 주무세요.\n환자: 알겠습니다. 감사합니다.",
+      "transcript_es": "Doctor: ¿Qué le ocurre?\nPaciente: Desde ayer tengo dolor de cabeza y también fiebre.\nDoctor: Ya veo. Es un resfriado. Tome este medicamento tres veces al día después de las comidas. Y hoy acuéstese temprano.\nPaciente: Entendido. Muchas gracias.",
+      "transcript_kn": "ವೈದ್ಯರು: ಏನಾಯಿತು?\nರೋಗಿ: ನಿನ್ನೆಯಿಂದ ತಲೆನೋವು ಮತ್ತು ಜ್ವರವೂ ಇದೆ.\nವೈದ್ಯರು: ಹೌದಾ. ಇದು ನೆಗಡಿ. ಈ ಔಷಧಿಯನ್ನು ದಿನಕ್ಕೆ ಮೂರು ಬಾರಿ ಊಟದ ನಂತರ ತೆಗೆದುಕೊಳ್ಳಿ. ಮತ್ತು ಇಂದು ಬೇಗ ಮಲಗಿ.\nರೋಗಿ: ಅರ್ಥವಾಯಿತು. ತುಂಬಾ ಧನ್ಯವಾದಗಳು.",
+      "transcript_ml": "ഡോക്ടർ: എന്താണ് പ്രശ്നം?\nരോഗി: ഇന്നലെ മുതൽ തലവേദനയും പനിയുമുണ്ട്.\nഡോക്ടർ: മനസ്സിലായി. ജലദോഷമാണ്. ഈ മരുന്ന് ദിവസവും മൂന്ന് നേരം ഭക്ഷണത്തിന് ശേഷം കഴിക്കുക. ഇന്ന് നേരത്തെ ഉറങ്ങുക.\nരോഗി: മനസ്സിലായി. വളരെ നന്ദി.",
+      "questions": [
+        {
+          "q": "くすりは 一日 何回 のみますか。",
+          "q_en": "How many times a day should the medicine be taken?",
+          "q_te": "మందును రోజుకు ఎన్నిసార్లు వేసుకోవాలి?",
+          "q_hi": "दवा दिन में कितनी बार लेनी है?",
+          "q_ta": "மருந்தை ஒரு நாளைக்கு எத்தனை முறை உட்கொள்ள வேண்டும்?",
+          "q_ko": "약은 하루에 몇 번 먹습니까?",
+          "q_es": "¿Cuántas veces al día debe tomarse el medicamento?",
+          "q_kn": "ಔಷಧಿಯನ್ನು ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕು?",
+          "q_ml": "മരുന്ന് ദിവസത്തിൽ എത്ര തവണ കഴിക്കണം?",
+          "options": [
+            "一回",
+            "二回",
+            "三回",
+            "四回"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "患者は どんな 症状がありますか。",
+          "q_en": "What symptoms does the patient have?",
+          "q_te": "రోగికి ఎలాంటి లక్షణాలు ఉన్నాయి?",
+          "q_hi": "मरीज को क्या लक्षण हैं?",
+          "q_ta": "நோயாளிக்கு என்ன அறிகுறிகள் உள்ளன?",
+          "q_ko": "환자는 어떤 증상이 있습니까?",
+          "q_es": "¿Qué síntomas tiene el paciente?",
+          "q_kn": "ರೋಗಿಗೆ ಯಾವ ಲಕ್ಷಣಗಳಿವೆ?",
+          "q_ml": "രോഗിക്ക് എന്തൊക്കെ ലക്ഷണങ്ങളുണ്ട്?",
+          "options": [
+            "頭痛と熱",
+            "お腹の痛み",
+            "足の怪我",
+            "歯の痛み"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N4": [
+    {
+      "id": "l-n4-1",
+      "title": "傘を貸してくれた友だち (The friend who lent me an umbrella)",
+      "script": "昨日、駅で急に雨が降ってきました。傘を持っていなかったので、困っていたら、友だちの田中さんが傘を貸してくれました。おかげで、ぬれないで家に帰ることができました。今度、お礼にコーヒーをおごりたいと思います。",
+      "transcript_en": "Yesterday, it suddenly started raining at the station. I didn't have an umbrella, so while I was troubled, my friend Tanaka lent me an umbrella. Thanks to that, I was able to get home without getting wet. Next time, I want to treat him to a coffee as a thank-you.",
+      "questions": [
+        {
+          "q": "昨日、駅で何がありましたか。",
+          "q_en": "What happened at the station yesterday?",
+          "options": [
+            "急に雨が降ってきた",
+            "急に雪が降ってきた",
+            "とても暑くなった",
+            "電車が止まった"
+          ],
+          "answer": 0,
+          "q_te": "నిన్న స్టేషన్‌లో ఏమి జరిగింది?",
+          "q_hi": "कल स्टेशन पर क्या हुआ?",
+          "q_ta": "நேற்று இரயில் நிலையத்தில் என்ன நடந்தது?",
+          "q_ko": "어제 역에서 무슨 일이 있었습니까?",
+          "q_es": "¿Qué ocurrió ayer en la estación?",
+          "q_kn": "ನಿನ್ನೆ ನಿಲ್ದಾಣದಲ್ಲಿ ಏನಾಯಿತು?",
+          "q_ml": "ഇന്നലെ സ്റ്റേഷനിൽ എന്തുണ്ടായി?"
+        },
+        {
+          "q": "話している人は、これから何をしたいと言っていますか。",
+          "q_en": "What does the speaker say they want to do from now?",
+          "options": [
+            "新しい傘を買いたい",
+            "田中さんにコーヒーをおごりたい",
+            "田中さんに傘を返したくない",
+            "田中さんと旅行に行きたい"
+          ],
+          "answer": 1,
+          "q_te": "మాట్లాడుతున్న వ్యక్తి ఇకపై ఏమి చేయాలనుకుంటున్నారు?",
+          "q_hi": "बोलने वाला व्यक्ति आगे क्या करना चाहता है?",
+          "q_ta": "பேசுபவர் இப்போது என்ன செய்ய விரும்புகிறார்?",
+          "q_ko": "이야기하는 사람은 앞으로 무엇을 하고 싶다고 합니까?",
+          "q_es": "¿Qué dice el hablante que quiere hacer ahora?",
+          "q_kn": "ಮಾತನಾಡುತ್ತಿರುವ ವ್ಯಕ್ತಿ ಮುಂದೆ ಏನು ಮಾಡಲು ಬಯಸುತ್ತಾನೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ ഇനി എന്താണ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നത്?"
+        },
+        {
+          "q": "話している人は、どうやって家に帰りましたか。",
+          "q_en": "How did the speaker get home?",
+          "options": [
+            "雨にぬれて帰った",
+            "タクシーで帰った",
+            "ぬれないで帰った",
+            "駅で雨がやむまで待った"
+          ],
+          "answer": 2,
+          "q_te": "మాట్లాడుతున్న వ్యక్తి ఇంటికి ఎలా చేరుకున్నారు?",
+          "q_hi": "बोलने वाला व्यक्ति घर कैसे पहुँचा?",
+          "q_ta": "பேசுபவர் எவ்வாறு வீடு திரும்பினார்?",
+          "q_ko": "이야기하는 사람은 어떻게 집에 돌아갔습니까?",
+          "q_es": "¿Cómo regresó a casa el hablante?",
+          "q_kn": "ಮಾತನಾಡುತ್ತಿರುವ ವ್ಯಕ್ತಿ ಮನೆಗೆ ಹೇಗೆ ಹೋದನು?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ എങ്ങനെയാണ് വീട്ടിലെത്തിയത്?"
+        }
+      ],
+      "transcript_te": "నిన్న స్టేషన్‌లో అకస్మాత్తుగా వర్షం పడింది. నా దగ్గర గొడుగు లేకపోవడంతో ఇబ్బంది పడుతుంటే, నా స్నేహితుడు తనాకా గొడుగు ఇచ్చాడు. దయవల్ల తడవకుండా ఇంటికి చేరుకోగలిగాను. వచ్చేసారి కృతజ్ఞతగా అతనికి కాఫీ కొనివ్వాలనుకుంటున్నాను.",
+      "transcript_hi": "कल स्टेशन पर अचानक बारिश शुरू हो गई। मेरे पास छाता नहीं था, इसलिए मैं परेशान था। तभी मेरे दोस्त तानाका ने मुझे छाता उधार दिया। उनकी बदौलत मैं बिना भीगे घर पहुँच सका। अगली बार धन्यवाद के रूप में मैं उन्हें कॉफ़ी पिलाना चाहता हूँ।",
+      "transcript_ta": "நேற்று இரயில் நிலையத்தில் திடீரென மழை பெய்தது. என்னிடம் குடை இல்லாததால் தவித்தேன். அப்போது என் நண்பன் தனகா குடை கொடுத்தான். அதனால் நனையாமல் வீடு திரும்ப முடிந்தது. அடுத்த முறை அவனுக்கு காபி வாங்கிக் கொடுத்து நன்றி தெரிவிக்க விரும்புகிறேன்.",
+      "transcript_ko": "어제 역에서 갑자기 비가 내리기 시작했습니다. 우산이 없어서 곤란해하고 있었는데, 친구 다ना카가 우산을 빌려주었습니다. 덕분에 젖지 않고 집에 갈 수 있었습니다. 다음에는 감사의 뜻으로 커피를 사주고 싶습니다.",
+      "transcript_es": "Ayer en la estación de repente empezó a llover. Como no tenía paraguas estaba en apuros, pero mi amigo Tanaka me prestó uno. Gracias a eso pude regresar a casa sin mojarme. La próxima vez me gustaría invitarle un café en agradecimiento.",
+      "transcript_kn": "ನಿನ್ನೆ ನಿಲ್ದಾಣದಲ್ಲಿ ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಮಳೆ ಶುರುವಾಯಿತು. ನನ್ನ ಬಳಿ ಛತ್ರಿ ಇಲ್ಲದೆ ತೊಂದರೆಯಲ್ಲಿದ್ದಾಗ, ಸ್ನೇಹಿತ ತನಾಕಾ ಛತ್ರಿ ಕೊಟ್ಟನು. ಆತನಿಗೆ ಧನ್ಯವಾದಗಳು, ನೆನೆಯದೆ ಮನೆಗೆ ತಲುಪಿದೆ. ಮುಂದಿನ ಬಾರಿ ಕೃತಜ್ಞತೆಯಾಗಿ ಆತನಿಗೆ ಕಾಫಿ ಕೊಡಿಸಬೇಕೆಂದಿದ್ದೇನೆ.",
+      "transcript_ml": "ഇന്നലെ സ്റ്റേഷനിൽ പെട്ടെന്ന് മഴ പെയ്തു. കുടയില്ലാത്തതിനാൽ ഞാൻ ബുദ്ധിമുട്ടി. അപ്പോൾ സുഹൃത്ത് തനാക്ക എനിക്ക് കുട തന്നു. അതുകൊണ്ട് നനയാതെ വീട്ടിലെത്താൻ പറ്റി. അടുത്ത തവണ നന്ദിസൂചകമായി ഒരു കാപ്പി വാങ്ങി നൽകണമെന്ന് വിചാരിക്കുന്നു."
+    },
+    {
+      "id": "l-n4-2",
+      "title": "映画のさそい (An invitation to a movie)",
+      "script": "A：もしもし、山田さん？今週の土曜日、いっしょに映画を見に行かない？\nB：いいね。でも、土曜日は用事があるんだ。日曜日はどう？\nA：日曜日なら大丈夫だよ。じゃあ、駅の前で十一時に会おう。\nB：うん、わかった。楽しみにしてるね。",
+      "transcript_en": "A: Hello, Yamada? Do you want to go see a movie together this Saturday?\nB: Sounds good. But I have something to do on Saturday. How about Sunday?\nA: Sunday is fine. Then let's meet in front of the station at eleven.\nB: Yeah, got it. I'm looking forward to it.",
+      "questions": [
+        {
+          "q": "二人はいつ映画を見に行きますか。",
+          "q_en": "When will the two of them go to see the movie?",
+          "options": [
+            "土曜日",
+            "日曜日",
+            "金曜日",
+            "月曜日"
+          ],
+          "answer": 1,
+          "q_te": "వారిద్దరూ ఎప్పుడు సినిమా చూడటానికి వెళ్తారు?",
+          "q_hi": "दोनों फ़िल्म देखने कब जाएँगे?",
+          "q_ta": "இருவரும் எப்போது திரைப்படம் பார்க்கச் செல்வார்கள்?",
+          "q_ko": "두 사람은 언제 영화를 보러 갑니까?",
+          "q_es": "¿Cuándo irán los dos a ver la película?",
+          "q_kn": "ಇಬ್ಬರೂ ಯಾವಾಗ ಸಿನಿಮಾ ನೋಡಲು ಹೋಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എപ്പോഴാണ് സിനിമ കാണാൻ പോകുന്നത്?"
+        },
+        {
+          "q": "どうして土曜日に行きませんか。",
+          "q_en": "Why won't they go on Saturday?",
+          "options": [
+            "山田さんに用事があるから",
+            "映画がつまらないから",
+            "天気が悪いから",
+            "映画館が休みだから"
+          ],
+          "answer": 0,
+          "q_te": "శనివారం ఎందుకు వెళ్లడం లేదు?",
+          "q_hi": "शनिवार को क्यों नहीं जा रहे?",
+          "q_ta": "சனிக்கிழமை ஏன் செல்லவில்லை?",
+          "q_ko": "어째서 토요일에 가지 않습니까?",
+          "q_es": "¿Por qué no van el sábado?",
+          "q_kn": "ಶನಿವಾರ ಏಕೆ ಹೋಗುವುದಿಲ್ಲ?",
+          "q_ml": "ശനിയാഴ്ച എന്തുകൊണ്ടാണ് പോകാത്തത്?"
+        },
+        {
+          "q": "二人はどこで会いますか。",
+          "q_en": "Where will the two of them meet?",
+          "options": [
+            "映画館の中で",
+            "山田さんの家で",
+            "レストランで",
+            "駅の前で"
+          ],
+          "answer": 3,
+          "q_te": "వారిద్దరూ ఎక్కడ కలుస్తారు?",
+          "q_hi": "दोनों कहाँ मिलेंगे?",
+          "q_ta": "இருவரும் எங்கு சந்திப்பார்கள்?",
+          "q_ko": "두 사람은 어디에서 만납니까?",
+          "q_es": "¿Dónde se encontrarán los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಎಲ್ಲಿ ಭೇಟಿಯಾಗುತ್ತಾರೆ?",
+          "q_ml": "രണ്ടുപേരും എവിടെയാണ് കാണുന്നത്?"
+        }
+      ],
+      "transcript_te": "A: హలో, యమదా గారా? ఈ శనివారం కలిసి సినిమా చూడటానికి వెళ్దామా?\nB: మంచిదే. కానీ శనివారం నాకు పని ఉంది. ఆదివారం అయితే ఎలా ఉంటుంది?\nA: ఆదివారం అయితే పర్వాలేదు. అయితే స్టేషన్ ముందు 11 గంటలకు కలుద్దాం.\nB: సరే, అర్థమైంది. ఎదురు చూస్తున్నాను.",
+      "transcript_hi": "A: हैलो, यामादा? क्या इस शनिवार साथ में फ़िल्म देखने चलोगे?\nB: अच्छा विचार है। पर शनिवार को मुझे कुछ काम है। रविवार कैसा रहेगा?\nA: रविवार ठीक रहेगा। तो फिर स्टेशन के सामने 11 बजे मिलते हैं।\nB: हाँ, समझ गया। मुझे इंतज़ार रहेगा।",
+      "transcript_ta": "A: ஹலோ, யமடா? இந்த சனிக்கிழமை ஒன்றாக திரைப்படம் பார்க்கப் போகலாமா?\nB: நல்ல யோசனை. ஆனால் சனிக்கிழமை எனக்கு வேலை இருக்கிறது. ஞாயிற்றுக்கிழமை எப்படி?\nA: ஞாயிறு பரவாயில்லை. அப்படியானால் ரயில் நிலையத்தின் முன் 11 மணிக்கு சந்திப்போம்.\nB: சரி, புரிந்தது. ஆவலுடன் காத்திருக்கிறேன்.",
+      "transcript_ko": "A: 여보세요, 야마다 씨? 이번 주 토요일에 같이 영화 보러 가지 않을래?\nB: 좋아. 하지만 토요일엔 볼일이 있어. 일요일은 어때?\nA: 일요일이라면 괜찮아. 그럼 역 앞에서 11시에 만나자.\nB: 응, 알겠어. 기대하고 있을게.",
+      "transcript_es": "A: ¿Hola, Yamada? ¿Quieres ir a ver una película juntos este sábado?\nB: Me gustaría. Pero el sábado tengo cosas que hacer. ¿Qué tal el domingo?\nA: El domingo me parece bien. Entonces encontrémonos frente a la estación a las once.\nB: Sí, entendido. ¡Qué ganas!",
+      "transcript_kn": "A: ಹಲೋ, ಯಮದಾ? ಈ ಶನಿವಾರ ಒಟ್ಟಿಗೆ ಸಿನಿಮಾ ನೋಡಲು ಹೋಗೋಣವೇ?\nB: ಒಳ್ಳೆಯದು. ಆದರೆ ಶನಿವಾರ ನನಗೆ ಕೆಲಸವಿದೆ. ಭಾನುವಾರ ಹೇಗಿದೆ?\nA: ಭಾನುವಾರ ಪರವಾಗಿಲ್ಲ. ಹಾಗಾದರೆ ನಿಲ್ದಾಣದ ಮುಂದೆ 11 ಗಂಟೆಗೆ ಭೇಟಿಯಾಗೋಣ.\nB: ಸರಿ, ತಿಳಿಯಿತು. ಕಾಯುತ್ತಿರುತ್ತೇನೆ.",
+      "transcript_ml": "A: ഹലോ, യമദ? ഈ ശനിയാഴ്ച ഒന്നിച്ച് സിനിമ കാണാൻ പോയാലോ?\nB: നല്ല ആശയം. എന്നാൽ ശനിയാഴ്ച എനിക്ക് തിരക്കുണ്ട്. ഞായറാഴ്ച എങ്ങനെയുണ്ട്?\nA: ഞായറാഴ്ച കുഴപ്പമില്ല. എങ്കിൽ സ്റ്റേഷന് മുന്നിൽ 11 മണിക്ക് കാണാം.\nB: ശരി, മനസ്സിലായി. കാത്തിരിക്കുന്നു."
+    },
+    {
+      "id": "l-n4-3",
+      "title": "料理が作れるようになった (I became able to cook)",
+      "script": "私は去年から料理を習っています。最初はたまごも上手に焼けませんでしたが、毎日練習して、今はいろいろな料理が作れるようになりました。先週は、母に手料理を作ってあげました。母が「おいしい」と言ってくれて、とてもうれしかったです。",
+      "transcript_en": "I have been learning to cook since last year. At first I couldn't even fry an egg well, but I practiced every day, and now I've become able to make all sorts of dishes. Last week, I cooked a home-made meal for my mother. My mother said it was delicious, and I was very happy.",
+      "questions": [
+        {
+          "q": "この人はいつから料理を習っていますか。",
+          "q_en": "Since when has this person been learning to cook?",
+          "options": [
+            "先週から",
+            "去年から",
+            "子どものときから",
+            "今月から"
+          ],
+          "answer": 1,
+          "q_te": "ఈ వ్యక్తి ఎప్పటి నుండి వంట నేర్చుకుంటున్నారు?",
+          "q_hi": "यह व्यक्ति कब से खाना बनाना सीख रहा है?",
+          "q_ta": "இவர் எப்போது இருந்து சமையல் கற்கிறார்?",
+          "q_ko": "이 사람은 언제부터 요리를 배우고 있습니까?",
+          "q_es": "¿Desde cuándo aprende a cocinar esta persona?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಯಾವಾಗಿನಿಂದ ಅಡುಗೆ ಕಲಿಯುತ್ತಿದ್ದಾನೆ?",
+          "q_ml": "ഇയാൾ എപ്പോഴാണ് പാചകം പഠിക്കാൻ തുടങ്ങിയത്?"
+        },
+        {
+          "q": "先週、この人は何をしましたか。",
+          "q_en": "What did this person do last week?",
+          "options": [
+            "レストランで食事をした",
+            "母に料理を習った",
+            "母に料理を作ってあげた",
+            "料理の本を買った"
+          ],
+          "answer": 2,
+          "q_te": "పోయిన వారం ఈ వ్యక్తి ఏమి చేశారు?",
+          "q_hi": "पिछले हफ्ते इस व्यक्ति ने क्या किया?",
+          "q_ta": "கடந்த வாரம் இவர் என்ன செய்தார்?",
+          "q_ko": "지난주에 이 사람은 무엇을 했습니까?",
+          "q_es": "¿Qué hizo esta persona la semana pasada?",
+          "q_kn": "ಕಳೆದ ವಾರ ಈ ವ್ಯಕ್ತಿ ಏನು ಮಾಡಿದನು?",
+          "q_ml": "കഴിഞ്ഞ ആഴ്ച ഇയാൾ എന്താണ് ചെയ്തത്?"
+        },
+        {
+          "q": "この人はどうしてうれしかったですか。",
+          "q_en": "Why was this person happy?",
+          "options": [
+            "新しいレストランが開いたから",
+            "たまごが上手に焼けなかったから",
+            "料理の本をもらったから",
+            "母がおいしいと言ってくれたから"
+          ],
+          "answer": 3,
+          "q_te": "ఈ వ్యక్తి ఎందుకు సంతోషించారు?",
+          "q_hi": "यह व्यक्ति क्यों खुश हुआ?",
+          "q_ta": "இவர் ஏன் மகிழ்ச்சியடைந்தார்?",
+          "q_ko": "이 사람은 왜 기뻐했습니까?",
+          "q_es": "¿Por qué se alegró esta persona?",
+          "q_kn": "ಈ ವ್ಯಕ್ತಿ ಏಕೆ ಸಂತೋಷಪಟ್ಟನು?",
+          "q_ml": "ഇയാൾ എന്തുകൊണ്ടാണ് സന്തോഷിച്ചത്?"
+        }
+      ],
+      "transcript_te": "నేను పోయిన సంవత్సరం నుండి వంట నేర్చుకుంటున్నాను. మొదట్లో గుడ్డు కూడా సరిగ్గా వేయలేకపోయేవాడిని, కానీ ప్రతిరోజూ అభ్యాసం చేసి ఇప్పుడు రకరకాల వంటలు చేయగలుగుతున్నాను. పోయిన వారం అమ్మకి స్వయంగా వంట చేసి పెట్టాను. అమ్మ 'చాలా బాగుంది' అనడంతో చాలా సంతోషించాను.",
+      "transcript_hi": "मैं पिछले साल से खाना बनाना सीख रहा हूँ। शुरुआत में मैं अंडा भी ठीक से नहीं पका पाता था, लेकिन रोज़ अभ्यास किया और अब कई तरह के व्यंजन बना सकता हूँ। पिछले हफ्ते मैंने माँ के लिए अपने हाथों से खाना बनाया। माँ ने कहा 'स्वादिष्ट है', मुझे बहुत खुशी हुई।",
+      "transcript_ta": "நான் கடந்த ஆண்டிலிருந்து சமையல் கற்று வருகிறேன். முதலில் முட்டை கூட சரியாக வறுக்கத் தெரியாது, ஆனால் தினமும் பயிற்சி செய்து இப்போது பலவகை உணவுகளை சமைக்கிறேன். கடந்த வாரம் என் அம்மாவுக்கு கைப்பட சமைத்துப் போட்டேன். அம்மா 'சுவையாக இருக்கிறது' என்றதும் மிகவும் மகிழ்ந்தேன்.",
+      "transcript_ko": "저는 작년부터 요리를 배우고 있습니다. 처음에는 달걀도 잘 굽지 못했지만 매일 연습해서 지금은 여러 가지 요리를 만들 수 있게 되었습니다. 지난주에는 어머니께 직접 만든 요리를 해 드렸습니다. 어머니가 '맛있다'고 해 주셔서 정말 기뻤습니다.",
+      "transcript_es": "He estado aprendiendo a cocinar desde el año pasado. Al principio ni siquiera podía freír bien un huevo, pero practiqué todos los días y ahora puedo preparar varios platos. La semana pasada le cociné a mi madre. Me dijo que estaba delicioso y me alegré mucho.",
+      "transcript_kn": "ನಾನು ಕಳೆದ ವರ್ಷದಿಂದ ಅಡುಗೆ ಕಲಿಯುತ್ತಿದ್ದೇನೆ. ಮೊದಲಿಗೆ ಮೊಟ್ಟೆ ಕೂಡ ಸರಿಯಾಗಿ ಬೇಯಿಸಲು ಬರುತ್ತಿರಲಿಲ್ಲ, ಆದರೆ ಪ್ರತಿದಿನ ಅಭ್ಯಾಸ ಮಾಡಿ ಈಗ ವಿವಿಧ ಅಡುಗೆಗಳನ್ನು ಮಾಡಬಲ್ಲೆ. ಕಳೆದ ವಾರ ಅಮ್ಮನಿಗೆ ಕೈಯಾರೆ ಅಡುಗೆ ಮಾಡಿ ಕೊಟ್ಟೆ. ಅಮ್ಮ 'ರುಚಿಯಾಗಿದೆ' ಎಂದಾಗ ತುಂಬಾ ಖುಷಿಯಾಯಿತು.",
+      "transcript_ml": "ഞാൻ കഴിഞ്ഞ വർഷം മുതൽ പാചകം പഠിക്കുന്നു. ആദ്യം മുട്ട പോലും ശരിയായി വറുക്കാൻ അറിയില്ലായിരുന്നു, എന്നാൽ ദിവസവും പരിശീലിച്ച് ഇപ്പോൾ പലതരം വിഭവങ്ങൾ ഉണ്ടാക്കാൻ കഴിയും. കഴിഞ്ഞ ആഴ്ച അമ്മയ്ക്ക് സ്വന്തമായി പാചകം ചെയ്തു കൊടുത്തു. അമ്മ 'നന്നായിട്ടുണ്ട്' എന്ന് പറഞ്ഞപ്പോൾ വളരെ സന്തോഷം തോന്നി."
+    },
+    {
+      "id": "l-n4-4",
+      "title": "店長からのお願い (A request from the store manager)",
+      "script": "みなさん、おはようございます。今日は午後から雨が降るそうです。それで、お店の外に出してあるかさを、三時までに中に入れてください。それから、レジが新しくなったので、使い方がわからない人は私に聞いてくださいね。",
+      "transcript_en": "Good morning, everyone. They say it's going to rain from the afternoon today. So, please bring the umbrellas that are set out in front of the store inside by three o'clock. Also, the register has been replaced with a new one, so if there's anyone who doesn't know how to use it, please ask me.",
+      "questions": [
+        {
+          "q": "何時までにかさを中に入れますか。",
+          "q_en": "By what time should the umbrellas be brought inside?",
+          "options": [
+            "午前中に",
+            "三時までに",
+            "雨がやんでから",
+            "店を閉めるとき"
+          ],
+          "answer": 1,
+          "q_te": "గొడుగులను ఎన్ని గంటలలోపు లోపల పెట్టాలి?",
+          "q_hi": "छाते कितने बजे तक अंदर रखने हैं?",
+          "q_ta": "குடைகளை எத்தனை மணிக்குள் உள்ளே வைக்க வேண்டும்?",
+          "q_ko": "몇 시까지 우산을 안으로 들여놓습니까?",
+          "q_es": "¿Para qué hora se deben meter los paraguas?",
+          "q_kn": "ಛತ್ರಿಗಳನ್ನು ಎಷ್ಟು ಗಂಟೆಯೊಳಗೆ ಒಳಗೆ ತರಬೇಕು?",
+          "q_ml": "കുടകൾ എത്ര മണിക്ക് മുൻപ് അകത്ത് വെക്കണം?"
+        },
+        {
+          "q": "使い方がわからないとき、だれに聞きますか。",
+          "q_en": "Who should you ask when you don't know how to use it?",
+          "options": [
+            "ほかの店員",
+            "店長",
+            "お客さん",
+            "だれにも聞かない"
+          ],
+          "answer": 1,
+          "q_te": "ఉపయోగించడం తెలియనప్పుడు ఎవరిని అడగాలి?",
+          "q_hi": "उपयोग न आने पर किससे पूछना है?",
+          "q_ta": "பயன்படுத்த தெரியாவிட்டால் யாரிடம் கேட்க வேண்டும்?",
+          "q_ko": "사용법을 모를 때 누구에게 물어봅니까?",
+          "q_es": "¿A quién se debe preguntar si no se sabe usar?",
+          "q_kn": "ಬಳಕೆ ತಿಳಿಯದಿದ್ದಾಗ ಯಾರನ್ನು ಕೇಳಬೇಕು?",
+          "q_ml": "ഉപയോഗിക്കാൻ അറിയില്ലെങ്കിൽ ആരോട് ചോദിക്കണം?"
+        },
+        {
+          "q": "新しくなったものは何ですか。",
+          "q_en": "What is the thing that has been made new?",
+          "options": [
+            "レジ",
+            "かさ",
+            "ドア",
+            "電話"
+          ],
+          "answer": 0,
+          "q_te": "కొత్తగా మారిన వస్తువు ఏది?",
+          "q_hi": "कौन सी चीज़ नई हुई है?",
+          "q_ta": "புதிதாக மாற்றப்பட்ட பொருள் எது?",
+          "q_ko": "새로 바뀐 것은 무엇입니까?",
+          "q_es": "¿Qué cosa es la que se renovó?",
+          "q_kn": "ಹೊಸದಾದ ವಸ್ತು ಯಾವುದು?",
+          "q_ml": "പുതിയതായി മാറ്റിയ സാധനം ഏതാണ്?"
+        }
+      ],
+      "transcript_te": "అందరికీ శుభోదయం. ఈరోజు మధ్యాహ్నం నుండి వర్షం పడుతుందని సమాచారం. కాబట్టి దుకాణం బయట ఉంచిన గొడుగులను 3 గంటలలోపు లోపల పెట్టండి. అలాగే నగదు రిజిస్టర్ కొత్తది వచ్చింది, ఉపయోగించడం రానివారు నన్ను అడగండి.",
+      "transcript_hi": "सभी को सुप्रभात। आज दोपहर से बारिश होने की संभावना है। इसलिए दुकान के बाहर रखे छातों को तीन बजे तक अंदर रख दें। साथ ही, नया कैश रजिस्टर आया है, यदि किसी को उपयोग करना न आता हो तो मुझसे पूछ लें।",
+      "transcript_ta": "அனைவருக்கும் காலை வணக்கம். இன்று மதியத்திலிருந்து மழை பெய்யும் என்கிறார்கள். எனவே கடைக்கு வெளியே வைக்கப்பட்ட குடைகளை மூன்று மணிக்குள் உள்ளே வையுங்கள். மேலும் பில் போடும் இயந்திரம் புதிதாக மாற்றப்பட்டுள்ளது, தெரியாதவர்கள் என்னிடம் கேளுங்கள்.",
+      "transcript_ko": "여러분, 좋은 아침입니다. 오늘은 오후부터 비가 온다고 합니다. 그러니 가게 밖에 내놓은 우산을 3시까지 안으로 들여놓아 주세요. 그리고 계산기가 새로 바뀌었으니 사용법을 모르는 분은 제게 물어보세요.",
+      "transcript_es": "Buenos días a todos. Dicen que hoy lloverá a partir de la tarde. Por eso, metan los paraguas que están fuera antes de las tres. Además, la caja registradora es nueva, así que si alguien no sabe usarla, pregúntenme.",
+      "transcript_kn": "ಎಲ್ಲರಿಗೂ ಶುಭೋದಯ. ಇಂದು ಮಧ್ಯಾಹ್ನದಿಂದ ಮಳೆಯಾಗಲಿದೆ ಎಂದು ತಿಳಿದುಬಂದಿದೆ. ಆದ್ದರಿಂದ ಅಂಗಡಿಯ ಹೊರಗಿಟ್ಟ ಛತ್ರಿಗಳನ್ನು 3 ಗಂಟೆಯೊಳಗೆ ಒಳಗೆ ತನ್ನಿ. ಮತ್ತು ಕ್ಯಾಶ್ ರಿಜಿಸ್ಟರ್ ಹೊಸದಾಗಿದೆ, ಬಳಕೆ ತಿಳಿಯದವರು ನನ್ನನ್ನು ಕೇಳಿ.",
+      "transcript_ml": "എല്ലാവർക്കും സുപ്രഭാതം. ഇന്ന് ഉച്ചയ്ക്ക് ശേഷം മഴ പെയ്യുമെന്ന് അറിയിപ്പുണ്ട്. അതിനാൽ കടയ്ക്ക് പുറത്തുവെച്ച കുടകൾ 3 മണിക്ക് മുൻപ് അകത്തേക്ക് മാറ്റുക. പുതിയ ക്യാഷ് രജിസ്റ്റർ വന്നതിനാൽ ഉപയോഗിക്കാൻ അറിയാത്തവർ എന്നോട് ചോദിക്കുക."
+    },
+    {
+      "id": "l-n4-5",
+      "title": "駅のアナウンス (An announcement at the station)",
+      "script": "お客様にお知らせします。ただいま、事故のため、みどり線は電車が止まっています。あと二十分ぐらいで動くと思います。お急ぎの方は、バスもご利用いただけます。バス乗り場は、南口を出て右にあります。",
+      "transcript_en": "Attention, passengers. Right now, due to an accident, the trains on the Midori Line have stopped. We think they will start moving again in about twenty minutes. Those who are in a hurry can also use the bus. The bus stop is to the right after you exit the south exit.",
+      "questions": [
+        {
+          "q": "電車はどうして止まっていますか。",
+          "q_en": "Why have the trains stopped?",
+          "options": [
+            "雨のため",
+            "事故のため",
+            "電気が消えたため",
+            "お客さんが多いため"
+          ],
+          "answer": 1,
+          "q_te": "రైళ్లు ఎందుకు ఆగిపోయాయి?",
+          "q_hi": "ट्रेनें क्यों रुकी हैं?",
+          "q_ta": "ரயில்கள் ஏன் நின்றுள்ளன?",
+          "q_ko": "열차는 왜 멈춰 있습니까?",
+          "q_es": "¿Por qué se detuvieron los trenes?",
+          "q_kn": "ರೈಲುಗಳು ಏಕೆ ನಿಂತಿವೆ?",
+          "q_ml": "ട്രെയിനുകൾ എന്തുകൊണ്ടാണ് നിർത്തിയത്?"
+        },
+        {
+          "q": "急いでいる人はどうしたらいいですか。",
+          "q_en": "What should people who are in a hurry do?",
+          "options": [
+            "二十分待つ",
+            "バスに乗る",
+            "タクシーを呼ぶ",
+            "歩いて行く"
+          ],
+          "answer": 1,
+          "q_te": "తొందరగా ఉన్నవారు ఏమి చేయవచ్చు?",
+          "q_hi": "जिन्हें जल्दी है वे क्या करें?",
+          "q_ta": "அவசரமாக உள்ளவர்கள் என்ன செய்யலாம்?",
+          "q_ko": "급한 사람은 어떻게 해야 합니까?",
+          "q_es": "¿Qué deben hacer las personas con prisa?",
+          "q_kn": "ತುರ್ತಾಗಿರುವವರು ಏನು ಮಾಡಬಹುದು?",
+          "q_ml": "തിരക്കുള്ളവർ എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "バス乗り場はどこにありますか。",
+          "q_en": "Where is the bus stop?",
+          "options": [
+            "南口を出て右",
+            "南口を出て左",
+            "北口の前",
+            "駅の中"
+          ],
+          "answer": 0,
+          "q_te": "బస్ స్టాప్ ఎక్కడ ఉంది?",
+          "q_hi": "बस स्टॉप कहाँ है?",
+          "q_ta": "பேருந்து நிறுத்தம் எங்குள்ளது?",
+          "q_ko": "버스 정류장은 어디에 있습니까?",
+          "q_es": "¿Dónde está la parada de autobús?",
+          "q_kn": "ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?",
+          "q_ml": "ബസ് സ്റ്റോപ്പ് എവിടെയാണ്?"
+        }
+      ],
+      "transcript_te": "ప్రయాణికులకు విజ్ఞప్తి. ప్రమాదం కారణంగా మిడోరి లైన్ రైళ్లు నిలిచిపోయాయి. దాదాపు మరో 20 నిమిషాల్లో పునరుద్ధరిస్తామని భావిస్తున్నాము. అత్యవసరంగా వెళ్లాల్సిన వారు బస్సు సౌకర్యాన్ని ఉపయోగించుకోవచ్చు. బస్ స్టాప్ దక్షిణ ద్వారం నుండి బయటకు వచ్చి కుడివైపున ఉంది.",
+      "transcript_hi": "यात्रियों के लिए सूचना। दुर्घटना के कारण मिदोरी लाइन पर ट्रेनें रुकी हुई हैं। लगभग बीस मिनट में सेवा फिर शुरू होने की उम्मीद है। जिन्हें जल्दी है वे बस का उपयोग कर सकते हैं। बस स्टॉप दक्षिण निकास से बाहर निकलकर दाईं ओर है।",
+      "transcript_ta": "பயணிகளுக்கு ஓர் அறிவிப்பு. விபத்து காரணமாக மிடோரி வழித்தட ரயில்கள் நிறுத்தப்பட்டுள்ளன. இன்னும் இருபது நிமிடங்களில் இயங்கும் என எதிர்பார்க்கப்படுகிறது. அவசரமாக செல்பவர்கள் பேருந்தைப் பயன்படுத்தலாம். பேருந்து நிறுத்தம் தெற்கு வாயிலில் இருந்து வலப்புறம் உள்ளது.",
+      "transcript_ko": "승객 여러분께 안내 말씀 드립니다. 현재 사고로 인해 미도리선 열차가 멈춰 있습니다. 앞으로 약 20분 후에 운행을 재개할 예정입니다. 급하신 분은 버스를 이용하실 수 있습니다. 버스 정류장은 남쪽 출구로 나가서 오른쪽에 있습니다.",
+      "transcript_es": "Aviso a los pasajeros. En este momento, debido a un accidente, los trenes de la línea Midori están detenidos. Estimamos que volverán a funcionar en unos veinte minutos. Quienes tengan prisa pueden tomar el autobús. La parada está a la derecha al salir por la salida sur.",
+      "transcript_kn": "ಪ್ರಯಾಣಿಕರಿಗೆ ಸೂಚನೆ. ಅಪಘಾತದ ಕಾರಣ ಮಿಡೋರಿ ಲೈನ್ ರೈಲುಗಳು ಸ್ಥಗಿತಗೊಂಡಿವೆ. ಇನ್ನೊಂದು 20 ನಿಮಿಷಗಳಲ್ಲಿ ಪುನರಾರಂಭಗೊಳ್ಳುವ ನಿರೀಕ್ಷೆಯಿದೆ. ತುರ್ತಾಗಿರುವವರು ಬಸ್ ಬಳಸಬಹುದು. ಬಸ್ ನಿಲ್ದಾಣವು ದಕ್ಷಿಣ ದ್ವಾರದಿಂದ ಹೊರಬಂದು ಬಲಭಾಗದಲ್ಲಿದೆ.",
+      "transcript_ml": "യാത്രക്കാരുടെ ശ്രദ്ധയ്ക്ക്. അപകടം കാരണം മിദോരി ലൈനിലെ ട്രെയിനുകൾ നിർത്തിവെച്ചിരിക്കുന്നു. ഏകദേശം ഇരുപത് മിനിറ്റിനകം പുനരാരംഭിക്കും. അത്യാവശ്യമുള്ളവർക്ക് ബസ് ഉപയോഗിക്കാം. സൗത്ത് എക്സിറ്റിൽ നിന്ന് ഇറങ്ങി വലതുവശത്താണ് ബസ് സ്റ്റോപ്പ്."
+    },
+    {
+      "id": "l-n4-6",
+      "title": "お医者さんのアドバイス (The doctor's advice)",
+      "script": "かぜですね。熱は高くないので、心配しなくても大丈夫ですよ。この薬を、一日三回、食事のあとに飲んでください。それから、今日はおふろに入らないで、早く寝てくださいね。三日たっても、よくならなかったら、また来てください。",
+      "transcript_en": "It's a cold. Your fever isn't high, so you don't need to worry. Please take this medicine three times a day, after meals. Also, don't take a bath today, and go to bed early. If you don't get better even after three days, please come again.",
+      "questions": [
+        {
+          "q": "薬はいつ飲みますか。",
+          "q_en": "When should the medicine be taken?",
+          "options": [
+            "寝る前に",
+            "食事のあとに",
+            "おふろのあとに",
+            "朝だけ"
+          ],
+          "answer": 1,
+          "q_te": "మందును ఎప్పుడు వేసుకోవాలి?",
+          "q_hi": "दवा कब लेनी है?",
+          "q_ta": "மருந்தை எப்போது உட்கொள்ள வேண்டும்?",
+          "q_ko": "약은 언제 먹습니까?",
+          "q_es": "¿Cuándo se debe tomar la medicina?",
+          "q_kn": "ಔಷಧಿಯನ್ನು ಯಾವಾಗ ತೆಗೆದುಕೊಳ್ಳಬೇಕು?",
+          "q_ml": "മരുന്ന് എപ്പോഴാണ് കഴിക്കേണ്ടത്?"
+        },
+        {
+          "q": "お医者さんは今日、何をしないように言いましたか。",
+          "q_en": "What did the doctor say not to do today?",
+          "options": [
+            "食事をする",
+            "おふろに入る",
+            "水を飲む",
+            "散歩する"
+          ],
+          "answer": 1,
+          "q_te": "ఈ రోజు ఏమి చేయవద్దని డాక్టర్ చెప్పారు?",
+          "q_hi": "डॉक्टर ने आज क्या न करने को कहा?",
+          "q_ta": "மருத்துவர் இன்று என்ன செய்யக்கூடாது என்றார்?",
+          "q_ko": "의사는 오늘 무엇을 하지 말라고 했습니까?",
+          "q_es": "¿Qué recomendó no hacer el doctor hoy?",
+          "q_kn": "ವೈದ್ಯರು ಇಂದು ಏನನ್ನು ಮಾಡಬಾರದೆಂದು ಹೇಳಿದರು?",
+          "q_ml": "ഇന്ന് എന്ത് ചെയ്യരുതെന്നാണ് ഡോക്ടർ പറഞ്ഞത്?"
+        },
+        {
+          "q": "三日たってもよくならなかったら、どうしますか。",
+          "q_en": "What should you do if you're not better even after three days?",
+          "options": [
+            "薬をやめる",
+            "また病院に来る",
+            "電話する",
+            "おふろに入る"
+          ],
+          "answer": 1,
+          "q_te": "మూడు రోజుల తర్వాత కూడా నయం కాకపోతే ఏమి చేయాలి?",
+          "q_hi": "तीन दिन बाद भी ठीक न होने पर क्या करें?",
+          "q_ta": "மூன்று நாட்களுக்குப் பிறகும் குணமாகாவிட்டால் என்ன செய்ய வேண்டும்?",
+          "q_ko": "3일이 지나도 낫지 않으면 어떻게 합니까?",
+          "q_es": "¿Qué hacer si no mejora tras tres días?",
+          "q_kn": "ಮೂರು ದಿನಗಳ ನಂತರವೂ ಗುಣವಾಗದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "മൂന്ന് ദിവസത്തിന് ശേഷവും മാറിയില്ലെങ്കിൽ എന്ത് ചെയ്യണം?"
+        }
+      ],
+      "transcript_te": "ఇది జలుబు మాత్రమే. జ్వరం పెద్దగా లేదు, కాబట్టి ఆందోళన చెందాల్సిన పనిలేదు. ఈ మందును రోజుకు మూడుసార్లు భోజనం తర్వాత వేసుకోండి. ఈ రోజు స్నానం చేయకుండా త్వరగా నిద్రపోండి. మూడు రోజుల తర్వాత కూడా నయం కాకపోతే మళ్లీ రండి.",
+      "transcript_hi": "यह सर्दी-जुकाम है। बुखार तेज़ नहीं है, इसलिए चिंता की बात नहीं है। इस दवा को दिन में तीन बार भोजन के बाद लें। आज स्नान न करें और जल्दी सो जाएँ। यदि तीन दिन बाद भी आराम न मिले तो दोबारा आएँ।",
+      "transcript_ta": "இது சாதாரண சளிதான். காய்ச்சல் அதிகமாக இல்லை, பயப்படத் தேவையில்லை. இந்த மருந்தை ஒரு நாளைக்கு மூன்று வேளை உணவுக்குப் பின் உட்கொள்ளவும். இன்று குளிக்காமல் சீக்கிரம் தூங்குங்கள். மூன்று நாட்களுக்குப் பிறகும் குணமாகாவிட்டால் மீண்டும் வாருங்கள்.",
+      "transcript_ko": "감기네요. 열이 높지 않으니 걱정하지 않으셔도 됩니다. 이 약을 하루 세 번 식후에 드세요. 그리고 오늘은 목욕하지 마시고 일찍 주무세요. 3일이 지나도 낫지 않으면 다시 오세요.",
+      "transcript_es": "Es un resfriado. La fiebre no es alta, así que no se preocupe. Tome esta medicina tres veces al día después de las comidas. Además, hoy no se bañe y duérmase temprano. Si no mejora después de tres días, vuelva a la consulta.",
+      "transcript_kn": "ಇದು ನೆಗಡಿ. ಜ್ವರ ಹೆಚ್ಚಿಲ್ಲ, ಚಿಂತೆ ಬೇಡ. ಈ ಔಷಧಿಯನ್ನು ದಿನಕ್ಕೆ ಮೂರು ಬಾರಿ ಊಟದ ನಂತರ ತೆಗೆದುಕೊಳ್ಳಿ. ಇಂದು ಸ್ನಾನ ಮಾಡದೆ ಬೇಗ ಮಲಗಿ. ಮೂರು ದಿನಗಳ ನಂತರವೂ ಗುಣವಾಗದಿದ್ದರೆ ಮತ್ತೆ ಬನ್ನಿ.",
+      "transcript_ml": "ഇത് ജലദോഷമാണ്. പനി കൂടുതലല്ല, പേടിക്കേണ്ടതില്ല. ഈ മരുന്ന് ദിവസവും മൂന്ന് നേരം ഭക്ഷണത്തിന് ശേഷം കഴിക്കുക. ഇന്ന് കുളിക്കാതെ നേരത്തെ ഉറങ്ങുക. മൂന്ന് ദിവസത്തിന് ശേഷവും ഭേദമായില്ലെങ്കിൽ വീണ്ടും വരിക."
+    },
+    {
+      "id": "l-n4-7",
+      "title": "友だちへのメッセージ (A message to a friend)",
+      "script": "もしもし、田中です。さっき送ってくれた写真、ありがとう。でも、ファイルが大きすぎて、私のスマホでは開けなかったんだ。悪いけど、もう一度、小さくして送ってもらえる?今夜は家にいるから、いつでも大丈夫だよ。",
+      "transcript_en": "Hello, it's Tanaka. Thanks for the photos you sent me earlier. But the file was too big, so I couldn't open it on my phone. Sorry, but could you make it smaller and send it once more? I'll be home tonight, so anytime is fine.",
+      "questions": [
+        {
+          "q": "田中さんはどうして写真が見られませんでしたか。",
+          "q_en": "Why couldn't Tanaka see the photos?",
+          "options": [
+            "ファイルが大きすぎたから",
+            "スマホがこわれたから",
+            "写真が来なかったから",
+            "時間がなかったから"
+          ],
+          "answer": 0,
+          "q_te": "తనాకా ఫోటోలను ఎందుకు చూడలేకపోయారు?",
+          "q_hi": "तानाका तस्वीरें क्यों नहीं देख सके?",
+          "q_ta": "தனகாவால் புகைப்படங்களை ஏன் பார்க்க முடியவில்லை?",
+          "q_ko": "다나카는 왜 사진을 볼 수 없었습니까?",
+          "q_es": "¿Por qué no pudo ver las fotos Tanaka?",
+          "q_kn": "ತನಾಕಾಗೆ ಫೋಟೋಗಳನ್ನು ನೋಡಲು ಏಕೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ?",
+          "q_ml": "തനാക്കയ്ക്ക് ഫോട്ടോകൾ കാണാൻ കഴിയാതിരുന്നത് എന്തുകൊണ്ട്?"
+        },
+        {
+          "q": "田中さんは相手に何をたのみましたか。",
+          "q_en": "What did Tanaka ask the other person to do?",
+          "options": [
+            "写真をもう一度とる",
+            "小さくして送る",
+            "家に来る",
+            "電話する"
+          ],
+          "answer": 1,
+          "q_te": "తనాకా అవతలి వ్యక్తిని ఏమి కోరారు?",
+          "q_hi": "तानाका ने दूसरे व्यक्ति से क्या करने को कहा?",
+          "q_ta": "தனகா அடுத்தவரிடம் என்ன கேட்டார்?",
+          "q_ko": "다나카는 상대방에게 무엇을 부탁했습니까?",
+          "q_es": "¿Qué le pidió Tanaka a la otra persona?",
+          "q_kn": "ತನಾಕಾ ಇನ್ನೊಬ್ಬ ವ್ಯಕ್ತಿಗೆ ಏನನ್ನು ಕೇಳಿದನು?",
+          "q_ml": "തനാക്ക മറ്റയാളോട് എന്താണ് ആവശ്യപ്പെട്ടത്?"
+        },
+        {
+          "q": "田中さんは今夜どこにいますか。",
+          "q_en": "Where will Tanaka be tonight?",
+          "options": [
+            "会社",
+            "家",
+            "友だちの家",
+            "駅"
+          ],
+          "answer": 1,
+          "q_te": "ఈ రాత్రి తనాకా ఎక్కడ ఉంటారు?",
+          "q_hi": "आज रात तानाका कहाँ होंगे?",
+          "q_ta": "இன்று இரவு தனகா எங்கு இருப்பார்?",
+          "q_ko": "다나카는 오늘 밤 어디에 있습니까?",
+          "q_es": "¿Dónde estará Tanaka esta noche?",
+          "q_kn": "ಇಂದು ರಾತ್ರಿ ತನಾಕಾ ಎಲ್ಲಿದ್ದಾನೆ?",
+          "q_ml": "ഇന്ന് രാത്രി തനാക്ക എവിടെയായിരിക്കും?"
+        }
+      ],
+      "transcript_te": "హలో, తనాకాని. ఇందాక పంపిన ఫొటోలకు ధన్యవాదాలు. కానీ ఫైల్ సైజు చాలా పెద్దదిగా ఉండటంతో నా ఫోన్‌లో తెరవడం కుదరలేదు. దయచేసి సైజు తగ్గించి మరోసారి పంపగలరా? ఈ రాత్రి ఇంట్లోనే ఉంటాను, ఎప్పుడైనా పర్వాలేదు.",
+      "transcript_hi": "हैलो, मैं तानाका। थोड़ी देर पहले भेजी गई तस्वीरों के लिए धन्यवाद। लेकिन फ़ाइल बहुत बड़ी थी, इसलिए मेरे फोन में नहीं खुली। कृपया फ़ाइल का साइज़ छोटा करके दोबारा भेज देंगे? आज रात मैं घर पर ही हूँ, कभी भी भेज सकते हैं।",
+      "transcript_ta": "வணக்கம், தனகா பேசுகிறேன். சற்றுமுன் அனுப்பிய புகைப்படங்களுக்கு நன்றி. ஆனால் கோப்பு பெரிதாக இருந்ததால் என் போனில் திறக்க முடியவில்லை. அளவைக் குறைத்து மீண்டும் அனுப்புங்கள். இன்று இரவு வீட்டில் தான் இருப்பேன், எப்போது வேண்டுமானாலும் அனுப்பலாம்.",
+      "transcript_ko": "여보세요, 다나카야. 아까 보내준 사진 고마워. 그런데 파일이 너무 커서 내 스마트폰에서 안 열려. 미안하지만 파일 크기를 줄여서 다시 보내줄래? 오늘 밤엔 집에 있으니 언제든 괜찮아.",
+      "transcript_es": "Hola, soy Tanaka. Gracias por las fotos de hace un rato. Pero el archivo era demasiado grande y no pude abrirlo en mi teléfono. ¿Podrías reducir el tamaño y enviarlo de nuevo? Esta noche estaré en casa, así que a cualquier hora está bien.",
+      "transcript_kn": "ಹಲೋ, ತನಾಕಾ. ಈಗ ತಾನೇ ಕಳುಹಿಸಿದ ಫೋಟೋಗಳಿಗೆ ಧನ್ಯವಾದಗಳು. ಆದರೆ ಫೈಲ್ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದ್ದರಿಂದ ನನ್ನ ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಸೈಜ್ ಕಡಿಮೆ ಮಾಡಿ ಮತ್ತೊಮ್ಮೆ ಕಳುಹಿಸು. ಇಂದು ರಾತ್ರಿ ಮನೆಯಲ್ಲೇ ಇರುತ್ತೇನೆ, ಯಾವಾಗಲಾದರೂ ಸರಿ.",
+      "transcript_ml": "ഹലോ, തനാക്കയാണ്. നേരത്തെ അയച്ച ഫോട്ടോകൾക്ക് നന്ദി. എന്നാൽ ഫയൽ വലുതായതിനാൽ ഫോണിൽ തുറക്കാൻ കഴിഞ്ഞില്ല. സൈസ് കുറച്ച് ഒന്നുകൂടി അയക്കാമോ? ഇന്ന് രാത്രി ഞാൻ വീട്ടിലുണ്ടാകും, എപ്പോൾ വേണമെങ്കിലും അയക്കാം."
+    },
+    {
+      "id": "l-n4-8",
+      "title": "町内会のお知らせ (A neighborhood association notice)",
+      "script": "ご近所のみなさん、こんにちは。来週の日曜日の朝、公園のそうじをします。みんなでごみを拾ったり、草を取ったりします。手ぶらで来てもいいですが、軍手があれば持ってきてください。そうじのあとで、あたたかいお茶を用意しています。",
+      "transcript_en": "Hello, neighbors. Next Sunday morning, we'll clean the park. Everyone will pick up trash and pull weeds together. It's fine to come empty-handed, but if you have work gloves, please bring them. After the cleaning, we'll have warm tea ready.",
+      "questions": [
+        {
+          "q": "来週の日曜日に何をしますか。",
+          "q_en": "What will they do next Sunday?",
+          "options": [
+            "公園でパーティーをする",
+            "公園をそうじする",
+            "木を植える",
+            "スポーツをする"
+          ],
+          "answer": 1,
+          "q_te": "వచ్చే ఆదివారం ఏమి చేస్తారు?",
+          "q_hi": "अगले रविवार को क्या करेंगे?",
+          "q_ta": "அடுத்த ஞாயிற்றுக்கிழமை என்ன செய்வார்கள்?",
+          "q_ko": "다음 주 일요일에 무엇을 합니까?",
+          "q_es": "¿Qué harán el próximo domingo?",
+          "q_kn": "ಮುಂದಿನ ಭಾನುವಾರ ಏನು ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "അടുത്ത ഞായറാഴ്ച എന്താണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "できれば何を持ってきますか。",
+          "q_en": "What should you bring if possible?",
+          "options": [
+            "軍手",
+            "お弁当",
+            "いす",
+            "飲み物"
+          ],
+          "answer": 0,
+          "q_te": "వీలైతే వెంట ఏమి తీసుకురావాలి?",
+          "q_hi": "यदि संभव हो तो क्या लाना चाहिए?",
+          "q_ta": "முடிந்தால் எதை கொண்டு வர வேண்டும்?",
+          "q_ko": "가능하면 무엇을 가져옵니까?",
+          "q_es": "¿Qué se debe traer de ser posible?",
+          "q_kn": "ಸಾಧ್ಯವಾದರೆ ಏನನ್ನು ತರಬೇಕು?",
+          "q_ml": "സാധ്യമെങ്കിൽ എന്താണ് കൊണ്ടുവರേണ്ടത്?"
+        },
+        {
+          "q": "そうじのあとで何がありますか。",
+          "q_en": "What will there be after the cleaning?",
+          "options": [
+            "映画",
+            "あたたかいお茶",
+            "プレゼント",
+            "写真"
+          ],
+          "answer": 1,
+          "q_te": "శుభ్రం చేసిన తర్వాత ఏమి ఉంటుంది?",
+          "q_hi": "सफाई के बाद क्या मिलेगा?",
+          "q_ta": "சுத்தம் செய்தபின் என்ன இருக்கும்?",
+          "q_ko": "청소가 끝난 후 무엇이 있습니까?",
+          "q_es": "¿Qué habrá después de la limpieza?",
+          "q_kn": "ಸ್ವಚ್ಛತೆಯ ನಂತರ ಏನಿದೆ?",
+          "q_ml": "വൃത്തിയാക്കലിന് ശേഷം എന്താണ് ഉണ്ടാവുക?"
+        }
+      ],
+      "transcript_te": "పొరుగువారందరికీ నమస్కారం. వచ్చే ఆదివారం ఉదయం పార్కును శుభ్రం చేయబోతున్నాము. అందరం కలిసి చెత్త ఏరి, కలుపు మొక్కలు తొలగిస్తాము. ఒట్టి చేతులతో వచ్చినా పర్వాలేదు, కానీ గ్లౌవ్స్ ఉంటే తీసుకురండి. శుభ్రం చేసిన తర్వాత వేడి టీ సిద్ధంగా ఉంటుంది.",
+      "transcript_hi": "पड़ोसियों को नमस्कार। अगले रविवार की सुबह हम पार्क की सफाई करेंगे। सब मिलकर कचरा उठाएँगे और घास हटाएँगे। खाली हाथ भी आ सकते हैं, पर दस्ताने हों तो ले आएँ। सफाई के बाद गर्म चाय की व्यवस्था है।",
+      "transcript_ta": "அக்கம்பக்கத்தினருக்கு வணக்கம். அடுத்த ஞாயிறு காலை பூங்காவை சுத்தம் செய்யவிருக்கிறோம். அனைவரும் குப்பைகளை அகற்றி, புற்களை பிடுங்குவோம். வெறும் கையோடு வந்தாலும் பரவாயில்லை, கையுறைகள் இருந்தால் கொண்டு வாருங்கள். சுத்தம் செய்தபின் சூடான தேநீர் உண்டு.",
+      "transcript_ko": "이웃 여러분, 안녕하세요. 다음 주 일요일 아침에 공원 청소를 합니다. 다 함께 쓰레기를 줍고 잡초를 뽑습니다. 그냥 오셔도 되지만 목장갑이 있다면 챙겨오세요. 청소가 끝난 후 따뜻한 차를 준비해 두겠습니다.",
+      "transcript_es": "Hola, vecinos. El próximo domingo por la mañana limpiaremos el parque. Todos recogeremos basura y quitaremos malas hierbas. Pueden venir sin nada, pero traigan guantes de trabajo si tienen. Después de limpiar habrá té caliente.",
+      "transcript_kn": "ನೆರೆಹೊರೆಯವರಿಗೆ ನಮಸ್ಕಾರ. ಮುಂದಿನ ಭಾನುವಾರ ಬೆಳಿಗ್ಗೆ ಪಾರ್ಕ್ ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗುವುದು. ಎಲ್ಲರೂ ಕಸ ಹೆಕ್ಕಿ, ಕಳೆ ಕೀಳಲಿದ್ದೇವೆ. ಹಾಗೆಯೇ ಬರಬಹುದು, ಆದರೆ ಕೆಲಸದ ಕೈಗವಸು ಇದ್ದರೆ ತನ್ನಿ. ಸ್ವಚ್ಛತೆಯ ನಂತರ ಬಿಸಿ ಚಹಾ ಇರುತ್ತದೆ.",
+      "transcript_ml": "അയൽവാസികൾക്ക് നമസ്കാരം. അടുത്ത ഞായറാഴ്ച രാവിലെ പാർക്ക് വൃത്തിയാക്കും. എല്ലാവരും ചേർന്ന് മാലിന്യങ്ങൾ പെറുക്കുകയും പുല്ല് പറിക്കുകയും ചെയ്യും. കയ്യുറകളുണ്ടെങ്കിൽ കൊണ്ടുവരിക. ജോലിക്ക് ശേഷം ചൂടുചായ ഒരുക്കിയിട്ടുണ്ട്."
+    },
+    {
+      "id": "l-n4-9",
+      "title": "テニス教室で (At a tennis class)",
+      "script": "はい、みなさん、集まってください。今日は初めての人が多いですね。まず、けがをしないように、体をよく動かしましょう。ラケットは、そこの箱から自由に使ってください。ボールはまだ投げないで、私の話を聞いてから始めましょうね。",
+      "transcript_en": "Okay everyone, please gather around. There are a lot of first-timers today, aren't there. First, so that we don't get injured, let's move our bodies well. Please feel free to use a racket from the box over there. Don't throw the balls yet — let's start after listening to what I have to say.",
+      "questions": [
+        {
+          "q": "どうして先に体を動かしますか。",
+          "q_en": "Why do they move their bodies first?",
+          "options": [
+            "けがをしないため",
+            "体を大きくするため",
+            "時間があるため",
+            "ゲームに勝つため"
+          ],
+          "answer": 0,
+          "q_te": "ముందుగా శరీర వ్యాయామం ఎందుకు చేస్తారు?",
+          "q_hi": "पहले वार्म-अप क्यों कर रहे हैं?",
+          "q_ta": "முதலில் ஏன் உடற்பயிற்சி செய்கிறார்கள்?",
+          "q_ko": "어째서 먼저 몸을 움직입니까?",
+          "q_es": "¿Por qué hacen calentamiento primero?",
+          "q_kn": "ಮೊದಲು ಏಕೆ ವ್ಯಾಯಾಮ ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "ആദ്യം ശരീരം ഇളക്കുന്നത് എന്തുകൊണ്ടാണ്?"
+        },
+        {
+          "q": "ラケットはどうしますか。",
+          "q_en": "What should be done about the rackets?",
+          "options": [
+            "先生からもらう",
+            "箱から自由に使う",
+            "家から持ってくる",
+            "買う"
+          ],
+          "answer": 1,
+          "q_te": "రాకెట్ల విషయంలో ఏమి చేయాలి?",
+          "q_hi": "रैकेट का क्या करना है?",
+          "q_ta": "ராக்கெட்டை என்ன செய்ய வேண்டும்?",
+          "q_ko": "라켓은 어떻게 합니까?",
+          "q_es": "¿Qué se debe hacer con las raquetas?",
+          "q_kn": "ರಾಕೆಟ್ ಬಗ್ಗೆ ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "റാക്കറ്റിന്റെ കാര്യത്തിൽ എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "いつボールを始めますか。",
+          "q_en": "When do they start with the balls?",
+          "options": [
+            "今すぐ",
+            "先生の話を聞いてから",
+            "体を動かす前に",
+            "次の週から"
+          ],
+          "answer": 1,
+          "q_te": "బంతులతో ఆట ఎప్పుడు ప్రారంభిస్తారు?",
+          "q_hi": "गेंदों के साथ कब शुरू करेंगे?",
+          "q_ta": "பந்துகளை எப்போது தொடங்க வேண்டும்?",
+          "q_ko": "공 연습은 언제 시작합니까?",
+          "q_es": "¿Cuándo empezarán con las pelotas?",
+          "q_kn": "ಚೆಂಡಿನಾಟ ಯಾವಾಗ ಪ್ರಾರಂಭಿಸುತ್ತಾರೆ?",
+          "q_ml": "പന്തുകൾ എപ്പോഴാണ് ഉപയോഗിച്ച് തുടങ്ങുന്നത്?"
+        }
+      ],
+      "transcript_te": "సరే, అందరూ ఇక్కడకు రండి. ఈరోజు కొత్తవారు ఎక్కువమంది ఉన్నారు. గాయాలు కాకుండా ముందుగా శరీర వ్యాయామం చేద్దాం. ఆ పెట్టెలో ఉన్న రాకెట్లను స్వేచ్ఛగా వాడుకోవచ్చు. బంతులను ఇప్పుడే విసరకండి, నా మాట విన్న తర్వాత ప్రారంభిద్దాం.",
+      "transcript_hi": "हाँ, सब यहाँ एकत्र हो जाएँ। आज नए लोग बहुत हैं। चोट से बचने के लिए पहले थोड़ा वार्म-अप कर लेते हैं। उस बक्से में से रैकेट का उपयोग कर सकते हैं। गेंद अभी न फेंकें, मेरी बात सुनने के बाद शुरू करेंगे।",
+      "transcript_ta": "சரி, அனைவரும் கூடுங்கள். இன்று புதியவர்கள் அதிகம். காயம் ஏற்படாமல் இருக்க முதலில் உடற்பயிற்சி செய்வோம். அந்த பெட்டியில் உள்ள ராக்கெட்டுகளை பயன்படுத்தலாம். பந்துகளை இப்போதே வீசாதீர்கள், நான் சொல்வதைக் கேட்டுவிட்டு ஆரம்பிக்கலாம்.",
+      "transcript_ko": "자, 여러분 모여주세요. 오늘은 처음 오신 분들이 많네요. 다치지 않도록 먼저 몸을 충분히 풀어줍시다. 라켓은 저 상자에서 자유롭게 쓰세요. 공은 아직 던지지 마시고 제 설명을 들은 뒤 시작합시다.",
+      "transcript_es": "Muy bien, reúnanse todos. Hoy hay muchos principiantes. Primero, hagamos calentamiento para evitar lesiones. Pueden usar libremente las raquetas de esa caja. No lancen las pelotas todavía; empecemos después de escucharme.",
+      "transcript_kn": "ಸರಿ, ಎಲ್ಲರೂ ಒಟ್ಟಾಗಿ ಬನ್ನಿ. ಇಂದು ಹೊಸಬರು ಹೆಚ್ಚಿದ್ದಾರೆ. ಗಾಯವಾಗದಂತೆ ಮೊದಲು ವ್ಯಾಯಾಮ ಮಾಡೋಣ. ಆ ಪೆಟ್ಟಿಗೆಯಿಂದ ರಾಕೆಟ್ ಬಳಸಬಹುದು. ಚೆಂಡುಗಳನ್ನು ಈಗಲೇ ಎಸೆಯಬೇಡಿ, ನನ್ನ ಮಾತು ಕೇಳಿ ನಂತರ ಪ್ರಾರಂಭಿಸೋಣ.",
+      "transcript_ml": "ശരി, എല്ലാവരും ഒത്തുകൂടൂ. ഇന്ന് തുടക്കക്കാർ ഒരുപാടുണ്ട്. പരിക്കേൽക്കാതിരിക്കാൻ ആദ്യം വാം-അപ്പ് ചെയ്യാം. പെട്ടിയിൽ നിന്ന് റാക്കറ്റ് എടുക്കാം. പന്തുകൾ ഇപ്പോൾ എറിയരുത്, ഞാൻ പറഞ്ഞതിന് ശേഷം തുടങ്ങാം."
+    },
+    {
+      "id": "l-n4-10",
+      "title": "ラーメン屋でのおすすめ (Recommendations at a Ramen Shop)",
+      "script": "店員：いらっしゃいませ！食券をどうぞ。\n客：すみません、この店で一番人気のあるラーメンは何ですか。\n店員：はい、特製醤油ラーメンが一番人気です。煮卵とチャーシューが三枚ついていますよ。\n客：じゃあ、それにします。あと、餃子も一皿お願いします。\n店員：かしこまりました。麺のかたさはどうなさいますか。\n客：ふつうでお願いします。",
+      "transcript_en": "Server: Welcome! Please hand me your meal ticket.\nCustomer: Excuse me, what is the most popular ramen here?\nServer: Yes, our Special Soy Sauce Ramen is the most popular. It comes with a seasoned egg and three slices of chashu pork.\nCustomer: In that case, I'll have that. Also, one plate of gyoza, please.\nServer: Certainly. How would you like the firmness of your noodles?\nCustomer: Regular, please.",
+      "transcript_te": "సర్వర్: స్వాగతం! భోజనం టిక్కెట్ ఇవ్వండి.\nకస్టమర్: క్షమించండి, ఇక్కడ అత్యంత ప్రజాదరణ పొందిన రామెన్ ఏది?\nసర్వర్: అవును, మా ప్రత్యేక సోయా సాస్ రామెన్ అత్యంత ప్రాచుర్యం పొందింది. అందులో ఉడికించిన గుడ్డు మరియు మూడు ముక్కల చార్షూ పోర్క్ వస్తాయి.\nకస్టమర్: అయితే అదే ఇవ్వండి. ఇంకా ఒక ప్లేట్ గ్యోజా కూడా.\nసర్వర్: సరేనండి. నూడుల్స్ గట్టిదనం ఎలా ఉండాలి?\nకస్టమర్: సాధారణంగా ఉండనివ్వండి.",
+      "transcript_hi": "कर्मचारी: स्वागत है! कृपया अपना मील कूपन दीजिए।\nग्राहक: सुनिए, यहाँ का सबसे लोकप्रिय रामेन कौन सा है?\nकर्मचारी: जी, हमारा विशेष सोया सॉस रामेन सबसे लोकप्रिय है। इसमें उबला अंडा और पोर्क के तीन टुकड़े आते हैं।\nग्राहक: तो मुझे वही दीजिए। और एक प्लेट ग्योज़ा भी।\nकर्मचारी: बिल्कुल। नूडल्स का कड़ापन कैसा रखेंगे?\nग्राहक: सामान्य ही रखिए।",
+      "transcript_ta": "ஊழியர்: வருக! உங்கள் உணவு கூப்பனைக் கொடுங்கள்.\nவாடிக்கையாளர்: மன்னிக்கவும், இங்கு மிகவும் புகழ்பெற்ற ராமன் எது?\nஊழியர்: எங்களின் சிறப்பு சோயா சாஸ் ராமன் தான் அதிகம் விரும்பப்படுகிறது. அதில் முட்டையும் மூன்று இறைச்சித் துண்டுகளும் இருக்கும்.\nவாடிக்கையாளர்: அப்படியானால் அதைத் தாருங்கள். ஒரு தட்டு கியோசாவும் கொடுங்கள்.\nஊழியர்: சரி. நூடுல்ஸ் பதம் எப்படி இருக்க வேண்டும்?\nவாடிக்கையாளர்: சாதாரணமாக இருக்கட்டும்.",
+      "transcript_ko": "점원: 어서 오세요! 식권을 보여주세요.\n손님: 저기요, 이 가게에서 가장 인기 있는 라멘이 무엇인가요?\n점원: 네, 특제 소유 라멘이 가장 인기입니다. 맛달걀과 차슈 세 장이 들어갑니다.\n손님: 그럼 그걸로 할게요. 그리고 만두도 한 접시 부탁합니다.\n점원: 알겠습니다. 면의 익힘 정도는 어떻게 해드릴까요?\n손님: 보통으로 해주세요.",
+      "transcript_es": "Camarero: ¡Bienvenidos! Por favor, entrégueme su ticket de comida.\nCliente: Disculpe, ¿cuál es el ramen más popular del local?\nCamarero: Sí, nuestro Ramen Especial de Soja es el más pedido. Incluye un huevo sazonado y tres rodajas de chashu.\nCliente: Entonces pediré ese. Y también un plato de gyozas, por favor.\nCamarero: Muy bien. ¿Cómo prefiere el punto de los fideos?\nCliente: Normal, por favor.",
+      "transcript_kn": "ಸಿಬ್ಬಂದಿ: ಸುಸ್ವಾಗತ! ನಿಮ್ಮ ಊಟದ ಕೂಪನ್ ನೀಡಿ.\nಗ್ರಾಹಕ: ಕ್ಷಮಿಸಿ, ಇಲ್ಲಿ ಅತ್ಯಂತ ಪ್ರಸಿದ್ಧವಾದ ರಾಮೆನ್ ಯಾವುದು?\nಸಿಬ್ಬಂದಿ: ಹೌದು, ನಮ್ಮ ವಿಶೇಷ ಸೋಯಾ ಸಾಸ್ ರಾಮೆನ್ ಎಲ್ಲರಿಗೂ ಇಷ್ಟ. ಅದರಲ್ಲಿ ಬೇಯಿಸಿದ ಮೊಟ್ಟೆ ಮತ್ತು ಚಾಶೂ ಇರುತ್ತದೆ.\nಗ್ರಾಹಕ: ಹಾಗಾದರೆ ಅದನ್ನೇ ಕೊಡಿ. ಜೊತೆಗೆ ಒಂದು ತಟ್ಟೆ ಗ್ಯೋಜಾ ಕೊಡಿ.\nಸಿಬ್ಬಂದಿ: ಖಂಡಿತ. ನೂಡಲ್ಸ್ ಹದ ಹೇಗಿರಬೇಕು?\nಗ್ರಾಹಕ: ಸಾಧಾರಣವಾಗಿರಲಿ.",
+      "transcript_ml": "ജീവനക്കാരൻ: സ്വാഗതം! കൂപ്പൺ തരൂ.\nഉപഭോക്താവ്: ഇവിടെ ഏറ്റവും കൂടുതൽ ആളുകൾ കഴിക്കുന്ന രാമൻ ഏതാണ്?\nജീവനക്കാരൻ: ഞങ്ങളുടെ സ്പെഷ്യൽ സോയ സോസ് രാമൻ ആണ് ഏറ്റവും പ്രശസ്തം. അതിൽ മുട്ടയും ഇറച്ചിയും ഉണ്ടാകും.\nഉപഭോക്താവ്: എങ്കിൽ അത് തരൂ. കൂടെ ഒരു പ്ലേറ്റ് ഗ്യോസയും തരണം.\nജീവനക്കാരൻ: ശരി. നൂഡിൽസ് പരുവം എങ്ങനെ വേണം?\nഉപഭോക്താവ്: സാധാരണ പോലെ മതി.",
+      "questions": [
+        {
+          "q": "客は どの ラーメンを 注文しましたか。",
+          "q_en": "Which ramen did the customer order?",
+          "q_te": "కస్టమర్ ఏ రామెన్ ఆర్డర్ చేశారు?",
+          "q_hi": "ग्राहक ने कौन सा रामेन ऑर्डर किया?",
+          "q_ta": "வாடிக்கையாளர் எந்த ராமனை ஆர்டர் செய்தார்?",
+          "q_ko": "손님은 어느 라멘을 주문했습니까?",
+          "q_es": "¿Qué ramen pidió el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಯಾವ ರಾಮೆನ್ ಆರ್ಡರ್ ಮಾಡಿದರು?",
+          "q_ml": "ഉപഭോക്താവ് ഏത് രാമനാണ് ഓർഡർ ചെയ്തത്?",
+          "options": [
+            "特製醤油ラーメン",
+            "味噌ラーメン",
+            "塩ラーメン",
+            "豚骨ラーメン"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "ラーメンの ほかに 何を たのみましたか。",
+          "q_en": "What did the customer order besides ramen?",
+          "q_te": "రామెన్‌తో పాటు ఇంకేమి ఆర్డర్ చేశారు?",
+          "q_hi": "रामेन के अलावा ग्राहक ने क्या माँगा?",
+          "q_ta": "ராமனைத் தவிர வேறு என்ன ஆர்டர் செய்தார்?",
+          "q_ko": "라멘 외에 무엇을 추가로 주문했습니까?",
+          "q_es": "¿Qué pidió además de ramen?",
+          "q_kn": "ರಾಮೆನ್ ಜೊತೆಗೆ ಬೇರೆ ಏನನ್ನು ಆರ್ಡರ್ ಮಾಡಿದರು?",
+          "q_ml": "രാമൻ കൂടാതെ വേറെ എന്താണ് ഓർഡർ ചെയ്തത്?",
+          "options": [
+            "餃子 (ぎょうざ)",
+            "ビール",
+            "チャーハン",
+            "サラダ"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n4-11",
+      "title": "週末の旅行の計画 (Weekend Trip Planning)",
+      "script": "女：今度の土曜日、どこかへ出かけない？\n男：いいね。日光へ紅葉を見に行くのはどう？\n女：日光か、素敵ね。でも、週末は道がとても混むんじゃない？\n男：車じゃなくて、特急電車で行けば渋滞はないよ。朝早く出発しよう。\n女：そうね！じゃあ、駅前のレンタサイクルで観光地を回ろうよ。\n男：賛成。切符は僕がインターネットで予約しておくね。",
+      "transcript_en": "Woman: Why don't we go somewhere this Saturday?\nMan: Sounds great. How about going to Nikko to see the autumn leaves?\nWoman: Nikko sounds lovely. But wouldn't the roads be very crowded on the weekend?\nMan: If we take the express train instead of driving, there won't be any traffic. Let's leave early in the morning.\nWoman: Good idea! Then let's rent bicycles in front of the station to tour the sights.\nMan: Agreed. I'll reserve the train tickets online.",
+      "transcript_te": "మహిళ: ఈ శనివారం ఎక్కడికైనా వెళ్దామా?\nపురుషుడు: మంచి ఆలోచన. నిక్కోకు వెళ్లి శరదృతువు ఆకుల అందాలను చూడడం ఎలా ఉంటుంది?\nమహిళ: నిక్కో బాగుంటుంది. కానీ వారాంతంలో రోడ్లపై రద్దీ ఎక్కువగా ఉండదా?\nపురుషుడు: కారు బదులు ఎక్స్‌ప్రెస్ రైలులో వెళితే ట్రాఫిక్ ఉండదు. ఉదయాన్నే బయలుదేరుదాం.\nమహిళ: అవును! స్టేషన్ ముందు అద్దె సైకిళ్ళు తీసుకుని సందర్శనీయ స్థలాలను చూద్దాం.\nపురుషుడు: సరే. నేను ఇంటర్నెట్‌లో రైలు టిక్కెట్లు బుక్ చేస్తాను.",
+      "transcript_hi": "महिला: क्या इस शनिवार कहीं बाहर चलें?\nपुरुष: अच्छा विचार है। निक्को जाकर पतझड़ के लाल पत्ते देखना कैसा रहेगा?\nमहिला: निक्को बहुत सुंदर है। पर क्या सप्ताहांत में सड़कों पर बहुत भीड़ नहीं होगी?\nपुरुष: हम कार के बजाय एक्सप्रेस ट्रेन से जाएँगे तो जाम नहीं मिलेगा। सुबह जल्दी निकलेंगे।\nमहिला: सही है! फिर स्टेशन के सामने से किराए की साइकिल लेकर घूमेंगे।\nपुरुष: पक्का। टिकट मैं ऑनलाइन बुक कर देता हूँ।",
+      "transcript_ta": "பெண்: இந்த சனிக்கிழமை எங்காவது செல்லலாமா?\nஆண்: நல்ல யோசனை. நிக்கோ சென்று இலையுதிர் கால இலைகளைப் பார்ப்போமா?\nபெண்: நிக்கோ அருமை தான். ஆனால் வார இறுதியில் போக்குவரத்து நெரிசல் அதிகமாக இருக்குமே?\nஆண்: காரில் செல்லாமல் எக்ஸ்பிரஸ் ரயிலில் சென்றால் நெரிசல் இருக்காது. காலையிலேயே கிளம்புவோம்.\nபெண்: சரி! நிலையத்தின் முன் வாடகை சைக்கிள் எடுத்து சுற்றிப் பார்க்கலாம்.\nஆண்: சம்மதம். நான் இணையத்தில் டிக்கெட் புக் செய்கிறேன்.",
+      "transcript_ko": "여성: 이번 주 토요일에 어디 놀러 가지 않을래?\n남성: 좋아. 닛코로 단풍 보러 가는 건 어때?\n여성: 닛코 좋지. 하지만 주말에는 도로가 엄청 막히지 않을까?\n남성: 차 대신 특급열차를 타면 막힐 일 없어. 아침 일찍 출발하자.\n여성: 그래! 그럼 역 앞에서 자전거를 빌려서 관광지를 둘러보자.\n남성: 좋아. 기차표는 내가 인터넷으로 예약해 둘게.",
+      "transcript_es": "Mujer: ¿Salimos a algún sitio este sábado?\nHombre: Buena idea. ¿Qué te parece ir a Nikko a ver las hojas de otoño?\nMujer: Nikko suena genial. Pero, ¿no habrá mucho atasco en la carretera por ser fin de semana?\nHombre: Si vamos en tren expreso en lugar de coche no habrá tráfico. Salgamos temprano por la mañana.\nMujer: ¡De acuerdo! Alquilamos bicicletas frente a la estación para visitar los lugares turísticos.\nHombre: Trato hecho. Yo reservo los billetes de tren por internet.",
+      "transcript_kn": "ಮಹಿಳೆ: ಈ ಶನಿವಾರ ಎಲ್ಲಾದರೂ ಹೋಗೋಣವೇ?\nಪುರುಷ: ಒಳ್ಳೆಯ ಯೋಚನೆ. ನಿಕ್ಕೋಗೆ ಹೋಗಿ ಶರತ್ಕಾಲದ ಎಲೆಗಳನ್ನು ನೋಡುವುದು ಹೇಗೆ?\nಮಹಿಳೆ: ನಿಕ್ಕೋ ಚೆನ್ನಾಗಿದೆ. ಆದರೆ ವಾರಾಂತ್ಯದಲ್ಲಿ ಟ್ರಾಫಿಕ್ ಜಾಸ್ತಿ ಇರಲ್ವಾ?\nಪುರುಷ: ಕಾರಿನ ಬದಲು ಎಕ್ಸ್‌ಪ್ರೆಸ್ ರೈಲಿನಲ್ಲಿ ಹೋದರೆ ಟ್ರಾಫಿಕ್ ಇರುವುದಿಲ್ಲ. ಬೆಳಿಗ್ಗೆ ಬೇಗ ಹೊರಡೋಣ.\nಮಹಿಳೆ: ಹೌದು! ನಿಲ್ದಾಣದ ಮುಂದೆ ಬಾಡಿಗೆ ಸೈಕಲ್ ಪಡೆದು ಸುತ್ತಾಡೋಣ.\nಪುರುಷ: ಒಪ್ಪಿಗೆ. ನಾನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಟಿಕೆಟ್ ಬುಕ್ ಮಾಡುತ್ತೇನೆ.",
+      "transcript_ml": "സ്ത്രീ: ഈ ശനിയാഴ്ച എവിടെയെങ്കിലും പോയാലോ?\nപുരുഷൻ: നല്ല ആശയം. നിക്കോയിൽ പോയി ഇലപൊഴിയും കാലത്തെ ഭംഗി കണ്ടാലോ?\nസ്ത്രീ: നിക്കോ നല്ലതാണ്. പക്ഷേ വാരാന്ത്യത്തിൽ നല്ല തിരക്കായിരിക്കില്ലേ?\nപുരുഷൻ: കാറിന് പകരം എക്സ്പ്രസ്സ് ട്രെയിനിൽ പോയാൽ ട്രാഫിക് ഉണ്ടാവില്ല. രാവിലെ നേരത്തെ ഇറങ്ങാം.\nസ്ത്രീ: ശരി! സ്റ്റേഷനിൽ നിന്ന് വാടക സൈക്കിൾ എടുത്ത് കാഴ്ചകൾ കാണാം.\nപുರುഷൻ: സമ്മതം. ഞാൻ ഓൺലൈനിൽ ടിക്കറ്റ് ബുക്ക് ചെയ്യാം.",
+      "questions": [
+        {
+          "q": "二人は どこへ 行くことに しましたか。",
+          "q_en": "Where did the two decide to go?",
+          "q_te": "ఇద్దరూ ఎక్కడికి వెళ్లాలని నిర్ణయించుకున్నారు?",
+          "q_hi": "दोनों ने कहाँ जाने का फैसला किया?",
+          "q_ta": "இருவரும் எங்கு செல்ல முடிவு செய்தனர்?",
+          "q_ko": "두 사람은 어디에 가기로 결정했습니까?",
+          "q_es": "¿A dónde decidieron ir los dos?",
+          "q_kn": "ಇಬ್ಬರೂ ಎಲ್ಲಿಗೆ ಹೋಗಲು ನಿರ್ಧರಿಸಿದರು?",
+          "q_ml": "രണ്ടുപേരും എങ്ങോട്ട് പോകാനാണ് തീരുമാനിച്ചത്?",
+          "options": [
+            "日光 (にっこう)",
+            "京都 (きょうと)",
+            "富士山 (ふじさん)",
+            "箱根 (はこね)"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "二人は どうやって 日光まで 行きますか。",
+          "q_en": "How will they travel to Nikko?",
+          "q_te": "వారు నిక్కోకు ఎలా ప్రయాణిస్తారు?",
+          "q_hi": "वे निक्को कैसे जाएँगे?",
+          "q_ta": "அவர்கள் நிக்கோவிற்கு எப்படி செல்வார்கள்?",
+          "q_ko": "두 사람은 닛코까지 어떻게 이동합니까?",
+          "q_es": "¿Cómo viajarán hasta Nikko?",
+          "q_kn": "ಅವರು ನಿಕ್ಕೋಗೆ ಹೇಗೆ ಪ್ರಯಾಣಿಸುತ್ತಾರೆ?",
+          "q_ml": "അവർ നിക്കോയിലേക്ക് എങ്ങനെയാണ് പോകുന്നത്?",
+          "options": [
+            "特急電車で",
+            "車で",
+            "高速バスで",
+            "自転車で"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n4-12",
+      "title": "駅の忘れ物センターで (At the Station Lost & Found)",
+      "script": "客：すみません、先ほど電車の中に傘を忘れてしまったのですが。\n駅員：どちらの路線で、何時ごろの電車でしたか。\n客：中央線の、新宿駅に一時十五分に着いた電車です。三両目に乗っていました。\n駅員：傘の特徴を教えていただけますか。\n客：紺色で、持ち手が木でできています。長い傘です。\n駅員：少々お待ちください……あ、似た傘が届いていますよ。こちらの傘ですか？\n客：あ、それです！本当にありがとうございました。",
+      "transcript_en": "Passenger: Excuse me, I left my umbrella on the train earlier.\nStaff: Which line was it, and around what time was the train?\nPassenger: It was on the Chuo Line, arriving at Shinjuku Station around 1:15 PM. I was in the third car.\nStaff: Could you describe the umbrella?\nPassenger: It's dark blue with a wooden handle. It's a long umbrella.\nStaff: Please wait a moment... Ah, a similar umbrella was turned in. Is this the one?\nPassenger: Ah, that's it! Thank you so very much.",
+      "transcript_te": "ప్రయాణికుడు: క్షమించండి, ఇందాక రైలులో నా గొడుగు మర్చిపోయాను.\nస్టేషన్ సిబ్బంది: అది ఏ లైన్, మరియు ఏ సమయానికి వచ్చిన రైలు?\nప్రయాణికుడు: చువో లైన్, మధ్యాహ్నం 1:15 గంటలకు షింజుకు స్టేషన్‌కు చేరిన రైలు. నేను మూడవ బోగీలో ఉన్నాను.\nస్టేషన్ సిబ్బంది: గొడుగు ఎలా ఉంటుందో వివరించగలరా?\nప్రయాణికుడు: ముదురు నీలం రంగు, పిడి చెక్కతో తయారు చేయబడింది. పొడవైన గొడుగు.\nస్టేషన్ సిబ్బంది: కాసేపు ఆగండి... ఆ, అటువంటి గొడుగే ఇక్కడ జమ అయింది. ఇదేనా?\nప్రయాణికుడు: అరే, అదే! చాలా ధన్యవాదాలు.",
+      "transcript_hi": "यात्री: माफ़ कीजिए, मैं थोड़ी देर पहले ट्रेन में अपना छाता भूल गया।\nकर्मचारी: किस लाइन पर, और कितने बजे की ट्रेन थी?\nयात्री: चुओ लाइन की ट्रेन, जो 1:15 पर शिंजुकु पहुँची थी। मैं तीसरे डिब्बे में था।\nकर्मचारी: छाते की पहचान बता सकते हैं?\nयात्री: गहरे नीले रंग का है और उसका हैंडल लकड़ी का है। लंबा छाता है।\nकर्मचारी: एक मिनट रुकिए... हाँ, वैसा ही एक छाता मिला है। क्या यही है?\nयात्री: अरे, बिल्कुल यही है! आपका बहुत-बहुत धन्यवाद।",
+      "transcript_ta": "பயணி: மன்னிக்கவும், சற்று முன் ரயிலில் என் குடையை மறந்து வைத்துவிட்டேன்.\nஊழியர்: எந்த வழித்தடம், எத்தனை மணிக்கு வந்த ரயில்?\nபயணி: சுவோ லைன், மதியம் 1:15 மணிக்கு ஷிஞ்சுகு வந்த ரயில். மூன்றாவது பெட்டியில் இருந்தேன்.\nஊழியர்: குடையின் அடையாளத்தைச் சொல்ல முடியுமா?\nபயணி: அடர் நீல நிறம், மரத்தாலான கைப்பிடி. நீளமான குடை.\nஊழியர்: சற்று பொறுங்கள்... ஆ, அதேபோன்ற குடை ஒன்று கிடைத்துள்ளது. இதுதானா?\nபயணி: ஆ, அதேதான்! மிக்க நன்றி.",
+      "transcript_ko": "승객: 저기요, 조금 전에 전철 안에 우산을 두고 내렸는데요.\n역무원: 어느 노선이고, 몇 시쯤 열차였습니까?\n승객: 주오선으로, 신주쿠역에 1시 15분에 도착한 전철입니다. 3호차에 탔었어요.\n역무원: 우산의 특징을 말씀해 주시겠습니까?\n승객: 곤색이고, 손잡이가 나무로 되어 있어요. 장우산입니다.\n역무원: 잠시만 기다려 주세요... 아, 비슷한 우산이 들어와 있네요. 이 우산인가요?\n승객: 아, 그거 맞아요! 정말 감사합니다.",
+      "transcript_es": "Pasajero: Disculpe, olvidé mi paraguas en el tren hace un momento.\nEmpleado: ¿En qué línea y aproximadamente a qué hora llegó el tren?\nPasajero: En la línea Chuo, el que llegó a la estación de Shinjuku a la 1:15. Iba en el tercer vagón.\nEmpleado: ¿Podría describir el paraguas?\nPasajero: Es azul marino con mango de madera. Es un paraguas largo.\nEmpleado: Espere un momento por favor... Ah, han entregado uno parecido. ¿Es este?\nPasajero: ¡Ah, sí es ese! Muchísimas gracias.",
+      "transcript_kn": "ಪ್ರಯಾಣಿಕ: ಕ್ಷಮಿಸಿ, ಸ್ವಲ್ಪ ಹೊತ್ತಿನ ಹಿಂದೆ ರೈಲಿನಲ್ಲಿ ಛತ್ರಿ ಮರೆತುಬಿಟ್ಟೆ.\nಸಿಬ್ಬಂದಿ: ಯಾವ ಮಾರ್ಗ, ಮತ್ತು ಎಷ್ಟು ಗಂಟೆಯ ರೈಲು?\nಪ್ರಯಾಣಿಕ: ಚುವೋ ಲೈನ್, ಮಧ್ಯಾಹ್ನ 1:15 ಕ್ಕೆ ಶಿಂಜುಕು ನಿಲ್ದಾಣಕ್ಕೆ ಬಂದ ರೈಲು. ಮೂರನೇ ಬೋಗಿಯಲ್ಲಿದ್ದೆ.\nಸಿಬ್ಬಂದಿ: ಛತ್ರಿಯ ಗುರುತು ಹೇಳಬಹುದೇ?\nಪ್ರಯಾಣಿಕ: ಗಾಢ ನೀಲಿ ಬಣ್ಣ, ಮರದ ಹಿಡಿ ಇದೆ. ಉದ್ದನೆಯ ಛತ್ರಿ.\nಸಿಬ್ಬಂದಿ: ಒಂದು ಕ್ಷಣ ನಿಲ್ಲಿ... ಆ, ಅಂತಹದೇ ಛತ್ರಿ ಬಂದಿದೆ. ಇದೇನಾ?\nಪ್ರಯಾಣಿಕ: ಹೌದು, ಅದೇ! ತುಂಬಾ ಧನ್ಯವಾದಗಳು.",
+      "transcript_ml": "യാത്രക്കാരൻ: ക്ഷമിക്കണം, കുറച്ചു മുൻപ് ട്രെയിനിൽ കുട മറന്നുവെച്ചു.\nജീവനക്കാരൻ: ഏത് ലൈൻ, എത്ര മണിയുടെ ട്രെയിൻ ആയിരുന്നു?\nയാത്രക്കാരൻ: ചുവോ ലൈൻ, ഉച്ചയ്ക്ക് 1:15 ന് ഷിൻജുകുവിൽ എത്തിയ ട്രെയിൻ. മൂന്നാമത്തെ കമ്പാർട്ട്മെന്റിലായിരുന്നു.\nജീവനക്കാരൻ: കുടയുടെ അടയാളം പറയാമോ?\nയാത്രക്കാരൻ: കടും നീല നിറം, മരത്തിന്റെ പിടി. നീളമുള്ള കുടയാണ്.\nജീവനക്കാരൻ: ഒരു നിമിഷം... ആ, അങ്ങനെയൊരെണ്ണം കിട്ടിയിട്ടുണ്ട്. ഇതാണോ?\nയാത്രക്കാരൻ: അതെ, ഇതുതന്നെ! വളരെ നന്ദി.",
+      "questions": [
+        {
+          "q": "客は 電車の中に 何を 忘れましたか。",
+          "q_en": "What did the customer leave on the train?",
+          "q_te": "ప్రయాణికుడు రైలులో ఏమి మర్చిపోయాడు?",
+          "q_hi": "यात्री ट्रेन में क्या भूल गया था?",
+          "q_ta": "பயணி ரயிலில் என்ன மறந்து வைத்தார்?",
+          "q_ko": "손님은 전철 안에 무엇을 두고 내렸습니까?",
+          "q_es": "¿Qué olvidó el pasajero en el tren?",
+          "q_kn": "ಪ್ರಯಾಣಿಕ ರೈಲಿನಲ್ಲಿ ಏನನ್ನು ಮರೆತರು?",
+          "q_ml": "യാത്രക്കാരൻ ട്രെയിനിൽ എന്താണ് മറന്നുവെച്ചത്?",
+          "options": [
+            "傘 (かさ)",
+            "かばん",
+            "財布",
+            "スマートフォン"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "傘の 持ち手は 何で できていましたか。",
+          "q_en": "What was the umbrella handle made of?",
+          "q_te": "గొడుగు పిడి దేనితో తయారు చేయబడింది?",
+          "q_hi": "छाते का हैंडल किस चीज़ का बना था?",
+          "q_ta": "குடையின் கைப்பிடி எதனால் ஆனது?",
+          "q_ko": "우산의 손잡이는 무엇으로 만들어져 있었습니까?",
+          "q_es": "¿De qué material era el mango del paraguas?",
+          "q_kn": "ಛತ್ರಿಯ ಹಿಡಿ ಯಾವುದರಿಂದ ಮಾಡಲ್ಪಟ್ಟಿತ್ತು?",
+          "q_ml": "കുടയുടെ പിടി എന്ത് കൊണ്ടാണ് ഉണ്ടാക്കിയിരുന്നത്?",
+          "options": [
+            "木 (き)",
+            "プラスチック",
+            "金属 (きんぞく)",
+            "革 (かわ)"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n4-13",
+      "title": "地域のボランティア活動 (Community Volunteering)",
+      "script": "アナウンス：地域の皆様、おはようございます。今週の日曜日の朝九時から、中央公園の清掃ボランティアを行います。落ち葉集めやゴミ拾いを中心に行います。軍手やゴミ袋はこちらで用意しますので、動きやすい服装でお越しください。終了後には、参加者の皆様にあたたかい豚汁を用意しております。たくさんのご参加をお待ちしております。",
+      "transcript_en": "Announcement: Good morning, residents. This Sunday starting at 9:00 AM, we will hold a community cleanup volunteer event at Central Park. We will mainly collect fallen leaves and pick up litter. Work gloves and trash bags will be provided, so please come in comfortable clothes. After the cleanup, hot pork soup (tonjiru) will be served to all participants. We look forward to your active participation.",
+      "transcript_te": "ప్రకటన: కాలనీ వాసులారా, శుభోదయం. ఈ ఆదివారం ఉదయం 9 గంటల నుండి సెంట్రల్ పార్క్‌లో పారిశుధ్య స్వచ్ఛంద కార్యక్రమం జరుగుతుంది. ఎండుటాకులు మరియు చెత్తను సేకరించడం ప్రధాన పని. చేతి తొడుగులు మరియు చెత్త సంచులు మేము అందిస్తాము, కాబట్టి సౌకర్యవంతమైన దుస్తులు ధరించి రండి. కార్యక్రమం ముగిసిన తర్వాత పాల్గొన్న వారందరికీ వేడి వేడి సాంప్రదాయ సూప్ అందించబడుతుంది. పెద్ద సంఖ్యలో పాల్గొనవలసిందిగా కోరుతున్నాము.",
+      "transcript_hi": "घोषणा: क्षेत्रवासियों को सुप्रभात। इस रविवार सुबह 9:00 बजे से सेंट्रल पार्क में स्वच्छता स्वयंसेवा कार्यक्रम आयोजित किया जाएगा। इसमें मुख्य रूप से गिरे हुए पत्ते और कचरा इकट्ठा किया जाएगा। दस्ताने और कचरे की थैलियाँ हम देंगे, इसलिए आरामदायक कपड़े पहनकर आएँ। कार्यक्रम के बाद सभी प्रतिभागियों को गरमा-गरम टोंजिरु (सूप) परोसा जाएगा। आप सभी का स्वागत है।",
+      "transcript_ta": "அறிவிப்பு: பகுதி மக்களுக்கு காலை வணக்கம். இந்த ஞாயிறு காலை 9:00 மணிக்கு சென்ட்ரல் பார்க்கில் தூய்மைப் பணி நடைபெற உள்ளது. உதிர்ந்த இலைகளையும் குப்பைகளையும் அகற்றுவதே முக்கிய பணி. கையுறைகளும் குப்பைப்பைகளும் நாங்கள் தருவோம். பணி முடிந்ததும் சூடான சூப் வழங்கப்படும். அனைவரும் கலந்து கொள்ளுமாறு கேட்டுக்கொள்கிறோம்.",
+      "transcript_ko": "안내방송: 주민 여러분, 안녕하십니까. 이번 주 일요일 오전 9시부터 중앙공원에서 청소 자원봉사 활동을 실시합니다. 낙엽 모으기와 쓰레기 줍기를 진행합니다. 장갑과 쓰레기봉투는 준비되어 있으니 편한 복장으로 와주시기 바랍니다. 끝난 뒤 참가자분들께 따뜻한 돼지고기 된장국을 제공합니다. 많은 참여 바랍니다.",
+      "transcript_es": "Anuncio: Buenos días a todos los vecinos. Este domingo a partir de las 9:00 de la mañana, realizaremos una jornada de limpieza voluntaria en el Parque Central. Recogeremos hojas secas y basura. Proporcionaremos guantes de trabajo y bolsas de basura, por lo que les pedimos venir con ropa cómoda. Al finalizar, serviremos sopa caliente de cerdo (tonjiru) a todos los participantes. ¡Esperamos su asistencia!",
+      "transcript_kn": "ಪ್ರಕಟಣೆ: ನಿವಾಸಿಗಳಿಗೆ ಶುಭೋದಯ. ಈ ಭಾನುವಾರ ಬೆಳಿಗ್ಗೆ 9:00 ರಿಂದ ಸೆಂಟ್ರಲ್ ಪಾರ್ಕ್‌ನಲ್ಲಿ ಸ್ವಚ್ಛತಾ ಸ್ವಯಂಸೇವಕ ಕಾರ್ಯಕ್ರಮ ನಡೆಯಲಿದೆ. ಉದುರಿದ ಎಲೆ ಮತ್ತು ಕಸ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ಕೈಗವಸು ಮತ್ತು ಕಸದ ಚೀಲಗಳನ್ನು ನಾವೇ ನೀಡುತ್ತೇವೆ. ಕೆಲಸ ಮುಗಿದ ನಂತರ ಬಿಸಿ ಸೂಪ್ ನೀಡಲಾಗುವುದು. ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಯಲ್ಲಿ ಭಾಗವಹಿಸಿ.",
+      "transcript_ml": "അറിയിപ്പ്: പ്രദേശവാസികൾക്ക് സുപ്രഭാതം. ഈ ഞായറാഴ്ച രാവിലെ 9:00 മുതൽ സെൻട്രൽ പാർക്കിൽ ശുചീകരണ വളണ്ടിയർ പ്രവർത്തനം നടക്കും. ഉണങ്ങിയ ഇലകളും മാലിന്യങ്ങളും നീക്കം ചെയ്യുകയാണ് പ്രധാന ജോലി. കയ്യുറകളും ബാഗുകളും ഞങ്ങൾ നൽകും. ജോലി കഴിഞ്ഞാൽ ചൂടുള്ള സൂപ്പ് നൽകുന്നതാണ്. എല്ലാവരുടെയും പങ്കാളിത്തം പ്രതീക്ഷിക്കുന്നു.",
+      "questions": [
+        {
+          "q": "ボランティア活動は 何時に 始まりますか。",
+          "q_en": "What time does the volunteer activity start?",
+          "q_te": "స్వచ్ఛంద కార్యక్రమం ఎన్ని గంటలకు ప్రారంభమవుతుంది?",
+          "q_hi": "स्वयंसेवा कार्यक्रम कितने बजे शुरू होगा?",
+          "q_ta": "தூய்மைப் பணி எத்தனை மணிக்குத் தொடங்குகிறது?",
+          "q_ko": "자원봉사 활동은 몇 시에 시작합니까?",
+          "q_es": "¿A qué hora comienza la actividad de voluntariado?",
+          "q_kn": "ಸ್ವಯಂಸೇವಕ ಕಾರ್ಯಕ್ರಮ ಎಷ್ಟು ಗಂಟೆಗೆ ಶುರುವಾಗುತ್ತದೆ?",
+          "q_ml": "വളണ്ടിയർ പ്രവർത്തനം എത്ര മണിക്കാണ് തുടങ്ങുന്നത്?",
+          "options": [
+            "朝 9時",
+            "朝 8時",
+            "午前 10時",
+            "午後 1時"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "参加者は 何を 持参する必要が ありますか。",
+          "q_en": "What do participants need to bring?",
+          "q_te": "పాల్గొనేవారు తమతో ఏమి తీసుకురావాలి?",
+          "q_hi": "प्रतिभागियों को साथ में क्या लाना होगा?",
+          "q_ta": "பங்கேற்பாளர்கள் என்ன கொண்டு வர வேண்டும்?",
+          "q_ko": "참가자는 무엇을 지참해야 합니까?",
+          "q_es": "¿Qué necesitan traer los participantes?",
+          "q_kn": "ಭಾಗವಹಿಸುವವರು ಏನನ್ನು ತರಬೇಕು?",
+          "q_ml": "പങ്കെടുക്കുന്നവർ എന്ത് കൊണ്ടുവരണം?",
+          "options": [
+            "特に 持参するものは ない (手ぶらで 動きやすい服装)",
+            "軍手と ゴミ袋",
+            "お弁当",
+            "掃除用具"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n4-14",
+      "title": "週末の天気予報 (Weekend Weather Forecast)",
+      "script": "気象予報士：続いて今週末のお天気です。土曜日は高気圧に覆われ、全国的に秋晴れの気持ちのよい一日となるでしょう。最高気温は二十度前後で、お出かけには絶好の気候です。しかし、日曜日には南から前線が近づくため、昼前から雨が降り出し、夕方以降は風も強まる見込みです。お出かけやお洗濯は、土曜日がおすすめです。",
+      "transcript_en": "Forecaster: Next, the weather forecast for this weekend. Saturday will be covered by high pressure, bringing pleasant autumn sunshine across the country. High temperatures will be around 20 degrees Celsius, perfect for outings. However, on Sunday a weather front will approach from the south, bringing rain starting before noon and stronger winds in the evening. Saturday is recommended for outdoor activities and doing laundry.",
+      "transcript_te": "వాతావరణ నిపుణుడు: ఈ వారాంతపు వాతావరణ వివరాలు. శనివారం నాడు ఆహ్లాదకరమైన ఎండతో దేశవ్యాప్తంగా వాతావరణం బాగుంటుంది. గరిష్ట ఉష్ణోగ్రత 20 డిగ్రీల వరకు ఉండి విహారయాత్రలకు అనుకూలంగా ఉంటుంది. అయితే, ఆదివారం మధ్యాహ్నం నుండి వర్షం ప్రారంభమై సాయంత్రానికి గాలులు పెరిగే అవకాశం ఉంది. కాబట్టి ప్రయాణాలు మరియు బట్టలు ఉతకడానికి శనివారమే ఉత్తమం.",
+      "transcript_hi": "मौसम विज्ञानी: अब इस सप्ताहांत का मौसम। शनिवार को पूरे देश में खिली धूप रहेगी और मौसम सुहावना रहेगा। अधिकतम तापमान 20 डिग्री के आसपास रहेगा, जो बाहर घूमने के लिए उत्तम है। लेकिन रविवार दोपहर से बारिश शुरू होने और शाम को तेज़ हवा चलने की संभावना है। कपड़े धोने या घूमने के लिए शनिवार का दिन सबसे अच्छा है।",
+      "transcript_ta": "வானிலை நிபுணர்: இந்த வார இறுதி வானிலை அறிக்கை. சனிக்கிழமை நாடு முழுவதும் இதமான வெயில் அடிக்கும். அதிகபட்ச வெப்பநிலை 20 டிகிரியாக இருக்கும். ஆனால் ஞாயிற்றுக்கிழமை நண்பகல் முதல் மழை பெய்யக்கூடும், மாலையில் காற்றும் வீசும். பயணம் செய்வதற்கும் துணி துவைப்பதற்கும் சனிக்கிழமையே சிறந்தது.",
+      "transcript_ko": "기상캐스터: 이어서 이번 주말 날씨입니다. 토요일은 맑은 가을 날씨로 기분 좋은 하루가 되겠습니다. 낮 최고기온은 20도 안팎으로 나들이하기에 최적입니다. 하지만 일요일은 낮부터 비가 내리고 저녁에는 바람도 강해지겠습니다. 나들이와 빨래는 토요일을 추천합니다.",
+      "transcript_es": "Meteorólogo: A continuación, el pronóstico para este fin de semana. El sábado disfrutaremos de un agradable sol otoñal en todo el país. La temperatura máxima rondará los 20 grados, perfecta para pasear. Sin embargo, el domingo se prevén lluvias a partir del mediodía y vientos fuertes por la tarde. Se recomienda el sábado para salir y hacer la colada.",
+      "transcript_kn": "ಹವಾಮಾನ ವರದಿಗಾರ: ಈ ವಾರಾಂತ್ಯದ ಹವಾಮಾನ ವರದಿ. ಶನಿವಾರ ದೇಶಾದ್ಯಂತ ಹಿತಕರವಾದ ಬಿಸಿಲಿರುತ್ತದೆ. ಗರಿಷ್ಠ ತಾಪಮಾನ 20 ಡಿಗ್ರಿ ಇರಲಿದ್ದು ಪ್ರವಾಸಕ್ಕೆ ಸೂಕ್ತವಾಗಿದೆ. ಆದರೆ ಭಾನುವಾರ ಮಧ್ಯಾಹ್ನದಿಂದ ಮಳೆ ಬಂದು ಸಂಜೆ ಗಾಳಿ ಬೀಸಲಿದೆ. ಪ್ರವಾಸ ಮತ್ತು ಬಟ್ಟೆ ಒಗೆಯಲು ಶನಿವಾರವೇ ಉತ್ತಮ.",
+      "transcript_ml": "കാലാവസ്ഥാ വിദഗ്ദ്ധൻ: ഈ വാരാന്ത്യത്തിലെ കാലാവസ്ഥ. ശനിയാഴ്ച രാജ്യമൊട്ടാകെ നല്ല തെളിഞ്ഞ കാലാവസ്ഥയായിരിക്കും. താപനില 20 ഡിഗ്രിയായിരിക്കും. എന്നാൽ ഞായറാഴ്ച ഉച്ചയ്ക്ക് ശേഷം മഴ പെയ്യാനും കാറ്റ് വീശാനും സാധ്യതയുണ്ട്. യാത്രകൾക്കും തുണി നനയ്ക്കാനും ശനിയാഴ്ചയാണ് നല്ലത്.",
+      "questions": [
+        {
+          "q": "土曜日の 天気は どうなりますか。",
+          "q_en": "How will the weather be on Saturday?",
+          "q_te": "శనివారం నాడు వాతావరణం ఎలా ఉంటుంది?",
+          "q_hi": "शनिवार को मौसम कैसा रहेगा?",
+          "q_ta": "சனிக்கிழமை வானிலை எப்படி இருக்கும்?",
+          "q_ko": "토요일 날씨는 어떠합니까?",
+          "q_es": "¿Cómo estará el tiempo el sábado?",
+          "q_kn": "ಶನಿವಾರ ಹವಾಮಾನ ಹೇಗಿರುತ್ತದೆ?",
+          "q_ml": "ശനിയാഴ്ച കാലാവസ്ഥ എങ്ങനെയായിരിക്കും?",
+          "options": [
+            "全国的に 晴れて 過ごしやすい",
+            "一日中 雨が 降る",
+            "台風が 近づく",
+            "大雪に なる"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "日曜日の 午後は どうなりますか。",
+          "q_en": "What will happen on Sunday afternoon?",
+          "q_te": "ఆదివారం మధ్యాహ్నం తర్వాత ఏమి జరుగుతుంది?",
+          "q_hi": "रविवार दोपहर बाद क्या होने की संभावना है?",
+          "q_ta": "ஞாயிறு பிற்பகலில் என்ன நடக்கும்?",
+          "q_ko": "일요일 오후는 어떻게 됩니까?",
+          "q_es": "¿Qué pasará el domingo por la tarde?",
+          "q_kn": "ಭಾನುವಾರ ಮಧ್ಯಾಹ್ನ ಏನಾಗುತ್ತದೆ?",
+          "q_ml": "ഞായറാഴ്ച ഉച്ചയ്ക്ക് ശേഷം എന്ത് സംഭവിക്കും?",
+          "options": [
+            "雨が 降り、風も 強まる",
+            "青空が 広がる",
+            "気温が 30度を 超える",
+            "雪が 降り始める"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n4-15",
+      "title": "アルバイトの面接 (Part-Time Job Interview)",
+      "script": "店長：それでは面接を始めます。李さんは日本語を勉強してどのくらいになりますか。\n李：日本に来て一年になります。母国でも一年間勉強しましたので、合わせて二年です。\n店長：そうですか。接客の経験はありますか。\n李：はい、去年の夏休みにコンビニで三か月間働いたことがあります。\n店長：それは心強いですね。週に何日くらいシフトに入れますか。\n李：平日の夕方、週に三日希望します。\n店長：わかりました。結果は来週の火曜日までに電話でお知らせしますね。",
+      "transcript_en": "Manager: Let's begin the interview. How long have you been studying Japanese, Mr. Li?\nLi: It has been one year since I came to Japan. I also studied for one year in my home country, so two years in total.\nManager: I see. Do you have any customer service experience?\nLi: Yes, I worked at a convenience store for three months during last year's summer vacation.\nManager: That's reassuring. How many days a week can you work?\nLi: I would like to work three days a week on weekday evenings.\nManager: Understood. We will notify you of the result by phone by next Tuesday.",
+      "transcript_te": "మేనేజర్: ఇంటర్వ్యూ ప్రారంభిద్దాం. లీ గారూ, మీరు జపనీస్ నేర్చుకోవడం మొదలుపెట్టి ఎంతకాలమైంది?\nలీ: నేను జపాన్ వచ్చి ఒక సంవత్సరం అయింది. నా దేశంలో కూడా ఒక సంవత్సరం చదువుకున్నాను, మొత్తం రెండు సంవత్సరాలు.\nమేనేజర్: అవునా. కస్టమర్ సర్వీస్ అనుభవం ఉందా?\nలీ: అవును, గత వేసవి సెలవుల్లో ఒక కన్వీనియన్స్ స్టోర్‌లో మూడు నెలలు పనిచేశాను.\nమేనేజర్: చాలా మంచిది. వారానికి ఎన్ని రోజులు పని చేయగలరు?\nలీ: వారపు రోజుల్లో సాయంత్రాలు, వారానికి మూడు రోజులు చేయాలనుకుంటున్నాను.\nమేనేజర్: సరే. ఫలితాన్ని వచ్చే మంగళవారం లోపు ఫోన్ ద్వారా తెలియజేస్తాము.",
+      "transcript_hi": "प्रबंधक: चलिए साक्षात्कार शुरू करते हैं। ली जी, आप कितने समय से जापानी सीख रहे हैं?\nली: मुझे जापान आए एक साल हुआ है। अपने देश में भी एक साल पढ़ा था, तो कुल दो साल।\nप्रबंधक: अच्छा। क्या ग्राहकों की सेवा का कोई अनुभव है?\nली: जी हाँ, पिछली गर्मियों की छुट्टियों में मैंने एक कन्वीनियंस स्टोर में तीन महीने काम किया था।\nप्रबंधक: यह तो बहुत अच्छी बात है। आप हफ़्ते में कितने दिन काम कर सकते हैं?\nली: मैं कार्यदिवसों की शाम को, हफ़्ते में तीन दिन काम करना चाहता हूँ।\nप्रबंधक: ठीक है। परिणाम अगले मंगलवार तक फ़ोन पर बता दिया जाएगा।",
+      "transcript_ta": "மேலாளர்: நேர்காணலைத் தொடங்குவோம். லீ, நீங்கள் ஜப்பானிய மொழி படித்து எவ்வளவு காலம் ஆகிறது?\nலீ: ஜப்பான் வந்து ஒரு வருடம் ஆகிறது. என் நாட்டிலும் ஒரு வருடம் படித்தேன், மொத்தம் இரண்டு ஆண்டுகள்.\nமேலாளர்: அப்படியா. வாடிக்கையாளர் சேவை அனுபவம் உள்ளதா?\nலீ: ஆம், கடந்த கோடை விடுமுறையில் ஒரு கடையில் மூன்று மாதங்கள் வேலை பார்த்தேன்.\nமேலாளர்: நல்லது. வாரத்தில் எத்தனை நாட்கள் வேலை செய்ய முடியும்?\nலீ: வார நாட்களில் மாலையில் மூன்று நாட்கள் விரும்புகிறேன்.\nமேலாளர்: சரி. முடிவை அடுத்த செவ்வாய்க்கிழமைக்குள் தொலைபேசியில் தெரிவிக்கிறோம்.",
+      "transcript_ko": "점장: 그럼 면접을 시작하겠습니다. 리 씨는 일본어를 공부한 지 얼마나 되었나요?\n리: 일본에 온 지 1년 되었습니다. 모국에서도 1년간 공부했기 때문에 합쳐서 2년입니다.\n점장: 그렇군요. 접객 경험은 있습니까?\n리: 네, 작년 여름방학 때 편의점에서 3개월 동안 일한 적이 있습니다.\n점장: 든든하네요. 일주일에 며칠 정도 근무할 수 있나요?\n리: 평일 저녁으로 주 3일 희망합니다.\n점장: 알겠습니다. 결과는 다음 주 화요일까지 전화로 알려드릴게요.",
+      "transcript_es": "Gerente: Bien, comencemos la entrevista. ¿Cuánto tiempo lleva estudiando japonés, Sr. Li?\nLi: Hace un año que llegué a Japón. También estudié un año en mi país natal, así que dos años en total.\nGerente: Ya veo. ¿Tiene experiencia en atención al cliente?\nLi: Sí, trabajé en una tienda de conveniencia durante tres meses en las vacaciones de verano del año pasado.\nGerente: Eso es excelente. ¿Cuántos días a la semana puede trabajar?\nLi: Desearía trabajar tres días por semana, por las tardes de lunes a viernes.\nGerente: Entendido. Le comunicaremos el resultado por teléfono antes del próximo martes.",
+      "transcript_kn": "ವ್ಯವಸ್ಥಾಪಕ: ಸಂದರ್ಶನ ಪ್ರಾರಂಭಿಸೋಣ. ಲೀ, ನೀವು ಜಪಾನೀಸ್ ಕಲಿಯಲು ಪ್ರಾರಂಭಿಸಿ ಎಷ್ಟು ಸಮಯವಾಯಿತು?\nಲೀ: ನಾನು ಜಪಾನ್‌ಗೆ ಬಂದು ಒಂದು ವರ್ಷವಾಯಿತು. ನನ್ನ ದೇಶದಲ್ಲೂ ಒಂದು ವರ್ಷ ಕಲಿತಿದ್ದೆ, ಒಟ್ಟು ಎರಡು ವರ್ಷಗಳು.\nವ್ಯವಸ್ಥಾಪಕ: ಹೌದಾ. ಗ್ರಾಹಕ ಸೇವೆಯ ಅನುಭವವಿದೆಯೇ?\nಲೀ: ಹೌದು, ಕಳೆದ ಬೇಸಿಗೆ ರಜೆಯಲ್ಲಿ ಕನ್ವಿನಿಯನ್ಸ್ ಸ್ಟೋರ್‌ನಲ್ಲಿ ಮೂರು ತಿಂಗಳು ಕೆಲಸ ಮಾಡಿದ್ದೆ.\nವ್ಯವಸ್ಥಾಪಕ: ತುಂಬಾ ಒಳ್ಳೆಯದು. ವಾರದಲ್ಲಿ ಎಷ್ಟು ದಿನ ಕೆಲಸ ಮಾಡಬಹುದು?\nಲೀ: ವಾರದ ದಿನಗಳ ಸಂಜೆ, ವಾರಕ್ಕೆ ಮೂರು ದಿನ ಕೆಲಸ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.\nವ್ಯವಸ್ಥಾಪಕ: ಸರಿ. ಫಲಿತಾಂಶವನ್ನು ಮುಂದಿನ ಮಂಗಳವಾರದೊಳಗೆ ಫೋನ್ ಮೂಲಕ ತಿಳಿಸುತ್ತೇವೆ.",
+      "transcript_ml": "മാനേജർ: ഇന്റർവ്യൂ ആരംഭിക്കാം. ലീ, ജപ്പാനീസ് പഠിക്കാൻ തുടങ്ങിയിട്ട് എത്ര നാളായി?\nലീ: ഞാൻ ജപ്പാനിൽ വന്നിട്ട് ഒരു വർഷമായി. നാട്ടിലും ഒരു വർഷം പഠിച്ചിരുന്നു, ആകെ രണ്ട് വർഷം.\nമാനേജർ: കസ്റ്റമർ സർവീസ് പരിചയമുണ്ടോ?\nലീ: ഉണ്ട്, കഴിഞ്ഞ വേനലവധിക്ക് ഒരു സ്റ്റോറിൽ മൂന്ന് മാസം ജോലി ചെയ്തിട്ടുണ്ട്.\nമാനേജർ: കൊള്ളാം. ആഴ്ചയിൽ എത്ര ദിവസം ജോലി ചെയ്യാം?\nലീ: ആഴ്ചയിലെ പ്രവൃത്തിദിനങ്ങളിൽ വൈകുന്നേരം മൂന്ന് ദിവസം ചെയ്യാനാണ് ആഗ്രഹം.\nമാനേജർ: ശരി. ഫലം അടുത്ത ചൊവ്വാഴ്ചയ്ക്കുള്ളിൽ ഫോണിൽ അറിയിക്കാം.",
+      "questions": [
+        {
+          "q": "李さんは 日本語を 全部で 何年間 勉強しましたか。",
+          "q_en": "How many years in total has Li studied Japanese?",
+          "q_te": "లీ మొత్తం ఎన్ని సంవత్సరాలు జపనీస్ అభ్యసించారు?",
+          "q_hi": "ली ने कुल मिलाकर कितने साल जापानी सीखी है?",
+          "q_ta": "லீ மொத்தம் எத்தனை ஆண்டுகள் ஜப்பானிய மொழி படித்தார்?",
+          "q_ko": "리 씨는 일본어를 총 몇 년간 공부했습니까?",
+          "q_es": "¿Cuántos años en total ha estudiado japonés el Sr. Li?",
+          "q_kn": "ಲೀ ಒಟ್ಟು ಎಷ್ಟು ವರ್ಷ ಜಪಾನೀಸ್ ಕಲಿತಿದ್ದಾರೆ?",
+          "q_ml": "ലീ ആകെ എത്ര വർഷമാണ് ജപ്പാനീസ് പഠിച്ചത്?",
+          "options": [
+            "2年間",
+            "1年間",
+            "3年間",
+            "半年間"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "李さんは 週に 何日 働きたいと 言いましたか。",
+          "q_en": "How many days a week did Li say he wants to work?",
+          "q_te": "లీ వారానికి ఎన్ని రోజులు పని చేయాలనుకుంటున్నట్లు చెప్పారు?",
+          "q_hi": "ली ने हफ़्ते में कितने दिन काम करने की इच्छा जताई?",
+          "q_ta": "லீ வாரத்தில் எத்தனை நாட்கள் வேலை செய்ய விரும்புகிறார்?",
+          "q_ko": "리 씨는 일주일에 며칠 일하고 싶다고 말했습니까?",
+          "q_es": "¿Cuántos días a la semana dijo Li que quiere trabajar?",
+          "q_kn": "ಲೀ ವಾರಕ್ಕೆ ಎಷ್ಟು ದಿನ ಕೆಲಸ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ ಎಂದರು?",
+          "q_ml": "ആഴ്ചയിൽ എത്ര ദിവസം ജോലി ചെയ്യാനാണ് ലീ ആഗ്രഹിക്കുന്നത്?",
+          "options": [
+            "週に 3日",
+            "週に 2日",
+            "週に 5日",
+            "毎日"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N3": [
+    {
+      "id": "l-n3-1",
+      "title": "デパートの店内放送 (In-store announcement at a department store)",
+      "script": "ご来店のお客様にお知らせいたします。本日は雨の中、当店にお越しいただき、ありがとうございます。ただいま二階の催事場では、北海道の物産展を行っております。新鮮な海の幸や、人気のスイーツをたくさんご用意しております。なお、本日は駐車場が大変混み合っているそうですので、お車でお越しのお客様は、少々お待ちいただくことがあるかもしれません。皆様のご協力をお願いいたします。",
+      "transcript_en": "An announcement for our customers. Thank you for coming to our store today despite the rain. Right now, in the second-floor event space, we are holding a Hokkaido regional products fair. We have prepared plenty of fresh seafood and popular sweets. Also, we hear the parking lot is very crowded today, so customers arriving by car may have to wait a little while. We ask for everyone's cooperation.",
+      "questions": [
+        {
+          "q": "二階の催事場では、今何をしていますか。",
+          "q_en": "What is being held in the second-floor event space right now?",
+          "options": [
+            "北海道の物産展",
+            "本のセール",
+            "スイーツ作り教室",
+            "駐車場の工事"
+          ],
+          "answer": 0,
+          "q_te": "ఈరోజు మధ్యాహ్నం నుండి వాతావరణం ఎలా మారుతుంది?",
+          "q_hi": "आज दोपहर से मौसम कैसे बदलेगा?",
+          "q_ta": "இன்று மதியத்திலிருந்து வானிலை எப்படி மாறும்?",
+          "q_ko": "오늘 낮부터 날씨는 어떻게 변합니까?",
+          "q_es": "¿Cómo cambiará el clima a partir del mediodía?",
+          "q_kn": "ಇಂದು ಮಧ್ಯಾಹ್ನದಿಂದ ಹವಾಮಾನ ಹೇಗೆ ಬದಲಾಗಲಿದೆ?",
+          "q_ml": "ഇന്ന് ഉച്ചയ്ക്ക് ശേഷം കാലാവസ്ഥ എങ്ങനെ മാറും?"
+        },
+        {
+          "q": "駐車場について、何と言っていますか。",
+          "q_en": "What does the announcement say about the parking lot?",
+          "options": [
+            "今は空いている",
+            "使えなくなった",
+            "とても混んでいるそうだ",
+            "無料になった"
+          ],
+          "answer": 2,
+          "q_te": "రాత్రిపూట ఏమి జరగవచ్చు?",
+          "q_hi": "रात में क्या होने की संभावना है?",
+          "q_ta": "இரவில் என்ன நிகழலாம்?",
+          "q_ko": "밤에는 어떤 일이 일어날 수 있습니까?",
+          "q_es": "¿Qué puede ocurrir por la noche?",
+          "q_kn": "ರಾತ್ರಿ ಏನಾಗಬಹುದು?",
+          "q_ml": "രാത്രിയിൽ എന്ത് സംഭവിച്ചേക്കാം?"
+        },
+        {
+          "q": "今日の天気はどうですか。",
+          "q_en": "What is the weather like today?",
+          "options": [
+            "晴れ",
+            "雨",
+            "雪",
+            "強い風"
+          ],
+          "answer": 1,
+          "q_te": "రేపటి ఉదయం గురించి ఏమి చెప్పారు?",
+          "q_hi": "कल सुबह के बारे में क्या कहा गया है?",
+          "q_ta": "நாளை காலை பற்றி என்ன கூறப்பட்டது?",
+          "q_ko": "내일 아침에 대해 어떻게 말하고 있습니까?",
+          "q_es": "¿Qué se dice sobre la mañana de mañana?",
+          "q_kn": "ನಾಳೆ ಬೆಳಗಿನ ಬಗ್ಗೆ ಏನು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "നാളെ രാവിലെയെക്കുറിച്ച് എന്താണ് പറഞ്ഞത്?"
+        }
+      ],
+      "transcript_te": "వాతావరణ వార్త: ఈరోజు మధ్యాహ్నం నుండి ఆకాశం మేఘావృతమై రాత్రికి ఉరుములతో కూడిన వర్షం పడే అవకాశం ఉంది. రేపు ఉదయానికి గాలులు శాంతిస్తాయి.",
+      "transcript_hi": "मौसम समाचार: आज दोपहर से बादल छाए रहेंगे और रात में गरज के साथ बारिश की संभावना है। कल सुबह तक हवाएँ शांत हो जाएँगी।",
+      "transcript_ta": "வானிலை செய்தி: இன்று மதியத்திலிருந்து வானம் மேகமூட்டத்துடன் காணப்படும், இரவில் இடியுடன் கூடிய மழை பெய்ய வாய்ப்புள்ளது. நாளை காலையில் காற்று தணியும்.",
+      "transcript_ko": "날씨 뉴스: 오늘 낮부터 구름이 끼고 밤에는 뇌우가 칠 가능성이 있습니다. 내일 아침에는 바람이 잦아들겠습니다.",
+      "transcript_es": "Noticias del tiempo: A partir del mediodía estará nublado y por la noche son probables las tormentas eléctricas. Para mañana por la mañana los vientos habrán amainado.",
+      "transcript_kn": "ಹವಾಮಾನ ವರದಿ: ಇಂದು ಮಧ್ಯಾಹ್ನದಿಂದ ಮೋಡ ಕವಿದ ವಾತಾವರಣವಿದ್ದು ರಾತ್ರಿ ಗುಡುಗು ಸಹಿತ ಮಳೆಯಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ. ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಗಾಳಿ ಕಡಿಮೆಯಾಗಲಿದೆ.",
+      "transcript_ml": "കാലാവസ്ഥാ വാർത്ത: ഇന്ന് ഉച്ചയ്ക്ക് ശേഷം ആകാശം മേഘാവൃതമായിരിക്കും, രാത്രി ഇടിമിന്നലോട് കൂടിയ മഴയ്ക്ക് സാധ്യതയുണ്ട്. നാളെ രാവിലെയോടെ കാറ്റ് ശാന്തമാകും."
+    },
+    {
+      "id": "l-n3-2",
+      "title": "毎朝のランニング (Running every morning)",
+      "script": "田中さん、最近元気そうだね。何かいいことでもあった？\nうん、実はね、先月から毎朝走るようになったんだ。\nへえ、すごい。前は運動が苦手だって言ってたのに。\nそうなんだよ。でも、お医者さんに少し運動したほうがいいって言われてね。始めてみたら、意外と気持ちよくて。\nそれで続いてるんだ。朝、早く起きるのは大変じゃない？\n最初はつらかったけど、慣れたら平気になったよ。夜も早く寝られるようになったし。\nいいなあ。私も今度、一緒に走らせてもらってもいい？\nもちろん。じゃあ、明日の朝、駅の前で待ち合わせしよう。",
+      "transcript_en": "\"Tanaka, you've seemed full of energy lately. Did something good happen?\"\n\"Yeah, actually, since last month I've started running every morning.\"\n\"Wow, that's great. And you used to say you were bad at exercise.\"\n\"That's right. But my doctor told me I should get a little exercise. When I tried it, it felt surprisingly good.\"\n\"So that's why you've kept it up. Isn't getting up early in the morning hard?\"\n\"It was tough at first, but once I got used to it, it became no problem. And I've become able to sleep earlier at night, too.\"\n\"Nice. Could you let me run with you sometime?\"\n\"Of course. Then let's meet in front of the station tomorrow morning.\"",
+      "questions": [
+        {
+          "q": "田中さんは先月から何をするようになりましたか。",
+          "q_en": "What has Tanaka started doing since last month?",
+          "options": [
+            "毎朝走ること",
+            "料理をすること",
+            "早く会社に行くこと",
+            "病院で働くこと"
+          ],
+          "answer": 0,
+          "q_te": "తనకా గత నెల నుండి ఏమి చేయడం ప్రారంభించాడు?",
+          "q_hi": "तानाका ने पिछले महीने से क्या करना शुरू किया?",
+          "q_ta": "தனகா கடந்த மாதத்திலிருந்து என்ன செய்கிறார்?",
+          "q_ko": "다나카 씨는 지난달부터 무엇을 시작했습니까?",
+          "q_es": "¿Qué empezó a hacer Tanaka desde el mes pasado?",
+          "q_kn": "ತನಕಾ ಕಳೆದ ತಿಂಗಳಿಂದ ಏನನ್ನು ಪ್ರಾರಂಭಿಸಿದರು?",
+          "q_ml": "തനക കഴിഞ്ഞ മാസം മുതൽ എന്താണ് ചെയ്യാൻ തുടങ്ങിയത്?"
+        },
+        {
+          "q": "田中さんが運動を始めたのはどうしてですか。",
+          "q_en": "Why did Tanaka start exercising?",
+          "options": [
+            "友達に誘われたから",
+            "医者に勧められたから",
+            "運動が好きだから",
+            "会社に言われたから"
+          ],
+          "answer": 1,
+          "q_te": "వ్యాయామం వల్ల కలిగిన ప్రయోజనం ఏమిటి?",
+          "q_hi": "व्यायाम से क्या लाभ हुआ?",
+          "q_ta": "உடற்பயிற்சியால் என்ன நன்மை கிடைத்தது?",
+          "q_ko": "운동을 통해 어떤 효과가 있었습니까?",
+          "q_es": "¿Qué beneficio obtuvo del ejercicio?",
+          "q_kn": "ವ್ಯಾಯಾಮದಿಂದ ಆದ ಪ್ರಯೋಜನವೇನು?",
+          "q_ml": "വ്യായാമം ചെയ്തതുകൊണ്ടുള്ള പ്രയോജനം എന്തായിരുന്നു?"
+        },
+        {
+          "q": "女の人はこのあと何をするつもりですか。",
+          "q_en": "What does the woman plan to do next?",
+          "options": [
+            "一人で走る",
+            "走るのをやめる",
+            "田中さんと一緒に走る",
+            "病院に行く"
+          ],
+          "answer": 2,
+          "q_te": "సంభాషణలోని మహిళ తర్వాత ఏమి చేయాలని ఆలోచిస్తోంది?",
+          "q_hi": "महिला आगे क्या करने की योजना बना रही है?",
+          "q_ta": "பெண் அடுத்து என்ன செய்யத் திட்டமிடுகிறார்?",
+          "q_ko": "여성은 다음에 무엇을 할 계획입니까?",
+          "q_es": "¿Qué planea hacer la mujer a continuación?",
+          "q_kn": "ಮಹಿಳೆ ಮುಂದೆ ಏನು ಮಾಡಲು ಯೋಜಿಸುತ್ತಿದ್ದಾಳೆ?",
+          "q_ml": "സ്ത്രീ അടുത്തതായി എന്ത് ചെയ്യാനാണ് ആലോചിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "సంభాషణ: తనకా, ఈ మధ్య చాలా ఉత్సాహంగా కనిపిస్తున్నావు. ఏదైనా మంచి జరిగిందా? - గత నెల నుండి రోజూ ఉదయం జాగింగ్ చేస్తున్నాను. ఆరోగ్యం చాలా మెరుగైంది.",
+      "transcript_hi": "बातचीत: तानाका, तुम इन दिनों बहुत ऊर्जावान लग रहे हो। कुछ खास हुआ क्या? - पिछले महीने से रोज़ सुबह दौड़ लगा रहा हूँ। सेहत बहुत अच्छी हो गई है।",
+      "transcript_ta": "உரையாடல்: தனகா, சமீப காலமாக மிகவும் உற்சாகமாக இருக்கிறாயே. என்ன விஷயம்? - கடந்த மாதத்திலிருந்து தினமும் காலையில் ஓடுகிறேன். உடல்நலம் தேறியுள்ளது.",
+      "transcript_ko": "대화: 다나카 씨, 요즘 활기가 넘쳐 보이네요. 무슨 일 있었나요? - 지난달부터 매일 아침 조깅을 시작했어요. 건강이 아주 좋아졌습니다.",
+      "transcript_es": "Conversación: Tanaka, últimamente te ves lleno de energía. ¿Ha pasado algo? - Desde el mes pasado salgo a correr todas las mañanas. Mi salud ha mejorado muchísimo.",
+      "transcript_kn": "ಸಂಭಾಷಣೆ: ತನಕಾ, ಇತ್ತೀಚೆಗೆ ತುಂಬಾ ಉತ್ಸಾಹದಿಂದ ಕಾಣುತ್ತಿದ್ದೀಯಲ್ಲ. ಏನಾದರೂ ವಿಶೇಷವೇ? - ಕಳೆದ ತಿಂಗಳಿಂದ ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ ಜಾಗಿಂಗ್ ಮಾಡುತ್ತಿದ್ದೇನೆ. ಆರೋಗ್ಯ ಚೆನ್ನಾಗಿದೆ.",
+      "transcript_ml": "സംഭാഷണം: തനകാ, ഈയിടെയായി നല്ല ഉന്മേഷത്തിലാണല്ലോ. എന്തെങ്കിലും വിശേഷമുണ്ടോ? - കഴിഞ്ഞ മാസം മുതൽ എല്ലാ ദിവസവും രാവിലെ ഓടാൻ പോകുന്നുണ്ട്. ആരോഗ്യം മെച്ചപ്പെട്ടു."
+    },
+    {
+      "id": "l-n3-3",
+      "title": "会議の変更の伝言 (A voicemail about a meeting change)",
+      "script": "もしもし、営業部の山田です。お疲れさまです。明日の会議のことでご連絡しました。実は、部長の都合が悪くなったそうで、会議の時間が午後2時から午後4時に変更になりました。場所はいつもと同じ、第一会議室です。それから、資料は私が用意しますので、佐藤さんは準備しなくても大丈夫です。もし何か質問があれば、私の携帯に電話してください。よろしくお願いします。",
+      "transcript_en": "Hello, this is Yamada from the sales department. Thanks for your hard work. I'm calling about tomorrow's meeting. Actually, I hear the manager became unavailable, so the meeting time has been changed from 2 p.m. to 4 p.m. The place is the same as usual, Meeting Room 1. Also, I'll prepare the materials, so Sato, you don't need to prepare anything. If you have any questions, please call my cell phone. Thank you.",
+      "questions": [
+        {
+          "q": "会議の時間はどうなりましたか。",
+          "q_en": "What happened to the meeting time?",
+          "options": [
+            "午前中に早まった",
+            "午後2時から午後4時に変わった",
+            "会議は中止になった",
+            "時間は変わっていない"
+          ],
+          "answer": 1,
+          "q_te": "సమావేశ సమయానికి ఏమి జరిగింది?",
+          "q_hi": "बैठक के समय में क्या बदलाव हुआ?",
+          "q_ta": "கூட்ட நேரத்திற்கு என்ன ஆனது?",
+          "q_ko": "회의 시간은 어떻게 되었습니까?",
+          "q_es": "¿Qué ocurrió con la hora de la reunión?",
+          "q_kn": "ಸಭೆಯ ಸಮಯಕ್ಕೆ ಏನಾಯಿತು?",
+          "q_ml": "മീറ്റിംഗ് സമയത്തിന് എന്ത് സംഭവിച്ചു?"
+        },
+        {
+          "q": "会議の場所について、正しいものはどれですか。",
+          "q_en": "Which is correct about the meeting place?",
+          "options": [
+            "いつもと同じ第一会議室",
+            "第二会議室に変わった",
+            "まだ決まっていない",
+            "別のビルになった"
+          ],
+          "answer": 0,
+          "q_te": "సమావేశ స్థలం గురించి ఏది సరైనది?",
+          "q_hi": "बैठक के स्थान के बारे में क्या सही है?",
+          "q_ta": "கூட்டம் நடக்கும் இடம் பற்றி எது சரியானது?",
+          "q_ko": "회의 장소에 대해 올바른 것은 무엇입니까?",
+          "q_es": "¿Qué es correcto sobre el lugar de la reunión?",
+          "q_kn": "ಸಭೆಯ ಸ್ಥಳದ ಬಗ್ಗೆ ಯಾವುದು ಸರಿ?",
+          "q_ml": "മീറ്റിംഗ് സ്ഥലത്തെക്കുറിച്ച് ശരിയായത് ഏതാണ്?"
+        },
+        {
+          "q": "佐藤さんは資料について何をしますか。",
+          "q_en": "What does Sato do about the materials?",
+          "options": [
+            "部長に渡す",
+            "自分で印刷する",
+            "何も準備しなくてよい",
+            "会議室に持っていく"
+          ],
+          "answer": 2,
+          "q_te": "మెటీరియల్స్ గురించి సతో ఏమి చేస్తాడు?",
+          "q_hi": "दस्तावेज़ों के बारे में सातो क्या करेगा?",
+          "q_ta": "ஆவணங்கள் தொடர்பாக சாட்டோ என்ன செய்வார்?",
+          "q_ko": "사토 씨는 자료에 대해 어떻게 합니까?",
+          "q_es": "¿Qué hace Sato con los materiales?",
+          "q_kn": "ದಾಖಲೆಗಳ ಬಗ್ಗೆ ಸಾತೋ ಏನು ಮಾಡುತ್ತಾರೆ?",
+          "q_ml": "രേഖകളുടെ കാര്യത്തിൽ സാറ്റോ എന്ത് ചെയ്യും?"
+        }
+      ],
+      "transcript_te": "వాయిస్‌మెయిల్: అమ్మకాల శాఖ నుండి యమదా మాట్లాడుతున్నాను. రేపటి సమావేశ సమయం 2 గంటల నుండి 3 గంటలకు మారింది. మెటీరియల్స్ నేను తెస్తాను.",
+      "transcript_hi": "वॉइसमेल: बिक्री विभाग से यामादा। कल की बैठक का समय 2 बजे से बदलकर 3 बजे कर दिया गया है। दस्तावेज़ मैं लेकर आऊँगा।",
+      "transcript_ta": "குரல் அஞ்சல்: விற்பனைப் பிரிவிலிருந்து யமடா. நாளைய கூட்ட நேரம் 2 மணியிலிருந்து 3 மணியாக மாற்றப்பட்டுள்ளது. ஆவணங்களை நான் கொண்டு வருகிறேன்.",
+      "transcript_ko": "음성메시지: 영업부 야마다입니다. 내일 회의 시간이 2시에서 3시로 변경되었습니다. 자료는 제가 준비하겠습니다.",
+      "transcript_es": "Mensaje de voz: Habla Yamada del departamento de ventas. La reunión de mañana se ha pospuesto de las 14:00 a las 15:00. Llevaré los documentos.",
+      "transcript_kn": "ಧ್ವನಿ ಸಂದೇಶ: ಮಾರಾಟ ವಿಭಾಗದಿಂದ ಯಮದಾ. ನಾಳೆಯ ಸಭೆಯ ಸಮಯ 2 ಗಂಟೆಯಿಂದ 3 ಗಂಟೆಗೆ ಬದಲಾಗಿದೆ. ದಾಖಲೆಗಳನ್ನು ನಾನೇ ತರುತ್ತೇನೆ.",
+      "transcript_ml": "വോയ്‌സ്‌മെയിൽ: സെയിൽസ് ഡിപ്പാർട്ട്‌മെന്റിൽ നിന്ന് യമദ. നാളത്തെ മീറ്റിംഗ് സമയം 2 മണിയിൽ നിന്ന് 3 മണിയിലേക്ക് മാറ്റി. രേഖകൾ ഞാൻ കൊണ്ടുവരാം."
+    },
+    {
+      "id": "l-n3-4",
+      "title": "残業のお願い (A request to work overtime)",
+      "script": "部長: 田中さん、ちょっといいですか。実は、来週の月曜日までに出さなければならない資料があって、もし今日時間があれば、少し手伝ってもらえませんか。\n田中: すみません、今日は子どもを迎えに行かなければならないんです。明日の午前中なら大丈夫ですが。\n部長: そうですか。じゃあ、無理をさせるわけにはいきませんね。明日の朝、お願いできますか。\n田中: はい、承知しました。明日、早めに来てやります。",
+      "transcript_en": "Manager: Tanaka, do you have a moment? Actually, there's a document I have to submit by next Monday, and if you have some time today, could you help me a little?\nTanaka: I'm sorry, I have to go pick up my child today. Tomorrow morning would be fine, though.\nManager: I see. Well, I can't make you overdo it. Could I ask you tomorrow morning, then?\nTanaka: Yes, understood. I'll come in a bit early tomorrow and do it.",
+      "questions": [
+        {
+          "q": "部長は田中さんに何を頼みましたか。",
+          "q_en": "What did the manager ask Tanaka to do?",
+          "options": [
+            "資料作りを手伝うこと (help prepare a document)",
+            "子どもを迎えに行くこと (pick up a child)",
+            "会議に出ること (attend a meeting)",
+            "早く帰ること (leave early)"
+          ],
+          "answer": 0,
+          "q_te": "మేనేజర్ తనకాను ఏమి చేయమని అడిగారు?",
+          "q_hi": "प्रबंधक ने तानाका से क्या करने को कहा?",
+          "q_ta": "மேலாளர் தனகாவிடம் என்ன கேட்டார்?",
+          "q_ko": "부장은 다나카 씨에게 무엇을 부탁했습니까?",
+          "q_es": "¿Qué le pidió el jefe a Tanaka?",
+          "q_kn": "ವ್ಯವಸ್ಥಾಪಕರು ತನಕಾಗೆ ಏನು ಮಾಡಲು ಕೇಳಿದರು?",
+          "q_ml": "മാനേജർ തനകയോട് എന്ത് ചെയ്യാനാണ് ആവശ്യപ്പെട്ടത്?"
+        },
+        {
+          "q": "田中さんはいつ手伝いますか。",
+          "q_en": "When will Tanaka help?",
+          "options": [
+            "今日の午後 (this afternoon)",
+            "明日の朝 (tomorrow morning)",
+            "来週の月曜日 (next Monday)",
+            "今夜 (tonight)"
+          ],
+          "answer": 1,
+          "q_te": "తనకా ఎప్పుడు సహాయం చేస్తాడు?",
+          "q_hi": "तानाका कब मदद करेगा?",
+          "q_ta": "தனகா எப்போது உதவி செய்வார்?",
+          "q_ko": "다나카 씨는 언제 돕기로 했습니까?",
+          "q_es": "¿Cuándo ayudará Tanaka?",
+          "q_kn": "ತನಕಾ ಯಾವಾಗ ಸಹಾಯ ಮಾಡುತ್ತಾನೆ?",
+          "q_ml": "തനക എപ്പോഴാണ് സഹായിക്കുക?"
+        },
+        {
+          "q": "田中さんが今日手伝えないのはどうしてですか。",
+          "q_en": "Why can't Tanaka help today?",
+          "options": [
+            "子どもを迎えに行くから (has to pick up a child)",
+            "病気だから (is sick)",
+            "ほかの会議があるから (has another meeting)",
+            "資料がないから (has no documents)"
+          ],
+          "answer": 0,
+          "q_te": "తనకా ఈరోజు ఎందుకు సహాయం చేయలేడు?",
+          "q_hi": "तानाका आज मदद क्यों नहीं कर सकता?",
+          "q_ta": "தனகாவால் இன்று ஏன் உதவ முடியவில்லை?",
+          "q_ko": "다나카 씨는 오늘 왜 도울 수 없습니까?",
+          "q_es": "¿Por qué no puede ayudar Tanaka hoy?",
+          "q_kn": "ತನಕಾಗೆ ಇಂದು ಸಹಾಯ ಮಾಡಲು ಏಕೆ ಆಗುವುದಿಲ್ಲ?",
+          "q_ml": "തനകയ്ക്ക് ഇന്ന് എന്തുകൊണ്ട് സഹായിക്കാൻ കഴിയില്ല?"
+        }
+      ],
+      "transcript_te": "ఆఫీసులో సంభాషణ: మేనేజర్: తనకా, ఒక నిమిషం వింటావా? అత్యవసర పని ఉంది, ఈరోజు ఓవర్‌టైమ్ చేయగలవా? - క్షమించండి, ఈరోజు ముందుగా ప్లాన్ చేసుకున్న అపాయింట్‌మెంట్ ఉంది. రేపు ఉదయాన్నే వచ్చి పూర్తి చేస్తాను.",
+      "transcript_hi": "कार्यालय में: प्रबंधक: तानाका, क्या एक मिनट बात हो सकती है? एक ज़रूरी काम है, क्या आज ओवरटाइम कर सकते हो? - माफ़ कीजिए, आज मेरी पहले से तय मुलाकात है। मैं कल सुबह जल्दी आकर काम पूरा कर दूँगा।",
+      "transcript_ta": "அலுவலகத்தில்: மேலாளர்: தனகா, ஒரு நிமிடம் பேசலாமா? அவசர வேலை உள்ளது, இன்று கூடுதல் நேரம் வேலை செய்ய முடியுமா? - மன்னிக்கவும், இன்று எனக்கு வேறு வேலை உள்ளது. நாளை காலையில் வந்து முடிக்கிறேன்.",
+      "transcript_ko": "사무실에서: 부장: 다나카 군, 잠깐 시간 있나? 급한 서류가 있는데 오늘 야근 좀 해줄 수 있겠나? - 죄송합니다, 오늘은 선약이 있어서요. 내일 아침 일찍 출근해서 처리하겠습니다.",
+      "transcript_es": "En la oficina: Jefe: Tanaka, ¿tienes un momento? Hay una urgencia, ¿podrías hacer horas extra hoy? - Lo siento, hoy tengo un compromiso previo. Vendré temprano mañana por la mañana para terminarlo.",
+      "transcript_kn": "ಕಚೇರಿಯಲ್ಲಿ: ವ್ಯವಸ್ಥಾಪಕ: ತನಕಾ, ತುರ್ತು ಕೆಲಸವಿದೆ, ಇಂದು ಅಧಿಕಾವಧಿ ಕೆಲಸ ಮಾಡಬಹುದೇ? - ಕ್ಷಮಿಸಿ, ಇಂದು ಮೊದಲೇ ನಿಗದಿಯಾದ ಕೆಲಸವಿದೆ. ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಬೇಗ ಬಂದು ಮುಗಿಸುತ್ತೇನೆ.",
+      "transcript_ml": "ഓഫീസിൽ: മാനേജർ: തനകാ, അത്യാവശ്യമായി ഒരു ജോലിയുണ്ട്, ഇന്ന് ഓവർടൈം ചെയ്യാൻ കഴിയുമോ? - ക്ഷമിക്കണം, ഇന്ന് എനിക്ക് മുൻകൂട്ടി നിശ്ചയിച്ച കാര്യങ്ങളുണ്ട്. നാളെ രാവിലെ നേരത്തെ വന്ന് ചെയ്യാം."
+    },
+    {
+      "id": "l-n3-5",
+      "title": "駅のアナウンス (A station announcement)",
+      "script": "ご案内いたします。ただいま、大雨の影響で、あおば線は上下線とも運転を見合わせております。復旧のめどは立っておりません。お急ぎのお客様は、地下鉄みどり線をご利用ください。なお、振り替え輸送を行っておりますので、切符をお持ちのまま改札口へお越しください。ご迷惑をおかけして申し訳ございません。",
+      "transcript_en": "This is an announcement. Due to heavy rain, the Aoba Line is currently suspended in both directions. There is no estimate for when service will resume. Passengers in a hurry, please use the Midori Subway Line. Also, we are providing substitute transport, so please come to the ticket gate with your ticket in hand. We apologize for the inconvenience.",
+      "questions": [
+        {
+          "q": "あおば線はどうして止まっていますか。",
+          "q_en": "Why is the Aoba Line stopped?",
+          "options": [
+            "大雨のため (because of heavy rain)",
+            "事故のため (because of an accident)",
+            "工事のため (because of construction)",
+            "車両の故障のため (because of a vehicle breakdown)"
+          ],
+          "answer": 0,
+          "q_te": "రైళ్లు ఎందుకు నిలిపివేయబడ్డాయి?",
+          "q_hi": "ट्रेनें क्यों रोक दी गईं?",
+          "q_ta": "ரயில்கள் ஏன் நிறுத்தப்பட்டன?",
+          "q_ko": "열차 운행이 왜 중단되었습니까?",
+          "q_es": "¿Por qué se detuvieron los trenes?",
+          "q_kn": "ರೈಲುಗಳು ಏಕೆ ಸ್ಥಗಿತಗೊಂಡವು?",
+          "q_ml": "ട്രെയിനുകൾ എന്തുകൊണ്ടാണ് നിർത്തിവെച്ചത്?"
+        },
+        {
+          "q": "急いでいる人はどうすればいいですか。",
+          "q_en": "What should people who are in a hurry do?",
+          "options": [
+            "バスに乗る (take a bus)",
+            "地下鉄みどり線を使う (use the Midori Subway Line)",
+            "タクシーを使う (take a taxi)",
+            "復旧を待つ (wait for service to resume)"
+          ],
+          "answer": 1,
+          "q_te": "తొందరగా ఉన్నవారు ఏమి చేయాలి?",
+          "q_hi": "जल्दी में रहने वाले लोगों को क्या करना चाहिए?",
+          "q_ta": "அவசரமாக உள்ளவர்கள் என்ன செய்ய வேண்டும்?",
+          "q_ko": "서두르는 사람들은 어떻게 해야 합니까?",
+          "q_es": "¿Qué deben hacer los pasajeros con prisa?",
+          "q_kn": "ಅವಸರದಲ್ಲಿರುವವರು ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "തിടുക്കമുള്ളവർ എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "改札口へ行くとき、何が必要ですか。",
+          "q_en": "What is needed when going to the ticket gate?",
+          "options": [
+            "切符 (a ticket)",
+            "お金 (money)",
+            "身分証明書 (an ID card)",
+            "予約票 (a reservation slip)"
+          ],
+          "answer": 0,
+          "q_te": "కౌంటర్ వద్దకు వెళ్ళినప్పుడు ఏమి అవసరం?",
+          "q_hi": "काउंटर पर जाने के लिए क्या आवश्यक है?",
+          "q_ta": "கவுண்டருக்குச் செல்லும்போது என்ன தேவை?",
+          "q_ko": "개찰구에 갈 때 필요한 것은 무엇입니까?",
+          "q_es": "¿Qué se necesita al ir a taquilla?",
+          "q_kn": "ಕೌಂಟರ್‌ಗೆ ಹೋಗುವಾಗ ಏನನ್ನು ಒಯ್ಯಬೇಕು?",
+          "q_ml": "കൗണ്ടറിലേക്ക് പോകുമ്പോൾ എന്ത് വേണം?"
+        }
+      ],
+      "transcript_te": "స్టేషన్ ప్రకటన: భారీ వర్షం కారణంగా అఓబా లైన్ రైళ్లు తాత్కాలికంగా నిలిపివేయబడ్డాయి. ప్రయాణికులు టిక్కెట్ గేట్ వద్ద రీఫండ్ పొందవచ్చు.",
+      "transcript_hi": "स्टेशन घोषणा: भारी बारिश के कारण आओबा लाइन की रेल सेवाएँ अस्थायी रूप से रोक दी गई हैं। यात्री टिकट काउंटर से धन वापसी ले सकते हैं।",
+      "transcript_ta": "நிலைய அறிவிப்பு: கனமழை காரணமாக அவோபா வழித்தட ரயில்கள் தற்காலிகமாக நிறுத்தப்பட்டுள்ளன. பயணிகள் நுழைவுச் சீட்டு கவுண்டரில் பணத்தைத் திரும்பப் பெறலாம்.",
+      "transcript_ko": "역 안내방송: 폭우로 인해 아오바선 운행이 일시 중단되었습니다. 급하신 승객분들은 개찰구에서 환불을 받으시기 바랍니다.",
+      "transcript_es": "Anuncio de la estación: Debido a las fuertes lluvias, la línea Aoba ha suspendido temporalmente sus servicios. Los pasajeros pueden solicitar el reembolso en taquilla.",
+      "transcript_kn": "ನಿಲ್ದಾಣ ಪ್ರಕಟಣೆ: ಭಾರೀ ಮಳೆಯಿಂದಾಗಿ ಅಯೋಬಾ ಲೈನ್ ರೈಲುಗಳು ತಾತ್ಕಾಲಿಕವಾಗಿ ಸ್ಥಗಿತಗೊಂಡಿವೆ. ಪ್ರಯಾಣಿಕರು ಕೌಂಟರ್‌ನಲ್ಲಿ ಹಣ ಮರುಪಾವತಿ ಪಡೆಯಬಹುದು.",
+      "transcript_ml": "സ്റ്റേഷൻ അറിയിപ്പ്: കനത്ത മഴ കാരണം അയോബ ലൈനിലെ ട്രെയിനുകൾ താൽക്കാലികമായി നിർത്തിവെച്ചു. യാത്രക്കാർക്ക് കൗണ്ടറിൽ നിന്ന് റീഫണ്ട് വാങ്ങാം."
+    },
+    {
+      "id": "l-n3-6",
+      "title": "自炊を始めて (Since I started cooking for myself)",
+      "script": "去年まで、私はほとんど外食ばかりで、料理なんて全然できませんでした。でも、健康のことを考えて、自分で作るようになりました。最初は野菜を切るのも下手でしたが、毎日続けているうちに、簡単なものなら短い時間で作れるようになりました。外食が減ったので、体の調子もよくなったし、お金も前より貯まるようになりました。今では、料理をするのが楽しみです。",
+      "transcript_en": "Until last year, I ate out almost all the time and couldn't cook at all. But thinking about my health, I started cooking for myself. At first I was even bad at cutting vegetables, but as I kept it up every day, I became able to make simple things in a short time. Because I eat out less, my physical condition has gotten better, and I've come to save more money than before too. Now, cooking is something I look forward to.",
+      "questions": [
+        {
+          "q": "この人は去年まで、食事をどうしていましたか。",
+          "q_en": "How did this person handle meals until last year?",
+          "options": [
+            "自分で作っていた (cooked for themselves)",
+            "外食が多かった (ate out a lot)",
+            "何も食べなかった (didn't eat anything)",
+            "家族が作っていた (family cooked)"
+          ],
+          "answer": 1,
+          "q_te": "గత ఏడాది వరకు భోజనం ఎలా చేసేవాడు?",
+          "q_hi": "पिछले साल तक वह भोजन कैसे करता था?",
+          "q_ta": "கடந்த ஆண்டு வரை உணவு எப்படி உண்டார்?",
+          "q_ko": "작년까지 식사를 어떻게 해결했습니까?",
+          "q_es": "¿Cómo se las arreglaba con las comidas hasta el año pasado?",
+          "q_kn": "ಹೋದ ವರ್ಷದವರೆಗೆ ಊಟವನ್ನು ಹೇಗೆ ಮಾಡುತ್ತಿದ್ದನು?",
+          "q_ml": "കഴിഞ്ഞ വർഷം വരെ ഭക്ഷണം എങ്ങനെയാണ് കഴിച്ചിരുന്നത്?"
+        },
+        {
+          "q": "自分で料理を作るようになって、どう変わりましたか。",
+          "q_en": "How did things change after this person started cooking?",
+          "options": [
+            "体の調子がよくなった (physical condition improved)",
+            "体調が悪くなった (physical condition got worse)",
+            "お金が減った (had less money)",
+            "料理が嫌いになった (came to dislike cooking)"
+          ],
+          "answer": 0,
+          "q_te": "వంట చేయడం ప్రారంభించిన తర్వాత ఏమి మారింది?",
+          "q_hi": "खाना पकाने के बाद क्या बदलाव आया?",
+          "q_ta": "சமைக்கத் தொடங்கிய பின் என்ன மாற்றங்கள் ஏற்பட்டன?",
+          "q_ko": "요리를 시작한 후 어떻게 달라졌습니까?",
+          "q_es": "¿Cómo cambiaron las cosas tras empezar a cocinar?",
+          "q_kn": "ಅಡುಗೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿದ ಮೇಲೆ ಏನು ಬದಲಾಯಿತು?",
+          "q_ml": "പാചകം ചെയ്യാൻ തുടങ്ങിയ ശേഷം എന്ത് മാറ്റമാണ് ഉണ്ടായത്?"
+        },
+        {
+          "q": "この人が料理を始めた理由は何ですか。",
+          "q_en": "Why did this person start cooking?",
+          "options": [
+            "健康のため (for their health)",
+            "お金がなかったため (because they had no money)",
+            "時間があったため (because they had free time)",
+            "家族に頼まれたため (because family asked them)"
+          ],
+          "answer": 0,
+          "q_te": "స్వయంగా వంట చేయడానికి గల కారణం ఏమిటి?",
+          "q_hi": "उसने स्वयं खाना बनाना क्यों शुरू किया?",
+          "q_ta": "அவர் சுயமாக சமைக்கத் தொடங்கியது ஏன்?",
+          "q_ko": "그는 왜 직접 요리를 시작했습니까?",
+          "q_es": "¿Por qué empezó a cocinar por su cuenta?",
+          "q_kn": "ಅವನು ಸ್ವತಃ ಅಡುಗೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿದ್ದು ಏಕೆ?",
+          "q_ml": "അവൻ എന്തുകൊണ്ടാണ് സ്വന്തമായി പാചകം ചെയ്യാൻ തുടങ്ങിയത്?"
+        }
+      ],
+      "transcript_te": "వంట అలవాటు: గత ఏడాది వరకు రోజూ బయటే తినేవాడిని. ఇంట్లో స్వయంగా వంట చేసుకోవడం మొదలుపెట్టాక ఆరోగ్యం మెరుగవడమే కాకుండా ఖర్చులు కూడా చాలా తగ్గాయి.",
+      "transcript_hi": "खाना पकाने की आदत: पिछले साल तक मैं हमेशा बाहर ही खाता था। घर पर खाना बनाना शुरू करने के बाद से न केवल सेहत सुधरी है, बल्कि ख़र्चों में भी भारी बचत हुई है।",
+      "transcript_ta": "சுயமாக சமைப்பது: கடந்த ஆண்டு வரை வெளியில் மட்டுமே சாப்பிட்டேன். வீட்டில் நானே சமைக்கத் தொடங்கிய பின் உடல்நலம் மேம்பட்டதோடு பணமும் சேமிப்பாகிறது.",
+      "transcript_ko": "자취 요리: 작년까지는 거의 외식만 했습니다. 직접 요리를 시작하고 나서는 건강도 좋아지고 생활비도 크게 절약되었습니다.",
+      "transcript_es": "Cocinando en casa: Hasta el año pasado casi siempre comía fuera. Desde que empecé a cocinar por mi cuenta no solo ha mejorado mi salud, sino que además ahorro mucho dinero.",
+      "transcript_kn": "ಸ್ವಯಂ ಅಡುಗೆ: ಹೋದ ವರ್ಷದವರೆಗೆ ಹೊರಗಡೆಯೇ ಊಟ ಮಾಡುತ್ತಿದ್ದೆ. ಮನೆಯಲ್ಲೇ ಅಡುಗೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿದ ಮೇಲೆ ಆರೋಗ್ಯ ಸುಧಾರಿಸಿದ್ದಲ್ಲದೆ ಹಣವೂ ಉಳಿತಾಯವಾಗುತ್ತಿದೆ.",
+      "transcript_ml": "പാചകം ശീലമാക്കൽ: കഴിഞ്ഞ വർഷം വരെ എപ്പോഴും പുറത്തുനിന്നാണ് കഴിച്ചിരുന്നത്. സ്വന്തമായി പാചകം ചെയ്യാൻ തുടങ്ങിയതോടെ ആരോഗ്യം നന്നാവുകയും പണം ലാഭിക്കുകയും ചെയ്തു."
+    },
+    {
+      "id": "l-n3-7",
+      "title": "アプリのメンテナンスのお知らせ (Notice of app maintenance)",
+      "script": "いつも「みんなの家計簿」アプリをご利用いただき、ありがとうございます。システム改善のため、今週の土曜日の午後十一時から日曜日の午前三時まで、メンテナンスを行います。この時間は、アプリにログインできなくなりますので、ご注意ください。なお、メンテナンスのあとは、新しい機能が使えるようになります。入力されたデータが消えることはありませんので、ご安心ください。",
+      "transcript_en": "Thank you for always using the \"Everyone's Household Budget\" app. To improve our system, we will carry out maintenance from 11:00 p.m. this Saturday until 3:00 a.m. Sunday. During this time you will not be able to log in to the app, so please be careful. Also, after the maintenance, new features will become available. The data you have entered will not be lost, so please rest assured.",
+      "questions": [
+        {
+          "q": "メンテナンスは何のために行われますか。",
+          "q_en": "What is the maintenance being done for?",
+          "options": [
+            "システムを改善するため (to improve the system)",
+            "アプリを削除するため (to delete the app)",
+            "料金を上げるため (to raise the price)",
+            "会社を移すため (to relocate the company)"
+          ],
+          "answer": 0,
+          "q_te": "యాప్ నిర్వహణ ఎందుకు చేస్తున్నారు?",
+          "q_hi": "ऐप का रखरखाव क्यों किया जा रहा है?",
+          "q_ta": "செயலி பராமரிப்பு எதற்காக செய்யப்படுகிறது?",
+          "q_ko": "점검은 무엇을 위해 진행됩니까?",
+          "q_es": "¿Para qué se realiza el mantenimiento de la app?",
+          "q_kn": "ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ವಹಣೆ ಯಾವುದಕ್ಕಾಗಿ ನಡೆಯುತ್ತಿದೆ?",
+          "q_ml": "ആപ്പ് മെയിന്റനൻസ് എന്തിനാണ് ചെയ്യുന്നത്?"
+        },
+        {
+          "q": "メンテナンス中、利用者は何ができなくなりますか。",
+          "q_en": "What will users be unable to do during the maintenance?",
+          "options": [
+            "電話すること (make phone calls)",
+            "お金を払うこと (pay money)",
+            "ログインすること (log in)",
+            "データを消すこと (delete data)"
+          ],
+          "answer": 2,
+          "q_te": "నిర్వహణ సమయంలో వినియోగదారులు ఏమి చేయలేరు?",
+          "q_hi": "रखरखाव के दौरान उपयोगकर्ता क्या नहीं कर पाएंगे?",
+          "q_ta": "பராமரிப்பின் போது பயனர்களால் என்ன செய்ய முடியாது?",
+          "q_ko": "점검 시간 동안 사용자가 할 수 없는 것은 무엇입니까?",
+          "q_es": "¿Qué no podrán hacer los usuarios durante el mantenimiento?",
+          "q_kn": "ನಿರ್ವಹಣೆಯ ಸಮಯದಲ್ಲಿ ಬಳಕೆದಾರರು ಏನನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ?",
+          "q_ml": "മെയിന്റനൻസ് സമയത്ത് ഉപയോക്താക്കൾക്ക് എന്ത് ചെയ്യാൻ കഴിയില്ല?"
+        },
+        {
+          "q": "メンテナンスのあと、どうなりますか。",
+          "q_en": "What happens after the maintenance?",
+          "options": [
+            "料金がかかるようになる (it starts costing money)",
+            "新しい機能が使えるようになる (new features become usable)",
+            "データが全部消える (all data is erased)",
+            "アプリが使えなくなる (the app becomes unusable)"
+          ],
+          "answer": 1,
+          "q_te": "నిర్వహణ తర్వాత ఏమి జరుగుతుంది?",
+          "q_hi": "रखरखाव के बाद क्या होगा?",
+          "q_ta": "பராமரிப்புக்குப் பிறகு என்ன நடக்கும்?",
+          "q_ko": "점검이 끝난 후에는 어떻게 됩니까?",
+          "q_es": "¿Qué sucederá después del mantenimiento?",
+          "q_kn": "ನಿರ್ವಹಣೆಯ ನಂತರ ಏನಾಗುತ್ತದೆ?",
+          "q_ml": "മെയിന്റനൻസിന് ശേഷം എന്ത് സംഭവിക്കും?"
+        }
+      ],
+      "transcript_te": "యాప్ నిర్వహణ ప్రకటన: సిస్టమ్ నవీకరణ కోసం ఈ అర్ధరాత్రి 1 నుండి 5 గంటల వరకు యాప్ సేవలు తాత్కాలికంగా అందుబాటులో ఉండవు. అసౌకర్యానికి క్షమించండి.",
+      "transcript_hi": "ऐप रखरखाव सूचना: सिस्टम अपडेट के लिए आज आधी रात 1 से 5 बजे तक सेवाएँ बंद रहेंगी। असुविधा के लिए हमें खेद है।",
+      "transcript_ta": "செயலி பராமரிப்பு அறிவிப்பு: கணினி புதுப்பிப்புக்காக இன்று நள்ளிரவு 1 மணி முதல் 5 மணி வரை சேவைகள் இயங்காது. சிரமத்திற்கு மன்னிக்கவும்.",
+      "transcript_ko": "앱 점검 안내: 시스템 점검으로 인해 오늘 자정 1시부터 5시까지 서비스가 일시 중단됩니다. 이용에 불편을 드려 죄송합니다.",
+      "transcript_es": "Aviso de mantenimiento de la app: Por actualización del sistema, el servicio no estará disponible esta noche de 1:00 a 5:00. Disculpen las molestias.",
+      "transcript_kn": "ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ವಹಣೆ ಪ್ರಕಟಣೆ: ಸಿಸ್ಟಮ್ ಅಪ್‌ಡೇಟ್‌ಗಾಗಿ ಇಂದು ಮಧ್ಯರಾತ್ರಿ 1 ರಿಂದ 5 ರವರೆಗೆ ಸೇವೆಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ. ತೊಂದರೆಗೆ ಕ್ಷಮೆಯಿರಲಿ.",
+      "transcript_ml": "ആപ്പ് മെയിന്റനൻസ് അറിയിപ്പ്: സിസ്റ്റം അപ്ഡേറ്റിനായി ഇന്ന് അർദ്ധരാത്രി 1 മുതൽ 5 വരെ സേവനങ്ങൾ തടസ്സപ്പെടുന്നതാണ്. അസൗകര്യത്തിൽ ഖേദിക്കുന്നു."
+    },
+    {
+      "id": "l-n3-8",
+      "title": "町内会からのお知らせ (Notice from the neighborhood association)",
+      "script": "みどり町にお住まいの皆様にお知らせします。来月から、ごみの出し方のルールが変わります。これまで、燃えるごみは週に三回集められていましたが、来月からは週に二回になります。また、ペットボトルは、必ずラベルをはがしてから出すようにお願いします。ルールが守られないと、ごみが集められないことがありますので、ご協力をお願いいたします。ご質問がある方は、町内会の事務所までご連絡ください。",
+      "transcript_en": "This is an announcement for everyone living in Midori Town. Starting next month, the rules for putting out garbage will change. Until now, burnable garbage was collected three times a week, but from next month it will be twice a week. Also, for plastic bottles, please be sure to remove the label before putting them out. If the rules are not followed, the garbage may not be collected, so we ask for your cooperation. If you have any questions, please contact the neighborhood association office.",
+      "questions": [
+        {
+          "q": "来月から、燃えるごみの収集は週に何回になりますか。",
+          "q_en": "From next month, how many times a week will burnable garbage be collected?",
+          "options": [
+            "一回 (once)",
+            "二回 (twice)",
+            "三回 (three times)",
+            "四回 (four times)"
+          ],
+          "answer": 1,
+          "q_te": "వచ్చే నెల నుండి తడి చెత్త వారానికి ఎన్ని రోజులు సేకరిస్తారు?",
+          "q_hi": "अगले महीने से कचरा सप्ताह में कितनी बार उठाया जाएगा?",
+          "q_ta": "அடுத்த மாதம் முதல் குப்பை வாரம் எத்தனை முறை சேகரிக்கப்படும்?",
+          "q_ko": "다음 달부터 쓰레기 수거는 주 몇 회입니까?",
+          "q_es": "¿Cuántas veces por semana se recogerá la basura el próximo mes?",
+          "q_kn": "ಮುಂದಿನ ತಿಂಗಳಿಂದ ಕಸವನ್ನು ವಾರಕ್ಕೆ ಎಷ್ಟು ದಿನ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ?",
+          "q_ml": "അടുത്ത മാസം മുതൽ മാലിന്യ ശേഖരണം ആഴ്ചയിൽ എത്ര തവണയാണ്?"
+        },
+        {
+          "q": "ペットボトルを出すとき、何をしなければなりませんか。",
+          "q_en": "What must you do when putting out plastic bottles?",
+          "options": [
+            "ラベルをはがす (remove the label)",
+            "水で洗う (wash with water)",
+            "袋に入れる (put them in a bag)",
+            "名前を書く (write your name)"
+          ],
+          "answer": 0,
+          "q_te": "ప్లాస్టిక్ సీసాలు వేసేటప్పుడు ఏమి చేయాలి?",
+          "q_hi": "प्लास्टिक की बोतलें डालते समय क्या करना अनिवार्य है?",
+          "q_ta": "நெகிழி பாட்டில்களைப் போடும்போது என்ன செய்ய வேண்டும்?",
+          "q_ko": "페트병을 버릴 때 반드시 해야 할 일은 무엇입니까?",
+          "q_es": "¿Qué se debe hacer al desechar botellas de plástico?",
+          "q_kn": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲಿಗಳನ್ನು ಎಸೆಯುವಾಗ ಏನು ಮಾಡಬೇಕು?",
+          "q_ml": "പ്ലാസ്റ്റിക് കുപ്പികൾ കളയുമ്പോൾ എന്ത് ചെയ്യണം?"
+        },
+        {
+          "q": "ルールが守られないと、どうなることがありますか。",
+          "q_en": "What can happen if the rules are not followed?",
+          "options": [
+            "お金を払う (you pay money)",
+            "引っ越さなければならない (you must move away)",
+            "名前を呼ばれる (your name is called out)",
+            "ごみが集められない (the garbage is not collected)"
+          ],
+          "answer": 3,
+          "q_te": "నియమాలు పాటించకపోతే ఏమి జరగవచ్చు?",
+          "q_hi": "नियम न मानने पर क्या हो सकता है?",
+          "q_ta": "விதிகளைப் பின்பற்றாவிட்டால் என்ன நேரிடலாம்?",
+          "q_ko": "규칙을 지키지 않으면 어떻게 될 수 있습니까?",
+          "q_es": "¿Qué puede ocurrir si no se siguen las normas?",
+          "q_kn": "ನಿಯಮಗಳನ್ನು ಪಾಲಿಸದಿದ್ದರೆ ಏನಾಗಬಹುದು?",
+          "q_ml": "നിയമങ്ങൾ പാലിച്ചില്ലെങ്കിൽ എന്ത് സംഭവിച്ചേക്കാം?"
+        }
+      ],
+      "transcript_te": "కాలనీ ప్రకటన: వచ్చే నెల నుండి తడి చెత్త వారానికి రెండు రోజులు మాత్రమే సేకరించబడుతుంది. ప్లాస్టిక్ సీసాలను శుభ్రం చేసి లేబుల్ తీసి వేయాలి.",
+      "transcript_hi": "मोहल्ला सूचना: अगले महीने से गीला कचरा सप्ताह में केवल दो दिन उठाया जाएगा। प्लास्टिक की बोतलों को धोकर लेबल हटाकर ही डालें।",
+      "transcript_ta": "பகுதி அறிவிப்பு: அடுத்த மாதம் முதல் மக்கும் குப்பைகள் வாரத்திற்கு இரண்டு நாட்கள் மட்டுமே சேகரிக்கப்படும். நெகிழி பாட்டில்களைக் கழுவி லேபிளை நீக்கிப் போடவும்.",
+      "transcript_ko": "동네 안내방송: 다음 달부터 일반 쓰레기 수거가 주 2회로 변경됩니다. 페트병은 물로 헹구고 라벨을 떼어 분리수거해 주십시오.",
+      "transcript_es": "Aviso vecinal: A partir del próximo mes la recogida de basura orgánica se limitará a dos veces por semana. Enjuague las botellas de plástico y retire las etiquetas antes de reciclarlas.",
+      "transcript_kn": "ಬಡಾವಣೆ ಪ್ರಕಟಣೆ: ಮುಂದಿನ ತಿಂಗಳಿಂದ ಹಸಿ ಕಸವನ್ನು ವಾರಕ್ಕೆ ಎರಡು ದಿನ ಮಾತ್ರ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲಿಗಳನ್ನು ತೊಳೆದು ಲೇಬಲ್ ತೆಗೆದು ಹಾಕಿ.",
+      "transcript_ml": "റസിഡന്റ്സ് അറിയിപ്പ്: അടുത്ത മാസം മുതൽ ജൈവമാലിന്യങ്ങൾ ആഴ്ചയിൽ രണ്ട് ദിവസം മാത്രമേ ശേഖരിക്കൂ. പ്ലാസ്റ്റിക് കുപ്പികൾ കഴുകി ലേബൽ മാറ്റി ഇടണം."
+    },
+    {
+      "id": "l-n3-9",
+      "title": "友だちの活躍 (A friend's success)",
+      "script": "A: ねえ、聞いた？サッカー部の山田くん、この前の大会で活躍したらしいよ。\nB: うん、聞いたよ。決勝でゴールを決めて、チームが優勝したんだって。\nA: すごいね。それで、来月の全国大会の代表にも選ばれたそうだよ。\nB: へえ、そうなんだ。彼、毎日誰よりも早く来て練習していたもんね。\nA: うん。あんなに頑張っていたんだから、選ばれて当然だよね。\nB: 今度、応援に行こうよ。",
+      "transcript_en": "A: Hey, did you hear? They say Yamada from the soccer club did great at the tournament the other day.\nB: Yeah, I heard. Apparently he scored a goal in the final and the team won the championship.\nA: Amazing. And I hear he was also chosen as a representative for next month's national tournament.\nB: Wow, really. Well, he did come earlier than anyone every day to practice.\nA: Yeah. After working that hard, it's only natural he was chosen.\nB: Let's go cheer him on next time.",
+      "questions": [
+        {
+          "q": "山田くんは大会で何をしましたか。",
+          "q_en": "What did Yamada do at the tournament?",
+          "options": [
+            "ゴールを決めた (scored a goal)",
+            "けがをした (got injured)",
+            "試合に負けた (lost the match)",
+            "応援をした (cheered from the sidelines)"
+          ],
+          "answer": 0,
+          "q_te": "టోర్నమెంట్‌లో తనకా ఏమి సాధించాడు?",
+          "q_hi": "प्रतियोगिता में तानाका ने क्या किया?",
+          "q_ta": "போட்டியில் தனகா என்ன செய்தார்?",
+          "q_ko": "대회에서 다나카 선수는 어떤 활약을 했습니까?",
+          "q_es": "¿Qué logró Tanaka en el torneo?",
+          "q_kn": "ಪಂದ್ಯಾವಳಿಯಲ್ಲಿ ತನಕಾ ಏನು ಸಾಧಿಸಿದರು?",
+          "q_ml": "ടൂർണമെന്റിൽ തനക എന്താണ് ചെയ്തത്?"
+        },
+        {
+          "q": "山田くんは来月、何をしますか。",
+          "q_en": "What will Yamada do next month?",
+          "options": [
+            "部活をやめる (quit the club)",
+            "全国大会に代表として出る (compete in the national tournament as a representative)",
+            "外国へ引っ越す (move abroad)",
+            "サッカーをやめる (stop playing soccer)"
+          ],
+          "answer": 1,
+          "q_te": "వచ్చే నెల తనకా ఏమి చేయబోతున్నాడు?",
+          "q_hi": "अगले महीने तानाका क्या करने जा रहा है?",
+          "q_ta": "அடுத்த மாதம் தனகா என்ன செய்யவுள்ளார்?",
+          "q_ko": "다음 달에 다나카 선수는 무엇을 합니까?",
+          "q_es": "¿Qué hará Tanaka el próximo mes?",
+          "q_kn": "ಮುಂದಿನ ತಿಂಗಳು ತನಕಾ ಏನು ಮಾಡಲಿದ್ದಾರೆ?",
+          "q_ml": "അടുത്ത മാസം തനക എന്ത് ചെയ്യും?"
+        },
+        {
+          "q": "山田くんはどんな選手ですか。",
+          "q_en": "What kind of player is Yamada?",
+          "options": [
+            "あまり練習しなかった (didn't practice much)",
+            "試合に出たことがない (has never played in a match)",
+            "毎日誰よりも早く来て練習していた (came earlier than anyone to practice every day)",
+            "最近サッカーを始めたばかり (only started soccer recently)"
+          ],
+          "answer": 2,
+          "q_te": "తనకా ఎలాంటి క్రీడాకారుడు?",
+          "q_hi": "तानाका किस प्रकार का खिलाड़ी है?",
+          "q_ta": "தனகா எப்படிப்பட்ட விளையாட்டு வீரர்?",
+          "q_ko": "다나카 선수는 어떤 유형의 선수입니까?",
+          "q_es": "¿Qué clase de jugador es Tanaka?",
+          "q_kn": "ತನಕಾ ಯಾವ ರೀತಿಯ ಆಟಗಾರ?",
+          "q_ml": "തനക എങ്ങനെയുള്ള കളിക്കാരനാണ്?"
+        }
+      ],
+      "transcript_te": "సంభాషణ: సాకర్ టోర్నమెంట్‌లో తనకా అద్భుతంగా ఆడాడని విన్నావా? - అవును, చివరి నిమిషంలో నిర్ణయాత్మక గోల్ కొట్టాడు. వచ్చే నెల జాతీయ పోటీలకు ఎంపికయ్యాడు.",
+      "transcript_hi": "बातचीत: क्या तुमने सुना, तानाका ने फुटबॉल टूर्नामेंट में शानदार प्रदर्शन किया? - हाँ, उसने अंतिम क्षणों में विजयी गोल किया। अगले महीने वह राष्ट्रीय प्रतियोगिता में खेलेगा।",
+      "transcript_ta": "உரையாடல்: கால்பந்து போட்டியில் தனகா சிறப்பாக விளையாடியதை கேள்விப்பட்டாயா? - ஆம், கடைசி நிமிடத்தில் வெற்றி கோல் அடித்தான். அடுத்த மாதம் தேசியப் போட்டியில் ஆடவுள்ளான்.",
+      "transcript_ko": "대화: 축구 대회에서 다나카 선수가 대활약했다는 소식 들었어? - 응, 마지막 순간에 결승골을 넣었대. 다음 달에 전국 대회에 나간대.",
+      "transcript_es": "Conversación: ¿Te enteraste de la gran actuación de Tanaka en el torneo de fútbol? - Sí, marcó el gol de la victoria en el último minuto. El próximo mes irá al campeonato nacional.",
+      "transcript_kn": "ಸಂಭಾಷಣೆ: ಫುಟ್‌ಬಾಲ್ ಪಂದ್ಯಾವಳಿಯಲ್ಲಿ ತನಕಾ ಅದ್ಭುತವಾಗಿ ಆಡಿದನೆಂದು ಕೇಳಿದಿರಾ? - ಹೌದು, ಕೊನೆಯ ನಿಮಿಷದಲ್ಲಿ ಗೆಲುವಿನ ಗೋಲು ಹೊಡೆದನು. ಮುಂದಿನ ತಿಂಗಳು ರಾಷ್ಟ್ರೀಯ ಪಂದ್ಯದಲ್ಲಿ ಆಡಲಿದ್ದಾನೆ.",
+      "transcript_ml": "സംഭാഷണം: ഫുട്ബോൾ ടൂർണമെന്റിൽ തനക മികച്ച പ്രകടനം നടത്തിയെന്ന് അറിഞ്ഞോ? - അതെ, അവസാന നിമിഷത്തിൽ വിജയഗോൾ നേടി. അടുത്ത മാസം ദേശീയ മത്സരത്തിൽ പങ്കെടുക്കും."
+    },
+    {
+      "id": "l-n3-10",
+      "title": "取引先との電話と日程調整 (Business Phone Scheduling)",
+      "script": "男：お電話ありがとうございます。ABC商事の田中です。\n女：いつもお世話になっております。XYZ物産の佐藤でございます。新商品の打ち合わせの件でご連絡いたしました。\n男：佐藤様、お世話になっております。来週の日程はいかがでしょうか。\n女：はい、水曜日の午後はご都合よろしいでしょうか。\n男：水曜日は終日出張が入っておりまして、木曜日の午後二時以降でしたら社内におります。\n女：承知いたしました。では木曜日の午後三時に御社へお伺いしてもよろしいでしょうか。\n男：はい、お待ちしております。よろしくお願いいたします。",
+      "transcript_en": "Man: Thank you for calling ABC Trading. This is Tanaka speaking.\nWoman: Thank you as always for your business. This is Sato from XYZ Products. I am calling regarding the meeting about the new product.\nMan: Ms. Sato, thank you. How does your schedule look for next week?\nWoman: Would Wednesday afternoon be convenient for you?\nMan: I will be away on a business trip all day Wednesday, but I will be in the office after 2:00 PM on Thursday.\nWoman: Understood. In that case, may I visit your office at 3:00 PM on Thursday?\nMan: Yes, that would be fine. We look forward to seeing you.",
+      "transcript_te": "పురుషుడు: ABC ట్రేడింగ్‌కు కాల్ చేసినందుకు ధన్యవాదాలు. నేను తనకాను.\nమహిళ: నమస్కారం. నేను XYZ ప్రోడక్ట్స్ నుండి సాటోను. కొత్త ఉత్పత్తికి సంబంధించిన సమావేశం గురించి ఫోన్ చేశాను.\nపురుషుడు: సాటో గారూ, నమస్కారం. వచ్చే వారం మీ షెడ్యూల్ ఎలా ఉంది?\nమహిళ: బుధవారం మధ్యాహ్నం మీకు వీలవుతుందా?\nపురుషుడు: బుధవారం రోజంతా నేను బిజినెస్ ట్రిప్‌లో ఉంటాను. గురువారం మధ్యాహ్నం 2 గంటల తర్వాత ఆఫీసులో ఉంటాను.\nమహిళ: సరేనండి. అయితే గురువారం మధ్యాహ్నం 3 గంటలకు మీ ఆఫీసుకు రావచ్చా?\nపురుషుడు: అవును, ఖచ్చితంగా. మీ రాక కోసం ఎదురుచూస్తాము.",
+      "transcript_hi": "पुरुष: एबीसी ट्रेडिंग में फोन करने के लिए धन्यवाद। मैं तानाका बोल रहा हूँ।\nमहिला: नमस्कार। मैं एक्सवाईज़ेड प्रोडक्ट्स से सातो बोल रही हूँ। नए उत्पाद की बैठक के सिलसिले में फोन किया है।\nपुरुष: सातो जी, नमस्कार। अगले हफ्ते आपका क्या कार्यक्रम है?\nमहिला: क्या बुधवार दोपहर आपके लिए ठीक रहेगा?\nपुरुष: बुधवार को मैं पूरे दिन दौरे पर रहूँगा, लेकिन गुरुवार दोपहर 2 बजे के बाद कार्यालय में रहूँगा।\nमहिला: ठीक है। तो क्या मैं गुरुवार दोपहर 3 बजे आपके कार्यालय आ सकती हूँ?\nपुरुष: जी हाँ, बिल्कुल। आपका स्वागत है।",
+      "transcript_ta": "ஆண்: ஏபிசி டிரேடிங். நான் தனகா பேசுகிறேன்.\nபெண்: வணக்கம். நான் எக்ஸ்ஒய்இசட் நிறுவனத்திலிருந்து சாட்டோ பேசுகிறேன். புதிய பொருள் தொடர்பான சந்திப்பிற்காக அழைத்தேன்.\nஆண்: சாட்டோ, வணக்கம். அடுத்த வாரம் உங்கள் நேரம் எப்படி உள்ளது?\nபெண்: புதன்கிழமை மதியம் உங்களுக்கு வசதியாக இருக்குமா?\nஆண்: புதன்கிழமை நான் அலுவலகப் பயணத்தில் இருப்பேன். வியாழன் மதியம் 2 மணிக்கு மேல் அலுவலகத்தில் இருப்பேன்.\nபெண்: சரி. வியாழன் மதியம் 3 மணிக்கு உங்கள் அலுவலகத்திற்கு வரலாமா?\nஆண்: ஆம், தாராளமாக வரலாம். காத்திருக்கிறோம்.",
+      "transcript_ko": "남성: 전화 감사합니다. ABC상사의 다나카입니다.\n여성: 안녕하십니까. XYZ물산의 사토입니다. 신제품 회의 건으로 연락드렸습니다.\n남성: 사토 님, 안녕하십니까. 다음 주 일정은 어떠십니까?\n여성: 수요일 오후는 괜찮으신가요?\n남성: 수요일은 종일 출장이 있어서요, 목요일 오후 2시 이후라면 회사에 있습니다.\n여성: 알겠습니다. 그럼 목요일 오후 3시에 찾아봬도 될까요?\n남성: 네, 기다리겠습니다. 잘 부탁드립니다.",
+      "transcript_es": "Hombre: Gracias por llamar a ABC Trading. Habla Tanaka.\nMujer: Gracias por su atención. Soy Sato de XYZ Products. Llamo con relación a la reunión sobre el nuevo producto.\nHombre: Estimada Sra. Sato. ¿Cómo está su disponibilidad para la próxima semana?\nMujer: ¿Le vendría bien el miércoles por la tarde?\nHombre: El miércoles estaré de viaje de negocios todo el día, pero el jueves después de las 14:00 estaré en la oficina.\nMujer: Entendido. En ese caso, ¿puedo pasar por su oficina el jueves a las 15:00?\nHombre: Sí, perfecto. Aquí la esperamos.",
+      "transcript_kn": "ಪುರುಷ: ಎಬಿಸಿ ಟ್ರೇಡಿಂಗ್‌ಗೆ ಕರೆ ಮಾಡಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು. ನಾನು ತನಕಾ.\nಮಹಿಳೆ: ನಮಸ್ಕಾರ. ನಾನು ಎಕ್ಸ್‌ವೈಝೆಡ್ ಕಂಪನಿಯಿಂದ ಸಾತೋ. ಹೊಸ ಉತ್ಪನ್ನದ ಸಭೆಯ ಬಗ್ಗೆ ಕರೆ ಮಾಡಿದ್ದೇನೆ.\nಪುರುಷ: ಸಾತೋ ಅವರೇ, ಮುಂದಿನ ವಾರದ ನಿಮ್ಮ ಸಮಯ ಹೇಗಿದೆ?\nಮಹಿಳೆ: ಬುಧವಾರ ಮಧ್ಯಾಹ್ನ ಅನುಕೂಲವಾಗುವುದೇ?\nಪುರುಷ: ಬುಧವಾರ ಪ್ರವಾಸದಲ್ಲಿದ್ದೇನೆ, ಗುರುವಾರ ಮಧ್ಯಾಹ್ನ 2 ಗಂಟೆಯ ನಂತರ ಕಚೇರಿಯಲ್ಲಿರುತ್ತೇನೆ.\nಮಹಿಳೆ: ಸರಿ, ಗುರುವಾರ ಮಧ್ಯಾಹ್ನ 3 ಗಂಟೆಗೆ ಬರಬಹುದೇ?\nಪುರುಷ: ಖಂಡಿತ, ಭೇಟಿಯಾಗೋಣ.",
+      "transcript_ml": "പുരുഷൻ: എബിസി ട്രേഡിംഗിലേക്ക് സ്വാഗതം. ഞാൻ തനക സംസാരിക്കുന്നു.\nസ്ത്രീ: നമസ്കാരം. എക്സ് വൈ സെഡ് കമ്പനിയിൽ നിന്ന് സാറ്റോ ആണ്. പുതിയ ഉൽപ്പന്നത്തിന്റെ മീറ്റിംഗിനെക്കുറിച്ച് സംസാരിക്കാൻ വിളിച്ചതാണ്.\nപുരുഷൻ: സാറ്റോ, അടുത്ത ആഴ്ച എപ്പോഴാണ് സൗകര്യം?\nസ്ത്രീ: ബുധനാഴ്ച ഉച്ചയ്ക്ക് ശേഷം സൗകര്യപ്പെടുമോ?\nപുരുഷൻ: ബുധനാഴ്ച യാത്രയിലാണ്, വ്യാഴാഴ്ച ഉച്ചയ്ക്ക് 2 മണിക്ക് ശേഷം ഓഫീസിലുണ്ടാകും.\nസ്ത്രീ: എങ്കിൽ വ്യാഴാഴ്ച 3 മണിക്ക് ഓഫീസിൽ വരാമോ?\nപുരുഷൻ: തീർച്ചയായും, സ്വാഗതം.",
+      "questions": [
+        {
+          "q": "二人は 何曜日の 何時に 会うことに しましたか。",
+          "q_en": "On what day and time did they agree to meet?",
+          "q_te": "వారు ఏ రోజు ఏ సమయానికి కలవాలని నిర్ణయించుకున్నారు?",
+          "q_hi": "वे किस दिन और कितने बजे मिलने पर सहमत हुए?",
+          "q_ta": "அவர்கள் எந்தக் கிழமை எத்தனை மணிக்குச் சந்திக்க ஒப்புக்கொண்டனர்?",
+          "q_ko": "두 사람은 무슨 요일 몇 시에 만나기로 했습니까?",
+          "q_es": "¿Qué día y a qué hora acordaron reunirse?",
+          "q_kn": "ಅವರು ಯಾವ ವಾರ ಎಷ್ಟು ಗಂಟೆಗೆ ಭೇಟಿಯಾಗಲು ನಿರ್ಧರಿಸಿದರು?",
+          "q_ml": "അവർ ഏത് ദിവസമാണ് എത്ര മണിക്കാണ് കാണാൻ തീരുമാനിച്ചത്?",
+          "options": [
+            "木曜日の 午後 3時",
+            "水曜日の 午後 2時",
+            "木曜日の 午後 2時",
+            "水曜日の 午前中"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "男の人は なぜ 水曜日に 会えませんか。",
+          "q_en": "Why can't the man meet on Wednesday?",
+          "q_te": "ఆ వ్యక్తి బుధవారం ఎందుకు కలవలేడు?",
+          "q_hi": "पुरुष बुधवार को क्यों नहीं मिल सकता?",
+          "q_ta": "ஆணால் புதன்கிழமை ஏன் சந்திக்க முடியாது?",
+          "q_ko": "남성은 왜 수요일에 만날 수 없습니까?",
+          "q_es": "¿Por qué no puede reunirse el hombre el miércoles?",
+          "q_kn": "ಪುರುಷನಿಗೆ ಬುಧವಾರ ಏಕೆ ಭೇಟಿಯಾಗಲು ಸಾಧ್ಯವಿಲ್ಲ?",
+          "q_ml": "പുരുഷന് ബുധനാഴ്ച എന്തുകൊണ്ട് കാണാൻ കഴിയില്ല?",
+          "options": [
+            "終日 出張が 入っているから",
+            "社内会議が あるから",
+            "休みを 取っているから",
+            "来客が あるから"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n3-11",
+      "title": "美術館の特別展音声ガイド (Art Museum Audio Guide)",
+      "script": "音声ガイド：皆様、江戸時代の浮世絵特別展へようこそ。現在ご覧いただいているのは、葛飾北斎の代表作『富嶽三十六景・神奈川沖浪裏』です。激しく波打つ巨大な波と、その波間に翻弄される小舟、そして遠景に小さく佇む富士山が見事な対比を描いています。北斎はこの作品で、当時輸入されたばかりの西洋の顔料『ベロ藍』を大胆に使用し、深い海の青を鮮やかに表現しました。この革新的な構図と色彩は、のちにモネやゴッホなどヨーロッパの印象派画家たちにも多大な影響を与えました。",
+      "transcript_en": "Audio Guide: Welcome to the Special Exhibition of Edo-period Ukiyo-e. Before you is Katsushika Hokusai's masterpiece, 'The Great Wave off Kanagawa' from the Thirty-Six Views of Mount Fuji. The dynamic contrast between the roaring giant wave, the small boats tossed about, and Mount Fuji standing quietly in the background is breathtaking. In this work, Hokusai boldly utilized 'Berlin Blue'—a Western pigment recently imported at the time—to vividly capture the deep blue of the sea. This innovative composition and color deeply influenced European Impressionists like Monet and Van Gogh.",
+      "transcript_te": "ఆడియో గైడ్: ఎదో కాలపు ఉకియో-ఎ ప్రత్యేక ప్రదర్శనకు స్వాగతం. మీరు చూస్తున్నది కట్సుషికా హోకుసాయి ప్రసిద్ధ కళాఖండం 'కనగావా తీరపు మహా తరంగం'. ఉవ్వెత్తున ఎగసిపడుతున్న రాకాసి అలలు, వాటి మధ్య చిక్కుకున్న చిన్న పడవలు, దూరంగా ప్రశాంతంగా కనిపిస్తున్న ఫుజి పర్వతం అద్భుతమైన వైవిధ్యాన్ని చూపుతాయి. ఆ కాలంలో పాశ్చాత్య దేశాల నుండి దిగుమతి అయిన 'బెర్లిన్ బ్లూ' రంగును హోకుసాయి ఉపయోగించి సముద్రపు నీలి రంగును సజీవంగా చిత్రీకరించాడు. ఈ శైలి తరువాత మోనెట్, వాన్ గోహ్ వంటి పాశ్చాత్య చిత్రకారులను తీవ్రంగా ప్రభావితం చేసింది.",
+      "transcript_hi": "ऑडियो गाइड: एदो काल की उकियो-ए विशेष प्रदर्शनी में आपका स्वागत है। आपके सामने होकुसाई की विश्वप्रसिद्ध कृति 'कानागावा की विशाल लहर' है। तूफानी लहरें, उनके बीच फँसी छोटी नावें और पृष्ठभूमि में शांत खड़ा माउंट फ़ूजी एक अद्भुत दृश्य प्रस्तुत करते हैं। होकुसाई ने गहरे नीले रंग के लिए उस समय आयातित 'बर्लिन ब्लू' रंग का सुंदर उपयोग किया था। इस रचना ने बाद में मोने और वान गॉग जैसे यूरोपीय चित्रकारों को भी गहराई से प्रभावित किया।",
+      "transcript_ta": "வழிகாட்டி: எடோ காலத்து ஓவியக் கண்காட்சிக்கு நல்வரவு. நீங்கள் காண்பது ஹோகுசாயின் புகழ்பெற்ற 'கனகாவா பெருமலை அலை' ஓவியம். பொங்கி எழும் மாபெரும் அலை, அதில் சிக்கும் சிறு படகுகள், தொலைவில் தெரியும் புஜி மலை ஆகியவை வியக்க வைக்கின்றன. அப்போது மேலைநாட்டிலிருந்து இறக்குமதி செய்யப்பட்ட 'பெர்லின் நீலம்' வண்ணத்தைப் பயன்படுத்தி கடலின் ஆழத்தை வரைந்தார். இது மேலைநாட்டு ஓவியர்களான மோனே மற்றும் வான்கா போன்றோரையும் கவர்ந்தது.",
+      "transcript_ko": "오디오 가이드: 에도 시대 우키요에 특별전에 오신 것을 환영합니다. 지금 보시는 작품은 가쓰시카 호쿠사이의 대표작 '가나가와 해변의 높은 파도 아래'입니다. 거대한 파도와 그 사이의 작은 배, 그리고 원경의 후지산이 대비를 이룹니다. 당시 수입된 서양 안료인 '베를린 블루'를 과감히 사용하여 깊은 바다의 푸른빛을 표현했습니다. 이 구도와 색채는 훗날 모네나 고흐 등 유럽 인상파 화가들에게도 큰 영향을 주었습니다.",
+      "transcript_es": "Audioguía: Bienvenidos a la exposición de grabados Ukiyo-e del período Edo. Ante ustedes se encuentra la obra maestra de Hokusai, 'La gran ola de Kanagawa'. El contraste entre la descomunal ola rompiente, las frágiles barcas y el lejano monte Fuji es extraordinario. Hokusai empleó audazmente el pigmento 'Azul de Berlín', recién importado de Occidente, para plasmar el intenso azul marino. Esta composición influyó decisivamente en impresionistas europeos como Monet y Van Gogh.",
+      "transcript_kn": "ಆಡಿಯೋ ಗೈಡ್: ಉಕಿಯೋ-ಎ ಕಲಾ ಪ್ರದರ್ಶನಕ್ಕೆ ಸುಸ್ವಾಗತ. ನೀವು ವೀಕ್ಷಿಸುತ್ತಿರುವುದು ಹೊಕುಸಾಯಿಯ ಪ್ರಸಿದ್ಧ ಕಲಾಕೃತಿ 'ಕನಗಾವಾದ ಮಹಾ ಅಲೆ'. ಭೋರ್ಗರೆಯುವ ಅಲೆಗಳು, ದೋಣಿಗಳು ಮತ್ತು ದೂರದ ಫೂಜಿ ಪರ್ವತ ಸುಂದರವಾಗಿ ಮೂಡಿಬಂದಿದೆ. ಆ ಕಾಲದಲ್ಲಿ ಆಮದು ಮಾಡಿಕೊಂಡಿದ್ದ 'ಬರ್ಲಿನ್ ನೀಲಿ' ಬಣ್ಣವನ್ನು ಬಳಸಿ ಸಮುದ್ರದ ನೀಲಿಯನ್ನು ಚಿತ್ರಿಸಲಾಯಿತು. ಇದು ವ್ಯಾನ್ ಗೋ ಮುಂತಾದ ಯೂರೋಪಿಯನ್ ಕಲಾವಿದರ ಮೇಲೂ ಪ್ರಭಾವ ಬೀರಿತು.",
+      "transcript_ml": "ഓഡിയോ ഗൈഡ്: ഉക്കിയോ-ഇ ചിത്രപ്രദർശനത്തിലേക്ക് സ്വാഗതം. നിങ്ങൾ കാണുന്നത് ഹൊകുസായിയുടെ 'കനഗാവയിലെ വൻതിരമാല' എന്ന വിഖ്യാത ചിത്രമാണ്. ആർത്തലയ്ക്കുന്ന തിരമാലകളും ചെറിയ വള്ളങ്ങളും ദൂരെ ഫ്യൂജി മലയും മനോഹരമായി ചിത്രീകരിച്ചിരിക്കുന്നു. കടലിന്റെ നീലിമ പകർത്താൻ 'ബെർലിൻ ബ്ലൂ' എന്ന നിറമാണ് ഉപയോഗിച്ചത്. ഇത് യൂറോപ്യൻ ചിത്രകാരന്മാരെയും സ്വാധീനിച്ചു.",
+      "questions": [
+        {
+          "q": "この 作品で 描かれている 山の 名前は 何ですか。",
+          "q_en": "What is the name of the mountain depicted in this work?",
+          "q_te": "ఈ చిత్రంలో చిత్రీకరించబడిన పర్వతం పేరు ఏమిటి?",
+          "q_hi": "इस चित्र में किस पर्वत को दर्शाया गया है?",
+          "q_ta": "இந்த ஓவியத்தில் சித்தரிக்கப்பட்டுள்ள மலையின் பெயர் என்ன?",
+          "q_ko": "이 작품에 묘사된 산의 이름은 무엇입니까?",
+          "q_es": "¿Qué montaña está representada en esta obra?",
+          "q_kn": "ಈ ಕಲಾಕೃತಿಯಲ್ಲಿ ಚಿತ್ರಿಸಲಾದ ಪರ್ವತದ ಹೆಸರೇನು?",
+          "q_ml": "ഈ ചിത്രത്തിൽ കാണിച്ചിരിക്കുന്ന മലയുടെ പേരെന്താണ്?",
+          "options": [
+            "富士山 (ふじさん)",
+            "高尾山",
+            "阿蘇山",
+            "立山"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "北斎が 海の青を 表現するために 使ったのは 何ですか。",
+          "q_en": "What did Hokusai use to express the blue of the sea?",
+          "q_te": "సముద్రపు నీలి రంగును చూపించడానికి హోకుసాయి దేనిని ఉపయోగించాడు?",
+          "q_hi": "समुद्र के नीले रंग को दर्शाने के लिए होकुसाई ने क्या इस्तेमाल किया?",
+          "q_ta": "கடலின் நீலத்தைக் காட்ட ஹோகுசாய் எதைப் பயன்படுத்தினார்?",
+          "q_ko": "호쿠사이가 바다의 푸른색을 표현하기 위해 사용한 것은 무엇입니까?",
+          "q_es": "¿Qué utilizó Hokusai para plasmar el azul del mar?",
+          "q_kn": "ಸಮುದ್ರದ ನೀಲಿ ಬಣ್ಣವನ್ನು ಚಿತ್ರಿಸಲು ಹೊಕುಸಾಯಿ ಏನನ್ನು ಬಳಸಿದರು?",
+          "q_ml": "കടലിന്റെ നീലനിറം പകർത്താൻ ഹൊകുസായി എന്താണ് ഉപയോഗിച്ചത്?",
+          "options": [
+            "ベロ藍 (西洋の顔料)",
+            "日本の 伝統的な 墨",
+            "貝殻の 粉",
+            "植物の 汁"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n3-12",
+      "title": "地域ラジオのイベント情報 (Local Radio Event News)",
+      "script": "DJ：時刻は午前十一時を回りました。続いて、週末のイベント情報です。今週の日曜日、市民会館前広場にて『春の国際交流フェスティバル』が開催されます。世界二十か国以上の伝統料理の屋台が並び、民族音楽の演奏や舞踊ステージも楽しめます。入場は無料で、午前十時から午後四時まで行われます。なお、会場周辺の駐車場は大変混雑が予想されますので、公共交通機関をご利用ください。最寄りの市民会館前バス停からは徒歩一分です。",
+      "transcript_en": "DJ: It is just past 11:00 AM. Next, our weekend event information. This Sunday, the 'Spring International Exchange Festival' will be held at the plaza in front of the Civic Hall. Food stalls featuring traditional cuisine from over twenty countries worldwide will line up, and you can enjoy folk music and dance performances. Admission is free, running from 10:00 AM to 4:00 PM. As parking will be extremely crowded, please use public transit. It is a one-minute walk from the Civic Hall bus stop.",
+      "transcript_te": "DJ: సమయం ఉదయం 11 గంటలు దాటింది. వారాంతపు ఈవెంట్ విశేషాలు. ఈ ఆదివారం సివిక్ హాల్ ముందున్న మైదానంలో 'స్ప్రింగ్ ఇంటర్నేషనల్ ఎక్స్ఛేంజ్ ఫెస్టివల్' జరగనుంది. ప్రపంచంలోని 20 కంటే ఎక్కువ దేశాల సాంప్రదాయ వంటకాల స్టాల్స్ ఉంటాయి, జానపద సంగీతం మరియు నృత్య ప్రదర్శనలు చూడవచ్చు. ప్రవేశం ఉచితం, ఉదయం 10 నుండి సాయంత్రం 4 వరకు జరుగుతుంది. పార్కింగ్ రద్దీగా ఉంటుంది కాబట్టి బస్సు లేదా రైలు ద్వారా రండి. బస్ స్టాప్ నుండి నడక దూరం ఒక్క నిమిషం మాత్రమే.",
+      "transcript_hi": "डीजे: सुबह के 11 बज चुके हैं। अब सप्ताहांत के कार्यक्रमों की जानकारी। इस रविवार सिविक हॉल मैदान में 'वसंत अंतर्राष्ट्रीय सांस्कृतिक महोत्सव' आयोजित होगा। 20 से अधिक देशों के पारंपरिक व्यंजनों के स्टॉल लगेंगे और लोक संगीत व नृत्य का आनंद लिया जा सकेगा। प्रवेश निःशुल्क है, समय सुबह 10 से शाम 4 बजे तक। भारी भीड़ के कारण सार्वजनिक परिवहन का उपयोग करें। बस स्टॉप से केवल 1 मिनट की दूरी है।",
+      "transcript_ta": "டிஜே: நேரம் காலை 11 மணி. வார இறுதி நிகழ்வுகள். இந்த ஞாயிறு நகர மண்டப வளாகத்தில் 'சர்வதேச கலாச்சார விழா' நடைபெறுகிறது. 20-க்கும் மேற்பட்ட நாடுகளின் பாரம்பரிய உணவு அங்காடிகளும் கலை நிகழ்ச்சிகளும் இடம்பெறும். அனுமதி இலவசம், காலை 10 முதல் மாலை 4 மணி வரை. வாகன நெரிசல் காரணமாக பொதுப் போக்குவரத்தைப் பயன்படுத்தவும். பேருந்து நிறுத்தத்திலிருந்து ஒரு நிமிட நடைபயணம்.",
+      "transcript_ko": "DJ: 11시를 막 넘겼습니다. 이어서 주말 행사 안내입니다. 이번 주 일요일 시민회관 앞 광장에서 '봄 국제교류 축제'가 열립니다. 세계 20여 개국의 전통 음식 포장마차와 민속 음악, 댄스 무대를 즐기실 수 있습니다. 입장료는 무료이며 오전 10시부터 오후 4시까지 진행됩니다. 주차장이 혼잡하므로 대중교통을 이용해 주십시오.",
+      "transcript_es": "Locutor: Son pasadas las 11:00 de la mañana. Veamos los eventos del fin de semana. Este domingo se celebrará el 'Festival de Intercambio Internacional de Primavera' en la plaza frente al Centro Cívico. Habrá puestos de comida tradicional de más de veinte países, música folclórica y danza. Entrada gratuita, de 10:00 a 16:00. Se recomienda usar transporte público por la falta de aparcamiento.",
+      "transcript_kn": "ಡಿಜೆ: ಸಮಯ ಬೆಳಿಗ್ಗೆ 11 ಗಂಟೆ. ವಾರಾಂತ್ಯದ ಈವೆಂಟ್ ವಿವರ. ಈ ಭಾನುವಾರ ಸಿವಿಕ್ ಹಾಲ್ ಮೈದಾನದಲ್ಲಿ 'ಅಂತರರಾಷ್ಟ್ರೀಯ ಸಾಂಸ್ಕೃತಿಕ ಉತ್ಸವ' ನಡೆಯಲಿದೆ. 20 ಕ್ಕೂ ಹೆಚ್ಚು ದೇಶಗಳ ಸಾಂಪ್ರದಾಯಿಕ ಆಹಾರ ಮತ್ತು ನೃತ್ಯ ಪ್ರದರ್ಶನಗಳಿರುತ್ತವೆ. ಪ್ರವೇಶ ಉಚಿತ, ಬೆಳಿಗ್ಗೆ 10 ರಿಂದ ಸಂಜೆ 4 ರವರೆಗೆ. ಬಸ್ ನಿಲ್ದಾಣದಿಂದ ಕೇವಲ ಒಂದು ನಿಮಿಷದ ದಾರಿ.",
+      "transcript_ml": "ഡിജെ: സമയം 11 മണി കഴിഞ്ഞു. വാരാന്ത്യ പരിപാടികൾ. ഈ ഞായറാഴ്ച സിവിക് ഹാൾ മൈതാനത്ത് 'അന്താരാഷ്ട്ര സൗഹൃദോത്സവം' നടക്കും. 20-ലധികം രാജ്യങ്ങളിലെ പരമ്പരാഗത ഭക്ഷണങ്ങളും നൃത്യസംഗീത പരിപാടികളും ഉണ്ടാകും. പ്രവേശനം സൗജന്യമാണ്, രാവിലെ 10 മുതൽ വൈകുന്നേരം 4 വരെ. ബസ് സ്റ്റോപ്പിൽ നിന്ന് 1 മിനിറ്റ് നടക്കാനുള്ള ദൂരമേയുള്ളൂ.",
+      "questions": [
+        {
+          "q": "フェスティバルの 入場料は いくらですか。",
+          "q_en": "How much is the admission fee for the festival?",
+          "q_te": "ఉత్సవానికి ప్రవేశ రుసుము ఎంత?",
+          "q_hi": "महोत्सव का प्रवेश शुल्क कितना है?",
+          "q_ta": "விழாவின் நுழைவுக் கட்டணம் எவ்வளவு?",
+          "q_ko": "축제의 입장료는 얼마입니까?",
+          "q_es": "¿Cuánto cuesta la entrada al festival?",
+          "q_kn": "ಉತ್ಸವದ ಪ್ರವೇಶ ಶುಲ್ಕ ಎಷ್ಟು?",
+          "q_ml": "ഉത്സവത്തിന്റെ പ്രവേശന ഫീസ് എത്രയാണ്?",
+          "options": [
+            "無料 (0円)",
+            "500円",
+            "1,000円",
+            "2,000円"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "アナウンサーは なぜ 公共交通機関の 利用を 勧めていますか。",
+          "q_en": "Why does the announcer recommend using public transportation?",
+          "q_te": "ప్రకటనకర్త ప్రజా రవాణాను ఎందుకు సిఫార్సు చేస్తున్నారు?",
+          "q_hi": "उद्घोषक सार्वजनिक परिवहन के उपयोग की सलाह क्यों दे रहे हैं?",
+          "q_ta": "செய்தியாளர் பொதுப் போக்குவரத்தைப் பயன்படுத்த பரிந்துரைப்பது ஏன்?",
+          "q_ko": "아나운서는 왜 대중교통 이용을 권장합니까?",
+          "q_es": "¿Por qué recomienda el locutor usar el transporte público?",
+          "q_kn": "ಸಾರ್ವಜನಿಕ ಸಾರಿಗೆಯನ್ನು ಬಳಸಲು ಏಕೆ ಸೂಚಿಸುತ್ತಿದ್ದಾರೆ?",
+          "q_ml": "പൊതുഗതാഗതം ഉപയോഗിക്കാൻ നിർദ്ദേശിക്കുന്നത് എന്തുകൊണ്ട്?",
+          "options": [
+            "駐車場の 混雑が 予想されるから",
+            "バスの 運賃が 無料だから",
+            "道路が 工事中だから",
+            "雨が 降る 予定だから"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n3-13",
+      "title": "社内機器のトラブル対応 (Office Troubleshooting)",
+      "script": "女：すみません、高橋さん。コピー機で資料をカラー印刷しようとしたら、エラー表示が出て動かなくなってしまったんです。\n男：どれどれ……あ、紙詰まりのランプが点滅しているね。横のカバーを開けてみよう。\n女：あ、奥のほうに紙が折れて引っかかっています。\n男：無理に引っ張ると破れて部品に残ってしまうから、この緑色のレバーを下げて、ゆっくり引き抜いてごらん。\n女：はい……あ、取れました！\n男：よかった。カバーを閉めたら、念のためインクの残量も確認しておこう。黄色が残り少ないみたいだから、総務部に新しいカートリッジを頼んでおくね。",
+      "transcript_en": "Woman: Excuse me, Takahashi-san. When I tried to print materials in color on the copier, an error message appeared and it stopped working.\nMan: Let me see... Ah, the paper jam light is blinking. Let's open the side cover.\nWoman: Oh, a folded piece of paper is caught deep inside.\nMan: If you pull it forcefully it will tear and leave scraps inside, so lower this green lever and pull it out gently.\nWoman: Okay... Ah, it came out!\nMan: Great. Once you close the cover, let's check the ink levels just in case. It looks like yellow is running low, so I'll ask General Affairs for a new cartridge.",
+      "transcript_te": "మహిళ: క్షమించండి, తకాహాషి గారూ. కాపీయర్‌లో రంగుల ప్రింట్ తీయబోతుంటే ఎర్రర్ వచ్చి ఆగిపోయింది.\nపురుషుడు: చూద్దాం... ఆ, పేపర్ జామ్ లైట్ బ్లింక్ అవుతోంది. పక్క కవర్ తెరుద్దాం.\nమహిళ: అవును, లోపల కాగితం నలిగి ఇరుక్కుపోయింది.\nపురుషుడు: బలంగా లాగితే చిరిగి లోపలే ఉండిపోతుంది, ఈ ఆకుపచ్చ లీవర్‌ను దించి నెమ్మదిగా బయటకు లాగండి.\nమహిళ: సరే... ఆ, వచ్చేసింది!\nపురుషుడు: మంచిది. కవర్ మూసిన తర్వాత ఇంక్ ఎంతుందో కూడా చూద్దాం. పసుపు రంగు ఇంక్ తక్కువగా ఉంది, అడ్మిన్ విభాగాన్ని కొత్త కార్ట్రిడ్జ్ అడుగుతాను.",
+      "transcript_hi": "महिला: सुनिए ताकाहाशी जी, फोटोकॉपी मशीन में कलर प्रिंट निकालने की कोशिश की तो एरर आ गया और मशीन रुक गई।\nपुरुष: ज़रा देखने दीजिए... हाँ, पेपर जैम की लाइट जल रही है। साइड का ढक्कन खोलते हैं।\nमहिला: अरे, अंदर मुड़ा हुआ कागज़ फँसा है।\nपुरुष: ज़ोर से मत खींचो वरना फटकर अंदर रह जाएगा। यह हरा लीवर नीचे करके धीरे से निकालो।\nमहिला: जी... हाँ, निकल गया!\nपुरुष: बहुत बढ़िया। अब स्याही भी देख लेते हैं। पीली स्याही कम लग रही है, मैं एडमिन से नया कार्ट्रिज मँगाता हूँ।",
+      "transcript_ta": "பெண்: மன்னிக்கவும் தகாஹாஷி, நகல் எடுக்கும் இயந்திரத்தில் வண்ண அச்சு எடுக்க முயன்றபோது பிழை ஏற்பட்டு நின்றுவிட்டது.\nஆண்: பார்க்கிறேன்... தாள் சிக்கியதற்கான விளக்கு எரிகிறது. பக்கவாட்டு கதவைத் திறப்போம்.\nபெண்: உள்ளே தாள் மடிந்து சிக்கியுள்ளது.\nஆண்: பலமாக இழுத்தால் கிழிந்துவிடும். இந்த பச்சை நிற நெம்புகோலை இறக்கி மெதுவாக இழுங்கள்.\nபெண்: சரி... வந்துவிட்டது!\nஆண்: நன்று. மூடியை மூடிவிட்டு மை அளவையும் சரிபார்ப்போம். மஞ்சள் மை குறைவாக உள்ளது, புதியது கேட்டுப் பெறுகிறேன்.",
+      "transcript_ko": "여성: 다카하시 씨, 복사기에서 컬러 인쇄를 하려는데 오류가 뜨면서 멈춰 버렸어요.\n남성: 어디 봐요... 아, 용지 걸림 램프가 깜빡이네요. 옆면 덮개를 열어봅시다.\n여성: 아, 안쪽에 종이가 구겨져 걸려 있네요.\n남성: 억지로 당기면 찢어지니까, 이 초록색 레버를 내리고 천천히 빼내 보세요.\n여성: 네... 아, 빠졌어요!\n남성: 다행이네요. 덮개를 닫고 잉크 잔량도 확인합시다. 노란색이 부족해 보이니 총무부에 새 카트리지를 요청해 둘게요.",
+      "transcript_es": "Mujer: Disculpe, Takahashi. Al intentar imprimir en color en la fotocopiadora, salió un error y se detuvo.\nHombre: A ver... Ah, parpadea la luz de atasco de papel. Abramos la cubierta lateral.\nMujer: Sí, hay un papel doblado y atascado en el fondo.\nHombre: Si tiras con fuerza se romperá y quedarán restos, así que baja esta palanca verde y tira suavemente.\nMujer: De acuerdo... ¡Ah, ya salió!\nHombre: Menos mal. Al cerrar la tapa, comprobemos la tinta. El amarillo se está agotando, pediré un cartucho a Administración.",
+      "transcript_kn": "ಮಹಿಳೆ: ಕ್ಷಮಿಸಿ ತಕಾಹಾಶಿ, ಕಾಪಿಯರ್‌ನಲ್ಲಿ ಕಲರ್ ಪ್ರಿಂಟ್ ಹಾಕುವಾಗ ದೋಷ ಬಂದು ನಿಂತುಹೋಯಿತು.\nಪುರುಷ: ನೋಡೋಣ... ಪೇಪರ್ ಜ್ಯಾಮ್ ಆಗಿದೆ. ಪಕ್ಕದ ಬಾಗಿಲು ತೆರೆಯೋಣ.\nಮಹಿಳೆ: ಒಳಗೆ ಕಾಗದ ಸಿಲುಕಿಕೊಂಡಿದೆ.\nಪುರುಷ: ಜೋರಾಗಿ ಎಳೆಯಬೇಡಿ, ಹರಿದುಹೋಗುತ್ತದೆ. ಈ ಹಸಿರು ಲಿವರ್ ಕೆಳಗೆ ಮಾಡಿ ನಿಧಾನವಾಗಿ ಎಳೆಯಿರಿ.\nಮಹಿಳೆ: ಸರಿ... ಬಂತು!\nಪುರುಷ: ಒಳ್ಳೆಯದು. ಮುಚ್ಚಳ ಮುಚ್ಚಿ ಇಂಕ್ ಎಷ್ಟಿದೆ ನೋಡೋಣ. ಹಳದಿ ಇಂಕ್ ಕಡಿಮೆಯಿದೆ, ಹೊಸದನ್ನು ತರಿಸೋಣ.",
+      "transcript_ml": "സ്ത്രീ: തകാഹാഷി, പ്രിന്ററിൽ കളർ പ്രിന്റ് എടുക്കാൻ നോക്കിയപ്പോൾ എറർ കാണിച്ച് നിന്നുപോയി.\nപുരുഷൻ: നോക്കട്ടെ... പേപ്പർ ജാം ആയതാണ്. സൈഡ് കവർ തുറക്കാം.\nസ്ത്രീ: ഉള്ളിൽ പേപ്പർ കുടുങ്ങിക്കിടക്കുന്നു.\nപുരുഷൻ: ബലം പ്രയോഗിച്ച് വലിച്ചാൽ കീറിപ്പോകും, ഈ പച്ച ലിവർ താഴ്ത്തി പതുക്കെ വലിച്ചെടുക്കൂ.\nസ്ത്രീ: ശരി... ദാ കിട്ടി!\nപുരുഷൻ: കൊള്ളാം. ഇങ്ക് തീരാറായോ എന്ന് നോക്കാം. മഞ്ഞ ഇങ്ക് തീരാറായിട്ടുണ്ട്, പുതിയത് ആവശ്യപ്പെടാം.",
+      "questions": [
+        {
+          "q": "コピー機が 止まった 原因は 何でしたか。",
+          "q_en": "What was the reason the copier stopped?",
+          "q_te": "కాపీయర్ ఆగిపోవడానికి కారణం ఏమిటి?",
+          "q_hi": "फोटोकॉपी मशीन रुकने का क्या कारण था?",
+          "q_ta": "இயந்திரம் நின்றதற்கான காரணம் என்ன?",
+          "q_ko": "복사기가 멈춘 원인은 무엇이었습니까?",
+          "q_es": "¿Cuál fue el motivo por el que se detuvo la fotocopiadora?",
+          "q_kn": "ಕಾಪಿಯರ್ ನಿಲ್ಲಲು ಕಾರಣವೇನು?",
+          "q_ml": "പ്രിന്റർ നിലയ്ക്കാൻ കാരണം എന്തായിരുന്നു?",
+          "options": [
+            "紙詰まり (紙が 引っかかった)",
+            "インクが 完全に なくなった",
+            "電源が 切れた",
+            "故障して 部品が 壊れた"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "男の人は この後、何色の インクを 頼みますか。",
+          "q_en": "What color ink will the man order afterwards?",
+          "q_te": "ఆ వ్యక్తి ఆ తర్వాత ఏ రంగు ఇంక్ ఆర్డర్ చేస్తాడు?",
+          "q_hi": "पुरुष बाद में किस रंग की स्याही मँगवाएगा?",
+          "q_ta": "ஆண் அடுத்து எந்த நிற மையை கேட்பார்?",
+          "q_ko": "남성은 이후 어떤 색의 잉크를 주문합니까?",
+          "q_es": "¿De qué color pedirá tinta el hombre después?",
+          "q_kn": "ಪುರುಷ ನಂತರ ಯಾವ ಬಣ್ಣದ ಇಂಕ್ ತರಿಸುತ್ತಾನೆ?",
+          "q_ml": "പുരുഷൻ ഏത് നിറത്തിലുള്ള ഇങ്കാണ് ആവശ്യപ്പെടുന്നത്?",
+          "options": [
+            "黄色 (きいろ)",
+            "黒 (くろ)",
+            "赤 (マゼンタ)",
+            "青 (シアン)"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n3-14",
+      "title": "健康相談と生活習慣 (Health & Lifestyle Advice)",
+      "script": "医師：鈴木さん、先日の健康診断の結果ですが、血圧とコレステロール値が少し高めですね。\n患者：そうですか……最近仕事が忙しくて、夜遅くにコンビニ弁当を食べることが多くて。\n医師：なるほど。夜遅い食事や塩分の多い食事は血圧を上げる原因になります。まずは野菜を毎食一皿増やすことと、できるだけ寝る二時間前には食事を済ませるように心がけてください。\n患者：運動はどうでしょうか。通勤で歩くくらいしかしていないのですが。\n医師：激しい運動でなくても構いませんよ。一駅手前で降りて二十分ほど早歩きをするだけでも、十分な効果があります。\n患者：それなら明日から続けられそうです。やってみます。",
+      "transcript_en": "Doctor: Mr. Suzuki, regarding your recent health checkup results, your blood pressure and cholesterol levels are a bit high.\nPatient: I see... Lately work has been so busy, and I often eat convenience store bento late at night.\nDoctor: I see. Late-night meals and high-salt food raise blood pressure. First, try adding an extra plate of vegetables to each meal, and finish eating at least two hours before sleeping.\nPatient: What about exercise? I only walk during my commute.\nDoctor: It doesn't have to be intense. Just getting off one station early and brisk walking for about twenty minutes will have a great effect.\nPatient: That sounds manageable starting tomorrow. I'll give it a try.",
+      "transcript_te": "వైద్యుడు: సుజుకీ గారూ, మీ ఆరోగ్య పరీక్ష ఫలితాలలో రక్తపోటు మరియు కొలెస్ట్రాల్ కాస్త ఎక్కువగా ఉన్నాయి.\nరోగి: అవునా... ఈ మధ్య పని ఒత్తిడి ఎక్కువై రాత్రి ఆలస్యంగా రెడీమేడ్ భోజనం తింటున్నాను.\nవైద్యుడు: రాత్రి ఆలస్యంగా తినడం, ఉప్పు ఎక్కువైన ఆహారం రక్తపోటు పెంచుతాయి. ప్రతి భోజనంలో కూరగాయలు పెంచండి, పడుకోవడానికి రెండు గంటల ముందే తినడం అలవాటు చేసుకోండి.\nరోగి: వ్యాయామం గురించి ఏమిటి? ఆఫీసుకు వెళ్లేటప్పుడు నడవడం తప్ప వేరే వ్యాయామం లేదు.\nవైద్యుడు: కష్టమైన వ్యాయామాలు అక్కర్లేదు. ఒక స్టేషన్ ముందే దిగి 20 నిమిషాలు వేగంగా నడిచినా మంచి ఫలితం ఉంటుంది.\nరోగి: ఇది రేపటి నుండే ప్రారంభించగలను. తప్పక చేస్తాను.",
+      "transcript_hi": "डॉक्टर: सुजुकी जी, आपकी रिपोर्ट में ब्लड प्रेशर और कोलेस्ट्रॉल थोड़ा बढ़ा हुआ है।\nमरीज़: अच्छा... काम की व्यस्तता के कारण रात को देर से बाहर का खाना खाता हूँ।\nडॉक्टर: देर रात भोजन और अधिक नमक से रक्तचाप बढ़ता है। भोजन में सब्ज़ियाँ बढ़ाएँ और सोने से कम से कम 2 घंटे पहले खाना खा लें।\nमरीज़: व्यायाम के बारे में क्या राय है?\nडॉक्टर: भारी कसरत की ज़रूरत नहीं है। एक स्टेशन पहले उतरकर 20 मिनट तेज़ चलने से ही बहुत लाभ होगा।\nमरीज़: यह तो मैं कल से ही शुरू कर सकता हूँ। ज़रूर करूँगा।",
+      "transcript_ta": "மருத்துவர்: சுசுகி, உங்கள் மருத்துவப் பரிசோதனையில் இரத்த அழுத்தமும் கொழுப்பும் சற்று அதிகமாக உள்ளது.\nநோயாளி: அப்படியா... வேலைப்பளுவால் இரவில் தாமதமாக வெளியில் உண்கிறேன்.\nமருத்துவர்: தாமதமான உணவும் அதிக உப்பும் இரத்த அழுத்தத்தை அதிகரிக்கும். உணவில் காய்கறிகளைச் சேர்த்து, தூங்குவதற்கு 2 மணி நேரம் முன்பே உண்ணுங்கள்.\nநோயாளி: உடற்பயிற்சி செய்யலாமா?\nமருத்துவர்: கடினமான பயிற்சி தேவையில்லை. ஒரு ரயில் நிலையத்திற்கு முன்பே இறங்கி 20 நிமிடங்கள் வேகமாக நடந்தாலே போதும்.\nநோயாளி: இதை நாளை முதலே செய்கிறேன்.",
+      "transcript_ko": "의사: 스즈키 씨, 건강검진 결과 혈압과 콜레스테롤 수치가 약간 높게 나왔습니다.\n환자: 그렇군요... 최근 바빠서 밤늦게 편의점 도시락을 먹는 일이 많았습니다.\n의사: 야식과 짠 음식은 혈압을 올립니다. 매 끼니 채소를 늘리고, 취침 2시간 전에는 식사를 마치도록 하세요.\n환자: 운동은 어떻게 해야 할까요?\n의사: 격렬한 운동이 아니어도 괜찮습니다. 한 정거장 먼저 내려서 20분 정도 빠르게 걷는 것만으로도 충분합니다.\n환자: 그 정도라면 내일부터 바로 실천할 수 있겠네요.",
+      "transcript_es": "Médico: Sr. Suzuki, en su chequeo médico la presión arterial y el colesterol salieron algo elevados.\nPaciente: Ya veo... Últimamente tengo mucho trabajo y suelo cenar tarde comida precocinada.\nMédico: Cenar tarde y con mucha sal eleva la presión. Añada verduras a cada comida y cene al menos dos horas antes de acostarse.\nPaciente: ¿Y el ejercicio?\nMédico: No necesita ser intenso. Bajarse una estación antes y caminar a paso ligero veinte minutos será suficiente.\nPaciente: Eso sí puedo hacerlo desde mañana. Lo intentaré.",
+      "transcript_kn": "ವೈದ್ಯರು: ಸುಜುಕಿ ಅವರೇ, ನಿಮ್ಮ ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಕೊಲೆಸ್ಟ್ರಾಲ್ ಸ್ವಲ್ಪ ಹೆಚ್ಚಾಗಿದೆ.\nರೋಗಿ: ಹೌದಾ... ಕೆಲಸದ ಒತ್ತಡದಿಂದ ರಾತ್ರಿ ತಡವಾಗಿ ಊಟ ಮಾಡುತ್ತಿದ್ದೆ.\nವೈದ್ಯರು: ತಡರಾತ್ರಿಯ ಊಟ ಮತ್ತು ಉಪ್ಪು ರಕ್ತದೊತ್ತಡ ಹೆಚ್ಚಿಸುತ್ತದೆ. ತರಕಾರಿ ಹೆಚ್ಚು ಸೇವಿಸಿ, ಮಲಗುವ 2 ಗಂಟೆ ಮುಂಚೆಯೇ ಊಟ ಮುಗಿಸಿ.\nರೋಗಿ: ವ್ಯಾಯಾಮದ ಬಗ್ಗೆ ಏನು ಸಲಹೆ?\nವೈದ್ಯರು: ಕಠಿಣ ವ್ಯಾಯಾಮ ಬೇಡ. ಒಂದು ನಿಲ್ದಾಣ ಮುಂಚಿತವಾಗಿ ಇಳಿದು 20 ನಿಮಿಷ ವೇಗವಾಗಿ ನಡೆದರೆ ಸಾಕು.\nರೋಗಿ: ನಾಳೆಯಿಂದಲೇ ಇದನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತೇನೆ.",
+      "transcript_ml": "ഡോക്ടർ: സുസുകി, പ്രഷറും കൊളസ്ട്രോളും അല്പം കൂടുതലാണ്.\nരോഗി: ജോലിത്തിരക്ക് കാരണം രാത്രി വൈകി പുറത്തുനിന്ന് കഴിക്കാറാണ് പതിവ്.\nഡോക്ടർ: രാത്രി വൈകിയുള്ള ഭക്ഷണവും ഉപ്പും പ്രഷർ കൂട്ടും. പച്ചക്കറികൾ കൂടുതൽ കഴിക്കുക, ഉറങ്ങുന്നതിന് 2 മണിക്കൂർ മുൻപ് ഭക്ഷണം കഴിക്കുക.\nരോഗി: വ്യായാമം ചെയ്യേണ്ടതുണ്ടോ?\nഡോക്ടർ: കഠിനമായ വ്യായാമം വേണ്ട. ഒരു സ്റ്റേഷൻ മുൻപ് ഇറങ്ങി 20 മിനിറ്റ് വേഗത്തിൽ നടന്നാൽ മതിയാകും.\nരോഗി: നാളെ മുതൽ തന്നെ ഇത് ചെയ്യാം.",
+      "questions": [
+        {
+          "q": "医師が 食事について アドバイスしたことは 何ですか。",
+          "q_en": "What advice did the doctor give regarding meals?",
+          "q_te": "ఆహారం గురించి డాక్టర్ ఇచ్చిన సలహా ఏమిటి?",
+          "q_hi": "डॉक्टर ने भोजन के संबंध में क्या सलाह दी?",
+          "q_ta": "உணவு தொடர்பாக மருத்துவர் கூறிய அறிவுரை என்ன?",
+          "q_ko": "의사가 식사에 대해 조언한 내용은 무엇입니까?",
+          "q_es": "¿Qué consejo dio el médico respecto a las comidas?",
+          "q_kn": "ಆಹಾರದ ಬಗ್ಗೆ ವೈದ್ಯರು ನೀಡಿದ ಸಲಹೆ ಏನು?",
+          "q_ml": "ഭക്ഷണത്തെക്കുറിച്ച് ഡോക്ടർ നൽകിയ ഉപദേശം എന്താണ്?",
+          "options": [
+            "寝る 2時間前までに 済ませ、野菜を 増やす",
+            "朝食を 抜くこと",
+            "肉類を 一切 食べないこと",
+            "一日 一食に すること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "医師が 勧めた 運動は どんなものですか。",
+          "q_en": "What kind of exercise did the doctor recommend?",
+          "q_te": "డాక్టర్ ఎలాంటి వ్యాయామం చేయాలని సిఫార్సు చేశారు?",
+          "q_hi": "डॉक्टर ने किस प्रकार के व्यायाम की सिफारिश की?",
+          "q_ta": "மருத்துவர் பரிந்துரைத்த உடற்பயிற்சி எது?",
+          "q_ko": "의사가 권장한 운동은 어떤 것입니까?",
+          "q_es": "¿Qué tipo de ejercicio recomendó el médico?",
+          "q_kn": "ವೈದ್ಯರು ಸೂಚಿಸಿದ ವ್ಯಾಯಾಮ ಎಂಥದ್ದು?",
+          "q_ml": "ഡോക്ടർ നിർദ്ദേശിച്ച വ്യായാമം ഏതാണ്?",
+          "options": [
+            "一駅手前で 降りて 二十分 早歩きする",
+            "毎日 ジムで 重い器具を 使う",
+            "毎朝 10キロ 走る",
+            "水泳を 毎日 1時間する"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n3-15",
+      "title": "不動産屋での部屋探し (Apartment Hunting Consultation)",
+      "script": "店員：いらっしゃいませ。どのような物件をお探しですか。\n客：大学に通いやすい場所で、ワンルームの部屋を探しています。家賃は管理費込みで六万円以内が希望です。\n店員：駅から徒歩十分以内ですと、六万円台前半が多くなりますが、徒歩十五分またはバス利用でしたら、築浅の綺麗なお部屋が五万五千円でございますよ。\n客：自転車を使う予定なので、徒歩十五分でも大丈夫です。オートロックや宅配ボックスはついていますか。\n店員：はい、こちらの物件はオートロック完備で、共用部に宅配ボックスもございます。スーパーも徒歩三分です。\n客：とても良さそうですね！ぜひ内見をお願いしたいです。",
+      "transcript_en": "Agent: Welcome! What kind of property are you looking for?\nCustomer: I'm looking for a studio apartment with easy access to my university. My budget is within 60,000 yen including management fees.\nAgent: Within a 10-minute walk from the station, most are in the low 60,000 yen range. But if you consider a 15-minute walk or taking a bus, there is a newly built, clean apartment for 55,000 yen.\nCustomer: I plan to use a bicycle, so a 15-minute walk is fine. Does it have auto-lock and delivery lockers?\nAgent: Yes, this property has an auto-lock security system and delivery lockers in the common area. A supermarket is also a 3-minute walk away.\nCustomer: That sounds great! I'd definitely like to view it.",
+      "transcript_te": "ఏజెంట్: స్వాగతం! ఎలాంటి ఇల్లు వెతుకుతున్నారు?\nకస్టమర్: విశ్వవిద్యాలయానికి వెళ్లడానికి సులువైన ప్రదేశంలో స్టూడియో రూమ్ కావాలి. మెయింటెనెన్స్ ఫీజుతో కలిపి అద్దె 60,000 యెన్ల లోపు ఉండాలి.\nఏజెంట్: స్టేషన్ నుండి 10 నిమిషాల నడక దూరంలో 60 వేల కంటే ఎక్కువ ఉంటాయి. కానీ 15 నిమిషాల దూరమైతే కొత్తగా నిర్మించిన మంచి ఇల్లు 55,000 యెన్లకే ఉంది.\nకస్టమర్: సైకిల్ వాడుతాను కాబట్టి 15 నిమిషాలైనా పర్వాలేదు. ఆటో-లాక్ మరియు పార్శిల్ డెలివరీ బాక్స్ ఉన్నాయా?\nఏజెంట్: అవును, ఆటో-లాక్ ఉంది, డెలివరీ బాక్సులు ఉన్నాయి. సూపర్ మార్కెట్ కూడా 3 నిమిషాల నడక దూరంలో ఉంది.\nకస్టమర్: చాలా బాగుంది! నేరుగా వెళ్లి చూడాలనుకుంటున్నాను.",
+      "transcript_hi": "एजेंट: स्वागत है! आप किस प्रकार का मकान खोज रहे हैं?\nग्राहक: यूनिवर्सिटी के पास वन-रूम अपार्टमेंट चाहिए। मेंटेनेंस मिलाकर किराया 60,000 येन के अंदर होना चाहिए।\nएजेंट: स्टेशन से 10 मिनट की दूरी पर 60 हज़ार से अधिक है। पर 15 मिनट की दूरी पर 55,000 येन में नया और सुंदर कमरा उपलब्ध है।\nग्राहक: मैं साइकिल इस्तेमाल करूँगा तो 15 मिनट ठीक है। क्या ऑटो-लॉक और पार्सल बॉक्स है?\nएजेंट: जी हाँ, ऑटो-लॉक और पार्सल बॉक्स दोनों हैं। सुपरमार्केट भी 3 मिनट की दूरी पर है।\nग्राहक: बहुत बढ़िया! मैं इसे देखना चाहूँगा।",
+      "transcript_ta": "முகவர்: வருக! எப்படிப்பட்ட வீடு தேடுகிறீர்கள்?\nவாடிக்கையாளர்: பல்கலைக்கழகத்திற்கு அருகில் ஒரு அறை வீடு வேண்டும். பராமரிப்புக் கட்டணத்துடன் 60,000 யென்னுக்குள் இருக்க வேண்டும்.\nமுகவர்: நிலையத்திலிருந்து 10 நிமிட நடைதூரத்தில் 60,000-க்கு மேல் இருக்கும். ஆனால் 15 நிமிட தூரத்தில் 55,000 யென்னுக்கு புதிய வீடு உள்ளது.\nவாடிக்கையாளர்: சைக்கிள் பயன்படுத்துவேன் என்பதால் 15 நிமிடம் பரவாயில்லை. பாதுகாப்பு பூட்டும் பார்சல் பெட்டியும் உள்ளதா?\nமுகவர்: ஆம், இரண்டும் உள்ளன. பல்பொருள் அங்காடியும் 3 நிமிட தூரத்தில் உள்ளது.\nவாடிக்கையாளர்: அருமை! நேரில் பார்க்க விரும்புகிறேன்.",
+      "transcript_ko": "중개인: 어서 오세요. 어떤 방을 찾으시나요?\n손님: 대학교 통학이 편한 원룸을 찾고 있습니다. 관리비 포함 6만 엔 이내였으면 합니다.\n중개인: 역에서 도보 10분 이내면 6만 엔대 초반이 많지만, 15분 거리라면 신축의 깨끗한 방이 5만 5천 엔에 있습니다.\n손님: 자전거를 탈 거라서 도보 15분도 괜찮습니다. 오토록과 택배함도 있나요?\n중개인: 네, 오토록과 택배함이 모두 구비되어 있고 슈퍼도 도보 3분 거리에 있습니다.\n손님: 정말 마음에 드네요! 방을 보러 가고 싶습니다.",
+      "transcript_es": "Agente: ¡Bienvenido! ¿Qué tipo de vivienda busca?\nCliente: Busco un estudio con buen acceso a la universidad. Mi presupuesto es de hasta 60.000 yenes con gastos incluidos.\nAgente: A menos de 10 minutos a pie de la estación rondan los 60.000 yenes. Pero a 15 minutos a pie tenemos un piso seminuevo por 55.000 yenes.\nCliente: Usaré bicicleta, así que 15 minutos me parece bien. ¿Tiene cerradura automática y casilleros de paquetería?\nAgente: Sí, cuenta con cerradura automática y casilleros para paquetes. Hay un supermercado a tres minutos a pie.\nCliente: ¡Suena genial! Me gustaría visitarlo.",
+      "transcript_kn": "ಏಜೆಂಟ್: ಸುಸ್ವಾಗತ! ಯಾವ ರೀತಿಯ ಮನೆ ಹುಡುಕುತ್ತಿದ್ದೀರಿ?\nಗ್ರಾಹಕ: ಕಾಲೇಜಿಗೆ ಹತ್ತಿರವಿರುವ ಒಂದು ಕೋಣೆಯ ಮನೆ ಬೇಕು. ಬಾಡಿಗೆ 60,000 ಯೆನ್ ಒಳಗಿರಬೇಕು.\nಏಜೆಂಟ್: ನಿಲ್ದಾಣದಿಂದ 10 ನಿಮಿಷದ ದೂರದಲ್ಲಿ ಬಾಡಿಗೆ ಜಾಸ್ತಿ. ಆದರೆ 15 ನಿಮಿಷದ ದೂರದಲ್ಲಿ 55,000 ಯೆನ್‌ಗೆ ಸುಂದರ ಮನೆಯಿದೆ.\nಗ್ರಾಹಕ: ಸೈಕಲ್ ಬಳಸುವುದರಿಂದ 15 ನಿಮಿಷ ಪರವಾಗಿಲ್ಲ. ಸುರಕ್ಷತಾ ಲಾಕ್ ಮತ್ತು ಪಾರ್ಸೆಲ್ ಬಾಕ್ಸ್ ಇದೆಯೇ?\nಏಜೆಂಟ್: ಹೌದು, ಎರಡೂ ಇವೆ. ಸೂಪರ್‌ಮಾರ್ಕೆಟ್ ಕೂಡ 3 ನಿಮಿಷದ ದೂರದಲ್ಲಿದೆ.\nಗ್ರಾಹಕ: ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ! ನೋಡಲು ಹೋಗೋಣ.",
+      "transcript_ml": "ഏജന്റ്: സ്വാഗതം! എങ്ങനെയുള്ള വീടാണ് നോക്കുന്നത്?\nഉപഭോക്താവ്: കോളേജിൽ പോകാൻ എളുപ്പമുള്ള ഒരു മുറിയുള്ള ഫ്ലാറ്റ് വേണം. വാടക 60,000 യെനിൽ കൂടരുത്.\nഏജന്റ്: സ്റ്റേഷനിൽ നിന്ന് 10 മിനിറ്റ് ദൂരത്തിൽ വാടക കൂടുതലാണ്. എന്നാൽ 15 മിനിറ്റ് ദൂരത്തിൽ 55,000 യെന് നല്ലൊരു മുറിയുണ്ട്.\nഉപഭോക്താവ്: സൈക്കിൾ ഉള്ളതിനാൽ 15 മിനിറ്റ് കുഴപ്പമില്ല. സെക്യൂരിറ്റി ലോക്കും പാഴ്സൽ ബോക്സും ഉണ്ടോ?\nഏജന്റ്: ഉണ്ട്, രണ്ടും ഉണ്ട്. സൂപ്പർമാർക്കറ്റിലേക്ക് 3 മിനിറ്റ് ദൂരമേയുള്ളൂ.\nഉപഭോക്താവ്: കൊള്ളാം! അതൊന്ന് കാണാൻ ആഗ്രഹിക്കുന്നു.",
+      "questions": [
+        {
+          "q": "客が 希望した 家賃の 条件は 何ですか。",
+          "q_en": "What were the rent conditions desired by the customer?",
+          "q_te": "కస్టమర్ కోరిన అద్దె పరిమితి ఎంత?",
+          "q_hi": "ग्राहक ने किराए की क्या शर्त रखी थी?",
+          "q_ta": "வாடிக்கையாளர் விரும்பிய வாடகை வரம்பு என்ன?",
+          "q_ko": "손님이 희망한 월세 조건은 무엇입니까?",
+          "q_es": "¿Cuáles eran las condiciones de alquiler deseadas por el cliente?",
+          "q_kn": "ಗ್ರಾಹಕ ಬಯಸಿದ ಬಾಡಿಗೆ ಮಿತಿ ಎಷ್ಟು?",
+          "q_ml": "ഉപഭോക്താവ് ആവശ്യപ്പെട്ട വാടക എത്രയായിരുന്നു?",
+          "options": [
+            "管理費込みで 六万円以内",
+            "五万円ちょうど",
+            "七万円以内",
+            "十万円以内"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "店員が 紹介した 部屋の 家賃は いくらですか。",
+          "q_en": "How much was the rent for the apartment recommended by the agent?",
+          "q_te": "ఏజెంట్ చూపించిన గది అద్దె ఎంత?",
+          "q_hi": "एजेंट द्वारा बताए गए कमरे का किराया कितना है?",
+          "q_ta": "முகவர் கூறிய வீட்டின் வாடகை எவ்வளவு?",
+          "q_ko": "중개인이 소개한 방의 월세는 얼마입니까?",
+          "q_es": "¿Cuánto es el alquiler del piso recomendado por el agente?",
+          "q_kn": "ಏಜೆಂಟ್ ತೋರಿಸಿದ ಮನೆಯ ಬಾಡಿಗೆ ಎಷ್ಟು?",
+          "q_ml": "ഏജന്റ് നിർദ്ദേശിച്ച മുറിയുടെ വാടക എത്രയാണ്?",
+          "options": [
+            "五万五千円",
+            "六万円",
+            "六万五千円",
+            "四万八千円"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N2": [
+    {
+      "id": "l-n2-1",
+      "title": "独立系書店が増えるわけ（Why Independent Bookstores Are Growing）",
+      "script": "近年、大型書店の閉店が相次いでいる一方で、個人が営む小さな「独立系書店」が各地で少しずつ増えているという。ネットで本が買える時代に、なぜわざわざ実店舗を、と思う方もいるかもしれない。しかし、これらの店の多くは、単に本を売ることだけを目的にしているわけではない。店主が自ら選んだ本だけを並べ、来た人と言葉を交わす。つまり、本を通じて人と人とがつながる場所をつくろうとしているのだ。売り上げだけを見れば、決して楽な商売とは言えない。とはいえ、こうした店に足を運ぶ客が着実に増えているのも事実である。効率や便利さでは測れない価値を求める人が、それだけ多くなってきたということなのだろう。",
+      "transcript_en": "In recent years, while large bookstores have been closing one after another, small \"independent bookstores\" run by individuals are said to be gradually increasing in number in various regions. In an age when you can buy books online, some may wonder why anyone would go to the trouble of opening a physical shop. However, many of these stores do not aim merely to sell books. The owner lines up only the books they themselves have chosen and exchanges words with those who come in. In other words, they are trying to create a place where people connect with one another through books. Judging by sales alone, it can hardly be called an easy business. That said, it is also a fact that the number of customers visiting such shops is steadily increasing. It probably means that there are now that many more people seeking a value that cannot be measured by efficiency or convenience.",
+      "questions": [
+        {
+          "q": "独立系書店が増えている理由として、この話で述べられているのは何か。",
+          "q_en": "According to this talk, what is a reason independent bookstores are increasing?",
+          "options": [
+            "大型書店より本の値段が安いから",
+            "本を売ること以外に、人がつながる場をつくろうとしているから",
+            "ネットで本が買えなくなったから",
+            "店主が本を選ぶ手間を省いているから"
+          ],
+          "answer": 1,
+          "q_te": "స్వతంత్ర పుస్తక దుకాణాలు పెరగడానికి కారణం ఏమిటి?",
+          "q_hi": "स्वतंत्र पुस्तक दुकानों के बढ़ने का क्या कारण बताया गया है?",
+          "q_ta": "சுயாதீன புத்தகக் கடைகள் அதிகரிக்கக் காரணம் என்ன?",
+          "q_ko": "독립서점이 증가하는 이유는 무엇입니까?",
+          "q_es": "¿Por qué razón aumentan las librerías independientes según la charla?",
+          "q_kn": "ಸ್ವತಂತ್ರ ಪುಸ್ತಕ ಮಳಿಗೆಗಳು ಹೆಚ್ಚಲು ಕಾರಣವೇನು?",
+          "q_ml": "സ്വതന്ത്ര പുസ്തകശാലകൾ വർദ്ധിക്കാൻ കാരണം എന്താണ്?"
+        },
+        {
+          "q": "独立系書店の経営について、話し手はどう述べているか。",
+          "q_en": "What does the speaker say about the management of independent bookstores?",
+          "options": [
+            "大型書店より必ず利益が大きい",
+            "誰でも楽に儲かる商売である",
+            "決して楽な商売ではないが、客は着実に増えている",
+            "客がまったく増えていない"
+          ],
+          "answer": 2,
+          "q_te": "స్వతంత్ర పుస్తక దుకాణాల నిర్వహణ గురించి ఏమి చెప్పారు?",
+          "q_hi": "स्वतंत्र पुस्तक दुकानों के संचालन के बारे में क्या कहा गया है?",
+          "q_ta": "அக்கடைகளின் மேலாண்மை குறித்து என்ன கூறப்பட்டது?",
+          "q_ko": "독립서점의 운영에 대해 화자는 어떻게 설명합니까?",
+          "q_es": "¿Qué dice el hablante sobre la gestión de las librerías independientes?",
+          "q_kn": "ಮಳಿಗೆಗಳ ನಿರ್ವಹಣೆಯ ಬಗ್ಗೆ ಏನು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "പുസ്തകശാലകളുടെ നടത്തിപ്പിനെക്കുറിച്ച് എന്താണ് പറയുന്നത്?"
+        },
+        {
+          "q": "話し手は、こうした店に人が集まる背景に何があると考えているか。",
+          "q_en": "What does the speaker think lies behind people gathering at such shops?",
+          "options": [
+            "効率や便利さでは測れない価値を求める人が増えたこと",
+            "本の種類が大型書店より多いこと",
+            "ネット書店がいっせいに値上げしたこと",
+            "店が駅の近くに多いこと"
+          ],
+          "answer": 0,
+          "q_te": "ప్రజలు అక్కడికి రావడానికి గల అసలు కారణం ఏమిటి?",
+          "q_hi": "लोग ऐसी दुकानों पर क्यों एकत्र होते हैं?",
+          "q_ta": "மக்கள் அங்கே ஒன்று கூடுவதற்கான பின்னணி என்ன?",
+          "q_ko": "사람들이 그러한 서점에 모이는 배경에는 무엇이 있다고 봅니까?",
+          "q_es": "¿Qué cree el hablante que motiva a la gente a reunirse en esas tiendas?",
+          "q_kn": "ಜನರು ಅಲ್ಲಿಗೆ ಸೇರಲು ಮೂಲ ಕಾರಣವೇನು?",
+          "q_ml": "ആളുകൾ അവിടെ ഒത്തുകൂടുന്നതിന്റെ കാരണം എന്താണ്?"
+        }
+      ],
+      "transcript_te": "స్వతంత్ర పుస్తక దుకాణాలు ఎందుకు పెరుగుతున్నాయి: పెద్ద పుస్తక దుకాణాలు మూతపడుతున్నప్పటికీ, చిన్న ప్రత్యేక పుస్తక దుకాణాలు పెరుగుతున్నాయి. ఇవి కేవలం పుస్తకాలు అమ్మడమే కాక, ప్రత్యేకమైన పుస్తకాలను ఎంపిక చేసి ఇవ్వడం, కాఫీ మరియు సాంస్కృతిక కార్యక్రమాల ద్వారా స్థానిక సమాజానికి వేదికగా నిలుస్తున్నాయి.",
+      "transcript_hi": "स्वतंत्र पुस्तक दुकानों की वृद्धि: बड़ी दुकानों के बंद होने के दौर में भी छोटी स्वतंत्र दुकानें बढ़ रही हैं। ये केवल किताबें नहीं बेचतीं, बल्कि चुनिंदा किताबों का संग्रह, कॉफ़ी और सांस्कृतिक आयोजनों के माध्यम से लोगों के जुड़ने का केंद्र बनती हैं।",
+      "transcript_ta": "சுயாதீன புத்தகக் கடைகளின் வளர்ச்சி: பெரிய புத்தகக் கடைகள் மூடப்படும் சூழலிலும், சிறிய சிறப்புக் கடைகள் அதிகரிக்கின்றன. அவை தேர்ந்தெடுக்கப்பட்ட நூல்கள், காபி மற்றும் கலந்துரையாடல்கள் மூலம் மக்களை இணைக்கின்றன.",
+      "transcript_ko": "독립서점이 늘어나는 이유: 대형 서점이 문을 닫는 가운데 개성 있는 독립서점이 증가하고 있습니다. 단순히 책을 파는 데 그치지 않고 독특한 큐레이션과 커피, 문화 행사를 통해 사람들을 모으는 공간이 되기 때문입니다.",
+      "transcript_es": "¿Por qué crecen las librerías independientes?: Mientras las grandes cadenas cierran, las pequeñas librerías independientes proliferan. No solo venden libros, sino que ofrecen una cuidada selección, café y eventos comunitarios que atraen a los lectores.",
+      "transcript_kn": "ಸ್ವತಂತ್ರ ಪುಸ್ತಕ ಮಳಿಗೆಗಳ ಬೆಳವಣಿಗೆ: ದೊಡ್ಡ ಮಳಿಗೆಗಳು ಮುಚ್ಚುತ್ತಿದ್ದರೂ ಸಣ್ಣ ಮಳಿಗೆಗಳು ಹೆಚ್ಚುತ್ತಿವೆ. ಇವು ಕೇವಲ ಪುಸ್ತಕ ಮಾರಾಟವಲ್ಲದೆ, ಆಯ್ದ ಪುಸ್ತಕಗಳ ಸಂಗ್ರಹ, ಕಾಫಿ ಮತ್ತು ಚರ್ಚೆಗಳ ಮೂಲಕ ಸಾಂಸ್ಕೃತಿಕ ಕೇಂದ್ರಗಳಾಗುತ್ತಿವೆ.",
+      "transcript_ml": "സ്വതന്ത്ര പുസ്തകശാലകൾ വർദ്ധിക്കുന്നതെന്തുകൊണ്ട്?: വലിയ പുസ്തകശാലകൾ പൂട്ടിക്കൊണ്ടിരിക്കുമ്പോഴും ചെറിയ പുസ്തകശാലകൾ വളരുന്നു. അവ പുസ്തകങ്ങൾ വിൽക്കുന്നതിനൊപ്പം നല്ല പുസ്തകങ്ങൾ തെരഞ്ഞെടുത്തു നൽകുകയും സാംസ്കാരിക കേന്ദ്രങ്ങളായി പ്രവർത്തിക്കുകയും ചെയ്യുന്നു."
+    },
+    {
+      "id": "l-n2-2",
+      "title": "食品ロスを考える（Thinking About Food Loss）",
+      "script": "まだ食べられるのに捨てられてしまう食品、いわゆる「食品ロス」が、近年あらためて問題視されている。国内で一年間に捨てられる食品の量は、世界中で行われている食料支援の総量を上回るとも言われており、決して見過ごせる数字ではない。もっとも、その原因は消費者の食べ残しだけにあるわけではない。製造や流通の過程で、期限にまだ余裕があるにもかかわらず、わずかな包装の傷などを理由に廃棄されるものも少なくないのだ。こうした無駄をなくすには、企業の取り組みはもちろん、私たち一人ひとりが必要な分だけを買うという意識を持つことが欠かせない。便利さを求めるあまり、食べ物を粗末にしてはいないか、今一度考えてみる必要があるだろう。",
+      "transcript_en": "Food that is still edible yet ends up being thrown away — so-called \"food loss\" — has once again come to be seen as a problem in recent years. The amount of food discarded within the country in a single year is said to exceed even the total volume of food aid carried out around the world, and it is by no means a figure that can be overlooked. That said, the cause does not lie solely in consumers' leftovers. In the manufacturing and distribution process, there are quite a few items discarded over slight damage to their packaging and the like, even though there is still plenty of time before their expiration date. To eliminate such waste, it is essential not only that companies take action, of course, but also that each of us be conscious of buying only as much as we need. In our pursuit of convenience, aren't we treating food carelessly? It is probably necessary to stop and think about this once more.",
+      "questions": [
+        {
+          "q": "「食品ロス」とは、ここでは何を指すか。",
+          "q_en": "What does \"food loss\" refer to here?",
+          "options": [
+            "まだ食べられるのに捨てられてしまう食品",
+            "賞味期限が切れて食べられなくなった食品",
+            "世界の食料支援に送られる食品",
+            "消費者が買いすぎた食品すべて"
+          ],
+          "answer": 0,
+          "q_te": "'ఫుడ్ లాస్' అంటే ఏమిటి?",
+          "q_hi": "'फ़ूड लॉस' का क्या अर्थ है?",
+          "q_ta": "'உணவு இழப்பு' என்பது எதைக் குறிக்கிறது?",
+          "q_ko": "여기서 '식품 로스'가 가리키는 것은 무엇입니까?",
+          "q_es": "¿A qué se refiere aquí el 'desperdicio de alimentos'?",
+          "q_kn": "'ಫುಡ್ ಲಾಸ್' ಎಂದರೇನು?",
+          "q_ml": "'ഭക്ഷണം പാഴാക്കൽ' എന്നത് എന്തിനെയാണ് സൂചിപ്പിക്കുന്നത്?"
+        },
+        {
+          "q": "食品ロスの原因について、話し手はどう述べているか。",
+          "q_en": "What does the speaker say about the causes of food loss?",
+          "options": [
+            "消費者の食べ残しだけが原因である",
+            "消費者の食べ残しだけでなく、製造や流通の段階でも生じている",
+            "もっぱら企業の取り組み不足が唯一の原因だ",
+            "原因はまだまったくわかっていない"
+          ],
+          "answer": 1,
+          "q_te": "ఆహార వృథాకు కారణాలుగా ఏమి చెప్పారు?",
+          "q_hi": "भोजन की बर्बादी के क्या कारण बताए गए हैं?",
+          "q_ta": "உணவு வீணாவதற்கான காரணங்களாக என்ன கூறப்பட்டன?",
+          "q_ko": "식품 로스의 원인에 대해 화자는 무엇이라 말합니까?",
+          "q_es": "¿Qué dice el hablante sobre las causas del desperdicio de comida?",
+          "q_kn": "ಆಹಾರ ಪೋಲಾಗಲು ಕಾರಣಗಳೇನು?",
+          "q_ml": "ഭക്ഷണം പാഴാകുന്നതിനുള്ള കാരണങ്ങൾ എന്തൊക്കെയാണ്?"
+        },
+        {
+          "q": "話し手が私たち消費者に求めていることは何か。",
+          "q_en": "What does the speaker ask of us consumers?",
+          "options": [
+            "できるだけ安い食品を選んで買うこと",
+            "余った食品を食料支援に寄付すること",
+            "必要な分だけを買うという意識を持つこと",
+            "包装の傷んだ食品を進んで買うこと"
+          ],
+          "answer": 2,
+          "q_te": "వినియోగదారులను ఏమి చేయమని కోరారు?",
+          "q_hi": "उपभोक्ताओं से क्या अपेक्षा की गई है?",
+          "q_ta": "நுகர்வோரிடம் என்ன எதிர்பார்க்கப்படுகிறது?",
+          "q_ko": "화자가 소비자들에게 요구하는 행동은 무엇입니까?",
+          "q_es": "¿Qué pide el hablante a los consumidores?",
+          "q_kn": "ಗ್ರಾಹಕರಿಗೆ ಏನು ಮಾಡಲು ಕೋರಲಾಗಿದೆ?",
+          "q_ml": "ഉപഭോക്താക്കളോട് എന്താണ് ആവശ്യപ്പെടുന്നത്?"
+        }
+      ],
+      "transcript_te": "ఆహార వృథా గురించి ఆలోచన: ఇంకా తినడానికి పనికొచ్చే ఆహారాన్ని పారవేయడాన్ని 'ఫుడ్ లాస్' అంటారు. ఆహార తయారీ మరియు పంపిణీ దశల్లోనే కాక, గడువు ముగిసిన వెంటనే పారవేసే వినియోగదారుల వైఖరి వల్ల కూడా ఇది జరుగుతుంది. ప్రతి ఒక్కరూ అవసరమైనంత మాత్రమే కొనాలి.",
+      "transcript_hi": "खाद्य अपव्यय पर विचार: खाने योग्य भोजन को फेंक देना 'फ़ूड लॉस' कहलाता है। यह न केवल उत्पादन और आपूर्ति के स्तर पर होता है, बल्कि उपभोक्ताओं द्वारा ज़रूरत से ज़्यादा खरीदने और एक्सपायरी डेट के नाम पर फेंकने से भी होता है।",
+      "transcript_ta": "உணவு வீணாவதைத் தடுத்தல்: உண்ணக்கூடிய உணவைக் குப்பையில் போடுவது 'உணவு இழப்பு' எனப்படும். விநியோகத்தில் மட்டுமின்றி, நுகர்வோர் தேவையின்றி அதிகமாக வாங்குவதாலும் இது நிகழ்கிறது. தேவையானதை மட்டுமே வாங்க வேண்டும்.",
+      "transcript_ko": "음식물 쓰레기 문제: 먹을 수 있는 음식이 버려지는 것을 '식품 로스'라고 합니다. 유통 과정뿐만 아니라 소비자가 과도하게 구매하거나 유통기한을 오해하여 버리는 데서도 발생합니다. 계획적인 소비가 필요합니다.",
+      "transcript_es": "Reflexión sobre el desperdicio de alimentos: Alimentos perfectamente comestibles que acaban en la basura constituyen el desperdicio alimentario. Ocurre en la distribución, pero también por compras excesivas de los consumidores.",
+      "transcript_kn": "ಆಹಾರ ಪೋಲಾಗುವಿಕೆ: ತಿನ್ನಲು ಯೋಗ್ಯವಾದ ಆಹಾರವನ್ನು ಎಸೆಯುವುದು ದೊಡ್ಡ ನಷ್ಟ. ಉತ್ಪಾದನೆಯಲ್ಲಿ ಮಾತ್ರವಲ್ಲದೆ, ಗ್ರಾಹಕರು ಅಗತ್ಯಕ್ಕಿಂತ ಹೆಚ್ಚು ಕೊಂಡು ಎಸೆಯುವುದರಿಂದಲೂ ಇದು ಉಂಟಾಗುತ್ತದೆ.",
+      "transcript_ml": "ഭക്ഷണം പാഴാക്കുന്നതിനെക്കുറിച്ച്: കഴിക്കാൻ കൊള്ളാവുന്ന ഭക്ഷണം കളയുന്നതാണ് ഫുഡ് ലോസ്. വിതരണത്തിലെ പിഴവുകൾക്ക് പുറമെ ഉപഭോക്താക്കൾ അനാവശ്യമായി കൂടുതൽ വാങ്ങി കളയുന്നതും ഇതിന് കാരണമാകുന്നു."
+    },
+    {
+      "id": "l-n2-3",
+      "title": "家を買うべきか（Should We Buy a House?）",
+      "script": "夫「ねえ、この間話してた郊外の家、やっぱり買おうかどうか迷ってるんだよね。」妻「今のマンションの家賃も安くはないものね。でも、買うとなると簡単には引っ越せなくなるわよ。」夫「それはそうなんだけど、家賃を払い続けても手元に何も残らないわけだから、いっそ買ったほうがいいのかなって。」妻「気持ちはわかるけど、駅から遠いのが引っかかるのよね。今は車があるとはいえ、歳をとってからのことを考えるとね。」夫「確かに。安いには安いなりの理由がある、ってことか。」妻「そういうこと。目の前の値段だけで決めるものじゃないと思うわ。もう少しゆっくり考えましょうよ。」",
+      "transcript_en": "Husband: \"Hey, that house in the suburbs we were talking about the other day — I'm still torn over whether to buy it after all.\" Wife: \"The rent on our current apartment isn't cheap either. But if we buy, we won't be able to move so easily, you know.\" Husband: \"That's true, but since we'll have nothing to show for it even if we keep paying rent, I wonder if it'd just be better to buy.\" Wife: \"I understand how you feel, but the fact that it's far from the station bothers me. We do have a car now, sure, but when I think about after we've gotten older...\" Husband: \"True. So there's a reason cheap things are cheap, huh.\" Wife: \"Exactly. It's not something to decide on price alone. Let's take a little more time to think it over.\"",
+      "questions": [
+        {
+          "q": "夫が家を買おうと考えている理由は何か。",
+          "q_en": "Why is the husband thinking of buying a house?",
+          "options": [
+            "郊外のほうが交通が便利だから",
+            "家賃を払い続けても手元に何も残らないから",
+            "その家が駅からとても近いから",
+            "妻が買うことを強く勧めているから"
+          ],
+          "answer": 1,
+          "q_te": "భర్త ఎందుకు ఇల్లు కొనాలని అనుకుంటున్నాడు?",
+          "q_hi": "पति घर खरीदने की क्यों सोच रहा है?",
+          "q_ta": "கணவர் ஏன் வீடு வாங்க நினைக்கிறார்?",
+          "q_ko": "남편은 왜 주택 구매를 고려하고 있습니까?",
+          "q_es": "¿Por qué piensa el marido en comprar la casa?",
+          "q_kn": "ಪತಿ ಏಕೆ ಮನೆ ಕೊಳ್ಳಲು ಬಯಸುತ್ತಾನೆ?",
+          "q_ml": "ഭർത്താവ് എന്തിനാണ് വീട് വാങ്ങാൻ ആലോചിക്കുന്നത്?"
+        },
+        {
+          "q": "妻が家を買うことに慎重なのはなぜか。",
+          "q_en": "Why is the wife cautious about buying the house?",
+          "options": [
+            "今のマンションのほうがずっと広いから",
+            "車をまだ持っていないから",
+            "夫の給料が下がってしまったから",
+            "駅から遠く、歳をとってからの生活が心配だから"
+          ],
+          "answer": 3,
+          "q_te": "భార్య ఎందుకు జాగ్రత్త వహిస్తోంది?",
+          "q_hi": "पत्नी घर खरीदने को लेकर सतर्क क्यों है?",
+          "q_ta": "மனைவி ஏன் வீடு வாங்கத் தயங்குகிறாள்?",
+          "q_ko": "아내는 왜 주택 구매에 신중한 태도를 보입니까?",
+          "q_es": "¿Por qué se muestra cautelosa la esposa respecto a la compra?",
+          "q_kn": "ಪತ್ನಿ ಏಕೆ ಜಾಗರೂಕತೆಯಿಂದಿದ್ದಾಳೆ?",
+          "q_ml": "ഭാര്യ എന്തുകൊണ്ടാണ് വീട് വാങ്ങാൻ മടിക്കുന്നത്?"
+        },
+        {
+          "q": "「安いには安いなりの理由がある」という夫の言葉は、どういう意味か。",
+          "q_en": "What does the husband mean by \"there's a reason cheap things are cheap\"?",
+          "options": [
+            "安いものには必ず思わぬ長所がある",
+            "値段が安いのには、それに応じた（駅から遠いなどの）事情があるということ",
+            "安いものは絶対に買うべきではない",
+            "家の値段はこれからもっと安くなるはずだ"
+          ],
+          "answer": 1,
+          "q_te": "'చౌకైన వస్తువుల వెనుక కారణం ఉంటుంది' అంటే అర్థం ఏమిటి?",
+          "q_hi": "'सस्ती चीज़ के पीछे कोई कारण होता है' का क्या अर्थ है?",
+          "q_ta": "'மலிவானதற்கு ஒரு காரணம் இருக்கும்' என்பதன் பொருள் என்ன?",
+          "q_ko": "'싼 것에는 그만한 이유가 있다'는 말의 의미는 무엇입니까?",
+          "q_es": "¿Qué significa la frase 'lo barato tiene su razón de ser'?",
+          "q_kn": "'ಅಗ್ಗದ ವಸ್ತುವಿಗೆ ಕಾರಣವಿರುತ್ತದೆ' ಎಂಬುದರ ಅರ್ಥವೇನು?",
+          "q_ml": "'വിലക്കുറവിന് പിന്നിൽ കാരണമുണ്ടാകും' എന്നതിന്റെ അർത്ഥമെന്താണ്?"
+        }
+      ],
+      "transcript_te": "ఇల్లు కొనాలా వద్దా?: శివారు ప్రాంతంలో చౌకగా ఇల్లు దొరుకుతోందని భర్త కొనాలనుకుంటున్నాడు. అయితే భార్య, రవాణా సౌకర్యాలు లేకపోవడం మరియు భవిష్యత్తులో ఇల్లు అమ్మడం కష్టమవుతుందనే కారణంతో జాగ్రత్త వహించాలని సూచిస్తోంది.",
+      "transcript_hi": "घर खरीदें या नहीं?: पति उपनगर में सस्ता घर देखकर खरीदने की सोच रहा है। परंतु पत्नी का मानना है कि वहाँ परिवहन सुविधाएँ नहीं हैं और भविष्य में उसे बेचना भी कठिन होगा, इसलिए सतर्क रहना चाहिए।",
+      "transcript_ta": "வீடு வாங்க வேண்டுமா?: புறநகரில் மலிவாக வீடு கிடைப்பதால் வாங்கலாம் என்கிறார் கணவர். ஆனால் போக்குவரத்து வசதியின்மை மற்றும் மறுவிற்பனை சிரமத்தைக் கூறி மனைவி எச்சரிக்கிறாள்.",
+      "transcript_ko": "집을 사야 할까: 남편은 교외의 저렴한 주택을 사자고 하지만, 아내는 교통이 불편하고 나중에 되팔기 어렵다는 이유로 신중한 태도를 보입니다.",
+      "transcript_es": "¿Deberíamos comprar una casa?: El marido propone comprar una casa barata en las afueras. La mujer se muestra cautelosa alegando la falta de transporte público y la dificultad para revenderla en el futuro.",
+      "transcript_kn": "ಮನೆ ಕೊಳ್ಳಬೇಕೇ?: ಪತಿ ಉಪನಗರದಲ್ಲಿ ಕಡಿಮೆ ಬೆಲೆಗೆ ಮನೆ ಸಿಗುತ್ತಿದೆ ಎಂದು ಕೊಳ್ಳಲು ಬಯಸುತ್ತಾನೆ. ಆದರೆ ಪತ್ನಿ ಸಾರಿಗೆ ಸಮಸ್ಯೆಯನ್ನು ಮುಂದಿಟ್ಟು ಎಚ್ಚರಿಕೆಯಿಂದಿರಲು ಹೇಳುತ್ತಾಳೆ.",
+      "transcript_ml": "വീട് വാങ്ങണമോ?: നഗരത്തിന് പുറത്ത് കുറഞ്ഞ വിലയ്ക്ക് വീട് കിട്ടുന്നുവെന്ന് ഭർത്താവ് പറയുമ്പോൾ, യാത്രാസൗകര്യങ്ങൾ കുറവായതിനാൽ ഭാര്യ എതിർപ്പ് പ്രകടിപ്പിക്കുന്നു."
+    },
+    {
+      "id": "l-n2-4",
+      "title": "在宅勤務のこれから（The Future of Working from Home）",
+      "script": "最近、在宅勤務を導入する企業が増えているものの、必ずしもすべての社員が満足しているわけではないようです。通勤時間がなくなった分、自由に使える時間が増えたと喜ぶ人がいる一方で、仕事とプライベートの区別がつきにくくなり、かえって長時間働いてしまうという声も少なくありません。とはいえ、週に何日かは会社に出て同僚と直接顔を合わせることで、オンラインだけでは伝わりにくい細かなニュアンスも共有できるため、多くの企業が在宅と出社を組み合わせた働き方へと移行しつつあります。",
+      "transcript_en": "Although a growing number of companies are adopting work-from-home arrangements, it seems that not all employees are necessarily satisfied. While some are pleased that the disappearance of their commute has given them more free time to use as they like, there are also more than a few voices saying that the line between work and private life has become harder to draw, and that they end up working even longer hours instead. That said, by coming into the office a few days a week and meeting colleagues face to face, workers can share the subtle nuances that are hard to convey through online contact alone, so many companies are shifting toward a way of working that combines home and office work.",
+      "questions": [
+        {
+          "q": "この話によると、在宅勤務についてどんな声があると言っていますか。",
+          "q_en": "According to this talk, what kind of comment is said to exist about working from home?",
+          "options": [
+            "仕事とプライベートの区別がつきにくく、かえって長時間働いてしまうという声",
+            "通勤時間がかえって増えてしまったという声",
+            "同僚と全く連絡が取れなくなったという声",
+            "給料が大きく下がってしまったという声"
+          ],
+          "answer": 0,
+          "q_te": "ఇంటి నుండి పనిచేయడం గురించి ఎలాంటి వ్యాఖ్యలు ఉన్నాయి?",
+          "q_hi": "घर से काम करने को लेकर किस प्रकार की टिप्पणियाँ मौजूद हैं?",
+          "q_ta": "வீட்டுப் பணி தொடர்பாக எத்தகைய கருத்துக்கள் உள்ளன?",
+          "q_ko": "재택근무에 대해 어떤 의견들이 존재한다고 합니까?",
+          "q_es": "¿Qué tipo de comentarios existen sobre el teletrabajo según la charla?",
+          "q_kn": "ಮನೆಯಿಂದ ಕೆಲಸ ಮಾಡುವ ಬಗ್ಗೆ ಯಾವ ಅಭಿಪ್ರಾಯಗಳಿವೆ?",
+          "q_ml": "വർക്ക് ഫ്രം ഹോമിനെക്കുറിച്ച് എങ്ങനെയുള്ള അഭിപ്രായങ്ങളാണ് ഉള്ളത്?"
+        },
+        {
+          "q": "多くの企業は、これからどのような働き方に移りつつあると言っていますか。",
+          "q_en": "What kind of working style does it say many companies are shifting toward?",
+          "options": [
+            "すべての社員を完全に在宅勤務にする",
+            "週末もすべて出社させる",
+            "在宅勤務を完全にやめて元に戻す",
+            "在宅勤務と出社を組み合わせる"
+          ],
+          "answer": 3,
+          "q_te": "చాలా కంపెనీలు ఎలాంటి పని శైలి వైపు మళ్లుతున్నాయి?",
+          "q_hi": "कई कंपनियाँ किस प्रकार की कार्यशैली की ओर बढ़ रही हैं?",
+          "q_ta": "பல நிறுவனங்கள் எத்தகைய பணிமுறைக்கு மாறுகின்றன?",
+          "q_ko": "많은 기업들이 어떤 근무 형태로 전환하고 있습니까?",
+          "q_es": "¿Hacia qué estilo de trabajo están migrando muchas empresas?",
+          "q_kn": "ಕಂಪನಿಗಳು ಯಾವ ಕೆಲಸದ ಶೈಲಿಗೆ ಬದಲಾಗುತ್ತಿವೆ?",
+          "q_ml": "പല കമ്പനികളും എങ്ങനെയുള്ള തൊഴിൽ രീതിയിലേക്കാണ് മാറുന്നത്?"
+        }
+      ],
+      "transcript_te": "ఇంటి నుండి పని విధానం భవిష్యత్తు: వర్క్ ఫ్రమ్ హోమ్ సౌకర్యవంతంగా ఉన్నప్పటికీ, ఉద్యోగుల మధ్య కమ్యూనికేషన్ లోపం మరియు మానసిక ఒంటరితనం పెరగడం వంటి సమస్యలు ఉన్నాయి. చాలా కంపెనీలు వారంలో కొన్ని రోజులు ఆఫీస్, కొన్ని రోజులు రిమోట్ అనే హైబ్రిడ్ విధానాన్ని అవలంబిస్తున్నాయి.",
+      "transcript_hi": "वर्क फ्रॉम होम का भविष्य: घर से काम करना सुविधाजनक है, पर संवादहीनता और अकेलेपन की समस्याएँ आ रही हैं। अधिकांश कंपनियाँ अब हाइब्रिड मॉडल अपना रही हैं।",
+      "transcript_ta": "வீட்டுப் பணியின் எதிர்காலம்: வீட்டிலிருந்து வேலை செய்வது வசதியானது என்றாலும், தனிமை மற்றும் உரையாடல் குறைபாடு ஏற்படுகிறது. பல நிறுவனங்கள் இரண்டும் கலந்த முறையைத் தேர்ந்தெடுக்கின்றன.",
+      "transcript_ko": "재택근무의 향방: 재택근무는 편리하지만 소통 부재와 고립감이라는 과제가 있습니다. 많은 기업들이 출근과 재택을 병행하는 하이브리드 근무로 전환하고 있습니다.",
+      "transcript_es": "El futuro del teletrabajo: Aunque el trabajo desde casa es cómodo, acarrea falta de comunicación y aislamiento. Las empresas viran hacia un modelo híbrido flexible.",
+      "transcript_kn": "ವರ್ಕ್ ಫ್ರಮ್ ಹೋಮ್‌ನ ಭವಿಷ್ಯ: ಮನೆಯಿಂದ ಕೆಲಸ ಮಾಡುವುದು ಅನುಕೂಲವಾದರೂ ಒಂಟಿತನ ಕಾಡುತ್ತದೆ. ಕಂಪನಿಗಳು ಈಗ ಕಚೇರಿ ಮತ್ತು ಮನೆಯಿಂದ ಎರಡನ್ನೂ ಒಳಗೊಂಡ ವಿಧಾನಕ್ಕೆ ಬದಲಾಗುತ್ತಿವೆ.",
+      "transcript_ml": "വർക്ക് ഫ്രം ഹോമിന്റെ ഭാവി: വീട്ടിലിരുന്ന് ജോലി ചെയ്യുന്നത് സൗകര്യമാണെങ്കിലും ആശയവിനിമയക്കുറവും ഏകാന്തതയും പ്രശ്നമാകുന്നു. കമ്പനികൾ ഇപ്പോൾ രണ്ടും ചേർന്ന രീതിയിലേക്ക് മാറുന്നു."
+    },
+    {
+      "id": "l-n2-5",
+      "title": "ローカル線を守る工夫（Efforts to Save a Local Railway Line）",
+      "script": "ご利用のみなさまにお知らせいたします。この地域を走るローカル線は、利用者の減少が続いており、このままでは路線の維持が難しくなるおそれがあります。そこで鉄道会社では、沿線の観光地と協力し、車内で地元の特産品を販売したり、季節ごとに特別な車両を走らせたりするなど、乗ること自体を楽しんでいただく工夫を始めました。単なる移動の手段としてだけでなく、旅の目的地となるような路線を目指しているというわけです。地元の方はもちろん、遠くからお越しの方にも、ぜひ一度ご乗車いただければ幸いです。",
+      "transcript_en": "An announcement for all passengers. The local line that runs through this area continues to see a decline in riders, and if things go on this way, there is a risk that maintaining the line will become difficult. And so, the railway company has teamed up with tourist spots along the line and begun devising ways to let people enjoy the act of riding itself—selling local specialty products on board and running special train cars for each season, among other things. In other words, we are aiming to make this line not merely a means of transportation, but a destination for travel in its own right. We would be delighted if local residents, and of course those coming from far away, would ride with us at least once.",
+      "questions": [
+        {
+          "q": "このローカル線が抱えている問題は何ですか。",
+          "q_en": "What problem is this local railway line facing?",
+          "options": [
+            "運賃が高すぎること",
+            "事故が続いていること",
+            "利用者が減り続けていること",
+            "駅員が足りないこと"
+          ],
+          "answer": 2,
+          "q_te": "గ్రామీణ రైల్వే లైన్ ఎదుర్కొంటున్న సమస్య ఏమిటి?",
+          "q_hi": "स्थानीय रेल लाइन किस समस्या का सामना कर रही है?",
+          "q_ta": "கிராமப்புற ரயில் எதிர்கொள்ளும் பிரச்சனை என்ன?",
+          "q_ko": "이 지방 노선이 직면한 문제는 무엇입니까?",
+          "q_es": "¿Qué problema enfrenta esta línea ferroviaria local?",
+          "q_kn": "ಗ್ರಾಮೀಣ ರೈಲ್ವೆ ಎದುರಿಸುತ್ತಿರುವ ಸಮಸ್ಯೆಯೇನು?",
+          "q_ml": "ഗ്രാമ റെയിൽവേ നേരിടുന്ന പ്രശ്നമെന്താണ്?"
+        },
+        {
+          "q": "鉄道会社が始めた工夫はどれですか。",
+          "q_en": "Which is one of the efforts the railway company has begun?",
+          "options": [
+            "車内で特産品を売るなど、乗ること自体を楽しんでもらうこと",
+            "運賃を大幅に値上げすること",
+            "駅の数を減らすこと",
+            "電車の速度を上げること"
+          ],
+          "answer": 0,
+          "q_te": "రైల్వే సంస్థ చేపట్టిన ప్రయత్నం ఏది?",
+          "q_hi": "रेलवे कंपनी ने क्या प्रयास शुरू किया है?",
+          "q_ta": "ரயில்வே நிறுவனம் தொடங்கிய முயற்சி எது?",
+          "q_ko": "철도 회사가 시작한 노력 중 하나는 무엇입니까?",
+          "q_es": "¿Cuál es una de las iniciativas iniciadas por la compañía ferroviaria?",
+          "q_kn": "ರೈಲ್ವೆ ಸಂಸ್ಥೆ ಕೈಗೊಂಡ ಪ್ರಯತ್ನವೇನು?",
+          "q_ml": "റെയിൽവേ ആരംഭിച്ച നടപടികളിൽ ഒന്ന് എന്താണ്?"
+        }
+      ],
+      "transcript_te": "గ్రామీణ రైలు మార్గాల పరిరక్షణ: ప్రయాణికుల సంఖ్య తగ్గినప్పటికీ, పర్యాటక రైళ్లను నడపడం మరియు స్థానిక ఉత్పత్తుల విక్రయాల ద్వారా రైల్వే సంస్థలు ఆదాయాన్ని పెంచుకోవడానికి వినూత్న ప్రయత్నాలు చేస్తున్నాయి.",
+      "transcript_hi": "स्थानीय रेल को बचाने के प्रयास: यात्रियों की संख्या घटने पर भी रेलवे कंपनियाँ पर्यटक ट्रेनें चलाने और स्थानीय उत्पादों को बेचकर लाइन बचाने का प्रयास कर रही हैं।",
+      "transcript_ta": "கிராமப்புற ரயில்களைக் காப்பாற்றும் முயற்சிகள்: பயணிகள் குறைந்தாலும், சுற்றுலா ரயில்களை இயக்குவதன் மூலமும் உள்ளூர் பொருட்களை விற்பதன் மூலமும் வருவாயைப் பெருக்க முயற்சிக்கின்றனர்.",
+      "transcript_ko": "지방 노선을 지키는 노력: 승객 감소 속에서도 관광 열차 운행과 지역 특산물 판매 등 노선을 지키기 위한 다양한 시도가 이루어지고 있습니다.",
+      "transcript_es": "Esfuerzos para salvar el ferrocarril local: Pese a la caída de pasajeros, se promueven trenes turísticos y venta de productos regionales para mantener vivas las líneas.",
+      "transcript_kn": "ರೈಲ್ವೆ ಮಾರ್ಗಗಳನ್ನು ಉಳಿಸುವ ಪ್ರಯತ್ನ: ಪ್ರಯಾಣಿಕರು ಕಡಿಮೆಯಾದರೂ ಪ್ರವಾಸಿ ರೈಲುಗಳು ಮತ್ತು ಸ್ಥಳೀಯ ಉತ್ಪನ್ನಗಳ ಮಾರಾಟದ ಮೂಲಕ ಮಾರ್ಗಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು ಪ್ರಯತ್ನಿಸಲಾಗುತ್ತಿದೆ.",
+      "transcript_ml": "ഗ്രാമ റെയിൽവേയെ സംരക്ഷിക്കാനുള്ള വഴികൾ: യാത്രക്കാർ കുറവാണെങ്കിലും വിനോദസഞ്ചാര ട്രെയിനുകൾ ഓടിച്ചും പ്രാദേശിക ഉൽപ്പന്നങ്ങൾ വിറ്റും വരുമാനം കണ്ടെത്താൻ ശ്രമിക്കുന്നു."
+    },
+    {
+      "id": "l-n2-6",
+      "title": "発酵食品と健康（Fermented Foods and Health）",
+      "script": "みそやしょうゆ、納豆といった発酵食品は、古くから日本人の食卓に欠かせないものとして親しまれてきました。近年の研究では、こうした食品に含まれる微生物が腸の働きを整え、体全体の健康にもよい影響を与える可能性があることが分かってきています。ただ、体によいからといって、一度にたくさん食べればいいというものではありません。塩分を多く含むものもあるため、量に気をつけながら、毎日少しずつ続けることが大切だと言われています。",
+      "transcript_en": "Fermented foods such as miso, soy sauce, and natto have long been cherished as indispensable items on the Japanese table. Recent research has begun to reveal that the microorganisms contained in these foods may regulate the workings of the gut and have a good influence on the health of the whole body. However, just because something is good for you does not mean that eating a lot of it at once is best. Since some of these foods contain a great deal of salt, it is said to be important to watch the amount and to keep eating a little each day.",
+      "questions": [
+        {
+          "q": "発酵食品について、近年の研究で分かってきたことは何ですか。",
+          "q_en": "What has recent research begun to reveal about fermented foods?",
+          "options": [
+            "若い人には向いていないこと",
+            "塩分が全く含まれていないこと",
+            "栄養がほとんどないこと",
+            "腸の働きを整え、健康によい影響を与える可能性があること"
+          ],
+          "answer": 3,
+          "q_te": "పులియబెట్టిన ఆహారాల గురించి పరిశోధనలు ఏమి వెల్లడిస్తున్నాయి?",
+          "q_hi": "किण्वित खाद्य पदार्थों के बारे में हाल के शोध क्या बताते हैं?",
+          "q_ta": "நொதித்த உணவுகள் பற்றி சமீபத்திய ஆய்வுகள் என்ன கூறுகின்றன?",
+          "q_ko": "발효식품에 대해 최근 연구가 밝혀내고 있는 것은 무엇입니까?",
+          "q_es": "¿Qué revelan las investigaciones recientes sobre los alimentos fermentados?",
+          "q_kn": "ಹುದುಗಿಸಿದ ಆಹಾರದ ಬಗ್ಗೆ ಸಂಶೋಧನೆಗಳು ಏನು ಹೇಳುತ್ತವೆ?",
+          "q_ml": "പുളിപ്പിച്ച ഭക്ഷണങ്ങളെക്കുറിച്ച് പുതിയ പഠനങ്ങൾ എന്താണ് വ്യക്തമാക്കുന്നത്?"
+        },
+        {
+          "q": "発酵食品の食べ方について、話し手は何と言っていますか。",
+          "q_en": "What does the speaker say about how to eat fermented foods?",
+          "options": [
+            "体によいので一度にたくさん食べるとよい",
+            "量に気をつけて、毎日少しずつ続けるとよい",
+            "塩分が多いので全く食べないほうがよい",
+            "朝だけ食べるとよい"
+          ],
+          "answer": 1,
+          "q_te": "వీటిని ఎలా తినాలో రచయిత ఏమి చెప్పారు?",
+          "q_hi": "इन्हें कैसे खाना चाहिए, इस पर क्या सलाह दी गई है?",
+          "q_ta": "இவற்றை எவ்வாறு உட்கொள்ள வேண்டும் எனப் பரிந்துரைக்கப்படுகிறது?",
+          "q_ko": "발효식품의 섭취 방법에 대해 화자는 어떻게 조언합니까?",
+          "q_es": "¿Qué indica el hablante sobre cómo consumir estos alimentos?",
+          "q_kn": "ಇವುಗಳನ್ನು ಹೇಗೆ ಸೇವಿಸಬೇಕೆಂದು ಸಲಹೆ ನೀಡಲಾಗಿದೆ?",
+          "q_ml": "ഇവ എങ്ങനെ കഴിക്കണമെന്നാണ് പറയുന്നത്?"
+        }
+      ],
+      "transcript_te": "పులియబెట్టిన ఆహారాలు మరియు ఆరోగ్యం: మిసో, సోయా సాస్, నాట్టో వంటి ఫెర్మెంటెడ్ ఆహారాలు పేగుల ఆరోగ్యానికి మరియు రోగనిరోధక శక్తిని పెంచడానికి ఎంతో మేలు చేస్తాయి. రోజువారీ ఆహారంలో వీటిని మితంగా చేర్చుకోవడం మంచిది.",
+      "transcript_hi": "किण्वित खाद्य पदार्थ और स्वास्थ्य: मिसो, सोया सॉस और नट्टो जैसे किण्वित खाद्य पाचन तंत्र और रोग प्रतिरोधक क्षमता के लिए अत्यंत लाभकारी हैं। इन्हें नियमित भोजन में शामिल करना चाहिए।",
+      "transcript_ta": "நொதித்த உணவுகளும் ஆரோக்கியமும்: மிசோ, சோயா சாஸ் போன்ற நொதிக்க வைக்கப்பட்ட உணவுகள் குடல் ஆரோக்கியத்திற்கும் நோய் எதிர்ப்புச் சக்திக்கும் மிகவும் நல்லது.",
+      "transcript_ko": "발효식품과 건강: 된장, 간장, 낫토 등 발효식품은 장 건강과 면역력 증진에 탁월한 효과가 있습니다. 꾸준히 섭취하는 것이 권장됩니다.",
+      "transcript_es": "Alimentos fermentados y salud: El miso, la salsa de soja y el natto favorecen la flora intestinal y refuerzan el sistema inmunitario. Conviene consumirlos regularmente.",
+      "transcript_kn": "ಹುದುಗಿಸಿದ ಆಹಾರ ಮತ್ತು ಆರೋಗ್ಯ: ಮಿಸೋ, ಸೋಯಾ ಸಾಸ್ ಮುಂತಾದ ಆಹಾರಗಳು ಜೀರ್ಣಕ್ರಿಯೆ ಮತ್ತು ರೋಗನಿರೋಧಕ ಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತವೆ.",
+      "transcript_ml": "പുളിപ്പിച്ച ഭക്ഷണങ്ങളും ആരോഗ്യവും: മിസോ, സോയ സോസ് തുടങ്ങിയ പുളിപ്പിച്ച ഭക്ഷണങ്ങൾ കുടലിന്റെ ആരോഗ്യത്തിനും പ്രതിരോധശേഷിക്കും വളരെ നല്ലതാണ്."
+    },
+    {
+      "id": "l-n2-7",
+      "title": "キャッシュレス決済の広がり（The Spread of Cashless Payment）",
+      "script": "ここ数年で、現金を使わずにスマートフォンやカードで支払う、いわゆるキャッシュレス決済が急速に広がってきました。財布を持ち歩かなくても買い物ができるうえ、支払いの記録が自動的に残るので、家計の管理がしやすくなったという人も多いようです。その反面、目に見えないお金だけに、つい使いすぎてしまうという問題も指摘されています。便利であればあるほど、自分がいくら使っているのかを意識することが、これまで以上に求められていると言えるでしょう。",
+      "transcript_en": "Over the past few years, so-called cashless payment—paying by smartphone or card without using cash—has spread rapidly. Not only can you shop without carrying a wallet, but a record of your payments is automatically kept, so it seems many people find it has become easier to manage their household finances. On the other hand, precisely because the money is invisible, the problem of unintentionally overspending has also been pointed out. The more convenient it is, the more we are being asked—more than ever before—to stay aware of just how much we are spending.",
+      "questions": [
+        {
+          "q": "キャッシュレス決済の利点として挙げられているのは何ですか。",
+          "q_en": "What is given as an advantage of cashless payment?",
+          "options": [
+            "現金より商品が安く買えること",
+            "支払いの記録が自動的に残り、家計の管理がしやすいこと",
+            "電池が要らないこと",
+            "どんな店でも必ず使えること"
+          ],
+          "answer": 1,
+          "q_te": "క్యాష్‌లెస్‌ చెల్లింపుల ప్రయోజనం ఏమిటి?",
+          "q_hi": "कैशलेस भुगतान का क्या लाभ बताया गया है?",
+          "q_ta": "பணமில்லா பரிவர்த்தனையின் சாதகம் என்ன?",
+          "q_ko": "캐시리스 결제의 장점으로 언급된 것은 무엇입니까?",
+          "q_es": "¿Qué ventaja del pago electrónico se destaca?",
+          "q_kn": "ಡಿಜಿಟಲ್ ಪಾವತಿಯ ಪ್ರಯೋಜನವೇನು?",
+          "q_ml": "ഡിജിറ്റൽ പേയ്‌മെന്റിന്റെ ഗുണമെന്താണ്?"
+        },
+        {
+          "q": "キャッシュレス決済の問題点として指摘されているのは何ですか。",
+          "q_en": "What is pointed out as a problem with cashless payment?",
+          "options": [
+            "支払いの記録が全く残らないこと",
+            "現金より手数料が高いこと",
+            "目に見えないため、つい使いすぎてしまうこと",
+            "支払いに時間がかかること"
+          ],
+          "answer": 2,
+          "q_te": "క్యాష్‌లెస్‌ చెల్లింపుల సమస్యగా ఏమి ఎత్తిచూపబడింది?",
+          "q_hi": "कैशलेस भुगतान की क्या समस्या बताई गई है?",
+          "q_ta": "பணமில்லா பரிவர்த்தனையின் குறைபாடாகக் கூறப்படுவது எது?",
+          "q_ko": "캐시리스의 문제점으로 지적된 것은 무엇입니까?",
+          "q_es": "¿Qué problema se señala respecto al pago electrónico?",
+          "q_kn": "ಡಿಜಿಟಲ್ ಪಾವತಿಯ ಸಮಸ್ಯೆಯಾಗಿ ಏನನ್ನು ಉಲ್ಲೇಖಿಸಲಾಗಿದೆ?",
+          "q_ml": "ഡിജിറ്റൽ പേയ്‌മെന്റിന്റെ പോരായ്മയായി എന്താണ് പറയുന്നത്?"
+        },
+        {
+          "q": "話し手は、これまで以上に何が求められると言っていますか。",
+          "q_en": "What does the speaker say is being asked of us more than ever?",
+          "options": [
+            "自分がいくら使っているのかを意識すること",
+            "現金を一切使わないようにすること",
+            "カードをできるだけ多く持つこと",
+            "買い物の回数を減らすこと"
+          ],
+          "answer": 0,
+          "q_te": "వినియోగదారుల నుండి ఏమి కోరుతున్నారు?",
+          "q_hi": "उपभोक्ताओं से क्या अपेक्षा की जा रही है?",
+          "q_ta": "நுகர்வோரிடம் என்ன கோரப்படுகிறது?",
+          "q_ko": "화자는 우리에게 무엇이 요구되고 있다고 말합니까?",
+          "q_es": "¿Qué se exige de nosotros más que nunca según el hablante?",
+          "q_kn": "ಗ್ರಾಹಕರಿಂದ ಏನನ್ನು ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ?",
+          "q_ml": "നമ്മളിൽ നിന്ന് എന്താണ് ആവശ്യപ്പെടുന്നത്?"
+        }
+      ],
+      "transcript_te": "క్యాష్‌లెస్‌ చెల్లింపుల విస్తరణ: డిజిటల్ చెల్లింపులు సౌలభ్యాన్ని అందించినప్పటికీ, సైబర్ భద్రత మరియు వ్యక్తిగత డేటా రక్షణ పట్ల వినియోగదారులు మరింత అప్రమత్తంగా ఉండాలి.",
+      "transcript_hi": "कैशलेस भुगतान का विस्तार: डिजिटल भुगतान सुविधाजनक तो है, लेकिन साइबर सुरक्षा और व्यक्तिगत डेटा की सुरक्षा को लेकर अधिक सतर्क रहने की आवश्यकता है।",
+      "transcript_ta": "பணமில்லா பரிவர்த்தனை விரிவாக்கம்: டிஜிட்டல் முறை வசதியானது என்றாலும், இணையப் பாதுகாப்பு மற்றும் தனிநபர் தரவுப் பாதுகாப்பில் அதிக விழிப்புணர்வு தேவை.",
+      "transcript_ko": "캐시리스 결제의 확산: 결제의 편리함 이면에 개인정보 유출과 보안 위협이 따르므로 사용자 스스로의 철저한 관리가 요구됩니다.",
+      "transcript_es": "Expansión del pago electrónico: La rapidez del pago digital exige a los usuarios una mayor vigilancia en materia de ciberseguridad y protección de datos.",
+      "transcript_kn": "ಕ್ಯಾಶ್‌ಲೆಸ್ ಪಾವತಿಯ ವಿಸ್ತರಣೆ: ಡಿಜಿಟಲ್ ಪಾವತಿ ಸುಲಭವಾಗಿದ್ದರೂ, ಸೈಬರ್ ಭದ್ರತೆ ಮತ್ತು ವೈಯಕ್ತಿಕ ಡೇಟಾ ರಕ್ಷಣೆಯ ಬಗ್ಗೆ ಎಚ್ಚರ ಅಗತ್ಯ.",
+      "transcript_ml": "ക്യാഷ്‌ലെസ്സ് പേയ്‌മെന്റിന്റെ വ്യാപനം: ഡിജിറ്റൽ പേയ്‌മെന്റുകൾ സൗകര്യപ്രദമാണെങ്കിലും സൈബർ സുരക്ഷയിലും ഡാറ്റ സംരക്ഷണത്തിലും ജാഗ്രത പുലർത്തണം."
+    },
+    {
+      "id": "l-n2-8",
+      "title": "町内会の防災訓練（The Neighborhood Disaster Drill）",
+      "script": "来月、私たちの町内会では、地震を想定した防災訓練を行うことになりました。これまでは参加者が高齢の方に偏りがちで、若い世代や小さなお子さんのいる家庭には、なかなか関心を持ってもらえませんでした。しかし、いざ災害が起きたとき、近所の人同士が助け合えるかどうかが、生死を分けることもあります。そこで今回は、消火器の使い方を体験できるコーナーや、非常食を実際に食べてみる催しなど、家族みんなで楽しみながら学べる内容を用意しました。お忙しいとは思いますが、一人でも多くの方にご参加いただきたいと思います。",
+      "transcript_en": "Next month, our neighborhood association has decided to hold a disaster drill on the assumption of an earthquake. Up to now, participants have tended to be skewed toward elderly residents, and it has been hard to get the younger generation and households with small children to take an interest. However, when a disaster actually strikes, whether or not neighbors can help one another can sometimes mean the difference between life and death. So this time, we have prepared content that the whole family can learn from while having fun, such as a corner where you can try using a fire extinguisher and an event where you actually taste emergency food. We know you are busy, but we would like as many of you as possible to take part.",
+      "questions": [
+        {
+          "q": "これまでの防災訓練には、どんな問題がありましたか。",
+          "q_en": "What problem has there been with the disaster drills up to now?",
+          "options": [
+            "訓練の回数が多すぎたこと",
+            "費用がかかりすぎたこと",
+            "場所が遠くて通いにくかったこと",
+            "参加者が高齢の方に偏りがちだったこと"
+          ],
+          "answer": 3,
+          "q_te": "ఇప్పటివరకు విపత్తు శిక్షణలలో ఉన్న సమస్య ఏమిటి?",
+          "q_hi": "अब तक के आपदा अभ्यासों में क्या कमी थी?",
+          "q_ta": "இதுவரையிலான பேரிடர் பயிற்சிகளில் இருந்த குறைபாடு என்ன?",
+          "q_ko": "지금까지의 방재 훈련에 있었던 문제점은 무엇입니까?",
+          "q_es": "¿Qué carencia tenían los simulacros de desastres hasta ahora?",
+          "q_kn": "ಹಿಂದಿನ ತಾಲೀಮುಗಳಲ್ಲಿ ಇದ್ದ ಕೊರತೆಯೇನು?",
+          "q_ml": "ഇതുവരെയുള്ള അഭ്യാസങ്ങളിലെ പോരായ്മ എന്തായിരുന്നു?"
+        },
+        {
+          "q": "今回の訓練で新しく用意された内容はどれですか。",
+          "q_en": "Which is part of the content newly prepared for this drill?",
+          "options": [
+            "高齢者だけが入れる特別な席",
+            "消火器の使い方を体験したり、非常食を食べたりできる催し",
+            "お金を配るコーナー",
+            "講演を静かに聞くだけの時間"
+          ],
+          "answer": 1,
+          "q_te": "కొత్తగా చేర్చిన శిక్షణ అంశం ఏది?",
+          "q_hi": "इस अभ्यास में नया क्या शामिल किया गया है?",
+          "q_ta": "இப்பயிற்சியில் புதிதாக சேர்க்கப்பட்டது எது?",
+          "q_ko": "이번 훈련에 새롭게 준비된 내용은 무엇입니까?",
+          "q_es": "¿Qué contenido nuevo se ha preparado para este simulacro?",
+          "q_kn": "ಈ ಬಾರಿಯ ತಾಲೀಮಿನಲ್ಲಿ ಹೊಸದಾಗಿ ಸೇರಿಸಿದ ವಿಷಯ ಯಾವುದು?",
+          "q_ml": "ഈ അഭ്യാസത്തിൽ പുതുതായി ഉൾപ്പെടുത്തിയത് എന്താണ്?"
+        }
+      ],
+      "transcript_te": "కాలనీ విపత్తు నిర్వహణ శిక్షణ: రాబోయే విపత్తు శిక్షణలో సాధారణ అగ్నిమాపక కసరత్తులే కాకుండా, తాత్కాలిక టాయిలెట్ల ఏర్పాటు మరియు అత్యవసర రేడియో సమాచార వినియోగంపై కూడా అవగాహన కల్పిస్తారు.",
+      "transcript_hi": "मोहल्ला आपदा प्रबंधन अभ्यास: आगामी अभ्यास में केवल आग बुझाने का प्रशिक्षण ही नहीं, बल्कि आपातकालीन शौचालयों की स्थापना और रेडियो संदेशों के उपयोग का भी अभ्यास कराया जाएगा।",
+      "transcript_ta": "பேரிடர் மேலாண்மை பயிற்சி: வரவிருக்கும் பயிற்சியில் வழக்கமான தீயணைப்புப் பயிற்சி மட்டுமின்றி, அவசரகால கழிவறை அமைத்தல் மற்றும் வானொலி தகவல் தொடர்பு முறைகளும் கற்பிக்கப்படும்.",
+      "transcript_ko": "주민 방재 훈련: 이번 훈련에서는 소화기 사용법뿐만 아니라 간이 화장실 조립 및 재난 라디오 활용법 등 실제적인 대처법을 훈련합니다.",
+      "transcript_es": "Simulacro vecinal de emergencias: Este simulacro incluirá, además de apagar fuegos, el montaje de baños portátiles y el uso de radiofrecuencias de emergencia.",
+      "transcript_kn": "ವಿಪತ್ತು ನಿರ್ವಹಣಾ ತಾಲೀಮು: ಮುಂಬರುವ ತಾಲೀಮಿನಲ್ಲಿ ಕೇವಲ ಬೆಂಕಿ ನಂದಿಸುವುದಲ್ಲದೆ, ತುರ್ತು ಶೌಚಾಲಯ ನಿರ್ಮಾಣ ಮತ್ತು ರೇಡಿಯೋ ಸಂವಹನವನ್ನೂ ಕಲಿಸಲಾಗುತ್ತದೆ.",
+      "transcript_ml": "ദുരന്ത നിവാരണ മോക്ക്ഡ്രിൽ: സാധാരണ ഫയർ അഭ്യാസങ്ങൾക്ക് പുറമെ താൽക്കാലിക ശൗചാലയങ്ങൾ ഉണ്ടാക്കാനും റേഡിയോ സന്ദേശങ്ങൾ ഉപയോഗിക്കാനും പരിശീലിപ്പിക്കും."
+    },
+    {
+      "id": "l-n2-9",
+      "title": "都市の暑さと緑（Urban Heat and Greenery）",
+      "script": "夏になると、都市の中心部では郊外に比べて気温が高くなる現象が見られます。これは、アスファルトやコンクリートが日中の熱をため込み、夜になってもなかなか気温が下がらないことが主な原因だと考えられています。こうした問題に対して、建物の屋上に植物を植えたり、道路の脇に木を増やしたりする取り組みが各地で進められています。緑を増やすことは、気温を下げるだけでなく、街の景観をよくしたり、住む人の心を落ち着かせたりする効果も期待できます。一本の木を植えるだけでは大きな変化は望めないかもしれませんが、こうした小さな積み重ねこそが、住みやすい街づくりにつながっていくのではないでしょうか。",
+      "transcript_en": "When summer comes, a phenomenon can be seen in which the temperature in city centers rises higher than in the suburbs. This is thought to be mainly because asphalt and concrete store up the daytime heat, so that the temperature does not easily fall even after night comes. In response to this problem, efforts such as planting vegetation on the rooftops of buildings and increasing the number of trees along the sides of roads are being carried out in many places. Increasing greenery can be expected to have effects beyond just lowering the temperature—it can also improve the townscape and calm the minds of those who live there. Planting a single tree alone may not bring about a big change, but it may well be precisely this accumulation of small steps that leads to building a town that is easy to live in.",
+      "questions": [
+        {
+          "q": "都市の中心部で気温が高くなる主な原因は何だと言っていますか。",
+          "q_en": "What does it say is the main cause of higher temperatures in city centers?",
+          "options": [
+            "海から遠く離れていること",
+            "木が多すぎること",
+            "アスファルトやコンクリートが熱をため込むこと",
+            "人口が減っていること"
+          ],
+          "answer": 2,
+          "q_te": "నగర కేంద్రాలలో ఉష్ణోగ్రత పెరగడానికి ప్రధాన కారణం ఏమిటి?",
+          "q_hi": "शहरों के केंद्रों में अधिक तापमान का मुख्य कारण क्या है?",
+          "q_ta": "நகர மையங்களில் அதிக வெப்பத்திற்கு முக்கிய காரணம் என்ன?",
+          "q_ko": "도심의 기온이 높아지는 주된 원인은 무엇입니까?",
+          "q_es": "¿Cuál es la causa principal de las altas temperaturas en el centro urbano?",
+          "q_kn": "ನಗರ ಕೇಂದ್ರಗಳಲ್ಲಿ ಉಷ್ಣತೆ ಹೆಚ್ಚಲು ಮುಖ್ಯ ಕಾರಣವೇನು?",
+          "q_ml": "നഗരമധ്യത്തിൽ ചൂട് കൂടാൻ പ്രധാന കാരണമെന്താണ്?"
+        },
+        {
+          "q": "緑を増やすことの効果として、話し手が挙げていないものはどれですか。",
+          "q_en": "Which is NOT mentioned by the speaker as an effect of increasing greenery?",
+          "options": [
+            "気温を下げること",
+            "街の景観をよくすること",
+            "住む人の心を落ち着かせること",
+            "電気代を安くすること"
+          ],
+          "answer": 3,
+          "q_te": "పచ్చదనం పెంచడం వల్ల కలిగే ప్రయోజనాలలో లేనిది ఏది?",
+          "q_hi": "हरियाली बढ़ाने के प्रभावों में कौन सा शामिल नहीं है?",
+          "q_ta": "பசுமையை அதிகரிப்பதால் ஏற்படும் பயன்களில் குறிப்பிடப்படாதது எது?",
+          "q_ko": "녹지 확충의 효과로 화자가 언급하지 않은 것은 어느 것입니까?",
+          "q_es": "¿Cuál NO es mencionado como efecto de aumentar las zonas verdes?",
+          "q_kn": "ಹಸಿರು ಹೆಚ್ಚಿಸುವುದರಿಂದ ಆಗುವ ಪ್ರಯೋಜನಗಳಲ್ಲಿ ಉಲ್ಲೇಖಿಸಲ್ಪಡದಿರುವುದು ಯಾವುದು?",
+          "q_ml": "ഹരിതവൽക്കരണത്തിന്റെ ഗുണങ്ങളിൽ പരാമർശിക്കാത്തത് ഏതാണ്?"
+        }
+      ],
+      "transcript_te": "నగర ఉష్ణోగ్రత మరియు పచ్చదనం: చెట్లు సూర్యరశ్మిని అడ్డుకోవడమే కాకుండా, వాటి ఆకుల నుండి నీరు ఆవిరై గాలిని చల్లబరుస్తాయి. నగరాల్లో పార్కులు మరియు చెట్లను పెంచడం హీట్ ఐలాండ్ ప్రభావాన్ని గణనీయంగా తగ్గిస్తుంది.",
+      "transcript_hi": "शहरी गर्मी और हरियाली: पेड़ केवल छाया ही नहीं देते, बल्कि वाष्पोत्सर्जन के माध्यम से आसपास की हवा को भी ठंडा करते हैं। अधिक हरियाली से तापमान नियंत्रित रहता है।",
+      "transcript_ta": "நகர வெப்பமும் பசுமையும்: மரங்கள் நிழல் தருவதோடு நில்லாமல், நீராவிப் போக்கின் மூலம் சுற்றியுள்ள காற்றைக் குளிர்விக்கின்றன. பசுமையை அதிகரிப்பது வெப்பத்தைத் தணிக்கும்.",
+      "transcript_ko": "도시 열기와 녹지: 나무는 그늘을 제공할 뿐 아니라 잎의 증산 작용을 통해 주변 공기를 식혀주는 중요한 역할을 합니다. 녹지 확충이 필수적입니다.",
+      "transcript_es": "Calor urbano y zonas verdes: La vegetación no solo aporta sombra, sino que enfría el aire mediante la transpiración de las hojas, mitigando el calor de forma natural.",
+      "transcript_kn": "ನಗರದ ಉಷ್ಣತೆ ಮತ್ತು ಹಸಿರು: ಮರಗಳು ನೆರಳು ನೀಡುವುದಲ್ಲದೆ ಎಲೆಗಳಿಂದ ನೀರು ಆವಿಯಾಗುವ ಮೂಲಕ ಗಾಳಿಯನ್ನು ತಂಪಾಗಿಸುತ್ತವೆ. ಹಸಿರು ಹೆಚ್ಚಿಸುವುದು ತಾಪಮಾನವನ್ನು ತಗ್ಗಿಸುತ್ತದೆ.",
+      "transcript_ml": "നഗരത്തിലെ ചൂടും ഹരിതവൽക്കരണവും: മരങ്ങൾ തണൽ നൽകുന്നതിനൊപ്പം ഇലകളിൽ നിന്നുള്ള ബാഷ്പീകരണത്തിലൂടെ അന്തരീക്ഷത്തെ തണുപ്പിക്കുകയും ചെയ്യുന്നു."
+    },
+    {
+      "id": "l-n2-10",
+      "title": "プラスチックリサイクルに関する講演 (Lecture on Plastic Recycling)",
+      "script": "講師：本日はプラスチックごみの削減と循環型社会の構築についてお話しします。現代社会において、プラスチックは軽量で耐久性に優れ、衛生的な包装資材として欠かせない存在です。しかし、使い捨てプラスチックの大量消費と不適切な廃棄が海洋汚染などの深刻な地球環境問題を引き起こしています。現在、私たちが目指すべきは単なるゴミの焼却ではなく、使用済みプラスチックを再び原料として再生する『マテリアルリサイクル』や、化学的に分解して再利用する『ケミカルリサイクル』の技術革新です。企業だけでなく、私たち一人ひとりがマイバッグの持参や過剰包装を断るなど、日々の行動を見直すことが求められています。",
+      "transcript_en": "Lecturer: Today I will discuss reducing plastic waste and establishing a circular society. In modern society, plastic is indispensable as lightweight, durable, and hygienic packaging. However, massive consumption and improper disposal of single-use plastics have caused grave global environmental crises, such as marine pollution. Rather than mere incineration, we must strive toward technological innovation in 'material recycling'—turning discarded plastic back into raw materials—and 'chemical recycling'—breaking it down chemically for reuse. In addition to corporate efforts, each of us must reconsider our daily habits, such as bringing reusable bags and refusing excess packaging.",
+      "transcript_te": "వక్త: ప్లాస్టిక్ వ్యర్థాల తగ్గింపు మరియు పునర్వినియోగ సమాజ నిర్మాణం గురించి ఈరోజు మాట్లాడతాను. తేలికైనది, మన్నికైనది కావడంతో ఆధునిక సమాజంలో ప్లాస్టిక్ అనివార్యమైంది. కానీ ఒకసారి వాడి పారేసే ప్లాస్టిక్ వల్ల సముద్ర కాలుష్యంతో సహా తీవ్ర పర్యావరణ సమస్యలు వస్తున్నాయి. కేవలం కాల్చివేయడం కాకుండా, ప్లాస్టిక్‌ను మళ్ళీ ముడిసరుకుగా మార్చే మెటీరియల్ రీసైక్లింగ్, కెమికల్ రీసైక్లింగ్ సాంకేతికతలను అభివృద్ధి చేయాలి. వ్యాపార సంస్థలతో పాటు ప్రజలందరూ సొంత సంచులను వాడటం, అనవసర ప్యాకింగ్‌ను తిరస్కరించడం వంటి అలవాట్లను అలవర్చుకోవాలి.",
+      "transcript_hi": "वक्ता: आज मैं प्लास्टिक कचरे में कमी और चक्रीय अर्थव्यवस्था के निर्माण पर चर्चा करूँगा। प्लास्टिक आधुनिक समाज में एक अनिवार्य सामग्री बन चुका है। परंतु सिंगल-यूज़ प्लास्टिक के अत्यधिक उपयोग और अनुचित निस्तारण से समुद्री प्रदूषण जैसी गंभीर समस्याएँ उत्पन्न हो रही हैं। कचरा जलाने के बजाय हमें 'मटीरियल रीसाइक्लिंग' और 'केमिकल रीसाइक्लिंग' जैसी तकनीकों को बढ़ावा देना होगा। कंपनियों के साथ-साथ नागरिकों को भी कपड़े के थैले ले जाने और अतिरिक्त पैकेजिंग से बचने की आदत डालनी होगी।",
+      "transcript_ta": "விரிவுரையாளர்: இன்று நெகிழி கழிவுக் குறைப்பு மற்றும் சுழற்சிப் பொருளாதாரம் பற்றிப் பேசுகிறேன். நெகிழி இன்றியமையாததாக இருந்தாலும், ஒருமுறை பயன்படுத்தும் நெகிழியால் கடல் மாசுபாடு போன்ற சிக்கல்கள் உருவாகின்றன. கழிவுகளை எரிப்பதற்குப் பதிலாக, மீண்டும் மூலப்பொருளாக மாற்றும் மறுசுழற்சி தொழில்நுட்பங்களை வளர்க்க வேண்டும். பொதுமக்களும் துணிப்பைகளைப் பயன்படுத்துதல், தேவையற்ற உறைகளைத் தவிர்த்தல் போன்ற பழக்கங்களைக் கடைப்பிடிக்க வேண்டும்.",
+      "transcript_ko": "강연자: 오늘은 플라스틱 쓰레기 감축과 순환형 사회 구축에 대해 말씀드리겠습니다. 플라스틱은 현대 사회의 필수재이지만, 일회용 플라스틱의 대량 소비와 무분별한 폐기가 해양 오염 등 심각한 환경 문제를 낳고 있습니다. 단순 소각을 넘어 사용된 플라스틱을 원료로 되돌리는 물질 재활용과 화학적 재활용의 기술 혁신이 시급합니다. 기업뿐 아니라 개인도 장바구니 사용 등 일상 속 실천을 지속해야 합니다.",
+      "transcript_es": "Conferenciante: Hoy abordaremos la reducción de residuos plásticos y la economía circular. El plástico es un material indispensable, pero el abuso de los plásticos de un solo uso genera graves problemas medioambientales como la contaminación marina. En lugar de incinerarlo, debemos impulsar innovaciones en el reciclaje mecánico y químico para reintegrarlo como materia prima. Tanto empresas como ciudadanos debemos cambiar de hábitos, llevando bolsas reutilizables y rechazando envoltorios superfluos.",
+      "transcript_kn": "ಉಪನ್ಯಾಸಕ: ಪ್ಲಾಸ್ಟಿಕ್ ತ್ಯಾಜ್ಯ ಕಡಿತ ಮತ್ತು ಮರುಬಳಕೆ ಸಮಾಜದ ನಿರ್ಮಾಣದ ಬಗ್ಗೆ ಚರ್ಚಿಸೋಣ. ಪ್ಲಾಸ್ಟಿಕ್ ಅನಿವಾರ್ಯವಾದರೂ, ಏಕ-ಬಳಕೆಯ ಪ್ಲಾಸ್ಟಿಕ್‌ನಿಂದ ಸಮುದ್ರ ಮಾಲಿನ್ಯ ಮುಂತಾದ ಗಂಭೀರ ಸಮಸ್ಯೆಗಳು ಉಂಟಾಗುತ್ತಿವೆ. ಸುಡುವ ಬದಲು ಕಚ್ಚಾವಸ್ತುವಾಗಿ ಮರುಬಳಕೆ ಮಾಡುವ ತಂತ್ರಜ್ಞಾನವನ್ನು ಬೆಳೆಸಬೇಕು. ಪ್ರತಿಯೊಬ್ಬರೂ ಬಟ್ಟೆ ಚೀಲ ಬಳಸುವುದು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪ್ಯಾಕಿಂಗ್ ತಿರಸ್ಕರಿಸುವುದನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿಕೊಳ್ಳಬೇಕು.",
+      "transcript_ml": "പ്രഭാഷകൻ: പ്ലാസ്റ്റിക് മാലിന്യം കുറയ്ക്കുന്നതിനെക്കുറിച്ചും പുനരുപയോഗ സമ്പദ്‌വ്യവസ്ഥയെക്കുറിച്ചും സംസാരിക്കാം. പ്ലാസ്റ്റിക് നിത്യജീവിതത്തിൽ അനിവാര്യമാണെങ്കിലും, ഒറ്റത്തവണ ഉപയോഗിക്കുന്ന പ്ലാസ്റ്റിക് സമുദ്ര മലിനീകരണത്തിന് കാരണമാകുന്നു. കത്തിച്ചുകളയുന്നതിന് പകരം രാസ-ഭൗതിക പുനരുപയോഗ സാങ്കേതികവിദ്യകൾ വികസിപ്പിക്കണം. തുണിസഞ്ചികൾ ഉപയോഗിച്ചും അനാവശ്യ പാക്കിംഗ് ഒഴിവാക്കിയും ജനങ്ങളും ഇതിൽ പങ്കാളികളാകണം.",
+      "questions": [
+        {
+          "q": "使い捨てプラスチックの 大量消費が 引き起こしている 深刻な 問題は 何ですか。",
+          "q_en": "What serious problem is caused by the mass consumption of single-use plastics?",
+          "q_te": "సింగిల్ యూజ్ ప్లాస్టిక్ అధిక వాడకం వల్ల వస్తున్న తీవ్ర సమస్య ఏమిటి?",
+          "q_hi": "सिंगल-यूज़ प्लास्टिक के अत्यधिक उपयोग से कौन सी गंभीर समस्या हो रही है?",
+          "q_ta": "ஒருமுறை பயன்படுத்தும் நெகிழியால் ஏற்படும் தீவிர பிரச்சனை என்ன?",
+          "q_ko": "일회용 플라스틱의 대량 소비가 야기하는 심각한 문제는 무엇입니까?",
+          "q_es": "¿Qué grave problema genera el consumo masivo de plásticos de un solo uso?",
+          "q_kn": "ಏಕ-ಬಳಕೆಯ ಪ್ಲಾಸ್ಟಿಕ್‌ನಿಂದ ಉಂಟಾಗುತ್ತಿರುವ ಗಂಭೀರ ಸಮಸ್ಯೆಯೇನು?",
+          "q_ml": "പ്ലാസ്റ്റിക് അമിതമായി ഉപയോഗിക്കുന്നത് കൊണ്ടുള്ള ഗുരുതരമായ പ്രശ്നമെന്താണ്?",
+          "options": [
+            "海洋汚染などの 地球環境問題",
+            "原材料の 急激な 不足",
+            "プラスチックの 価格高騰",
+            "工場の 倒産"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "講師が 私たち 一人ひとりに 求めている 日常の 行動は 何ですか。",
+          "q_en": "What daily action does the lecturer ask of each of us?",
+          "q_te": "ప్రజలు రోజువారీ జీవితంలో ఏమి చేయాలని వక్త కోరారు?",
+          "q_hi": "वक्ता आम लोगों से दिनचर्या में क्या करने की अपेक्षा करते हैं?",
+          "q_ta": "விரிவுரையாளர் பொதுமக்களிடம் எதிர்பார்க்கும் அன்றாட செயல் என்ன?",
+          "q_ko": "강연자가 우리 개개인에게 요구하는 일상 속 행동은 무엇입니까?",
+          "q_es": "¿Qué acción cotidiana nos pide el conferenciante a cada uno de nosotros?",
+          "q_kn": "ಉಪನ್ಯಾಸಕರು ಪ್ರತಿಯೊಬ್ಬರಿಂದ ನಿರೀಕ್ಷಿಸುವ ದಿನನಿತ್ಯದ ನಡವಳಿಕೆ ಯಾವುದು?",
+          "q_ml": "പ്രഭാഷകൻ ജനങ്ങളിൽ നിന്ന് പ്രതീക്ഷിക്കുന്ന ദൈനംദിന ശീലം എന്താണ്?",
+          "options": [
+            "マイバッグを 持参し、過剰包装を 断ること",
+            "プラスチック製品を 一切 買わないこと",
+            "毎日 ゴミ拾いを すること",
+            "自宅で プラスチックを 分解すること"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n2-11",
+      "title": "伝統工芸・漆職人インタビュー (Interview with a Lacquer Artisan)",
+      "script": "聞き手：本日は輪島塗の伝統工芸士、山本さんにお話を伺います。山本さん、漆器の魅力とは何でしょうか。\n職人：漆というのは、何百年も前から日本人が使い続けてきた天然の塗料です。塗り重ねることで非常に強靭になり、抗菌作用や断熱性にも優れています。何より、使い込むほどに艶が増し、持つ人の手に馴染んでいくのが一番の魅力ですね。\n聞き手：最近はプラスチックやガラスの器も多いですが、漆器のこれからについてどう思われますか。\n職人：安くて手軽なものも便利ですが、傷んだら直して何世代にもわたって使い続けられるのが漆器の良さです。現代の生活に合ったモダンなデザインを取り入れつつ、本物の魅力を若い世代にも伝えていきたいですね。",
+      "transcript_en": "Interviewer: Today we speak with Mr. Yamamoto, a master artisan of Wajima lacquerware. Mr. Yamamoto, what is the appeal of lacquerware?\nArtisan: Lacquer is a natural coating that Japanese people have used for centuries. Layering it makes it remarkably resilient, and it boasts antibacterial and heat-insulating qualities. Above all, its greatest charm is that the more it is used, the richer its luster becomes, fitting comfortably into the owner's hands.\nInterviewer: Today there are many plastic and glass vessels; what are your thoughts on the future of lacquerware?\nArtisan: Inexpensive, convenient goods have their place, but lacquerware's virtue is that it can be repaired and passed down across generations. While adopting modern designs suited to contemporary living, I want to convey its authentic beauty to the younger generation.",
+      "transcript_te": "ఇంటర్వ్యూయర్: వాజిమా లక్క పాత్రల కళాకారుడు యమమోటో గారితో సంభాషణ. లక్క పాత్రల ప్రత్యేకత ఏమిటి?\nకళాకారుడు: లక్క అనేది శతాబ్దాలుగా జపనీయులు ఉపయోగిస్తున్న సహజ రంగు. అనేక పొరలుగా పూయడం వల్ల ఎంతో ధృడంగా మారుతుంది, యాంటీ బాక్టీరియల్ మరియు వేడిని తట్టుకునే గుణాలు కలిగి ఉంటుంది. వాడేకొద్దీ మెరుపు పెరిగి చేతికి నప్పుతుంది.\nఇంటర్వ్యూయర్: ప్రస్తుతం ప్లాస్టిక్, గాజు పాత్రలు ఎక్కువయ్యాయి కదా, లక్క పాత్రల భవిష్యత్తు గురించి మీ అభిప్రాయం ఏమిటి?\nకళాకారుడు: చౌకైన వస్తువులు మంచివే కావచ్చు, కానీ లక్క పాత్రలు పాడైతే మరమ్మతు చేసుకుని తరతరాలుగా వాడుకోవచ్చు. ఆధునిక జీవనానికి తగిన సరికొత్త డిజైన్లతో యువతకు వీటి గొప్పతనాన్ని తెలియజేయాలని ఆశిస్తున్నాను.",
+      "transcript_hi": "साक्षात्कारकर्ता: आज हम वाजिमा लैकरवेयर के कारीगर श्री यामामोतो से बात कर रहे हैं। यामामोतो जी, लाख के बर्तनों का क्या आकर्षण है?\nकारीगर: लाख एक प्राकृतिक पेंट है जिसका उपयोग सदियों से हो रहा है। परतों में लगाने से यह बहुत मज़बूत बनता है और जीवाणुरोधी होता है। सबसे बड़ी खूबी यह है कि जितना इस्तेमाल करो, इसकी चमक उतनी ही बढ़ती है।\nसाक्षात्कारकर्ता: आधुनिक समय में लाख के बर्तनों का क्या भविष्य है?\nकारीगर: सस्ती और सुविधाजनक चीज़ें अपनी जगह हैं, पर लाख के बर्तनों को मरम्मत करके पीढ़ियों तक इस्तेमाल किया जा सकता है। आधुनिक डिज़ाइनों के साथ हम युवाओं तक इसकी सुंदरता पहुँचाना चाहते हैं।",
+      "transcript_ta": "நேர்காணல் செய்பவர்: வாஜிமா அரக்கு கைவினைஞர் யமமோட்டோவுடன் கலந்துரையாடல். அரக்குப் பாத்திரங்களின் சிறப்பு என்ன?\nகைவினைஞர்: அரக்கு என்பது பல நூற்றாண்டுகளாக பயன்படும் இயற்கை பூச்சு. பல அடுக்குகளாகப் பூசுவதால் உறுதியாகவும் கிருமி நாசினியாகவும் திகழ்கிறது. பயன்படுத்தப் பயன்படுத்த பளபளப்பு கூடும்.\nநேர்காணல்: பிளாஸ்டிக் பாத்திரங்கள் பெருகிய சூழலில் இதன் எதிர்காலம் என்ன?\nகைவினைஞர்: மலிவான பொருட்கள் சுலபமானது தான், ஆனால் அரக்குப் பாத்திரங்களை பழுதுபார்த்து பல தலைமுறைகளுக்குப் பயன்படுத்தலாம். நவீன வடிவமைப்புடன் இளைய தலைமுறைக்கு இதைக் கொண்டு சேர்க்க விரும்புகிறேன்.",
+      "transcript_ko": "진행자: 오늘은 와지마 칠기 명장 야마모토 씨를 모셨습니다. 칠기의 매력은 무엇인가요?\n장인: 옻칠은 수백 년 전부터 사용된 천연 도료입니다. 덧칠할수록 단단해지며 항균성과 단열성이 뛰어납니다. 무엇보다 쓸수록 윤기가 더해지고 손에 익는 것이 매력입니다.\n진행자: 플라스틱 용기가 흔한 요즘, 칠기의 미래에 대해 어떻게 보십니까?\n장인: 저렴한 것도 좋지만 손상되면 고쳐서 대를 이어 쓸 수 있는 것이 칠기의 장점입니다. 현대적 감각의 디자인을 더해 젊은 세대에게도 칠기의 가치를 전하고 싶습니다.",
+      "transcript_es": "Entrevistador: Hoy conversamos con el maestro artesano Yamamoto, especialista en laca de Wajima. ¿Cuál es el atractivo de los objetos lacados?\nArtesano: La laca es un barniz natural milenario. Las sucesivas capas la hacen duradera, antibacteriana y aislante térmica. Su mayor encanto es que gana lustre con el uso continuado.\nEntrevistador: Con tanto plástico y vidrio, ¿qué futuro le augura a la laca?\nArtesano: Lo desechable abunda, pero la laca puede repararse y heredarse de generación en generación. Queremos incorporar diseños modernos para acercarla a los jóvenes.",
+      "transcript_kn": "ಸಂದರ್ಶಕ: ವಾಜಿಮಾ ಲೇಪನ ಕಲೆಯ ಕುಶಲಕರ್ಮಿ ಯಮಮೊಟೊ ಅವರ ಜೊತೆ ಮಾತುಕತೆ. ಲೇಪನ ಪಾತ್ರೆಗಳ ವಿಶೇಷತೆಯೇನು?\nಕುಶಲಕರ್ಮಿ: ಇದು ಶತಮಾನಗಳಿಂದ ಬಳಸುತ್ತಿರುವ ನೈಸರ್ಗಿಕ ಬಣ್ಣ. ಪದರಗಳಲ್ಲಿ ಲೇಪಿಸುವುದರಿಂದ ಗಟ್ಟಿಯಾಗುತ್ತದೆ ಮತ್ತು ಬ್ಯಾಕ್ಟೀರಿಯಾ ನಿರೋಧಕವಾಗಿದೆ. ಬಳಸಿದಷ್ಟೂ ಹೊಳಪು ಹೆಚ್ಚುತ್ತದೆ.\nಸಂದರ್ಶಕ: ಇಂದಿನ ಪ್ಲಾಸ್ಟಿಕ್ ಯುಗದಲ್ಲಿ ಇದರ ಭವಿಷ್ಯವೇನು?\nಕುಶಲಕರ್ಮಿ: ದುರಸ್ತಿ ಮಾಡಿ ತಲೆಮಾರುಗಳವರೆಗೆ ಬಳಸಬಹುದಾದ ಗುಣ ഇതിಕ್ಕಿದೆ. ಆಧುನಿಕ ವಿನ್ಯಾಸದೊಂದಿಗೆ ಯುವಜನರಿಗೆ ತಲುಪಿಸುವುದು ನಮ್ಮ ಗುರಿ.",
+      "transcript_ml": "അവതാരിക: വാജിമ ലാക്കർ നിർമ്മാതാവ് യമമോട്ടോയുമായുള്ള സംഭാഷണം. ലാക്കർ പാത്രങ്ങളുടെ പ്രത്യേകത എന്താണ്?\nകരകൗശല വിദഗ്ദ്ധൻ: നൂറ്റാണ്ടുകളായി ഉപയോഗിക്കുന്ന പ്രകൃതിദത്ത ചായമാണിത്. പലതവണ പൂശുന്നതിലൂടെ ഇവയ്ക്ക് ഈടും രോഗാണുനാശന ശേഷിയും ലഭിക്കുന്നു. ഉപയോഗിക്കുംതോറും തിളക്കം കൂടുന്നു എന്നതാണ് പ്രത്യേകത.\nഅവതാരിക: പ്ലാസ്റ്റിക് പാത്രങ്ങൾ ധാരാളമുള്ള ഇക്കാലത്ത് ഇതിന്റെ ഭാവിയെന്താണ്?\nകരകൗശല വിദഗ്ദ്ധൻ: കേടുപാടുകൾ തീർത്ത് തലമുറകളോളം ഉപയോഗിക്കാം എന്നതാണ് ഇതിന്റെ മേന്മ. പുതിയ ഡിസൈനുകളിലൂടെ പുതിയ തലമുറയിലേക്ക് ഇതിനെ എത്തിക്കുകയാണ് ലക്ഷ്യം.",
+      "questions": [
+        {
+          "q": "職人が 語る 漆器の 最大の 魅力とは 何ですか。",
+          "q_en": "What does the artisan describe as the greatest appeal of lacquerware?",
+          "q_te": "లక్క పాత్రల అతిపెద్ద ఆకర్షణగా కళాకారుడు దేనిని పేర్కొన్నాడు?",
+          "q_hi": "कारीगर के अनुसार लाख के बर्तनों का सबसे बड़ा आकर्षण क्या है?",
+          "q_ta": "கைவினைஞர் கூறும் அரக்குப் பாத்திரங்களின் மிகப்பெரிய சிறப்பு என்ன?",
+          "q_ko": "장인이 말하는 칠기의 가장 큰 매력은 무엇입니까?",
+          "q_es": "¿Cuál es el mayor atractivo de la laca según el artesano?",
+          "q_kn": "ಕುಶಲಕರ್ಮಿಯ ಪ್ರಕಾರ ಲೇಪನ ಪಾತ್ರೆಗಳ ಪ್ರಮುಖ ಆಕರ್ಷಣೆ ಯಾವುದು?",
+          "q_ml": "കരകൗശല വിദഗ്ദ്ധന്റെ അഭിപ്രായത്തിൽ ലാക്കർ പാത്രങ്ങളുടെ ഏറ്റവും വലിയ ആകർഷണം എന്താണ്?",
+          "options": [
+            "使い込むほどに 艶が増し、手に 馴染んでいくこと",
+            "値段が 他の器よりも 非常に 安いこと",
+            "電子レンジで 簡単に 使えること",
+            "重くて 割れにくいこと"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "職人は 漆器を 今後 どのように 伝えていきたいと 考えていますか。",
+          "q_en": "How does the artisan wish to pass on lacquerware in the future?",
+          "q_te": "భవిష్యత్తులో లక్క కళను ఎలా ముందుకు తీసుకెళ్లాలని కళాకారుడు భావిస్తున్నాడు?",
+          "q_hi": "कारीगर भविष्य में इस कला को कैसे आगे बढ़ाना चाहता है?",
+          "q_ta": "கைவினைஞர் இக்கலையை எவ்வாறு முன்னெடுத்துச் செல்ல விரும்புகிறார்?",
+          "q_ko": "장인은 앞으로 칠기를 어떻게 전승해 나가고자 합니까?",
+          "q_es": "¿De qué manera desea el artesano transmitir el arte de la laca en el futuro?",
+          "q_kn": "ಕುಶಲಕರ್ಮಿಯು ಮುಂದಕ್ಕೆ ಈ ಕಲೆಯನ್ನು ಹೇಗೆ ಕೊಂಡೊಯ್ಯಲು ಬಯಸುತ್ತಾರೆ?",
+          "q_ml": "ഭാവിയിൽ ഈ കലയെ എങ്ങനെ മുന്നോട്ട് കൊണ്ടുപോകാനാണ് അദ്ദേഹം ആഗ്രഹിക്കുന്നത്?",
+          "options": [
+            "現代の生活に合った モダンなデザインを 取り入れ、若い世代に 伝える",
+            "古い形だけを 一切変えずに 守り続ける",
+            "海外の工場で 大量生産する",
+            "高級品として 富裕層だけに 販売する"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n2-12",
+      "title": "新規事業の提案をめぐる議論 (Corporate New Business Debate)",
+      "script": "課長：さて、企画部から提案のあった、シニア向けのオンライン健康相談サービスについて意見を聞かせてください。\n社員A：私は大いに賛成です。高齢化が進む中、病院へ行くのが困難な高齢者が増えています。自宅から専門医に相談できる仕組みは社会的ニーズが非常に高いはずです。\n社員B：ニーズがあるのは確かですが、ターゲット層のデジタル機器への習熟度が課題ではないでしょうか。スマートフォンの操作が不慣れなシニア層が、スムーズにアプリを使えるか懸念があります。\n社員A：そこは、電話での初期設定サポートや、家族が代理で予約できる機能を設けることで解決できると考えています。\n課長：なるほど。操作の簡略化と手厚いサポート体制を前提に、具体的な採算計画を詰めてみてください。",
+      "transcript_en": "Section Chief: Now, let's hear your thoughts on the proposal from Planning regarding the online health consultation service for seniors.\nEmployee A: I strongly support it. With an aging society, more seniors find it hard to visit clinics. A system allowing them to consult specialists from home meets a huge social need.\nEmployee B: The need is certain, but isn't the target demographic's digital literacy an obstacle? I worry whether seniors unfamiliar with smartphones can use the app smoothly.\nEmployee A: We can resolve that by offering telephone setup support and allowing family members to book appointments on their behalf.\nSection Chief: I see. Assuming simplified operation and robust support, please flesh out a concrete profitability plan.",
+      "transcript_te": "సెక్షన్ చీఫ్: వృద్ధుల కోసం ఆన్‌లైన్ ఆరోగ్య సంప్రదింపు సేవల ప్రతిపాదనపై మీ అభిప్రాయాలు చెప్పండి.\nఉద్యోగి A: నేను పూర్తిగా సమర్థిస్తున్నాను. ఆసుపత్రులకు వెళ్లడం కష్టమయ్యే వృద్ధుల సంఖ్య పెరుగుతోంది. ఇంట్లో నుండే నిపుణులను సంప్రదించే విధానానికి ఎంతో డిమాండ్ ఉంది.\nఉద్యోగి B: అవసరం ఉన్నప్పటికీ, వృద్ధులకు స్మార్ట్‌ఫోన్లు వాడటం రాకపోవడం పెద్ద సమస్య కాదా? వారు సులభంగా యాప్ ఉపయోగించగలరా?\nఉద్యోగి A: ఫోన్ ద్వారా సెటప్ సాయం అందించడం, కుటుంబ సభ్యులే బుక్ చేసేలా ఆప్షన్ ఇవ్వడం ద్వారా దీనిని పరిష్కరించవచ్చు.\nసెక్షన్ చీఫ్: మంచిది. ఉపయోగించడం సులువుగా ఉండేలా, మంచి సపోర్ట్ ఉండేలా చూస్తూ వ్యాపార లాభదాయకత నివేదికను రూపొందించండి.",
+      "transcript_hi": "प्रबंधक: योजना विभाग द्वारा वरिष्ठ नागरिकों के लिए प्रस्तावित ऑनलाइन स्वास्थ्य सेवा पर आपकी क्या राय है?\nकर्मचारी A: मैं पूरी तरह सहमत हूँ। बुजुर्गों के लिए अस्पताल जाना कठिन होता जा रहा है। घर से डॉक्टर से परामर्श की बहुत ज़रूरत है।\nकर्मचारी B: ज़रूरत तो है, पर क्या बुजुर्ग स्मार्टफोन आसानी से चला पाएंगे? डिजिटल साक्षरता एक चुनौती है।\nकर्मचारी A: हम फोन पर तकनीकी सहायता और परिवार के सदस्यों द्वारा बुकिंग की सुविधा देकर इसका समाधान कर सकते हैं।\nप्रबंधक: ठीक है। संचालन को सरल बनाने और मज़बूत सहायता व्यवस्था को आधार बनाकर योजना की वित्तीय रिपोर्ट तैयार करें।",
+      "transcript_ta": "மேலாளர்: முதியோருக்கான இணையவழி மருத்துவ ஆலோசனை சேவை திட்டத்தைப் பற்றி உங்கள் கருத்து என்ன?\nஊழியர் A: நான் ஆதரிக்கிறேன். முதியவர்கள் மருத்துவமனைக்குச் செல்வது கடினம் என்பதால் வீட்டிலிருந்தே ஆலோசனை பெறும் முறைக்கு அதிக தேவை உள்ளது.\nஊழியர் B: தேவை இருந்தாலும், முதியவர்களுக்கு ஸ்மார்ட்போன் பயன்படுத்தத் தெரியாதது சவாலாக இருக்குமே?\nஊழியர் A: தொலைபேசி உதவி மற்றும் குடும்பத்தினர் முன்பதிவு செய்யும் வசதியை ஏற்படுத்தி இதைத் தீர்க்கலாம்.\nமேலாளர்: சரி. எளிய பயன்பாடு மற்றும் வாடிக்கையாளர் ஆதரவை உறுதிசெய்து வருவாய் திட்டத்தை உருவாக்குங்கள்.",
+      "transcript_ko": "과장: 기획부에서 제안한 시니어 대상 온라인 건강 상담 서비스에 대해 의견을 나눠봅시다.\n사원 A: 저는 적극 찬성합니다. 고령화로 병원 방문이 어려운 분들이 늘어 가정 내 전문의 상담은 수요가 큽니다.\n사원 B: 수요는 분명하지만 스마트폰 조작에 익숙지 않은 고령층이 앱을 원활히 쓸 수 있을지 우려됩니다.\n사원 A: 전화 설정 지원과 가족 대리 예약 기능을 도입하면 충분히 해결할 수 있습니다.\n과장: 좋습니다. 간편한 조작과 철저한 지원 체계를 전제로 구체적인 채산성 계획을 세워보세요.",
+      "transcript_es": "Jefe: Veamos las opiniones sobre la propuesta de consultas médicas online para mayores.\nEmpleado A: Estoy muy a favor. Con el envejecimiento poblacional, desplazarse al hospital es difícil. Hay una gran demanda social para consultar médicos desde casa.\nEmpleado B: La necesidad existe, pero ¿no es una barrera su competencia digital? Dudo que manejen bien la app.\nEmpleado A: Podemos solventarlo con asistencia telefónica para la instalación y permitiendo reservas a través de familiares.\nJefe: De acuerdo. Partiendo de un manejo sencillo y buen soporte, elaboren un plan de viabilidad financiera.",
+      "transcript_kn": "ಮುಖ್ಯಸ್ಥರು: ಹಿರಿಯ ನಾಗರಿಕರಿಗಾಗಿ ಆನ್‌ಲೈನ್ ಆರೋಗ್ಯ ಸಮಾಲೋಚನೆ ಯೋಜನೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವೇನು?\nಉದ್ಯೋಗಿ A: ನಾನು ಬೆಂಬಲಿಸುತ್ತೇನೆ. ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಲು ಕಷ್ಟಪಡುವ ಹಿರಿಯರಿಗೆ ಮನೆಯಿಂದಲೇ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸುವ ವ್ಯವಸ್ಥೆಯ ಅಗತ್ಯವಿದೆ.\nಉದ್ಯೋಗಿ B: ಹಿರಿಯರಿಗೆ ಮೊಬೈಲ್ ಬಳಸಲು ಬಾರದಿರುವುದು ಸವಾಲಲ್ಲವೇ?\nಉದ್ಯೋಗಿ A: ಫೋನ್ ಮೂಲಕ ನೆರವು ನೀಡುವುದು ಮತ್ತು ಕುಟುಂಬದವರು ಬುಕ್ ಮಾಡುವ ಸೌಲಭ್ಯ ಕಲ್ಪಿಸಿ ಇದನ್ನು ಬಗೆಹರಿಸಬಹುದು.\nಮುಖ್ಯಸ್ಥರು: ಸರಿ. ಸರಳ ಬಳಕೆ ಮತ್ತು ಬೆಂಬಲ ವ್ಯವಸ್ಥೆಯನ್ನು ಆಧರಿಸಿ ವಿವರವಾದ ವರದಿ ಸಿದ್ಧಪಡಿಸಿ.",
+      "transcript_ml": "മാനേജർ: മുതിർന്ന പൗരന്മാർക്കായുള്ള ഓൺലൈൻ ആരോഗ്യ സേവനത്തെക്കുറിച്ച് നിങ്ങളുടെ അഭിപ്രായമെന്താണ്?\nജീവനക്കാരൻ A: ഞാൻ അനുകൂലിക്കുന്നു. ആശുപത്രിയിൽ പോകാൻ ബുദ്ധിമുട്ടുള്ളവർക്ക് വീട്ടിലിരുന്ന് ഡോക്ടറെ കാണാനുള്ള സൗകര്യം വലിയൊരു സഹായമാകും.\nജീവനക്കാരൻ B: ഡിജിറ്റൽ സാക്ഷരത കുറവായ മുതിർന്നവർക്ക് സ്മാർട്ട്ഫോൺ ഉപയോഗിക്കാൻ ബുദ്ധിമുട്ടാവില്ലേ?\nജീവനക്കാരൻ A: ഫോണിലൂടെയുള്ള സഹായവും കുടുംബാംഗങ്ങൾക്ക് ബുക്ക് ചെയ്യാനുള്ള സൗകര്യവും നൽകി ഇത് പരിഹരിക്കാം.\nമാനേജർ: കൊള്ളാം. ലളിതമായ ഉപയോഗവും മികച്ച സപ്പോർട്ടും ഉറപ്പാക്കി ലാഭക്ഷമത റിപ്പോർട്ട് തയ്യാറാക്കുക.",
+      "questions": [
+        {
+          "q": "社員Bが 懸念している 点は 何ですか。",
+          "q_en": "What point is Employee B concerned about?",
+          "q_te": "ఉద్యోగి B వ్యక్తం చేసిన ఆందోళన ఏమిటి?",
+          "q_hi": "कर्मचारी B को किस बात की चिंता है?",
+          "q_ta": "ஊழியர் B வெளிப்படுத்திய கவலை என்ன?",
+          "q_ko": "사원 B가 우려하고 있는 점은 무엇입니까?",
+          "q_es": "¿Qué aspecto le preocupa al Empleado B?",
+          "q_kn": "ಉದ್ಯೋಗಿ B ವ್ಯಕ್ತಪಡಿಸಿದ ಆತಂಕವೇನು?",
+          "q_ml": "ജീവനക്കാരൻ B പ്രകടിപ്പിച്ച ആശങ്ക എന്താണ്?",
+          "options": [
+            "高齢者の デジタル機器の 操作の 不慣れさ",
+            "サービスの 料金が 高すぎること",
+            "医師の 人数が 足りないこと",
+            "競合他社が 多すぎること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "社員Aは その懸念に対して どのような 解決策を 提案しましたか。",
+          "q_en": "What solution did Employee A propose for that concern?",
+          "q_te": "ఆ ఆందోళనకు ఉద్యోగి A ప్రతిపాదించిన పరిష్కారం ఏమిటి?",
+          "q_hi": "कर्मचारी A ने उस चिंता का क्या समाधान सुझाया?",
+          "q_ta": "அக்கவலைக்கு ஊழியர் A என்ன தீர்வு கூறினார்?",
+          "q_ko": "사원 A는 그 우려에 대해 어떤 해결책을 제안했습니까?",
+          "q_es": "¿Qué solución propuso el Empleado A ante esa preocupación?",
+          "q_kn": "ಆ ಆತಂಕಕ್ಕೆ ಉದ್ಯೋಗಿ A ಸೂಚಿಸಿದ ಪರಿಹಾರವೇನು?",
+          "q_ml": "ആ ആശങ്കയ്ക്ക് ജീവനക്കാരൻ A നിർദ്ദേശിച്ച പരിഹാരമെന്താണ്?",
+          "options": [
+            "電話サポートや 家族による 代理予約機能の 導入",
+            "紙の 資料だけを 郵送すること",
+            "高齢者専用の 店舗を 全国に 作ること",
+            "料金を 完全無料に すること"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n2-13",
+      "title": "茶の湯の精神とマインドフルネス (Tea Ceremony & Mindfulness)",
+      "script": "講師：千利休が大成した『茶の湯』の根底には、『一期一会』という精神があります。これは、今日この茶会で出会う人々や交わす言葉は、生涯で二度と繰り返されることのない唯一無二の瞬間であるという自覚を促す教えです。現代において、私たちはスマートフォンからの絶え間ない通知や情報に追われ、常に意識が散漫になりがちです。茶室という無駄を削ぎ落とした空間で、湯の沸く音に耳を澄まし、茶を点てる所作に集中することは、現代欧米で注目される『マインドフルネス』—すなわち『今、この瞬間に意識を集中する瞑想』と本質的に通じ合っています。",
+      "transcript_en": "Lecturer: At the foundation of the tea ceremony perfected by Sen no Rikyu lies the philosophy of 'Ichigo Ichie' (once in a lifetime). This teaches that any gathering and the words shared today are a unique, irreproducible moment never to occur again in one's life. In our modern era, bombarded by notifications and information from smartphones, our attention is constantly fragmented. In the minimalist space of a tea room, listening to the boiling water and focusing entirely on the ritual motions of preparing tea is fundamentally aligned with 'mindfulness'—the practice of focusing one's full awareness on the present moment.",
+      "transcript_te": "వక్త: సేన్ నో రిఖ్యు అభివృద్ధి చేసిన టీ సెరిమనీ మూలాల్లో 'ఇచిగో ఇచియే' (జీవితంలో ఒకే ఒక్క క్షణం) అనే తత్వముంది. ఈ రోజు కలిసే వ్యక్తులు, పంచుకునే క్షణాలు జీవితంలో మళ్ళీ తిరిగి రాని అమూల్యమైనవని ఇది బోధిస్తుంది. ఆధునిక కాలంలో స్మార్ట్‌ఫోన్ సందేశాలు, సమాచార వెల్లువతో మన ఏకాగ్రత చెదిరిపోతోంది. టీ గదిలో అనవసర విషయాలు లేకుండా, నీరు మరుగుతున్న శబ్దాన్ని వింటూ టీ తయారుచేసే కదలికలపై మాత్రమే మనసు నిలపడం ఆధునిక 'మైండ్‌ఫుల్‌నెస్' ధ్యానంతో సరిగ్గా సరిపోలుతుంది.",
+      "transcript_hi": "वक्ता: सेन नो रिक्यू द्वारा स्थापित 'टी सेरेमनी' का मूल सिद्धांत 'इचिगो इचिए' (जीवन में केवल एक बार) है। यह सिखाता है कि आज की यह मुलाकात जीवन में दोबारा कभी नहीं दोहराई जाएगी। आज स्मार्टफोन की सूचनाओं के कारण हमारा ध्यान हमेशा भटकता रहता है। चाय कक्ष के शांत वातावरण में उबलते पानी की आवाज़ सुनना और चाय बनाने की मुद्रा पर ध्यान केंद्रित करना आधुनिक 'माइंडफुलनेस' ध्यान के समान ही है।",
+      "transcript_ta": "விரிவுரையாளர்: தேநீர் சடங்கின் அடிப்படைத் தத்துவம் 'இச்சிகோ இச்சியே' (வாழ்வில் ஒரே முறை) என்பதாகும். இன்றைய சந்திப்பும் உரையாடலும் மீண்டும் நிகழாத தனித்துவமான தருணம் என்பதை இது உணர்த்துகிறது. ஸ்மார்ட்போன் தகவல்களால் கவனம் சிதறும் இக்காலத்தில், தேநீர் அறையின் அமைதியில் தேநீர் தயாரிப்பில் மட்டுமே மனதை ஒருமுகப்படுத்துவது நவீன 'மைண்ட்ஃபுல்னஸ்' தியானத்திற்கு ஒப்பானது.",
+      "transcript_ko": "강연자: 센노 리큐가 완성한 다도의 근저에는 '일기일회(一期一会)'의 정신이 있습니다. 오늘 이 만남은 평생 단 한 번뿐인 소중한 순간이라는 가르침입니다. 스마트폰 알림으로 주의가 산만해지기 쉬운 현대인에게, 군더더기 없는 다실에서 물 끓는 소리에 귀 기울이며 차를 우리는 동작에 집중하는 것은 현대의 '마인드풀니스'와 본질적으로 맞닿아 있습니다.",
+      "transcript_es": "Conferenciante: En la base de la ceremonia del té desarrollada por Sen no Rikyu se encuentra el concepto de 'Ichigo Ichie' (un encuentro, una oportunidad única en la vida). Nos recuerda que cada reunión es irrepetible. Frente a la constante dispersión mental que provocan los teléfonos inteligentes, sentarse en el salón de té a escuchar el agua hervir y concentrarse en cada movimiento equivale a la práctica del 'mindfulness' o atención plena.",
+      "transcript_kn": "ಉಪನ್ಯಾಸಕ: ಟೀ ಸಮಾರಂಭದ ಮೂಲ ತತ್ವ 'ಇಚಿಗೋ ಇಚಿಯೇ' (ಜೀವನದಲ್ಲಿ ಒಮ್ಮೆ ಮಾತ್ರ). ಇಂದಿನ ಭೇಟಿ ಮತ್ತೆಂದೂ ಮರುಕಳಿಸದ ಅಪೂರ್ವ ಕ್ಷಣ ಎಂಬುದನ್ನು ಇದು ಕಲಿಸುತ್ತದೆ. ಮೊಬೈಲ್ ಅಧಿಸೂಚನೆಗಳಿಂದ ಮನಸ್ಸು ಚಂಚಲವಾಗಿರುವ ಈ ಕಾಲದಲ್ಲಿ, ಟೀ ಕೊಠಡಿಯಲ್ಲಿ ಮನಸ್ಸನ್ನು ಏಕಾಗ್ರತೆಯಲ್ಲಿಡುವುದು ಆಧುನಿಕ 'ಮೈಂಡ್‌ಫುಲ್‌ನೆಸ್' ಧ್ಯಾನಕ್ಕೆ ಸಮಾನವಾಗಿದೆ.",
+      "transcript_ml": "പ്രഭാഷകൻ: ടീ സെറിമണിയുടെ അടിസ്ഥാന തത്വം 'ഇച്ചികോ ഇച്ചിയെ' (ജീവിതത്തിലൊരിക്കൽ മാത്രം) എന്നതാണ്. ഇന്നത്തെ ഈ ഒത്തുചേരൽ ഇനിയൊരിക്കലും ഉണ്ടാകില്ലെന്ന് ഇത് ഓർമ്മിപ്പിക്കുന്നു. സ്മാർട്ട്ഫോൺ ലോകത്ത് മനസ്സ് അലഞ്ഞുതിരിയുന്ന ഇക്കാലത്ത്, ശാന്തമായ മുറിയിലിരുന്ന് ചായ തയ്യാറാക്കുന്നതിൽ മാത്രം ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നത് ആധുനിക 'മൈൻഡ്ഫുൾനസ്സ്' ധ്യാനത്തിന് തുല്യമാണ്.",
+      "questions": [
+        {
+          "q": "「一期一会」という 言葉の 意味として 最も 適切なものは どれですか。",
+          "q_en": "Which is the most appropriate meaning of the phrase 'Ichigo Ichie'?",
+          "q_te": "'ఇచిగో ఇచియే' అనే మాటకు అత్యంత సరైన అర్థం ఏది?",
+          "q_hi": "'इचिगो इचिए' का सबसे उपयुक्त अर्थ कौन सा है?",
+          "q_ta": "'இச்சிகோ இச்சியே' என்பதன் மிகவும் பொருத்தமான பொருள் எது?",
+          "q_ko": "'일기일회(一期一会)'의 의미로 가장 적절한 것은 무엇입니까?",
+          "q_es": "¿Cuál es el significado más adecuado de la expresión 'Ichigo Ichie'?",
+          "q_kn": "'ಇಚಿಗೋ ಇಚಿಯೇ' ಪದದ ಅತ್ಯಂತ ಸೂಕ್ತವಾದ ಅರ್ಥವೇನು?",
+          "q_ml": "'ഇച്ചികോ ഇച്ചിയെ' എന്ന വാക്കിന്റെ ഏറ്റവും ശരിയായ അർത്ഥമെന്താണ്?",
+          "options": [
+            "生涯で 二度と 繰り返されない 唯一無二の 出会いであること",
+            "一度 会った人とは 二度と 会わないこと",
+            "年に 一度だけ 行われる 茶会のこと",
+            "誰とでも 親しくなること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "講師は 茶室での 所作が 現代の 何と 通じ合っていると 述べていますか。",
+          "q_en": "What does the lecturer state that the actions in a tea room are fundamentally connected to today?",
+          "q_te": "టీ గదిలోని చర్యలు నేటి దేనితో సరిపోలుతున్నాయని వక్త చెప్పారు?",
+          "q_hi": "वक्ता के अनुसार चाय कक्ष की क्रियाएँ आधुनिक किस विधा से मेल खाती हैं?",
+          "q_ta": "தேநீர் அறையின் செயல்கள் நவீன கால எதனுடன் ஒத்துப் போவதாகக் கூறுகிறார்?",
+          "q_ko": "강연자는 다실에서의 집중이 현대의 무엇과 통한다고 말합니까?",
+          "q_es": "¿Con qué práctica actual vincula el conferenciante los rituales del salón de té?",
+          "q_kn": "ಟೀ ಕೊಠಡಿಯ ಆಚರಣೆಗಳು ಇಂದಿನ ಯಾವುದಕ್ಕೆ ಸಮಾನವೆಂದು ಲೇಖಕರು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "ടീ റൂമിലെ ഏകാഗ്രത ഇന്നത്തെ എന്തുമായി ചേർന്നുനിൽക്കുന്നു എന്നാണ് പറയുന്നത്?",
+          "options": [
+            "マインドフルネス (今この瞬間に 集中する瞑想)",
+            "最新の デジタル技術",
+            "激しい 有酸素運動",
+            "西洋の 演劇作法"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n2-14",
+      "title": "サブスクリプションサービスの動向 (Subscription Business Trends)",
+      "script": "アナリスト：音楽や動画配信から始まった定額制サービス、いわゆるサブスクリプションは、今や自動車や家具、衣類、さらには外食にまで広がっています。消費者が『所有』から『利用』へと価値観を移行させていることが背景にあります。高額な初期費用をかけずに最新の製品を試せる点が好評です。しかし一方で、解約手続きが複雑であったり、利用頻度が低いにもかかわらず契約が自動更新されて料金を支払い続けてしまうといったトラブルも急増しています。企業側には、より透明性の高い契約管理と、ユーザーを飽きさせない継続的な価値提供が問われています。",
+      "transcript_en": "Analyst: Subscription models, which began with music and video streaming, have now expanded to cars, furniture, clothing, and even dining out. Driving this is a shift in consumer values from 'ownership' to 'access'. Consumers appreciate being able to try the latest goods without large upfront costs. On the other hand, complaints have surged regarding complicated cancellation procedures and automatic renewals where users continue paying despite low usage. Businesses are now required to provide greater contractual transparency and continuous value to retain subscribers.",
+      "transcript_te": "విశ్లేషకుడు: సంగీతం మరియు వీడియోలతో ప్రారంభమైన సబ్‌స్క్రిప్షన్ మోడల్ ఇప్పుడు కార్లు, ఫర్నిచర్, బట్టలు, రెస్టారెంట్లకు కూడా విస్తరించింది. 'యాజమాన్యం' కంటే 'వినియోగం' ముఖ్యం అనే వినియోగదారుల ఆలోచనా విధానమే దీనికి కారణం. పెద్దగా ఖర్చు లేకుండా కొత్త ఉత్పత్తులను ప్రయత్నించడం దీని ప్లస్ పాయింట్. అయితే రద్దు చేసుకోవడం కష్టంగా ఉండటం, వాడకపోయినా ఆటోమేటిక్ రెన్యూవల్ అయి డబ్బులు కట్ అవ్వడం వంటి సమస్యలు పెరిగాయి. కంపెనీలు పారదర్శకంగా వ్యవహరించాల్సిన అవసరం ఉంది.",
+      "transcript_hi": "विश्लेषक: संगीत और वीडियो से शुरू हुई सब्सक्रिप्शन सेवाएँ अब कारों, फर्नीचर और कपड़ों तक फैल चुकी हैं। उपभोक्ता अब 'स्वामित्व' के बजाय 'उपयोग' को प्राथमिकता दे रहे हैं। बिना भारी लागत के नई चीज़ें आज़माना इसका बड़ा लाभ है। लेकिन रद्दीकरण की जटिल प्रक्रिया और उपयोग न होने पर भी स्वतः नवीनीकरण से पैसे कटने जैसी शिकायतें बढ़ी हैं। कंपनियों को पारदर्शिता बरतनी होगी।",
+      "transcript_ta": "பகுப்பாய்வாளர்: இசை மற்றும் காணொளிகளில் தொடங்கிய சந்தா முறை இப்போது கார்கள், தளவாடங்கள் வரை விரிவடைந்துள்ளது. 'சொந்தமாக்குவதை' விட 'பயன்படுத்துவதே' மேல் என்ற மனமாற்றமே காரணம். ஆனால் சந்தாவை ரத்து செய்வதில் உள்ள சிக்கல்களும், பயன்படுத்தாவிட்டாலும் தானாகப் பணம் கழிக்கப்படுவதும் புகார்களாக எழுகின்றன. வெளிப்படைத்தன்மை அவசியம்.",
+      "transcript_ko": "애널리스트: 음악과 동영상에서 시작된 구독 서비스가 자동차, 가구, 의류 등으로 확대되고 있습니다. '소유'에서 '이용'으로 소비자의 가치관이 변화한 결과입니다. 초기 비용 부담 없이 최신 제품을 경험할 수 있다는 장점이 있습니다. 그러나 해지 절차의 복잡함과 자동 결제로 인한 분쟁도 늘고 있어, 투명한 계약 관리와 지속적인 가치 제공이 요구됩니다.",
+      "transcript_es": "Analista: Los modelos de suscripción han saltado del streaming a los automóviles, muebles y ropa. Los consumidores prefieren el 'uso' antes que la 'propiedad'. No obstante, proliferan quejas por cancelaciones complejas y cobros automáticos sin uso real. Se exige a las empresas transparencia y verdadero valor añadido.",
+      "transcript_kn": "ವಿಶ್ಲೇಷಕ: ಸಂಗೀತ ಮತ್ತು ವೀಡಿಯೊಗಳಿಂದ ಪ್ರಾರಂಭವಾದ ಚಂದಾದಾರಿಕೆ ಮಾದರಿ ಈಗ ಕಾರು ಮತ್ತು ಪೀಠೋಪಕರಣಗಳಿಗೂ ವಿಸ್ತರಿಸಿದೆ. 'ಮಾಲೀಕತ್ವ'ಕ್ಕಿಂತ 'ಬಳಕೆ'ಗೆ ಜನರು ಆದ್ಯತೆ ನೀಡುತ್ತಿದ್ದಾರೆ. ಆದರೆ ರದ್ದುಗೊಳಿಸುವುದು ಕಷ್ಟವಾಗಿರುವುದು ಮತ್ತು ಆಟೋ ರಿನೀವಲ್ ಸಮಸ್ಯೆಗಳು ಹೆಚ್ಚುತ್ತಿವೆ.",
+      "transcript_ml": "വിശകലന വിദഗ്ദ്ധൻ: മ്യൂസിക്, വീഡിയോ സ്ട്രീമിംഗിൽ തുടങ്ങിയ സബ്സ്ക്രിപ്ഷൻ രീതി ഇപ്പോൾ കാറുകൾക്കും വസ്ത്രങ്ങൾക്കും വരെ ലഭ്യമാണ്. 'ഉടമസ്ഥത'യേക്കാൾ 'ഉപയോഗ'ത്തിന് പ്രാധാന്യം നൽകുന്നതാണ് കാരണം. എന്നാൽ ക്യാൻസൽ ചെയ്യാനുള്ള ബുദ്ധിമുട്ടും ഉപയോഗിച്ചില്ലെങ്കിലും പണം നഷ്ടപ്പെടുന്നതും ഉപഭോക്താക്കൾക്ക് പരാതിക്കിടയാക്കുന്നു.",
+      "questions": [
+        {
+          "q": "消費者の 価値観は どのように 変化していると 述べられていますか。",
+          "q_en": "How is consumer value described as changing?",
+          "q_te": "వినియోగదారుల ఆలోచనా విధానం ఎలా మారుతోందని చెప్పారు?",
+          "q_hi": "उपभोक्ताओं की सोच में क्या बदलाव बताया गया है?",
+          "q_ta": "நுகர்வோரின் அணுகுமுறையில் என்ன மாற்றம் ஏற்பட்டுள்ளது?",
+          "q_ko": "소비자의 가치관은 어떻게 변화하고 있다고 기술되었습니까?",
+          "q_es": "¿Cómo están cambiando los valores de los consumidores según el texto?",
+          "q_kn": "ಗ್ರಾಹಕರ ಮನೋಭಾವ ಹೇಗೆ ಬದಲಾಗುತ್ತಿದೆ ಎಂದು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "ഉപഭോക്താക്കളുടെ മനോഭാവത്തിൽ എന്ത് മാറ്റമാണ് വന്നിട്ടുള്ളത്?",
+          "options": [
+            "「所有」から「利用」へと 移行している",
+            "高級志向から 節約志向へ 移行している",
+            "国産品から 外国製品へ 移行している",
+            "オンラインから 実店舗へ 移行している"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "サブスクリプションに関して 急増している トラブルは 何ですか。",
+          "q_en": "What kind of trouble regarding subscription services is surging?",
+          "q_te": "సబ్‌స్క్రిప్షన్ సేవల వల్ల వేగంగా పెరుగుతున్న సమస్య ఏమిటి?",
+          "q_hi": "सब्सक्रिप्शन सेवाओं को लेकर कौन सी समस्या तेज़ी से बढ़ी है?",
+          "q_ta": "சந்தா சேவைகள் தொடர்பாக அதிகரித்துள்ள பிரச்சனை என்ன?",
+          "q_ko": "구독 서비스와 관련하여 급증하고 있는 문제는 무엇입니까?",
+          "q_es": "¿Qué problema está aumentando rápidamente respecto a las suscripciones?",
+          "q_kn": "ಚಂದಾದಾರಿಕೆ ಸೇವೆಗಳಲ್ಲಿ ಹೆಚ್ಚುತ್ತಿರುವ ಸಮಸ್ಯೆಯೇನು?",
+          "q_ml": "സബ്സ്ക്രിപ്ഷനുമായി ബന്ധപ്പെട്ട് വർദ്ധിച്ചുവരുന്ന പ്രശ്നം എന്താണ്?",
+          "options": [
+            "解約が 難しく、使っていなくても 自動更新で 料金を 支払ってしまうこと",
+            "製品の 品質が 著しく 悪いこと",
+            "個人情報が すべて 盗まれること",
+            "配達が 大幅に 遅れること"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n2-15",
+      "title": "地域防災と自助・共助の取り組み (Disaster Resilience & Community Help)",
+      "script": "町内会長：皆様、お集まりいただきありがとうございます。巨大地震などの大規模災害が発生した際、行政による救助や支援、いわゆる『公助』が届くまでには数日を要することが予想されます。そのため、何よりも大切なのは、自分の命は自分で守る『自助』と、地域住民が助け合う『共助』です。各家庭での最低三日分の水や食料の備蓄、家具の転倒防止対策はもちろんのこと、日頃から近所の一人暮らしの高齢者や障がいのある方の避難支援体制を確認しておくことが、いざという時の犠牲を防ぐ鍵となります。",
+      "transcript_en": "Association Chief: Thank you for gathering today. When a catastrophic earthquake strikes, it is expected to take several days for governmental relief—so-called 'public assistance'—to reach us. Therefore, what matters most is 'self-help'—protecting your own life—and 'mutual help'—neighbors helping each other. Beyond stockpiling at least three days of food and water and anchoring furniture at home, the key to preventing casualties is establishing evacuation support for elderly living alone and disabled neighbors during normal times.",
+      "transcript_te": "సంఘం అధ్యక్షుడు: పెద్ద భూకంపం వంటి విపత్తులు సంభవించినప్పుడు ప్రభుత్వ సహాయం ('పబ్లిక్ అసిస్టెన్స్') మన వద్దకు చేరడానికి కొన్ని రోజులు పట్టవచ్చు. కాబట్టి మన ప్రాణాలను మనమే రక్షించుకునే 'స్వయం సహాయం', ఇరుగుపొరుగు పరస్పరం ఆదుకునే 'సహాయ సహకారాలు' అత్యంత ముఖ్యం. ప్రతి ఇంట్లో కనీసం మూడు రోజులకు సరిపడా ఆహారం, నీరు నిల్వ ఉంచుకోవడంతో పాటు, ఒంటరిగా ఉండే వృద్ధులు మరియు వికలాంగులను సురక్షిత ప్రాంతాలకు చేర్చే వ్యవస్థను ముందుగానే సిద్ధం చేసుకోవాలి.",
+      "transcript_hi": "समिति अध्यक्ष: भीषण भूकंप जैसी आपदा में सरकारी सहायता पहुँचने में कई दिन लग सकते हैं। इसलिए सबसे महत्वपूर्ण है 'आत्म-सहायता' (स्वयं की रक्षा) और 'पारस्परिक सहायता' (पड़ोसियों की मदद)। प्रत्येक घर में कम से कम तीन दिन का भोजन-पानी रखना और अकेले रहने वाले बुजुर्गों की निकासी में मदद की तैयारी पहले से रखना ही जीवन रक्षा की कुंजी है।",
+      "transcript_ta": "தலைவர்: பெரும் நிலநடுக்கத்தின் போது அரசு உதவி கிடைக்க சில நாட்கள் ஆகலாம். எனவே 'தன் உதவி' மற்றும் 'பரஸ்பர உதவி' மிக அவசியம். மூன்று நாட்களுக்கான உணவு, தண்ணீர் சேமிப்பதோடு, தனியாக வாழும் முதியவர்களுக்கு உதவும் அமைப்பையும் முன்கூட்டியே தயார் செய்ய வேண்டும்.",
+      "transcript_ko": "주민자치회장: 대규모 재해 발생 시 공공의 구호가 도달하기까지 며칠이 걸릴 수 있습니다. 따라서 스스로를 지키는 '자조'와 이웃끼리 돕는 '공조'가 무엇보다 중요합니다. 3일분의 비상식량 비축과 더불어 홀몸 어르신 등의 대피 지원 체계를 미리 구축해야 합니다.",
+      "transcript_es": "Presidente vecinal: En una catástrofe de gran magnitud, la ayuda pública tardará días en llegar. Lo primordial es la autoayuda y el auxilio mutuo entre vecinos. Además de almacenar provisiones para tres días, es vital coordinar con antelacion la evacuación de ancianos que viven solos.",
+      "transcript_kn": "ಸಂಘದ ಅಧ್ಯಕ್ಷರು: ಭಾರೀ ನೈಸರ್ಗಿಕ ವಿಕೋಪ ಸಂಭವಿಸಿದಾಗ ಸರಕಾರದ ನೆರವು ತಲುಪಲು ಕೆಲ ದಿನಗಳು ಬೇಕಾಗಬಹುದು. ಆದ್ದರಿಂದ 'ಸ್ವರಕ್ಷಣೆ' ಮತ್ತು 'ಪರಸ್ಪರ ನೆರವು' ಮುಖ್ಯ. ಮೂರು ದಿನಗಳ ಆಹಾರ ಸಂಗ್ರಹದ ಜೊತೆಗೆ ಒಂಟಿ ವೃದ್ಧರ ರಕ್ಷಣೆಗೆ ಮೊದಲೇ ಯೋಜನೆ ರೂಪಿಸಬೇಕು.",
+      "transcript_ml": "പ്രസിഡന്റ്: വലിയ ദുരന്തമുണ്ടായാൽ സർക്കാരിന്റെ സഹായം എത്താൻ ദിവസങ്ങളെടുത്തേക്കാം. അതിനാൽ 'സ്വയം രക്ഷ'യും 'പരസ്പര സഹായ'വുമാണ് പ്രധാനം. മൂന്ന് ദിവസത്തേക്കുള്ള ആഹാരവും വെള്ളവും കരുതുന്നതിനൊപ്പം ഒറ്റയ്ക്ക് താമസിക്കുന്ന വയോധികരെ സഹായിക്കാനുള്ള സംവിധാനവും ഉണ്ടാക്കണം.",
+      "questions": [
+        {
+          "q": "大規模災害時、行政の「公助」が 届くまでに どのくらい かかると 予想されていますか。",
+          "q_en": "How long is it expected to take for governmental 'public assistance' to arrive during a large disaster?",
+          "q_te": "ప్రభుత్వ సహాయం అందడానికి ఎంత సమయం పడుతుందని అంచనా?",
+          "q_hi": "सरकारी सहायता पहुँचने में कितना समय लगने का अनुमान है?",
+          "q_ta": "அரசு உதவி கிடைக்க எவ்வளவு காலம் ஆகும் என எதிர்பார்க்கப்படுகிறது?",
+          "q_ko": "대규모 재해 시 행정의 '공조'가 도달하기까지 어느 정도 걸릴 것으로 예상됩니까?",
+          "q_es": "¿Cuánto tiempo se prevé que tarde en llegar la ayuda pública en una catástrofe?",
+          "q_kn": "ಸರಕಾರದ ನೆರವು ತಲುಪಲು ಎಷ್ಟು ಸಮಯ ಹಿಡಿಯಬಹುದು ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ?",
+          "q_ml": "സർക്കാർ സഹായം എത്താൻ എത്ര സമയമെടുക്കും എന്നാണ് കരുതുന്നത്?",
+          "options": [
+            "数日 (すうじつ)",
+            "数時間",
+            "一か月以上",
+            "一週間以上"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "地域で 犠牲を 防ぐために 重要だと 述べられていることは 何ですか。",
+          "q_en": "What is stated as important to prevent casualties in the community?",
+          "q_te": "ప్రాణనష్టాన్ని నివారించడానికి కాలనీలో ఏది ముఖ్యమని చెప్పారు?",
+          "q_hi": "जान-माल के नुकसान से बचने के लिए क्या महत्वपूर्ण बताया गया है?",
+          "q_ta": "உயிரிழப்பைத் தடுக்க முக்கியமானது என என்ன கூறப்பட்டது?",
+          "q_ko": "지역 사회의 희생을 막기 위해 중요하다고 언급된 것은 무엇입니까?",
+          "q_es": "¿Qué se destaca como fundamental para evitar víctimas en la comunidad?",
+          "q_kn": "ಪ್ರಾಣಹಾನಿ ತಪ್ಪಿಸಲು ಬಡಾವಣೆಯಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯವೆಂದು ತಿಳಿಸಲಾಗಿದೆ?",
+          "q_ml": "ദുരന്തത്തിൽ ആളപായം ഒഴിവാക്കാൻ പ്രധാനമായി ചെയ്യേണ്ടത് എന്താണ്?",
+          "options": [
+            "備蓄に加え、高齢者や 障がい者の 避難支援体制を 確認しておくこと",
+            "全員が 一箇所に 集まって 待機すること",
+            "車で 遠くへ 逃げること",
+            "電話が つながるまで 待つこと"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "N1": [
+    {
+      "id": "l-n1-1",
+      "title": "利便性という名の負債（The Debt Called Convenience）",
+      "script": "皆さんは、日々の暮らしがかつてないほど便利になったと感じておられるでしょう。ボタン一つで買い物が済み、行き先を告げれば車が動く。しかし、私がここで問いたいのは、その利便性が果たしてただで手に入っているのか、ということです。便利さというものは、一見すると私たちの負担を軽くしてくれるように見えますが、その裏では、私たち自身が本来担っていたはずの判断や手間が、目に見えない形でどこかへ肩代わりされている。たとえば、道順を考えるという営みを機械に委ねた結果、私たちは地図を頭の中に描く力を、少しずつ手放しつつあるのではないでしょうか。むろん、私は便利さそのものを否定したいわけではありません。ただ、得たものの大きさばかりに目を奪われ、その陰で静かに失われていくものへの想像力を欠いたまま、なし崩し的にすべてを機械に明け渡してしまうことには、慎重であるべきだと申し上げたいのです。利便性とは、いわば後払いの負債のようなものであり、その請求書は、忘れた頃に、思いがけない形で私たちのもとへ届くのかもしれません。",
+      "transcript_en": "You probably feel that daily life has become more convenient than ever before. Shopping is done at the touch of a button; tell it your destination and the car drives itself. But what I want to ask here is whether that convenience has truly been obtained for free. Convenience, at first glance, appears to lighten our burdens, but behind it, the judgments and effort that we ourselves were originally supposed to bear are, in an invisible form, being handed off somewhere else. For example, as a result of entrusting the act of working out a route to a machine, aren't we, little by little, letting go of the very power to draw a map inside our own heads? Of course, I do not wish to deny convenience itself. I simply want to say that we should be cautious about surrendering everything to machines in a piecemeal fashion, with our eyes stolen away only by the magnitude of what we have gained, while lacking any imagination for what is quietly being lost in its shadow. Convenience is, so to speak, like a deferred debt, and its invoice may arrive at our door in an unexpected form, at a time when we have long since forgotten about it.",
+      "questions": [
+        {
+          "q": "話し手が最も懸念しているのは何か。",
+          "q_en": "What is the speaker most concerned about?",
+          "options": [
+            "便利な機械が高価で、手に入れにくくなっていること",
+            "便利さと引き換えに、気づかぬうちに人間の判断力や能力が失われていくこと",
+            "機械が人間の仕事を奪い、失業者が増えていること",
+            "便利な生活によって人々が怠惰になり、健康を損なうこと"
+          ],
+          "answer": 1,
+          "q_te": "వక్త దేని గురించి ఎక్కువగా ఆందోళన చెందుతున్నారు?",
+          "q_hi": "वक्ता किस बात को लेकर सबसे अधिक चिंतित हैं?",
+          "q_ta": "பேச்சாளர் எதைப் பற்றி அதிகம் கவலைப்படுகிறார்?",
+          "q_ko": "화자가 가장 우려하고 있는 점은 무엇입니까?",
+          "q_es": "¿Qué es lo que más le preocupa al hablante?",
+          "q_kn": "ಮಾತನಾಡುವವರು ಯಾವುದರ ಬಗ್ಗೆ ಹೆಚ್ಚು ಆತಂಕಗೊಂಡಿದ್ದಾರೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ ഏറ്റവും കൂടുതൽ ആശങ്കപ്പെടുന്നത് എന്തിനെക്കുറിച്ചാണ്?"
+        },
+        {
+          "q": "話し手は「便利さそのもの」についてどのような立場をとっているか。",
+          "q_en": "What stance does the speaker take on convenience itself?",
+          "options": [
+            "便利さは全面的に否定すべき害悪だと考えている",
+            "便利さは無条件に称賛されるべきだと考えている",
+            "便利さを否定はしないが、失われるものへの想像力を持つべきだと考えている",
+            "便利さについては特に自分の意見を持っていない"
+          ],
+          "answer": 2,
+          "q_te": "సౌలభ్యం పట్ల వక్త వైఖరి ఏమిటి?",
+          "q_hi": "सुविधा के प्रति वक्ता का क्या दृष्टिकोण है?",
+          "q_ta": "வசதி தொடர்பாக பேச்சாளரின் நிலைப்பாடு என்ன?",
+          "q_ko": "편리함 자체에 대한 화자의 입장은 어떠합니까?",
+          "q_es": "¿Qué postura adopta el hablante respecto a la conveniencia en sí?",
+          "q_kn": "ಸೌಕರ್ಯದ ಬಗ್ಗೆ ಮಾತನಾಡುವವರ ನಿಲುವೇನು?",
+          "q_ml": "സൗകര്യങ്ങളെക്കുറിച്ച് സംസാരിക്കുന്നയാളുടെ നിലപാട് എന്താണ്?"
+        },
+        {
+          "q": "話し手は利便性を何にたとえているか。",
+          "q_en": "What does the speaker compare convenience to?",
+          "options": [
+            "忘れた頃に請求書が届く、後払いの負債",
+            "誰にでも平等に配られる贈り物",
+            "使えば使うほど価値が増していく財産",
+            "すぐに使い切ってしまう消耗品"
+          ],
+          "answer": 0,
+          "q_te": "వక్త సౌలభ్యాన్ని దేనితో పోలుస్తున్నారు?",
+          "q_hi": "वक्ता सुविधा की तुलना किससे करते हैं?",
+          "q_ta": "பேச்சாளர் வசதியை எதனோடு ஒப்பிடுகிறார்?",
+          "q_ko": "화자는 편리함을 무엇에 비유합니까?",
+          "q_es": "¿Con qué compara el hablante la conveniencia?",
+          "q_kn": "ಮಾತನಾಡುವವರು ಸೌಕರ್ಯವನ್ನು ಯಾವುದಕ್ಕೆ ಹೋಲಿಸುತ್ತಾರೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ സൗകര്യങ്ങളെ എന്തുമായാണ് ഉപമിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "సౌలభ్యం అనే అప్పు: ఆధునిక జీవితం అత్యంత సౌకర్యవంతంగా మారిందని మనం భావిస్తున్నాము. కానీ ప్రతి సౌలభ్యం వెనుక మన స్వతంత్ర ఆలోచనా శక్తిని, స్వయం సమృద్ధిని కోల్పోయే ప్రమాదం పొంచి ఉంది. రచయిత సౌలభ్యాన్ని భవిష్యత్ తరాల నుండి తీసుకుంటున్న 'రుణం'తో పోలుస్తున్నారు.",
+      "transcript_hi": "सुविधा रूपी ऋण: हम महसूस करते हैं कि जीवन सुविधाजनक हो गया है। परंतु प्रत्येक सुविधा के पीछे स्वतंत्र चिंतन और आत्मनिर्भरता खोने का जोखिम है। वक्ता सुविधा की तुलना भविष्य से लिए गए 'कर्ज़' से करते हैं।",
+      "transcript_ta": "வசதி என்ற கடன்: வாழ்க்கை வசதியாகிவிட்டதாக நாம் எண்ணுகிறோம். ஆனால் ஒவ்வொரு வசதிக்கும் பின்னால் சுயமாக சிந்திக்கும் திறனை இழக்கும் அபாயம் உள்ளது. வசதியை ஒரு 'கடன்' உடன் ஒப்பிடுகிறார்.",
+      "transcript_ko": "편리함이라는 빚: 생활이 편리해졌다고 느끼지만, 그 이면에는 스스로 생각하고 해결하는 자립 능력을 상실할 위험이 도사리고 있습니다. 화자는 편리함을 미래에서 당겨쓴 '부채'에 비유합니다.",
+      "transcript_es": "La deuda llamada conveniencia: Creemos que la vida es más cómoda, pero tras cada atajo tecnológico subyace la pérdida de autonomía intelectual. El ponente compara la comodidad con una 'deuda' contraída con el futuro.",
+      "transcript_kn": "ಸೌಕರ್ಯವೆಂಬ ಸಾಲ: ಜೀವನ ಸುಲಭವಾಗಿದೆ ಎಂದು ನಾವಂದುಕೊಳ್ಳುತ್ತೇವೆ. ಆದರೆ ಸ್ವತಂತ್ರ ಚಿಂತನೆಯನ್ನು ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ. ಲೇಖಕರು ಸೌಕರ್ಯವನ್ನು 'ಸಾಲ'ಕ್ಕೆ ಹೋಲಿಸುತ್ತಾರೆ.",
+      "transcript_ml": "സൗകര്യം എന്ന കടം: ജീവിതം എളുപ്പമായെന്ന് കരുതുമ്പോഴും സ്വന്തമായി ചിന്തിക്കാനുള്ള ശേഷി നഷ്ടപ്പെടുന്നു. സൗകര്യങ്ങളെ ഭാവിയിൽ നിന്ന് കടമെടുത്ത 'കട'ത്തോടാണ് ഉപമിക്കുന്നത്."
+    },
+    {
+      "id": "l-n1-2",
+      "title": "修復をめぐる対話（A Dialogue on Restoration）",
+      "script": "男：今回の壁画の修復方針なんだけど、やはり制作当初の鮮やかな色彩を、できる限り再現する方向で進めたいと考えているんだ。\n女：その気持ちは分かるわ。でも、私はむしろ慎重になるべきだと思うの。何世紀もの間、その絵が浴びてきた時間そのものが、もはや作品の一部になっているんじゃないかしら。\n男：とはいえ、色褪せてしまった状態を「本来の姿」と呼んでいいものだろうか。作者が意図したのは、あくまで描いた瞬間の色合いのはずだ。\n女：確かにそうかもしれない。ただ、私たちが手を加えた瞬間、それはもう作者の絵であると同時に、現代の私たちの解釈が塗り重ねられた絵になってしまう。どこまでが復元で、どこからが創作なのか、その線引きは思いのほか曖昧なのよ。\n男：つまり君は、修復とは過去を忠実に取り戻す作業ではなく、現在の価値観を過去に投影する行為にほかならない、と言いたいわけだね。\n女：ええ。だからこそ、私は「元通りにする」という言葉を、そう軽々しくは使えないと思っているの。むしろ、朽ちていく過程に手をどう添えるか、そこにこそ修復家の見識が問われるのではないかしら。",
+      "transcript_en": "Man: About the restoration policy for this mural — I'm still thinking we should proceed in the direction of reproducing, as much as we can, the vivid colors of when it was first created.\nWoman: I understand that feeling. But I actually think we ought to be more cautious. The very time that the painting has bathed in over so many centuries has, by now, become a part of the work itself, hasn't it?\nMan: Even so, can we really call the faded state its \"original form\"? What the artist intended was surely the coloring of the very moment they painted it.\nWoman: That may well be true. But the moment we lay our hands on it, it becomes — at the same time as being the artist's painting — a painting over which our modern interpretation has been layered. How much is restoration, and from where does it become creation? That line is more ambiguous than one might think.\nMan: In other words, you want to say that restoration is not the work of faithfully recovering the past, but nothing other than the act of projecting present-day values onto the past.\nWoman: Yes. That's precisely why I feel I can't use the words \"return it to how it was\" so lightly. Rather, how one lends one's hand to the process of decay — isn't that exactly where a restorer's discernment is put to the test?",
+      "questions": [
+        {
+          "q": "女性の立場はどれか。",
+          "q_en": "Which describes the woman's position?",
+          "options": [
+            "制作当初の色彩を完全に再現することを最優先すべきだ",
+            "時間の経過も作品の一部であり、修復には慎重であるべきだ",
+            "壁画には一切手を加えず、そのまま朽ちるにまかせるべきだ",
+            "作者の意図は無視し、修復家が自由に描き直してよい"
+          ],
+          "answer": 1,
+          "q_te": "మహిళా దృక్పథాన్ని ఏది వివరిస్తుంది?",
+          "q_hi": "महिला के दृष्टिकोण का वर्णन कौन सा विकल्प करता है?",
+          "q_ta": "பெண்ணின் நிலையை விளக்குவது எது?",
+          "q_ko": "여성의 입장을 설명하는 것은 어느 것입니까?",
+          "q_es": "¿Qué describe la postura de la mujer?",
+          "q_kn": "ಮಹಿಳೆಯ ನಿಲುವನ್ನು ವಿವರಿಸುವುದು ಯಾವುದು?",
+          "q_ml": "സ്ത്രീയുടെ നിലപാടിനെ വിവരിക്കുന്നത് ഏതാണ്?"
+        },
+        {
+          "q": "男性が最初に示した修復方針はどれか。",
+          "q_en": "What restoration policy did the man first propose?",
+          "options": [
+            "絵に一切手を加えず、現状のまま保存する",
+            "現代的な解釈を大胆に加えて描き直す",
+            "制作当初の鮮やかな色彩を、できる限り再現する",
+            "修復はせず、壁画を別の場所へ移設する"
+          ],
+          "answer": 2,
+          "q_te": "పురుషుడు మొదట ఏ పునరుద్ధరణ విధానాన్ని ప్రతిపాదించాడు?",
+          "q_hi": "पुरुष ने पहले किस बहाली नीति का प्रस्ताव दिया?",
+          "q_ta": "ஆண் முதலில் எந்த புதுப்பித்தல் முறையை முன்மொழிந்தார்?",
+          "q_ko": "남성이 처음에 제안한 복원 방침은 무엇이었습니까?",
+          "q_es": "¿Qué política de restauración propuso inicialmente el hombre?",
+          "q_kn": "ಪುರುಷನು ಮೊದಲು ಯಾವ ನವೀಕರಣ ನೀತಿಯನ್ನು ಪ್ರಸ್ತಾಪಿಸಿದನು?",
+          "q_ml": "പുരുഷൻ ആദ്യം നിർദ്ദേശിച്ച പുനരുദ്ധാരണ നയം എന്തായിരുന്നു?"
+        },
+        {
+          "q": "女性が「曖昧だ」と指摘したのは、何についてか。",
+          "q_en": "What did the woman point out as being ambiguous?",
+          "options": [
+            "どこまでが復元で、どこからが創作なのかという境界",
+            "壁画を実際に描いた作者が誰であるかという点",
+            "修復にかかる費用と期間の見積もり",
+            "壁画が描かれた正確な年代"
+          ],
+          "answer": 0,
+          "q_te": "మహిళ ఏది అస్పష్టంగా ఉందని ఎత్తిచూపింది?",
+          "q_hi": "महिला ने किस बात को अस्पष्ट बताया?",
+          "q_ta": "பெண் எதை தெளிவற்றதாகச் சுட்டிக்காட்டினாள்?",
+          "q_ko": "여성이 모호하다고 지적한 점은 무엇입니까?",
+          "q_es": "¿Qué señaló la mujer como ambiguo?",
+          "q_kn": "ಮಹಿಳೆ ಯಾವುದನ್ನು ಅಸ್ಪಷ್ಟವೆಂದು ಬೆಟ್ಟುಮಾಡಿದಳು?",
+          "q_ml": "സ്ത്രീ വ്യക്തതയില്ലാത്തതായി ചൂണ്ടിക്കാണിച്ചത് എന്താണ്?"
+        }
+      ],
+      "transcript_te": "పునరుద్ధరణపై సంభాషణ: ప్రాచీన కుడ్యచిత్ర పునరుద్ధరణ విధానంపై సంవాదం. పురుషుడు అసలు రూపాన్ని పునర్నిర్మించాలని వాదించగా, మహిళ ఆ కుడ్యచిత్రంపై కాలం మిగిల్చిన చారిత్రక గాయాలు మరియు క్షీణత కూడా దాని సహజ చరిత్రలో భాగమేనని వాదిస్తోంది.",
+      "transcript_hi": "पुनरुद्धार पर संवाद: भित्तिचित्र की बहाली पर चर्चा। पुरुष ने मूल रूप में लौटाने का प्रस्ताव दिया, जबकि महिला का तर्क है कि समय के थपेड़ों से पड़ा प्रभाव भी कलाकृति के इतिहास का अभिन्न अंग है।",
+      "transcript_ta": "புதுப்பித்தல் குறித்த உரையாடல்: சுவரோவியத்தை புதுப்பிப்பது பற்றிய விவாதம். ஓவியத்தை பழைய நிலைக்குக் கொண்டுவர ஆண் கூற, காலத்தின் சுவடுகளும் அந்த ஓவியத்தின் வரலாற்றுப் பகுதி என பெண் வாதிடுகிறாள்.",
+      "transcript_ko": "복원을 둘러싼 대화: 벽화 복원 방향에 대한 논쟁. 남성은 본래의 모습대로 완전히 복원하자고 주장하나, 여성은 시간의 흐름에 따른 훼손과 풍화 또한 작품 역사의 일부라고 반박합니다.",
+      "transcript_es": "Diálogo sobre la restauración: Debate sobre un mural. El hombre propone devolverlo a su estado original prístino, mientras la mujer sostiene que el paso del tiempo y sus huellas forman parte indisoluble de su historia.",
+      "transcript_kn": "ಪುನರುತ್ಥಾನದ ಬಗೆಗಿನ ಸಂವಾದ: ಪುರಾತನ ಗೋಡೆಚಿತ್ರದ ನವೀಕರಣದ ಚರ್ಚೆ. ಮೂಲ ರೂಪಕ್ಕೆ ತರಬೇಕೆಂದು ಪುರುಷ ಹೇಳಿದರೆ, ಕಾಲದ ಹೊಡೆತದಿಂದಾದ ಬದಲಾವಣೆಗಳೂ ಇತಿಹಾಸದ ಭಾಗವೆಂದು ಮಹಿಳೆ ವಾದಿಸುತ್ತಾಳೆ.",
+      "transcript_ml": "ചിത്രം പുനരുദ്ധരിക്കുന്നതിനെക്കുറിച്ചുള്ള സംഭാഷണം: ചുവർചിത്രം പഴയ രൂപത്തിലാക്കണമെന്ന് പുരുഷൻ പറയുമ്പോൾ, കാലപ്പഴക്കം സൃഷ്ടിച്ച മാറ്റങ്ങളും അതിന്റെ ചരിത്രമാണെന്ന് സ്ത്രീ വാദിക്കുന്നു."
+    },
+    {
+      "id": "l-n1-3",
+      "title": "再読という愉しみ（The Pleasure of Rereading）",
+      "script": "一度読んだ本を、なぜまた手に取るのか。あらすじも結末も分かっているのに、と訝しむ向きもあるでしょう。けれども、再読という行為の妙味は、まさにその「分かっている」という前提にこそ潜んでいるのです。初めて読むとき、私たちはどうしても物語の先を追うことに気を取られ、一文一文の呼吸や、さりげなく置かれた伏線の手触りを、つい取りこぼしてしまう。ところが二度目、三度目となると、結末を知っているがゆえに、かえって細部にゆっくりと目を凝らす余裕が生まれる。同じ文章のはずなのに、以前は素通りしていた一節が、不意に私を立ち止まらせる。それはおそらく、本が変わったからではなく、その間に、読み手である私自身が変わったからにほかなりません。歳月を経て再び同じ物語に向き合うとき、私たちはその作品を読み返していると同時に、かつてその本を読んだ頃の自分自身をも、静かに読み返しているのです。だとすれば、一冊の本は、読むたびに新しく生まれ変わる、汲めども尽きぬ泉のようなものなのかもしれません。",
+      "transcript_en": "Why do we pick up once more a book we have already read? Some may wonder at it — even though we already know the plot and the ending. And yet, the exquisite charm of the act of rereading lurks precisely in that premise of \"already knowing.\" When reading for the first time, we inevitably get caught up in chasing what comes next in the story, and end up letting slip the breathing of each sentence, the texture of the foreshadowing casually laid here and there. But by the second or third time, precisely because we know the ending, we conversely gain the composure to fix our eyes slowly on the details. Though it ought to be the very same text, a passage we once passed right by suddenly makes us halt. That is likely not because the book has changed, but simply because I myself, the reader, have changed in the meantime. When, after the passage of years, we face the same story once again, we are — at the same time as rereading that work — also quietly rereading our very own selves from the days when we first read it. If so, then a single book may be like an inexhaustible spring, born anew each time it is read.",
+      "questions": [
+        {
+          "q": "話し手によれば、再読の醍醐味はどこにあるか。",
+          "q_en": "According to the speaker, where does the real charm of rereading lie?",
+          "options": [
+            "結末を知らないまま、物語の先を追える点",
+            "結末を知っているからこそ、細部にじっくり目を向けられる点",
+            "一度目よりも速く読み終えられる点",
+            "あらすじを他人に説明できるようになる点"
+          ],
+          "answer": 1,
+          "q_te": "వక్త ప్రకారం మళ్ళీ చదవడంలో నిజమైన ఆకర్షణ ఎక్కడ ఉంది?",
+          "q_hi": "वक्ता के अनुसार पुनः पठन का असली आकर्षण कहाँ निहित है?",
+          "q_ta": "மீண்டும் வாசிப்பதன் உண்மையான ஈர்ப்பு எதில் உள்ளது?",
+          "q_ko": "화자에 따르면 재독의 진정한 매력은 어디에 있습니까?",
+          "q_es": "¿Dónde radica el verdadero encanto de la relectura según el hablante?",
+          "q_kn": "ಮರು ಓದಿನ ನಿಜವಾದ ಆಕರ್ಷಣೆ ಎಲ್ಲಿದೆ ಎಂದು ಲೇಖಕರು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "വീണ്ടും വായിക്കുന്നതിന്റെ യഥാർത്ഥ ആകർഷണം എവിടെയാണെന്നാണ് പറയുന്നത്?"
+        },
+        {
+          "q": "以前は素通りしていた一節が心に留まるようになるのは、なぜだと話し手は述べているか。",
+          "q_en": "Why, according to the speaker, does a passage once overlooked come to stay with us?",
+          "options": [
+            "本の内容そのものが書き換えられたから",
+            "出版社が新しい注釈を加えたから",
+            "読み手である自分自身が変わったから",
+            "以前より翻訳が良くなったから"
+          ],
+          "answer": 2,
+          "q_te": "గతంలో విస్మరించిన వాక్యం ఇప్పుడు మనసులో ఎందుకు నిలిచిపోతుంది?",
+          "q_hi": "पहले अनदेखा किया गया अंश अब क्यों दिल में बस जाता है?",
+          "q_ta": "முன்பு தவறவிட்ட பகுதி இப்போது மனதில் பதிவது ஏன்?",
+          "q_ko": "과거에 지나쳤던 구절이 다시 마음에 남게 되는 이유는 무엇입니까?",
+          "q_es": "¿Por qué un pasaje antes pasado por alto cobra sentido ahora?",
+          "q_kn": "ಹಿಂದೆ ಕಡೆಗಣಿಸಿದ ವಾಕ್ಯ ಈಗ ನೆನಪಿನಲ್ಲಿ ಉಳಿಯಲು ಕಾರಣವೇನು?",
+          "q_ml": "മുമ്പ് ശ്രദ്ധിക്കാതെ പോയ ഭാഗം ഇപ്പോൾ മനസ്സിൽ തങ്ങാൻ കാരണമെന്താണ്?"
+        },
+        {
+          "q": "話し手は一冊の本を、最終的に何にたとえているか。",
+          "q_en": "In the end, what does the speaker compare a single book to?",
+          "options": [
+            "誰も解くことのできない永遠の謎",
+            "一度使えばなくなってしまう道具",
+            "時とともに色褪せていく古い写真",
+            "読むたびに生まれ変わる、汲めども尽きぬ泉"
+          ],
+          "answer": 3,
+          "q_te": "చివరకు వక్త ఒక పుస్తకాన్ని దేనితో పోలుస్తున్నారు?",
+          "q_hi": "अंत में वक्ता एक पुस्तक की तुलना किससे करते हैं?",
+          "q_ta": "இறுதியில் பேச்சாளர் ஒரு புத்தகத்தை எதனோடு ஒப்பிடுகிறார்?",
+          "q_ko": "결국 화자는 한 권의 책을 무엇에 비유합니까?",
+          "q_es": "¿Con qué compara el hablante un libro al final?",
+          "q_kn": "ಕೊನೆಗೆ ಮಾತನಾಡುವವರು ಪುಸ್ತಕವನ್ನು ಯಾವುದಕ್ಕೆ ಹೋಲಿಸುತ್ತಾರೆ?",
+          "q_ml": "അവസാനം സംസാരിക്കുന്നയാൾ ഒരു പുസ്തകത്തെ എന്തുമായാണ് ഉപമിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "మళ్ళీ చదవడంలో ఆనందం: ఒకసారి చదివిన పుస్తకాన్ని మళ్ళీ ఎందుకు చదువుతాము? మన వయస్సు, అనుభవాలు మారేకొద్దీ ఒకే పుస్తకం సరికొత్త అర్థాలను ఆవిష్కరిస్తుంది. ఒక గొప్ప పుస్తకం అనేది మన జీవితంతో పాటు ఎదిగే సజీవ అద్దం వంటిది.",
+      "transcript_hi": "पुनः पठन का आनंद: पढ़ी हुई पुस्तक दोबारा क्यों पढ़ें? जैसे-जैसे हमारी उम्र और अनुभव बढ़ते हैं, वही पुस्तक नए अर्थ प्रकट करती है। एक महान पुस्तक हमारे जीवन के साथ बढ़ने वाले दर्पण के समान है।",
+      "transcript_ta": "மீண்டும் வாசிப்பதன் இன்பம்: படித்த நூலை மீண்டும் ஏன் வாசிக்கிறோம்? நமது அகவையும் அனுபவமும் கூடும்போது அதே நூல் புதிய பரிமாணங்களை உணர்த்துகிறது. சிறந்த நூல் நம் வாழ்க்கையோடு வளரும் கண்ணாடி.",
+      "transcript_ko": "재독의 즐거움: 이미 읽은 책을 다시 펼치는 이유는 무엇인가? 독자의 나이와 경험이 깊어짐에 따라 텍스트는 전혀 새로운 의미를 건넵니다. 책 한 권은 인간의 성숙과 함께 호흡하는 거울입니다.",
+      "transcript_es": "El placer de la relectura: ¿Por qué releer un libro ya leído? A medida que maduramos, el mismo texto desvela capas inéditas. Un gran libro es un espejo que envejece y dialoga con nuestra propia vida.",
+      "transcript_kn": "ಮರು ಓದಿನ ಆನಂದ: ಓದಿದ ಪುಸ್ತಕವನ್ನೇ ಮತ್ತೆ ಓದುವುದೇಕೆ? ನಮ್ಮ ಅನುಭವ ಬೆಳೆದಂತೆ ಅದೇ ಪುಸ್ತಕ ಹೊಸ ಅರ್ಥ ನೀಡುತ್ತದೆ. ಶ್ರೇಷ್ಠ ಪುಸ್ತಕವು ನಮ್ಮ ಬದುಕಿನೊಂದಿಗೆ ಬೆಳೆಯುವ ಕನ್ನಡಿಯಾಗಿದೆ.",
+      "transcript_ml": "വീണ്ടും വായിക്കുന്നതിലെ ആനന്ദം: വായിച്ച പുസ്തകം വീണ്ടും വായിക്കുമ്പോൾ ജീവിതാനുഭവങ്ങളുടെ വെളിച്ചത്തിൽ അത് പുതിയ അർത്ഥങ്ങൾ നൽകുന്നു. ഒരു നല്ല പുസ്തകം നമ്മോടൊപ്പം വളരുന്ന കണ്ണാടിയാണ്."
+    },
+    {
+      "id": "l-n1-4",
+      "title": "「成果」を測るということ（On Measuring \"Results\"）",
+      "script": "どんな仕事にも数値目標を掲げ、その達成度で人を評価する。近ごろ、そうした流儀があらゆる職場に浸透しつつあります。無駄を省き、成果を目に見える形にする——聞こえはいい。しかし、私が長年この業界に身を置いて痛感するのは、本当に価値のある仕事ほど、数字には収まりきらないという事実です。たとえば、若い同僚の悩みにそっと耳を傾ける時間。あるいは、すぐには実を結ばないと分かっていながら、あえて遠回りを選ぶという判断。こうした営みは、その月の売上にも、こなした件数にも、一切現れません。ところが、測れるものだけを評価の物差しにしてしまうと、人はいつしか、測られる行動ばかりを優先するようになる。測れないがゆえに切り捨てられていくもの、そこにこそ、組織を長い目で支えてきた土台があったのではないでしょうか。効率を追い求めるあまり、効率という尺度そのものが取りこぼしているものへの想像力を、私たちは失ってはならない。数字は現実の一面を照らす光ではあっても、現実そのものではないのですから。",
+      "transcript_en": "In any job, set numerical targets and evaluate people by how well they meet them. Lately, that way of doing things has been permeating every workplace. Cut out waste, put results into visible form — it sounds fine. But what I have keenly felt over my long years in this field is the fact that the truly valuable work is precisely what cannot be fully contained in numbers. For example, the time spent quietly lending an ear to a young colleague's troubles. Or the decision to deliberately take a roundabout path, even while knowing it won't bear fruit right away. Such acts appear nowhere — neither in that month's sales, nor in the number of cases handled. And yet, once we make only what is measurable the yardstick of evaluation, people come, before they know it, to prioritize only the behavior that gets measured. The things cut away precisely because they cannot be measured — wasn't it there that the very foundation supporting the organization over the long term lay? In our eagerness to pursue efficiency, we must not lose our imagination for what the very measure of efficiency itself is letting slip. For numbers, though they are a light that illuminates one facet of reality, are not reality itself.",
+      "questions": [
+        {
+          "q": "話し手が最も問題だと考えているのは何か。",
+          "q_en": "What does the speaker consider the biggest problem?",
+          "options": [
+            "数値目標を掲げる職場が減っていること",
+            "測れる成果だけを評価すると、測れない価値ある仕事が切り捨てられること",
+            "若い社員が仕事の悩みを相談しなくなったこと",
+            "売上の数字がなかなか伸びないこと"
+          ],
+          "answer": 1,
+          "q_te": "వక్త దేనిని అతిపెద్ద సమస్యగా భావిస్తున్నారు?",
+          "q_hi": "वक्ता सबसे बड़ी समस्या किसे मानते हैं?",
+          "q_ta": "பேச்சாளர் எதை மிகப்பெரிய பிரச்சனையாகக் கருதுகிறார்?",
+          "q_ko": "화자가 가장 큰 문제로 여기는 것은 무엇입니까?",
+          "q_es": "¿Qué considera el hablante el mayor problema?",
+          "q_kn": "ಮಾತನಾಡುವವರು ಯಾವುದನ್ನು ದೊಡ್ಡ ಸಮಸ್ಯೆಯಾಗಿ ಕಾಣುತ್ತಾರೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ ഏറ്റവും വലിയ പ്രശ്നമായി കാണുന്നത് എന്തിനെയാണ്?"
+        },
+        {
+          "q": "数字に表れない仕事の例として挙げられているのはどれか。",
+          "q_en": "Which is given as an example of work that does not show up in numbers?",
+          "options": [
+            "その月の売上を細かく記録すること",
+            "こなした件数を増やすこと",
+            "高い数値目標を設定すること",
+            "若い同僚の悩みにそっと耳を傾ける時間"
+          ],
+          "answer": 3,
+          "q_te": "సంఖ్యలలో కనిపించని పనికి ఉదాహరణగా ఏమి ఇచ్చారు?",
+          "q_hi": "संख्याओं में न दिखने वाले काम का उदाहरण क्या दिया गया है?",
+          "q_ta": "எண்களில் தெரியாத பணிக்கான உதாரணமாக என்ன கூறப்பட்டது?",
+          "q_ko": "수치로 드러나지 않는 업무의 예로 제시된 것은 무엇입니까?",
+          "q_es": "¿Qué ejemplo de trabajo que no se refleja en números se menciona?",
+          "q_kn": "ಅಂಕಿಗಳಲ್ಲಿ ಕಾಣದ ಕೆಲಸಕ್ಕೆ ಉದಾಹರಣೆಯಾಗಿ ಏನನ್ನು ನೀಡಲಾಗಿದೆ?",
+          "q_ml": "സംഖ്യകളിൽ കാണാത്ത ജോലിയുടെ ഉദാഹരണമായി എന്താണ് നൽകിയിരിക്കുന്നത്?"
+        },
+        {
+          "q": "話し手は「数字」を最終的にどのようなものだと述べているか。",
+          "q_en": "In the end, how does the speaker describe \"numbers\"?",
+          "options": [
+            "現実の一面を照らす光ではあっても、現実そのものではない",
+            "現実を完全に映し出す鏡",
+            "まったく信用できない虚構",
+            "努力次第でいくらでも操作できる道具"
+          ],
+          "answer": 0,
+          "q_te": "చివరకు వక్త 'సంఖ్యల'ను ఎలా వర్ణించారు?",
+          "q_hi": "अंत में वक्ता ने 'संख्याओं' का वर्णन कैसे किया?",
+          "q_ta": "இறுதியில் பேச்சாளர் 'எண்களை' எவ்வாறு விவரிக்கிறார்?",
+          "q_ko": "결국 화자는 '수치'를 어떻게 설명합니까?",
+          "q_es": "¿Cómo describe el hablante a los 'números' al final?",
+          "q_kn": "ಕೊನೆಗೆ ಮಾತನಾಡುವವರು 'ಅಂಕಿ'ಗಳನ್ನು ಹೇಗೆ ವಿವರಿಸುತ್ತಾರೆ?",
+          "q_ml": "അവസാനം സംസാരിക്കുന്നയാൾ 'സംഖ്യ'കളെ എങ്ങനെയാണ് വിവരിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "'ఫలితాలను' కొలవడం: సంఖ్యాపరమైన లక్ష్యాలను మాత్రమే కొలమానంగా తీసుకుంటే, సంఖ్యలలో కనిపించని సహాయ సహకారాలు, సంస్థాగత సంస్కృతి వంటి అత్యంత విలువైన అంశాలు విస్మరించబడతాయి.",
+      "transcript_hi": "'परिणामों' का मूल्यांकन: केवल संख्यात्मक लक्ष्यों से मूल्यांकन करने पर वे महत्वपूर्ण कार्य उपेक्षित हो जाते हैं जो आंकड़ों में नहीं दिखते, जैसे सहकर्मियों का मार्गदर्शन और संगठनात्मक संस्कृति।",
+      "transcript_ta": "'முடிவுகளை' அளவிடுதல்: எண்களை மட்டுமே அளவுகோலாகக் கொண்டால், சக ஊழியர்களுக்கு உதவுதல் போன்ற புள்ளிவிவரங்களில் அடங்காத ஆக்கப்பூர்வமான பங்களிப்புகள் புறக்கணிக்கப்படும்.",
+      "transcript_ko": "'성과'를 측정한다는 것: 수치화된 목표에만 매몰되면 데이터로 드러나지 않는 동료 지원이나 조직 문화 개선 같은 본질적인 기여가 과소평가되는 심각한 왜곡이 발생합니다.",
+      "transcript_es": "Sobre medir los 'resultados': Supeditarlo todo a métricas cuantitativas invisibiliza labores cruciales que escapan a los números, como la mentoría y la cohesión de equipo.",
+      "transcript_kn": "'ಫಲಿತಾಂಶ'ವನ್ನು ಅಳೆಯುವುದು: ಕೇವಲ ಅಂಕಿಅಂಶಗಳಿಂದ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿದರೆ, ಅಂಕಿಗಳಲ್ಲಿ ಕಾಣದ ಮಾನವೀಯ ಸಹಕಾರ ಮತ್ತು ಸಂಸ್ಥೆಯ ಸಂಸ್ಕೃತಿ ಕಡೆಗಣಿಸಲ್ಪಡುತ್ತದೆ.",
+      "transcript_ml": "'ഫലങ്ങൾ' അളക്കുന്നതിനെക്കുറിച്ച്: സംഖ്യകളെ മാത്രം അടിസ്ഥാനമാക്കി വിലയിരുത്തുമ്പോൾ കണക്കുകളിൽ പെടാത്ത പരസ്പര സഹായങ്ങളും സംഭാവനകളും അവഗണിക്കപ്പെടുന്നു."
+    },
+    {
+      "id": "l-n1-5",
+      "title": "ローカル線の存廃（Whether to Keep the Local Line）",
+      "script": "男：この赤字続きのローカル線、いよいよ廃止もやむを得ない、という声が強まっているね。\n女：数字だけを見れば、そう結論づけたくなるのも分かるわ。でも、私はそう単純には割り切れないと思うの。\n男：とはいえ、一日の利用客が数えるほどしかない路線を、多額の税金で支え続けるのが、本当に公平と言えるだろうか。\n女：もちろん、採算を度外視していいとは言わない。ただ、この線がなくなったとき、真っ先に困るのは、車を持たないお年寄りや、通学の高校生でしょう。彼らにとっては、あの一本の列車が、社会とつながる唯一の糸なのよ。\n男：確かに、便利さや効率だけでは測れない役割があるのは、否定できないな。\n女：そう。鉄道を単なる移動の手段としてだけ捉えるなら、廃止は合理的な判断かもしれない。でも、地域そのものを生かすか見捨てるか、という問いとして考えれば、話はまるで違ってくる。目先の赤字を消すことが、長い目で見れば、その土地の未来まで細らせてしまう——そういうこともあるんじゃないかしら。",
+      "transcript_en": "Man: This local line that keeps running deficits — voices saying its abolition is now unavoidable are growing stronger.\nWoman: Looking at the numbers alone, I understand the urge to conclude that. But I don't think it can be settled so simply.\nMan: Even so, can it really be called fair to keep propping up, with large amounts of tax money, a line whose daily riders you can count on one hand?\nWoman: Of course, I'm not saying we can disregard profitability. But when this line disappears, the first to be troubled will be the elderly who don't own cars and the high-school students commuting to school. For them, that single train is the only thread connecting them to society.\nMan: True, there's no denying it plays a role that can't be measured by convenience or efficiency alone.\nWoman: Right. If you grasp the railway merely as a means of transport, abolition may be a rational judgment. But if you consider it as the question of whether to keep the region itself alive or abandon it, the story changes entirely. Erasing the immediate deficit can, in the long run, end up thinning out even the future of that land — such things do happen, don't they?",
+      "questions": [
+        {
+          "q": "男性が当初示していた考えはどれか。",
+          "q_en": "What view did the man initially express?",
+          "options": [
+            "ローカル線をもっと増やすべきだ",
+            "赤字が続く以上、路線の廃止もやむを得ない",
+            "税金を使ってでも路線を必ず守るべきだ",
+            "鉄道より飛行機を優先すべきだ"
+          ],
+          "answer": 1,
+          "q_te": "పురుషుడు మొదట ఏ అభిప్రాయాన్ని వ్యక్తం చేశాడు?",
+          "q_hi": "पुरुष ने शुरू में क्या राय व्यक्त की?",
+          "q_ta": "ஆண் ஆரம்பத்தில் என்ன கருத்தைத் தெரிவித்தார்?",
+          "q_ko": "남성이 처음에 표현한 견해는 무엇이었습니까?",
+          "q_es": "¿Qué opinión expresó inicialmente el hombre?",
+          "q_kn": "ಪುರುಷನು ಆರಂಭದಲ್ಲಿ ಯಾವ ಅಭಿಪ್ರಾಯವನ್ನು ವ್ಯಕ್ತಪಡಿಸಿದನು?",
+          "q_ml": "പുരുഷൻ തുടക്കത്തിൽ പ്രകടിപ്പിച്ച അഭിപ്രായം എന്തായിരുന്നു?"
+        },
+        {
+          "q": "女性は、路線がなくなると誰が最も困ると述べているか。",
+          "q_en": "According to the woman, who would be most troubled if the line disappeared?",
+          "options": [
+            "車を持たない高齢者や、通学の高校生",
+            "鉄道会社の株主",
+            "都会から来る観光客",
+            "沿線に住む若い会社員"
+          ],
+          "answer": 0,
+          "q_te": "లైన్ రద్దు అయితే ఎవరు ఎక్కువగా ఇబ్బంది పడతారని మహిళ చెప్పింది?",
+          "q_hi": "लाइन बंद होने पर किसे सबसे अधिक परेशानी होगी?",
+          "q_ta": "ரயில் நின்றால் யாருக்கு அதிக பாதிப்பு ஏற்படும் எனப் பெண் கூறினாள்?",
+          "q_ko": "여성에 따르면 노선이 사라질 경우 가장 곤란해지는 사람은 누구입니까?",
+          "q_es": "¿Quién se vería más perjudicado si desaparece la línea según la mujer?",
+          "q_kn": "ಮಾರ್ಗ ರದ್ದಾದರೆ ಯಾರಿಗೆ ಹೆಚ್ಚು ತೊಂದರೆಯಾಗುತ್ತದೆ ಎಂದು ಮಹಿಳೆ ಹೇಳಿದಳು?",
+          "q_ml": "ലൈൻ ഇല്ലാതായാൽ ആർക്കാണ് ഏറ്റവും കൂടുതൽ ബുദ്ധിമുട്ടുണ്ടാകുക എന്നാണ് സ്ത്രീ പറയുന്നത്?"
+        },
+        {
+          "q": "女性の主張の要点はどれか。",
+          "q_en": "What is the main point of the woman's argument?",
+          "options": [
+            "鉄道は移動手段にすぎないので、赤字ならすぐ廃止すべきだ",
+            "採算はまったく気にしなくてよい",
+            "目先の赤字を消すことが、かえって地域の未来を細らせることもある",
+            "高校生には別の交通手段を用意すればそれでよい"
+          ],
+          "answer": 2,
+          "q_te": "మహిళ వాదన యొక్క ముఖ్య ఉద్దేశం ఏమిటి?",
+          "q_hi": "महिला के तर्क का मुख्य बिंदु क्या है?",
+          "q_ta": "பெண்ணின் வாதத்தின் முக்கிய நோக்கம் என்ன?",
+          "q_ko": "여성의 주장의 핵심 요지는 무엇입니까?",
+          "q_es": "¿Cuál es el punto principal del argumento de la mujer?",
+          "q_kn": "ಮಹಿಳೆಯ ವಾದದ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
+          "q_ml": "സ്ത്രീയുടെ വാദത്തിന്റെ പ്രധാന കാതൽ എന്താണ്?"
+        }
+      ],
+      "transcript_te": "గ్రామీణ రైల్వే రద్దు వివాదం: నష్టాలు వస్తున్నాయని గ్రామీణ లైన్లను రద్దు చేస్తే, కార్లు నడపలేని వృద్ధులు మరియు విద్యార్థులు తీవ్రంగా నష్టపోతారు. రవాణా అనేది లాభనష్టాల వ్యాపారం మాత్రమే కాదు, పౌరుల ప్రాథమిక హక్కు.",
+      "transcript_hi": "स्थानीय रेल लाइन का अस्तित्व: घाटे के आधार पर लाइन बंद करने से कार न चला सकने वाले बुजुर्ग और छात्र असहाय हो जाएँगे। सार्वजनिक परिवहन केवल लाभ का साधन नहीं, जन-अधिकार है।",
+      "transcript_ta": "கிராமப்புற ரயில் தொடருமா: நஷ்டம் எனக் கூறி ரயிலை நிறுத்தினால் கார் ஓட்ட முடியாத முதியவர்களும் மாணவர்களும் பாதிக்கப்படுவர். பொதுப்போக்குவரத்து என்பது வணிகம் மட்டுமல்ல, அடிப்படை உரிமை.",
+      "transcript_ko": "지방 철도의 존폐: 적자만을 이유로 노선을 폐지한다면 자가용을 운전할 수 없는 고령자와 학생들은 고립됩니다. 대중교통은 채산성을 넘어선 공공의 기본 권리입니다.",
+      "transcript_es": "Mantener o suprimir la línea local: Suprimir líneas deficitarias condena al aislamiento a mayores y escolares sin vehículo propio. El transporte es un derecho cívico, no un mero negocio.",
+      "transcript_kn": "ರೈಲ್ವೆ ಮಾರ್ಗ ರದ್ದತಿ ವಿವಾದ: ನಷ್ಟವೆಂದು ಮಾರ್ಗ ಮುಚ್ಚಿದರೆ ಕಾರು ಚಲಾಯಿಸಲಾಗದ ವೃದ್ಧರು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳು ಅತಂತ್ರರಾಗುತ್ತಾರೆ. ಸಾರಿಗೆಯು ಲಾಭದ ವಿಷಯವಲ್ಲದೆ ನಾಗರಿಕರ ಹಕ್ಕು.",
+      "transcript_ml": "ഗ്രാമ റെയിൽവേ നിർത്തലാക്കൽ തർക്കം: നഷ്ടം കാരണം ട്രെയിൻ നിർത്തിയാൽ വയോധികരും കുട്ടികളും ദുരിതത്തിലാകും. പൊതുഗതാഗതം ലാഭത്തിന് വേണ്ടിയുള്ളതല്ല, മറിച്ച് ജനങ്ങളുടെ അവകാശമാണ്."
+    },
+    {
+      "id": "l-n1-6",
+      "title": "睡眠負債という考え方（The Idea of \"Sleep Debt\"）",
+      "script": "「眠る間も惜しんで働く」という言葉が、かつては美徳のように語られてきました。睡眠を削ってでも何かを成し遂げる姿は、勤勉さの証と見なされてきたのです。しかし、近年の研究が明らかにしつつあるのは、それとはおよそ正反対の事実です。日々のわずかな寝不足は、その場で解消されずに、まるで借金のように少しずつ積み重なっていく。「睡眠負債」と呼ばれるこの状態は、自覚のないまま判断力や集中力をむしばみ、やがて心身の健康そのものを脅かすといいます。厄介なのは、当人がその影響にほとんど気づけない、という点です。慢性的な寝不足に慣れてしまった人は、自分は十分に働けていると思い込みがちですが、実際には、酒に酔ったのと変わらぬほど能率が落ちている、という報告さえある。つまり、睡眠を削って稼いだつもりの時間は、翌日の生産性の低下という形で、利子までつけて返済させられているわけです。休むことを怠惰と履き違える、その発想こそ、いま改められるべきではないでしょうか。",
+      "transcript_en": "\"Working without even sparing time to sleep\" — such words were once spoken of almost as a virtue. The figure of accomplishing something even by cutting into one's sleep was regarded as proof of diligence. But what recent research is coming to reveal is a fact roughly the very opposite. Each day's slight lack of sleep, rather than being cleared away on the spot, piles up little by little, just like a debt. This state, called \"sleep debt,\" is said to erode one's judgment and concentration without one's awareness, and eventually to threaten one's very physical and mental health. What is troublesome is that the person themselves can hardly notice its effects. People who have grown accustomed to chronic sleep deprivation tend to convince themselves that they are working just fine, but there are even reports that their efficiency has in fact dropped to no different from being drunk on alcohol. In other words, the time one thought one had earned by cutting into sleep is being repaid — with interest added — in the form of the next day's decline in productivity. Isn't it precisely that mindset, which mistakes resting for laziness, that ought now to be corrected?",
+      "questions": [
+        {
+          "q": "「睡眠負債」とはどのような状態か。",
+          "q_en": "What kind of state is \"sleep debt\"?",
+          "options": [
+            "一晩徹夜すると、すぐに大きな病気になる状態",
+            "日々のわずかな寝不足が、借金のように少しずつ積み重なっていく状態",
+            "眠りすぎて、かえって体調を崩してしまう状態",
+            "睡眠時間を記録して管理する新しい健康法"
+          ],
+          "answer": 1,
+          "q_te": "'నిద్ర అప్పు' ఎలాంటి స్థితి?",
+          "q_hi": "'नींद का कर्ज़' किस प्रकार की स्थिति है?",
+          "q_ta": "'தூக்கக் கடன்' என்பது எத்தகைய நிலை?",
+          "q_ko": "'수면 부채'란 어떤 상태입니까?",
+          "q_es": "¿Qué clase de estado es la 'deuda de sueño'?",
+          "q_kn": "'ನಿದ್ರೆಯ ಸಾಲ' ಎಂಥ ಸ್ಥಿತಿ?",
+          "q_ml": "'ഉറക്കത്തിന്റെ കടം' എങ്ങനെയുള്ള അവസ്ഥയാണ്?"
+        },
+        {
+          "q": "睡眠負債の「厄介な」点として述べられているのは何か。",
+          "q_en": "What is described as the \"troublesome\" aspect of sleep debt?",
+          "options": [
+            "治すのに高額な費用がかかること",
+            "若い人にはまったく起こらないこと",
+            "当人が、自分への影響にほとんど気づけないこと",
+            "一度なると二度と回復しないこと"
+          ],
+          "answer": 2,
+          "q_te": "నిద్ర అప్పు యొక్క సమస్యాత్మక అంశం ఏమిటి?",
+          "q_hi": "नींद के कर्ज़ का सबसे चिंताजनक पहलू क्या है?",
+          "q_ta": "தூக்கக் கடனின் சிக்கலான அம்சம் என்ன?",
+          "q_ko": "수면 부채의 '성가신(위험한)' 측면으로 설명된 것은 무엇입니까?",
+          "q_es": "¿Qué aspecto se describe como el más problemático de la deuda de sueño?",
+          "q_kn": "ನಿದ್ರೆಯ ಸಾಲದ ಅಪಾಯಕಾರಿ ಅಂಶ ಯಾವುದು?",
+          "q_ml": "ഉറക്കത്തിന്റെ കടത്തിന്റെ ഏറ്റവും പ്രശ്നകരമായ വശം എന്താണ്?"
+        },
+        {
+          "q": "話し手が最も訴えたいことはどれか。",
+          "q_en": "What does the speaker most want to argue?",
+          "options": [
+            "休むことを怠惰と取り違える考え方を、改めるべきだ",
+            "睡眠時間はできるだけ削って働くべきだ",
+            "睡眠より食事のほうが健康に重要だ",
+            "寝不足でも酒を飲めば能率が上がる"
+          ],
+          "answer": 0,
+          "q_te": "వక్త ముఖ్యంగా ఏ విషయాన్ని వాదించాలనుకుంటున్నారు?",
+          "q_hi": "वक्ता मुख्य रूप से क्या तर्क देना चाहते हैं?",
+          "q_ta": "பேச்சாளர் முக்கியமாக எதை வாதிட விரும்புகிறார்?",
+          "q_ko": "화자가 가장 주장하고자 하는 바는 무엇입니까?",
+          "q_es": "¿Qué es lo que más desea defender el hablante?",
+          "q_kn": "ಮಾತನಾಡುವವರು ಮುಖ್ಯವಾಗಿ ಏನನ್ನು ವಾದಿಸಲು ಬಯಸುತ್ತಾರೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാൾ പ്രധാനമായും വാദിക്കാൻ ആഗ്രഹിക്കുന്നത് എന്താണ്?"
+        }
+      ],
+      "transcript_te": "నిద్ర అప్పు (స్లీప్ డెట్): నిద్రలేమి అనేది శరీరంలో క్రమంగా పేరుకుపోయే అప్పు వంటిది. వారాంతాల్లో ఎక్కువ సేపు పడుకున్నంత మాత్రాన ఈ లోటు తీరదు; ఇది మెదడు పనితీరును, రోగనిరోధక శక్తిని దీర్ఘకాలికంగా నాశనం చేస్తుంది.",
+      "transcript_hi": "नींद का कर्ज़ (स्लीप डेट): नींद की कमी शरीर में जमा होने वाले कर्ज़ के समान है। सप्ताहांत में देर तक सोने से इसकी भरपाई नहीं होती; यह मस्तिष्क और प्रतिरक्षा प्रणाली को दीर्घकालिक नुकसान पहुँचाता है।",
+      "transcript_ta": "தூக்கக் கடன்: தூக்கமின்மை உடலில் சேரும் கடன் போன்றது. வார இறுதியில் கூடுதல் நேரம் தூங்குவதால் இதை ஈடுசெய்ய முடியாது; இது மூளையின் செயல்திறனைப் பாதிக்கிறது.",
+      "transcript_ko": "수면 부채라는 개념: 만성적 수면 부족은 체내에 차곡차곡 쌓이는 빚과 같습니다. 주말 몰아자기로는 만회할 수 없으며 면역계와 뇌 기능에 심각한 손상을 초래합니다.",
+      "transcript_es": "La deuda de sueño: La privación crónica de sueño se acumula como una deuda financiera. Dormir más el fin de semana no la cancela; deteriora la inmunidad y la cognición.",
+      "transcript_kn": "ನಿದ್ರೆಯ ಸಾಲ: ನಿದ್ರೆಯ ಕೊರತೆಯು ಶರೀರದಲ್ಲಿ ಸಂಗ್ರಹವಾಗುವ ಸಾಲವಿದ್ದಂತೆ. ವಾರಾಂತ್ಯದಲ್ಲಿ ಹೆಚ್ಚು ನಿದ್ದೆ ಮಾಡುವುದರಿಂದ ಇದು ಸರಿಯಾಗುವುದಿಲ್ಲ; ಮೆದುಳಿನ ಸಾಮರ್ಥ್ಯ ಕುಗ್ಗಿಸುತ್ತದೆ.",
+      "transcript_ml": "ഉറക്കത്തിന്റെ കടം: ഉറക്കക്കുറവ് ശരീരത്തിൽ കടം പോലെ കുന്നുകൂടുന്നു. വാരാന്ത്യത്തിൽ കൂടുതൽ ഉറങ്ങിയതുകൊണ്ട് ഇത് പരിഹരിക്കപ്പെടില്ല; തലച്ചോറിന്റെ പ്രവർത്തനത്തെ ബാധിക്കുന്നു."
+    },
+    {
+      "id": "l-n1-7",
+      "title": "匿名性をめぐって（On Anonymity）",
+      "script": "男：ネット上の誹謗中傷がこれだけ深刻になると、いっそ匿名での投稿は全面的に禁止すべきだ、という議論まで出てきているね。\n女：気持ちは分かるわ。名前を隠しているからこそ、人は平気で他人を傷つけられるのだ、というのは一理ある。でも、匿名だからこそ言える声もある、という側面を忘れてはいけないと思うの。\n男：というと？\n女：たとえば、職場の不正を告発したい人や、社会の少数派として声を上げたい人。実名を明かせば不利益を被りかねない立場の人にとって、匿名という盾は、時に唯一の発言の手段になるのよ。\n男：なるほど。匿名性を奪えば、悪意ある投稿だけでなく、本来守られるべき弱い立場の声まで封じてしまいかねない、というわけか。\n女：そういうこと。問題の根は、匿名性そのものにあるのではなく、その陰に隠れて他人を攻撃する、一部の人間の振る舞いにあるはずよ。道具を一律に取り上げるのではなく、その使い方の責任をどう問うか——考えるべきは、そこではないかしら。",
+      "transcript_en": "Man: With online slander and abuse having become this serious, an argument is even emerging that anonymous posting should just be banned entirely.\nWoman: I understand the feeling. There's something to the idea that it's precisely because people hide their names that they can hurt others without a second thought. But I think we mustn't forget the aspect that there are also voices that can only be raised precisely because of anonymity.\nMan: Meaning?\nWoman: For instance, someone who wants to blow the whistle on wrongdoing at their workplace, or someone who wants to speak up as a social minority. For people in positions where revealing their real name could bring them disadvantage, the shield of anonymity is at times the only means of speaking.\nMan: I see. So stripping away anonymity could, along with malicious posts, end up silencing even the voices of the weak that ought properly to be protected.\nWoman: Exactly. The root of the problem shouldn't lie in anonymity itself, but in the conduct of a portion of people who hide in its shadow and attack others. Rather than uniformly confiscating the tool, how to hold people accountable for the way they use it — isn't that where we should be thinking?",
+      "questions": [
+        {
+          "q": "男性が最初に紹介した議論はどれか。",
+          "q_en": "What argument did the man first introduce?",
+          "options": [
+            "匿名での投稿を全面的に禁止すべきだという議論",
+            "ネットの利用料金を上げるべきだという議論",
+            "実名での投稿を禁止すべきだという議論",
+            "誹謗中傷は放置してかまわないという議論"
+          ],
+          "answer": 0,
+          "q_te": "పురుషుడు మొదట ఏ వాదనను ప్రవేశపెట్టాడు?",
+          "q_hi": "पुरुष ने पहले किस तर्क को प्रस्तुत किया?",
+          "q_ta": "ஆண் முதலில் என்ன வாதத்தை முன்வைத்தார்?",
+          "q_ko": "남성이 처음에 소개한 주장은 무엇이었습니까?",
+          "q_es": "¿Qué argumento introdujo inicialmente el hombre?",
+          "q_kn": "ಪುರುಷನು ಮೊದಲು ಯಾವ ವಾದವನ್ನು ಮುಂದಿಟ್ಟನು?",
+          "q_ml": "പുരുഷൻ ആദ്യം അവതരിപ്പിച്ച വാദം എന്തായിരുന്നു?"
+        },
+        {
+          "q": "女性が挙げた「匿名だからこそ言える声」の例はどれか。",
+          "q_en": "Which is the example the woman gave of \"voices that can only be raised because of anonymity\"?",
+          "options": [
+            "有名人の私生活を暴露したい人の声",
+            "職場の不正を告発したい人や、社会の少数派の声",
+            "商品を宣伝したい企業の声",
+            "匿名で悪口を言いたいだけの人の声"
+          ],
+          "answer": 1,
+          "q_te": "అనామకత వల్ల మాత్రమే వినిపించే గొంతుకలుగా మహిళ ఇచ్చిన ఉదాహరణ ఏది?",
+          "q_hi": "गुमनामी के कारण उठने वाली आवाज़ों का महिला ने क्या उदाहरण दिया?",
+          "q_ta": "அடையாளம் மறைப்பதால் மட்டுமே எழும் குரல்களாகப் பெண் கூறிய உதாரணம் எது?",
+          "q_ko": "여성이 제시한 '익명성이 있기에 낼 수 있는 목소리'의 예는 무엇입니까?",
+          "q_es": "¿Qué ejemplo dio la mujer de 'voces que solo pueden alzarse gracias al anonimato'?",
+          "q_kn": "ಅನಾಮಧೇಯತೆಯಿಂದ ಮಾತ್ರ ಎತ್ತಬಹುದಾದ ದನಿಗಳಿಗೆ ಮಹಿಳೆ ನೀಡಿದ ಉದಾಹರಣೆ ಯಾವುದು?",
+          "q_ml": "അജ്ഞാതത്വം ഉള്ളതുകൊണ്ട് മാത്രം ഉയരുന്ന ശബ്ദങ്ങളായി സ്ത്രീ നൽകിയ ഉദാഹരണം ഏതാണ്?"
+        },
+        {
+          "q": "女性は、問題の根がどこにあると考えているか。",
+          "q_en": "Where does the woman think the root of the problem lies?",
+          "options": [
+            "匿名という仕組みそのもの",
+            "インターネットの通信速度",
+            "実名を公開している人々",
+            "匿名性の陰に隠れて他人を攻撃する、一部の人間の振る舞い"
+          ],
+          "answer": 3,
+          "q_te": "సమస్య యొక్క మూలం ఎక్కడ ఉందని మహిళ భావిస్తోంది?",
+          "q_hi": "महिला के अनुसार समस्या की जड़ कहाँ है?",
+          "q_ta": "பிரச்சனையின் வேர் எங்குள்ளது என்று பெண் கருதுகிறாள்?",
+          "q_ko": "여성은 문제의 뿌리가 어디에 있다고 생각합니까?",
+          "q_es": "¿Dónde cree la mujer que reside la raíz del problema?",
+          "q_kn": "ಸಮಸ್ಯೆಯ ಮೂಲ ಎಲ್ಲಿದೆ ಎಂದು ಮಹಿಳೆ ಭಾವಿಸುತ್ತಾಳೆ?",
+          "q_ml": "പ്രശ്നത്തിന്റെ വേര് എവിടെയാണെന്നാണ് സ്ത്രീ കരുതുന്നത്?"
+        }
+      ],
+      "transcript_te": "అనామకతపై చర్చ: అంతర్జాలంలో అనామకత్వం దూషణలకు దారితీస్తున్నప్పటికీ, బలహీనులు, పీడితులు తమ వాణిని వినిపించడానికి ఇది రక్షణ కవచంగా పనిచేస్తుంది. సమస్య అనామకతలో లేదు, వ్యక్తుల నైతిక స్పృహలో ఉంది.",
+      "transcript_hi": "गुमनामी पर बहस: इंटरनेट पर गुमनामी भले ही कटुता फैलाती हो, परंतु पीड़ितों और शोषितों को खुलकर आवाज़ उठाने का सुरक्षा कवच भी यही देती है। समस्या गुमनामी में नहीं, संवेदनहीनता में है।",
+      "transcript_ta": "பெயரற்ற நிலை: இணையத்தில் அடையாளம் மறைத்தல் அவதூறுகளுக்கு வழிவகுத்தாலும், ஒடுக்கப்பட்டோர் குரல் கொடுக்க இதுவே பாதுகாப்பளிக்கிறது. பிரச்சனை பெயரின்மையில் இல்லை, மனித பண்பில்தான் உள்ளது.",
+      "transcript_ko": "익명성을 둘러싼 시각: 온라인 악플의 온상으로 비판받는 익명성이지만, 사회적 약자가 불이익 없이 목소리를 낼 수 있는 방패막이기도 합니다. 본질은 익명성 자체가 아닌 윤리의식입니다.",
+      "transcript_es": "En torno al anonimato: Aunque el anonimato digital propicia el acoso, también constituye el único escudo protector para que los vulnerables alcen la voz sin represalias.",
+      "transcript_kn": "ಅನಾಮಧೇಯತೆಯ ಚರ್ಚೆ: ಅಂತರ್ಜಾಲದಲ್ಲಿ ಹೆಸರು ಮರೆಮಾಚುವುದು ನಿಂದನೆಗೆ ಕಾರಣವಾದರೂ, ದುರ್ಬಲರು ದನಿ ಎತ್ತಲು ರಕ್ಷಣೆಯಾಗಿದೆ. ಸಮಸ್ಯೆ ಅನಾಮಧೇಯತೆಯಲ್ಲಲ್ಲ, ನೈತಿಕತೆಯಲ್ಲಿದೆ.",
+      "transcript_ml": "അജ്ഞാതത്വം: ഇന്റർനെറ്റിൽ വ്യക്തിത്വം മറച്ചുവെക്കുന്നത് ദുരുപയോഗം ചെയ്യപ്പെടുമ്പോഴും, അടിച്ചമർത്തപ്പെട്ടവർക്ക് ശബ്ദമുയർത്താനുള്ള കവചം കൂടിയാണിത്."
+    },
+    {
+      "id": "l-n1-8",
+      "title": "手つかずの自然という幻想（The Illusion of Untouched Nature）",
+      "script": "手つかずの自然こそが最も豊かである——私たちはついそう思い込みがちです。人の手が加わらない原生の森を理想とし、そこに本来の自然の姿を見ようとする。けれども、日本の里山を見わたすとき、その通念はいささか揺らがざるを得ません。人里に近い雑木林や、水を張った田んぼ、ため池といった環境は、決して人の営みと無縁に成り立ってきたわけではないのです。定期的に木を切り、下草を刈り、田を耕す——そうした地道な働きかけがあってはじめて、多様な生き物が息づく空間が保たれてきた。ところが、農村の過疎化とともに、こうした手入れが途絶えると、藪は荒れ、かつてそこを住処としていた昆虫や小動物は、次第に姿を消していく。皮肉なことに、人が手を引いたとたん、守られるはずだった自然のほうが痩せ細っていくのです。自然と人間を、まるで対立するもののように切り分ける発想では、もはやこの問題の本質は捉えきれない。人の手が育んできた自然もまた、確かに存在するのだということを、私たちは思い起こすべきなのかもしれません。",
+      "transcript_en": "Untouched nature is what is richest — we tend to just assume so. We idealize the primeval forest, untouched by human hands, and try to see in it the original form of nature. However, when we look out over Japan's satoyama, that common belief cannot help but waver somewhat. Environments such as the groves near human settlements, the water-filled rice paddies, and the reservoir ponds have by no means come into being unrelated to human activity. Regularly cutting trees, mowing the undergrowth, tilling the fields — only when there is such steady, humble work has a space where diverse creatures live and breathe been maintained. Yet when, along with the depopulation of farming villages, such upkeep ceases, the thickets grow wild, and the insects and small animals that once made their homes there gradually vanish. Ironically, the very moment people withdraw their hands, the nature that was supposed to be protected is the one that grows thin and wastes away. With a way of thinking that carves nature and humanity apart as if they were opposing things, the essence of this problem can no longer be fully grasped. Perhaps we ought to recall that nature nurtured by human hands, too, certainly does exist.",
+      "questions": [
+        {
+          "q": "話し手が「揺らがざるを得ない」と述べている通念とはどれか。",
+          "q_en": "Which is the common belief the speaker says \"cannot help but waver\"?",
+          "options": [
+            "手つかずの自然こそが最も豊かだ、という考え",
+            "里山には生き物がほとんどいない、という考え",
+            "人間は自然を破壊してばかりだ、という考え",
+            "農村の過疎化は避けられない、という考え"
+          ],
+          "answer": 0,
+          "q_te": "వక్త చెప్పిన ఏ సాధారణ నమ్మకం సడలిపోక తప్పదు?",
+          "q_hi": "कौन सी आम धारणा डगमगाने लगती है?",
+          "q_ta": "பேச்சாளர் கூறும் எந்தப் பொதுவான நம்பிக்கை மாறுகிறது?",
+          "q_ko": "화자가 말하는, 흔들릴 수밖에 없는 일반적인 통념은 어느 것입니까?",
+          "q_es": "¿Cuál es la creencia común que el hablante dice que 'no puede sino tambalearse'?",
+          "q_kn": "ಯಾವ ಸಾಮಾನ್ಯ ನಂಬಿಕೆ ಸಡಿಲವಾಗುತ್ತದೆ ಎಂದು ಲೇಖಕರು ಹೇಳುತ್ತಾರೆ?",
+          "q_ml": "മാറ്റപ്പെടേണ്ട പൊതുവായ ധാരണയായി സംസാരിക്കുന്നയാൾ പറയുന്നത് ഏതാണ്?"
+        },
+        {
+          "q": "里山の多様な生き物が保たれてきたのは、なぜだと述べているか。",
+          "q_en": "Why, according to the speaker, have the satoyama's diverse creatures been sustained?",
+          "options": [
+            "人がいっさい立ち入らなかったから",
+            "木を切り、下草を刈るなど、人が定期的に手を入れてきたから",
+            "気候が年々暖かくなってきたから",
+            "外国から新しい生き物が持ち込まれたから"
+          ],
+          "answer": 1,
+          "q_te": "సాతోయామా జీవవైవిధ్యం ఎలా నిలబడింది?",
+          "q_hi": "सातोयामा के विविध जीव कैसे बने रहे?",
+          "q_ta": "சடோயாமாவின் பல்லுயிர் வளம் எவ்வாறு நிலைத்தது?",
+          "q_ko": "사토야마의 다양한 생물들은 왜 유지될 수 있었습니까?",
+          "q_es": "¿Por qué se han sostenido las diversas criaturas del satoyama?",
+          "q_kn": "ಸತೋಯಾಮಾದ ಜೀವವೈವಿಧ್ಯ ಹೇಗೆ ಉಳಿದುಕೊಂಡಿದೆ?",
+          "q_ml": "സാതോയാമയിലെ വൈവിധ്യമാർന്ന ജീവികൾ എങ്ങനെയാണ് നിലനിന്നുപോന്നത്?"
+        },
+        {
+          "q": "「皮肉なことに」以下で述べられているのは、どのような事態か。",
+          "q_en": "What situation is described in the part beginning \"ironically\"?",
+          "options": [
+            "人が手を入れたために、自然が破壊されてしまう事態",
+            "都市化が進んで、里山が宅地に変わってしまう事態",
+            "人が手を引いたとたん、守られるはずの自然が痩せ細っていく事態",
+            "生き物が増えすぎて、農作物が荒らされてしまう事態"
+          ],
+          "answer": 2,
+          "q_te": "'వ్యంగ్యంగా' ప్రారంభమయ్యే భాగంలో ఏ పరిస్థితి వర్ణించబడింది?",
+          "q_hi": "'विडंबना' वाले भाग में किस स्थिति का वर्णन है?",
+          "q_ta": "'முரண்பாடாக' என்று தொடங்கும் பகுதியில் என்ன விவரிக்கப்பட்டுள்ளது?",
+          "q_ko": "'아이러니하게도'로 시작하는 부분에서 묘사된 상황은 무엇입니까?",
+          "q_es": "¿Qué situación se describe en la parte que comienza con 'irónicamente'?",
+          "q_kn": "'ವಿಪರ್ಯಾಸವೆಂದರೆ' ಎಂದು ಶುರುವಾಗುವ ಭಾಗದಲ್ಲಿ ಯಾವ ಪರಿಸ್ಥಿತಿಯನ್ನು ವಿವರಿಸಲಾಗಿದೆ?",
+          "q_ml": "'വിരോധാഭാസമെന്നു പറയട്ടെ' എന്ന് തുടങ്ങുന്ന ഭാഗത്ത് എന്ത് സാഹചര്യമാണ് വിവരിക്കുന്നത്?"
+        }
+      ],
+      "transcript_te": "తాకని ప్రకృతి అనే భ్రమ: మానవ ప్రమేయం లేని ప్రకృతే అత్యంత స్వచ్ఛమైనదనేది ఒక అపోహ. జపాన్‌లోని సాతోయామా వంటి పర్యావరణ వ్యవస్థలు శతాబ్దాలుగా మానవుని స్థిరమైన నిర్వహణ వల్లనే జీవవైవిధ్యంతో వర్ధిల్లాయి.",
+      "transcript_hi": "अछूती प्रकृति का भ्रम: यह मानना भ्रम है कि मानव स्पर्श से दूर प्रकृति ही सबसे समृद्ध होती है। सातोयामा जैसी व्यवस्थाएं मानव के सदियों के संतुलित सह-अस्तित्व से ही फली-फूली हैं।",
+      "transcript_ta": "தீண்டப்படாத இயற்கை என்ற மாயை: மனிதத் தலையீடு இல்லாத இயற்கையே சிறந்தது என்பது தவறான நம்பிக்கை. மனிதனின் தொடர் பராமரிப்பால்தான் பல்லுயிர் வளம் காக்கப்படுகிறது.",
+      "transcript_ko": "손대지 않은 자연이라는 환상: 인간의 손길이 닿지 않은 원시림만이 풍요롭다는 통념은 착각입니다. 사토야마의 풍부한 생태계는 인간의 오랜 간섭과 공존이 빚어낸 결실입니다.",
+      "transcript_es": "La ilusión de la naturaleza virgen: Creer que la naturaleza intacta es siempre la más rica es falaz. Ecosistemas como el satoyama florecieron gracias al cuidado milenario humano.",
+      "transcript_kn": "ಮುಟ್ಟದ ಪ್ರಕೃತಿಯೆಂಬ ಭ್ರಮೆ: ಮಾನವನ ಸಂಪರ್ಕವಿಲ್ಲದ ಪ್ರಕೃತಿಯೇ ಶ್ರೇಷ್ಠವೆಂಬುದು ಸುಳ್ಳು. ಶತಮಾನಗಳ ಕಾಲ ಮಾನವನ ಸಮತೋಲಿತ ಸಹಬಾಳ್ವೆಯಿಂದಲೇ ಜೀವವೈವಿಧ್ಯ ಉಳಿದುಕೊಂಡಿದೆ.",
+      "transcript_ml": "തീണ്ടാത്ത പ്രകൃതി എന്ന മിഥ്യ: മനുഷ്യന്റെ ഇടപെടലില്ലാത്ത പ്രകൃതിയാണ് സമ്പന്നമെന്ന ചിന്ത തെറ്റാണ്. പ്രകൃതിയോടുള്ള മനുഷ്യന്റെ കരുതലും സംരക്ഷണവുമാണ് ജൈവവൈവിധ്യം നിലനിർത്തുന്നത്."
+    },
+    {
+      "id": "l-n1-9",
+      "title": "祭りが途絶えるとき（When a Festival Dies Out）",
+      "script": "かつて、どの町にも、その土地に根ざした祭りがありました。神輿を担ぐ掛け声が路地に響き、ふだんは顔を合わせることのない世代が、同じ汗を流す。祭りとは、単なる年に一度の賑わいではなかったのです。それは、地域の人々を目に見えない糸で結び直し、共同体としての一体感を確かめ合う、いわば装置のような役割を担ってきました。ところが、担い手の高齢化と、若い世代の流出により、その多くが、いま静かに姿を消しつつあります。祭りが一つ途絶えるということは、単に一つの行事が失われる、ということにとどまりません。それまで祭りを通じてかろうじて保たれてきた、隣人どうしの結びつきそのものが、そこでほどけてしまう。もっとも、昔ながらの形をそのまま守り抜くことだけが答えだとは、私も思いません。時代に合わせて姿を変えていくのは、むしろ自然なことでしょう。ただ、効率や採算とは別の論理で人と人とをつないできた、こうした営みを、単なる時代遅れの慣習として片づけてしまってよいものか。失ってはじめてその重みに気づく、ということのないよう、いま一度、立ち止まって考えてみたいのです。",
+      "transcript_en": "Once, every town had a festival rooted in its own land. The chanting of those carrying the portable shrine echoed through the alleys, and generations who normally never crossed paths shed the same sweat together. A festival was not merely a once-a-year bustle. It bore the role of, so to speak, a device — re-tying the people of the region with invisible threads, and letting them confirm to one another their sense of unity as a community. But with the aging of those who carry them on and the outflow of the younger generation, many of them are now quietly disappearing. That one festival dies out does not stop at merely one event being lost. The very bonds between neighbors, which until then had barely been held together through the festival, come unraveled right there. That said, I too do not think that stubbornly preserving the old form exactly as it was is the only answer. Changing shape to suit the times is, if anything, only natural. Still, is it really all right to dismiss such an endeavor — which has tied person to person by a logic apart from efficiency or profit — as merely an outdated custom? So that we do not end up realizing its weight only after we have lost it, I would like, once more, to stop and think.",
+      "questions": [
+        {
+          "q": "話し手によれば、祭りはどのような役割を担ってきたか。",
+          "q_en": "According to the speaker, what role has the festival played?",
+          "options": [
+            "観光客を集め、地域にお金を落とさせる役割",
+            "地域の人々を結び直し、共同体の一体感を確かめ合う役割",
+            "若い世代を都会へ送り出す役割",
+            "神社の建物を修理するための役割"
+          ],
+          "answer": 1,
+          "q_te": "వక్త ప్రకారం పండుగలు ఎలాంటి పాత్ర పోషించాయి?",
+          "q_hi": "वक्ता के अनुसार त्योहारों ने क्या भूमिका निभाई है?",
+          "q_ta": "பேச்சாளரின் கூற்றுப்படி திருவிழாக்கள் ஆற்றிய பங்கு என்ன?",
+          "q_ko": "화자에 따르면 축제는 어떤 역할을 해왔습니까?",
+          "q_es": "¿Qué papel han desempeñado los festivales según el hablante?",
+          "q_kn": "ಮಾತನಾಡುವವರ ಪ್ರಕಾರ ಹಬ್ಬಗಳು ಯಾವ ಪಾತ್ರ ವಹಿಸಿವೆ?",
+          "q_ml": "സംസാരിക്കുന്നയാളുടെ അഭിപ്രായത്തിൽ ഉത്സവങ്ങൾ എന്ത് പങ്കാണ് വഹിച്ചിട്ടുള്ളത്?"
+        },
+        {
+          "q": "多くの祭りが姿を消しつつある原因として挙げられているのはどれか。",
+          "q_en": "Which is given as a cause of many festivals disappearing?",
+          "options": [
+            "参加費が高くなりすぎたこと",
+            "天候が不順になったこと",
+            "担い手の高齢化と、若い世代の流出",
+            "法律で祭りが禁止されたこと"
+          ],
+          "answer": 2,
+          "q_te": "పండుగలు అదృశ్యమవడానికి కారణంగా ఏమి చెప్పారు?",
+          "q_hi": "त्योहारों के लुप्त होने का क्या कारण बताया गया है?",
+          "q_ta": "திருவிழாக்கள் மறையக் காரணமாக என்ன கூறப்பட்டது?",
+          "q_ko": "많은 축제가 사라져가는 원인으로 제시된 것은 무엇입니까?",
+          "q_es": "¿Qué se señala como causa de la desaparición de muchos festivales?",
+          "q_kn": "ಹಬ್ಬಗಳು ಕಣ್ಮರೆಯಾಗಲು ಕಾರಣವೇನು?",
+          "q_ml": "പല ഉത്സവങ്ങളും ഇല്ലാതാകാൻ കാരണമായി പറയുന്നത് എന്താണ്?"
+        },
+        {
+          "q": "昔ながらの祭りの形をそのまま守ることについて、話し手はどう考えているか。",
+          "q_en": "What does the speaker think about preserving the old form of the festival exactly as it was?",
+          "options": [
+            "それだけが唯一の正しい答えだ",
+            "伝統は何があっても一切変えてはならない",
+            "祭りは時代遅れなので、完全になくすべきだ",
+            "時代に合わせて姿を変えていくのは、むしろ自然なことだ"
+          ],
+          "answer": 3,
+          "q_te": "పాత రూపాన్ని యథాతథంగా కాపాడటం గురించి వక్త ఏమనుకుంటున్నారు?",
+          "q_hi": "पुराने स्वरूप को हूबहू सुरक्षित रखने पर वक्ता का क्या विचार है?",
+          "q_ta": "பழைய வடிவத்தை அப்படியே பாதுகாப்பது குறித்து பேச்சாளர் என்ன நினைக்கிறார்?",
+          "q_ko": "축제의 옛 형태를 그대로 보존하는 것에 대해 화자는 어떻게 생각합니까?",
+          "q_es": "¿Qué opina el hablante sobre preservar la forma antigua del festival exactamente como era?",
+          "q_kn": "ಹಳೆಯ ರೂಪವನ್ನು ಯಥಾವತ್ತಾಗಿ ಉಳಿಸಿಕೊಳ್ಳುವ ಬಗ್ಗೆ ಅವರ ಅಭಿಪ್ರಾಯವೇನು?",
+          "q_ml": "ഉത്സവത്തിന്റെ പഴയ രൂപം അതേപടി സംരക്ഷിക്കുന്നതിനെക്കുറിച്ച് അദ്ദേഹം എന്താണ് കരുതുന്നത്?"
+        }
+      ],
+      "transcript_te": "పండుగలు కనుమరుగైనప్పుడు: స్థానిక సంప్రదాయ పండుగలు కేవలం వినోదం మాత్రమే కాదు; అవి సమాజంలో బంధాలను, పరస్పర నమ్మకాన్ని కాపాడే మూలాలు. అవి అంతరించినప్పుడు సమాజపు ఐక్యత విచ్ఛిన్నమవుతుంది.",
+      "transcript_hi": "त्योहारों का लुप्त होना: स्थानीय पारंपरिक उत्सव केवल मनोरंजन नहीं, बल्कि सामाजिक एकता और विश्वास को जीवित रखने की धड़कन हैं। उनका लोप होना समाज का बिखराव है।",
+      "transcript_ta": "திருவிழாக்கள் மறையும் போது: பாரம்பரியத் திருவிழாக்கள் வெறும் கேளிக்கை அல்ல; அவை சமூக ஒற்றுமையையும் மனித பிணைப்பையும் காக்கும் வேர்கள். அவை மறைந்தால் சமூகம் சிதையும்.",
+      "transcript_ko": "축제가 사라질 때: 지역 축제는 단순한 오락이 아닌 공동체의 신뢰와 유대를 지탱하는 닻입니다. 축제의 단절은 곧 지역 사회의 해체를 의미합니다.",
+      "transcript_es": "Cuando muere una fiesta tradicional: Los festivales no son mero ocio; son el pegamento social que teje la confianza comunitaria. Su pérdida fragmenta la cohesión de los pueblos.",
+      "transcript_kn": "ಹಬ್ಬಗಳು ಮರೆಯಾದಾಗ: ಸಾಂಪ್ರದಾಯಿಕ ಜಾತ್ರೆಗಳು ಕೇವಲ ಮನರಂಜನೆಯಲ್ಲ; ಅವು ಸಮಾಜದ ಐಕ್ಯತೆ ಮತ್ತು ಪರಸ್ಪರ ನಂಬಿಕೆಯನ್ನು ಕಾಪಾಡುವ ಬೇರುಗಳು. ಅವು ನಿಂತರೆ ಸಮಾಜ ಛಿದ್ರವಾಗುತ್ತದೆ.",
+      "transcript_ml": "ഉത്സവങ്ങൾ ഇല്ലാതാകുമ്പോൾ: ഉത്സവങ്ങൾ കേവലം ആഘോഷങ്ങളല്ല, സമൂഹത്തെ ഒന്നിപ്പിച്ചു നിർത്തുന്ന കണ്ണികളാണ്. അവ നിലയ്ക്കുന്നത് സാമൂഹിക ഐക്യത്തെ തകർക്കും."
+    },
+    {
+      "id": "l-n1-10",
+      "title": "AI倫理と知的財産権のシンポジウム (AI Ethics & Copyright)",
+      "script": "司会：それではパネルディスカッションに入ります。『生成AIの急速な発展と著作権法の限界』について、知的財産法がご専門の神田教授、口火を切っていただけますでしょうか。\n神田：はい。現行の日本の著作権法第三十条の四では、情報解析を目的とする場合、著作権者の許諾なく著作物を利用できると規定されています。しかし、生成AIが人間のクリエイターの作風や画風を精巧に模倣し、商業市場で競合するコンテンツを瞬時に大量生成するに至った今日、この規定がクリエイターの創作意欲や経済的基盤を脅かしているという強い懸念が生じています。\n司会：文化庁の新たなガイドライン案でも、著作権侵害の判断基準について活発な議論が続いていますね。\n神田：ええ。機械学習の自由と創作者の権利保護のバランスをどこで取るか、法的な解釈論にとどまらず、クリエイターへの正当な対価還元モデルの構築が急務です。",
+      "transcript_en": "Moderator: Let us move into the panel discussion. On 'The Rapid Advance of Generative AI and the Limits of Copyright Law', could Professor Kanda, specialist in intellectual property law, open the floor?\nKanda: Certainly. Under Article 30-4 of Japan's current Copyright Act, copyrighted works may be utilized without the copyright holder's authorization for data analysis. However, now that generative AI can elaborately mimic human creators' distinctive styles and instantaneously generate commercial competitors in mass volume, grave concerns arise that this provision jeopardizes creators' incentive to create and their economic livelihood.\nModerator: In the Agency for Cultural Affairs' new draft guidelines, lively debate continues regarding criteria for copyright infringement.\nKanda: Indeed. Striking the balance between machine learning freedom and creator protection is crucial; beyond legal interpretation, establishing a mechanism for fair compensation to creators is an urgent imperative.",
+      "transcript_te": "మోడరేటర్: ప్యానెల్ చర్చను ప్రారంభిద్దాం. మేధో సంపత్తి చట్టాల నిపుణులు ప్రొఫెసర్ కందా గారూ, 'ఆర్టిఫిషియల్ ఇంటెలిజెన్స్ అభివృద్ధి మరియు కాపీరైట్ చట్టాల పరిమితులు' అంశంపై మాట్లాడండి.\nకందా: తప్పకుండా. ప్రస్తుత జపాన్ కాపీరైట్ చట్టం ప్రకారం డేటా అనాలిసిస్ కోసం రచయితల అనుమతి లేకుండా కంటెంట్‌ను ఉపయోగించవచ్చు. కానీ నేడు AI కళాకారుల శైలిని పూర్తిగా అనుకరిస్తూ మార్కెట్‌లోకి పోటీగా కంటెంట్‌ను దింపుతోంది. ఇది సృష్టికర్తల జీవనాధారాన్ని, సృజనాత్మకతను దెబ్బతీస్తోంది.\nమోడరేటర్: సాంస్కృతిక వ్యవహారాల సంస్థ కొత్త మార్గదర్శకాలపై కూడా తీవ్ర చర్చ జరుగుతోంది కదా.\nకందా: అవును. మెషిన్ లెర్నింగ్ స్వేచ్ఛకు మరియు కళాకారుల హక్కులకు మధ్య సమతుల్యత అవసరం. చట్టపరమైన నిబంధనలతో పాటు కళాకారులకు తగిన రాయల్టీ దక్కే విధానాన్ని తక్షణం రూపొందించాలి.",
+      "transcript_hi": "संचालक: अब पैनल चर्चा शुरू करते हैं। बौद्धिक संपदा कानून विशेषज्ञ प्रो. कांदा, 'जेनरेटिव एआई का विकास और कॉपीराइट कानून की सीमाएं' पर अपने विचार रखें।\nकांदा: धन्यवाद। वर्तमान जापानी कॉपीराइट कानून डेटा विश्लेषण के लिए सामग्री के बिना अनुमति उपयोग की छूट देता है। परंतु जब एआई इंसानी कलाकारों की शैली की हूबहू नकल करके बाज़ार में उनके काम से मुकाबला कर रहा है, तो कलाकारों की आजीविका पर संकट खड़ा हो गया है।\nसंचालक: कॉपीराइट उल्लंघन के मानकों पर नई नियमावली में भी तीखी बहस चल रही है।\nकांदा: बिल्कुल। केवल कानूनी व्याख्या से काम नहीं चलेगा, कलाकारों को उचित मुआवज़ा दिलाने वाला तंत्र बनाना बेहद ज़रूरी है।",
+      "transcript_ta": "நெறியாளர்: குழு விவாதத்தைத் தொடங்குவோம். பேராசிரியர் கந்தா, 'செயற்கை நுண்ணறிவும் பதிப்புரிமைச் சட்டத்தின் எல்லைகளும்' பற்றித் தொடங்குங்கள்.\nகந்தா: தற்போதைய சட்டப்படி தகவல் பகுப்பாய்விற்காக பதிப்புரிமை பெற்ற உள்ளடக்கத்தைப் பயன்படுத்தலாம். ஆனால் கலைஞர்களின் பாணியை அச்சுப்பிசகாமல் பிரதிபலித்து சந்தையில் போட்டியிடும் போது படைப்பாளர்களின் வாழ்வாதாரம் பாதிக்கப்படுகிறது.\nநெறியாளர்: பண்பாட்டு அமைச்சகத்தின் வழிகாட்டு நெறிமுறைகளிலும் வாதங்கள் தொடர்கின்றனவே.\nகந்தா: ஆம். இயந்திர கற்றலின் சுதந்திரத்திற்கும் படைப்பாளர்களின் உரிமைக்கும் இடையே சமநிலையைக் காண வேண்டும்; படைப்பாளர்களுக்கு உரிய ஊதியம் கிடைக்க வழிவகை செய்ய வேண்டும்.",
+      "transcript_ko": "사회자: 패널 토론을 시작하겠습니다. 지식재산권법 전문가이신 간다 교수님, '생성형 AI의 급격한 발전과 저작권법의 한계'에 대해 말씀해 주시겠습니까?\n간다: 현행 저작권법은 정보 분석 목적의 데이터 이용을 허용하고 있습니다. 그러나 AI가 작가의 고유한 화풍을 정교하게 모방하여 시장 경쟁을 유발함에 따라 창작자의 경제적 기반이 위협받고 있습니다.\n사회자: 문화청 가이드라인에서도 침해 판단 기준을 두고 논쟁이 뜨겁습니다.\n간다: 그렇습니다. 학습의 자유와 권리 보호의 균형을 맞추는 동시에, 창작자에게 정당한 보상이 돌아가는 수익 분배 모델 구축이 시급합니다.",
+      "transcript_es": "Moderador: Demos comienzo al debate. Sobre 'El auge de la IA generativa y los límites del derecho de autor', tiene la palabra el profesor Kanda, especialista en propiedad intelectual.\nKanda: El marco legal japonés actual exime de autorización el uso de obras para análisis de datos. Sin embargo, la capacidad de la IA para imitar fielmente el estilo de autores humanos y competir en el mercado masivamente amenaza el sustento de los creadores.\nModerador: Las nuevas directrices ministeriales debaten intensamente los criterios de infracción.\nKanda: Así es. Más allá de interpretaciones jurídicas, urge arbitrar mecanismos de compensación económica justa para los creadores.",
+      "transcript_kn": "ಸಂಚಾಲಕರು: 'ಜನರೇಟಿವ್ ಎಐ ಮತ್ತು ಹಕ್ಕುಸ್ವಾಮ್ಯ ಕಾನೂನಿನ ಮಿತಿಗಳು' ಕುರಿತು ಪ್ರೊಫೆಸರ್ ಕಂದಾ ಅವರು ತಮ್ಮ ಅಭಿಪ್ರಾಯ ಹಂಚಿಕೊಳ್ಳಲಿ.\nಕಂದಾ: ಜಪಾನಿನ ಕಾನೂನು ದತ್ತಾಂಶ ವಿಶ್ಲೇಷಣೆಗಾಗಿ ಕೃತಿಗಳನ್ನು ಬಳಸಲು ಅನುಮತಿಸುತ್ತದೆ. ಆದರೆ ಎಐ ಕಲಾವಿದರ ಶೈಲಿಯನ್ನು ನಕಲು ಮಾಡಿ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಸ್ಪರ್ಧೆಗಿಳಿದಿರುವುದು ಸೃಜನಶೀಲರ ಬದುಕಿಗೆ ಕಂಟಕವಾಗಿದೆ.\nಸಂಚಾಲಕರು: ಹೊಸ ಮಾರ್ಗಸೂಚಿಗಳ ಬಗ್ಗೆಯೂ ಚರ್ಚೆಗಳು ನಡೆಯುತ್ತಿವೆ.\nಕಂದಾ: ಹೌದು. ಕಲಾವಿದರಿಗೆ ಸೂಕ್ತ ಸಂಭಾವನೆ ದೊರಕಿಸುವ ವ್ಯವಸ್ಥೆಯನ್ನು ಕಟ್ಟುವುದು ತೀರಾ ತುರ್ತಾಗಿದೆ.",
+      "transcript_ml": "മോഡറേറ്റർ: 'ജനറേറ്റീവ് എഐയും പകർപ്പവകാശ നിയമത്തിന്റെ പരിമിതികളും' എന്ന വിഷയത്തിൽ പ്രൊഫസർ കാന്ദ സംസാരിക്കട്ടെ.\nകാന്ദ: നിലവിലെ നിയമപ്രകാരം ഡാറ്റ വിശകലനത്തിനായി സൃഷ്ടികൾ ഉപയോഗിക്കാൻ അനുവാദമുണ്ട്. എന്നാൽ എഐ രചയിതാക്കളുടെ ശൈലി അനുകരിച്ച് വിപണിയിൽ വൻതോതിൽ ഇറങ്ങുന്നത് അവരുടെ നിലനിൽപ്പിനെ ബാധിക്കുന്നു.\nമോഡറേറ്റർ: പകർപ്പവകാശ ലംഘന മാനദണ്ഡങ്ങളെക്കുറിച്ച് വലിയ ചർച്ച നടക്കുന്നുണ്ടല്ലോ.\nകാന്ദ: അതെ. സാങ്കേതിക സ്വാതന്ത്ര്യവും കലാകാരന്മാരുടെ സംരക്ഷണവും ഉറപ്പാക്കുന്നതിനൊപ്പം അവർക്ക് അർഹമായ പ്രതിഫലം നൽകാനുള്ള സംവിധാനവും ഉണ്ടാവണം.",
+      "questions": [
+        {
+          "q": "神田教授が 指摘する、生成AIによる クリエイターへの 最大の 懸念は 何ですか。",
+          "q_en": "What is the greatest concern to creators from generative AI pointed out by Professor Kanda?",
+          "q_te": "AI వల్ల సృష్టికర్తలకు వచ్చే అతిపెద్ద సమస్యగా ప్రొఫెసర్ కందా దేనిని పేర్కొన్నారు?",
+          "q_hi": "प्रो. कांदा ने एआई से कलाकारों को क्या सबसे बड़ा खतरा बताया?",
+          "q_ta": "பேராசிரியர் கந்தா சுட்டிக்காட்டும் முதன்மையான ஆபத்து என்ன?",
+          "q_ko": "간다 교수가 지적하는, 생성형 AI가 창작자에게 미치는 최대 우려는 무엇입니까?",
+          "q_es": "¿Cuál es la mayor preocupación para los creadores señalada por el profesor Kanda?",
+          "q_kn": "ಪ್ರೊ. ಕಂದಾ ಅವರ ಪ್ರಕಾರ ಸೃಷ್ಟಿಕರ್ತರಿಗೆ ಎದುರಾಗಿರುವ ದೊಡ್ಡ ಅಪಾಯವೇನು?",
+          "q_ml": "പ്രൊഫസർ കാന്ദ ചൂണ്ടിക്കാണിക്കുന്ന പ്രധാന ആശങ്ക എന്താണ്?",
+          "options": [
+            "作風を模倣され、商業市場で競合することで 創作意欲や 経済基盤が 脅かされること",
+            "AIの 開発費が 高騰すること",
+            "著作権法が 完全に 廃止されること",
+            "人間が イラストを 描かなくなること"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "神田教授が 法的解釈論に とどまらず 急務であると 訴えていることは 何ですか。",
+          "q_en": "What does Professor Kanda urge as an urgent priority beyond legal interpretation?",
+          "q_te": "చట్టపరమైన వివరణలతో పాటు అత్యంత తక్షణ కర్తవ్యంగా ఆయన దేనిని చెప్పారు?",
+          "q_hi": "कानूनी व्याख्या के अलावा उन्होंने किस बात को तुरंत लागू करने पर बल दिया?",
+          "q_ta": "சட்ட ரீதியான விளக்கத்திற்கு அப்பால் அவசரத் தேவையாக அவர் வலியுறுத்துவது என்ன?",
+          "q_ko": "간다 교수가 법적 해석을 넘어 시급하다고 촉구하는 것은 무엇입니까?",
+          "q_es": "¿Qué reclama con urgencia el profesor Kanda más allá de la interpretación legal?",
+          "q_kn": "ಕಾನೂನಿನ ಆಚೆಗೆ ತುರ್ತಾಗಿ ಜಾರಿಯಾಗಬೇಕೆಂದು ಅವರು ಒತ್ತಾಯಿಸುವುದೇನು?",
+          "q_ml": "നിയമപരമായ വ്യാഖ്യാനങ്ങൾക്കപ്പുറം അടിയന്തരമായി നടപ്പിലാക്കേണ്ട കാര്യമായി അദ്ദേഹം പറയുന്നത് എന്താണ്?",
+          "options": [
+            "クリエイターへの 正当な 対価還元モデルの 構築",
+            "すべての 生成AIの 開発停止",
+            "著作権の 保護期間の 短縮",
+            "AI利用者を すべて 処罰すること"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n1-11",
+      "title": "近代日本文学の文体変遷に関する基調講演 (Modern Literature Lecture)",
+      "script": "文学研究者：明治期における言文一致運動は、単なる文体改革にとどまらず、日本人の『自己意識の近代化』そのものであったと言えます。二葉亭四迷の『浮雲』に端を発し、夏目漱石や島崎藤村らに至る過程で、従来の漢文訓読調や雅文体といった規範的枠組みから解放された日本語は、人間の内面的な葛藤や近代社会における個人の孤独を写実的に描き出す道具立てを獲得しました。とりわけ、私小説の隆盛に見られるように、自己を客観視し告白する言説空間の成立は、近代国家形成期における自我の確立と不可分に結びついていました。しかし同時に、この極端な内省性は、共同体からの遊離という現代に至る病理の胚種をも宿していたのです。",
+      "transcript_en": "Literary Scholar: The Genbun-itchi (unification of spoken and written language) movement of the Meiji period was not merely stylistic reform, but the very 'modernization of Japanese self-consciousness'. Originating with Futabatei Shimei's 'Ukigumo' and maturing through Natsume Soseki and Shimazaki Toson, Japanese freed from classical Sino-Japanese frameworks acquired the linguistic apparatus to realistically portray inner turmoil and individual alienation in modern society. In particular, as seen in the rise of the 'I-novel' (watakushi-shosetsu), establishing a discursive space for self-scrutiny and confession was inextricably linked to forging ego in a burgeoning nation-state. Concurrently, however, this radical introspection harbored the seeds of modern alienation from community.",
+      "transcript_te": "సాహిత్య పరిశోధకుడు: మేజీ కాలంలో జరిగిన 'మాట్లాడే భాష మరియు రాసే భాషల ఐక్యత' (గెన్‌బున్-ఇచ్చి) ఉద్యమం కేవలం శైలి మార్పు మాత్రమే కాదు, అది జపనీయుల ఆత్మచేతన ఆధునీకరణ. సాంప్రదాయ క్లాసికల్ సంకెళ్ళ నుండి విముక్తి పొందిన జపనీస్ భాష, అంతర్మథనాన్ని, ఒంటరితనాన్ని వాస్తవికంగా చిత్రించే శక్తిని సంతరించుకుంది. 'ఐ-నావెల్' (ఆత్మకథాత్మక నవలలు) ద్వారా తనను తాను ఆవిష్కరించుకునే నూతన యుగం ప్రారంభమైంది. అయితే ఈ మితిమీరిన అంతర్ముఖత్వమే సమాజం నుండి మనిషి దూరమయ్యే ఆధునిక రుగ్మతకు కూడా బీజం వేసింది.",
+      "transcript_hi": "साहित्य शोधकर्ता: मेइजी काल में बोलचाल और लिखित भाषा का एकीकरण केवल शैलीगत सुधार नहीं था, बल्कि जापानी आत्म-चेतना का आधुनिकीकरण था। शास्त्रीय बंधनों से मुक्त होकर भाषा ने आधुनिक समाज में मानवीय अंतर्द्वंद्व और एकाकीपन को यथार्थवादी ढंग से चित्रित करने की क्षमता प्राप्त की। 'आई-नॉवेल' के उदय ने व्यक्तिवाद और आत्म-स्वीकारोक्ति को स्थापित किया। परंतु इस अत्यधिक आत्म-विश्लेषण ने व्यक्ति को समाज से अलग-थलग करने के आधुनिक संकट को भी जन्म दिया।",
+      "transcript_ta": "இலக்கிய ஆய்வாளர்: மெய்ஜி காலத்தில் பேச்சு மொழியும் எழுத்து மொழியும் இணைந்த இயக்கம் வெறும் நடை மாற்றமல்ல, அது மனித சுய உணர்வின் நவீனமயமாக்கல் ஆகும். மரபுசார்ந்த மொழியிலிருந்து விடுபட்ட ஜப்பானிய மொழி, மனிதனின் அகப் போராட்டங்களையும் தனிமையையும் தத்ரூபமாகப் பதிவு செய்யும் வலிமையைப் பெற்றது. 'தன்வரலாற்று நாவல்கள்' மனித அகத்தை வெளிப்படுத்தின. ஆயினும் இத்தகைய தீவிர அகப்பார்வை மனிதனை சமூகத்திலிருந்து அந்நியப்படுத்தும் நவீன நோய்க்கும் வித்திட்டது.",
+      "transcript_ko": "문학 연구자: 메이지 시대의 언문일치 운동은 단순한 문체 개혁을 넘어 일본인의 '자아의식의 근대화' 그 자체였습니다. 고전적 문체에서 해방된 일본어는 내면의 갈등과 개인의 고독을 사실적으로 묘사하는 도구를 획득했습니다. 사소설의 융성에서 보듯 자아를 성찰하는 담론 공간의 형성은 근대적 주체 확립과 직결되었습니다. 그러나 이 극단적인 내면성은 공동체로부터의 소외라는 현대적 병리의 씨앗을 품고 있었습니다.",
+      "transcript_es": "Investigador literario: El movimiento de unificación de la lengua hablada y escrita (Genbun-itchi) en la era Meiji no fue una mera reforma estilística, sino la 'modernización de la autoconciencia' japonesa. La prosa, liberada de arcaísmos, devino en instrumento para plasmar el desgarro interior y la alienación del individuo. El auge de la 'novela del yo' consagró la introspección personal, pero esa mirada volcada hacia dentro sembró también el germen del desarraigo comunitario.",
+      "transcript_kn": "ಸಾಹಿತ್ಯ ವಿದ್ವಾಂಸ: ಮೇಜಿ ಕಾಲದ ಆಡುಭಾಷೆ-ಬರಹ ಭಾಷೆಯ ಸಮನ್ವಯ ಚಳವಳಿಯು ಕೇವಲ ಶೈಲಿಯ ಸುಧಾರಣೆಯಲ್ಲದೆ, ಮಾನವನ ಆತ್ಮಪ್ರಜ್ಞೆಯ ಆಧುನೀಕರಣವಾಗಿತ್ತು. ಹಳೆಯ ಚೌಕಟ್ಟಿನಿಂದ ಹೊರಬಂದ ಭಾಷೆಯು ಮನುಷ್ಯನ ಆಂತರಿಕ ತುಮುಲ ಮತ್ತು ಒಂಟಿತನವನ್ನು ಬಿಂಬಿಸುವ ಶಕ್ತಿ ಪಡೆಯಿತು. 'ನನ್ನ ಕಾದಂಬರಿ' ಪದ್ಧತಿಯು ಆತ್ಮಾವಲೋಕನವನ್ನು ತಂದರೂ, ಸಮಾಜದಿಂದ ದೂರವಾಗುವ ಆಧುನಿಕ ಸಮಸ್ಯೆಯನ್ನೂ ಹುಟ್ಟುಹಾಕಿತು.",
+      "transcript_ml": "സാഹിത്യ ഗവേഷകൻ: മെജി കാലഘട്ടത്തിലെ സംസാരഭാഷയും എഴുത്തുഭാഷയും ഒന്നിപ്പിച്ച പ്രസ്ഥാനം കേവലം ശൈലീമാറ്റമായിരുന്നില്ല, മറിച്ച് ജാപ്പനീസ് ജനതയുടെ ആധുനിക ആത്മബോധത്തിന്റെ പിറവിയായിരുന്നു. പരമ്പരാഗത ചട്ടക്കൂടുകളിൽ നിന്ന് മുക്തമായ ഭാഷ ആന്തരിക സംഘർഷങ്ങളെയും ഏകാന്തതയെയും ചിത്രീകരിക്കാൻ പ്രാപ്തമായി. ആത്മകഥാംശമുള്ള നോവലുകൾ വളർന്നുവന്നെങ്കിലും, ഇത് സമൂഹത്തിൽ നിന്നുള്ള ഒറ്റപ്പെടലിനും കാരണമായി.",
+      "questions": [
+        {
+          "q": "言文一致運動が 果たした 歴史的・思想的な 意義として 述べられているものは 何ですか。",
+          "q_en": "What is stated as the historical and intellectual significance of the Genbun-itchi movement?",
+          "q_te": "ఈ ఉద్యమం సాధించిన చారిత్రక, తాత్విక ప్రాముఖ్యత ఏమిటి?",
+          "q_hi": "इस भाषा आंदोलन का ऐतिहासिक और दार्शनिक महत्व क्या बताया गया है?",
+          "q_ta": "இவ்வியக்கத்தின் வரலாற்றுச் சிறப்புமிக்க பங்களிப்பாக என்ன கூறப்பட்டது?",
+          "q_ko": "언문일치 운동이 지닌 역사적·사상적 의의로 설명된 것은 무엇입니까?",
+          "q_es": "¿Qué significado histórico e intelectual se atribuye al movimiento Genbun-itchi?",
+          "q_kn": "ಈ ಭಾಷಾ ಚಳವಳಿಯ ಐತಿಹಾಸಿಕ ಮಹತ್ವವೇನು?",
+          "q_ml": "ഈ പ്രസ്ഥാനത്തിന്റെ ചരിത്രപരമായ പ്രാധാന്യമായി പറയുന്നത് എന്താണ്?",
+          "options": [
+            "日本人の「自己意識の近代化」と 内面を描く 表現の獲得",
+            "漢字の 全面的な 廃止",
+            "外国語の 排除と 国粋主義の 確立",
+            "古典文学の 完全な 復活"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "極端な 内省性が もたらした 現代的な 弊害として 指摘されているものは 何ですか。",
+          "q_en": "What modern adverse effect brought about by extreme introspection is pointed out?",
+          "q_te": "మితిమీరిన అంతర్ముఖత్వం తెచ్చిన ఆధునిక దుష్పరిణామం ఏమిటి?",
+          "q_hi": "अत्यधिक आत्म-चिंतन का क्या दुष्प्रभाव बताया गया है?",
+          "q_ta": "தீவிர அகப்பார்வை ஏற்படுத்திய நவீன கால குறைபாடு என்ன?",
+          "q_ko": "극단적인 내면성이 초래한 현대적 병리로 지적된 것은 무엇입니까?",
+          "q_es": "¿Qué consecuencia negativa actual achaca el ponente a la introspección extrema?",
+          "q_kn": "ಅತಿಯಾದ ಆತ್ಮಾವಲೋಕನದಿಂದಾದ ಆಧುನಿಕ ಅಡ್ಡಪರಿಣಾಮವೇನು?",
+          "q_ml": "അമിതമായ അന്തർമുഖത്വം ഉണ്ടാക്കിയ ദോഷഫലമായി ചൂണ്ടിക്കാട്ടുന്നത് എന്താണ്?",
+          "options": [
+            "共同体（社会）からの 遊離・孤立",
+            "文学作品の 質の 低下",
+            "言語能力の 衰退",
+            "読書人口の 激減"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n1-12",
+      "title": "人口動態の変化と労働市場 (Macroeconomics & Labor Demographics)",
+      "script": "エコノミスト：少子高齢化に伴う生産年齢人口の急減は、もはや将来の予測ではなく現下の危機です。労働供給制約が顕在化する中、従来の年功序列や終身雇用を前提とした日本型雇用慣行は制度的疲労を起こしています。必要なのは、シニア層や女性の労働参加を促すだけでなく、ジョブ型雇用の導入による専門性の評価や、副業・兼業の解禁を通じた労働移動の円滑化です。さらに、デジタル化による労働生産性の向上を伴わなければ、単なる人手不足の穴埋めにとどまり、実質賃金の上昇と経済成長の好循環を実現することは不可能です。",
+      "transcript_en": "Economist: The steep decline in the working-age population driven by declining birthrates and aging is no longer a future forecast, but a present reality. Amid labor supply constraints, traditional Japanese employment practices—rooted in seniority and lifetime employment—suffer systemic fatigue. What is required is not merely encouraging labor participation among seniors and women, but facilitating labor mobility through job-based employment evaluating specialized skills, and deregulation of secondary employment. Furthermore, unless accompanied by digital productivity gains, measures will remain mere stopgaps, failing to achieve a virtuous cycle of rising real wages and economic growth.",
+      "transcript_te": "ఆర్థికవేత్త: శ్రామిక జనాభా తగ్గడం అనేది భవిష్యత్తు సమస్య కాదు, వర్తమాన సంక్షోభం. సాంప్రదాయ జీవితకాల ఉద్యోగ విధానాలు ఇప్పుడు కాలం చెల్లినవిగా మారాయి. వృద్ధులు, మహిళలు ఉద్యోగాలలో చేరడమే కాకుండా, నిర్దిష్ట నైపుణ్యాల ఆధారిత ఉద్యోగాలు, పార్ట్‌టైమ్ పనుల సదుపాయం కల్పించాలి. డిజిటల్ ఉత్పాదకతను పెంచకపోతే కేవలం మనుషుల కొరతను తాత్కాలికంగా పూడ్చడం తప్ప, వేతనాలు పెరిగి ఆర్థిక వృద్ధి సాధించడం అసాధ్యం.",
+      "transcript_hi": "अर्थशास्त्री: कामकाजी आबादी में कमी अब भविष्य की चिंता नहीं, वर्तमान का संकट है। जीवनभर की नौकरी और वरिष्ठता आधारित पुरानी व्यवस्था अब चरमरा रही है। केवल महिलाओं और वरिष्ठों को काम पर लगाना पर्याप्त नहीं, बल्कि कौशल आधारित रोजगार और दोहरी नौकरी की अनुमति देकर श्रम प्रवाह को सुगम बनाना होगा। डिजिटलीकरण द्वारा उत्पादकता बढ़ाए बिना वास्तविक वेतन और आर्थिक विकास का चक्र संभव नहीं है।",
+      "transcript_ta": "பொருளாதார நிபுணர்: உழைக்கும் மக்கள் தொகை குறைவது நிகழ்கால நெருக்கடி. வாழ்நாள் வேலைவாய்ப்பு முறை காலாவதியாகிவிட்டது. மூத்தோர் மற்றும் பெண்களின் பங்களிப்புடன், திறன் சார்ந்த வேலைவாய்ப்பை உருவாக்க வேண்டும். டிஜிட்டல் உற்பத்தியை உயர்த்தாவிட்டால் ஊதிய உயர்வும் பொருளாதார வளர்ச்சியும் சாத்தியமில்லை.",
+      "transcript_ko": "이코노미스트: 생산가능인구의 급감으로 전통적인 종신고용과 연공서열 제도가 한계에 달했습니다. 여성과 고령층의 경제활동 참가뿐 아니라, 직무급제 도입과 노동 유연화가 필수적입니다. 아울러 디지털 전환을 통한 노동생산성 향상이 수반되지 않는다면 실질임금 상승과 성장의 선순환은 불가능합니다.",
+      "transcript_es": "Economista: El desplome de la población activa ya es una crisis presente. El modelo tradicional de empleo vitalicio acusa fatiga institucional. Urge favorecer la movilidad laboral, la contratación por competencias y la flexibilidad. Sin un salto en la productividad digital, no habrá ciclo virtuoso de salarios reales y crecimiento.",
+      "transcript_kn": "ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞ: ದುಡಿಯುವ ವರ್ಗದ ಜನಸಂಖ್ಯೆ ಕುಸಿಯುತ್ತಿರುವುದು ಇಂದಿನ ದೊಡ್ಡ ಬಿಕ್ಕಟ್ಟು. ಸಾಂಪ್ರದಾಯಿಕ ಆಜೀವ ಉದ್ಯೋಗ ನೀತಿಗಳು ವಿಫಲವಾಗುತ್ತಿವೆ. ಕೌಶಲ್ಯ ಆಧಾರಿತ ಉದ್ಯೋಗ ಮತ್ತು ಡಿಜಿಟಲ್ ಉತ್ಪಾದಕತೆಯನ್ನು ಹೆಚ್ಚಿಸದಿದ್ದರೆ ಆರ್ಥಿಕ ಪ್ರಗತಿ ಅಸಾಧ್ಯ.",
+      "transcript_ml": "സാമ്പത്തിക വിദഗ്ദ്ധൻ: തൊഴിലെടുക്കുന്നവരുടെ എണ്ണത്തിലുണ്ടാകുന്ന കുറവ് വലിയൊരു പ്രതിസന്ധിയാണ്. പരമ്പരാഗത തൊഴിൽ രീതികൾ മാറ്റിയെഴുതേണ്ടതുണ്ട്. സ്ത്രീകളുടെയും മുതിർന്നവരുടെയും പങ്കാളിത്തത്തോടൊപ്പം ഡിജിറ്റൽ ഉൽപ്പാദനക്ഷമത കൂട്ടിയാൽ മാത്രമേ സാമ്പത്തിക വളർച്ച സാധ്യമാകൂ.",
+      "questions": [
+        {
+          "q": "エコノミストが 提唱する、労働市場の 構造改革に 含まれるものは どれですか。",
+          "q_en": "Which of the following is included in the labor market structural reforms advocated by the economist?",
+          "q_te": "ఆర్థికవేత్త ప్రతిపాదించిన శ్రామిక సంస్కరణల్లో ఏది ఉంది?",
+          "q_hi": "अर्थशास्त्री द्वारा प्रस्तावित श्रम सुधारों में क्या शामिल है?",
+          "q_ta": "பொருளாதார நிபுணர் முன்மொழியும் சீர்திருத்தங்களில் அடங்குவது எது?",
+          "q_ko": "이코노미스트가 제안하는 노동시장 구조개혁에 포함되는 것은 무엇입니까?",
+          "q_es": "¿Qué medida forma parte de las reformas estructurales que defiende el economista?",
+          "q_kn": "ಅರ್ಥಶಾಸ್ತ್ರಜ್ಞರು ಸೂಚಿಸಿದ ಸುಧಾರಣೆಗಳಲ್ಲಿ ಯಾವುದು ಸೇರಿದೆ?",
+          "q_ml": "സാമ്പത്തിക വിദഗ്ദ്ധൻ നിർദ്ദേശിച്ച പരിഷ്കാരങ്ങളിൽ ഉൾപ്പെടുന്നത് ഏതാണ്?",
+          "options": [
+            "ジョブ型雇用の 導入や 副業解禁による 労働移動の 円滑化",
+            "終身雇用制度の 法的義務化",
+            "定年退職年齢の 引き下げ",
+            "海外からの 労働者の 完全受け入れ拒否"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "実質賃金と 経済成長の 好循環を 生むために 不可欠だと 述べられている 要素は 何ですか。",
+          "q_en": "What factor is stated as indispensable to generate a virtuous cycle of real wages and economic growth?",
+          "q_te": "వేతనాలు మరియు ఆర్థిక వృద్ధికి ఏది అత్యవసరమని చెప్పారు?",
+          "q_hi": "वेतन वृद्धि और विकास के चक्र के लिए क्या अनिवार्य बताया गया है?",
+          "q_ta": "ஊதிய உயர்வும் பொருளாதார வளர்ச்சியும் ஏற்பட எது இன்றியமையாதது?",
+          "q_ko": "실질임금 상승과 경제성장의 선순환을 위해 필수적인 요소는 무엇입니까?",
+          "q_es": "¿Qué elemento se califica de imprescindible para el ciclo virtuoso de salarios y crecimiento?",
+          "q_kn": "ವೇತನ ಏರಿಕೆ ಮತ್ತು ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆಗೆ ಯಾವುದು ಅತ್ಯಗತ್ಯ?",
+          "q_ml": "സാമ്പത്തിക വളർച്ചയ്ക്കും വേതന വർദ്ധനവിനും അത്യന്താപേക്ഷിതമായ ഘടകം ഏതാണ്?",
+          "options": [
+            "デジタル化による 労働生産性の 向上",
+            "消費税の 大幅な 増税",
+            "公務員の 人数削減",
+            "現金の 流通量増加"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n1-13",
+      "title": "地球観測衛星と生物多様性保全 (Satellite Observation & Ecology)",
+      "script": "科学解説者：現在、地球規模での生物多様性の喪失は、気候変動と並ぶ深刻な脅威となっています。こうした中、宇宙航空分野における地球観測衛星技術が、生態系保全に革新をもたらしています。高分解能光学センサーや合成開口レーダー（SAR）を搭載した衛星群は、熱帯雨林の違法伐採や沿岸湿地の減少、さらにはサンゴ礁の白化現象を広域かつリアルタイムで監視することを可能にしました。地上でのフィールドワークと衛星ビッグデータ、そして機械学習を融合させることで、絶滅危惧種の生息域の変動予測や、密猟防止パトロールの最適配置が実現しつつあります。宇宙技術は今や、地球の生命網を守る不可欠のインフラなのです。",
+      "transcript_en": "Science Commentator: Today, global biodiversity loss poses a crisis as grave as climate change. Amidst this, Earth observation satellite technology is revolutionizing ecological conservation. Constellations equipped with high-resolution optical sensors and Synthetic Aperture Radar (SAR) enable wide-area, real-time monitoring of tropical deforestation, coastal wetland shrinkage, and coral reef bleaching. Fusing ground fieldwork with satellite big data and machine learning facilitates habitat shift predictions for endangered species and optimizes anti-poaching patrols. Space technology has now become an indispensable infrastructure for safeguarding Earth's web of life.",
+      "transcript_te": "సైన్స్ నిపుణుడు: జీవవైవిధ్య క్షీణత నేడు పర్యావరణ మార్పులతో సమానమైన తీవ్ర సంక్షోభం. ఈ తరుణంలో భూ పరిశీలన ఉపగ్రహ సాంకేతికత పర్యావరణ పరిరక్షణలో విప్లవాన్ని తెచ్చింది. హై-రిజల్యూషన్ సెన్సార్లు, రాడార్లతో కూడిన ఉపగ్రహాలు అడవుల నరికివేత, చిత్తడి నేలల విధ్వంసం, పగడపు దిబ్బల క్షీణతను ఎప్పటికప్పుడు గమనిస్తున్నాయి. శాటిలైట్ డేటాను మెషిన్ లెర్నింగ్‌తో జోడించడం ద్వారా అంతరించిపోతున్న వన్యప్రాణుల రక్షణ సాధ్యమవుతోంది.",
+      "transcript_hi": "विज्ञान विशेषज्ञ: जैव विविधता का ह्रास जलवायु परिवर्तन जितना ही गंभीर संकट है। इस संदर्भ में पृथ्वी अवलोकन उपग्रह तकनीक संरक्षण में क्रांति ला रही है। उच्च-रिज़ॉल्यूशन सेंसर और सिंथेटिक एपर्चर रडार (SAR) से लैस उपग्रह वनों की कटाई और प्रवाल भित्तियों के क्षरण की वास्तविक समय में निगरानी कर रहे हैं। उपग्रह डेटा और एआई के मेल से लुप्तप्राय जीवों के आवास की रक्षा संभव हो रही है।",
+      "transcript_ta": "அறிவியல் ஆய்வாளர்: பல்லுயிர் இழப்பு பூமிக்கு பெரும் அச்சுறுத்தலாக உள்ளது. புவி கண்காணிப்பு செயற்கைக்கோள்கள் சுற்றுச்சூழல் பாதுகாப்பில் புரட்சியை ஏற்படுத்துகின்றன. காடழிப்பு, பவளப்பாறைகள் அழிவு போன்றவற்றை நிகழ்நேரத்தில் கண்காணிக்க முடிகிறது. செயற்கைக்கோள் தரவுகளும் ஏஐ தொழில்நுட்பமும் இணைந்து அழியும் விலங்கினங்களைப் பாதுகாக்க உதவுகின்றன.",
+      "transcript_ko": "과학해설가: 생물다양성 손실은 기후변화 못지않은 위기입니다. 인공위성을 통한 지구 관측 기술이 생태계 보전에 혁신을 일으키고 있습니다. 고해상도 센서와 합성개구레이더(SAR)를 통해 열대우림 벌채와 산호초 백화 현상을 실시간 감시하며, AI 예측을 통해 멸종위기종의 서식지를 지키는 핵심 인프라로 자리 잡았습니다.",
+      "transcript_es": "Comentarista científico: La pérdida de biodiversidad es una amenaza tan grave como el cambio climático. Los satélites de observación terrestre están revolucionando la conservación. Sensores de alta resolución y radar SAR vigilan en tiempo real la deforestación y el blanqueamiento coralino, optimizando la protección de especies amenazadas.",
+      "transcript_kn": "ವಿಜ್ಞಾನ ವಿಶ್ಲೇಷಕ: ಜೀವವೈವಿಧ್ಯದ ನಾಶವು ಹವಾಮಾನ ಬದಲಾವಣೆಯಷ್ಟೇ ಗಂಭೀರವಾಗಿದೆ. ಉಪಗ್ರಹ ತಂತ್ರಜ್ಞಾನವು ಪರಿಸರ ಸಂರಕ್ಷಣೆಯಲ್ಲಿ ಕ್ರಾಂತಿಯನ್ನು ತರುತ್ತಿದೆ. ಕಾಡುಗಳ ನಾಶ ಮತ್ತು ಹವಳದ ದಿಬ್ಬಗಳ ಕ್ಷೀಣತೆಯನ್ನು ನೈಜ ಸಮಯದಲ್ಲಿ ಪತ್ತೆಹಚ್ಚಲು ಮತ್ತು ವನ್ಯಜೀವಿಗಳನ್ನು ರಕ್ಷಿಸಲು ಉಪಗ್ರಹಗಳು ನೆರವಾಗುತ್ತಿವೆ.",
+      "transcript_ml": "ശാസ്ത്ര നിരീക്ഷകൻ: ജൈവവൈവിധ്യ നഷ്ടം പരിസ്ഥിതിക്ക് വലിയ ഭീഷണിയാണ്. ഉപഗ്രഹ സാങ്കേതികവിദ്യ പരിസ്ഥിതി സംരക്ഷണത്തിൽ വിപ്ലവം സൃഷ്ടിക്കുന്നു. കാടുവെളുപ്പിക്കലും പവിഴപ്പുറ്റുകളുടെ നാശവും നിരീക്ഷിക്കാനും വംശനാശഭീഷണി നേരിടുന്ന ജീവികളെ സംരക്ഷിക്കാനും ഉപഗ്രഹങ്ങൾ സഹായിക്കുന്നു.",
+      "questions": [
+        {
+          "q": "地球観測衛星が 生態系保全において 可能にしたことは 何ですか。",
+          "q_en": "What has Earth observation satellite technology made possible in ecosystem conservation?",
+          "q_te": "పర్యావరణ పరిరక్షణలో ఉపగ్రహ సాంకేతికత ఏమి సాధ్యం చేసింది?",
+          "q_hi": "उपग्रह तकनीक ने संरक्षण क्षेत्र में क्या संभव बनाया है?",
+          "q_ta": "செயற்கைக்கோள் தொழில்நுட்பம் எதை சாத்தியமாக்கியுள்ளது?",
+          "q_ko": "지구관측위성이 생태계 보전에서 가능하게 만든 것은 무엇입니까?",
+          "q_es": "¿Qué ha hecho posible la tecnología satelital en la conservación de ecosistemas?",
+          "q_kn": "ಉಪಗ್ರಹ ತಂತ್ರಜ್ಞಾನದಿಂದ ಪರಿಸರ ಸಂರಕ್ಷಣೆಯಲ್ಲಿ ಏನು ಸಾಧ್ಯವಾಗಿದೆ?",
+          "q_ml": "ഉപഗ്രഹ സാങ്കേതികവിദ്യ വഴി എന്ത് കാര്യമാണ് സാധ്യമായത്?",
+          "options": [
+            "森林伐採や サンゴ礁の白化などの 広域・リアルタイムな 監視",
+            "絶滅危惧種の クローン増殖",
+            "地球の 気温を 人工的に 下げること",
+            "宇宙空間への 動植物の 移住"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "衛星データと 機械学習を 組み合わせることで 実現しつつあることは 何ですか。",
+          "q_en": "What is being realized by combining satellite data with machine learning?",
+          "q_te": "శాటిలైట్ డేటా మరియు మెషిన్ లెర్నింగ్ కలయికతో ఏమి సాధించగలుగుతున్నారు?",
+          "q_hi": "उपग्रह डेटा और मशीन लर्निंग के संयोजन से क्या हासिल हो रहा है?",
+          "q_ta": "இயந்திர கற்றலும் செயற்கைக்கோள் தரவும் இணைந்து எதைச் சாதிக்கின்றன?",
+          "q_ko": "위성 빅데이터와 머신러닝을 결합하여 실현하고 있는 것은 무엇입니까?",
+          "q_es": "¿Qué se está logrando al combinar datos satelitales con aprendizaje automático?",
+          "q_kn": "ಉಪಗ್ರಹ ದತ್ತಾಂಶ ಮತ್ತು ಎಐ ಮೂಲಕ ಏನನ್ನು ಸಾಧಿಸಲಾಗುತ್ತಿದೆ?",
+          "q_ml": "ഉപഗ്രഹ വിവരങ്ങളും മെഷീൻ ലേണിംഗും സംയോജിപ്പിച്ച് എന്ത് നേട്ടമാണ് കൈവരിക്കുന്നത്?",
+          "options": [
+            "生息域の 変動予測や 密猟防止パトロールの 最適配置",
+            "すべての 密猟者の 即時逮捕",
+            "人工雨の 発生",
+            "森林火災の 完全な 根絶"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n1-14",
+      "title": "歴史的建造物の保存と集団的記憶 (Historical Architecture & Memory)",
+      "script": "建築史家：近代化に伴う都市再開発の中で、歴史的建造物をいかに保存するかという問題は、単なる美観や観光資源の維持にとどまらず、社会の『集団的記憶』をいかに継承するかという本質的な問いを孕んでいます。古い建物を解体し、外観のみを模倣した高層ビルへ建て替える手法が散見されますが、これは空間に染み付いた歴史の積層性や生活の痕跡を不可逆的に剥ぎ取ってしまう危険を伴います。真の保存とは、過去の遺構を静態的なモニュメントとして凍結することではなく、現代の都市機能と有機的に接続させ、新たな生を与える『動態的保存』でなければなりません。",
+      "transcript_en": "Architectural Historian: In urban redevelopment accompanying modernization, how to preserve historical architecture involves not merely aesthetics or tourism, but the fundamental question of how society inherits its 'collective memory'. Tearing down old structures to erect skyscrapers that merely mimic external facades risks irreversibly stripping away the layered history and footprints of lived life etched into that space. True preservation must not freeze ancient structures as static monuments; it must organically connect them to contemporary urban functions, breathing new life into them as 'dynamic preservation'.",
+      "transcript_te": "వాస్తు శిల్ప చరిత్రకారుడు: చారిత్రక భవనాల పరిరక్షణ కేవలం పర్యాటక ఆకర్షణ కోసమే కాదు, సమాజం తన 'సామూహిక జ్ఞాపకాలను' ఎలా కాపాడుకోవాలనే అత్యున్నత ప్రశ్న. పాత భవనాలను కూల్చేసి, పైపై మెరుగులతో ఆధునిక భవనాలు నిర్మించడం వల్ల ఆ ప్రదేశంలో తరతరాలుగా నిక్షిప్తమైన చరిత్రను కోల్పోతాము. నిజమైన పరిరక్షణ అంటే పాత భవనాలను స్తంభింపజేయడం కాదు, ఆధునిక నగర అవసరాలకు అనుగుణంగా వాటికి పునర్జీవనం అందించడమే.",
+      "transcript_hi": "वास्तु इतिहासकार: ऐतिहासिक इमारतों का संरक्षण केवल पर्यटन या सुंदरता का विषय नहीं है, बल्कि समाज की 'सामूहिक स्मृति' को सहेजने का प्रश्न है। पुरानी इमारतों को तोड़कर केवल बाहरी रूप की नकल करने वाले नए भवन बनाना उस स्थान के ऐतिहासिक जुड़ाव को नष्ट कर देता है। वास्तविक संरक्षण वह है जो पुरानी धरोहर को आधुनिक जीवन से जोड़कर उसे एक नया जीवन दे।",
+      "transcript_ta": "கட்டடக்கலை வரலாற்று ஆய்வாளர்: பழங்காலக் கட்டிடங்களைப் பாதுகாப்பது சுற்றுலாவிற்காக மட்டுமல்ல, சமூகத்தின் 'கூட்டு நினைவுகளைப்' பாதுகாப்பதற்கான அடிப்படை வினாவாகும். பழைய கட்டிடங்களை இடித்துவிட்டு முகப்பை மட்டும் போலியாக அமைப்பது வரலாற்றை அழிப்பதாகும். உண்மையான பாதுகாப்பு என்பது பழைய கட்டிடங்களை முடக்கி வைப்பதல்ல, நவீன நகர வாழ்வோடு இணைத்து புத்துயிர் அளிப்பதே ஆகும்.",
+      "transcript_ko": "건축역사학자: 역사적 건조물의 보존은 단순한 관광 자원 유지를 넘어 집단적 기억을 어떻게 계승할 것인가의 문제입니다. 건물을 철거하고 외관만 흉내 낸 고층빌딩을 짓는 것은 역사적 축적성을 파괴합니다. 진정한 보존이란 박제된 유물로 동결하는 것이 아니라 현대적 도시 기능과 유기적으로 연결하는 '동태적 보존'이어야 합니다.",
+      "transcript_es": "Historiador de la arquitectura: Conservar el patrimonio histórico trasciende el turismo: atañe a la 'memoria colectiva' social. Demoler edificios para levantar rascacielos que imitan fachadas arranca las capas vivas de la historia. La conservación genuina no fosiliza monumentos estáticos, sino que los imbrica dinámicamente en la vida urbana actual.",
+      "transcript_kn": "ವಾಸ್ತುಶಿಲ್ಪ ಇತಿಹಾಸಕಾರ: ಐತಿಹಾಸಿಕ ಕಟ್ಟಡಗಳ ರಕ್ಷಣೆ ಕೇವಲ ಪ್ರವಾಸೋದ್ಯಮವಲ್ಲ, ಸಮಾಜದ 'ಸಾಮೂಹಿಕ ನೆನಪುಗಳ' ಉಳಿವಿನ ಪ್ರಶ್ನೆ. ಹಳೆಯ ಕಟ್ಟಡಗಳನ್ನು ಕೆಡವಿ ಹೊರನೋಟವನ್ನು ಮಾತ್ರ ನಕಲು ಮಾಡುವುದು ಇತಿಹಾಸಕ್ಕೆ ಮಾಡುವ ದ್ರೋಹ. ಪ್ರಾಚೀನ ಕಟ್ಟಡಗಳಿಗೆ ಆಧುನಿಕ ನಗರ ಜೀವನದೊಂದಿಗೆ ಮರುಜೀವ ನೀಡುವುದೇ ನಿಜವಾದ ಸಂರಕ್ಷಣೆ.",
+      "transcript_ml": "വാസ്തുവിദ്യാ ചരിത്രകാരൻ: പുരാതന കെട്ടിടങ്ങൾ സംരക്ഷിക്കുന്നത് വിനോദസഞ്ചാരത്തിന് വേണ്ടി മാത്രമല്ല, ജനങ്ങളുടെ 'സാമൂഹിക ഓർമ്മകളെ' നിലനിർത്താനാണ്. പഴയ കെട്ടിടങ്ങൾ പൊളിച്ച് മുൻഭാഗം മാത്രം അതേപടി നിലനിർത്തി വലിയ കെട്ടിടങ്ങൾ ഉണ്ടാക്കുന്നത് ചരിത്രത്തെ നശിപ്പിക്കും. പൈതൃകത്തെ ആധുനിക നഗരജീവിതവുമായി ബന്ധിപ്പിച്ച് നിലനിർത്തുകയാണ് വേണ്ടത്.",
+      "questions": [
+        {
+          "q": "歴史的建造物の 保存が 孕んでいる 本質的な 問いとは 何ですか。",
+          "q_en": "What is the fundamental question inherent in the preservation of historical architecture?",
+          "q_te": "చారిత్రక భవనాల పరిరక్షణలోని అసలైన ప్రశ్న ఏమిటి?",
+          "q_hi": "ऐतिहासिक इमारतों के संरक्षण का मूल प्रश्न क्या है?",
+          "q_ta": "வரலாற்றுக் கட்டிடப் பாதுகாப்பின் அடிப்படை நோக்கம் என்ன?",
+          "q_ko": "역사적 건조물의 보존이 내포하고 있는 본질적인 물음은 무엇입니까?",
+          "q_es": "¿Cuál es la cuestión fundamental implícita en la conservación del patrimonio?",
+          "q_kn": "ಐತಿಹಾಸಿಕ ಕಟ್ಟಡಗಳ ಸಂರಕ್ಷಣೆಯಲ್ಲಿರುವ ಮೂಲ ಪ್ರಶ್ನೆ ಯಾವುದು?",
+          "q_ml": "ചരിത്രസ്മാരകങ്ങൾ സംരക്ഷിക്കുന്നതിലെ അടിസ്ഥാനപരമായ വിഷയം എന്താണ്?",
+          "options": [
+            "社会の「集団的記憶」を いかに 継承するか",
+            "観光収入を いかに 最大化するか",
+            "耐震基準を いかに 満たすか",
+            "最新の 技術を いかに 誇示するか"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "建築史家が 主張する「真の保存」の あり方とは どのようなものですか。",
+          "q_en": "What is the nature of 'true preservation' advocated by the architectural historian?",
+          "q_te": "వాస్తు చరిత్రకారుడు చెప్పిన 'నిజమైన పరిరక్షణ' విధానం ఎలాంటిది?",
+          "q_hi": "इतिहासकार के अनुसार 'वास्तविक संरक्षण' कैसा होना चाहिए?",
+          "q_ta": "வரலாற்றாசிரியர் கூறும் 'உண்மையான பாதுகாப்பு' எத்தகையது?",
+          "q_ko": "건축역사학자가 주장하는 '진정한 보존'의 모습은 어떠한 것입니까?",
+          "q_es": "¿En qué consiste la 'auténtica conservación' según el historiador?",
+          "q_kn": "ಇತಿಹಾಸಕಾರರ ಪ್ರಕಾರ 'ನಿಜವಾದ ಸಂರಕ್ಷಣೆ' ಹೇಗಿರಬೇಕು?",
+          "q_ml": "ചരിത്രകാരൻ പറയുന്ന 'യഥാർത്ഥ സംരക്ഷണം' എങ്ങനെയുള്ളതാണ്?",
+          "options": [
+            "現代の 都市機能と 有機的に 接続させ、新たな生を 与える 動態的保存",
+            "建物を 完全に 解体して 写真だけを 残すこと",
+            "一般人の 立ち入りを 一切 禁止して 厳重に 封鎖すること",
+            "外観の 模倣だけを 行うこと"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "l-n1-15",
+      "title": "デジタル空間における言論と匿名性 (Digital Discourse & Linguistic Ecology)",
+      "script": "社会学者：ソーシャルメディアの普及は、誰もが瞬時に意見を発信できる言論の民主化をもたらした一方で、言語生態系に深刻な変容をもたらしています。アルゴリズムが個人の嗜好に最適化された情報のみを提示する『フィルターバブル』や、同じ意見を持つ者同士が閉鎖空間で過激化していく『エコーチェンバー現象』によって、他者への共感や建設的な対話の余地が狭められています。短文投稿サイトにおける過度な単純化や煽情的な言説の氾濫は、物事の多面的な文脈を切り捨て、社会の分断を加速させています。今求められているのは、即時的な反応に抗い、異質な他者との間で『わかり合えなさ』を引き受けながら対話を続ける、知的な忍耐力なのです。",
+      "transcript_en": "Sociologist: While social media democratization has empowered anyone to voice opinions instantly, it has wreaked profound transformations upon our linguistic ecology. Through 'filter bubbles' where algorithms serve only content tailored to individual tastes, and 'echo chambers' where like-minded users radicalize in closed spaces, the capacity for empathy and constructive dialogue has severely shrunk. The flooding of oversimplified, sensational rhetoric on microblogging platforms shears away multifaceted contexts, accelerating societal polarization. What is imperative now is intellectual patience: resisting the impulse for instant reaction and sustaining dialogue across differences while accepting that we cannot always easily understand one another.",
+      "transcript_te": "సామాజికవేత్త: సోషల్ మీడియా ద్వారా ప్రతి ఒక్కరూ అభిప్రాయాలను వ్యక్తం చేయగల ప్రజాస్వామ్యీకరణ జరిగినప్పటికీ, మన సంభాషణల సంస్కృతిలో తీవ్ర మార్పులు వచ్చాయి. మనకు నచ్చిన సమాచారాన్ని మాత్రమే చూపే 'ఫిల్టర్ బబుల్', ఒకే రకమైన ఆలోచనలు గలవారు విద్వేషాలను పెంచుకునే 'ఎకో ఛాంబర్'ల వల్ల పరస్పర గౌరవం, ఆరోగ్యకరమైన చర్చలు తగ్గిపోతున్నాయి. సోషల్ మీడియాలోని రెచ్చగొట్టే పోస్టులు సమాజంలో విభజనలను పెంచుతున్నాయి. తక్షణ ప్రతిస్పందనలకు లోనుకాకుండా, విభేదాలను అంగీకరిస్తూనే ఓపికతో సంభాషణను కొనసాగించే మేధో సహనం నేడు అత్యవసరం.",
+      "transcript_hi": "समाजशास्त्री: सोशल मीडिया ने विचार अभिव्यक्ति का लोकतंत्रीकरण तो किया, परंतु संवाद की संस्कृति को गंभीर नुकसान पहुँचाया है। एल्गोरिदम द्वारा केवल मनपसंद सामग्री दिखाने वाले 'फ़िल्टर बबल' और समान विचारधारा वालों के 'इको चैंबर' के कारण रचनात्मक संवाद समाप्त हो रहा है। सोशल मीडिया पर अति-सरलीकृत और भड़काऊ बयानों से सामाजिक ध्रुवीकरण बढ़ रहा है। आज तुरंत प्रतिक्रिया देने के बजाय मतभेदों को स्वीकार करते हुए धैर्यपूर्वक संवाद जारी रखने की आवश्यकता है।",
+      "transcript_ta": "சமூகவியலாளர்: சமூக ஊடகங்கள் கருத்துச் சுதந்திரத்தை ஜனநாயகப்படுத்தினாலும், உரையாடல் பண்பாட்டைச் சீரழித்துள்ளன. நமக்கு விருப்பமானதை மட்டுமே காட்டும் 'வடிகட்டி குமிழ்கள்' மற்றும் ஒத்த கருத்துடையோரின் 'எதிரொலி அறைகள்' ஆரோக்கியமான விவாதங்களை அழிக்கின்றன. உடனடி எதிர்வினைகளைத் தவிர்த்து, மாற்றுக்கருத்துடையோருடன் பொறுமையுடன் உரையாடும் அறிவுசார் சகிப்புத்தன்மை இன்றியமையாதது.",
+      "transcript_ko": "사회학자: SNS는 언론의 민주화를 가져왔으나 언어 생태계에 심각한 변용을 낳았습니다. 알고리즘에 따른 '필터 버블'과 동질 집단의 '에코 체임버' 현상으로 건설적인 대화가 위축되었습니다. 자극적인 극단주의 언설이 사회적 분열을 가속하고 있습니다. 즉각적인 반응을 자제하고 다름을 수용하며 대화를 이어가는 지적 인내력이 절실합니다.",
+      "transcript_es": "Sociólogo: Las redes sociales democratizaron la expresión, pero distorsionaron gravemente la ecología del discurso. Las 'burbujas de filtrado' y las 'cámaras de eco' merman la empatía y el diálogo constructivo. La polarización se alimenta de consignas sensacionalistas. Se precisa paciencia intelectual: frenar la reacción visceral y dialogar aceptando las discrepancias.",
+      "transcript_kn": "ಸಮಾಜಶಾಸ್ತ್ರಜ್ಞ: ಸಾಮಾಜಿಕ ಜಾಲತಾಣಗಳು ಅಭಿವ್ಯಕ್ತಿ ಸ್ವಾತಂತ್ರ್ಯವನ್ನು ನೀಡಿದರೂ, ಸಂವಾದದ ಸಂಸ್ಕೃತಿಯನ್ನು ಹಾಳುಮಾಡಿವೆ. ಅಲ್ಗಾರಿದಮ್‌ಗಳ 'ಫಿಲ್ಟರ್ ಬಬಲ್' ಮತ್ತು 'ಎಕೋ ಚೇಂಬರ್'ಗಳಿಂದಾಗಿ ಪರಸ್ಪರ ಸಹನೆ ಕಡಿಮೆಯಾಗುತ್ತಿದೆ. ತಕ್ಷಣದ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಬದಿಗಿಟ್ಟು ತಾಳ್ಮೆಯಿಂದ ಸಂವಾದ ಮುಂದುವರಿಸುವ ಬುದ್ಧಿವಂತಿಕೆ ಅಗತ್ಯ.",
+      "transcript_ml": "സോഷ്യോളജിസ്റ്റ്: സോഷ്യൽ മീഡിയ അഭിപ്രായ സ്വാതന്ത്ര്യം നൽകിയെങ്കിലും സംവാദ സംസ്കാരത്തെ ദോഷകരമായി ബാധിച്ചു. ഇഷ്ടമുള്ളത് മാത്രം കാണിക്കുന്ന 'ഫിൽട്ടർ ബബിൾ', ഒരേ ചിന്താഗതിക്കാരുടെ 'എക്കോ ചേംബർ' എന്നിവ സൗഹൃദപരമായ ചർച്ചകളെ ഇല്ലാതാക്കുന്നു. തർക്കങ്ങൾക്കിടയിലും ക്ഷമയോടെ സംഭാഷണം തുടരാനുള്ള മാനസിക പക്വതയാണ് ആവശ്യം.",
+      "questions": [
+        {
+          "q": "ソーシャルメディアにおいて 他者への共感や 対話の余地を 狭めている 要因は 何ですか。",
+          "q_en": "What factor in social media is narrowing the capacity for empathy and dialogue with others?",
+          "q_te": "సోషల్ మీడియాలో పరస్పర గౌరవం, చర్చలు తగ్గడానికి కారణం ఏమిటి?",
+          "q_hi": "सोशल मीडिया पर संवाद और सहानुभूति कम होने का क्या कारण है?",
+          "q_ta": "சமூக ஊடகங்களில் ஆரோக்கியமான உரையாடல் குறையக் காரணம் என்ன?",
+          "q_ko": "SNS 상에서 타인에 대한 공감과 대화의 여지를 좁히는 요인은 무엇입니까?",
+          "q_es": "¿Qué factor reduce la empatía y el diálogo en las redes sociales?",
+          "q_kn": "ಸಾಮಾಜಿಕ ಜಾಲತಾಣಗಳಲ್ಲಿ ಸಂವಾದದ ಅವಕಾಶ ಕುಗ್ಗಲು ಕಾರಣವೇನು?",
+          "q_ml": "സോഷ്യൽ മീഡിയയിൽ ക്രിയാത്മകമായ ചർച്ചകൾ കുറയാൻ കാരണമെന്താണ്?",
+          "options": [
+            "フィルターバブルや エコーチェンバー現象",
+            "通信料金の 高騰",
+            "文字数の 制限が なくなったこと",
+            "利用者の 年齢制限"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "社会の分断を 防ぐために、社会学者が 現代人に 求めている 姿勢は 何ですか。",
+          "q_en": "What attitude does the sociologist call for from people today to prevent societal polarization?",
+          "q_te": "సమాజ విభజనను అడ్డుకోవడానికి సామాజికవేత్త ఎలాంటి వైఖరిని కోరుతున్నారు?",
+          "q_hi": "सामाजिक विभाजन रोकने के लिए समाजशास्त्री ने किस दृष्टिकोण की आवश्यकता बताई?",
+          "q_ta": "சமூகப் பிளவைத் தடுக்க சமூகவியலாளர் எதிர்பார்க்கும் அணுகுமுறை என்ன?",
+          "q_ko": "사회적 분열을 막기 위해 사회학자가 현대인에게 요구하는 태도는 무엇입니까?",
+          "q_es": "¿Qué actitud reclama el sociólogo para frenar la polarización social?",
+          "q_kn": "ಸಾಮಾಜಿಕ ಕಂದಕವನ್ನು ತಪ್ಪಿಸಲು ಸಮಾಜಶಾಸ್ತ್ರಜ್ಞರು ನಿರೀಕ್ಷಿಸುವ ಮನೋಭಾವ ಯಾವುದು?",
+          "q_ml": "സാമൂഹിക വിഭജനം തടയാൻ എങ്ങനെയുള്ള സമീപനമാണ് ഉണ്ടാവേണ്ടത്?",
+          "options": [
+            "即時的な反応を控え、異質な他者と対話を続ける 知的な忍耐力",
+            "ソーシャルメディアの 利用を 完全に やめること",
+            "自分と 同じ意見の 人だけと 交流すること",
+            "すべての 投稿に 反論を 書き込むこと"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+};

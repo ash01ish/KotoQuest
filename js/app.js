@@ -14,6 +14,13 @@ let player = {
     },
     streak: 0,
     lastActiveDate: '',
+    dailyMissions: {
+        date: '',
+        read: false,
+        practice: false,
+        knowledge: false,
+        claimed: false
+    },
     stats: {
         totalAnswered: 0,
         totalCorrect: 0,
@@ -3098,6 +3105,10 @@ function handleHashRouting() {
         if (typeof window.renderPracticeTab === 'function') {
             window.renderPracticeTab(tab, params.level);
         }
+    } else if (tab === 'knowledge') {
+        if (typeof window.renderKnowledgeHub === 'function') {
+            window.renderKnowledgeHub();
+        }
     }
     return true;
 }
@@ -3121,6 +3132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadGameData();
     captureLessonOriginals();
     setupTabs();
+    setupDailyTrainingWidget();
     setupTabLinks();
     setupCurriculum();
     setupKanaGrid();
@@ -3251,6 +3263,19 @@ function loadGameData() {
         player.nativeLanguage = typeof loaded.nativeLanguage === 'string' ? loaded.nativeLanguage : 'english';
         player.lastTab = typeof loaded.lastTab === 'string' ? loaded.lastTab : '';
         player.currentLesson = typeof loaded.currentLesson === 'string' ? loaded.currentLesson : '';
+
+        const todayStr = getLocalDateString();
+        if (loaded.dailyMissions && loaded.dailyMissions.date === todayStr) {
+            player.dailyMissions = { ...loaded.dailyMissions };
+        } else {
+            player.dailyMissions = {
+                date: todayStr,
+                read: false,
+                practice: false,
+                knowledge: false,
+                claimed: false
+            };
+        }
         
         // Verify streak isn't broken on load
         if (player.lastActiveDate) {
@@ -3342,6 +3367,145 @@ function getLocalDateString() {
     const month = String(d.getMonth() + 1).padStart(2, '0');
     const day = String(d.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
+}
+
+// --- SENSEI'S DAILY SAMURAI TRAINING WIDGET ---
+const SENSEI_DAILY_QUOTES = [
+    '"A journey of a thousand miles begins with a single step. Daily practice beats sporadic cramming!"',
+    '"To master Kanji, do not treat strokes as chores; treat them as ancient brush paintings."',
+    '"When ordering at an izakaya or konbini, a polite \'sumimasen\' opens every door with warmth."',
+    '"Hearing the pitch rise and fall is like singing a gentle song—listen closely, young samurai!"',
+    '"Do not fear mistakes in the Arena; every fallen HP point is a lesson deeply learned."'
+];
+
+function setupDailyTrainingWidget() {
+    const quoteEl = document.getElementById('sensei-quote');
+    if (quoteEl) {
+        const dayIdx = (new Date()).getDate() % SENSEI_DAILY_QUOTES.length;
+        quoteEl.textContent = SENSEI_DAILY_QUOTES[dayIdx];
+    }
+
+    const claimBtn = document.getElementById('btn-claim-daily');
+    if (claimBtn) {
+        claimBtn.addEventListener('click', claimDailyReward);
+    }
+
+    updateDailyTrainingUI();
+}
+
+function updateDailyTrainingUI() {
+    if (!player.dailyMissions) return;
+    const dm = player.dailyMissions;
+
+    const checkRead = document.getElementById('check-mission-read');
+    const cardRead = document.getElementById('mission-card-read');
+    if (cardRead && checkRead) {
+        cardRead.classList.toggle('completed', !!dm.read);
+    }
+
+    const checkPractice = document.getElementById('check-mission-practice');
+    const cardPractice = document.getElementById('mission-card-practice');
+    if (cardPractice && checkPractice) {
+        cardPractice.classList.toggle('completed', !!dm.practice);
+    }
+
+    const checkKnowledge = document.getElementById('check-mission-knowledge');
+    const cardKnowledge = document.getElementById('mission-card-knowledge');
+    if (cardKnowledge && checkKnowledge) {
+        cardKnowledge.classList.toggle('completed', !!dm.knowledge);
+    }
+
+    let completedCount = 0;
+    if (dm.read) completedCount++;
+    if (dm.practice) completedCount++;
+    if (dm.knowledge) completedCount++;
+
+    const countEl = document.getElementById('daily-completed-count');
+    if (countEl) countEl.textContent = completedCount;
+
+    const claimBtn = document.getElementById('btn-claim-daily');
+    if (claimBtn) {
+        if (dm.claimed) {
+            claimBtn.disabled = true;
+            claimBtn.innerHTML = '<i class="fa-solid fa-check-double"></i> Claimed!';
+            claimBtn.style.background = 'rgba(32,191,107,0.2)';
+            claimBtn.style.color = 'var(--accent-teal)';
+            claimBtn.style.borderColor = 'var(--accent-teal)';
+        } else if (completedCount === 3) {
+            claimBtn.disabled = false;
+            claimBtn.innerHTML = '<i class="fa-solid fa-gift"></i> Claim +50 XP & +20 Gold!';
+            claimBtn.style.background = 'linear-gradient(135deg, var(--accent-gold), #e67e22)';
+            claimBtn.style.color = '#fff';
+            claimBtn.style.borderColor = 'var(--accent-gold)';
+            claimBtn.classList.add('pulse');
+        } else {
+            claimBtn.disabled = true;
+            claimBtn.innerHTML = 'Claim Reward';
+            claimBtn.style.background = '';
+            claimBtn.style.color = '';
+            claimBtn.style.borderColor = '';
+            claimBtn.classList.remove('pulse');
+        }
+    }
+}
+
+function markDailyMission(type) {
+    if (!player.dailyMissions) {
+        player.dailyMissions = {
+            date: typeof getLocalDateString === 'function' ? getLocalDateString() : '',
+            read: false,
+            practice: false,
+            knowledge: false,
+            claimed: false
+        };
+    }
+    if (!player.dailyMissions[type]) {
+        player.dailyMissions[type] = true;
+        saveGameData();
+        updateDailyTrainingUI();
+        if (typeof showToast === 'function') {
+            const labels = {
+                read: '📖 Daily Mission: Passage Read complete!',
+                practice: '🎴 Daily Mission: Dojo Review complete!',
+                knowledge: '💡 Daily Mission: Knowledge Discovery complete!'
+            };
+            showToast(labels[type] || 'Daily Mission updated!');
+        }
+    }
+}
+window.markDailyMission = markDailyMission;
+
+function claimDailyReward() {
+    if (!player.dailyMissions || player.dailyMissions.claimed) return;
+    let completedCount = 0;
+    if (player.dailyMissions.read) completedCount++;
+    if (player.dailyMissions.practice) completedCount++;
+    if (player.dailyMissions.knowledge) completedCount++;
+    if (completedCount < 3) return;
+
+    player.dailyMissions.claimed = true;
+    player.gold = (player.gold || 0) + 20;
+    
+    // Add 50 XP
+    if (typeof gainXP === 'function') {
+        gainXP(50);
+    } else {
+        player.xp = (player.xp || 0) + 50;
+    }
+    
+    if (window.KotoAudio && window.KotoAudio.sfx && window.KotoAudio.sfx.levelUp) {
+        window.KotoAudio.sfx.levelUp();
+    } else if (window.KotoAudio && window.KotoAudio.sfx && window.KotoAudio.sfx.correct) {
+        window.KotoAudio.sfx.correct();
+    }
+
+    saveGameData();
+    updateUI();
+    updateDailyTrainingUI();
+
+    if (typeof showToast === 'function') {
+        showToast('🎉 Daily Samurai Training Completed! +50 XP and +20 Gold awarded!');
+    }
 }
 
 function updateStreak() {
@@ -3519,6 +3683,8 @@ function setupTabs() {
             renderKanjiGrid();
         } else if (targetTab === 'bridge') {
             renderGrammarHandbook();
+        } else if (targetTab === 'knowledge') {
+            if (typeof renderKnowledgeHub === 'function') renderKnowledgeHub();
         }
         if (!skipHash && typeof updateURLHash === 'function') {
             updateURLHash(targetTab);
@@ -3974,6 +4140,7 @@ function setupFlashcards() {
 }
 
 function rateCard(rating) {
+    if (typeof markDailyMission === 'function') markDailyMission('practice');
     const list = getActiveCardList();
     if (list.length === 0) return;
     const card = list[cardIdx];
@@ -4889,6 +5056,7 @@ function triggerEnemyCounterAttack() {
 
 function checkBattleResolution() {
     if (activeEnemy.hp <= 0) {
+        if (typeof markDailyMission === 'function') markDailyMission('practice');
         fxVictory();
         addLog(`VICTORY! You defeated ${activeEnemy.name}!`, 'heal');
         addLog(`Gained: +${activeEnemy.xpReward} XP, +${activeEnemy.goldReward} Gold!`, 'system');
@@ -5153,6 +5321,14 @@ function applyNativeLanguageNuances() {
     // 0d. Refresh practice modules (reading, listening, exam) in the new native language
     if (typeof window.refreshPracticeModules === 'function') {
         window.refreshPracticeModules();
+    }
+
+    // 0e. Refresh knowledge hub in the new native language if it's active
+    if (typeof window.renderKnowledgeHub === 'function') {
+        const knowledgeSection = document.getElementById('knowledge');
+        if (knowledgeSection && knowledgeSection.classList.contains('active')) {
+            window.renderKnowledgeHub();
+        }
     }
 
     // 1. Subtitle text
@@ -5524,6 +5700,127 @@ function renderKanjiGrid() {
     });
 }
 
+const KANJI_RADICALS_LOOKUP = {
+    '一': { name: 'Ichi', meaning: 'One / Horizontal line' },
+    '丨': { name: 'Bou', meaning: 'Stick / Vertical stroke' },
+    '丶': { name: 'Ten', meaning: 'Dot / Drop' },
+    '丿': { name: 'No', meaning: 'Slash / Curve' },
+    '乙': { name: 'Otsu', meaning: 'Second / Winding line' },
+    '亅': { name: 'Hanebou', meaning: 'Hook' },
+    '二': { name: 'Ni', meaning: 'Two' },
+    '亠': { name: 'Nabebuta', meaning: 'Lid / Top cover' },
+    '人': { name: 'Hito', meaning: 'Person / Human' },
+    '亻': { name: 'Ninben', meaning: 'Person (standing / side form)' },
+    '儿': { name: 'Hitoashi', meaning: 'Legs / Walking person' },
+    '入': { name: 'Iriguchi', meaning: 'Enter / Inward' },
+    '八': { name: 'Hachigashira', meaning: 'Eight / Dividing' },
+    '冂': { name: 'Makigamae', meaning: 'Open upside-down border' },
+    '冖': { name: 'Wakanmuri', meaning: 'Crown / Canopy' },
+    '冫': { name: 'Nisui', meaning: 'Ice / Coldness' },
+    '几': { name: 'Kinyou', meaning: 'Small table / Stool' },
+    '凵': { name: 'Kandukuri', meaning: 'Open container / Box' },
+    '刀': { name: 'Katana', meaning: 'Sword / Blade' },
+    '刂': { name: 'Rittou', meaning: 'Knife / Cut (side form)' },
+    '力': { name: 'Chikara', meaning: 'Power / Muscle strength' },
+    '勹': { name: 'Tsutsumigamae', meaning: 'Wrap / Embrace' },
+    '匕': { name: 'Saji', meaning: 'Spoon' },
+    '匚': { name: 'Hakogamae', meaning: 'Box / Chest' },
+    '十': { name: 'Juu', meaning: 'Ten / Cross' },
+    '卜': { name: 'Boku', meaning: 'Divination / Fortune' },
+    '卩': { name: 'Fushizukuri', meaning: 'Kneeling person / Seal' },
+    '厂': { name: 'Gandare', meaning: 'Cliff / Shelter' },
+    '厶': { name: 'Mu', meaning: 'Private / Secret' },
+    '又': { name: 'Mata', meaning: 'Again / Right hand' },
+    '口': { name: 'Kuchi', meaning: 'Mouth / Opening' },
+    '囗': { name: 'Kunigamae', meaning: 'Enclosure / Border' },
+    '土': { name: 'Tsuchi', meaning: 'Earth / Soil / Ground' },
+    '士': { name: 'Samurai', meaning: 'Scholar / Samurai / Gentleman' },
+    '夕': { name: 'Yuube', meaning: 'Evening / Sunset' },
+    '大': { name: 'Dai', meaning: 'Big / Large person spreading arms' },
+    '女': { name: 'Onna', meaning: 'Woman / Female' },
+    '子': { name: 'Ko', meaning: 'Child / Seed' },
+    '宀': { name: 'Ukanmuri', meaning: 'Roof / House shelter' },
+    '寸': { name: 'Sun', meaning: 'Inch / Measurement' },
+    '小': { name: 'Shou', meaning: 'Small / Little' },
+    '尸': { name: 'Shikabane', meaning: 'Reclining body / Flag' },
+    '山': { name: 'Yama', meaning: 'Mountain / Peaks' },
+    '川': { name: 'Kawa', meaning: 'River / Streams' },
+    '工': { name: 'Takumi', meaning: 'Craft / Construction tool' },
+    '弓': { name: 'Yumi', meaning: 'Bow' },
+    '心': { name: 'Kokoro', meaning: 'Heart / Mind / Emotions' },
+    '忄': { name: 'Risshinben', meaning: 'Heart / Emotions (side form)' },
+    '手': { name: 'Te', meaning: 'Hand' },
+    '扌': { name: 'Teben', meaning: 'Hand action / Grasping' },
+    '日': { name: 'Hi', meaning: 'Sun / Day' },
+    '月': { name: 'Tsuki', meaning: 'Moon / Month / Flesh' },
+    '木': { name: 'Ki', meaning: 'Tree / Wood' },
+    '水': { name: 'Mizu', meaning: 'Water' },
+    '氵': { name: 'Sanzui', meaning: 'Water drops / Liquid flow' },
+    '火': { name: 'Hi', meaning: 'Fire / Flame' },
+    '灬': { name: 'Renga', meaning: 'Boiling fire dots' },
+    '牛': { name: 'Ushi', meaning: 'Cow / Bull' },
+    '犬': { name: 'Inu', meaning: 'Dog / Beast' },
+    '犭': { name: 'Kemonohen', meaning: 'Animal / Beast' },
+    '王': { name: 'Ou', meaning: 'King / Jade jewel' },
+    '田': { name: 'Ta', meaning: 'Rice field / Paddy' },
+    '目': { name: 'Me', meaning: 'Eye / Sight' },
+    '石': { name: 'Ishi', meaning: 'Stone / Rock' },
+    '禾': { name: 'Nogihen', meaning: 'Grain / Rice plant' },
+    '糸': { name: 'Ito', meaning: 'Thread / Silk string' },
+    '耳': { name: 'Mimi', meaning: 'Ear / Listening' },
+    '言': { name: 'Kotoba', meaning: 'Words / Speech' },
+    '訁': { name: 'Gonben', meaning: 'Words / Speaking (side form)' },
+    '貝': { name: 'Kai', meaning: 'Shellfish / Ancient money / Wealth' },
+    '走': { name: 'Hashiru', meaning: 'Run' },
+    '足': { name: 'Ashi', meaning: 'Foot / Leg' },
+    '車': { name: 'Kuruma', meaning: 'Car / Vehicle / Wheel' },
+    '辶': { name: 'Shinnyou', meaning: 'Movement / Road / Walking path' },
+    '金': { name: 'Kane', meaning: 'Gold / Metal / Money' },
+    '釒': { name: 'Kanehen', meaning: 'Metal (side form)' },
+    '門': { name: 'Mon', meaning: 'Gate / Doors' },
+    '雨': { name: 'Ame', meaning: 'Rain / Sky weather' },
+    '食': { name: 'Taberu', meaning: 'Food / Eat' },
+    '飠': { name: 'Shokuhen', meaning: 'Food / Eating (side form)' },
+    '魚': { name: 'Sakana', meaning: 'Fish' },
+    '鳥': { name: 'Tori', meaning: 'Bird' }
+};
+
+const KANJI_MNEMONICS_DICTIONARY = {
+    '休': 'A person (亻) leaning against a tree (木) to take a peaceful rest.',
+    '明': 'The sun (日) and the moon (月)—the two brightest lights in the universe—combine to mean bright.',
+    '林': 'Two trees (木 + 木) standing side-by-side create a grove or woods.',
+    '森': 'Three trees (木 + 木 + 木) together form a deep, dense forest.',
+    '好': 'A mother (女) holding her beloved child (子) expresses love, fondness, and liking.',
+    '安': 'A woman (女) safely resting under a protective roof (宀) means cheap, peaceful, and safe.',
+    '聞': 'Putting your ear (耳) up to the wooden gate (門) to listen or hear news from outside.',
+    '間': 'Sunlight (日) streaming through the crack in a closed gate (門) reveals an interval of space or time.',
+    '男': 'Muscular power (力) exerted across the rice paddy field (田) represents a man.',
+    '見': 'An enormous observing eye (目) walking around on human legs (儿) to see.',
+    '本': 'A single horizontal cut (一) marked at the root of a tree (木) marks the origin or book.',
+    '語': 'Speaking words (言) with five (五) mouths (口) creates a rich language.',
+    '電': 'Rain (雨) falling during an intense storm accompanied by lightning bolts (田/申) represents electricity.',
+    '車': 'A bird\'s-eye view of an ancient carriage with two side wheels and an axle rod.',
+    '川': 'Three tranquil streams of water flowing parallel down a riverbed.',
+    '山': 'Three rugged peaks of a towering mountain standing side-by-side.',
+    '火': 'Dancing flames leaping and sparking from a warm campfire.',
+    '水': 'Clear water splashing outward from a central cascading stream.',
+    '木': 'A tree with branches reaching toward the sky and deep roots anchored in the soil.',
+    '日': 'The glowing disk of the sun with an atmospheric sunspot line through the center.',
+    '月': 'A glowing crescent moon framed against the quiet evening sky.',
+    '天': 'A great person (大) standing with the vast sky/heaven (一) spread above their head.',
+    '花': 'Plants (艹) that change (化) and transform into gorgeous blooming flowers.',
+    '学': 'A child (子) learning under a school roof (冖) crowned with knowledge sparks (爻).'
+};
+
+function getKanjiMnemonic(char, rad, meaning) {
+    if (KANJI_MNEMONICS_DICTIONARY[char]) return KANJI_MNEMONICS_DICTIONARY[char];
+    const radInfo = KANJI_RADICALS_LOOKUP[rad];
+    if (radInfo) {
+        return `Built with the <strong>${radInfo.name}</strong> radical (<em>${radInfo.meaning}</em>), symbolizing its core connection to "${meaning}". Visualize how ${radInfo.meaning.toLowerCase()} relates to ${meaning.toLowerCase()} to lock it into memory!`;
+    }
+    return `Rooted in the radical <strong>${rad}</strong>. Picture the strokes of ${char} as an illustration depicting "${meaning}".`;
+}
+
 function openKanjiModal(item) {
     const overlay = document.getElementById('kanji-detail-overlay');
     const body = document.getElementById('kanji-modal-body');
@@ -5531,6 +5828,9 @@ function openKanjiModal(item) {
     if (!overlay || !body) return;
 
     const char = item.k || item.kanji;
+    const rad = item.rad || item.radical;
+    const radInfo = KANJI_RADICALS_LOOKUP[rad];
+    const mnemonicText = getKanjiMnemonic(char, rad, item.en || item.meaning_en);
     const langCode = (typeof LANG_PACK_CODES !== 'undefined' && LANG_PACK_CODES[player.nativeLanguage]) ? LANG_PACK_CODES[player.nativeLanguage] : 'en';
 
     body.innerHTML = `
@@ -5542,12 +5842,26 @@ function openKanjiModal(item) {
                 <div class="kanji-detail-badges">
                     <span class="kanji-detail-badge"><i class="fa-solid fa-graduation-cap"></i> JLPT ${item.jlpt}</span>
                     <span class="kanji-detail-badge"><i class="fa-solid fa-pen"></i> ${item.strokes} Strokes</span>
-                    <span class="kanji-detail-badge"><i class="fa-solid fa-cubes-stacked"></i> Radical: ${item.rad || item.radical}</span>
+                    <span class="kanji-detail-badge"><i class="fa-solid fa-cubes-stacked"></i> Radical: ${rad} ${radInfo ? `(${radInfo.name})` : ''}</span>
                 </div>
             </div>
         </div>
 
-        <div class="kanji-readings-box">
+        <!-- Radical Breakdown & Mnemonic Story -->
+        <div class="kanji-mnemonic-box" style="margin-top: 14px; background: rgba(243,156,18,0.08); border: 1px solid rgba(243,156,18,0.25); border-radius: 10px; padding: 12px 14px;">
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent-gold); display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                <i class="fa-solid fa-lightbulb"></i> Radical & Memory Mnemonic (部首と記憶のヒント)
+            </div>
+            <div style="font-size: 0.82rem; color: #ddd; margin-bottom: 4px;">
+                <strong>Radical:</strong> <span style="font-size: 1.05rem; color: var(--accent-teal, #20bf6b); font-weight: 700;">${rad}</span> 
+                ${radInfo ? `— <em>${radInfo.name}</em> (${radInfo.meaning})` : ''}
+            </div>
+            <div style="font-size: 0.85rem; color: #ccc; line-height: 1.45;">
+                ${mnemonicText}
+            </div>
+        </div>
+
+        <div class="kanji-readings-box" style="margin-top: 14px;">
             <div class="reading-cell">
                 <div class="reading-cell-title">Onyomi (Chinese reading)</div>
                 <div class="reading-cell-val">${item.on || item.onyomi || '—'}</div>
@@ -5559,7 +5873,7 @@ function openKanjiModal(item) {
         </div>
 
         ${item.compounds && item.compounds.length ? `
-            <div>
+            <div style="margin-top: 14px;">
                 <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">Common Compounds (Jukugo)</div>
                 <div class="kanji-compounds-list">
                     ${item.compounds.map(c => `
