@@ -117,9 +117,20 @@ A central reference desk for everyday Japanese life, fluency, and travel:
 ---
 
 ### 📱 PWA & 100% Offline Support
-- Installable as a Progressive Web App (`manifest.json` + Service Worker `kotoquest-v8`).
+- Installable as a Progressive Web App (`manifest.json` + Service Worker `kotoquest-v9`).
 - All assets, dictionaries, audio synthesizers, and knowledge bases are precached for 100% offline functionality.
 - Preserves your study streak and progress safely in `localStorage` without accounts or tracking.
+
+---
+
+## Privacy, Data Sovereignty & Compliance
+
+KotoQuest is built with a strict **Privacy-First & Data-Sovereign** philosophy:
+- **Zero Tracking & Zero Cookies**: No analytics SDKs (no Google Analytics, no Facebook Pixel), no advertising beacons, and 0 HTTP cookies.
+- **100% Client-Side Storage**: All game data, streaks, and SRS flashcard progress reside solely inside your browser's `localStorage`. 0 bytes leave your machine.
+- **GDPR & CCPA Compliant**: Built-in **Data Portability (Export JSON)** and **Right to Erasure (One-Click Data Wipe)** tools in the in-app Legal Center.
+- **Child Safe (COPPA Compliant)**: Collects zero personally identifiable information (PII) from any user, safe for learners of all ages.
+- **Dedicated Legal Center**: Full in-app disclosures for Privacy Policy, Terms of Service (CC BY-NC-SA 4.0), Cookie & Storage Policy, Open-Source Licenses, and Maintainer Contact.
 
 ---
 
