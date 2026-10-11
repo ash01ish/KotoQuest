@@ -3013,6 +3013,7 @@ function setupViralGrowthEngine() {
             closeCertificateModal();
             closeDuelModal();
             closeCheatSheetModal();
+            closeLegalModal();
         }
     });
 }
@@ -3064,6 +3065,10 @@ function handleHashRouting() {
         return true;
     } else if (tab === 'cheatsheet') {
         openCheatSheetModal();
+        return true;
+    } else if (tab === 'legal' || tab.startsWith('legal-')) {
+        const subTab = tab.startsWith('legal-') ? tab.replace('legal-', '') : (params.tab || 'privacy');
+        openLegalModal(subTab);
         return true;
     }
 
@@ -3181,12 +3186,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSocialSharing();
     setupViralGrowthEngine();
 
-    // Academy Platform Expansions: Audio, Kanji, Global Search, Grammar Handbook, Profile
+    // Academy Platform Expansions: Audio, Kanji, Global Search, Grammar Handbook, Profile, Legal Center
     setupAudioControls();
     setupKanjiDojo();
     setupGlobalSearch();
     setupGrammarHandbook();
     setupSamuraiProfile();
+    setupLegalModal();
 
     // Deep Linking & Hash Routing
     setupHashRouting();
@@ -3199,7 +3205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupKeyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
         // Ignore game shortcuts while any modal overlay is open
-        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show, .daily-overlay.show, .cert-overlay.show, .duel-overlay.show, .cheat-sheet-overlay.show')) return;
+        if (document.querySelector('.onboarding-overlay.show, .help-overlay.show, .daily-overlay.show, .cert-overlay.show, .duel-overlay.show, .cheat-sheet-overlay.show, .legal-overlay.show')) return;
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
             return;
@@ -6219,3 +6225,175 @@ function renderSamuraiProfile() {
         `).join('');
     }
 }
+
+// --- ==================================================== ---
+// --- LEGAL, PRIVACY, ACCESSIBILITY & DATA RIGHTS ENGINE   ---
+// --- ==================================================== ---
+function openLegalModal(tabId = 'privacy') {
+    const overlay = document.getElementById('legal-modal-overlay');
+    if (!overlay) return;
+    overlay.classList.add('show');
+    switchLegalTab(tabId);
+}
+window.openLegalModal = openLegalModal;
+
+function closeLegalModal() {
+    const overlay = document.getElementById('legal-modal-overlay');
+    if (!overlay) return;
+    overlay.classList.remove('show');
+    if (window.location.hash.startsWith('#legal')) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+}
+window.closeLegalModal = closeLegalModal;
+
+function switchLegalTab(tabId) {
+    const validTabs = ['privacy', 'terms', 'cookies', 'datarights', 'licenses'];
+    const activeTab = validTabs.includes(tabId) ? tabId : 'privacy';
+    
+    const tabBtns = document.querySelectorAll('#legal-modal-overlay .legal-tab-btn');
+    const panes = document.querySelectorAll('#legal-modal-overlay .legal-pane');
+    
+    tabBtns.forEach(btn => {
+        const isCurrent = btn.getAttribute('data-legal-tab') === activeTab;
+        btn.classList.toggle('active', isCurrent);
+        btn.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+    });
+
+    panes.forEach(pane => {
+        const isCurrent = pane.id === `legal-pane-${activeTab}`;
+        pane.classList.toggle('active', isCurrent);
+    });
+}
+window.switchLegalTab = switchLegalTab;
+
+function setupLegalModal() {
+    const overlay = document.getElementById('legal-modal-overlay');
+    if (!overlay) return;
+
+    const closeBtn = document.getElementById('legal-modal-close-btn');
+
+    // Footer link clicks
+    document.querySelectorAll('[data-open-legal]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const tab = btn.getAttribute('data-open-legal') || 'privacy';
+            openLegalModal(tab);
+            updateURLHash(`legal-${tab}`);
+        });
+    });
+
+    // Close button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            closeLegalModal();
+        });
+    }
+
+    // Overlay backdrop click
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            closeLegalModal();
+        }
+    });
+
+    // Tab buttons
+    overlay.querySelectorAll('.legal-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-legal-tab') || 'privacy';
+            switchLegalTab(tabId);
+            updateURLHash(`legal-${tabId}`);
+        });
+    });
+
+    // Data Export Button (GDPR Article 20)
+    const exportBtn = document.getElementById('btn-export-data');
+    if (exportBtn) {
+        exportBtn.addEventListener('click', exportUserDataAsJson);
+    }
+
+    // Data Erasure Button (GDPR Article 17)
+    const eraseBtn = document.getElementById('btn-erase-all-data');
+    if (eraseBtn) {
+        eraseBtn.addEventListener('click', eraseAllUserData);
+    }
+}
+
+function exportUserDataAsJson() {
+    try {
+        const exportObj = {
+            app: "KotoQuest",
+            formatVersion: "1.0",
+            exportedAt: new Date().toISOString(),
+            compliance: "GDPR Article 20 - Right to Data Portability",
+            user: {
+                nickname: localStorage.getItem('koto_player_name') || 'Samurai Learner',
+                language: (typeof player !== 'undefined' && player.nativeLanguage) ? player.nativeLanguage : 'english',
+                settings: {
+                    muted: localStorage.getItem('kotoquest_muted') === 'true',
+                    threeD: localStorage.getItem('kotoquest_3d') === '1',
+                    lessonEnglish: localStorage.getItem('kotoquest_lesson_en') === '1',
+                    onboarded: localStorage.getItem('kotoquest_onboarded') === '1'
+                }
+            },
+            playerState: typeof player !== 'undefined' ? player : {},
+            dailyChallenges: null,
+            allStorageItems: {}
+        };
+
+        const dailyRaw = localStorage.getItem('koto_daily_state');
+        if (dailyRaw) {
+            try { exportObj.dailyChallenges = JSON.parse(dailyRaw); } catch (_) { exportObj.dailyChallenges = dailyRaw; }
+        }
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key) {
+                exportObj.allStorageItems[key] = localStorage.getItem(key);
+            }
+        }
+
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.setAttribute("href", dataStr);
+        downloadAnchor.setAttribute("download", `kotoquest-data-backup-${new Date().toISOString().slice(0, 10)}.json`);
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+
+        if (typeof window.showToast === 'function') {
+            window.showToast("Data exported successfully!");
+        }
+    } catch (err) {
+        console.error("Failed to export data:", err);
+        alert("Failed to export data. Please try again.");
+    }
+}
+window.exportUserDataAsJson = exportUserDataAsJson;
+
+function eraseAllUserData() {
+    const confirmStep1 = confirm(
+        "⚠️ GDPR Right to Erasure / Complete Data Deletion:\n\n" +
+        "Are you sure you want to permanently erase all your KotoQuest study progress, vocabulary mastery, flashcard SRS history, coins, trophies, and settings from this browser?\n\n" +
+        "This action cannot be undone."
+    );
+    if (!confirmStep1) return;
+
+    const confirmStep2 = confirm(
+        "FINAL CONFIRMATION:\n\n" +
+        "Click OK to permanently clear all local browser data and reload KotoQuest in its default fresh state."
+    );
+    if (!confirmStep2) return;
+
+    try {
+        localStorage.clear();
+        sessionStorage.clear();
+    } catch (e) {
+        console.error('Error during data erasure:', e);
+    }
+
+    alert("✅ All local study and account data has been permanently erased. The page will now reload.");
+    window.location.reload();
+}
+window.eraseAllUserData = eraseAllUserData;
+

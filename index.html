@@ -159,7 +159,7 @@
                                     <option value="malayalam" style="background: #14161f; color: #fff;">Malayalam (മലയാളം)</option>
                                 </select>
                             </div>
-                            <button id="btn-reset-game" class="btn" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset</span></button>
+                            <button id="btn-reset-game" class="btn" aria-label="Reset game progress" style="padding: 8px 14px; border-radius: 50px; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.3); color: #ff7675; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-trash-can"></i> <span data-i18n="btn.reset">Reset</span></button>
                         </div>
                     </div>
                 </div>
@@ -376,7 +376,7 @@
                         </div>
                         
                         <div style="display: flex; gap: 10px; margin-top: 15px;">
-                            <button class="btn btn-teal" id="btn-speak-question"><i class="fa-solid fa-volume-high"></i> <span data-i18n="arena.pronounce">Pronounce Question</span></button>
+                            <button class="btn btn-teal" id="btn-speak-question" aria-label="Pronounce battle question in Japanese"><i class="fa-solid fa-volume-high"></i> <span data-i18n="arena.pronounce">Pronounce Question</span></button>
                             <button class="btn" id="btn-escape-quest"><i class="fa-solid fa-person-running"></i> <span data-i18n="arena.runaway">Run Away</span></button>
                         </div>
                     </div>
@@ -493,7 +493,7 @@
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-bottom: 15px;">
                                 <div style="display: flex; align-items: center; gap: 8px;">
                                     <h3 id="calc-particle-title" style="color: #fff; font-size: 1.4rem; margin: 0;">は (wa)</h3>
-                                    <button class="btn speak-btn" id="btn-speak-calc-particle" style="padding: 4px 8px; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);"><i class="fa-solid fa-volume-high"></i></button>
+                                    <button class="btn speak-btn" id="btn-speak-calc-particle" style="padding: 4px 8px; font-size: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);" aria-label="Listen to pronunciation"><i class="fa-solid fa-volume-high"></i></button>
                                 </div>
                                 <span class="badge" id="calc-particle-role" style="font-size: 0.8rem;">Topic Marker</span>
                             </div>
@@ -662,11 +662,11 @@
                                     <div class="grammar-card-title">The Five Base Vowels (a, i, u, e, o)</div>
                                     <p>Almost every Japanese sound contains one of these vowels — the exceptions are ん (n) and the small っ pause. Pronounce them like this:</p>
                                     <ul class="bullet-list">
-                                        <li><strong>あ (a)</strong> - "ah" as in father <button class="speak-btn" data-speak="あ"><i class="fa-solid fa-volume-high"></i> Play</button></li>
-                                        <li><strong>い (i)</strong> - "ee" as in feet <button class="speak-btn" data-speak="い"><i class="fa-solid fa-volume-high"></i> Play</button></li>
-                                        <li><strong>う (u)</strong> - "oo" as in boot <button class="speak-btn" data-speak="う"><i class="fa-solid fa-volume-high"></i> Play</button></li>
-                                        <li><strong>え (e)</strong> - "eh" as in red <button class="speak-btn" data-speak="え"><i class="fa-solid fa-volume-high"></i> Play</button></li>
-                                        <li><strong>お (o)</strong> - "oh" as in boat <button class="speak-btn" data-speak="お"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>あ (a)</strong> - "ah" as in father <button class="speak-btn" data-speak="あ" aria-label="Listen to pronunciation of あ"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>い (i)</strong> - "ee" as in feet <button class="speak-btn" data-speak="い" aria-label="Listen to pronunciation of い"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>う (u)</strong> - "oo" as in boot <button class="speak-btn" data-speak="う" aria-label="Listen to pronunciation of う"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>え (e)</strong> - "eh" as in red <button class="speak-btn" data-speak="え" aria-label="Listen to pronunciation of え"><i class="fa-solid fa-volume-high"></i> Play</button></li>
+                                        <li><strong>お (o)</strong> - "oh" as in boat <button class="speak-btn" data-speak="お" aria-label="Listen to pronunciation of お"><i class="fa-solid fa-volume-high"></i> Play</button></li>
                                     </ul>
                                 </div>
 
@@ -741,16 +741,16 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr><td>1</td><td><span class="ja-word">いち</span></td><td>ichi</td><td>一</td><td><button class="speak-btn" data-speak="いち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>2</td><td><span class="ja-word">に</span></td><td>ni</td><td>二</td><td><button class="speak-btn" data-speak="に"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>3</td><td><span class="ja-word">さん</span></td><td>san</td><td>三</td><td><button class="speak-btn" data-speak="さん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>4</td><td><span class="ja-word">よん / し</span></td><td>yon / shi</td><td>四</td><td><button class="speak-btn" data-speak="よん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>5</td><td><span class="ja-word">ご</span></td><td>go</td><td>五</td><td><button class="speak-btn" data-speak="ご"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>6</td><td><span class="ja-word">ろく</span></td><td>roku</td><td>六</td><td><button class="speak-btn" data-speak="ろく"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>7</td><td><span class="ja-word">なな / しち</span></td><td>nana / shichi</td><td>七</td><td><button class="speak-btn" data-speak="なな"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>8</td><td><span class="ja-word">はち</span></td><td>hachi</td><td>八</td><td><button class="speak-btn" data-speak="はち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>9</td><td><span class="ja-word">きゅう / く</span></td><td>kyuu / ku</td><td>九</td><td><button class="speak-btn" data-speak="きゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>10</td><td><span class="ja-word">じゅう</span></td><td>juu</td><td>十</td><td><button class="speak-btn" data-speak="じゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>1</td><td><span class="ja-word">いち</span></td><td>ichi</td><td>一</td><td><button class="speak-btn" data-speak="いち" aria-label="Listen to pronunciation of いち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>2</td><td><span class="ja-word">に</span></td><td>ni</td><td>二</td><td><button class="speak-btn" data-speak="に" aria-label="Listen to pronunciation of に"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>3</td><td><span class="ja-word">さん</span></td><td>san</td><td>三</td><td><button class="speak-btn" data-speak="さん" aria-label="Listen to pronunciation of さん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>4</td><td><span class="ja-word">よん / し</span></td><td>yon / shi</td><td>四</td><td><button class="speak-btn" data-speak="よん" aria-label="Listen to pronunciation of よん"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>5</td><td><span class="ja-word">ご</span></td><td>go</td><td>五</td><td><button class="speak-btn" data-speak="ご" aria-label="Listen to pronunciation of ご"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>6</td><td><span class="ja-word">ろく</span></td><td>roku</td><td>六</td><td><button class="speak-btn" data-speak="ろく" aria-label="Listen to pronunciation of ろく"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>7</td><td><span class="ja-word">なな / しち</span></td><td>nana / shichi</td><td>七</td><td><button class="speak-btn" data-speak="なな" aria-label="Listen to pronunciation of なな"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>8</td><td><span class="ja-word">はち</span></td><td>hachi</td><td>八</td><td><button class="speak-btn" data-speak="はち" aria-label="Listen to pronunciation of はち"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>9</td><td><span class="ja-word">きゅう / く</span></td><td>kyuu / ku</td><td>九</td><td><button class="speak-btn" data-speak="きゅう" aria-label="Listen to pronunciation of きゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>10</td><td><span class="ja-word">じゅう</span></td><td>juu</td><td>十</td><td><button class="speak-btn" data-speak="じゅう" aria-label="Listen to pronunciation of じゅう"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                         </tbody>
                                     </table>
                                     <p style="margin-top: 10px;"><strong>Counting up to 99 is mathematical:</strong></p>
@@ -957,12 +957,12 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr><td>Hello / Good Afternoon</td><td><span class="ja-word">こんにちは</span></td><td>Konnichiwa</td><td><button class="speak-btn" data-speak="こんにちは"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Thank you (Polite)</td><td><span class="ja-word">ありがとうございます</span></td><td>Arigatou gozaimasu</td><td><button class="speak-btn" data-speak="ありがとうございます"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Excuse me / Sorry</td><td><span class="ja-word">すみません</span></td><td>Sumimasen</td><td><button class="speak-btn" data-speak="すみません"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Where is the bathroom?</td><td><span class="ja-word">トイレはどこですか。</span></td><td>Toire wa doko desu ka?</td><td><button class="speak-btn" data-speak="トイレはどこですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Please give me water.</td><td><span class="ja-word">お水をください。</span></td><td>Omizu o kudasai</td><td><button class="speak-btn" data-speak="お水をください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>How much is this?</td><td><span class="ja-word">これはいくらですか。</span></td><td>Kore wa ikura desu ka?</td><td><button class="speak-btn" data-speak="これはいくらですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Hello / Good Afternoon</td><td><span class="ja-word">こんにちは</span></td><td>Konnichiwa</td><td><button class="speak-btn" data-speak="こんにちは" aria-label="Listen to pronunciation of こんにちは"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Thank you (Polite)</td><td><span class="ja-word">ありがとうございます</span></td><td>Arigatou gozaimasu</td><td><button class="speak-btn" data-speak="ありがとうございます" aria-label="Listen to pronunciation of ありがとうございます"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Excuse me / Sorry</td><td><span class="ja-word">すみません</span></td><td>Sumimasen</td><td><button class="speak-btn" data-speak="すみません" aria-label="Listen to pronunciation of すみません"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Where is the bathroom?</td><td><span class="ja-word">トイレはどこですか。</span></td><td>Toire wa doko desu ka?</td><td><button class="speak-btn" data-speak="トイレはどこですか" aria-label="Listen to pronunciation of トイレはどこですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Please give me water.</td><td><span class="ja-word">お水をください。</span></td><td>Omizu o kudasai</td><td><button class="speak-btn" data-speak="お水をください" aria-label="Listen to pronunciation of お水をください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>How much is this?</td><td><span class="ja-word">これはいくらですか。</span></td><td>Kore wa ikura desu ka?</td><td><button class="speak-btn" data-speak="これはいくらですか" aria-label="Listen to pronunciation of これはいくらですか"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -991,31 +991,31 @@
                                     <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">すみません、メニューをください。</span><br>
                                     <em>Sumimasen, menyuu o kudasai.</em><br>
                                     (Excuse me, please give me a menu.) 
-                                    <button class="speak-btn" data-speak="すみません、メニューをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    <button class="speak-btn" data-speak="すみません、メニューをください。" aria-label="Listen to pronunciation of すみません、メニューをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
                                     
                                     <p style="margin-top: 15px;"><strong>Waiter:</strong></p>
                                     <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">はい、どうぞ。</span><br>
                                     <em>Hai, douzo.</em><br>
                                     (Yes, here you are.) 
-                                    <button class="speak-btn" data-speak="はい、どうぞ。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    <button class="speak-btn" data-speak="はい、どうぞ。" aria-label="Listen to pronunciation of はい、どうぞ。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
 
                                     <p style="margin-top: 15px;"><strong>Customer:</strong></p>
                                     <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">これはいくらですか。</span><br>
                                     <em>Kore wa ikura desu ka.</em><br>
                                     (How much is this?) 
-                                    <button class="speak-btn" data-speak="これはいくらですか。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    <button class="speak-btn" data-speak="これはいくらですか。" aria-label="Listen to pronunciation of これはいくらですか。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
 
                                     <p style="margin-top: 15px;"><strong>Waiter:</strong></p>
                                     <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">それは千円です。</span><br>
                                     <em>Sore wa sen en desu.</em><br>
                                     (That is 1000 yen.) 
-                                    <button class="speak-btn" data-speak="それはせんえんです。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    <button class="speak-btn" data-speak="それはせんえんです。" aria-label="Listen to pronunciation of それはせんえんです。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
 
                                     <p style="margin-top: 15px;"><strong>Customer:</strong></p>
                                     <p style="padding-left: 10px;"><span class="ja-word" style="color: #fff;">じゃあ、これをください。</span><br>
                                     <em>Jaa, kore o kudasai.</em><br>
                                     (Well then, please give me this.)
-                                    <button class="speak-btn" data-speak="じゃあ、これをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
+                                    <button class="speak-btn" data-speak="じゃあ、これをください。" aria-label="Listen to pronunciation of じゃあ、これをください。"><i class="fa-solid fa-volume-high"></i> Play</button></p>
                                 </div>
 
                                 <div class="grammar-card">
@@ -1053,9 +1053,9 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. What it does</div>
                                     <ul class="bullet-list">
-                                        <li><strong>Request:</strong> ～てください — <span class="ja-word">みてください</span> (mite kudasai — please look) <button class="speak-btn" data-speak="みてください"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li><strong>Permission:</strong> ～てもいいです — <span class="ja-word">たべてもいいです</span> (tabete mo ii desu — you may eat) <button class="speak-btn" data-speak="たべてもいいです"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li><strong>Progressive / state:</strong> ～ています — <span class="ja-word">よんでいます</span> (yonde imasu — am reading) <button class="speak-btn" data-speak="よんでいます"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>Request:</strong> ～てください — <span class="ja-word">みてください</span> (mite kudasai — please look) <button class="speak-btn" data-speak="みてください" aria-label="Listen to pronunciation of みてください"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>Permission:</strong> ～てもいいです — <span class="ja-word">たべてもいいです</span> (tabete mo ii desu — you may eat) <button class="speak-btn" data-speak="たべてもいいです" aria-label="Listen to pronunciation of たべてもいいです"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>Progressive / state:</strong> ～ています — <span class="ja-word">よんでいます</span> (yonde imasu — am reading) <button class="speak-btn" data-speak="よんでいます" aria-label="Listen to pronunciation of よんでいます"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li><strong>Prohibition:</strong> ～てはいけません — <span class="ja-word">はいってはいけません</span> (haitte wa ikemasen — you must not enter)</li>
                                         <li><strong>Linking actions:</strong> <span class="ja-word">おきて、たべて、いきます</span> (okite, tabete, ikimasu — I get up, eat, and go)</li>
                                     </ul>
@@ -1132,7 +1132,7 @@
                                     <div class="grammar-card-title">Past negative (～なかった)</div>
                                     <p>Take the plain negative ～ない and change い → <strong>かった</strong>:</p>
                                     <ul class="bullet-list">
-                                        <li>たべない (tabenai) → <span class="ja-word">たべなかった</span> (tabenakatta) (didn't eat) <button class="speak-btn" data-speak="たべなかった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>たべない (tabenai) → <span class="ja-word">たべなかった</span> (tabenakatta) (didn't eat) <button class="speak-btn" data-speak="たべなかった" aria-label="Listen to pronunciation of たべなかった"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>いかない (ikanai) → <span class="ja-word">いかなかった</span> (ikanakatta) (didn't go)</li>
                                         <li>い-adjectives too: たかい → <span class="ja-word">たかくなかった</span> (takai → takaku nakatta — expensive → wasn't expensive)</li>
                                     </ul>
@@ -1187,9 +1187,9 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">The three verbs</div>
                                     <ul class="bullet-list">
-                                        <li><strong class="ja-word">あげる</strong> — I/someone gives <em>outward</em>. わたしは ともだち<strong>に</strong> プレゼントを あげる. (Watashi wa tomodachi ni purezento o ageru. — I give my friend a present.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをあげる"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li><strong class="ja-word">くれる</strong> — someone gives <em>to me</em>. ともだちが わたしに プレゼントを <strong>くれる</strong>. (Tomodachi ga watashi ni purezento o kureru. — My friend gives me a present.) <button class="speak-btn" data-speak="ともだちがわたしにプレゼントをくれる"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li><strong class="ja-word">もらう</strong> — I <em>receive</em> (giver marked に／から). わたしは ともだち<strong>に</strong> プレゼントを <strong>もらう</strong>. (Watashi wa tomodachi ni purezento o morau. — I receive a present from my friend.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをもらう"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong class="ja-word">あげる</strong> — I/someone gives <em>outward</em>. わたしは ともだち<strong>に</strong> プレゼントを あげる. (Watashi wa tomodachi ni purezento o ageru. — I give my friend a present.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをあげる" aria-label="Listen to pronunciation of わたしはともだちにプレゼントをあげる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong class="ja-word">くれる</strong> — someone gives <em>to me</em>. ともだちが わたしに プレゼントを <strong>くれる</strong>. (Tomodachi ga watashi ni purezento o kureru. — My friend gives me a present.) <button class="speak-btn" data-speak="ともだちがわたしにプレゼントをくれる" aria-label="Listen to pronunciation of ともだちがわたしにプレゼントをくれる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong class="ja-word">もらう</strong> — I <em>receive</em> (giver marked に／から). わたしは ともだち<strong>に</strong> プレゼントを <strong>もらう</strong>. (Watashi wa tomodachi ni purezento o morau. — I receive a present from my friend.) <button class="speak-btn" data-speak="わたしはともだちにプレゼントをもらう" aria-label="Listen to pronunciation of わたしはともだちにプレゼントをもらう"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                     <p style="font-size:0.85rem;color:var(--text-muted);">Rule of thumb: if the gift comes <strong>to you</strong>, it is くれる or もらう — never あげる.</p>
                                 </div>
@@ -1223,7 +1223,7 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">The を → が shift</div>
                                     <ul class="bullet-list">
-                                        <li>にほんご<strong>を</strong>はなす (nihongo o hanasu — speak Japanese) → にほんご<strong>が</strong>はなせる (nihongo ga hanaseru — can speak Japanese) <button class="speak-btn" data-speak="にほんごがはなせる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>にほんご<strong>を</strong>はなす (nihongo o hanasu — speak Japanese) → にほんご<strong>が</strong>はなせる (nihongo ga hanaseru — can speak Japanese) <button class="speak-btn" data-speak="にほんごがはなせる" aria-label="Listen to pronunciation of にほんごがはなせる"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>かんじ<strong>が</strong>よめる (kanji ga yomeru — can read kanji)</li>
                                         <li>Casual speech often drops the ら: たべられる (taberareru) → <span class="ja-word">たべれる</span> (tabereru) ("ra-less" form). This ra-nuki is common in everyday speech, but it's still considered nonstandard in writing and on exams.</li>
                                     </ul>
@@ -1259,9 +1259,9 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. たら is flexible, と is not</div>
                                     <ul class="bullet-list">
-                                        <li>～たら allows any main clause — requests, invitations, commands: いえにかえったら、でんわしてください (ie ni kaettara, denwa shite kudasai — when you get home, please call) <button class="speak-btn" data-speak="いえにかえったら、でんわしてください"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>～と describes automatic or general results — the main clause can't be a request, command, or invitation: はるになると、さくらがさきます (haru ni naru to, sakura ga sakimasu — when spring comes, cherry blossoms bloom) <button class="speak-btn" data-speak="はるになると、さくらがさきます"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>Both can mean "when" for things certain to happen: みぎにまがると、ぎんこうがあります (migi ni magaru to, ginkou ga arimasu — if/when you turn right, there is a bank) <button class="speak-btn" data-speak="みぎにまがると、ぎんこうがあります"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～たら allows any main clause — requests, invitations, commands: いえにかえったら、でんわしてください (ie ni kaettara, denwa shite kudasai — when you get home, please call) <button class="speak-btn" data-speak="いえにかえったら、でんわしてください" aria-label="Listen to pronunciation of いえにかえったら、でんわしてください"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～と describes automatic or general results — the main clause can't be a request, command, or invitation: はるになると、さくらがさきます (haru ni naru to, sakura ga sakimasu — when spring comes, cherry blossoms bloom) <button class="speak-btn" data-speak="はるになると、さくらがさきます" aria-label="Listen to pronunciation of はるになると、さくらがさきます"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Both can mean "when" for things certain to happen: みぎにまがると、ぎんこうがあります (migi ni magaru to, ginkou ga arimasu — if/when you turn right, there is a bank) <button class="speak-btn" data-speak="みぎにまがると、ぎんこうがあります" aria-label="Listen to pronunciation of みぎにまがると、ぎんこうがあります"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1298,7 +1298,7 @@
                                     <div class="grammar-card-title">2. ～なら — reacting to a premise</div>
                                     <ul class="bullet-list">
                                         <li>Nouns and な-adjectives attach directly, no だ: <span class="ja-word">げんきなら</span> (genki nara — if [you're] energetic), never げんきだなら.</li>
-                                        <li>なら answers a topic the other person just raised: A: にほんへいきます。 B: にほんへいくなら、パスポートがひつようです。 (nihon e iku nara, pasupooto ga hitsuyou desu — if you're going to Japan, you'll need a passport) <button class="speak-btn" data-speak="にほんへいくなら、パスポートがひつようです。"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>なら answers a topic the other person just raised: A: にほんへいきます。 B: にほんへいくなら、パスポートがひつようです。 (nihon e iku nara, pasupooto ga hitsuyou desu — if you're going to Japan, you'll need a passport) <button class="speak-btn" data-speak="にほんへいくなら、パスポートがひつようです。" aria-label="Listen to pronunciation of にほんへいくなら、パスポートがひつようです。"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Unlike ～たら/～と/～ば, the outcome can logically come before the なら-clause in time — it's commenting on the premise, not describing a strict sequence.</li>
                                     </ul>
                                 </div>
@@ -1306,7 +1306,7 @@
                                     <div class="grammar-card-title">3. ～ば～ほど — "the more..., the more..."</div>
                                     <p>Repeat the verb: ～ば form + plain form + ほど.</p>
                                     <ul class="bullet-list">
-                                        <li>たべればたべるほど、ふとります (tabereba taberu hodo, futorimasu — the more you eat, the fatter you get) <button class="speak-btn" data-speak="たべればたべるほど、ふとります"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>たべればたべるほど、ふとります (tabereba taberu hodo, futorimasu — the more you eat, the fatter you get) <button class="speak-btn" data-speak="たべればたべるほど、ふとります" aria-label="Listen to pronunciation of たべればたべるほど、ふとります"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1342,15 +1342,15 @@
                                     <div class="grammar-card-title">2. Direct passive — marking the agent</div>
                                     <ul class="bullet-list">
                                         <li>The "by ~" agent is marked with に, or によって for creative/impersonal works.</li>
-                                        <li>わたしはせんせいにほめられた (watashi wa sensei ni homerareta — I was praised by the teacher) <button class="speak-btn" data-speak="わたしはせんせいにほめられた"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>このほんはなつめそうせきによってかかれた (kono hon wa Natsume Souseki ni yotte kakareta — this book was written by Natsume Souseki) <button class="speak-btn" data-speak="このほんはなつめそうせきによってかかれた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>わたしはせんせいにほめられた (watashi wa sensei ni homerareta — I was praised by the teacher) <button class="speak-btn" data-speak="わたしはせんせいにほめられた" aria-label="Listen to pronunciation of わたしはせんせいにほめられた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>このほんはなつめそうせきによってかかれた (kono hon wa Natsume Souseki ni yotte kakareta — this book was written by Natsume Souseki) <button class="speak-btn" data-speak="このほんはなつめそうせきによってかかれた" aria-label="Listen to pronunciation of このほんはなつめそうせきによってかかれた"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. The suffering passive (迷惑の受身)</div>
                                     <ul class="bullet-list">
                                         <li>Uniquely Japanese: even verbs with no direct object can take the passive to show the speaker was inconvenienced by someone else's action.</li>
-                                        <li>あめにふられた (ame ni furareta — I got rained on [and it was a bother]) <button class="speak-btn" data-speak="あめにふられた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>あめにふられた (ame ni furareta — I got rained on [and it was a bother]) <button class="speak-btn" data-speak="あめにふられた" aria-label="Listen to pronunciation of あめにふられた"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>ともだちにこられて、べんきょうできなかった (tomodachi ni korarete, benkyou dekinakatta — a friend came over [on me] and I couldn't study)</li>
                                         <li>The English translation rarely captures the nuance — think "I suffered from X happening," not a literal translation.</li>
                                     </ul>
@@ -1385,7 +1385,7 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. "Make" vs "let" — and who gets に or を</div>
                                     <ul class="bullet-list">
-                                        <li>はははこどもにやさいをたべさせた (haha wa kodomo ni yasai o tabesaseta — the mother made/had the child eat vegetables) <button class="speak-btn" data-speak="はははこどもにやさいをたべさせた"><i class="fa-solid fa-volume-high"></i></button> — transitive verb: the person forced takes に.</li>
+                                        <li>はははこどもにやさいをたべさせた (haha wa kodomo ni yasai o tabesaseta — the mother made/had the child eat vegetables) <button class="speak-btn" data-speak="はははこどもにやさいをたべさせた" aria-label="Listen to pronunciation of はははこどもにやさいをたべさせた"><i class="fa-solid fa-volume-high"></i></button> — transitive verb: the person forced takes に.</li>
                                         <li>せんせいはがくせいをはやくかえらせた (sensei wa gakusei o hayaku kaeraseta — the teacher made the students go home early) — intransitive verb かえる: the person forced takes を.</li>
                                         <li>Context and tone decide "make" (forceful) vs "let" (permissive): どうぞやすませてください (douzo yasumasete kudasai — please let me rest) is clearly permissive.</li>
                                     </ul>
@@ -1395,7 +1395,7 @@
                                     <ul class="bullet-list">
                                         <li>Build it from the causative stem + られる: たべさせる → <span class="ja-word">たべさせられる</span> (tabesaseru → tabesaserareru — was made to eat).</li>
                                         <li>う-verbs often contract ～せられる to ～される: のませられる → <span class="ja-word">のまされる</span> (nomaserareru → nomasareru) — both forms are correct; the contraction is more common in speech.</li>
-                                        <li>わたしはははにやさいをたべさせられた (watashi wa haha ni yasai o tabesaserareta — I was made to eat vegetables by my mother [and I didn't want to]) <button class="speak-btn" data-speak="わたしはははにやさいをたべさせられた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>わたしはははにやさいをたべさせられた (watashi wa haha ni yasai o tabesaserareta — I was made to eat vegetables by my mother [and I didn't want to]) <button class="speak-btn" data-speak="わたしはははにやさいをたべさせられた" aria-label="Listen to pronunciation of わたしはははにやさいをたべさせられた"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1418,7 +1418,7 @@
                                     <div class="grammar-card-title">1. ～ようになる — a change of state or ability</div>
                                     <ul class="bullet-list">
                                         <li>potential/dictionary form + ようになる — a gradual, natural change over time.</li>
-                                        <li>かんじがよめるようになった (kanji ga yomeru you ni natta — I've come to be able to read kanji [I couldn't before]) <button class="speak-btn" data-speak="かんじがよめるようになった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>かんじがよめるようになった (kanji ga yomeru you ni natta — I've come to be able to read kanji [I couldn't before]) <button class="speak-btn" data-speak="かんじがよめるようになった" aria-label="Listen to pronunciation of かんじがよめるようになった"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>まいにちにほんごをはなすようになりました (mainichi nihongo o hanasu you ni narimashita — I've come to speak Japanese every day)</li>
                                     </ul>
                                 </div>
@@ -1426,14 +1426,14 @@
                                     <div class="grammar-card-title">2. ～ことになる — decided by others, or an arrangement</div>
                                     <ul class="bullet-list">
                                         <li>dictionary/ない-form + ことになる — announces a decision made by circumstances, a group, or someone else — not the speaker personally.</li>
-                                        <li>らいげつ、とうきょうにてんきんすることになった (raigetsu, Tokyo ni tenkin suru koto ni natta — it's been decided that I'll transfer to Tokyo next month) <button class="speak-btn" data-speak="らいげつ、とうきょうにてんきんすることになった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>らいげつ、とうきょうにてんきんすることになった (raigetsu, Tokyo ni tenkin suru koto ni natta — it's been decided that I'll transfer to Tokyo next month) <button class="speak-btn" data-speak="らいげつ、とうきょうにてんきんすることになった" aria-label="Listen to pronunciation of らいげつ、とうきょうにてんきんすることになった"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. ～ようにする／～ことにする — the deliberate versions</div>
                                     <ul class="bullet-list">
                                         <li><strong>～ようにする:</strong> dictionary/ない-form + ようにする — an ongoing conscious effort or habit. まいにちうんどうするようにしています (mainichi undou suru you ni shiteimasu — I make it a point to exercise every day)</li>
-                                        <li><strong>～ことにする:</strong> dictionary/ない-form + ことにする — a one-time personal decision, made by the speaker's own will. かいしゃをやめることにした (kaisha o yameru koto ni shita — I've decided to quit the company) <button class="speak-btn" data-speak="かいしゃをやめることにした"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>～ことにする:</strong> dictionary/ない-form + ことにする — a one-time personal decision, made by the speaker's own will. かいしゃをやめることにした (kaisha o yameru koto ni shita — I've decided to quit the company) <button class="speak-btn" data-speak="かいしゃをやめることにした" aria-label="Listen to pronunciation of かいしゃをやめることにした"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1457,8 +1457,8 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Meaning</th><th>Attaches to</th><th>Example</th></tr></thead>
                                         <tbody>
-                                            <tr><td>Hearsay (伝聞) — "I heard that..."</td><td>plain form, any tense (noun/な-adj + だ)</td><td>あしたはあめだそうです (ashita wa ame da sou desu — I heard it will rain tomorrow) <button class="speak-btn" data-speak="あしたはあめだそうです"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Appearance (様態) — "looks/seems like..."</td><td>verb ます-stem / adjective stem (no い, no だ)</td><td>あめがふりそうです (ame ga furisou desu — it looks like it's going to rain) <button class="speak-btn" data-speak="あめがふりそうです"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Hearsay (伝聞) — "I heard that..."</td><td>plain form, any tense (noun/な-adj + だ)</td><td>あしたはあめだそうです (ashita wa ame da sou desu — I heard it will rain tomorrow) <button class="speak-btn" data-speak="あしたはあめだそうです" aria-label="Listen to pronunciation of あしたはあめだそうです"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Appearance (様態) — "looks/seems like..."</td><td>verb ます-stem / adjective stem (no い, no だ)</td><td>あめがふりそうです (ame ga furisou desu — it looks like it's going to rain) <button class="speak-btn" data-speak="あめがふりそうです" aria-label="Listen to pronunciation of あめがふりそうです"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                         </tbody>
                                     </table>
                                     <ul class="bullet-list">
@@ -1471,7 +1471,7 @@
                                     <div class="grammar-card-title">2. らしい — hearsay with distance, or "typical of"</div>
                                     <ul class="bullet-list">
                                         <li>plain form (noun without だ) + らしい — reports something heard, usually with more distance/uncertainty than そうだ, often from general rumor rather than a direct source.</li>
-                                        <li>たなかさんはらいげつけっこんするらしいです (Tanaka-san wa raigetsu kekkon suru rashii desu — I hear Tanaka is getting married next month) <button class="speak-btn" data-speak="たなかさんはらいげつけっこんするらしいです"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>たなかさんはらいげつけっこんするらしいです (Tanaka-san wa raigetsu kekkon suru rashii desu — I hear Tanaka is getting married next month) <button class="speak-btn" data-speak="たなかさんはらいげつけっこんするらしいです" aria-label="Listen to pronunciation of たなかさんはらいげつけっこんするらしいです"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Also means "typical of / just like": おとこらしい (otoko rashii — manly, like a "real man").</li>
                                     </ul>
                                 </div>
@@ -1504,7 +1504,7 @@
                                     <div class="grammar-card-title">1. ～ておく — do it in advance, or leave it as is</div>
                                     <ul class="bullet-list">
                                         <li>Prepares something ahead of time, or leaves something as-is for a future benefit.</li>
-                                        <li>ビールをかっておく (biiru o katte oku — buy beer in advance [for the party later]) <button class="speak-btn" data-speak="ビールをかっておく"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>ビールをかっておく (biiru o katte oku — buy beer in advance [for the party later]) <button class="speak-btn" data-speak="ビールをかっておく" aria-label="Listen to pronunciation of ビールをかっておく"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Casual speech contracts ～ておく to ～とく: かっておく → <span class="ja-word">かっとく</span> (katte oku → kattoku).</li>
                                     </ul>
                                 </div>
@@ -1512,14 +1512,14 @@
                                     <div class="grammar-card-title">2. ～てしまう — completion, or "oops"</div>
                                     <ul class="bullet-list">
                                         <li>Emphasizes something is finished completely, often with a nuance of regret or unintentional action.</li>
-                                        <li>しゅくだいをやってしまった (shukudai o yatte shimatta — I went and finished the homework) <button class="speak-btn" data-speak="しゅくだいをやってしまった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>しゅくだいをやってしまった (shukudai o yatte shimatta — I went and finished the homework) <button class="speak-btn" data-speak="しゅくだいをやってしまった" aria-label="Listen to pronunciation of しゅくだいをやってしまった"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Casual contraction: ～てしまう → ～ちゃう (or ～でしまう → ～じゃう): たべてしまう → <span class="ja-word">たべちゃう</span> (tabete shimau → tabechau).</li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. ～てある vs ～ている, and ～てみる — "try it"</div>
                                     <ul class="bullet-list">
-                                        <li><strong>～てある</strong> (transitive verb + ある): a state left behind on purpose by someone. まどがあけてある (mado ga akete aru — the window has [intentionally] been left open) <button class="speak-btn" data-speak="まどがあけてある"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>～てある</strong> (transitive verb + ある): a state left behind on purpose by someone. まどがあけてある (mado ga akete aru — the window has [intentionally] been left open) <button class="speak-btn" data-speak="まどがあけてある" aria-label="Listen to pronunciation of まどがあけてある"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Compare <strong>～ている</strong>: まどがあいている (mado ga aiteiru — the window is open) — a simple state, no emphasis on who left it that way or why.</li>
                                         <li><strong>～てみる:</strong> "try doing" something to see what happens. たべてみる (tabete miru — try eating [it])</li>
                                     </ul>
@@ -1558,14 +1558,14 @@
                                     <div class="grammar-card-title">2. Watch the ます-form — four irregulars</div>
                                     <ul class="bullet-list">
                                         <li>いらっしゃる, おっしゃる, なさる, and くださる all take ～います, not ～ります: いらっしゃる → <span class="ja-word">いらっしゃいます</span> (irassharu → irasshaimasu), おっしゃる → <span class="ja-word">おっしゃいます</span> (ossharu → osshaimasu).</li>
-                                        <li>せんせいはいついらっしゃいますか (sensei wa itsu irasshaimasu ka — when will the teacher arrive?) <button class="speak-btn" data-speak="せんせいはいついらっしゃいますか"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>しゃちょうはなんとおっしゃいましたか (shachou wa nan to osshaimashita ka — what did the president say?) <button class="speak-btn" data-speak="しゃちょうはなんとおっしゃいましたか"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>せんせいはいついらっしゃいますか (sensei wa itsu irasshaimasu ka — when will the teacher arrive?) <button class="speak-btn" data-speak="せんせいはいついらっしゃいますか" aria-label="Listen to pronunciation of せんせいはいついらっしゃいますか"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>しゃちょうはなんとおっしゃいましたか (shachou wa nan to osshaimashita ka — what did the president say?) <button class="speak-btn" data-speak="しゃちょうはなんとおっしゃいましたか" aria-label="Listen to pronunciation of しゃちょうはなんとおっしゃいましたか"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. Humble in action — lowering yourself</div>
                                     <ul class="bullet-list">
-                                        <li>たなかともうします (Tanaka to moushimasu — I am called Tanaka [humble self-introduction]) <button class="speak-btn" data-speak="たなかともうします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>たなかともうします (Tanaka to moushimasu — I am called Tanaka [humble self-introduction]) <button class="speak-btn" data-speak="たなかともうします" aria-label="Listen to pronunciation of たなかともうします"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>わたしはあしたまいります (watashi wa ashita mairimasu — I will go/come tomorrow [humble])</li>
                                         <li>どうぞめしあがってください (douzo meshiagatte kudasai — please go ahead and eat [honorific, said to a guest])</li>
                                     </ul>
@@ -1591,8 +1591,8 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Use</th><th>Rule</th><th>Example</th></tr></thead>
                                         <tbody>
-                                            <tr><td>General truth</td><td>plain form + ものだ</td><td>ひとはだれでもしっぱいするものだ (hito wa dare demo shippai suru mono da — everyone makes mistakes, that's just how it is) <button class="speak-btn" data-speak="ひとはだれでもしっぱいするものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>Nostalgia (past habit)</td><td>た-form + ものだ</td><td>こどものころ、よくこのかわでおよいだものだ (kodomo no koro, yoku kono kawa de oyoida mono da — when I was a kid, I used to swim in this river often) <button class="speak-btn" data-speak="こどものころ、よくこのかわでおよいだものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>General truth</td><td>plain form + ものだ</td><td>ひとはだれでもしっぱいするものだ (hito wa dare demo shippai suru mono da — everyone makes mistakes, that's just how it is) <button class="speak-btn" data-speak="ひとはだれでもしっぱいするものだ" aria-label="Listen to pronunciation of ひとはだれでもしっぱいするものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>Nostalgia (past habit)</td><td>た-form + ものだ</td><td>こどものころ、よくこのかわでおよいだものだ (kodomo no koro, yoku kono kawa de oyoida mono da — when I was a kid, I used to swim in this river often) <button class="speak-btn" data-speak="こどものころ、よくこのかわでおよいだものだ" aria-label="Listen to pronunciation of こどものころ、よくこのかわでおよいだものだ"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                             <tr><td>Mild command ("should")</td><td>plain form + ものだ</td><td>あいさつはきちんとするものだ (aisatsu wa kichinto suru mono da — you should greet people properly)</td></tr>
                                         </tbody>
                                     </table>
@@ -1601,7 +1601,7 @@
                                     <div class="grammar-card-title">2. ものの — although, but then...</div>
                                     <ul class="bullet-list">
                                         <li>Plain form (any tense) + ものの concedes a fact, then states an unexpected or disappointing result — more formal/written than けれども.</li>
-                                        <li>にほんごをさんねんべんきょうしたものの、まだうまくはなせない (nihongo o sannen benkyou shita mono no, mada umaku hanasenai — although I've studied Japanese for three years, I still can't speak it well) <button class="speak-btn" data-speak="にほんごをさんねんべんきょうしたものの、まだうまくはなせない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>にほんごをさんねんべんきょうしたものの、まだうまくはなせない (nihongo o sannen benkyou shita mono no, mada umaku hanasenai — although I've studied Japanese for three years, I still can't speak it well) <button class="speak-btn" data-speak="にほんごをさんねんべんきょうしたものの、まだうまくはなせない" aria-label="Listen to pronunciation of にほんごをさんねんべんきょうしたものの、まだうまくはなせない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>あたまではわかっているものの、なかなかじっこうできない (atama de wa wakatteiru mono no, nakanaka jikkou dekinai — although I understand it in my head, I can't easily put it into practice)</li>
                                     </ul>
                                 </div>
@@ -1609,7 +1609,7 @@
                                     <div class="grammar-card-title">3. ものだから — the excuse-reason</div>
                                     <ul class="bullet-list">
                                         <li>Plain form + ものだから gives a reason that doubles as an excuse, usually followed by an apology or explanation — common in spoken Japanese.</li>
-                                        <li>でんしゃがおくれたものだから、ちこくしてしまいました (densha ga okureta mono da kara, chikoku shite shimaimashita — the train was late, so [that's why] I ended up being late) <button class="speak-btn" data-speak="でんしゃがおくれたものだから、ちこくしてしまいました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>でんしゃがおくれたものだから、ちこくしてしまいました (densha ga okureta mono da kara, chikoku shite shimaimashita — the train was late, so [that's why] I ended up being late) <button class="speak-btn" data-speak="でんしゃがおくれたものだから、ちこくしてしまいました" aria-label="Listen to pronunciation of でんしゃがおくれたものだから、ちこくしてしまいました"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Casual speech contracts it: ものだから → もんだから (mono da kara → mon da kara).</li>
                                     </ul>
                                 </div>
@@ -1633,15 +1633,15 @@
                                     <div class="grammar-card-title">1. わけだ — no wonder / so that means</div>
                                     <ul class="bullet-list">
                                         <li>Plain form + わけだ states a conclusion that logically follows from what was just said or observed.</li>
-                                        <li>さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ (san-nen kan nihon ni sundeita. dakara, nihongo ga jouzu na wake da — they lived in Japan for three years. No wonder their Japanese is good) <button class="speak-btn" data-speak="さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>どうりでさむいわけだ、ゆきがふっている (douri de samui wake da, yuki ga futteiru — no wonder it's cold, it's snowing) <button class="speak-btn" data-speak="どうりでさむいわけだ、ゆきがふっている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ (san-nen kan nihon ni sundeita. dakara, nihongo ga jouzu na wake da — they lived in Japan for three years. No wonder their Japanese is good) <button class="speak-btn" data-speak="さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ" aria-label="Listen to pronunciation of さんねんかんにほんにすんでいた。だから、にほんごがじょうずなわけだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>どうりでさむいわけだ、ゆきがふっている (douri de samui wake da, yuki ga futteiru — no wonder it's cold, it's snowing) <button class="speak-btn" data-speak="どうりでさむいわけだ、ゆきがふっている" aria-label="Listen to pronunciation of どうりでさむいわけだ、ゆきがふっている"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. わけではない — it's not that... / not necessarily</div>
                                     <ul class="bullet-list">
                                         <li>Plain form + わけではない partially denies an assumption without rejecting it outright.</li>
-                                        <li>きらいなわけではないが、あまりたべたくない (kirai na wake de wa nai ga, amari tabetakunai — it's not that I dislike it, but I don't really want to eat it) <button class="speak-btn" data-speak="きらいなわけではないが、あまりたべたくない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>きらいなわけではないが、あまりたべたくない (kirai na wake de wa nai ga, amari tabetakunai — it's not that I dislike it, but I don't really want to eat it) <button class="speak-btn" data-speak="きらいなわけではないが、あまりたべたくない" aria-label="Listen to pronunciation of きらいなわけではないが、あまりたべたくない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>ぜんぶわかったわけではない (zenbu wakatta wake de wa nai — it's not that I understood everything)</li>
                                     </ul>
                                 </div>
@@ -1649,7 +1649,7 @@
                                     <div class="grammar-card-title">3. わけにはいかない — can't afford to / can't just</div>
                                     <ul class="bullet-list">
                                         <li>Dictionary form + わけにはいかない: a social, moral, or circumstantial obligation blocks an action, even if you'd like to do it.</li>
-                                        <li>あしたはしけんがあるから、きょうはあそぶわけにはいかない (ashita wa shiken ga aru kara, kyou wa asobu wake ni wa ikanai — I have an exam tomorrow, so I can't just go play today) <button class="speak-btn" data-speak="あしたはしけんがあるから、きょうはあそぶわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>あしたはしけんがあるから、きょうはあそぶわけにはいかない (ashita wa shiken ga aru kara, kyou wa asobu wake ni wa ikanai — I have an exam tomorrow, so I can't just go play today) <button class="speak-btn" data-speak="あしたはしけんがあるから、きょうはあそぶわけにはいかない" aria-label="Listen to pronunciation of あしたはしけんがあるから、きょうはあそぶわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>The negative twist, ないわけにはいかない ("can't afford not to"), gets its own spotlight next lesson.</li>
                                     </ul>
                                 </div>
@@ -1684,15 +1684,15 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. ～ざるを得ない in action — reluctant compulsion</div>
                                     <ul class="bullet-list">
-                                        <li>きゅうりょうがやすいので、やめざるをえない (kyuuryou ga yasui node, yamezaru o enai — the pay is low, so I have no choice but to quit) <button class="speak-btn" data-speak="きゅうりょうがやすいので、やめざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>じょうしにいわれたら、ざんぎょうせざるをえない (joushi ni iwaretara, zangyou sezaru o enai — if the boss tells you to, you have no choice but to work overtime) <button class="speak-btn" data-speak="じょうしにいわれたら、ざんぎょうせざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>きゅうりょうがやすいので、やめざるをえない (kyuuryou ga yasui node, yamezaru o enai — the pay is low, so I have no choice but to quit) <button class="speak-btn" data-speak="きゅうりょうがやすいので、やめざるをえない" aria-label="Listen to pronunciation of きゅうりょうがやすいので、やめざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>じょうしにいわれたら、ざんぎょうせざるをえない (joushi ni iwaretara, zangyou sezaru o enai — if the boss tells you to, you have no choice but to work overtime) <button class="speak-btn" data-speak="じょうしにいわれたら、ざんぎょうせざるをえない" aria-label="Listen to pronunciation of じょうしにいわれたら、ざんぎょうせざるをえない"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. ～ずにはいられない vs ～ないわけにはいかない</div>
                                     <ul class="bullet-list">
-                                        <li>～ずにはいられない is an emotional impulse too strong to resist: あのえいがをみると、なかずにはいられない (ano eiga o miru to, nakazu ni wa irarenai — when I watch that movie, I can't help but cry) <button class="speak-btn" data-speak="あのえいがをみると、なかずにはいられない"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>～ないわけにはいかない (ない-form + わけにはいかない) is a social or moral duty you can't skip: せんせいによばれたら、いかないわけにはいかない (sensei ni yobaretara, ikanai wake ni wa ikanai — if the teacher calls you, you can't not go) <button class="speak-btn" data-speak="せんせいによばれたら、いかないわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～ずにはいられない is an emotional impulse too strong to resist: あのえいがをみると、なかずにはいられない (ano eiga o miru to, nakazu ni wa irarenai — when I watch that movie, I can't help but cry) <button class="speak-btn" data-speak="あのえいがをみると、なかずにはいられない" aria-label="Listen to pronunciation of あのえいがをみると、なかずにはいられない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～ないわけにはいかない (ない-form + わけにはいかない) is a social or moral duty you can't skip: せんせいによばれたら、いかないわけにはいかない (sensei ni yobaretara, ikanai wake ni wa ikanai — if the teacher calls you, you can't not go) <button class="speak-btn" data-speak="せんせいによばれたら、いかないわけにはいかない" aria-label="Listen to pronunciation of せんせいによばれたら、いかないわけにはいかない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>The difference: ざるを得ない points at "no realistic alternative"; ないわけにはいかない points at "duty says I must."</li>
                                     </ul>
                                 </div>
@@ -1716,15 +1716,15 @@
                                     <div class="grammar-card-title">1. にもかかわらず — despite / in spite of</div>
                                     <ul class="bullet-list">
                                         <li>Plain form / noun + にもかかわらず states a fact, then a surprising or contrary result — formal, common in writing.</li>
-                                        <li>あめにもかかわらず、おおぜいのひとがきた (ame ni mo kakawarazu, oozei no hito ga kita — despite the rain, a lot of people came) <button class="speak-btn" data-speak="あめにもかかわらず、おおぜいのひとがきた"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった (isshoukenmei benkyou shita ni mo kakawarazu, shiken ni ochite shimatta — despite studying hard, I failed the exam) <button class="speak-btn" data-speak="いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>あめにもかかわらず、おおぜいのひとがきた (ame ni mo kakawarazu, oozei no hito ga kita — despite the rain, a lot of people came) <button class="speak-btn" data-speak="あめにもかかわらず、おおぜいのひとがきた" aria-label="Listen to pronunciation of あめにもかかわらず、おおぜいのひとがきた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった (isshoukenmei benkyou shita ni mo kakawarazu, shiken ni ochite shimatta — despite studying hard, I failed the exam) <button class="speak-btn" data-speak="いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった" aria-label="Listen to pronunciation of いっしょうけんめいべんきょうしたにもかかわらず、しけんにおちてしまった"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. にしては — for a... / considering (surprised tone)</div>
                                     <ul class="bullet-list">
                                         <li>Noun / plain form + にしては judges someone or something against the standard implied by a category: "for a ~, this is surprising."</li>
-                                        <li>こどもにしては、よくかんじをしっている (kodomo ni shite wa, yoku kanji o shitteiru — for a kid, they know a lot of kanji) <button class="speak-btn" data-speak="こどもにしては、よくかんじをしっている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>こどもにしては、よくかんじをしっている (kodomo ni shite wa, yoku kanji o shitteiru — for a kid, they know a lot of kanji) <button class="speak-btn" data-speak="こどもにしては、よくかんじをしっている" aria-label="Listen to pronunciation of こどもにしては、よくかんじをしっている"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>はじめてにしては、じょうずにできた (hajimete ni shite wa, jouzu ni dekita — for a first try, it went well)</li>
                                     </ul>
                                 </div>
@@ -1733,7 +1733,7 @@
                                     <ul class="bullet-list">
                                         <li>Noun (+の) / な-adjective (+な) / plain form + わりに(は): the result doesn't match what the condition would normally predict — unlike にしては, no built-in "standard" is required.</li>
                                         <li>このみせはねだんがたかいわりには、あまりおいしくない (kono mise wa nedan ga takai wari ni wa, amari oishikunai — considering how expensive this restaurant is, it's not very tasty)</li>
-                                        <li>ねんれいのわりに、わかくみえる (nenrei no wari ni, wakaku mieru — they look young for their age) <button class="speak-btn" data-speak="ねんれいのわりに、わかくみえる"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>ねんれいのわりに、わかくみえる (nenrei no wari ni, wakaku mieru — they look young for their age) <button class="speak-btn" data-speak="ねんれいのわりに、わかくみえる" aria-label="Listen to pronunciation of ねんれいのわりに、わかくみえる"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1756,7 +1756,7 @@
                                     <div class="grammar-card-title">1. ～がち — prone to / tends to</div>
                                     <ul class="bullet-list">
                                         <li>ます-stem or noun + がち marks a recurring tendency, usually toward something undesirable.</li>
-                                        <li>かれはやくそくをわすれがちだ (kare wa yakusoku o wasuregachi da — he tends to forget his promises) <button class="speak-btn" data-speak="かれはやくそくをわすれがちだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>かれはやくそくをわすれがちだ (kare wa yakusoku o wasuregachi da — he tends to forget his promises) <button class="speak-btn" data-speak="かれはやくそくをわすれがちだ" aria-label="Listen to pronunciation of かれはやくそくをわすれがちだ"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>このごろ、くもりがちのてんきがつづいている (kono goro, kumorigachi no tenki ga tsuzuiteiru — lately, the weather has tended to be cloudy)</li>
                                         <li>Common set phrase: びょうきがち (byoukigachi — sickly, prone to getting ill).</li>
                                     </ul>
@@ -1765,7 +1765,7 @@
                                     <div class="grammar-card-title">2. ～気味 (ぎみ) — a slight sense of / a bit</div>
                                     <ul class="bullet-list">
                                         <li>ます-stem or noun + 気味: a slight current tendency or feeling, milder and more physical/mental than がち.</li>
-                                        <li>さいきん、つかれぎみだ (saikin, tsukaregimi da — I've been feeling a bit tired lately) <button class="speak-btn" data-speak="さいきん、つかれぎみだ"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>さいきん、つかれぎみだ (saikin, tsukaregimi da — I've been feeling a bit tired lately) <button class="speak-btn" data-speak="さいきん、つかれぎみだ" aria-label="Listen to pronunciation of さいきん、つかれぎみだ"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>かぜぎみなので、きょうははやくねます (kazegimi na node, kyou wa hayaku nemasu — I'm feeling a bit like I have a cold, so I'll go to bed early today)</li>
                                     </ul>
                                 </div>
@@ -1773,7 +1773,7 @@
                                     <div class="grammar-card-title">3. ～っぽい — -ish / looks or acts like</div>
                                     <ul class="bullet-list">
                                         <li>い-adjective stem / noun / ます-stem + っぽい gives an impression of a quality, often slightly negative or casual.</li>
-                                        <li>わすれっぽいひとですね (wasureppoi hito desu ne — you're a forgetful person, aren't you) <button class="speak-btn" data-speak="わすれっぽいひとですね"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>わすれっぽいひとですね (wasureppoi hito desu ne — you're a forgetful person, aren't you) <button class="speak-btn" data-speak="わすれっぽいひとですね" aria-label="Listen to pronunciation of わすれっぽいひとですね"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>かのじょはこどもっぽい (kanojo wa kodomoppoi — she's childish)</li>
                                         <li>みずっぽいスープ (mizuppoi suupu — watery soup)</li>
                                     </ul>
@@ -1799,9 +1799,9 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Pattern</th><th>Nuance</th><th>Example</th></tr></thead>
                                         <tbody>
-                                            <tr><td>～につれて</td><td>gradual, parallel natural change</td><td>としをとるにつれて、からだがよわくなる (toshi o toru ni tsurete, karada ga yowaku naru — as one ages, the body grows weaker) <button class="speak-btn" data-speak="としをとるにつれて、からだがよわくなる"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>～に伴って</td><td>one change brings/accompanies another, often larger-scale</td><td>じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている (jinkou no zouka ni tomonatte, juutaku busoku ga shinkokuka shiteiru — along with population growth, the housing shortage is worsening) <button class="speak-btn" data-speak="じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている"><i class="fa-solid fa-volume-high"></i></button></td></tr>
-                                            <tr><td>～に従って</td><td>following a rule/instruction, or gradual progression</td><td>きそくにしたがってこうどうしてください (kisoku ni shitagatte koudou shite kudasai — please act in accordance with the rules) <button class="speak-btn" data-speak="きそくにしたがってこうどうしてください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>～につれて</td><td>gradual, parallel natural change</td><td>としをとるにつれて、からだがよわくなる (toshi o toru ni tsurete, karada ga yowaku naru — as one ages, the body grows weaker) <button class="speak-btn" data-speak="としをとるにつれて、からだがよわくなる" aria-label="Listen to pronunciation of としをとるにつれて、からだがよわくなる"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>～に伴って</td><td>one change brings/accompanies another, often larger-scale</td><td>じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている (jinkou no zouka ni tomonatte, juutaku busoku ga shinkokuka shiteiru — along with population growth, the housing shortage is worsening) <button class="speak-btn" data-speak="じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている" aria-label="Listen to pronunciation of じんこうのぞうかにともなって、じゅうたくぶそくがしんこくかしている"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>～に従って</td><td>following a rule/instruction, or gradual progression</td><td>きそくにしたがってこうどうしてください (kisoku ni shitagatte koudou shite kudasai — please act in accordance with the rules) <button class="speak-btn" data-speak="きそくにしたがってこうどうしてください" aria-label="Listen to pronunciation of きそくにしたがってこうどうしてください"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -1809,7 +1809,7 @@
                                     <div class="grammar-card-title">2. Where they split</div>
                                     <ul class="bullet-list">
                                         <li>For a purely gradual, parallel change, all three can often substitute for one another: ぶっかがあがるにつれて、せいかつがくるしくなる (bukka ga agaru ni tsurete, seikatsu ga kurushiku naru — as prices rise, life gets harder) — に伴って or に従って would work here too with little change in meaning.</li>
-                                        <li>Only に伴って naturally attaches to event nouns describing an accompanying consequence: たいふうのせっきんにともなって、でんしゃがとまった (taifuu no sekkin ni tomonatte, densha ga tomatta — with the typhoon's approach, trains stopped) <button class="speak-btn" data-speak="たいふうのせっきんにともなって、でんしゃがとまった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Only に伴って naturally attaches to event nouns describing an accompanying consequence: たいふうのせっきんにともなって、でんしゃがとまった (taifuu no sekkin ni tomonatte, densha ga tomatta — with the typhoon's approach, trains stopped) <button class="speak-btn" data-speak="たいふうのせっきんにともなって、でんしゃがとまった" aria-label="Listen to pronunciation of たいふうのせっきんにともなって、でんしゃがとまった"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Only に従って extends naturally to "in accordance with" a rule, order, or instruction — not just gradual change.</li>
                                     </ul>
                                 </div>
@@ -1834,7 +1834,7 @@
                                     <table class="grammar-table">
                                         <thead><tr><th>Casual/polite ending</th><th>Written (である) equivalent</th></tr></thead>
                                         <tbody>
-                                            <tr><td>だ／です</td><td>である — これはもんだいである (kore wa mondai de aru — this is a problem) <button class="speak-btn" data-speak="これはもんだいである"><i class="fa-solid fa-volume-high"></i></button></td></tr>
+                                            <tr><td>だ／です</td><td>である — これはもんだいである (kore wa mondai de aru — this is a problem) <button class="speak-btn" data-speak="これはもんだいである" aria-label="Listen to pronunciation of これはもんだいである"><i class="fa-solid fa-volume-high"></i></button></td></tr>
                                             <tr><td>だった</td><td>であった</td></tr>
                                             <tr><td>ではない／じゃない</td><td>ではない (unchanged — only the affirmative copula shifts)</td></tr>
                                         </tbody>
@@ -1844,7 +1844,7 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. により and における — cause and context, formally</div>
                                     <ul class="bullet-list">
-                                        <li>～により (formal for によって／で) marks a cause, means, or method: たいふうにより、おおくのいえがこわれた (taifuu ni yori, ooku no ie ga kowareta — due to the typhoon, many houses were destroyed) <button class="speak-btn" data-speak="たいふうにより、おおくのいえがこわれた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>～により (formal for によって／で) marks a cause, means, or method: たいふうにより、おおくのいえがこわれた (taifuu ni yori, ooku no ie ga kowareta — due to the typhoon, many houses were destroyed) <button class="speak-btn" data-speak="たいふうにより、おおくのいえがこわれた" aria-label="Listen to pronunciation of たいふうにより、おおくのいえがこわれた"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>～における (formal for での／においての) specifies a time, place, or field a statement applies to, and attaches directly to a noun: にほんにおけるしょうしかもんだい (nihon ni okeru shoushika mondai — the declining-birthrate problem in Japan)</li>
                                     </ul>
                                 </div>
@@ -1852,7 +1852,7 @@
                                     <div class="grammar-card-title">3. をめぐって — concerning / over (a dispute)</div>
                                     <ul class="bullet-list">
                                         <li>Noun + をめぐって means "concerning/over" a contested topic — almost always paired with a dispute, discussion, or debate.</li>
-                                        <li>あたらしいほうりつをめぐって、はげしいぎろんがつづいている (atarashii houritsu o megutte, hageshii giron ga tsuzuiteiru — fierce debate continues over the new law) <button class="speak-btn" data-speak="あたらしいほうりつをめぐって、はげしいぎろんがつづいている"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>あたらしいほうりつをめぐって、はげしいぎろんがつづいている (atarashii houritsu o megutte, hageshii giron ga tsuzuiteiru — fierce debate continues over the new law) <button class="speak-btn" data-speak="あたらしいほうりつをめぐって、はげしいぎろんがつづいている" aria-label="Listen to pronunciation of あたらしいほうりつをめぐって、はげしいぎろんがつづいている"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1874,8 +1874,8 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">1. 内 (uchi) vs 外 (soto) — who gets honored</div>
                                     <ul class="bullet-list">
-                                        <li>To a coworker, inside the company: ぶちょうはもういらっしゃいました (buchou wa mou irasshaimashita — the manager has already arrived) — honorific, since everyone here is "inside." <button class="speak-btn" data-speak="ぶちょうはもういらっしゃいました"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>To an outside client, about the very same manager: ぶちょうはもうまいりました (buchou wa mou mairimashita — the manager has already arrived) — humble, because from the client's view your manager is now "your side"; rank inside the company no longer matters. <button class="speak-btn" data-speak="ぶちょうはもうまいりました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>To a coworker, inside the company: ぶちょうはもういらっしゃいました (buchou wa mou irasshaimashita — the manager has already arrived) — honorific, since everyone here is "inside." <button class="speak-btn" data-speak="ぶちょうはもういらっしゃいました" aria-label="Listen to pronunciation of ぶちょうはもういらっしゃいました"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>To an outside client, about the very same manager: ぶちょうはもうまいりました (buchou wa mou mairimashita — the manager has already arrived) — humble, because from the client's view your manager is now "your side"; rank inside the company no longer matters. <button class="speak-btn" data-speak="ぶちょうはもうまいりました" aria-label="Listen to pronunciation of ぶちょうはもうまいりました"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>This flip trips up learners more than any single verb form — the rule is about the listener, not the person being talked about.</li>
                                     </ul>
                                 </div>
@@ -1892,8 +1892,8 @@
                                     <div class="grammar-card-title">3. お／ご + stem + します — "let me do X for you"</div>
                                     <ul class="bullet-list">
                                         <li>お + verb ます-stem + します (or ご + verbal noun + します for many する-verbs) humbly offers to do something for the listener. Watch the honorific お doubling with an お-initial stem: おくる → おくり → <span class="ja-word">おおくりします</span> (okuru → okuri → o okuri shimasu — I will send it to you), not おくりします.</li>
-                                        <li>ごれんらくします (go renraku shimasu — I will contact you) <button class="speak-btn" data-speak="ごれんらくします"><i class="fa-solid fa-volume-high"></i></button></li>
-                                        <li>Standard phone/email openers and closers: いつもおせわになっております (itsumo osewa ni natte orimasu — thank you always for your support); よろしくおねがいいたします (yoroshiku onegai itashimasu — thank you in advance) <button class="speak-btn" data-speak="いつもおせわになっております。よろしくおねがいいたします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>ごれんらくします (go renraku shimasu — I will contact you) <button class="speak-btn" data-speak="ごれんらくします" aria-label="Listen to pronunciation of ごれんらくします"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>Standard phone/email openers and closers: いつもおせわになっております (itsumo osewa ni natte orimasu — thank you always for your support); よろしくおねがいいたします (yoroshiku onegai itashimasu — thank you in advance) <button class="speak-btn" data-speak="いつもおせわになっております。よろしくおねがいいたします" aria-label="Listen to pronunciation of いつもおせわになっております。よろしくおねがいいたします"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -1927,7 +1927,7 @@
                                     <div class="grammar-card-title">2. ～ずして — "without doing ~" (formal ～ないで)</div>
                                     <ul class="bullet-list">
                                         <li>ない-form, drop ない + ずして — する becomes せずして, never しずして.</li>
-                                        <li>努力せずして成功はあり得ない (doryoku sezu shite seikou wa arienai — without effort, success is impossible) <button class="speak-btn" data-speak="努力せずして成功はあり得ない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>努力せずして成功はあり得ない (doryoku sezu shite seikou wa arienai — without effort, success is impossible) <button class="speak-btn" data-speak="努力せずして成功はあり得ない" aria-label="Listen to pronunciation of 努力せずして成功はあり得ない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Common in rhetorical questions built as "～ずして何であろうか" (sezu shite nan de arou ka — if this isn't ~, then what is?), affirming something emphatically by denying its alternative.</li>
                                     </ul>
                                 </div>
@@ -1935,7 +1935,7 @@
                                     <div class="grammar-card-title">3. ～べからず — "must not" (formal prohibition)</div>
                                     <ul class="bullet-list">
                                         <li>Dictionary form + べからず — the negative of べし (must/should); する becomes すべからず, the one common irregular exception.</li>
-                                        <li>芝生に入るべからず (shibafu ni hairu bekarazu — do not enter the lawn) <button class="speak-btn" data-speak="芝生に入るべからず"><i class="fa-solid fa-volume-high"></i></button> — the classic wording on old signs and notices.</li>
+                                        <li>芝生に入るべからず (shibafu ni hairu bekarazu — do not enter the lawn) <button class="speak-btn" data-speak="芝生に入るべからず" aria-label="Listen to pronunciation of 芝生に入るべからず"><i class="fa-solid fa-volume-high"></i></button> — the classic wording on old signs and notices.</li>
                                         <li>More common today as the plain notice 立入禁止, but べからず still appears on historical signs, in mottos, and in formal writing as a stronger, more literary alternative to ～べきではない.</li>
                                     </ul>
                                 </div>
@@ -1959,7 +1959,7 @@
                                     <div class="grammar-card-title">1. ～ものを — regret: "if only..."</div>
                                     <ul class="bullet-list">
                                         <li>Attaches to a plain-form clause describing what should have happened — then leaves the speaker's frustration or regret hanging, since reality went otherwise.</li>
-                                        <li>すぐに謝ればいいものを、彼は意地を張った (sugu ni ayamareba ii mono o, kare wa iji o hatta — he should have just apologized right away, but he stubbornly refused) <button class="speak-btn" data-speak="すぐに謝ればいいものを、彼は意地を張った"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>すぐに謝ればいいものを、彼は意地を張った (sugu ni ayamareba ii mono o, kare wa iji o hatta — he should have just apologized right away, but he stubbornly refused) <button class="speak-btn" data-speak="すぐに謝ればいいものを、彼は意地を張った" aria-label="Listen to pronunciation of すぐに謝ればいいものを、彼は意地を張った"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Often the clause after ものを is dropped entirely, leaving the regret implied: 早く言ってくれればよかったものを…(hayaku itte kurereba yokatta mono o… — if only you'd told me sooner…)</li>
                                     </ul>
                                 </div>
@@ -1967,7 +1967,7 @@
                                     <div class="grammar-card-title">2. ～ながら(も) — "even though / despite"</div>
                                     <ul class="bullet-list">
                                         <li>い-adjective / な-adjective stem (no な, e.g. 残念ながら) / noun / verb ます-stem + ながら(も) — different from the simultaneous-action ながら from N4; here it concedes a contrast within a single subject.</li>
-                                        <li>狭いながらも、幸せな家庭を築いた (semai nagara mo, shiawase na katei o kizuita — despite being small, [they] built a happy home) <button class="speak-btn" data-speak="狭いながらも、幸せな家庭を築いた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>狭いながらも、幸せな家庭を築いた (semai nagara mo, shiawase na katei o kizuita — despite being small, [they] built a happy home) <button class="speak-btn" data-speak="狭いながらも、幸せな家庭を築いた" aria-label="Listen to pronunciation of 狭いながらも、幸せな家庭を築いた"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>知っていながら、彼は黙っていた (shitte inagara, kare wa damatte ita — even though he knew, he stayed silent).</li>
                                     </ul>
                                 </div>
@@ -1975,7 +1975,7 @@
                                     <div class="grammar-card-title">3. ～といえども — "even ~ / even though" (formal)</div>
                                     <ul class="bullet-list">
                                         <li>Noun / plain form + といえども — grants a point fully, then insists it changes nothing; common in essays, speeches, and legal-style argument.</li>
-                                        <li>子供といえども、責任は免れない (kodomo to iedomo, sekinin wa manugarenai — even though [he's] a child, [he] cannot escape responsibility) <button class="speak-btn" data-speak="子供といえども、責任は免れない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>子供といえども、責任は免れない (kodomo to iedomo, sekinin wa manugarenai — even though [he's] a child, [he] cannot escape responsibility) <button class="speak-btn" data-speak="子供といえども、責任は免れない" aria-label="Listen to pronunciation of 子供といえども、責任は免れない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>プロといえども、失敗することはある (puro to iedomo, shippai suru koto wa aru — even professionals sometimes fail).</li>
                                     </ul>
                                 </div>
@@ -1999,21 +1999,21 @@
                                     <div class="grammar-card-title">1. ～なり — "as soon as" (a single surprising follow-up)</div>
                                     <ul class="bullet-list">
                                         <li>Dictionary form + なり — the second action follows the first almost instantly, and is often unexpected; the subject of both clauses is normally the same person.</li>
-                                        <li>彼は帰宅するなり、部屋に閉じこもった (kare wa kitaku suru nari, heya ni tojikomotta — as soon as he got home, he shut himself in his room) <button class="speak-btn" data-speak="彼は帰宅するなり、部屋に閉じこもった"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>彼は帰宅するなり、部屋に閉じこもった (kare wa kitaku suru nari, heya ni tojikomotta — as soon as he got home, he shut himself in his room) <button class="speak-btn" data-speak="彼は帰宅するなり、部屋に閉じこもった" aria-label="Listen to pronunciation of 彼は帰宅するなり、部屋に閉じこもった"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. ～や否や(やいなや) — "the moment that..." (literary)</div>
                                     <ul class="bullet-list">
                                         <li>Dictionary form + や否や — more literary than なり, common in narrative writing; the two clauses can involve different subjects.</li>
-                                        <li>ベルが鳴るや否や、生徒たちは教室を飛び出した (beru ga naru ya ina ya, seitotachi wa kyoushitsu o tobidashita — the moment the bell rang, the students dashed out of the classroom) <button class="speak-btn" data-speak="ベルが鳴るや否や、生徒たちは教室を飛び出した"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>ベルが鳴るや否や、生徒たちは教室を飛び出した (beru ga naru ya ina ya, seitotachi wa kyoushitsu o tobidashita — the moment the bell rang, the students dashed out of the classroom) <button class="speak-btn" data-speak="ベルが鳴るや否や、生徒たちは教室を飛び出した" aria-label="Listen to pronunciation of ベルが鳴るや否や、生徒たちは教室を飛び出した"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. ～そばから — "no sooner...than" (a repeating cycle)</div>
                                     <ul class="bullet-list">
                                         <li>Dictionary form / た-form + そばから — unlike なり and や否や, this describes a repeated, often frustrating pattern where the second action keeps undoing the first.</li>
-                                        <li>片付けるそばから、子供が散らかす (katazukeru soba kara, kodomo ga chirakasu — no sooner do I tidy up than the kids make a mess again) <button class="speak-btn" data-speak="片付けるそばから、子供が散らかす"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>片付けるそばから、子供が散らかす (katazukeru soba kara, kodomo ga chirakasu — no sooner do I tidy up than the kids make a mess again) <button class="speak-btn" data-speak="片付けるそばから、子供が散らかす" aria-label="Listen to pronunciation of 片付けるそばから、子供が散らかす"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>習ったそばから忘れてしまう (naratta soba kara wasurete shimau — I forget things as fast as I learn them).</li>
                                     </ul>
                                 </div>
@@ -2037,7 +2037,7 @@
                                     <div class="grammar-card-title">1. ～ともなると／～ともなれば — "once it reaches the stage of..."</div>
                                     <ul class="bullet-list">
                                         <li>Noun / verb dictionary form + ともなると(なれば) — a special level, time, or status is reached, and things naturally follow from it.</li>
-                                        <li>大企業の社長ともなると、責任は非常に重い (dai kigyou no shachou tomo naru to, sekinin wa hijou ni omoi — when one becomes the president of a major company, the responsibility is extremely heavy) <button class="speak-btn" data-speak="大企業の社長ともなると、責任は非常に重い"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>大企業の社長ともなると、責任は非常に重い (dai kigyou no shachou tomo naru to, sekinin wa hijou ni omoi — when one becomes the president of a major company, the responsibility is extremely heavy) <button class="speak-btn" data-speak="大企業の社長ともなると、責任は非常に重い" aria-label="Listen to pronunciation of 大企業の社長ともなると、責任は非常に重い"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>年末ともなれば、街は買い物客でにぎわう (nenmatsu tomo nareba, machi wa kaimonokyaku de nigiwau — when it's the end of the year, the streets bustle with shoppers).</li>
                                     </ul>
                                 </div>
@@ -2045,14 +2045,14 @@
                                     <div class="grammar-card-title">2. ～とあって — "given that it's a special ~"</div>
                                     <ul class="bullet-list">
                                         <li>Noun / plain form + とあって — states a special circumstance, then describes the natural reaction it causes; common in news-style writing.</li>
-                                        <li>連休とあって、高速道路はどこも渋滞している (renkyuu to atte, kousoku douro wa doko mo juutai shiteiru — since it's a long holiday, the highways are congested everywhere) <button class="speak-btn" data-speak="連休とあって、高速道路はどこも渋滞している"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>連休とあって、高速道路はどこも渋滞している (renkyuu to atte, kousoku douro wa doko mo juutai shiteiru — since it's a long holiday, the highways are congested everywhere) <button class="speak-btn" data-speak="連休とあって、高速道路はどこも渋滞している" aria-label="Listen to pronunciation of 連休とあって、高速道路はどこも渋滞している"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">3. ～に至って(いたって) — "only when it reached the point of..."</div>
                                     <ul class="bullet-list">
                                         <li>Noun / verb dictionary form + に至って — something is finally realized, decided, or acted on only once an extreme point is reached, often implying "too late."</li>
-                                        <li>手術が必要な状態に至って、彼はやっと病院へ行った (shujutsu ga hitsuyou na joutai ni itatte, kare wa yatto byouin e itta — only when it reached the point of needing surgery did he finally go to the hospital) <button class="speak-btn" data-speak="手術が必要な状態に至って、彼はやっと病院へ行った"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>手術が必要な状態に至って、彼はやっと病院へ行った (shujutsu ga hitsuyou na joutai ni itatte, kare wa yatto byouin e itta — only when it reached the point of needing surgery did he finally go to the hospital) <button class="speak-btn" data-speak="手術が必要な状態に至って、彼はやっと病院へ行った" aria-label="Listen to pronunciation of 手術が必要な状態に至って、彼はやっと病院へ行った"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>Related: ～に至っては singles out one extreme example within a larger group for comment; ～に至るまで means "all the way up to ~."</li>
                                     </ul>
                                 </div>
@@ -2076,14 +2076,14 @@
                                     <div class="grammar-card-title">1. ～きらいがある — "has a tendency to ~" (negative)</div>
                                     <ul class="bullet-list">
                                         <li>Verb dictionary form + きらいがある, or noun + の + きらいがある — describes an inherent, usually undesirable tendency or bad habit, not a one-time event.</li>
-                                        <li>彼は仕事を先延ばしにするきらいがある (kare wa shigoto o sakinobashi ni suru kirai ga aru — he has a tendency to procrastinate on work) <button class="speak-btn" data-speak="彼は仕事を先延ばしにするきらいがある"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>彼は仕事を先延ばしにするきらいがある (kare wa shigoto o sakinobashi ni suru kirai ga aru — he has a tendency to procrastinate on work) <button class="speak-btn" data-speak="彼は仕事を先延ばしにするきらいがある" aria-label="Listen to pronunciation of 彼は仕事を先延ばしにするきらいがある"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">2. ～ないではおかない／～ずにはおかない — "bound to ~ / cannot help but ~"</div>
                                     <ul class="bullet-list">
                                         <li>ない-form + ではおかない, or ない-form (drop ない) + ずにはおかない — a natural force or strong emotion makes an effect inevitable; the double negative reads as a strong positive.</li>
-                                        <li>この映画は観客を感動させないではおかない (kono eiga wa kankyaku o kandou sasenai de wa okanai — this movie is bound to move the audience) <button class="speak-btn" data-speak="この映画は観客を感動させないではおかない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>この映画は観客を感動させないではおかない (kono eiga wa kankyaku o kandou sasenai de wa okanai — this movie is bound to move the audience) <button class="speak-btn" data-speak="この映画は観客を感動させないではおかない" aria-label="Listen to pronunciation of この映画は観客を感動させないではおかない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li>彼の行動は皆を怒らせずにはおかない (kare no koudou wa mina o okorasezu niwa okanai — his behavior can't help but anger everyone).</li>
                                     </ul>
                                 </div>
@@ -2091,7 +2091,7 @@
                                     <div class="grammar-card-title">3. ～を余儀なくされる(よぎなくされる) — "be forced to ~"</div>
                                     <ul class="bullet-list">
                                         <li>Noun (often a verb turned into a noun) + を余儀なくされる — circumstances beyond anyone's control force an unwanted outcome; a formal, passive-feeling construction common in news reports.</li>
-                                        <li>台風のため、試合は中止を余儀なくされた (taifuu no tame, shiai wa chuushi o yoginaku sareta — due to the typhoon, the match was forced to be canceled) <button class="speak-btn" data-speak="台風のため、試合は中止を余儀なくされた"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li>台風のため、試合は中止を余儀なくされた (taifuu no tame, shiai wa chuushi o yoginaku sareta — due to the typhoon, the match was forced to be canceled) <button class="speak-btn" data-speak="台風のため、試合は中止を余儀なくされた" aria-label="Listen to pronunciation of 台風のため、試合は中止を余儀なくされた"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
 
@@ -2113,9 +2113,9 @@
                                 <div class="grammar-card">
                                     <div class="grammar-card-title">1. Stock editorial phrases (論説文の決まり文句)</div>
                                     <ul class="bullet-list">
-                                        <li><strong>～と言わざるを得ない</strong> (to iwazaru o enai — cannot help but say/conclude that): この結果は失敗だったと言わざるを得ない (kono kekka wa shippai datta to iwazaru o enai — one cannot help but conclude this result was a failure) <button class="speak-btn" data-speak="この結果は失敗だったと言わざるを得ない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>～と言わざるを得ない</strong> (to iwazaru o enai — cannot help but say/conclude that): この結果は失敗だったと言わざるを得ない (kono kekka wa shippai datta to iwazaru o enai — one cannot help but conclude this result was a failure) <button class="speak-btn" data-speak="この結果は失敗だったと言わざるを得ない" aria-label="Listen to pronunciation of この結果は失敗だったと言わざるを得ない"><i class="fa-solid fa-volume-high"></i></button></li>
                                         <li><strong>～ではなかろうか</strong> (de wa nakarou ka — isn't it perhaps...?): a softened, formal way to state an opinion as a rhetorical question. それは杞憂ではなかろうか (sore wa kiyuu de wa nakarou ka — isn't that perhaps needless worry?)</li>
-                                        <li><strong>～に他ならない</strong> (ni hoka naranai — is nothing other than): 彼の成功は努力の賜物に他ならない (kare no seikou wa doryoku no tamamono ni hoka naranai — his success is nothing other than the fruit of effort) <button class="speak-btn" data-speak="彼の成功は努力の賜物に他ならない"><i class="fa-solid fa-volume-high"></i></button></li>
+                                        <li><strong>～に他ならない</strong> (ni hoka naranai — is nothing other than): 彼の成功は努力の賜物に他ならない (kare no seikou wa doryoku no tamamono ni hoka naranai — his success is nothing other than the fruit of effort) <button class="speak-btn" data-speak="彼の成功は努力の賜物に他ならない" aria-label="Listen to pronunciation of 彼の成功は努力の賜物に他ならない"><i class="fa-solid fa-volume-high"></i></button></li>
                                     </ul>
                                 </div>
                                 <div class="grammar-card">
@@ -2221,7 +2221,7 @@
                             
                             <div class="canvas-guide-nav">
                                 <button class="btn" id="btn-prev-guide"><i class="fa-solid fa-chevron-left"></i> <span data-i18n="canvas.prev">Previous</span></button>
-                                <button class="btn speak-btn" id="btn-play-guide-audio"><i class="fa-solid fa-volume-high"></i> <span data-i18n="canvas.audio">Audio</span></button>
+                                <button class="btn speak-btn" id="btn-play-guide-audio" aria-label="Listen to pronunciation"><i class="fa-solid fa-volume-high"></i> <span data-i18n="canvas.audio">Audio</span></button>
                                 <button class="btn" id="btn-next-guide"><span data-i18n="canvas.next">Next</span> <i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
@@ -2343,7 +2343,14 @@
 
         <footer class="site-footer">
             <p data-i18n="footer.built">Built by <a href="https://github.com/ash01ish" target="_blank" rel="noopener">Ashish Thirunagari</a>. Free and open source under CC BY-NC-SA 4.0.</p>
-            <p style="margin-top: 4px;" data-i18n="footer.star1">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
+            <div class="footer-legal-links">
+                <button type="button" class="footer-legal-btn" data-open-legal="privacy" data-i18n="footer.privacy">Privacy Policy</button> &bull;
+                <button type="button" class="footer-legal-btn" data-open-legal="terms" data-i18n="footer.terms">Terms of Service</button> &bull;
+                <button type="button" class="footer-legal-btn" data-open-legal="cookies" data-i18n="footer.cookies">Cookie & Storage Policy</button> &bull;
+                <button type="button" class="footer-legal-btn" data-open-legal="datarights" data-i18n="footer.dataRights">Data Rights & Export</button> &bull;
+                <button type="button" class="footer-legal-btn" data-open-legal="licenses" data-i18n="footer.licenses">Credits & Contact</button>
+            </div>
+            <p style="margin-top: 6px;" data-i18n="footer.star1">If KotoQuest helps you, a star means a lot — it's a solo, free project.</p>
             <div class="footer-cta">
                 <a class="footer-btn footer-btn-star" href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> <span data-i18n="footer.starbtn">Star on GitHub</span></a>
                 <a class="footer-btn footer-btn-sponsor" href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener"><i class="fa-solid fa-heart"></i> <span data-i18n="footer.sponsorbtn">Sponsor</span></a>
@@ -2371,7 +2378,7 @@
                     <div class="daily-question-text" id="daily-question-text">Loading question...</div>
                     <div class="daily-question-sub">
                         <span id="daily-question-type" class="badge">Vocabulary</span>
-                        <button type="button" class="btn speak-btn" id="btn-speak-daily" style="padding: 2px 8px; font-size: 0.8rem;"><i class="fa-solid fa-volume-high"></i></button>
+                        <button type="button" class="btn speak-btn" id="btn-speak-daily" style="padding: 2px 8px; font-size: 0.8rem;" aria-label="Listen to pronunciation"><i class="fa-solid fa-volume-high"></i></button>
                     </div>
                 </div>
                 <div class="daily-options-grid" id="daily-options">
@@ -2447,7 +2454,7 @@
                     <div class="daily-question-text" id="duel-question-text">...</div>
                     <div class="daily-question-sub">
                         <span id="duel-question-type" class="badge">JLPT Duel</span>
-                        <button type="button" class="btn speak-btn" id="btn-speak-duel" style="padding: 2px 8px; font-size: 0.8rem;"><i class="fa-solid fa-volume-high"></i></button>
+                        <button type="button" class="btn speak-btn" id="btn-speak-duel" style="padding: 2px 8px; font-size: 0.8rem;" aria-label="Listen to pronunciation"><i class="fa-solid fa-volume-high"></i></button>
                     </div>
                 </div>
                 <div class="daily-options-grid" id="duel-options"></div>
@@ -2610,6 +2617,154 @@
                 <h4 style="color: #fff; margin-bottom: 8px;"><i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i> Trophy Room (Achievements)</h4>
                 <div class="trophy-grid" id="trophy-room-grid">
                     <!-- Populated dynamically by app.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal, Privacy & Compliance Modal -->
+    <div id="legal-modal-overlay" class="legal-overlay" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+        <div class="legal-card glass-card">
+            <div class="legal-header">
+                <h3 id="legal-modal-title"><i class="fa-solid fa-shield-halved" style="color: var(--accent-teal);"></i> <span data-i18n="legal.title">Legal & Privacy Center</span></h3>
+                <button type="button" class="modal-close-btn" id="legal-modal-close-btn" aria-label="Close legal center">&times;</button>
+            </div>
+            <div class="legal-tabs" id="legal-tabs-bar" role="tablist">
+                <button type="button" class="legal-tab-btn active" role="tab" aria-selected="true" data-legal-tab="privacy"><i class="fa-solid fa-user-shield"></i> <span data-i18n="legal.tabPrivacy">Privacy Policy</span></button>
+                <button type="button" class="legal-tab-btn" role="tab" aria-selected="false" data-legal-tab="terms"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="legal.tabTerms">Terms of Service</span></button>
+                <button type="button" class="legal-tab-btn" role="tab" aria-selected="false" data-legal-tab="cookies"><i class="fa-solid fa-cookie-bite"></i> <span data-i18n="legal.tabCookies">Cookie & Storage</span></button>
+                <button type="button" class="legal-tab-btn" role="tab" aria-selected="false" data-legal-tab="datarights"><i class="fa-solid fa-database"></i> <span data-i18n="legal.tabDataRights">Data Rights (GDPR)</span></button>
+                <button type="button" class="legal-tab-btn" role="tab" aria-selected="false" data-legal-tab="licenses"><i class="fa-solid fa-certificate"></i> <span data-i18n="legal.tabLicenses">Credits & Contact</span></button>
+            </div>
+            <div class="legal-body">
+                <!-- 1. Privacy Policy -->
+                <div class="legal-pane active" id="legal-pane-privacy" role="tabpanel">
+                    <h4><i class="fa-solid fa-lock" style="color: var(--accent-teal);"></i> 100% Client-Side Privacy Policy</h4>
+                    <div class="legal-badge-strip">
+                        <span class="legal-badge"><i class="fa-solid fa-shield-check"></i> Zero Trackers</span>
+                        <span class="legal-badge"><i class="fa-solid fa-server"></i> Zero Server Telemetry</span>
+                        <span class="legal-badge blue"><i class="fa-solid fa-child"></i> COPPA Compliant</span>
+                        <span class="legal-badge gold"><i class="fa-solid fa-envelope-circle-check"></i> Zero Spam Emails</span>
+                    </div>
+
+                    <h5><i class="fa-solid fa-database"></i> Absolute Data Minimization</h5>
+                    <p>KotoQuest is architecturally engineered with <strong>zero server-side databases</strong> for user information. We do not collect, process, sell, transmit, or monetize your name, email address, phone number, IP address, device fingerprint, geographic location, or usage behavior.</p>
+                    <p>All study history—including samurai level, HP, XP, coins, spaced repetition (SRS) review schedules, streak counts, audio volume settings, and trophy badges—is processed and saved <strong>exclusively inside your web browser's local storage (<code>localStorage</code>)</strong> on your own device. No data ever leaves your device.</p>
+
+                    <h5><i class="fa-solid fa-magnifying-glass"></i> Third-Party SDK & Telemetry Audit</h5>
+                    <p>KotoQuest contains <strong>zero third-party advertising SDKs, tracking pixels, or telemetry beacons</strong>. We do not embed Google Analytics, Meta Pixel, Mixpanel, Hotjar, or advertising ad-networks. All runtime libraries (Three.js 3D rendering, Font Awesome vector icons, and Outfit fonts) are 100% self-hosted and vendored locally inside this repository.</p>
+
+                    <h5><i class="fa-solid fa-child-reaching"></i> Children's Privacy (COPPA & GDPR-K Compliance)</h5>
+                    <p>KotoQuest is an educational resource safe for learners of all ages. Because we never collect personally identifiable information (PII) from any user, we strictly comply with the Children's Online Privacy Protection Act (COPPA) in the United States and Article 8 of the General Data Protection Regulation (GDPR) in the European Union. Children and students can freely explore Japanese grammar without parental privacy exposure.</p>
+
+                    <h5><i class="fa-solid fa-envelope"></i> Email & Direct Marketing Policy</h5>
+                    <p>KotoQuest does not operate mandatory user accounts, does not collect email addresses, and sends zero automated, marketing, or promotional emails. Because we have no email list or server-side newsletter, no unsubscribe mechanism is necessary.</p>
+
+                    <h5><i class="fa-solid fa-clock-rotate-left"></i> Policy Updates</h5>
+                    <p>Any updates to this privacy policy will be documented in our open-source git changelog. Because this is a static, client-side open-source application, privacy protections remain permanent.</p>
+                </div>
+
+                <!-- 2. Terms of Service -->
+                <div class="legal-pane" id="legal-pane-terms" role="tabpanel">
+                    <h4><i class="fa-solid fa-file-contract" style="color: var(--accent-gold);"></i> Terms of Service & Educational Fair Use</h4>
+                    <div class="legal-badge-strip">
+                        <span class="legal-badge gold"><i class="fa-brands fa-creative-commons"></i> CC BY-NC-SA 4.0</span>
+                        <span class="legal-badge blue"><i class="fa-solid fa-graduation-cap"></i> Free Educational Resource</span>
+                        <span class="legal-badge"><i class="fa-solid fa-code"></i> Open Source</span>
+                    </div>
+
+                    <h5><i class="fa-solid fa-scroll"></i> Educational Purpose & Free Access</h5>
+                    <p>KotoQuest is a free, open-source educational academy dedicated to teaching Japanese (JLPT N5 to N1) through the grammatical machinery of native languages (Telugu, Hindi, Tamil, Korean, Spanish, Kannada, Malayalam, and English).</p>
+
+                    <h5><i class="fa-solid fa-copyright"></i> Licensing & Intellectual Property</h5>
+                    <p>The original curriculum, pedagogical grammar bridge formulations, role-play dialogues, and educational explanations are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" style="color: var(--accent-teal); text-decoration: underline;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+                    <ul>
+                        <li><strong>Attribution:</strong> You must give appropriate credit to Ashish Thirunagari and provide a link to the original project.</li>
+                        <li><strong>NonCommercial:</strong> You may not use the material for commercial purposes or behind paywalls.</li>
+                        <li><strong>ShareAlike:</strong> If you remix, transform, or build upon the material, you must distribute your contributions under the same license.</li>
+                    </ul>
+                    <p>Source code build tools, scripts, and runtime application scaffolding are released under the MIT License.</p>
+
+                    <h5><i class="fa-solid fa-triangle-exclamation"></i> Disclaimer of Warranty</h5>
+                    <p>KotoQuest is provided "as is" and "as available", without warranty of any kind, express or implied. While extensive care is invested in linguistic precision and JLPT alignment, the maintainers assume no liability for errors or omissions. KotoQuest is an independent project and is not affiliated with, endorsed by, or sponsored by the Japan Foundation or JEES.</p>
+                </div>
+
+                <!-- 3. Cookie & Storage Policy -->
+                <div class="legal-pane" id="legal-pane-cookies" role="tabpanel">
+                    <h4><i class="fa-solid fa-cookie" style="color: var(--accent-gold);"></i> Cookie Policy & Client-Side Storage</h4>
+                    <div class="legal-badge-strip">
+                        <span class="legal-badge"><i class="fa-solid fa-ban"></i> Zero HTTP Cookies</span>
+                        <span class="legal-badge blue"><i class="fa-solid fa-hard-drive"></i> Local Storage Only</span>
+                        <span class="legal-badge gold"><i class="fa-solid fa-receipt"></i> Zero Fees / No Refunds Required</span>
+                    </div>
+
+                    <h5><i class="fa-solid fa-money-bill-wave"></i> Refund Policy (Zero Charges / Zero Purchases)</h5>
+                    <p>KotoQuest is <strong>100% free and open-source</strong>. We do not offer premium tiers, subscription upgrades, locked content, or in-app payments. Because there are no financial transactions or credit card processing, <strong>no refunds are necessary or applicable</strong>.</p>
+
+                    <h5><i class="fa-solid fa-cookie-bite"></i> Zero HTTP Cookies Disclosure</h5>
+                    <p>KotoQuest sets <strong>zero HTTP cookies</strong>. <code>document.cookie</code> is never accessed or written to. We do not use advertising cookies, session cookies, tracking cookies, or third-party cookies.</p>
+
+                    <h5><i class="fa-solid fa-box-archive"></i> Strictly Necessary Functional Storage</h5>
+                    <p>Under the EU ePrivacy Directive (Directive 2002/58/EC) and GDPR, strictly necessary functional storage required to provide a requested service is exempt from blocking cookie consent walls. KotoQuest utilizes the following modern browser storage APIs strictly to operate offline:</p>
+                    <ul>
+                        <li><strong><code>localStorage</code>:</strong> Saves your study progress (samurai level, gold, SRS interval timestamps, streak days, audio mute preference, chosen native language). This data resides solely on your machine.</li>
+                        <li><strong><code>CacheStorage</code>:</strong> Used by the Progressive Web App (PWA) Service Worker (<code>sw.js</code>) to store static HTML, CSS, fonts, and scripts so the academy operates without an active internet connection.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Data Rights (GDPR / CCPA) -->
+                <div class="legal-pane" id="legal-pane-datarights" role="tabpanel">
+                    <h4><i class="fa-solid fa-user-gear" style="color: var(--accent-teal);"></i> Your Data Rights & Sovereignty</h4>
+                    <div class="legal-badge-strip">
+                        <span class="legal-badge"><i class="fa-solid fa-file-export"></i> GDPR Art. 20 (Data Portability)</span>
+                        <span class="legal-badge warning" style="color:#ff7675; border-color: rgba(231,76,60,0.3); background: rgba(231,76,60,0.12);"><i class="fa-solid fa-trash-can"></i> GDPR Art. 17 (Right to Erasure)</span>
+                    </div>
+
+                    <p>Because all data is stored locally in your browser, you have absolute ownership and control over your records. You do not need to submit support tickets to access or delete your data—you can exercise your legal rights immediately using the tools below:</p>
+
+                    <div class="legal-action-grid">
+                        <div class="legal-action-card">
+                            <div>
+                                <h5><i class="fa-solid fa-download" style="color: var(--accent-teal);"></i> Right to Data Portability (Export)</h5>
+                                <p>Download a complete JSON archive of all your study progress, SRS cards, vocabulary mastery counts, daily challenge completions, and settings.</p>
+                            </div>
+                            <button type="button" class="btn btn-teal" id="btn-export-data" style="width: 100%; justify-content: center; padding: 10px 16px; font-weight: 700;"><i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="legal.exportBtn">Download Data (JSON)</span></button>
+                        </div>
+
+                        <div class="legal-action-card" style="border-color: rgba(231,76,60,0.25);">
+                            <div>
+                                <h5><i class="fa-solid fa-trash-can" style="color: #ff7675;"></i> Right to Erasure (Delete All Data)</h5>
+                                <p>Permanently wipe all KotoQuest records, samurai levels, flashcard histories, and preferences from this browser. This resets the app to a clean state.</p>
+                            </div>
+                            <button type="button" class="btn" id="btn-erase-all-data" style="width: 100%; justify-content: center; padding: 10px 16px; font-weight: 700; background: rgba(231,76,60,0.15); border: 1px solid rgba(231,76,60,0.4); color: #ff7675;"><i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="legal.eraseBtn">Erase All Data (Right to Erasure)</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Credits, Licenses & Contact -->
+                <div class="legal-pane" id="legal-pane-licenses" role="tabpanel">
+                    <h4><i class="fa-solid fa-handshake-angle" style="color: var(--accent-gold);"></i> Open Source Credits & Maintainer Details</h4>
+                    <div class="legal-badge-strip">
+                        <span class="legal-badge gold"><i class="fa-brands fa-github"></i> Open Source Repository</span>
+                        <span class="legal-badge blue"><i class="fa-solid fa-font"></i> Open Fonts</span>
+                    </div>
+
+                    <h5><i class="fa-solid fa-layer-group"></i> Third-Party Assets & Open Source Licenses</h5>
+                    <ul>
+                        <li><strong>Outfit Typography:</strong> Designed by Outfit, distributed by Google Fonts under the <a href="https://scripts.sil.org/OFL" target="_blank" rel="noopener" style="color: var(--accent-teal);">SIL Open Font License, Version 1.1</a>.</li>
+                        <li><strong>Font Awesome Free:</strong> Vector icons licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="color: var(--accent-teal);">CC BY 4.0</a>; Font files under SIL OFL 1.1; Code under the MIT License.</li>
+                        <li><strong>Three.js 3D WebGL Library:</strong> Vendored locally under the <a href="https://github.com/mrdoob/three.js/blob/dev/LICENSE" target="_blank" rel="noopener" style="color: var(--accent-teal);">MIT License</a>.</li>
+                        <li><strong>Procedural Sound Engine:</strong> Synthesized in real-time via the W3C Web Audio API (zero audio files or copyrighted samples).</li>
+                        <li><strong>Pronunciation:</strong> Powered natively by browser Web Speech API speech synthesis engines.</li>
+                    </ul>
+
+                    <h5><i class="fa-solid fa-address-card"></i> Project Maintainer & Business Details</h5>
+                    <div class="legal-card-box">
+                        <p style="margin: 0 0 6px 0;"><strong>Developer / Maintainer:</strong> Ashish Thirunagari</p>
+                        <p style="margin: 0 0 6px 0;"><strong>Project Repository:</strong> <a href="https://github.com/ash01ish/KotoQuest" target="_blank" rel="noopener" style="color: var(--accent-teal);">github.com/ash01ish/KotoQuest</a></p>
+                        <p style="margin: 0 0 6px 0;"><strong>Issue Tracker & Inquiries:</strong> <a href="https://github.com/ash01ish/KotoQuest/issues" target="_blank" rel="noopener" style="color: var(--accent-teal);">github.com/ash01ish/KotoQuest/issues</a></p>
+                        <p style="margin: 0;"><strong>Project Sponsorship:</strong> <a href="https://github.com/sponsors/ash01ish" target="_blank" rel="noopener" style="color: var(--accent-gold);">github.com/sponsors/ash01ish</a></p>
+                    </div>
                 </div>
             </div>
         </div>
